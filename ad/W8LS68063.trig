@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68063 {
+    bda:I8LS68070  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68070 ;
+        adm:logEntry        bda:LGE7BF7B8EB6695676 , bda:LGIMBBAA3907 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7EC7ACBC427A1E02
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-23T12:19:41.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE7BF7B8EB6695676
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-23T12:19:41.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMBBAA3907  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-04T23:24:13.056Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68063  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68063 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ad/W8LS68063.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68063 ;
+        adm:logEntry        bda:LG7EC7ACBC427A1E02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68070  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gso byed thabs/ bcos sgrig ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   184 .
+    
+    bdr:ID10B8E7A82FBB9C44
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147758959" .
+    
+    bdr:W8LS68063  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID10B8E7A82FBB9C44 ;
+        :instanceHasVolume  bdr:I8LS68070 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

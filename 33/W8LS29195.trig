@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS29195 {
+    bda:I8LS29197  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS29197 ;
+        adm:logEntry        bda:LG509FFEDB3C192757 , bda:LGIM17D0C5D6 , bda:LGIM32DD8706 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG509FFEDB3C192757
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-31T13:56:09.631Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBD11AECAD53A2049
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-31T13:56:09.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM17D0C5D6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-13T02:29:27.159Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM32DD8706  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-16T01:14:56.71Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS29195  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS29195 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/W8LS29195.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS29195 ;
+        adm:logEntry        bda:LGBD11AECAD53A2049 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS29197  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skyabs mgon bla ma dam pa'i rnam par thar ba yid bzhin dbang gi rgyal po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   117 .
+    
+    bdr:W8LS29195  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS29197 ;
+        :numberOfVolumes    1 .
+}

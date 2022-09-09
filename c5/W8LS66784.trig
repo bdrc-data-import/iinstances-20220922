@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66784 {
+    bda:I8LS67875  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67875 ;
+        adm:logEntry        bda:LGC66D4C48106E1859 , bda:LGIM22B0957B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG812E3AE58875018F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T12:40:22.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC66D4C48106E1859
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-27T12:40:22.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM22B0957B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-17T23:26:22.011Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66784  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66784 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c5/W8LS66784.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66784 ;
+        adm:logEntry        bda:LG812E3AE58875018F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67875  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dbus gtsang gnas yig gi dpyad 'grel mthong dga' rab gsal/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   220 .
+    
+    bdr:IDB8CF74E5F80BE5F4
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713618" .
+    
+    bdr:W8LS66784  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB8CF74E5F80BE5F4 ;
+        :instanceHasVolume  bdr:I8LS67875 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

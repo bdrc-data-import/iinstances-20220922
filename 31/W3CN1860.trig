@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN1860 {
+    bda:I3CN1862  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN1862 ;
+        adm:logEntry        bda:LGC4430C5BD4A533E9 , bda:LGIME4D2ADF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC4430C5BD4A533E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-23T12:47:11.375Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE80049C53F0D9129
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-23T12:47:11.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIME4D2ADF0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-21T11:40:21.137Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN1860  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN1860 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "31/W3CN1860.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN1860 ;
+        adm:logEntry        bda:LGE80049C53F0D9129 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN1862  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dul ba'i las chog tshig don dang bcas pa rnam par bshad pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   128 .
+    
+    bdr:W3CN1860  a         :ImageInstance ;
+        :inCollection       bdr:PR1LOKESH01 ;
+        :instanceHasVolume  bdr:I3CN1862 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 06/2015"@en .
+}

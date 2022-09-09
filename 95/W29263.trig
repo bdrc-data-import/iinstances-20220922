@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W29263 {
+    bda:I1KG23202  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23202 ;
+        adm:logEntry        bda:LG438CC84A04AFD812 , bda:LG68B7C4C697589580 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B72E49CAA86E714
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-31T15:18:16.574Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG438CC84A04AFD812
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-06T21:56:37.408Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG68B7C4C697589580
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-31T15:18:16.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W29263  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W29263 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "95/W29263.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W29263 ;
+        adm:logEntry        bda:LG1B72E49CAA86E714 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23202  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tun hong yig rnying las byung ba'i bod kyi gna' rabs smon lam dang de'i mchan 'grel : khri ral pa can gyi skabs su mdo khams dbyar mo thang du de ga g.yu tshal gyi gtsug lag khang bzhengs nas bod kyi blon chen po zhang khri sum rje sogs kyis gsol ba'i smo"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   114 .
+    
+    bdr:W29263  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23202 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 3/2016"@en .
+}

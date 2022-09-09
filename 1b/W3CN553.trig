@@ -1,0 +1,75 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN553 {
+    bda:I3CN3975  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3975 ;
+        adm:logEntry        bda:LG2EA1EEEE76EBFCD5 , bda:LG5601CD28F387E7E3 , bda:LGD0C69B8D668F9CC2 , bda:LGEC76EDAE9859759F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EA1EEEE76EBFCD5
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-09-20T23:20:08.356Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5601CD28F387E7E3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T18:18:17.841Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC485F46B8EF88B61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:18:17.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD0C69B8D668F9CC2
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-04-21T18:11:14.066Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGEC76EDAE9859759F
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-19T19:31:55.147Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN553  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN553 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1b/W3CN553.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN553 ;
+        adm:logEntry        bda:LGC485F46B8EF88B61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3975  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chos rje lo ras pa'i rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   122 .
+    
+    bdr:W3CN553  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3975 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W27324 {
+    bda:I01JW22  a          adm:AdminData ;
+        adm:adminAbout      bdr:I01JW22 ;
+        adm:logEntry        bda:LGFD77A8475BB80975 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG685E93B7817FC519
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-19T14:47:13.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGFD77A8475BB80975
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-19T14:47:12.227Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W27324  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W27324 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "45/W27324.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W27324 ;
+        adm:logEntry        bda:LG685E93B7817FC519 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I01JW22  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of nang bstan mdo sngags rgya mtsho las lag tu len bde ba gser gyi thigs pa"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   266 .
+    
+    bdr:ID2DE11C89F0848A76
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147723837" .
+    
+    bdr:W27324  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2DE11C89F0848A76 ;
+        :instanceHasVolume  bdr:I01JW22 ;
+        :numberOfVolumes    1 .
+}

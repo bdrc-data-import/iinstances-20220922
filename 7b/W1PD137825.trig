@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137825 {
+    bda:I2PD19668  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19668 ;
+        adm:logEntry        bda:LG82CF06E52F709D0C , bda:LGE8B63898244CF8B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A244413E500685E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-09T04:08:52.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG82CF06E52F709D0C
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-20T01:11:20.19Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE8B63898244CF8B5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-09T04:08:52.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137825  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137825 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7b/W1PD137825.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137825 ;
+        adm:logEntry        bda:LG1A244413E500685E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19668  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skal bzang me tog"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   492 .
+    
+    bdr:ID1D845D4D3F0E79E1
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719931" .
+    
+    bdr:W1PD137825  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1D845D4D3F0E79E1 ;
+        :instanceHasVolume  bdr:I2PD19668 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

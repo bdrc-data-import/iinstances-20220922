@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20567 {
+    bda:I8LS20569  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20569 ;
+        adm:logEntry        bda:LG43184AA49C15F360 , bda:LGF9740A4854B44743 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG43184AA49C15F360
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:55.228Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC2BF9A0A0EC719AB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:57:39.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF9740A4854B44743
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:57:39.26Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20567  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20567 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8b/W8LS20567.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20567 ;
+        adm:logEntry        bda:LGC2BF9A0A0EC719AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20569  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of kru'u ta'e yi gtam rgyud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   420 .
+    
+    bdr:ID974E6A0A27270ADA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743014" .
+    
+    bdr:W8LS20567  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID974E6A0A27270ADA ;
+        :instanceHasVolume  bdr:I8LS20569 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ368797 {
+    bda:I4CZ368986  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ368986 ;
+        adm:logEntry        bda:LG6B829E55ECFE1D5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG4310DED9897EFBE9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:05:05.259Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6B829E55ECFE1D5D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-25T10:05:05.093Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ368797  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ368797 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b7/W4CZ368797.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ368797 ;
+        adm:logEntry        bda:LG4310DED9897EFBE9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ368986  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi yul skad zhib 'jug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ368797  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ368986 ;
+        :numberOfVolumes    1 .
+}

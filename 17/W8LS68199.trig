@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68199 {
+    bda:I8LS68201  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68201 ;
+        adm:logEntry        bda:LG859D609E285A00C4 , bda:LGIM4C6EE59F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG859D609E285A00C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-28T10:29:48.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB07E7A4556E6316A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-28T10:29:48.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM4C6EE59F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-04T23:24:17.746Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68199  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68199 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "17/W8LS68199.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68199 ;
+        adm:logEntry        bda:LGB07E7A4556E6316A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68201  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of srid phyod smra ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   233 .
+    
+    bdr:ID4797374BCDE0CF55
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743770" .
+    
+    bdr:W8LS68199  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4797374BCDE0CF55 ;
+        :instanceHasVolume  bdr:I8LS68201 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

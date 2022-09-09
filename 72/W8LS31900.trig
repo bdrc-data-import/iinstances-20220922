@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS31900 {
+    bda:I8LS31953  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS31953 ;
+        adm:logEntry        bda:LGD46DAF1AD1BF9749 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG6028C9A7B397F363
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-02T10:53:56.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD46DAF1AD1BF9749
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-02T10:53:55.981Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS31900  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS31900 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "72/W8LS31900.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS31900 ;
+        adm:logEntry        bda:LG6028C9A7B397F363 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS31953  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dge slong gi phyir bcos dang thun drug rnal 'byor la sogs thor bu 'ga'/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS31900  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I8LS31953 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

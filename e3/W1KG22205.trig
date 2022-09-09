@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG22205 {
+    bda:I1KG22251  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22251 ;
+        adm:logEntry        bda:LG452B1A345612EC41 , bda:LG732E858A2EE8FE3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG452B1A345612EC41
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-10T23:18:48.116Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG732E858A2EE8FE3F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-07-09T14:39:00.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9EB313D8CBF51954
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-07-09T14:39:00.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG22205  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG22205 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e3/W1KG22205.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG22205 ;
+        adm:logEntry        bda:LG9EB313D8CBF51954 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG22251  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rdo rje gcod pa'i mdo dang rdo rje gcod pa'i 'grel pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   218 .
+    
+    bdr:ID77207C9F2AE1988F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147747290" .
+    
+    bdr:W1KG22205  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID77207C9F2AE1988F ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG22251 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2015"@en .
+}

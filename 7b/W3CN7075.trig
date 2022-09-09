@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7075 {
+    bda:I3CN7077  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7077 ;
+        adm:logEntry        bda:LG275EAD3FF1940EB7 , bda:LG8CB5A1072128EADF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG128A33AB5489345E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T12:01:39.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG275EAD3FF1940EB7
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-01T23:13:17.275Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8CB5A1072128EADF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T12:01:39.698Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN7075  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN7075 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7b/W3CN7075.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7075 ;
+        adm:logEntry        bda:LG128A33AB5489345E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7077  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mtsho sna dgon rtse dga' ldan rab rgyas gling gi lo rgyus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   90 .
+    
+    bdr:IDB5E54BF7980617A2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711046" .
+    
+    bdr:W3CN7075  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB5E54BF7980617A2 ;
+        :instanceHasVolume  bdr:I3CN7077 ;
+        :numberOfVolumes    1 .
+}

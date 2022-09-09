@@ -1,0 +1,133 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66466 {
+    bda:I8LS66473  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66473 ;
+        adm:logEntry        bda:LGC024E46FC1F989BA , bda:LGIM3746D834 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS66474  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66474 ;
+        adm:logEntry        bda:LG71230B5F0CD75A65 , bda:LGIM306C28DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS66475  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66475 ;
+        adm:logEntry        bda:LG109C104C3287088B , bda:LGIMAB5231E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS66476  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66476 ;
+        adm:logEntry        bda:LG9B27BC6DB7E55F1F , bda:LGIM90323502 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG109C104C3287088B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-15T10:10:06.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG71230B5F0CD75A65
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-15T10:10:06.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9B27BC6DB7E55F1F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-15T10:10:07.089Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA6D750FA458E40ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-15T10:10:07.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC024E46FC1F989BA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-15T10:10:06.767Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM306C28DD  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-12T20:27:53.245Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3746D834  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-12T20:27:52.881Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM90323502  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-12T20:27:54.096Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAB5231E0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-12T20:27:53.725Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66466  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS66466 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "28/W8LS66466.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66466 ;
+        adm:logEntry        bda:LGA6D750FA458E40ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS66473  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dul TIka nyi ma'i dkyil 'khor/stod cha dang smad cha/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   358 .
+    
+    bdr:I8LS66474  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of 'dul TIka nyi ma'i dkyil 'khor/stod cha dang smad cha/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   564 .
+    
+    bdr:I8LS66475  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of 'dul TIka nyi ma'i dkyil 'khor/stod cha dang smad cha/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   572 .
+    
+    bdr:I8LS66476  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of 'dul TIka nyi ma'i dkyil 'khor/stod cha dang smad cha/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   522 .
+    
+    bdr:W8LS66466  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS66473 , bdr:I8LS66474 , bdr:I8LS66475 , bdr:I8LS66476 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No.D30546,D30547"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

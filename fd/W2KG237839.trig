@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG237839 {
+    bda:I2KG238017  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238017 ;
+        adm:logEntry        bda:LGEBFF454EEBDD3023 , bda:LGIMD55F2451 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG238018  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238018 ;
+        adm:logEntry        bda:LG9C71EE84E824161B , bda:LGIM207FB588 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG238019  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238019 ;
+        adm:logEntry        bda:LGD2283B764806A9A3 , bda:LGIMA3E93EFC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C71EE84E824161B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:34:11.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD2283B764806A9A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:34:11.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD40B545AF40D9EDC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T06:34:12.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEBFF454EEBDD3023
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:34:11.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM207FB588  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:13:28.963Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA3E93EFC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:13:29.16Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD55F2451  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:13:28.697Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG237839  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG237839 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "fd/W2KG237839.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG237839 ;
+        adm:logEntry        bda:LGD40B545AF40D9EDC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG238017  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of phar phyin spyi don skal bzang klu dbang gi rol mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   532 .
+    
+    bdr:I2KG238018  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of phar phyin spyi don skal bzang klu dbang gi rol mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   540 .
+    
+    bdr:I2KG238019  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of phar phyin spyi don skal bzang klu dbang gi rol mtsho/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   418 .
+    
+    bdr:W2KG237839  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG238017 , bdr:I2KG238018 , bdr:I2KG238019 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+}

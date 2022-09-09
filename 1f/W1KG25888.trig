@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25888 {
+    bda:I1KG25890  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25890 ;
+        adm:logEntry        bda:LG4E7B6601F3D8316E , bda:LG5E59A6CC80C0FAFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F3525EFCBE0BA3C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T15:03:19.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4E7B6601F3D8316E
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:10:43.947Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5E59A6CC80C0FAFE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T15:03:19.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25888  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25888 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1f/W1KG25888.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25888 ;
+        adm:logEntry        bda:LG2F3525EFCBE0BA3C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25890  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mgo log sder nang sa bris/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   210 .
+    
+    bdr:IDDDAFD5DEB93B2BBF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147736490" .
+    
+    bdr:W1KG25888  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDDAFD5DEB93B2BBF ;
+        :instanceHasVolume  bdr:I1KG25890 ;
+        :numberOfVolumes    1 .
+}

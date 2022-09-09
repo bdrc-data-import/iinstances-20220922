@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68030 {
+    bda:I8LS68032  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68032 ;
+        adm:logEntry        bda:LGEFA9B5703DB21638 , bda:LGIM7D24F450 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5139CB0667BDD096
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T09:18:09.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEFA9B5703DB21638
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-12T09:18:09.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM7D24F450  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-16T00:21:15.354Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68030  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68030 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "01/W8LS68030.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68030 ;
+        adm:logEntry        bda:LG5139CB0667BDD096 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68032  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdo sngags rgyud sde rab 'byams kyi go don dka' gnad lhug dkrol gyi bshad pa rgyun gyi nyams len nyer mkho sna tshogs btus pa sbrang rtsi bcud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   450 .
+    
+    bdr:W8LS68030  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS68032 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

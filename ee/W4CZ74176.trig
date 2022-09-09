@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74176 {
+    bda:I4CZ74223  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74223 ;
+        adm:logEntry        bda:LG968D819D9B998ADB , bda:LG9EAF453311D4D268 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7CBE42F579820D60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-05T13:59:31.227Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG968D819D9B998ADB
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:13:53.739Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9EAF453311D4D268
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-05T13:59:31.126Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ74176  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74176 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ee/W4CZ74176.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74176 ;
+        adm:logEntry        bda:LG7CBE42F579820D60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74223  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtsa shes rnam bshad rigs pa'i rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   864 .
+    
+    bdr:W4CZ74176  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I4CZ74223 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG3866 {
+    bda:I1KG3942  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG3942 ;
+        adm:logEntry        bda:LG46924C588FC8F9E8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG46924C588FC8F9E8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-11-16T15:10:32.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDA3AEDF85360CB96
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-11-16T15:10:34.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG3866  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG3866 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/W1KG3866.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG3866 ;
+        adm:logEntry        bda:LGDA3AEDF85360CB96 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG3942  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of theg pa mtha' dag gi snying po mdo tsam brjod pa chos kyi sgo 'byed"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   20 .
+    
+    bdr:W1KG3866  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC11 ;
+        :instanceHasVolume  bdr:I1KG3942 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2009"@en .
+}

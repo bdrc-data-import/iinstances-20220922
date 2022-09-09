@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4915 {
+    bda:I3CN4917  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4917 ;
+        adm:logEntry        bda:LG0C2E33B6CECD1512 , bda:LG40D15EE67F4D8E02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C2E33B6CECD1512
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T11:55:36.856Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG40D15EE67F4D8E02
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:41.761Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA0B73BD8B86C54F2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:55:36.956Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4915  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4915 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "69/W3CN4915.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4915 ;
+        adm:logEntry        bda:LGA0B73BD8B86C54F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4917  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of klong chen snying thig gi blo sbyong zhag brgya'i sgom rim rin chen bang mdzod thar pa'i them skas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   302 .
+    
+    bdr:W3CN4915  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4917 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN496 {
+    bda:I3CN3748  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3748 ;
+        adm:logEntry        bda:LG9DB98B026FA6208C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG9DB98B026FA6208C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T15:59:53.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN496  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN496 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "bc/W3CN496.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN496 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I3CN3748  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of brda sprod dpe rnying /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN496  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3748 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

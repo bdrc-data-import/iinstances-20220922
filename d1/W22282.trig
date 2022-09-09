@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22282 {
+    bda:I1KG11668  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG11668 ;
+        adm:logEntry        bda:LGBEFED8B484026E67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG61727D3B3F905658
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-11-29T12:48:07.2Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBEFED8B484026E67
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-11-29T12:48:06.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W22282  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W22282 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "d1/W22282.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22282 ;
+        adm:logEntry        bda:LG61727D3B3F905658 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG11668  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of grub thob brgyad bcu rtsa bzhi'i rnam thar"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W22282  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG11668 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 11/2011"@en .
+}

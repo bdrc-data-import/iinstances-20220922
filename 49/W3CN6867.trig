@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6867 {
+    bda:I3CN6869  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6869 ;
+        adm:logEntry        bda:LG1401CC6C052866E9 , bda:LG81597E46AEB8A68D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1401CC6C052866E9
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-05T01:03:48.522Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7A5FC1086E20FE9E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T08:53:36.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81597E46AEB8A68D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T08:53:36.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6867  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6867 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "49/W3CN6867.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6867 ;
+        adm:logEntry        bda:LG7A5FC1086E20FE9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6869  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chos 'khor dpal gyi bsam yas mchod rten rnams kyi dkar chag kun gsal me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   236 .
+    
+    bdr:W3CN6867  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6869 ;
+        :numberOfVolumes    1 .
+}

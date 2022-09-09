@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18180 {
+    bda:I8LS18189  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18189 ;
+        adm:logEntry        bda:LGD096667E1C889DA4 , bda:LGFD66D9FE99FA6422 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG440431970D5FEC10
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-03T12:02:20.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD096667E1C889DA4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-03T12:02:20.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFD66D9FE99FA6422
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-31T22:35:31.258Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18180  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18180 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1a/W8LS18180.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18180 ;
+        adm:logEntry        bda:LG440431970D5FEC10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18189  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mi dge ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   47 .
+    
+    bdr:ID6105A28AB94BA59A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147751653" .
+    
+    bdr:W8LS18180  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6105A28AB94BA59A ;
+        :instanceHasVolume  bdr:I8LS18189 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

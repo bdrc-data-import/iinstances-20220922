@@ -1,0 +1,111 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1GS45274 {
+    bda:I1GS66283  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1GS66283 ;
+        adm:logEntry        bda:LGBD1E46DCB5270968 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1GS66284  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1GS66284 ;
+        adm:logEntry        bda:LGC51B7AE1E874D2E5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1GS66285  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1GS66285 ;
+        adm:logEntry        bda:LG143611C6D9392D96 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG143611C6D9392D96
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-18T01:12:27.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG85C7BF2D6E222CD6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-18T01:12:27.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBD1E46DCB5270968
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-18T01:12:27.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC51B7AE1E874D2E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-18T01:12:27.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1GS45274  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1GS45274 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "5e/W1GS45274.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1GS45274 ;
+        adm:logEntry        bda:LG85C7BF2D6E222CD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1GS66283  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/_tshe dbang nor bu"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   908 .
+    
+    bdr:I1GS66284  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/_tshe dbang nor bu"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   754 .
+    
+    bdr:I1GS66285  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/_tshe dbang nor bu"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   678 .
+    
+    bdr:W1GS45274  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC14 ;
+        :instanceHasReproduction  bdr:IE1GS45274 ;
+        :instanceHasVolume  bdr:I1GS66283 , bdr:I1GS66284 , bdr:I1GS66285 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: tbh 14/11/07 #3"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG22686 {
+    bda:I1KG23059  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23059 ;
+        adm:logEntry        bda:LG0D843DE0F21DDDC5 , bda:LG2DB1ABC4A80B8A86 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D843DE0F21DDDC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-04T16:11:26.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2DB1ABC4A80B8A86
+        a                   adm:Synced ;
+        adm:logDate         "2016-07-01T19:17:12.752Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGCBC140435BB0D2A2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-04T16:11:26.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG22686  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG22686 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/W1KG22686.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG22686 ;
+        adm:logEntry        bda:LGCBC140435BB0D2A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23059  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mgon po tshogs bdag gi mngon rtog chung ba sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1328 .
+    
+    bdr:W1KG22686  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23059 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

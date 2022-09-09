@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137812 {
+    bda:I2PD19616  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19616 ;
+        adm:logEntry        bda:LG3D57ECEB294B63B6 , bda:LGCCB9C67AAD54C67A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D57ECEB294B63B6
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-20T01:11:18.546Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4B375121FECDA34A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-07T05:42:03.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCCB9C67AAD54C67A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-07T05:42:03.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137812  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137812 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3d/W1PD137812.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137812 ;
+        adm:logEntry        bda:LG4B375121FECDA34A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19616  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rA ma Ni'i rtogs brjod/ gzhon nu'i dus kyi kyi rtogs brjod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   528 .
+    
+    bdr:W1PD137812  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD19616 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

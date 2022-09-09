@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68253 {
+    bda:I8LS68255  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68255 ;
+        adm:logEntry        bda:LG3B129A8F8E76A62A , bda:LGIM442C168B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B129A8F8E76A62A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T15:45:07.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGAF68BD4E29FE87AB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-30T15:45:07.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM442C168B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-04T23:24:21.821Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68253  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68253 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/W8LS68253.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68253 ;
+        adm:logEntry        bda:LGAF68BD4E29FE87AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68255  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skye dngos rigs pa'i ched rtsom thor btus blo gsal dpyid kyi myu gu'i rang mdangs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   205 .
+    
+    bdr:ID98740A729C32D5FF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715885" .
+    
+    bdr:W8LS68253  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID98740A729C32D5FF ;
+        :instanceHasVolume  bdr:I8LS68255 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

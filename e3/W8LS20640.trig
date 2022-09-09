@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20640 {
+    bda:I8LS20642  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20642 ;
+        adm:logEntry        bda:LG61D505787A8343AF , bda:LGB471A36F9C19CC9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG38549C61BA0CA022
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:24:14.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG61D505787A8343AF
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:46:11.524Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB471A36F9C19CC9A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T14:24:14.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20640  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20640 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e3/W8LS20640.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20640 ;
+        adm:logEntry        bda:LG38549C61BA0CA022 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20642  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtsa sman kha shas 'debs 'dzugs lag rtsal/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   123 .
+    
+    bdr:W8LS20640  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20642 ;
+        :numberOfVolumes    1 .
+}

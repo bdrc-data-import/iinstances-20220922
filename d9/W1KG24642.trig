@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24642 {
+    bda:I1KG24691  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24691 ;
+        adm:logEntry        bda:LGC163BD1E2139311F , bda:LGIM66CEF3C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC163BD1E2139311F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T14:42:22.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE5B84469AFA594BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T14:42:22.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM66CEF3C4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-21T01:42:47.614Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG24642  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG24642 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d9/W1KG24642.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24642 ;
+        adm:logEntry        bda:LGE5B84469AFA594BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24691  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sum rtags bsdus don go sla'i rnam gzhag/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   176 .
+    
+    bdr:W1KG24642  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24691 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

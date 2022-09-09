@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ367186 {
+    bda:I4CZ367287  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367287 ;
+        adm:logEntry        bda:LG3E43A3F6D1CBEDEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ367288  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367288 ;
+        adm:logEntry        bda:LG61B03E34A178399C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ367289  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367289 ;
+        adm:logEntry        bda:LGFFABDBA8CA8C8366 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2E7D848047AAB50C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:15:49.314Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG3E43A3F6D1CBEDEE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:48.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG61B03E34A178399C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:48.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFFABDBA8CA8C8366
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:49.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ367186  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ367186 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "07/W4CZ367186.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ367186 ;
+        adm:logEntry        bda:LG2E7D848047AAB50C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ367287  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dgon sde khag gi lo rgyus 'od ldan nor bu'i thang ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ367288  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of dgon sde khag gi lo rgyus 'od ldan nor bu'i thang ma/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ367289  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of dgon sde khag gi lo rgyus 'od ldan nor bu'i thang ma/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ367186  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ367287 , bdr:I4CZ367288 , bdr:I4CZ367289 ;
+        :numberOfVolumes    3 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5048 {
+    bda:I3CN5050  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5050 ;
+        adm:logEntry        bda:LG66EBE6A522B436F5 , bda:LG697E63AE9965050D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4BD36700A53962B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:33:42.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG66EBE6A522B436F5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T12:33:42.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG697E63AE9965050D
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-12T14:48:36.015Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5048  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5048 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "63/W3CN5048.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5048 ;
+        adm:logEntry        bda:LG4BD36700A53962B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5050  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of yi ge'i 'jug sgo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   100 .
+    
+    bdr:W3CN5048  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5050 ;
+        :numberOfVolumes    1 .
+}

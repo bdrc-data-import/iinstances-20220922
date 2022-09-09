@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24036 {
+    bda:I1KG24186  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24186 ;
+        adm:logEntry        bda:LG7A47ACBF6541DCD2 , bda:LGA4D6ADDC46660979 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7A47ACBF6541DCD2
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-16T00:02:31.748Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA4D6ADDC46660979
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-08T10:56:46.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFA7E0BE98B5BE891
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-08T10:56:46.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24036  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24036 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6b/W1KG24036.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24036 ;
+        adm:logEntry        bda:LGFA7E0BE98B5BE891 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24186  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ri mor bltas nas bsam blo gtong rgyu/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   44 .
+    
+    bdr:W1KG24036  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG24186 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2016"@en .
+}

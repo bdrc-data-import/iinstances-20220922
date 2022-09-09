@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159446 {
+    bda:I4PD4221  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4221 ;
+        adm:logEntry        bda:LGAC3283945A74FFEB , bda:LGE4188F56B04AAB75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9065909F1101AD32
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T17:33:13.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAC3283945A74FFEB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T17:33:12.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE4188F56B04AAB75
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:40.35Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1PD159446  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159446 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d7/W1PD159446.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159446 ;
+        adm:logEntry        bda:LG9065909F1101AD32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4221  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 八大传统藏戏 （汉文版）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   572 .
+    
+    bdr:ID867903DF461E3F8C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722074" .
+    
+    bdr:W1PD159446  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID867903DF461E3F8C ;
+        :instanceHasVolume  bdr:I4PD4221 ;
+        :numberOfVolumes    1 .
+}

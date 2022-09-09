@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD19092 {
+    bda:I2PD20272  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20272 ;
+        adm:logEntry        bda:LG2875B6FBDC900883 , bda:LG984D64E4EE6A33DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2875B6FBDC900883
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-17T21:08:48.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG63F034A148E5E178
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-17T21:08:49.499Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG984D64E4EE6A33DA
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:51.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD19092  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD19092 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "59/W2PD19092.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD19092 ;
+        adm:logEntry        bda:LG63F034A148E5E178 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20272  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi dgon sde grags can/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   246 .
+    
+    bdr:ID83FF811A21236B6D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714421" .
+    
+    bdr:W2PD19092  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID83FF811A21236B6D ;
+        :instanceHasVolume  bdr:I2PD20272 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD133159 {
+    bda:I2PD19047  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19047 ;
+        adm:logEntry        bda:LGB7A64FDB038A643A , bda:LGCF434E3E8F85FEA8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAB126209D712C1D1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T05:12:30.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB7A64FDB038A643A
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-20T01:11:07.303Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGCF434E3E8F85FEA8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T05:12:29.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD133159  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD133159 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/W1PD133159.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD133159 ;
+        adm:logEntry        bda:LGAB126209D712C1D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19047  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gzhon nu drug gi rtogs brjod/ (dbyin bod shan sbyar/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   262 .
+    
+    bdr:W1PD133159  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD19047 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

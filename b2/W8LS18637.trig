@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18637 {
+    bda:I8LS18639  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18639 ;
+        adm:logEntry        bda:LG89A1D28F0E61F18B , bda:LGEB5BE57FCB5690A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG89A1D28F0E61F18B
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:05:39.898Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC161E1CF2DF2759B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:32:07.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEB5BE57FCB5690A7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:32:06.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18637  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18637 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b2/W8LS18637.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18637 ;
+        adm:logEntry        bda:LGC161E1CF2DF2759B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18639  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhe sa'i tshig mdzod rab gsal me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   441 .
+    
+    bdr:ID7834EF76FDAE2742
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714570" .
+    
+    bdr:W8LS18637  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7834EF76FDAE2742 ;
+        :instanceHasVolume  bdr:I8LS18639 ;
+        :numberOfVolumes    1 .
+}

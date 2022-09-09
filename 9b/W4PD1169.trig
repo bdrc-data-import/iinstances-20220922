@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4PD1169 {
+    bda:I4PD1171  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1171 ;
+        adm:logEntry        bda:LG07E22B14595AD2AC , bda:LG07FAAA26D910E756 , bda:LGCC49729D96012FD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1172  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1172 ;
+        adm:logEntry        bda:LG1BC6A93897A779D9 , bda:LG926B9813ADD50AC1 , bda:LGE24B62A56823B8A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07E22B14595AD2AC
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-01-13T00:57:22.413Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG07FAAA26D910E756
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-09T13:12:47.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG1BC6A93897A779D9
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-09T22:04:37.594Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG926B9813ADD50AC1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-09T13:12:49.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC40279B65C173866
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-09T13:12:50.625Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCC49729D96012FD6
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-09T22:04:37.378Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE24B62A56823B8A5
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-01-13T00:57:22.631Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W4PD1169  a         adm:AdminData ;
+        adm:access          bda:AccessRestrictedSealed ;
+        adm:adminAbout      bdr:W4PD1169 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9b/W4PD1169.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4PD1169 ;
+        adm:logEntry        bda:LGC40279B65C173866 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1171  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of thang rgyal snyan brgyud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   626 .
+    
+    bdr:I4PD1172  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of thang rgyal snyan brgyud/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   572 .
+    
+    bdr:W4PD1169  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD1171 , bdr:I4PD1172 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

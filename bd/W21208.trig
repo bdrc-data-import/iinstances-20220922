@@ -1,0 +1,146 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W21208 {
+    bda:I3492  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3492 ;
+        adm:logEntry        bda:LGFFCB79DEC328921F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3493  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3493 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3494  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3494 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3495  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3495 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3496  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3496 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3497  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3497 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3498  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3498 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3499  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3499 ;
+        adm:logEntry        bda:LGF5FF7105750F3250 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGF5FF7105750F3250
+        a                   adm:ContentQC ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFFCB79DEC328921F
+        a                   adm:ContentQC ;
+        adm:logDate         "0004-12"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00068 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W21208  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W21208 ;
+        adm:facetIndex      27 ;
+        adm:gitPath         "bd/W21208.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W21208 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3492  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   632 .
+    
+    bdr:I3493  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   402 .
+    
+    bdr:I3494  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   744 .
+    
+    bdr:I3495  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   670 .
+    
+    bdr:I3496  a            :ImageGroup ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   620 .
+    
+    bdr:I3497  a            :ImageGroup ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   728 .
+    
+    bdr:I3498  a            :ImageGroup ;
+        :volumeNumber       7 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   646 .
+    
+    bdr:I3499  a            :ImageGroup ;
+        :volumeNumber       8 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   828 .
+    
+    bdr:W21208  a           :ImageInstance ;
+        :inCollection       bdr:PR01JW33478 , bdr:PR03DCN1 , bdr:PRHD02 ;
+        :instanceHasVolume  bdr:I3492 , bdr:I3493 , bdr:I3494 , bdr:I3495 , bdr:I3496 , bdr:I3497 , bdr:I3498 , bdr:I3499 ;
+        :numberOfVolumes    8 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en , "TBRC NY"@en .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ58782 {
+    bda:I2PD20469  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20469 ;
+        adm:logEntry        bda:LG537E3CED2B23D482 , bda:LGD7EC7DCCF4D52256 , bda:LGF3654AC1B0BBA3EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1065ADDA248B64BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-03-02T02:48:16.879Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG537E3CED2B23D482
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-02T02:48:16.062Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD7EC7DCCF4D52256
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-06-14T00:04:01.181Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF3654AC1B0BBA3EC
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T07:08:39.991Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ58782  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ58782 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/W4CZ58782.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ58782 ;
+        adm:logEntry        bda:LG1065ADDA248B64BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20469  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rnam rgyal gzhung sgrub dang g.yang sgrub stong mchod bcas kyi zin tho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   734 .
+    
+    bdr:W4CZ58782  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD20469 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

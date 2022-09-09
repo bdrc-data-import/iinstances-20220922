@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25530 {
+    bda:I1KG25532  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25532 ;
+        adm:logEntry        bda:LG2F3F543E321E0324 , bda:LG3CB91B40869581BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F3F543E321E0324
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:25.04Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3CB91B40869581BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-13T16:49:18.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5FB1713F22CA2F5B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-13T16:49:18.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25530  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25530 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b3/W1KG25530.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25530 ;
+        adm:logEntry        bda:LG5FB1713F22CA2F5B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25532  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mi tshe'i 'grul bzhud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:ID17EA6A878DB23A67
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732444" .
+    
+    bdr:W1KG25530  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID17EA6A878DB23A67 ;
+        :instanceHasVolume  bdr:I1KG25532 ;
+        :numberOfVolumes    1 .
+}

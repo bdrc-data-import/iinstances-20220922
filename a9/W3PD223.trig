@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD223 {
+    bda:I2PD18762  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18762 ;
+        adm:logEntry        bda:LG8CBFC94A2452C50C , bda:LGAE33427E075F068D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG801855CB2563C31E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T20:28:21.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8CBFC94A2452C50C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T20:28:20.828Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAE33427E075F068D
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:34.083Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3PD223  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD223 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a9/W3PD223.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD223 ;
+        adm:logEntry        bda:LG801855CB2563C31E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18762  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dngul chu btso bkru chen mo dang rin chen thal bzo sogs kyi lag len skor brjod pa kun phan bdud rtsi'i chu rgyun/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   144 .
+    
+    bdr:W3PD223  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18762 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

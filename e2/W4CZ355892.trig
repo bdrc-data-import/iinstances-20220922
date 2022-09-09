@@ -1,0 +1,156 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ355892 {
+    bda:I4CZ364108  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364108 ;
+        adm:logEntry        bda:LGBC95E9261F2A2D6E , bda:LGIMC545C1F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ364109  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364109 ;
+        adm:logEntry        bda:LGF696C300F4321A65 , bda:LGIM172573A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ364110  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364110 ;
+        adm:logEntry        bda:LG89C7CE10BE3C7D2F , bda:LGIMBA4E9CF3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ364111  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364111 ;
+        adm:logEntry        bda:LG26B663AA89581E04 , bda:LGIM3D013762 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ364112  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364112 ;
+        adm:logEntry        bda:LGDF01E8E817C9B99A , bda:LGIME079DCC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG26B663AA89581E04
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-06T12:37:51.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG8792E78FA2EEFB0A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-06T12:37:51.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG89C7CE10BE3C7D2F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-06T12:37:51.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBC95E9261F2A2D6E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-06T12:37:50.724Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDF01E8E817C9B99A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-06T12:37:51.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF696C300F4321A65
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-06T12:37:50.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM172573A0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:45:44.357Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3D013762  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:45:44.872Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBA4E9CF3  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:45:44.606Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC545C1F7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:45:44.08Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME079DCC4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:45:45.15Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ355892  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ355892 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "e2/W4CZ355892.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ355892 ;
+        adm:logEntry        bda:LG8792E78FA2EEFB0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ364108  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ khri chen blo bzang bstan pa'i nyi ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   410 .
+    
+    bdr:I4CZ364109  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ khri chen blo bzang bstan pa'i nyi ma/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   396 .
+    
+    bdr:I4CZ364110  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ khri chen blo bzang bstan pa'i nyi ma/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   410 .
+    
+    bdr:I4CZ364111  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/ khri chen blo bzang bstan pa'i nyi ma/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   502 .
+    
+    bdr:I4CZ364112  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of gsung 'bum/ khri chen blo bzang bstan pa'i nyi ma/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   410 .
+    
+    bdr:W4CZ355892  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ364108 , bdr:I4CZ364109 , bdr:I4CZ364110 , bdr:I4CZ364111 , bdr:I4CZ364112 ;
+        :numberOfVolumes    5 .
+}

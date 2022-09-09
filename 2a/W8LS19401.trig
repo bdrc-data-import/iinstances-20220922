@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19401 {
+    bda:I8LS19403  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19403 ;
+        adm:logEntry        bda:LG97B48D69B73E4416 , bda:LGE60DC2CD00D2BF8C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG26A015E52F234DFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T10:14:41.244Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG97B48D69B73E4416
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-13T06:11:40.053Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE60DC2CD00D2BF8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T10:14:41.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19401  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19401 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2a/W8LS19401.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19401 ;
+        adm:logEntry        bda:LG26A015E52F234DFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19403  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tshe mdo'i 'grel pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   36 .
+    
+    bdr:W8LS19401  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19403 ;
+        :numberOfVolumes    1 .
+}

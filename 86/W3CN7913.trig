@@ -1,0 +1,157 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7913 {
+    bda:I3CN7915  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7915 ;
+        adm:logEntry        bda:LG21292F37406F4700 , bda:LG38E272368A96F196 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7916  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7916 ;
+        adm:logEntry        bda:LG6269A3F5D288E477 , bda:LGB18F569EAF367C58 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7917  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7917 ;
+        adm:logEntry        bda:LG8380C5FCB7056C1B , bda:LGF6B69A30AFD92654 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7918  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7918 ;
+        adm:logEntry        bda:LG964C6170C21D699C , bda:LG9F84E60B03B83745 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7919  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7919 ;
+        adm:logEntry        bda:LG2F815EE21E867014 , bda:LG3BB34969CD22FE41 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21292F37406F4700
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:35.785Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2F815EE21E867014
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:36.985Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG38E272368A96F196
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:16:58.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3BB34969CD22FE41
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:16:59.112Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6269A3F5D288E477
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:16:58.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8380C5FCB7056C1B
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:36.418Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG964C6170C21D699C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:16:59.028Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F84E60B03B83745
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:36.688Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB18F569EAF367C58
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:36.059Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD313191DB0EAE051
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:16:59.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6B69A30AFD92654
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:16:58.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN7913  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN7913 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "86/W3CN7913.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7913 ;
+        adm:logEntry        bda:LGD313191DB0EAE051 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7915  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of khri gung thang sku phreng drug pa'i gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   374 .
+    
+    bdr:I3CN7916  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of khri gung thang sku phreng drug pa'i gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   310 .
+    
+    bdr:I3CN7917  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of khri gung thang sku phreng drug pa'i gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   442 .
+    
+    bdr:I3CN7918  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of khri gung thang sku phreng drug pa'i gsung 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   358 .
+    
+    bdr:I3CN7919  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of khri gung thang sku phreng drug pa'i gsung 'bum/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   194 .
+    
+    bdr:W3CN7913  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN7915 , bdr:I3CN7916 , bdr:I3CN7917 , bdr:I3CN7918 , bdr:I3CN7919 ;
+        :numberOfVolumes    5 .
+}

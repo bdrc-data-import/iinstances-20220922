@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC6 {
+    bda:I2PD18857  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18857 ;
+        adm:logEntry        bda:LG97310834C02ADB3F , bda:LGB01F0366BA803514 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG97310834C02ADB3F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T03:55:08.632Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB01F0366BA803514
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-27T02:52:49.999Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC253E9FE7B193CF1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T03:55:09.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC6  a            adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC6 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c5/W1AC6.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC6 ;
+        adm:logEntry        bda:LGC253E9FE7B193CF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18857  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dge lugs pa'i grub mtha' spyi bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   364 .
+    
+    bdr:IDAA376BE20810BEDA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720972" .
+    
+    bdr:W1AC6  a            :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAA376BE20810BEDA ;
+        :instanceHasVolume  bdr:I2PD18857 ;
+        :numberOfVolumes    1 .
+}

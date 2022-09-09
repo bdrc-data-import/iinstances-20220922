@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6946 {
+    bda:I3CN6948  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6948 ;
+        adm:logEntry        bda:LG7116F87B183789A9 , bda:LGDAD776C12F17C2F3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C7B229A9D8A9233
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:28:29.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7116F87B183789A9
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:33.948Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDAD776C12F17C2F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:28:29.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6946  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6946 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9d/W3CN6946.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6946 ;
+        adm:logEntry        bda:LG2C7B229A9D8A9233 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6948  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zhal 'don phyogs bsdus thar lam bgrod pa'i them skas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   428 .
+    
+    bdr:W3CN6946  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6948 ;
+        :numberOfVolumes    1 .
+}

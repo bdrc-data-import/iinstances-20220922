@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5673 {
+    bda:I3CN5675  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5675 ;
+        adm:logEntry        bda:LGAB7B008A7A509A97 , bda:LGAE005B9EAE142D3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAB7B008A7A509A97
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T16:03:03.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAE005B9EAE142D3B
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:54:04.37Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC0B3ECD588C9B46B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T16:03:03.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5673  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN5673 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/W3CN5673.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5673 ;
+        adm:logEntry        bda:LGC0B3ECD588C9B46B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5675  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of tshad ma rig pa'i spyi don/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   604 .
+    
+    bdr:ID5943D030513DB3CF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715535" .
+    
+    bdr:W3CN5673  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5943D030513DB3CF ;
+        :instanceHasVolume  bdr:I3CN5675 ;
+        :numberOfVolumes    1 .
+}

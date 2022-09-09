@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5285 {
+    bda:I3CN5287  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5287 ;
+        adm:logEntry        bda:LG33567D0751C39472 , bda:LG3D1A96A04758D883 , bda:LGC8203F7297B093E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CEB9814A932246C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:50:39.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG33567D0751C39472
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-10-30T22:24:57.404Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG3D1A96A04758D883
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T16:50:39.797Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC8203F7297B093E7
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:04.067Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5285  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5285 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8b/W3CN5285.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5285 ;
+        adm:logEntry        bda:LG2CEB9814A932246C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5287  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi sa dge bka' rnying jo nang g.yung drung bon dang bcas pa'i skyes chen dam pa rnamasakyi rnam thar phyogs bsgrigs chen mo ris med bstan pa'i gsal byed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   582 .
+    
+    bdr:W3CN5285  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC14 ;
+        :instanceHasVolume  bdr:I3CN5287 ;
+        :numberOfVolumes    1 .
+}

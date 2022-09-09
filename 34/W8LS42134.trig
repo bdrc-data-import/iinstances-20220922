@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS42134 {
+    bda:I8LS42148  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42148 ;
+        adm:logEntry        bda:LGD8C7A04406A52AB4 , bda:LGIMC5F8DD9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7A4F3E99F01424E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-20T11:42:22.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD8C7A04406A52AB4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-20T11:42:22.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMC5F8DD9E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-04-28T20:38:50.508Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS42134  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS42134 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "34/W8LS42134.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS42134 ;
+        adm:logEntry        bda:LG7A4F3E99F01424E3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS42148  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of stobs shugs de de yin/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:W8LS42134  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS42148 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No. D30156"@en .
+}

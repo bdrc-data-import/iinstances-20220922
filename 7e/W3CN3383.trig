@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3383 {
+    bda:I3CN3467  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3467 ;
+        adm:logEntry        bda:LG59D07DBAE198D4B6 , bda:LGA312622842C91B8C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3915C1CBA8C77D63
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:33:05.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG59D07DBAE198D4B6
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:36:36.8Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA312622842C91B8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T11:33:05.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3383  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3383 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7e/W3CN3383.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3383 ;
+        adm:logEntry        bda:LG3915C1CBA8C77D63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3467  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mngon pa legs bshad rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   678 .
+    
+    bdr:W3CN3383  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3467 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

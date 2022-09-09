@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ302350 {
+    bda:I4CZ302431  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ302431 ;
+        adm:logEntry        bda:LG04F8957406B39F45 , bda:LGB906471B8980954C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04F8957406B39F45
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-05T14:11:15.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG71D24F95F4DD2124
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-05T14:11:16.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB906471B8980954C
+        a                   adm:Synced ;
+        adm:logDate         "2018-03-19T15:33:43.208Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ302350  a       adm:AdminData ;
+        adm:access          bda:AccessRestrictedTemporarily ;
+        adm:adminAbout      bdr:W4CZ302350 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "39/W4CZ302350.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ302350 ;
+        adm:logEntry        bda:LG71D24F95F4DD2124 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ302431  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dbang chen rol pa'i nags khrod du bsgrub pa nan tan gyi 'khor lo la gzhol ba'i rtogs brjod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   147 .
+    
+    bdr:W4CZ302350  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ302431 ;
+        :numberOfVolumes    1 .
+}

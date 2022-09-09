@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18562 {
+    bda:I8LS18564  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18564 ;
+        adm:logEntry        bda:LG6238163EF76647D4 , bda:LGB921568C40D59338 , bda:LGIM945D624D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6238163EF76647D4
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:25.309Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB921568C40D59338
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:15:39.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE3E58FDD7B86086B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:15:40.049Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM945D624D  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-04T23:24:12.666Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18562  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18562 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8a/W8LS18562.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18562 ;
+        adm:logEntry        bda:LGE3E58FDD7B86086B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18564  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mjug don yongs gtad/ bcos sgrig ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   167 .
+    
+    bdr:IDBEF3ABEC481CE526
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716755" .
+    
+    bdr:W8LS18562  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBEF3ABEC481CE526 ;
+        :instanceHasVolume  bdr:I8LS18564 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

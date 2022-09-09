@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159522 {
+    bda:I2PD19013  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19013 ;
+        adm:logEntry        bda:LG4A4F2FFF7A1823B7 , bda:LGE37935E023078E1D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A4F2FFF7A1823B7
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:44.79Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE37935E023078E1D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T21:44:33.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFC49FD4FA4693A17
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T21:44:34.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD159522  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159522 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "76/W1PD159522.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159522 ;
+        adm:logEntry        bda:LGFC49FD4FA4693A17 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19013  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sgrung gtam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   322 .
+    
+    bdr:IDA0E6975EE692B8AB
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727015" .
+    
+    bdr:W1PD159522  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA0E6975EE692B8AB ;
+        :instanceHasVolume  bdr:I2PD19013 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

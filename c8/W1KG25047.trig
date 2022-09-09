@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25047 {
+    bda:I1KG25049  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25049 ;
+        adm:logEntry        bda:LG1F20F27F05F84DAB , bda:LG82181F826D708F95 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F20F27F05F84DAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:07:12.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG82181F826D708F95
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:53:57.611Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDAA546416FC548E2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:07:12.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25047  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25047 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c8/W1KG25047.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25047 ;
+        adm:logEntry        bda:LGDAA546416FC548E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25049  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya gar gyi slob dpon chen po ka ma la shI las mdzad pa'i bsgom pa la 'jug pa bcas phyogs bsdebs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   130 .
+    
+    bdr:W1KG25047  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG25049 ;
+        :numberOfVolumes    1 .
+}

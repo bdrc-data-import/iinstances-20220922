@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC321 {
+    bda:I2PD18066  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18066 ;
+        adm:logEntry        bda:LG22B7B5002992A045 , bda:LGC66D9B2AC6F7602E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18067  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18067 ;
+        adm:logEntry        bda:LG3E065E286046DDD0 , bda:LG536C056D2CDA297D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18068  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18068 ;
+        adm:logEntry        bda:LG2CDE047ADE362B9C , bda:LGEF6AE28D998CC76D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22B7B5002992A045
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:47.317Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2CDE047ADE362B9C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-12T05:13:35.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3E065E286046DDD0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-12T05:13:34.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG536C056D2CDA297D
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:47.577Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC054AD3E65ECE7DA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-12T05:13:36.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC66D9B2AC6F7602E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-12T05:13:32.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEF6AE28D998CC76D
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:47.857Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC321  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1AC321 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1b/W1AC321.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC321 ;
+        adm:logEntry        bda:LGC054AD3E65ECE7DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18066  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of phyag chen rgya gzhung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   526 .
+    
+    bdr:I2PD18067  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of phyag chen rgya gzhung /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   522 .
+    
+    bdr:I2PD18068  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of phyag chen rgya gzhung /"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   610 .
+    
+    bdr:W1AC321  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18066 , bdr:I2PD18067 , bdr:I2PD18068 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

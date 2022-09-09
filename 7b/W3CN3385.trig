@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3385 {
+    bda:I3CN3471  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3471 ;
+        adm:logEntry        bda:LG412A48355AD342F4 , bda:LGA8CA3BF1ED88C906 , bda:LGIM987EFDA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG412A48355AD342F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T11:34:24.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7819D81F8995AF41
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:34:24.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8CA3BF1ED88C906
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:09:00.97Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM987EFDA1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-23T17:50:07.321Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN3385  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3385 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7b/W3CN3385.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3385 ;
+        adm:logEntry        bda:LG7819D81F8995AF41 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3471  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mngon pa mdzod rtsa 'grel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   502 .
+    
+    bdr:W3CN3385  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3471 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

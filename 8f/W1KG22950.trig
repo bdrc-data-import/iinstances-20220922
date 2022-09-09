@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG22950 {
+    bda:I1KG23016  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23016 ;
+        adm:logEntry        bda:LG036D575E80E978C0 , bda:LG57F3FE4B69ECC1E8 , bda:LGB399860B8A13CE31 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG036D575E80E978C0
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-05-23T20:41:28.853Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG2DB52271AF0FE03E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-29T15:10:54.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG57F3FE4B69ECC1E8
+        a                   adm:Synced ;
+        adm:logDate         "2016-05-23T18:46:01.353Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB399860B8A13CE31
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-29T15:10:54.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG22950  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG22950 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "8f/W1KG22950.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG22950 ;
+        adm:logEntry        bda:LG2DB52271AF0FE03E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23016  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of so skyes skad sgra/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   234 .
+    
+    bdr:ID5D2CAB53917BBE08
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147758106" .
+    
+    bdr:W1KG22950  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5D2CAB53917BBE08 ;
+        :instanceHasVolume  bdr:I1KG23016 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 2/2016"@en .
+}

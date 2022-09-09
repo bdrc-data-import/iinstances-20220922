@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W30422 {
+    bda:I1KG23280  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23280 ;
+        adm:logEntry        bda:LGAF70E03739513025 , bda:LGCBE1371CEAC4E35F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG128AC3C10FCCE5B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-07T10:11:58.591Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAF70E03739513025
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-07T10:11:58.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCBE1371CEAC4E35F
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-06T21:56:38.577Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W30422  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W30422 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f8/W30422.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W30422 ;
+        adm:logEntry        bda:LG128AC3C10FCCE5B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23280  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of shes rig 'tshol ba'i gleng mol/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   248 .
+    
+    bdr:W30422  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23280 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

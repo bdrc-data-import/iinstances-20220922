@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18784 {
+    bda:I8LS18786  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18786 ;
+        adm:logEntry        bda:LG3020AC768BE329E0 , bda:LGA7093B7E38BFB1A7 , bda:LGIM3E407320 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3020AC768BE329E0
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:44.328Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA7093B7E38BFB1A7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T12:53:23.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC89900A5A082C2DC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T12:53:23.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM3E407320  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:48:31.489Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18784  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18784 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f2/W8LS18784.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18784 ;
+        adm:logEntry        bda:LGC89900A5A082C2DC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18786  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bca' khrims slob pa dang kun spyod gleng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   220 .
+    
+    bdr:IDB641AE6293D93F5B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742812" .
+    
+    bdr:W8LS18784  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB641AE6293D93F5B ;
+        :instanceHasVolume  bdr:I8LS18786 ;
+        :numberOfVolumes    1 .
+}

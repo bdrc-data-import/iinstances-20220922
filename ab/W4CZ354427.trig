@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ354427 {
+    bda:I4CZ355010  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ355010 ;
+        adm:logEntry        bda:LGB74B3634AE3B5CF0 , bda:LGIMEBB7921D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ355011  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ355011 ;
+        adm:logEntry        bda:LG30089405D5CBAF73 , bda:LGIM00996197 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ355012  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ355012 ;
+        adm:logEntry        bda:LG1A8C1D29822A1FBD , bda:LGIMF14BC893 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07823FBAD7049AF7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T10:30:14.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1A8C1D29822A1FBD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T10:30:14.586Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG30089405D5CBAF73
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T10:30:14.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB74B3634AE3B5CF0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T10:30:14.45Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM00996197  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-10T14:08:06.832Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEBB7921D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-10T14:08:06.543Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF14BC893  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-10T14:08:07.065Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ354427  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ354427 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ab/W4CZ354427.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ354427 ;
+        adm:logEntry        bda:LG07823FBAD7049AF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ355010  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of pad+ma dbang chen rta mgrin yang gsang khros pa'i chos skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   517 .
+    
+    bdr:I4CZ355011  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of pad+ma dbang chen rta mgrin yang gsang khros pa'i chos skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   609 .
+    
+    bdr:I4CZ355012  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of pad+ma dbang chen rta mgrin yang gsang khros pa'i chos skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   580 .
+    
+    bdr:W4CZ354427  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ355010 , bdr:I4CZ355011 , bdr:I4CZ355012 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

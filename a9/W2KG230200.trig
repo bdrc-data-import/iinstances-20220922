@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG230200 {
+    bda:I2KG230240  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG230240 ;
+        adm:logEntry        bda:LG86C3DBEB1E933CAB , bda:LGIM37FF1A89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG86C3DBEB1E933CAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-14T16:24:07.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG94984A8E1E467332
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-14T16:24:07.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM37FF1A89  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-14T22:44:40.665Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG230200  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG230200 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a9/W2KG230200.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG230200 ;
+        adm:logEntry        bda:LG94984A8E1E467332 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG230240  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of krung go'i bod sa gnas kyi lo rgyus yig tshang phyogs btus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1136 .
+    
+    bdr:W2KG230200  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG230240 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 1/2022"@en .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN519 {
+    bda:I3CN3910  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3910 ;
+        adm:logEntry        bda:LGC5FF38540817134D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG3802F4EACD040911
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T17:43:22.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC5FF38540817134D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T17:43:22.781Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN519  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN519 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "08/W3CN519.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN519 ;
+        adm:logEntry        bda:LG3802F4EACD040911 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3910  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dpe khrid skabs nye bar mkho'i zhal 'don gces btus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN519  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3910 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

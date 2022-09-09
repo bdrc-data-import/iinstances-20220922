@@ -1,0 +1,152 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W30456 {
+    bda:I1CZ3958  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ3958 ;
+        adm:logEntry        bda:LG43E14D0A554F48E3 , bda:LGF00A649E84FE0C6B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1CZ3959  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ3959 ;
+        adm:logEntry        bda:LG25F1B825C6DB5D6F , bda:LGD044937EC8B35F33 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1CZ3960  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ3960 ;
+        adm:logEntry        bda:LGC6F79F2625803E94 , bda:LGEE0CF5A9226DEDB6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1CZ3961  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ3961 ;
+        adm:logEntry        bda:LG55598D535BF3073E , bda:LG8271EFB6510929EB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25F1B825C6DB5D6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-12T12:01:56.429Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG43E14D0A554F48E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-12T12:01:55.394Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG55598D535BF3073E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-24T12:14:23.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG8271EFB6510929EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-12T12:01:57.322Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG944A0944131CD405
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-04-24T12:14:24.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC6F79F2625803E94
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-03-12T12:01:56.878Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGD044937EC8B35F33
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-24T12:14:22.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGEE0CF5A9226DEDB6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-24T12:14:22.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF00A649E84FE0C6B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-24T12:13:54.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W30456  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W30456 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "71/W30456.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W30456 ;
+        adm:logEntry        bda:LG944A0944131CD405 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1CZ3958  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gter chos/_se ra mkha' 'gro bde ba'i rdo rje"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   555 .
+    
+    bdr:I1CZ3959  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of gter chos/_se ra mkha' 'gro bde ba'i rdo rje"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   607 .
+    
+    bdr:I1CZ3960  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of gter chos/_se ra mkha' 'gro bde ba'i rdo rje"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   640 .
+    
+    bdr:I1CZ3961  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of gter chos/_se ra mkha' 'gro bde ba'i rdo rje"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1180 .
+    
+    bdr:W30456  a           :ImageInstance ;
+        :inCollection       bdr:PR1CTC13 ;
+        :instanceHasVolume  bdr:I1CZ3958 , bdr:I1CZ3959 , bdr:I1CZ3960 , bdr:I1CZ3961 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "scanned by sarah jacoby"@en .
+}

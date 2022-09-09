@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC241 {
+    bda:I2PD17971  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17971 ;
+        adm:logEntry        bda:LGC0DCD235E914F153 , bda:LGCBFE820E37105210 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG72973B470684B2F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-11T21:08:46.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC0DCD235E914F153
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-30T00:48:36.987Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGCBFE820E37105210
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-11T21:08:44.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC241  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC241 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "39/W1AC241.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC241 ;
+        adm:logEntry        bda:LG72973B470684B2F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17971  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'tshol zhib dang mtha' dpyod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   680 .
+    
+    bdr:W1AC241  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD17971 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

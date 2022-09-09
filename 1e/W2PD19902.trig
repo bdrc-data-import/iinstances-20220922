@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD19902 {
+    bda:I2PD19916  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19916 ;
+        adm:logEntry        bda:LG20A33ADE4AB28E01 , bda:LGA32421C2EE596301 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20A33ADE4AB28E01
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:35.795Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5E0F9F8DD3775BB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-16T04:22:59.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA32421C2EE596301
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-16T04:22:59.153Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD19902  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD19902 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1e/W2PD19902.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD19902 ;
+        adm:logEntry        bda:LG5E0F9F8DD3775BB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19916  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa/ bargyad stong pa klong thabs dngos grub kun 'byung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   804 .
+    
+    bdr:W2PD19902  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD19916 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

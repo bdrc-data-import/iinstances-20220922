@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19467 {
+    bda:I8LS19469  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19469 ;
+        adm:logEntry        bda:LGA6A5097742AB297C , bda:LGAB747B021EFCCD0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA6A5097742AB297C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T12:14:59.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGAB747B021EFCCD0B
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:48.505Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF31BA11C7C941F7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T12:14:59.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19467  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19467 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2b/W8LS19467.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19467 ;
+        adm:logEntry        bda:LGF31BA11C7C941F7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19469  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ma 'ongs lung bstan gsal byed sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   20 .
+    
+    bdr:W8LS19467  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19469 ;
+        :numberOfVolumes    1 .
+}

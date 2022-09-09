@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25377 {
+    bda:I1KG25379  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25379 ;
+        adm:logEntry        bda:LGA64115D76DFA147B , bda:LGB306000EE3362B26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA64115D76DFA147B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T11:36:43.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB306000EE3362B26
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:13.724Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE5C4D80772741056
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T11:36:43.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25377  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25377 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e3/W1KG25377.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25377 ;
+        adm:logEntry        bda:LGE5C4D80772741056 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25379  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of byis rtsom me tog chun po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   222 .
+    
+    bdr:W1KG25377  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG25379 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W21873 {
+    bda:I1KG23233  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23233 ;
+        adm:logEntry        bda:LG1F242B5F922E5605 , bda:LG6B7FC23622518DDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F242B5F922E5605
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:09.159Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6B7FC23622518DDF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-04T15:50:24.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6F1502DAE924E63C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-04T15:50:24.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W21873  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W21873 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/W21873.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W21873 ;
+        adm:logEntry        bda:LG6F1502DAE924E63C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23233  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi sher rtogs rig pa'i rigs shes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   268 .
+    
+    bdr:W21873  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23233 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

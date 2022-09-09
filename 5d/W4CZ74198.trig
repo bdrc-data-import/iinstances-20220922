@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74198 {
+    bda:I4CZ74267  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74267 ;
+        adm:logEntry        bda:LG56135A2ABA1944FB , bda:LG866CA6406CAF460A , bda:LGIM0D7E7A98 , bda:LGIMFB1E197E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG56135A2ABA1944FB
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-07T21:03:27.101Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG81360B4B44E712D7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-05T14:29:02.799Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG866CA6406CAF460A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-05T14:29:02.683Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM0D7E7A98  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-07-16T14:51:07.889Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFB1E197E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-07-16T20:47:35.784Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ74198  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74198 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "5d/W4CZ74198.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74198 ;
+        adm:logEntry        bda:LG81360B4B44E712D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74267  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdo rgyud mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   332 .
+    
+    bdr:W4CZ74198  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74267 ;
+        :numberOfVolumes    1 .
+}

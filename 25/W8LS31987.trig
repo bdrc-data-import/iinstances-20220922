@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS31987 {
+    bda:I8LS31989  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS31989 ;
+        adm:logEntry        bda:LG244C9CFC307406C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG244C9CFC307406C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-05T09:18:09.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG349C58DAE4D1BDB0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-05T09:18:09.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS31987  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS31987 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "25/W8LS31987.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS31987 ;
+        adm:logEntry        bda:LG349C58DAE4D1BDB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS31989  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nang gi khong skran 'don pa'i skyug sman dang bod kyi brda'i bye brag gsal bar byed pa ngag gi sgron ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS31987  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I8LS31989 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

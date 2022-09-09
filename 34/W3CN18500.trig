@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN18500 {
+    bda:I3CN19932  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN19932 ;
+        adm:logEntry        bda:LG60AE2D4367381B52 , bda:LGIM30E056D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG60AE2D4367381B52
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-08T14:36:41.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDC48C1F8315C4A0C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-08T14:36:42.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM30E056D6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-23T00:22:03.337Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN18500  a        adm:AdminData ;
+        adm:access          bda:AccessRestrictedTemporarily ;
+        adm:adminAbout      bdr:W3CN18500 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "34/W3CN18500.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN18500 ;
+        adm:logEntry        bda:LGDC48C1F8315C4A0C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN19932  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ ye shes rdo rje/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   814 .
+    
+    bdr:W3CN18500  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN19932 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

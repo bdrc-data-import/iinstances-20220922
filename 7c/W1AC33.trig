@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC33 {
+    bda:I2PD18907  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18907 ;
+        adm:logEntry        bda:LG68A2EE50C926D14B , bda:LGDA61A64DBB3EA2E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09A2C9BBE5B91DD0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T23:14:13.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG68A2EE50C926D14B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T23:14:12.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDA61A64DBB3EA2E6
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-30T00:48:43.518Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC33  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC33 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7c/W1AC33.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC33 ;
+        adm:logEntry        bda:LG09A2C9BBE5B91DD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18907  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sngags kyi sa lam legs bshad skal bzang 'jug ngogs dang na ro chos drug gi khrid yig bde chen dngos grub 'byung gnas kyi zab khrid/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   218 .
+    
+    bdr:ID210260B964780232
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728993" .
+    
+    bdr:W1AC33  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID210260B964780232 ;
+        :instanceHasVolume  bdr:I2PD18907 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

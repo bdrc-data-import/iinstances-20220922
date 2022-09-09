@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16720 {
+    bda:I2PD18891  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18891 ;
+        adm:logEntry        bda:LG0E925F965A88C23B , bda:LG221725F1F06BE478 , bda:LG9A0370D8428BB291 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E925F965A88C23B
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-11-28T00:08:22.364Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG221725F1F06BE478
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-17T02:29:19.542Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG53E6C68BEE2E830F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T21:32:34.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9A0370D8428BB291
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T21:32:32.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG16720  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16720 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ef/W1KG16720.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16720 ;
+        adm:logEntry        bda:LG53E6C68BEE2E830F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18891  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyun shes gling ga"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   162 .
+    
+    bdr:IDAF7FE4D947D3C239
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147750427" .
+    
+    bdr:W1KG16720  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAF7FE4D947D3C239 ;
+        :instanceHasVolume  bdr:I2PD18891 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

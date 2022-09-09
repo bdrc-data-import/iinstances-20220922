@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD985 {
+    bda:I2PD20142  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20142 ;
+        adm:logEntry        bda:LG68E3AC03AB633550 , bda:LGC5CDED4796EC253B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD20143  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20143 ;
+        adm:logEntry        bda:LG5133812FDC768311 , bda:LGA7EE97F5BBD052EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2D6B0DFAA742354C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-30T07:23:18.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG5133812FDC768311
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-04T00:49:49.597Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG63A5978CC70901C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-10-21T00:33:40.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG68E3AC03AB633550
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-30T07:23:17.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA7EE97F5BBD052EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-30T07:23:17.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC5CDED4796EC253B
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-04T00:49:49.337Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3PD985  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3PD985 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "56/W3PD985.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD985 ;
+        adm:logEntry        bda:LG2D6B0DFAA742354C , bda:LG63A5978CC70901C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20142  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bla ma yang tig (che 'os rig 'dzin chen mo'i phyag dpe/ gser bris/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   798 .
+    
+    bdr:I2PD20143  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bla ma yang tig (che 'os rig 'dzin chen mo'i phyag dpe/ gser bris/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1428 .
+    
+    bdr:W3PD985  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD20142 , bdr:I2PD20143 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS29243 {
+    bda:I8LS29245  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS29245 ;
+        adm:logEntry        bda:LGD996440D8B8DA68D , bda:LGIM52133EE1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD996440D8B8DA68D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-11-02T15:21:02.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFEE477B8207BA3C8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-11-02T15:21:03.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM52133EE1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-24T22:45:00.593Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS29243  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS29243 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f0/W8LS29243.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS29243 ;
+        adm:logEntry        bda:LGFEE477B8207BA3C8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS29245  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of pad+ma bka' thang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   843 .
+    
+    bdr:W8LS29243  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS29245 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available by Hirshberg NGMPP pdf, Ms.No.L7149, Reel No.L759/2"@en .
+}

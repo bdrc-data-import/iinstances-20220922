@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18766 {
+    bda:I8LS18768  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18768 ;
+        adm:logEntry        bda:LG7C970FBFC0F3027F , bda:LGA07A7482DA6424FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7C970FBFC0F3027F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T12:45:48.169Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA07A7482DA6424FE
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:42.363Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEFBEA43E1198765B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T12:45:48.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18766  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18766 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "32/W8LS18766.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18766 ;
+        adm:logEntry        bda:LGEFBEA43E1198765B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18768  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi lus sbyong rigs pa sman gyi ljon pa bzhugs so/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:ID99799E3698822E00
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714199" .
+    
+    bdr:W8LS18766  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID99799E3698822E00 ;
+        :instanceHasVolume  bdr:I8LS18768 ;
+        :numberOfVolumes    1 .
+}

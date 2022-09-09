@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2591 {
+    bda:I3CN2593  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2593 ;
+        adm:logEntry        bda:LG1565E3B13E565F6F , bda:LG8722EA45287D0277 , bda:LGIM8BAD70CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1565E3B13E565F6F
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-10T02:09:07.897Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6B51B4562802AF7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-09T12:24:25.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8722EA45287D0277
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-09T12:24:25.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8BAD70CA  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-05T15:14:39.973Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN2591  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2591 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a2/W3CN2591.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2591 ;
+        adm:logEntry        bda:LG6B51B4562802AF7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2593  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bka' bzhi brgyud pa'i lo rgyus dang lo ras pa yan gyi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   862 .
+    
+    bdr:W3CN2591  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I3CN2593 ;
+        :numberOfVolumes    1 .
+}

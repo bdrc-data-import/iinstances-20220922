@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG210287 {
+    bda:I3CN22277  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22277 ;
+        adm:logEntry        bda:LGD5C034D9796E6128 , bda:LGIMD4298239 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN22278  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22278 ;
+        adm:logEntry        bda:LGD03EF4CCD35B98BC , bda:LGIM47D31F08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG024EC16A42F34C92
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-02-20T16:32:32.195Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG504596F1B99654DD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-10T10:31:12.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD03EF4CCD35B98BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-10T10:31:12.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD5C034D9796E6128
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-10T10:31:12.295Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM47D31F08  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T22:31:38.25Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD4298239  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T22:31:38.018Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG210287  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG210287 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "56/W2KG210287.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG210287 ;
+        adm:logEntry        bda:LG024EC16A42F34C92 , bda:LG504596F1B99654DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN22277  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ thub bstan dge legs rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   832 .
+    
+    bdr:I3CN22278  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ thub bstan dge legs rgya mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   398 .
+    
+    bdr:W2KG210287  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN22277 , bdr:I3CN22278 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

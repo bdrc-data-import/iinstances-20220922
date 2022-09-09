@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5606 {
+    bda:I3CN5608  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5608 ;
+        adm:logEntry        bda:LG8F709E799C3957C2 , bda:LGF421107C3A077140 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5ABB5342B6E1F54E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T12:58:38.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8F709E799C3957C2
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:06:24.782Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF421107C3A077140
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T12:58:38.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5606  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN5606 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/W3CN5606.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5606 ;
+        adm:logEntry        bda:LG5ABB5342B6E1F54E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5608  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chab mdo'i dmangs khrod sgrung gtam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   496 .
+    
+    bdr:ID33F0B729FFDD3C4D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147734293" .
+    
+    bdr:W3CN5606  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID33F0B729FFDD3C4D ;
+        :instanceHasVolume  bdr:I3CN5608 ;
+        :numberOfVolumes    1 .
+}

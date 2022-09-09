@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS75757 {
+    bda:I8LS75759  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75759 ;
+        adm:logEntry        bda:LGD47CD4101A36459B , bda:LGIMDA215E60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG35B2ABA8C6CF08BE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-24T11:49:28.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD47CD4101A36459B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-24T11:49:28.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMDA215E60  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-22T23:10:24.85Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS75757  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS75757 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "48/W8LS75757.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS75757 ;
+        adm:logEntry        bda:LG35B2ABA8C6CF08BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS75759  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bla med rdo rje theg pa'i lam gyi khrid rim thar pa thams cad mkhyen pa'i lam gyi sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   427 .
+    
+    bdr:W8LS75757  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS75759 ;
+        :numberOfVolumes    1 .
+}

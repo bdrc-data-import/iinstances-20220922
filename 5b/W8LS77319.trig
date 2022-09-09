@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77319 {
+    bda:I8LS77321  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77321 ;
+        adm:logEntry        bda:LG05CDBCC9D1CF6AED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG05CDBCC9D1CF6AED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-01T08:41:26.578Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBACFB8999FBECFAD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-01T08:41:26.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77319  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS77319 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "5b/W8LS77319.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77319 ;
+        adm:logEntry        bda:LGBACFB8999FBECFAD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77321  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dge ldan lugs bzang gtsug lag slob gnyer khang chen po'i nye ba'i rig bdag dga' byang pha ra rnam grwa mkhan chen rdo rje 'chang rje btsun bsam gtan chos 'phel lam blo bzang don grub rin po che'i gsung zin bris dang thor bu phyogs sgrig bcas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77319  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77321 ;
+        :numberOfVolumes    1 .
+}

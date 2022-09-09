@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS31966 {
+    bda:I8LS31968  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS31968 ;
+        adm:logEntry        bda:LGD9EA6DEC31ECBBF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGB2640B8B0BE334A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-03T09:39:46.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD9EA6DEC31ECBBF9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-03T09:39:46.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS31966  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS31966 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ad/W8LS31966.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS31966 ;
+        adm:logEntry        bda:LGB2640B8B0BE334A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS31968  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dri med 'od kyi rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS31966  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I8LS31968 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

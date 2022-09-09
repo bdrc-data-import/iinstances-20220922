@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG14736 {
+    bda:I2PD17907  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17907 ;
+        adm:logEntry        bda:LG4ED959C917D068C1 , bda:LG7DF3C9980B40E4F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4ED959C917D068C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T21:18:24.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7DF3C9980B40E4F6
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-14T00:03:50.025Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE642EB2916813BEE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T21:18:25.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG14736  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG14736 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "74/W1KG14736.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG14736 ;
+        adm:logEntry        bda:LGE642EB2916813BEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17907  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rogs mthun khu byug dbyangs snyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   364 .
+    
+    bdr:W1KG14736  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD17907 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

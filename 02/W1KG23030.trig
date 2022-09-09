@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23030 {
+    bda:I1KG23169  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23169 ;
+        adm:logEntry        bda:LG5DA41935C45DA596 , bda:LGFE0D6E667179379E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D14E1FD6D862630
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-29T11:17:05.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5DA41935C45DA596
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-03T20:32:17.837Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFE0D6E667179379E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-29T11:17:05.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG23030  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG23030 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "02/W1KG23030.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23030 ;
+        adm:logEntry        bda:LG0D14E1FD6D862630 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23169  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of klong chen snying gi thig le las: gcod yul mkha' 'gro'i gad rgyangs sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   650 .
+    
+    bdr:W1KG23030  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23169 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

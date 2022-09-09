@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC40 {
+    bda:I2PD17596  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17596 ;
+        adm:logEntry        bda:LG8C2A8BB00DD9F8CC , bda:LGF4BAA0A889A35A53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6ADEFEF93699EAB2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-08T22:02:32.639Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8C2A8BB00DD9F8CC
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-18T21:24:43.698Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF4BAA0A889A35A53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-08T22:02:31.402Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC40  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1AC40 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c1/W1AC40.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC40 ;
+        adm:logEntry        bda:LG6ADEFEF93699EAB2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17596  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i rtsa ba'i rgyud kyi sgron ma rab tu gsal bar byed pa'i rgya cher bshad pas 'chad pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   800 .
+    
+    bdr:W1AC40  a           :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I2PD17596 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

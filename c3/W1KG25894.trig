@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25894 {
+    bda:I1KG25896  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25896 ;
+        adm:logEntry        bda:LG0423D9B07EE7AFDA , bda:LG09BDE6327AC23490 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0423D9B07EE7AFDA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T15:08:20.787Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG09BDE6327AC23490
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-01T23:13:13.207Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG678FF3F830A53B80
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T15:08:20.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25894  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25894 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c3/W1KG25894.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25894 ;
+        adm:logEntry        bda:LG678FF3F830A53B80 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25896  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mu khri btsan po'i dpyad rtsom bdams bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   486 .
+    
+    bdr:ID8FCDC8DB1DE29A14
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147740635" .
+    
+    bdr:W1KG25894  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8FCDC8DB1DE29A14 ;
+        :instanceHasVolume  bdr:I1KG25896 ;
+        :numberOfVolumes    1 .
+}

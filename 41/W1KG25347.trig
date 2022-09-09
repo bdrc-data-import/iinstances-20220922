@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25347 {
+    bda:I1KG25349  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25349 ;
+        adm:logEntry        bda:LG2B4CDFF35BD1ADC3 , bda:LGBA06502E9CB205BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B4CDFF35BD1ADC3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T10:22:52.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBA06502E9CB205BB
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:11.634Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE44C5CB5E5E87EF0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T10:22:52.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25347  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25347 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "41/W1KG25347.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25347 ;
+        adm:logEntry        bda:LGE44C5CB5E5E87EF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25349  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi dmangs glu snyan dbang gso ba'i bdud rtsi/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   348 .
+    
+    bdr:ID259B7F0E5D798B91
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147723750" .
+    
+    bdr:W1KG25347  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID259B7F0E5D798B91 ;
+        :instanceHasVolume  bdr:I1KG25349 ;
+        :numberOfVolumes    1 .
+}

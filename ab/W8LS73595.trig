@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73595 {
+    bda:I8LS73597  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73597 ;
+        adm:logEntry        bda:LG802099EB7048E47C , bda:LGIM93CA8533 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3EEBF90765E1112A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-22T11:47:54.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG802099EB7048E47C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-22T11:47:53.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM93CA8533  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-08T23:19:06.938Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS73595  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73595 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ab/W8LS73595.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73595 ;
+        adm:logEntry        bda:LG3EEBF90765E1112A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73597  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of pad+ma dbang chen yang gsang khros pa'i tshogs mchod skong bshags/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:W8LS73595  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73597 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
+}

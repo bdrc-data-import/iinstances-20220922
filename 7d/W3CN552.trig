@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN552 {
+    bda:I3CN3973  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3973 ;
+        adm:logEntry        bda:LG2C689D1D3EDFB2A9 , bda:LG655D0725EAF0233E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C689D1D3EDFB2A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T18:17:48.459Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG567F26C1C821F895
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:17:48.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG655D0725EAF0233E
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:19.036Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN552  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN552 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7d/W3CN552.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN552 ;
+        adm:logEntry        bda:LG567F26C1C821F895 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3973  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of spyod 'jug rtsa ba dang sa bcad sbyar ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   250 .
+    
+    bdr:W3CN552  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3973 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

@@ -1,0 +1,146 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG12048 {
+    bda:I1KG12050  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG12050 ;
+        adm:logEntry        bda:LGE29B4D791E58879E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG12051  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG12051 ;
+        adm:logEntry        bda:LGEAECB458BA4ECB49 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG12052  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG12052 ;
+        adm:logEntry        bda:LG9D8254C310AC7012 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG12053  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG12053 ;
+        adm:logEntry        bda:LG578DF4CC99933232 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG12054  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG12054 ;
+        adm:logEntry        bda:LGE61067D6315849D4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1200726AA016A412
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2012-03-08T14:55:56.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG578DF4CC99933232
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-08T14:55:56.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9D8254C310AC7012
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-08T14:55:56.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE29B4D791E58879E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-08T14:55:56.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE61067D6315849D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-08T14:55:56.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEAECB458BA4ECB49
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-03-08T14:55:56.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG12048  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG12048 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "e6/W1KG12048.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG12048 ;
+        adm:logEntry        bda:LG1200726AA016A412 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG12050  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snying thig ya bzhi/ (dar thang glog klad par ma/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1152 .
+    
+    bdr:I1KG12051  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of snying thig ya bzhi/ (dar thang glog klad par ma/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1684 .
+    
+    bdr:I1KG12052  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of snying thig ya bzhi/ (dar thang glog klad par ma/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1604 .
+    
+    bdr:I1KG12053  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of snying thig ya bzhi/ (dar thang glog klad par ma/)"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2666 .
+    
+    bdr:I1KG12054  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of snying thig ya bzhi/ (dar thang glog klad par ma/)"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1672 .
+    
+    bdr:W1KG12048  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC10 ;
+        :instanceHasVolume  bdr:I1KG12050 , bdr:I1KG12051 , bdr:I1KG12052 , bdr:I1KG12053 , bdr:I1KG12054 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 3/2012"@en .
+}

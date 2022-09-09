@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS43820 {
+    bda:I8LS43822  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS43822 ;
+        adm:logEntry        bda:LG437C6D44E9EB60D3 , bda:LGIM8FB37182 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG437C6D44E9EB60D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-15T14:37:07.418Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG6D49E07274E05B35
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-15T14:37:07.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM8FB37182  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-19T02:57:33.468Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS43820  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS43820 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "de/W8LS43820.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS43820 ;
+        adm:logEntry        bda:LG6D49E07274E05B35 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS43822  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gna' grong sa skya'i yul skor gnas yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   286 .
+    
+    bdr:IDEA9DE33B1063109B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743463" .
+    
+    bdr:W8LS43820  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEA9DE33B1063109B ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS43822 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc. No. 13465"@en .
+}

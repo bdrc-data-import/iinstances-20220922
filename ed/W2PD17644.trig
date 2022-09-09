@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17644 {
+    bda:I2PD19258  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19258 ;
+        adm:logEntry        bda:LGBA14F4BF93B215DF , bda:LGBA544037A02AB32F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBA14F4BF93B215DF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-02T02:26:44.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBA544037A02AB32F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:48.664Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD543CE193C5F4707
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-02T02:26:44.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17644  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17644 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ed/W2PD17644.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17644 ;
+        adm:logEntry        bda:LGD543CE193C5F4707 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19258  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of log rtog phyir zlog"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   330 .
+    
+    bdr:ID1056863F97755018
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743427" .
+    
+    bdr:W2PD17644  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1056863F97755018 ;
+        :instanceHasVolume  bdr:I2PD19258 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

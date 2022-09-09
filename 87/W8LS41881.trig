@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS41881 {
+    bda:I8LS41951  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS41951 ;
+        adm:logEntry        bda:LG9A5791989DB0C6AB , bda:LGIM284A7CBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9A5791989DB0C6AB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-02T09:35:25.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF78A89E54B40F178
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-11-02T09:35:25.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM284A7CBC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-04-25T13:58:06.137Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS41881  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS41881 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "87/W8LS41881.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS41881 ;
+        adm:logEntry        bda:LGF78A89E54B40F178 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS41951  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'di ka sder zhig ma red/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   102 .
+    
+    bdr:W8LS41881  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS41951 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No. D31809"@en .
+}

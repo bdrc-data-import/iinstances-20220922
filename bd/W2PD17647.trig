@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17647 {
+    bda:I2PD19251  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19251 ;
+        adm:logEntry        bda:LG22F538589CDCF57F , bda:LG95B934A82261846C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22F538589CDCF57F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:49.596Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG95B934A82261846C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T22:47:24.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGACE78A0A6225579D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T22:47:25.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17647  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17647 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "bd/W2PD17647.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17647 ;
+        adm:logEntry        bda:LGACE78A0A6225579D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19251  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya nag glang chen 'gying ri'i gnas yig dad ldan skyid pa'i pho nya/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   102 .
+    
+    bdr:ID1107CC7908332B14
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712441" .
+    
+    bdr:W2PD17647  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1107CC7908332B14 ;
+        :instanceHasVolume  bdr:I2PD19251 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

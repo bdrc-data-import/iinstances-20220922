@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2CZ7860 {
+    bda:I1KG2842  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG2842 ;
+        adm:logEntry        bda:LG1AA1C411CACE94B9 , bda:LGDD32E89B21700C3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1AA1C411CACE94B9
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:20.566Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG44325F1738A3BA74
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-07-16T12:57:19.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDD32E89B21700C3E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-07-16T12:57:18.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2CZ7860  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2CZ7860 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e5/W2CZ7860.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2CZ7860 ;
+        adm:logEntry        bda:LG44325F1738A3BA74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG2842  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dge 'dun grub pa dpal bzang po'i rnam thar"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   128 .
+    
+    bdr:W2CZ7860  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I1KG2842 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2009"@en .
+}

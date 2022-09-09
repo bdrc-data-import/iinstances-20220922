@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS34517 {
+    bda:I8LS34519  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS34519 ;
+        adm:logEntry        bda:LG7A343FAD7AB40790 , bda:LGIM028B0B4E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7A343FAD7AB40790
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-06-13T10:09:49.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE194510A3A8F3493
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-13T10:09:49.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM028B0B4E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-04-14T22:15:36.864Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS34517  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS34517 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "34/W8LS34517.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS34517 ;
+        adm:logEntry        bda:LGE194510A3A8F3493 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS34519  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tsa ra ka'i bsdu ba/pod gnyis pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   378 .
+    
+    bdr:W8LS34517  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS34519 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc. no"@en .
+}

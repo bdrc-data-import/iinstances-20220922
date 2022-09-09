@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24806 {
+    bda:I1KG24808  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24808 ;
+        adm:logEntry        bda:LG39A447A89B3DE040 , bda:LGF01002951A5FEBBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG39A447A89B3DE040
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:53:31.611Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG98A6DE3C4C5CB009
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:53:31.696Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF01002951A5FEBBD
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:35:09.055Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG24806  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24806 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/W1KG24806.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24806 ;
+        adm:logEntry        bda:LG98A6DE3C4C5CB009 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24808  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of legs 'grub yong ba ji ltar byed/_ri mo'i lam nas sung zha zhin gyi skor gleng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   205 .
+    
+    bdr:W1KG24806  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24808 ;
+        :numberOfVolumes    1 .
+}

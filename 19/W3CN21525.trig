@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21525 {
+    bda:I3CN21723  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21723 ;
+        adm:logEntry        bda:LG4CAD27E84CE9F71D , bda:LGIMC7EE52F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21724  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21724 ;
+        adm:logEntry        bda:LGA8CF3E56012C56CB , bda:LGIM6E8B141F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4CAD27E84CE9F71D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:39:22.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8CF3E56012C56CB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:39:22.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA9E683C1D4FF07AC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T14:39:22.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6E8B141F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-30T00:46:36.29Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC7EE52F5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-30T00:46:36.025Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN21525  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN21525 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "19/W3CN21525.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21525 ;
+        adm:logEntry        bda:LGA9E683C1D4FF07AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21723  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of paN chen sku phreng rim byon gyi tshad ma'i gsung rtsom phyogs sgrig(stod cha/ smad cha/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   730 .
+    
+    bdr:I3CN21724  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of paN chen sku phreng rim byon gyi tshad ma'i gsung rtsom phyogs sgrig(stod cha/ smad cha/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   684 .
+    
+    bdr:ID60E5216252D36DA2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728594" .
+    
+    bdr:W3CN21525  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID60E5216252D36DA2 ;
+        :instanceHasVolume  bdr:I3CN21723 , bdr:I3CN21724 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

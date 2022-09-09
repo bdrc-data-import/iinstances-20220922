@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ301722 {
+    bda:I4CZ301732  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ301732 ;
+        adm:logEntry        bda:LG67114FE7A164C37D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG67114FE7A164C37D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-06T12:09:30.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF1C265EF80AA9B2B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-06T12:09:30.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ301722  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ301722 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "67/W4CZ301722.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ301722 ;
+        adm:logEntry        bda:LGF1C265EF80AA9B2B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ301732  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dus 'khor 'grel chen dri med 'od/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ301722  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ301732 ;
+        :numberOfVolumes    1 .
+}

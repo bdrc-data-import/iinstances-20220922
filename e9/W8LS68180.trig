@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68180 {
+    bda:I8LS68182  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68182 ;
+        adm:logEntry        bda:LG8DA628ECF68B7E6F , bda:LGIM1A0D5465 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8DA628ECF68B7E6F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T12:38:13.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA8D8C7E1C60715C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-27T12:38:13.533Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM1A0D5465  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-17T22:21:31.937Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68180  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68180 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e9/W8LS68180.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68180 ;
+        adm:logEntry        bda:LGA8D8C7E1C60715C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68182  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dzam gling srol rgyun gso rig spyi bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   553 .
+    
+    bdr:ID2D312A80DAE7AF4D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1153300709" .
+    
+    bdr:W8LS68180  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2D312A80DAE7AF4D ;
+        :instanceHasVolume  bdr:I8LS68182 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

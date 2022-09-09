@@ -1,0 +1,133 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG209785 {
+    bda:I2KG209856  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209856 ;
+        adm:logEntry        bda:LG0519C6AC083973A9 , bda:LGIMC37858DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209857  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209857 ;
+        adm:logEntry        bda:LG0B94A660720C624F , bda:LGIM7890355C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209858  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209858 ;
+        adm:logEntry        bda:LG7898840A73CA9F7E , bda:LGIM6F1F94B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209859  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209859 ;
+        adm:logEntry        bda:LG514E55899B8A2293 , bda:LGIM65C39A2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0519C6AC083973A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:48:52.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0B94A660720C624F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:48:52.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG514E55899B8A2293
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:48:52.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7898840A73CA9F7E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-30T11:48:52.497Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8642F73ECAE543F4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-30T11:48:52.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM65C39A2E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-19T02:57:14.742Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6F1F94B0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-19T02:57:14.512Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7890355C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-19T02:57:14.248Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC37858DE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-19T02:57:14.006Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG209785  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG209785 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "1d/W2KG209785.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG209785 ;
+        adm:logEntry        bda:LG8642F73ECAE543F4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG209856  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung rtsom/ 'jigs med rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   594 .
+    
+    bdr:I2KG209857  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung rtsom/ 'jigs med rgya mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   515 .
+    
+    bdr:I2KG209858  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung rtsom/ 'jigs med rgya mtsho/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   384 .
+    
+    bdr:I2KG209859  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung rtsom/ 'jigs med rgya mtsho/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   389 .
+    
+    bdr:W2KG209785  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG209856 , bdr:I2KG209857 , bdr:I2KG209858 , bdr:I2KG209859 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

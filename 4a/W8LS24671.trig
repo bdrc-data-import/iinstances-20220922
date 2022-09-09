@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS24671 {
+    bda:I8LS24673  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS24673 ;
+        adm:logEntry        bda:LG1EA3EECB3C67FD5D , bda:LGIM0E03CFAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EA3EECB3C67FD5D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T08:56:08.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG6BC643613E2259F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-29T08:56:09.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM0E03CFAE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-07-16T20:47:36.19Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS24671  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS24671 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4a/W8LS24671.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS24671 ;
+        adm:logEntry        bda:LG6BC643613E2259F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS24673  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyal sras ba ku la/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   66 .
+    
+    bdr:IDD73347772D8AE89B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147731202" .
+    
+    bdr:W8LS24671  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD73347772D8AE89B ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS24673 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D30055"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

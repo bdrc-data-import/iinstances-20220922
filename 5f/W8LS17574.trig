@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17574 {
+    bda:I8LS17579  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17579 ;
+        adm:logEntry        bda:LG3D0AB2B4ED655183 , bda:LGA0B58BBD9CCDE6F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D0AB2B4ED655183
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T21:48:43.883Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA0B58BBD9CCDE6F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-03T15:05:52.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA7FFC3F337F9391D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-03T15:05:52.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17574  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17574 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5f/W8LS17574.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17574 ;
+        adm:logEntry        bda:LGA7FFC3F337F9391D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17579  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhabs dkar rdo rje 'chang gi rnam thar rgyas par bshad pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   973 .
+    
+    bdr:W8LS17574  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I8LS17579 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

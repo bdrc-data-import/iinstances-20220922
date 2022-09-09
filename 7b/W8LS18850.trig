@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18850 {
+    bda:I8LS18852  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18852 ;
+        adm:logEntry        bda:LG024B1479D8D6729A , bda:LG6FE3C7BBF6D0BA7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG024B1479D8D6729A
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-18T21:25:00.04Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6FE3C7BBF6D0BA7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:14:43.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD239A06754FA8E84
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:14:43.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18850  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18850 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7b/W8LS18850.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18850 ;
+        adm:logEntry        bda:LGD239A06754FA8E84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18852  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sger sdem la rgol phyogs skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   48 .
+    
+    bdr:ID59E016296659C291
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147741084" .
+    
+    bdr:W8LS18850  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID59E016296659C291 ;
+        :instanceHasVolume  bdr:I8LS18852 ;
+        :numberOfVolumes    1 .
+}

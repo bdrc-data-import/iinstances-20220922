@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5126 {
+    bda:I3CN5128  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5128 ;
+        adm:logEntry        bda:LGF12CF393CFD1AD11 , bda:LGFA6ABD1A5D0C41D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGCF5D10DB33D52753
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T15:12:14.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF12CF393CFD1AD11
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T15:12:14.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA6ABD1A5D0C41D7
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:10:59.105Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5126  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5126 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "71/W3CN5126.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5126 ;
+        adm:logEntry        bda:LGCF5D10DB33D52753 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5128  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of grub dbang bsod nams dar rgyas kyi rnam thar rmad byung chu zla'i rol gar mthong thos dang ba 'dren pa'i pho nya/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   214 .
+    
+    bdr:W3CN5126  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5128 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG6051 {
+    bda:I1KG80381  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80381 ;
+        adm:logEntry        bda:LG1E1131E05F165C90 , bda:LGIM2868DA3F , bda:LGIMECCC02B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01731A0EF9D0C311
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T16:02:36.807Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1E1131E05F165C90
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T16:02:36.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM2868DA3F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-04T23:17:14.054Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMECCC02B1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-27T13:46:28.289Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG6051  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG6051 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/W1KG6051.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG6051 ;
+        adm:logEntry        bda:LG01731A0EF9D0C311 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80381  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lha sku'i thig rtsa dang shing tshon sogs kyi rmang gzhi'i shes bya 'gro phan blo gsar dga' skyed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   250 .
+    
+    bdr:ID8E15575F204EC0B2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709789" .
+    
+    bdr:W1KG6051  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8E15575F204EC0B2 ;
+        :instanceHasVolume  bdr:I1KG80381 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "9/2017"@en .
+}

@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2DB4602 {
+    bda:I1PD26449  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD26449 ;
+        adm:logEntry        bda:LGC387884EC860FF16 , bda:LGEE0F88E30948FC7D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD26450  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD26450 ;
+        adm:logEntry        bda:LG8D27955698AB921A , bda:LGAF36C3CF1657DB50 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4141C8051DB006CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-30T14:05:53.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8D27955698AB921A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-30T14:05:53.011Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAF36C3CF1657DB50
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-11T12:47:08.421Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGC387884EC860FF16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-30T14:05:52.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEE0F88E30948FC7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-11T12:47:08.156Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W2DB4602  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2DB4602 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "11/W2DB4602.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2DB4602 ;
+        adm:logEntry        bda:LG4141C8051DB006CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD26449  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bai DUr sngon po"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   758 .
+    
+    bdr:I1PD26450  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bai DUr sngon po"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   742 .
+    
+    bdr:W2DB4602  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I1PD26449 , bdr:I1PD26450 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

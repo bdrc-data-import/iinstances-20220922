@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77509 {
+    bda:I8LS77511  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77511 ;
+        adm:logEntry        bda:LG293787A71300D071 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS77512  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77512 ;
+        adm:logEntry        bda:LG43D64450B3C1FE0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS77513  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77513 ;
+        adm:logEntry        bda:LG372332DB10894AFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG293787A71300D071
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-26T08:32:17.223Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG372332DB10894AFB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-26T08:32:17.427Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG43D64450B3C1FE0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-26T08:32:17.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG48A1B508814BFE91
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-26T08:32:17.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77509  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS77509 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/W8LS77509.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77509 ;
+        adm:logEntry        bda:LG48A1B508814BFE91 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77511  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ blo bzang dpal ldan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS77512  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ blo bzang dpal ldan/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS77513  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ blo bzang dpal ldan/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77509  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77511 , bdr:I8LS77512 , bdr:I8LS77513 ;
+        :numberOfVolumes    3 .
+}

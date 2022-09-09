@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18445 {
+    bda:I8LS18447  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18447 ;
+        adm:logEntry        bda:LG0599A5BFEAFFB9B0 , bda:LG742BA0BDF6653ED1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0599A5BFEAFFB9B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T09:43:16.295Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG742BA0BDF6653ED1
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:09.301Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC3C78B3A58F84252
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T09:43:16.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18445  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18445 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "40/W8LS18445.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18445 ;
+        adm:logEntry        bda:LGC3C78B3A58F84252 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18447  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nang chos kyi spyi don mun sel sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   243 .
+    
+    bdr:W8LS18445  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS18447 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

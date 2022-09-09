@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20326 {
+    bda:I8LS20328  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20328 ;
+        adm:logEntry        bda:LGE8BAFD809D776992 , bda:LGF0050D06F5488B5A , bda:LGIM689BCB15 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A07ECDF5A1BFB2A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T09:57:25.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE8BAFD809D776992
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-09T20:49:47.25Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF0050D06F5488B5A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T09:57:25.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM689BCB15  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-10-21T18:14:34.325Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS20326  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20326 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "98/W8LS20326.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20326 ;
+        adm:logEntry        bda:LG6A07ECDF5A1BFB2A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20328  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gnya' khri btsan po zhib 'jug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   805 .
+    
+    bdr:ID4A57B1823C8F4BA3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732954" .
+    
+    bdr:W8LS20326  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4A57B1823C8F4BA3 ;
+        :instanceHasVolume  bdr:I8LS20328 ;
+        :numberOfVolumes    1 .
+}

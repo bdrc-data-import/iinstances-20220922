@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN541 {
+    bda:I3CN8618  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8618 ;
+        adm:logEntry        bda:LGCE42B589695FC65C , bda:LGDA9F34296A1F97CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8619  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8619 ;
+        adm:logEntry        bda:LG3522F4BBD1EE8530 , bda:LGEB54D2AA99A3768C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3522F4BBD1EE8530
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-27T15:34:14.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5D381D8E887F8801
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T16:31:33.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE42B589695FC65C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-27T15:34:14.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA9F34296A1F97CF
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:24.008Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE6DDA8A8E25E16BF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-27T15:34:14.933Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB54D2AA99A3768C
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:24.459Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN541  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN541 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "44/W3CN541.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN541 ;
+        adm:logEntry        bda:LG5D381D8E887F8801 , bda:LGE6DDA8A8E25E16BF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8618  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'tshe med 'od snang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   118 .
+    
+    bdr:I3CN8619  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of 'tshe med 'od snang /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   82 .
+    
+    bdr:W3CN541  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8618 , bdr:I3CN8619 ;
+        :numberOfVolumes    2 .
+}

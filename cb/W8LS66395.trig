@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66395 {
+    bda:I8LS66397  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66397 ;
+        adm:logEntry        bda:LG379FF238194319EA , bda:LGIMA966F2A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG379FF238194319EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-08T14:26:48.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD5D8BC72C998B15B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-08T14:26:48.552Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMA966F2A8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-12T20:21:57.748Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66395  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS66395 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cb/W8LS66395.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66395 ;
+        adm:logEntry        bda:LGD5D8BC72C998B15B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS66397  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang ba bsen thub kyi 'grel ba yid bzhin bkod pa'i rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   518 .
+    
+    bdr:W8LS66395  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS66397 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No.D36334"@en .
+}

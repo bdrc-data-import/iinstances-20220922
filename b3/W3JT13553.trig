@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13553 {
+    bda:I3JT13583  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3JT13583 ;
+        adm:logEntry        bda:LG5D21CE2BAF46579C , bda:LGIM90F5B511 , bda:LGIMEC1949E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5D21CE2BAF46579C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-14T09:16:42.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGC8B84C43174DB603
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-14T09:16:42.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM90F5B511  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-23T21:37:37.503Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC1949E2  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-24T01:56:37.405Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3JT13553  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13553 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b3/W3JT13553.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3JT13553 ;
+        adm:logEntry        bda:LGC8B84C43174DB603 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3JT13583  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ya mtshan sprul pa'i glegs bam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   153 .
+    
+    bdr:W3JT13553  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3JT13583 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
+}

@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG18571 {
+    bda:I1KG18659  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18659 ;
+        adm:logEntry        bda:LG2058E53BDFCA1D90 , bda:LGD82909514D81C9C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18660  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18660 ;
+        adm:logEntry        bda:LG0A6EF11CF5F696CC , bda:LG2B2970D61D3E4B7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18661  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18661 ;
+        adm:logEntry        bda:LG49D561B7A813B5FA , bda:LG6FB4B2EA0D4F6187 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A6EF11CF5F696CC
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:30.901Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2058E53BDFCA1D90
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-27T15:42:30.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2B2970D61D3E4B7F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-27T15:42:30.785Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG49D561B7A813B5FA
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:31.172Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6FB4B2EA0D4F6187
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-27T15:42:30.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCCB4FC246BF6B4FE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-10-27T15:42:30.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD82909514D81C9C0
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:30.686Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG18571  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG18571 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "4d/W1KG18571.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG18571 ;
+        adm:logEntry        bda:LGCCB4FC246BF6B4FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18659  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ma'o tse tung gi gtam rgyud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   126 .
+    
+    bdr:I1KG18660  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of ma'o tse tung gi gtam rgyud/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   132 .
+    
+    bdr:I1KG18661  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of ma'o tse tung gi gtam rgyud/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:IDE4E012255964662B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147745184" .
+    
+    bdr:W1KG18571  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE4E012255964662B ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG18659 , bdr:I1KG18660 , bdr:I1KG18661 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2014"@en .
+}

@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73634 {
+    bda:I8LS73636  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73636 ;
+        adm:logEntry        bda:LGE2FB2B1C63B571E6 , bda:LGIMBC527B40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS73637  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73637 ;
+        adm:logEntry        bda:LG067036E7AF4D24E5 , bda:LGIM0129B94E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG067036E7AF4D24E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T09:15:20.248Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE2FB2B1C63B571E6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T09:15:20.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFFFB09F6377F7B96
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-28T09:15:20.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM0129B94E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-14T01:15:53.876Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBC527B40  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-14T01:15:53.631Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS73634  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73634 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "9e/W8LS73634.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73634 ;
+        adm:logEntry        bda:LGFFFB09F6377F7B96 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73636  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rnying ma pa'i cho ga sna tshogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   386 .
+    
+    bdr:I8LS73637  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rnying ma pa'i cho ga sna tshogs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   276 .
+    
+    bdr:W8LS73634  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73636 , bdr:I8LS73637 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
+}

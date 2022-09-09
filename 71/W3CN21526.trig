@@ -1,0 +1,163 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21526 {
+    bda:I3CN21726  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21726 ;
+        adm:logEntry        bda:LGCDCB21228ED3DC8A , bda:LGIMBC935383 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21727  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21727 ;
+        adm:logEntry        bda:LG54E1785491727400 , bda:LGIM5568D36A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21728  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21728 ;
+        adm:logEntry        bda:LG51C6043BADEA1036 , bda:LGIM80A90107 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21729  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21729 ;
+        adm:logEntry        bda:LG02EDDE3F6D3C11BE , bda:LGIMB2A432B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21730  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21730 ;
+        adm:logEntry        bda:LG485D4A0F2940834F , bda:LGIM55B40BB2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02EDDE3F6D3C11BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:42:03.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG485D4A0F2940834F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:42:03.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG51C6043BADEA1036
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:42:03.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG54E1785491727400
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:42:03.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6C806F6B38722033
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T14:42:03.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCDCB21228ED3DC8A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:42:03.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5568D36A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:38:56.044Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM55B40BB2  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:38:56.759Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM80A90107  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:38:56.297Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB2A432B4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:38:56.547Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBC935383  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:38:55.856Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN21526  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN21526 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "71/W3CN21526.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21526 ;
+        adm:logEntry        bda:LG6C806F6B38722033 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21726  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of paN chen sku phreng rim byon gyi gsung 'bum/(pod lnga/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   538 .
+    
+    bdr:I3CN21727  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of paN chen sku phreng rim byon gyi gsung 'bum/(pod lnga/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   708 .
+    
+    bdr:I3CN21728  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of paN chen sku phreng rim byon gyi gsung 'bum/(pod lnga/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   922 .
+    
+    bdr:I3CN21729  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of paN chen sku phreng rim byon gyi gsung 'bum/(pod lnga/)"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   869 .
+    
+    bdr:I3CN21730  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of paN chen sku phreng rim byon gyi gsung 'bum/(pod lnga/)"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   737 .
+    
+    bdr:ID45FC44BA83EF9A30
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147750637" .
+    
+    bdr:W3CN21526  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID45FC44BA83EF9A30 ;
+        :instanceHasVolume  bdr:I3CN21726 , bdr:I3CN21727 , bdr:I3CN21728 , bdr:I3CN21729 , bdr:I3CN21730 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

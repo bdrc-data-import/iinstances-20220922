@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19431 {
+    bda:I8LS19433  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19433 ;
+        adm:logEntry        bda:LG15C1686A31EA887F , bda:LG80C559F4BBB97759 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15C1686A31EA887F
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:01:00.71Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG80C559F4BBB97759
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T11:04:55.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGCFC7B1726C64E1BA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T11:04:55.649Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19431  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19431 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/W8LS19431.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19431 ;
+        adm:logEntry        bda:LGCFC7B1726C64E1BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19433  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bde chen zhing gi smon lam gyi bsdus 'grel blo gros gsar bu'i mgul rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   40 .
+    
+    bdr:W8LS19431  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19433 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,128 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159387 {
+    bda:I1KG81261  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81261 ;
+        adm:logEntry        bda:LG3CC43F2B90BF11DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG81262  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81262 ;
+        adm:logEntry        bda:LGEF53354972CEE58E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG81263  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81263 ;
+        adm:logEntry        bda:LG158AB94C0A72E21C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG81264  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81264 ;
+        adm:logEntry        bda:LGCC536D8F8659BDEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG81265  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81265 ;
+        adm:logEntry        bda:LGFA66CF6F0C7FD4C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG158AB94C0A72E21C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:36:30.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG19B4AD1598837ED2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-08-06T21:57:36.517Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3CC43F2B90BF11DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:36:29.998Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG93202F4CA316564C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-12T12:36:30.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCC536D8F8659BDEB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:36:30.278Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEF53354972CEE58E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:36:30.098Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFA66CF6F0C7FD4C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:36:30.357Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1PD159387  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1PD159387 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "2f/W1PD159387.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159387 ;
+        adm:logEntry        bda:LG19B4AD1598837ED2 , bda:LG93202F4CA316564C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG81261  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gter chos/ rig 'dzin lung rig gling pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG81262  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gter chos/ rig 'dzin lung rig gling pa/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG81263  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gter chos/ rig 'dzin lung rig gling pa/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG81264  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gter chos/ rig 'dzin lung rig gling pa/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG81265  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of gter chos/ rig 'dzin lung rig gling pa/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1PD159387  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG81261 , bdr:I1KG81262 , bdr:I1KG81263 , bdr:I1KG81264 , bdr:I1KG81265 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

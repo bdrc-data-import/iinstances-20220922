@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20522 {
+    bda:I8LS20524  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20524 ;
+        adm:logEntry        bda:LG3BC5E2E94CD8D7E8 , bda:LGAFD3200DDC1F7ABA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG081E8ADF20782DC3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:41:32.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG3BC5E2E94CD8D7E8
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:51.932Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAFD3200DDC1F7ABA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:41:32.452Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20522  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20522 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e0/W8LS20522.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20522 ;
+        adm:logEntry        bda:LG081E8ADF20782DC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20524  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtags kyi 'jug pa'i zhib 'jug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   176 .
+    
+    bdr:IDA814394D891C0185
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729317" .
+    
+    bdr:W8LS20522  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA814394D891C0185 ;
+        :instanceHasVolume  bdr:I8LS20524 ;
+        :numberOfVolumes    1 .
+}

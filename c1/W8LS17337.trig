@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17337 {
+    bda:I8LS17349  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17349 ;
+        adm:logEntry        bda:LG11A79A64383CF2FB , bda:LG879FCA8234744D01 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG11A79A64383CF2FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-18T09:14:43.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG879FCA8234744D01
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-24T23:26:01.136Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBE0DAE1F57830139
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-18T09:14:43.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17337  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17337 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c1/W8LS17337.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17337 ;
+        adm:logEntry        bda:LGBE0DAE1F57830139 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17349  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of thun drug bla ma'i rnal 'byor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   376 .
+    
+    bdr:W8LS17337  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17349 ;
+        :numberOfVolumes    1 ;
+        :qualityGrade       0 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

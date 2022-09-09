@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74514 {
+    bda:I4CZ74516  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74516 ;
+        adm:logEntry        bda:LG085E72AE7E4AD7E1 , bda:LG1F1A2D11B0AA99F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG085E72AE7E4AD7E1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:03:25.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1F1A2D11B0AA99F1
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:08.087Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4C41276D82D57751
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:03:25.687Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ74514  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74514 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8d/W4CZ74514.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74514 ;
+        adm:logEntry        bda:LG4C41276D82D57751 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74516  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsol 'debs bar chad lam sel dang de'i cha lag dpe ris/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   70 .
+    
+    bdr:W4CZ74514  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74516 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26654 {
+    bda:I3CN26673  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26673 ;
+        adm:logEntry        bda:LG318E693BDE470C3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG318E693BDE470C3B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-31T20:46:58.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG548D2439175F4C04
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-31T20:46:58.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN26654  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26654 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f6/W3CN26654.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26654 ;
+        adm:logEntry        bda:LG548D2439175F4C04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26673  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpyad btus rig pa'i me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN26654  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26673 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

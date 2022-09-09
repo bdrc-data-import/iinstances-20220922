@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74212 {
+    bda:I4CZ74295  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74295 ;
+        adm:logEntry        bda:LG608501ECF37D9B87 , bda:LG9F0AACB5205928CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG45F050DA2BEFD8F8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-05T14:53:01.521Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG608501ECF37D9B87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-05T14:53:01.387Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9F0AACB5205928CE
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:47:34.901Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ74212  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74212 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "12/W4CZ74212.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74212 ;
+        adm:logEntry        bda:LG45F050DA2BEFD8F8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74295  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gshin rje gshed po'i mngon rtogs las byang sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   284 .
+    
+    bdr:W4CZ74212  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I4CZ74295 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN10554 {
+    bda:I3CN10556  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN10556 ;
+        adm:logEntry        bda:LG6A6123A4A55CEB9A , bda:LGBE4942B0E941D631 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A6123A4A55CEB9A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-19T11:34:45.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE4942B0E941D631
+        a                   adm:Synced ;
+        adm:logDate         "2018-10-05T19:07:55.064Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE1F14CC05F51F546
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-19T11:34:45.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN10554  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN10554 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "00/W3CN10554.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN10554 ;
+        adm:logEntry        bda:LGE1F14CC05F51F546 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN10556  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gter chen rig 'dzin nyi ma grags pa mchog gi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   156 .
+    
+    bdr:W3CN10554  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN10556 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D31701"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

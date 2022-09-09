@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23563 {
+    bda:I1KG23603  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23603 ;
+        adm:logEntry        bda:LG262347BFB71F4EAC , bda:LGD25A6341BDDD5303 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG262347BFB71F4EAC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-06T15:12:53.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC27005FCF2D67D72
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-06T15:12:53.339Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD25A6341BDDD5303
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:55.249Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG23563  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG23563 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/W1KG23563.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23563 ;
+        adm:logEntry        bda:LGC27005FCF2D67D72 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23603  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rigs rdzas dang phra phung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   120 .
+    
+    bdr:IDC289C3B8D67B3F89
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721127" .
+    
+    bdr:W1KG23563  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC289C3B8D67B3F89 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG23603 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 5/2016"@en .
+}

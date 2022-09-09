@@ -1,0 +1,115 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD20583 {
+    bda:I4PD2016  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2016 ;
+        adm:logEntry        bda:LGEA6F9EF18DA1395D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4PD2017  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2017 ;
+        adm:logEntry        bda:LGA3E14E0B96456957 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4PD2018  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2018 ;
+        adm:logEntry        bda:LG1A545913390D6DC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4PD2019  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2019 ;
+        adm:logEntry        bda:LG7056C0B672A9A10B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4PD2020  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2020 ;
+        adm:logEntry        bda:LGD797B54D10D69FE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG1A545913390D6DC9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T12:55:46.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7056C0B672A9A10B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T12:55:47.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA3E14E0B96456957
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T12:55:45.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD797B54D10D69FE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T12:55:48.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEA6F9EF18DA1395D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T12:55:44.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD20583  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD20583 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "18/W2PD20583.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD20583 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusEditing .
+    
+    bdr:I4PD2016  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ ngag dbang kun dga' bsod nams/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4PD2017  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ ngag dbang kun dga' bsod nams/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4PD2018  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ ngag dbang kun dga' bsod nams/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4PD2019  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/ ngag dbang kun dga' bsod nams/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4PD2020  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of gsung 'bum/ ngag dbang kun dga' bsod nams/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2PD20583  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD2016 , bdr:I4PD2017 , bdr:I4PD2018 , bdr:I4PD2019 , bdr:I4PD2020 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

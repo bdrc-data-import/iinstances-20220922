@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6522 {
+    bda:I3CN6524  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6524 ;
+        adm:logEntry        bda:LGD80B0A0EF67DE40A , bda:LGEF758288AD9654ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03519ABA42B1824A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T16:16:47.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD80B0A0EF67DE40A
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:16:21.473Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEF758288AD9654ED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T16:16:47.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6522  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6522 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/W3CN6522.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6522 ;
+        adm:logEntry        bda:LG03519ABA42B1824A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6524  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of drin gzo dang 'tshol zhib/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   481 .
+    
+    bdr:W3CN6522  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6524 ;
+        :numberOfVolumes    1 .
+}

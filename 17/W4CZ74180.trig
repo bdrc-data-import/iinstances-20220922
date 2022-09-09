@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74180 {
+    bda:I4CZ74231  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74231 ;
+        adm:logEntry        bda:LG4B8F12B2A582380F , bda:LGB756DD7BCA86351F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B8F12B2A582380F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:47:05.805Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG650D2CA190BC5FBD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-05T14:04:01.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB756DD7BCA86351F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-05T14:04:00.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ74180  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74180 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "17/W4CZ74180.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74180 ;
+        adm:logEntry        bda:LG650D2CA190BC5FBD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74231  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of khro bo rak+Sha spyi 'dul gyi bsad pa dang dgra gegs srog gi spu gri sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   511 .
+    
+    bdr:W4CZ74180  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74231 ;
+        :numberOfVolumes    1 .
+}

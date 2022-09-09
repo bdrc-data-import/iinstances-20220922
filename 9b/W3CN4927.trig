@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4927 {
+    bda:I3CN4929  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4929 ;
+        adm:logEntry        bda:LGE70C2BB231B0EC8E , bda:LGF4D3B55545A8F533 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0058A0C841D5EA39
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:06:59.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE70C2BB231B0EC8E
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-27T02:52:52.869Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF4D3B55545A8F533
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T12:06:58.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4927  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4927 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9b/W3CN4927.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4927 ;
+        adm:logEntry        bda:LG0058A0C841D5EA39 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4929  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chos srid zung 'jug la dpyad pa sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:W3CN4927  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4929 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,150 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W19981 {
+    bda:I1KG22431  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22431 ;
+        adm:logEntry        bda:LG40F532D97DE08CD5 , bda:LG4D98B19B88BD9A07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22432  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22432 ;
+        adm:logEntry        bda:LG22E93E0E50B4A4EF , bda:LG9C4A30FF99A7425E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22433  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22433 ;
+        adm:logEntry        bda:LG1ACC6EA7F9E9F4D5 , bda:LG66E86C428F516816 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22434  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22434 ;
+        adm:logEntry        bda:LG7B14CF89432D03F6 , bda:LGDA83027F0109777F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22435  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22435 ;
+        adm:logEntry        bda:LG3AF32CAB9B9D6AF8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG1ACC6EA7F9E9F4D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-28T16:27:00.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG22E93E0E50B4A4EF
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:05.468Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3AF32CAB9B9D6AF8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-28T16:27:00.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG40F532D97DE08CD5
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:05.268Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4D98B19B88BD9A07
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-28T16:27:00.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG66E86C428F516816
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:05.668Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7B14CF89432D03F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-28T16:27:00.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9C4A30FF99A7425E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-28T16:27:00.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCB7D96E47C8B2411
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-07T09:43:52.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDA83027F0109777F
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:05.798Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W19981  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W19981 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "0b/W19981.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W19981 ;
+        adm:logEntry        bda:LGCB7D96E47C8B2411 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG22431  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of hor gtsang 'jigs med kyi snyan rtsom phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   90 .
+    
+    bdr:I1KG22432  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of hor gtsang 'jigs med kyi snyan rtsom phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   100 .
+    
+    bdr:I1KG22433  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of hor gtsang 'jigs med kyi snyan rtsom phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:I1KG22434  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of hor gtsang 'jigs med kyi snyan rtsom phyogs bsgrigs/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   76 .
+    
+    bdr:I1KG22435  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of hor gtsang 'jigs med kyi snyan rtsom phyogs bsgrigs/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W19981  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG22431 , bdr:I1KG22432 , bdr:I1KG22433 , bdr:I1KG22434 , bdr:I1KG22435 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 9/2015"@en .
+}

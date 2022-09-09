@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG14576 {
+    bda:I1KG22495  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22495 ;
+        adm:logEntry        bda:LG891396032A8B5E87 , bda:LGIM77D70CB5 , bda:LGIM79EB2688 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG891396032A8B5E87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-10-20T16:29:57.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCD85E1461967D2E6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-10-20T16:29:57.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM77D70CB5  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-21T11:30:24.592Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM79EB2688  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-07T00:57:45.909Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG14576  a        adm:AdminData ;
+        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:adminAbout      bdr:W1KG14576 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ad/W1KG14576.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG14576 ;
+        adm:logEntry        bda:LGCD85E1461967D2E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG22495  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lam 'bras rdo rje'i tshig rkang gi 'grel gsal tshig nyung don rgyas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   182 .
+    
+    bdr:W1KG14576  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG22495 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 10/2015"@en .
+}

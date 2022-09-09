@@ -1,0 +1,146 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22095 {
+    bda:I1PD96576  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD96576 ;
+        adm:logEntry        bda:LG286F11558820D15E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD96577  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD96577 ;
+        adm:logEntry        bda:LGC1CD0056F1659E6C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD96578  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD96578 ;
+        adm:logEntry        bda:LG1E5B31535217A66B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD96579  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD96579 ;
+        adm:logEntry        bda:LGE8FC82365F4CA099 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD96580  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD96580 ;
+        adm:logEntry        bda:LGC8B41C805429F517 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E5B31535217A66B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-11T10:31:31.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG286F11558820D15E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-11T10:31:31.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG787A781EF3F8CE3E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-01-11T10:31:32.189Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC1CD0056F1659E6C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-11T10:31:31.79Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC8B41C805429F517
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-11T10:31:32.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE8FC82365F4CA099
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-11T10:31:32.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W22095  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W22095 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "7a/W22095.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22095 ;
+        adm:logEntry        bda:LG787A781EF3F8CE3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD96576  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags pa 'jig rten dbang phyug gi rnam sprul rim byon gyi 'khrungs rabs deb ther nor bu'i phreng ba"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   650 .
+    
+    bdr:I1PD96577  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of 'phags pa 'jig rten dbang phyug gi rnam sprul rim byon gyi 'khrungs rabs deb ther nor bu'i phreng ba"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   764 .
+    
+    bdr:I1PD96578  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of 'phags pa 'jig rten dbang phyug gi rnam sprul rim byon gyi 'khrungs rabs deb ther nor bu'i phreng ba"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   766 .
+    
+    bdr:I1PD96579  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of 'phags pa 'jig rten dbang phyug gi rnam sprul rim byon gyi 'khrungs rabs deb ther nor bu'i phreng ba"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   730 .
+    
+    bdr:I1PD96580  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of 'phags pa 'jig rten dbang phyug gi rnam sprul rim byon gyi 'khrungs rabs deb ther nor bu'i phreng ba"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   746 .
+    
+    bdr:W22095  a           :ImageInstance ;
+        :inCollection       bdr:PR1CTC10 ;
+        :instanceHasVolume  bdr:I1PD96576 , bdr:I1PD96577 , bdr:I1PD96578 , bdr:I1PD96579 , bdr:I1PD96580 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2010"@en .
+}

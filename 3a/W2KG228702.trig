@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG228702 {
+    bda:I2KG228724  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG228724 ;
+        adm:logEntry        bda:LG402B4C4EAA9A0EE0 , bda:LGIM4F1BB785 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG402B4C4EAA9A0EE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-03-29T16:23:47.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG635414C6753BC8B6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-29T16:23:48.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4F1BB785  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:23:58.561Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG228702  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2KG228702 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3a/W2KG228702.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG228702 ;
+        adm:logEntry        bda:LG635414C6753BC8B6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG228724  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi rtsom rig lo rgyus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   802 .
+    
+    bdr:W2KG228702  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG228724 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1 Commercial Unit, Boston, MA 02111. Comments: 3/2021"@en , "Scanned or acquired in Tibetan areas of China by BDRC"@en .
+}

@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8541 {
+    bda:I00KG03038  a       adm:AdminData ;
+        adm:adminAbout      bdr:I00KG03038 ;
+        adm:logEntry        bda:LG9B6F4F7090C5EECE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG9B6F4F7090C5EECE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-09-05T14:47:43.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W8541  a            adm:AdminData ;
+        adm:adminAbout      bdr:W8541 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "92/W8541.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8541 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I00KG03038  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of yig mkhan zla grags la gnang ba'i gdams pa"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8541  a            :ImageInstance ;
+        :instanceHasVolume  bdr:I00KG03038 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5261 {
+    bda:I3CN5263  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5263 ;
+        adm:logEntry        bda:LG123300C101644DCA , bda:LG789EA8E005364DEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG123300C101644DCA
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:03.529Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG1C2CF10472CA26AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:48:38.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG789EA8E005364DEF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T16:48:38.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5261  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5261 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c6/W3CN5261.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5261 ;
+        adm:logEntry        bda:LG1C2CF10472CA26AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5263  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gangs ri'i 'dabs kyi lha khang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   163 .
+    
+    bdr:W3CN5261  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5263 ;
+        :numberOfVolumes    1 .
+}

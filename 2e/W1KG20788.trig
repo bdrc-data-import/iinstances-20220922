@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG20788 {
+    bda:I1KG20838  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG20838 ;
+        adm:logEntry        bda:LG248A8456E34C1F09 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG20839  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG20839 ;
+        adm:logEntry        bda:LGEB7233C76025B7E9 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG248A8456E34C1F09
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-09T16:11:10.983Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC44EE5DF32C0C99B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-09T16:11:11.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEB7233C76025B7E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-09T16:11:11.035Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG20788  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG20788 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "2e/W1KG20788.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG20788 ;
+        adm:logEntry        bda:LGC44EE5DF32C0C99B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG20838  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags yul rgya nag chen po bod dang sog yul rnams su dam pa'i chos byung tshul dpag bsam ljon bzang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   244 .
+    
+    bdr:I1KG20839  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of 'phags yul rgya nag chen po bod dang sog yul rnams su dam pa'i chos byung tshul dpag bsam ljon bzang /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   384 .
+    
+    bdr:W1KG20788  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC13 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I1KG20838 , bdr:I1KG20839 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 12/2014"@en .
+}

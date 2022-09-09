@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS44193 {
+    bda:I8LS44201  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS44201 ;
+        adm:logEntry        bda:LG99E6930ECD4A08F3 , bda:LGIM9B6ADACE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG77AA26CAB8B8E01F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-04-05T09:16:20.205Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG99E6930ECD4A08F3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-04-05T09:16:20.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM9B6ADACE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-16T22:44:28.355Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS44193  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS44193 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e2/W8LS44193.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS44193 ;
+        adm:logEntry        bda:LG77AA26CAB8B8E01F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS44201  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub lam gyi rim pa'i snying po bsdus pa dngos grub kun 'byung dang de'i 'grel pa thar lam gsal ba'i sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   296 .
+    
+    bdr:IDAD6E0C3052C00842
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147761401" .
+    
+    bdr:W8LS44193  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAD6E0C3052C00842 ;
+        :instanceHasVolume  bdr:I8LS44201 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

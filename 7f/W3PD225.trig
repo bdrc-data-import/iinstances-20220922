@@ -1,0 +1,139 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD225 {
+    bda:I2PD18800  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18800 ;
+        adm:logEntry        bda:LGB48073D95A253132 , bda:LGB6573D5411B68894 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18801  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18801 ;
+        adm:logEntry        bda:LG1F44B7147FCF474B , bda:LG5A9D2EB384113C56 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18802  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18802 ;
+        adm:logEntry        bda:LG3FBCB072363C4B08 , bda:LG644A7CD7F52F2E8B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18803  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18803 ;
+        adm:logEntry        bda:LG8B2F7AB91DF9E71A , bda:LGD75AD35C149A65DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F44B7147FCF474B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T21:51:44.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3FBCB072363C4B08
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-26T22:14:58.302Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5A9D2EB384113C56
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-26T22:14:58.05Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG644A7CD7F52F2E8B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T21:51:45.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8623EDED678FF0AB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T21:51:47.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8B2F7AB91DF9E71A
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-26T22:14:58.538Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB48073D95A253132
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-26T22:14:57.831Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB6573D5411B68894
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T21:51:43.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD75AD35C149A65DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T21:51:46.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W3PD225  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD225 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "7f/W3PD225.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD225 ;
+        adm:logEntry        bda:LG8623EDED678FF0AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18800  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rje lam rim pa ngag dbang phun tshogs kyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   334 .
+    
+    bdr:I2PD18801  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rje lam rim pa ngag dbang phun tshogs kyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:I2PD18802  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of rje lam rim pa ngag dbang phun tshogs kyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   364 .
+    
+    bdr:I2PD18803  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of rje lam rim pa ngag dbang phun tshogs kyi gsung 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   370 .
+    
+    bdr:ID3259D0DF678C3B83
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725773" .
+    
+    bdr:W3PD225  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3259D0DF678C3B83 ;
+        :instanceHasVolume  bdr:I2PD18800 , bdr:I2PD18801 , bdr:I2PD18802 , bdr:I2PD18803 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

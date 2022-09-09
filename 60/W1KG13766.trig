@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG13766 {
+    bda:I1KG18272  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18272 ;
+        adm:logEntry        bda:LG37122670D5102D7D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18273  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18273 ;
+        adm:logEntry        bda:LG2AB369838AE48C57 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18274  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18274 ;
+        adm:logEntry        bda:LG3E02A7AD93249678 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2AB369838AE48C57
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-01T10:49:38.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG37122670D5102D7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-01T10:49:38.793Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3E02A7AD93249678
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-01T10:49:38.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB1D413A64E6024B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-08-01T10:49:38.909Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG13766  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG13766 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "60/W1KG13766.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG13766 ;
+        adm:logEntry        bda:LGB1D413A64E6024B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18272  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nges don gyi chos 'khor/ (dus deb/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   114 .
+    
+    bdr:I1KG18273  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of nges don gyi chos 'khor/ (dus deb/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   112 .
+    
+    bdr:I1KG18274  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of nges don gyi chos 'khor/ (dus deb/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   106 .
+    
+    bdr:W1KG13766  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG18272 , bdr:I1KG18273 , bdr:I1KG18274 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2014"@en .
+}

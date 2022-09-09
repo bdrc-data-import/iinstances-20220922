@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4993 {
+    bda:I3CN4995  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4995 ;
+        adm:logEntry        bda:LG141372A89ADC6C50 , bda:LGD48AC57173578C8C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG141372A89ADC6C50
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:10:57.235Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA38C20CB7486B7AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:22:08.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD48AC57173578C8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T12:22:08.761Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4993  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4993 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "80/W3CN4993.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4993 ;
+        adm:logEntry        bda:LGA38C20CB7486B7AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4995  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chos rje kun mkhyen yab sras kyi zab mo dbu ma'i skor rigs lam nor bu'i mdzod khang /(_deb bzhi pa _)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   498 .
+    
+    bdr:W3CN4993  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4995 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4982 {
+    bda:I3CN4984  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4984 ;
+        adm:logEntry        bda:LG5B638E9046473E47 , bda:LGDEBC4DBA270E8AEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5942A6269B0D08C6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T12:20:13.821Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5B638E9046473E47
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-30T22:24:53.791Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDEBC4DBA270E8AEF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T12:20:13.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4982  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4982 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "60/W3CN4982.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4982 ;
+        adm:logEntry        bda:LG5942A6269B0D08C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4984  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub lam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   183 .
+    
+    bdr:W3CN4982  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4984 ;
+        :numberOfVolumes    1 .
+}

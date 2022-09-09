@@ -1,0 +1,115 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22160 {
+    bda:I1KG18122  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18122 ;
+        adm:logEntry        bda:LG504E316A76290931 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18123  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18123 ;
+        adm:logEntry        bda:LG016959BD4373F8AB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18124  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18124 ;
+        adm:logEntry        bda:LG0036852565372D1A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0036852565372D1A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-10T17:11:53.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG016959BD4373F8AB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-10T17:11:53.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG504E316A76290931
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-07-10T17:11:53.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8D30A5004E07DA4F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-07-10T17:11:53.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W22160  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W22160 ;
+        adm:facetIndex      14 ;
+        adm:gitPath         "77/W22160.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22160 ;
+        adm:logEntry        bda:LG8D30A5004E07DA4F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18122  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gru gu go rdzong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   898 .
+    
+    bdr:I1KG18123  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gru gu go rdzong /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   572 .
+    
+    bdr:I1KG18124  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gru gu go rdzong /"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   258 .
+    
+    bdr:ID6D0DB1D58BC15529
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738715" .
+    
+    bdr:W22160  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6D0DB1D58BC15529 ;
+        :instanceHasVolume  bdr:I1KG18122 , bdr:I1KG18123 , bdr:I1KG18124 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 7/2014"@en .
+}

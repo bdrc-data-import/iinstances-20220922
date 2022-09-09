@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17446 {
+    bda:I4PD3013  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD3013 ;
+        adm:logEntry        bda:LG31B719EB9D74E971 , bda:LG40EBDF3F50C3EDE4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A65E6377535EEC7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-14T16:55:40.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG31B719EB9D74E971
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:37.047Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG40EBDF3F50C3EDE4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-14T16:55:38.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17446  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17446 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3c/W2PD17446.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17446 ;
+        adm:logEntry        bda:LG0A65E6377535EEC7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD3013  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dpa' bo 'bru lnga las byung ba'i bon gyi rig gnas skor gyi gtam gleng /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   250 .
+    
+    bdr:IDA15BED67AD8B941A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715103" .
+    
+    bdr:W2PD17446  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA15BED67AD8B941A ;
+        :instanceHasVolume  bdr:I4PD3013 ;
+        :numberOfVolumes    1 .
+}

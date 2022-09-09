@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3338 {
+    bda:I3CN3633  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3633 ;
+        adm:logEntry        bda:LGDD1C5FAB243F731A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3634  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3634 ;
+        adm:logEntry        bda:LGDBF5F4EA688865C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3635  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3635 ;
+        adm:logEntry        bda:LG4CEDED3574FEA733 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3636  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3636 ;
+        adm:logEntry        bda:LGDA47CA431C5FFFA4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG4CEDED3574FEA733
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:53.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG99CF9EC304BD0B38
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T12:49:53.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA47CA431C5FFFA4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:53.533Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDBF5F4EA688865C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:53.333Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDD1C5FAB243F731A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:53.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3338  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3338 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b3/W3CN3338.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3338 ;
+        adm:logEntry        bda:LG99CF9EC304BD0B38 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3633  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bzu ru dkon mchog bstan 'dzin gyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3634  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of bzu ru dkon mchog bstan 'dzin gyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3635  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of bzu ru dkon mchog bstan 'dzin gyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3636  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of bzu ru dkon mchog bstan 'dzin gyi gsung 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN3338  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3633 , bdr:I3CN3634 , bdr:I3CN3635 , bdr:I3CN3636 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "11/2016"@en .
+}

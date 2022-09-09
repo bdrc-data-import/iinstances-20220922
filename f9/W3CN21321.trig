@@ -1,0 +1,139 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21321 {
+    bda:I3CN21323  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21323 ;
+        adm:logEntry        bda:LG4C750D19EE8636E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21324  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21324 ;
+        adm:logEntry        bda:LGA8505E47B1BAF73E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21325  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21325 ;
+        adm:logEntry        bda:LG23D7C01D20169987 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21326  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21326 ;
+        adm:logEntry        bda:LG8B03EF8CAF89FA0C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21327  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21327 ;
+        adm:logEntry        bda:LGBAA664463FB7350C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21328  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21328 ;
+        adm:logEntry        bda:LG3678C031CDC40725 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG23D7C01D20169987
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3678C031CDC40725
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4C750D19EE8636E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B03EF8CAF89FA0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA8505E47B1BAF73E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBAA664463FB7350C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-29T12:18:43.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE281697799FDAB9E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-29T12:18:43.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN21321  a        adm:AdminData ;
+        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:adminAbout      bdr:W3CN21321 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f9/W3CN21321.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21321 ;
+        adm:logEntry        bda:LGE281697799FDAB9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21323  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21324  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21325  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21326  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21327  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21328  a        :ImageGroup ;
+        :biblioNote         "Volume 6 of bon gyi lag bris dpe rnying pod 'ga' zhig"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN21321  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN21323 , bdr:I3CN21324 , bdr:I3CN21325 , bdr:I3CN21326 , bdr:I3CN21327 , bdr:I3CN21328 ;
+        :numberOfVolumes    6 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

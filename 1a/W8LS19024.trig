@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19024 {
+    bda:I8LS19026  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19026 ;
+        adm:logEntry        bda:LG2FDAC05CB56FEB14 , bda:LG87716DF36B6688D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2FDAC05CB56FEB14
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:48.707Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG87716DF36B6688D1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:41:30.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG953D14C2E5D52E7B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:41:31.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19024  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19024 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1a/W8LS19024.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19024 ;
+        adm:logEntry        bda:LG953D14C2E5D52E7B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19026  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bstan bcos mngon par rtogs pa'i rgyan 'grel bshad dang bcas pa'i rgya cher bshad pa bsam 'phel dbang gi rgyal po zhes bya ba bzhugs so//"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   544 .
+    
+    bdr:W8LS19024  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19026 ;
+        :numberOfVolumes    1 .
+}

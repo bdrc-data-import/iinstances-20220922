@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1FPL159 {
+    bda:I1FPL159  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1FPL159 ;
+        adm:logEntry        bda:LG0D5FE95BC90D369C , bda:LG0E2B577F50478FFE , bda:LGB4112670401FD3A9 , bda:LGB67916241D8B8806 , bda:LGED7F3FBBA1C15D88 , bda:LGF188DFB0015D93AA , bda:LGF493FC2001DF65C8 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D5FE95BC90D369C
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-08-18T16:26:17.351Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG0E2B577F50478FFE
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-12-16T19:59:45.453Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB4112670401FD3A9
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-12-21T15:55:59.304Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGB67916241D8B8806
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-12-21T15:58:51.513Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGED7F3FBBA1C15D88
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-04-04T20:58:44.2Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGF188DFB0015D93AA
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-06T19:01:56.616Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF493FC2001DF65C8
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-04-05T21:35:47.731Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMA3A86F9513
+        a                   adm:InitialDataImport ;
+        adm:logDate         "2016-12-06T12:04:56.81Z"^^xsd:dateTime ;
+        adm:logMessage      "FPL Import"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD9F15FB0  a     adm:UpdateData ;
+        adm:logAgent        "Imagegroups zero tbrcIntro" ;
+        adm:logDate         "2019-02-11T19:32:33.446Z"^^xsd:dateTime ;
+        adm:logMessage      "zeroed tbrcIntro"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1FPL159  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1FPL159 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "9d/W1FPL159.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1FPL159 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1FPL159  a         :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   231 .
+    
+    bdr:W1FPL159  a         :ImageInstance ;
+        :inCollection       bdr:PR1FPL01 ;
+        :instanceHasVolume  bdr:I1FPL159 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "This manuscript was digitized at the Fragile Palm Leaves Foundation in Thailand with the generous support of Khyentse Foundation"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN15341 {
+    bda:I3CN15912  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN15912 ;
+        adm:logEntry        bda:LG3D4AEA1C5DA186B5 , bda:LG84A28AB108D41401 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D4AEA1C5DA186B5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-30T15:10:48.923Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG84A28AB108D41401
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:07:06.92Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8A10C1360F460BC2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T15:10:49.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN15341  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN15341 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2d/W3CN15341.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN15341 ;
+        adm:logEntry        bda:LG8A10C1360F460BC2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN15912  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of drang srong log t+ri pa'i skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   688 .
+    
+    bdr:W3CN15341  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN15912 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

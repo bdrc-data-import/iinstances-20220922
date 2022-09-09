@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS67991 {
+    bda:I8LS67993  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67993 ;
+        adm:logEntry        bda:LG840646F525FB3B99 , bda:LGIMCA7FD30C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG840646F525FB3B99
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-10T10:39:24.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEA5E8714D99D7E00
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-10T10:39:25.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMCA7FD30C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-14T21:32:20.965Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS67991  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS67991 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2a/W8LS67991.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS67991 ;
+        adm:logEntry        bda:LGEA5E8714D99D7E00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67993  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya bod shan sbyar phyugs las sman bcos tshig mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   896 .
+    
+    bdr:IDDEBB42D21DBB1891
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147735168" .
+    
+    bdr:W8LS67991  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDEBB42D21DBB1891 ;
+        :instanceHasVolume  bdr:I8LS67993 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

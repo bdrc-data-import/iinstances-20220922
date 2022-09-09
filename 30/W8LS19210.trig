@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19210 {
+    bda:I8LS19212  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19212 ;
+        adm:logEntry        bda:LG64803C57BBA4AE0E , bda:LG8F3D70046CB1DE33 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG531333629EB1F8D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T15:19:33.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG64803C57BBA4AE0E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:19:33.691Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8F3D70046CB1DE33
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:43.308Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19210  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19210 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "30/W8LS19210.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19210 ;
+        adm:logEntry        bda:LG531333629EB1F8D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19212  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of slob dpon klu sgrub kyi sman yig gces btus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   414 .
+    
+    bdr:W8LS19210  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19212 ;
+        :numberOfVolumes    1 .
+}

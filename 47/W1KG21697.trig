@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG21697 {
+    bda:I1KG21737  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21737 ;
+        adm:logEntry        bda:LG07F00D04F150E258 , bda:LG2509F74466A35444 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07F00D04F150E258
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-14T20:23:17.34Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0F4E3D702379D6EC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-15T15:44:53.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2509F74466A35444
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-15T15:44:53.046Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG21697  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG21697 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/W1KG21697.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG21697 ;
+        adm:logEntry        bda:LG0F4E3D702379D6EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG21737  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyud bzhi'i dka' 'grel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   704 .
+    
+    bdr:W1KG21697  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I1KG21737 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 4/2015"@en .
+}

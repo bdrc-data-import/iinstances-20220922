@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ307977 {
+    bda:I4CZ308204  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ308204 ;
+        adm:logEntry        bda:LG27F4228614E12C19 , bda:LGIM261B9A86 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27F4228614E12C19
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-22T15:19:10.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGCD55D041ED63D894
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-22T15:19:11.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM261B9A86  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-05T23:09:40.845Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ307977  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ307977 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e7/W4CZ307977.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ307977 ;
+        adm:logEntry        bda:LGCD55D041ED63D894 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ308204  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of spyod pa bsdus pa'i sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   412 .
+    
+    bdr:W4CZ307977  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ308204 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA acc No:28653"@en .
+}

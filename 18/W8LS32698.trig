@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS32698 {
+    bda:I8LS33299  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS33299 ;
+        adm:logEntry        bda:LG0AE7DC0D2340481E , bda:LGFBC9F30348E695D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0AE7DC0D2340481E
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:07:27.472Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB432F6F6A355532F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-08T12:06:30.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFBC9F30348E695D0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-08T12:06:28.578Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS32698  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS32698 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "18/W8LS32698.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS32698 ;
+        adm:logEntry        bda:LGB432F6F6A355532F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS33299  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags bka' skyong mchod thabs bsdus pa rgyun tshogs nar ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   104 .
+    
+    bdr:W8LS32698  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS33299 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

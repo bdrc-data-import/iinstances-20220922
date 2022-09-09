@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137856 {
+    bda:I2PD20384  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20384 ;
+        adm:logEntry        bda:LG8976671442CBD511 , bda:LGADD595B59F7DA092 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD20385  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20385 ;
+        adm:logEntry        bda:LG1C58F24078907FC1 , bda:LG4C599A3D7419FAB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD20386  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20386 ;
+        adm:logEntry        bda:LG295C93300B8DBA9D , bda:LG7EDDA35FAD5E32AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG11817A4B8BF78B45
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-20T21:14:10.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG1C58F24078907FC1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-20T21:14:07.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG295C93300B8DBA9D
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:24.075Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4C599A3D7419FAB9
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:23.666Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7EDDA35FAD5E32AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-20T21:14:09.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8976671442CBD511
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:22.914Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGADD595B59F7DA092
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-20T21:14:06.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137856  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137856 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "92/W1PD137856.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137856 ;
+        adm:logEntry        bda:LG11817A4B8BF78B45 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20384  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gong sa skyabs mgon paN chen thams cad mkhyen pa sku phreng bcu pa chen po'i gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   648 .
+    
+    bdr:I2PD20385  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gong sa skyabs mgon paN chen thams cad mkhyen pa sku phreng bcu pa chen po'i gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   720 .
+    
+    bdr:I2PD20386  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gong sa skyabs mgon paN chen thams cad mkhyen pa sku phreng bcu pa chen po'i gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   596 .
+    
+    bdr:W1PD137856  a       :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I2PD20384 , bdr:I2PD20385 , bdr:I2PD20386 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

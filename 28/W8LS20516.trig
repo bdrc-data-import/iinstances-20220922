@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20516 {
+    bda:I8LS20518  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20518 ;
+        adm:logEntry        bda:LG3F3C45B7D984E657 , bda:LGCA0C2525406593FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3F3C45B7D984E657
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:01:18.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG90B501E4BD24F94F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:01:18.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGCA0C2525406593FE
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:51.521Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS20516  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20516 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "28/W8LS20516.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20516 ;
+        adm:logEntry        bda:LG90B501E4BD24F94F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20518  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gna' bo'i zhang zhung dang 'brel ba'i g.yung drung bon gyi rig gzhung skor gyi dpyad rtsom bdams bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:ID2D2EC69EFDBA2BB0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721554" .
+    
+    bdr:W8LS20516  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2D2EC69EFDBA2BB0 ;
+        :instanceHasVolume  bdr:I8LS20518 ;
+        :numberOfVolumes    1 .
+}

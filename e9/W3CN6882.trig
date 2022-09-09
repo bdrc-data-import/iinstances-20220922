@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6882 {
+    bda:I3CN6884  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6884 ;
+        adm:logEntry        bda:LG65456E08C6A98E35 , bda:LGFE4E7F563FC3AC83 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG65456E08C6A98E35
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:31.85Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9C9A39D0C35F84B5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T09:06:08.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFE4E7F563FC3AC83
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T09:06:08.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6882  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6882 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e9/W3CN6882.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6882 ;
+        adm:logEntry        bda:LG9C9A39D0C35F84B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6884  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of yig gzugs sbyong deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   62 .
+    
+    bdr:W3CN6882  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6884 ;
+        :numberOfVolumes    1 .
+}

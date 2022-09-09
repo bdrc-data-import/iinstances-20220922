@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22238 {
+    bda:I3CN22317  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22317 ;
+        adm:logEntry        bda:LGF217A47F85AE69B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGBD9EF5ED45F52C93
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-03-25T20:10:27.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF217A47F85AE69B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-03-25T20:10:27.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN22238  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN22238 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "40/W3CN22238.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22238 ;
+        adm:logEntry        bda:LGBD9EF5ED45F52C93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN22317  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dbu ma rtsa ba'i gzhung 'grel rigs pa'i rgya mtshor 'jug pa'i gru rdzings sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN22238  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN22317 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2020"@en .
+}

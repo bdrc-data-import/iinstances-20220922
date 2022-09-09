@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17421 {
+    bda:I4PD327  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD327 ;
+        adm:logEntry        bda:LGECEDEF55364EFDF2 , bda:LGFA3F390302EB0835 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD328  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD328 ;
+        adm:logEntry        bda:LG0D9FAED30E680981 , bda:LG925556EA2B4A5BA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD329  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD329 ;
+        adm:logEntry        bda:LGD9BA9E49FCAAA20E , bda:LGEBE97C741EE26394 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D9FAED30E680981
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:31:24.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG925556EA2B4A5BA9
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:00.989Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA490A2C939429E77
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-14T19:31:27.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD9BA9E49FCAAA20E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:31:25.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEBE97C741EE26394
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:01.177Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGECEDEF55364EFDF2
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:00.777Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFA3F390302EB0835
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:31:23.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17421  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17421 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "61/W2PD17421.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17421 ;
+        adm:logEntry        bda:LGA490A2C939429E77 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD327  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyal dbang dpal yul ba'i phyag bzhes ltar rtsa gsum chos skyongs bcas pa'i skong gso/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   852 .
+    
+    bdr:I4PD328  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of rgyal dbang dpal yul ba'i phyag bzhes ltar rtsa gsum chos skyongs bcas pa'i skong gso/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   894 .
+    
+    bdr:I4PD329  a          :ImageGroup ;
+        :biblioNote         "Volume 3 of rgyal dbang dpal yul ba'i phyag bzhes ltar rtsa gsum chos skyongs bcas pa'i skong gso/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   820 .
+    
+    bdr:W2PD17421  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD327 , bdr:I4PD328 , bdr:I4PD329 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

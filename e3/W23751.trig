@@ -1,0 +1,151 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W23751 {
+    bda:I01JW165  a         adm:AdminData ;
+        adm:adminAbout      bdr:I01JW165 ;
+        adm:logEntry        bda:LG3DDE0DF173A45D6D , bda:LGD3262AC90724A713 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I01JW167  a         adm:AdminData ;
+        adm:adminAbout      bdr:I01JW167 ;
+        adm:logEntry        bda:LG18B50EB613C88EC6 , bda:LG371F32B90071257C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I01JW168  a         adm:AdminData ;
+        adm:adminAbout      bdr:I01JW168 ;
+        adm:logEntry        bda:LG0A561348DD8FE3B2 , bda:LG21D6BA94F57FAE40 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2606  a            adm:AdminData ;
+        adm:adminAbout      bdr:I2606 ;
+        adm:logEntry        bda:LG13B50B9109940EF5 , bda:LG3B7B41767F1562CA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A561348DD8FE3B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-21T16:18:46.074Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG13B50B9109940EF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:41:06Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG18B50EB613C88EC6
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:41:06.218Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG21D6BA94F57FAE40
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:41:06.39Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG371F32B90071257C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-21T16:18:44.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG3B7B41767F1562CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-11-16T15:33:11.731Z"^^xsd:dateTime ;
+        adm:logMessage      "changed volume map"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG3DDE0DF173A45D6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:41:04.921Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGAEAFC41E27A5B649
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-21T16:18:47.295Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGD3262AC90724A713
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-21T16:18:42.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W23751  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W23751 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "e3/W23751.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W23751 ;
+        adm:logEntry        bda:LGAEAFC41E27A5B649 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I01JW165  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zur lugs gsang snying yig cha'i skor"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   516 .
+    
+    bdr:I01JW167  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of zur lugs gsang snying yig cha'i skor"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   427 .
+    
+    bdr:I01JW168  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of zur lugs gsang snying yig cha'i skor"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   436 .
+    
+    bdr:I2606  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   528 .
+    
+    bdr:W23751  a           :ImageInstance ;
+        :inCollection       bdr:PR01JW11672 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I01JW165 , bdr:I01JW167 , bdr:I01JW168 , bdr:I2606 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "india"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: tbrc currently holds scans for volume 2: I2606"@en .
+}

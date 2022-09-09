@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25467 {
+    bda:I1KG25469  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25469 ;
+        adm:logEntry        bda:LG037334A6EDA6A33E , bda:LG2DEDA99612E73DFF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG037334A6EDA6A33E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-13T11:18:45.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2DEDA99612E73DFF
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:20.142Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD74BA8C3D6639909
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-13T11:18:45.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25467  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25467 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e3/W1KG25467.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25467 ;
+        adm:logEntry        bda:LGD74BA8C3D6639909 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25469  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ri mor bltas nas lus rtsal rnam grangs ngos 'dzin pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   66 .
+    
+    bdr:IDE5CF6727F8610E10
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725020" .
+    
+    bdr:W1KG25467  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE5CF6727F8610E10 ;
+        :instanceHasVolume  bdr:I1KG25469 ;
+        :numberOfVolumes    1 .
+}

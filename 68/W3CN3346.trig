@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3346 {
+    bda:I3CN3453  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3453 ;
+        adm:logEntry        bda:LG2237BF8FCCFC948B , bda:LGIM03F998AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2237BF8FCCFC948B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T11:25:43.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D5B49F25988D90B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T11:25:43.856Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM03F998AC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-07-14T04:32:03.859Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN3346  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3346 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "68/W3CN3346.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3346 ;
+        adm:logEntry        bda:LG3D5B49F25988D90B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3453  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sum cu pa'i slob deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   82 .
+    
+    bdr:W3CN3346  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3453 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

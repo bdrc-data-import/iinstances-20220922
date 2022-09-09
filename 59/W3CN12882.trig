@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN12882 {
+    bda:I3CN12884  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12884 ;
+        adm:logEntry        bda:LG5DC317334A76745A , bda:LGIMD7A9E01F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12885  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12885 ;
+        adm:logEntry        bda:LGA1A376A578492092 , bda:LGIME1AFFF5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12886  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12886 ;
+        adm:logEntry        bda:LGE6BEA335802FF845 , bda:LGIM872EFC75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5DC317334A76745A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-16T11:41:18.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6925A6C757FE1B84
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-16T11:41:18.742Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1A376A578492092
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-16T11:41:18.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6BEA335802FF845
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-16T11:41:18.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM872EFC75  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-10T22:12:23.827Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD7A9E01F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-10T22:12:23.238Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME1AFFF5D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-10T22:12:23.511Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN12882  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN12882 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "59/W3CN12882.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN12882 ;
+        adm:logEntry        bda:LG6925A6C757FE1B84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN12884  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ shes rab rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   509 .
+    
+    bdr:I3CN12885  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ shes rab rgya mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   842 .
+    
+    bdr:I3CN12886  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ shes rab rgya mtsho/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   783 .
+    
+    bdr:W3CN12882  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN12884 , bdr:I3CN12885 , bdr:I3CN12886 ;
+        :numberOfVolumes    3 .
+}

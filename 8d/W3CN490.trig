@@ -1,0 +1,128 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN490 {
+    bda:I3CN3764  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3764 ;
+        adm:logEntry        bda:LGB3C3E037458C0C0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3765  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3765 ;
+        adm:logEntry        bda:LGD414347571E415A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3766  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3766 ;
+        adm:logEntry        bda:LGDF5A77772DA88D2F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3767  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3767 ;
+        adm:logEntry        bda:LG3DF7E0A6DD26B9AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3768  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3768 ;
+        adm:logEntry        bda:LG9F745BCBFEFE4AA0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG3DF7E0A6DD26B9AE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T16:09:28.502Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F745BCBFEFE4AA0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T16:09:28.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB3C3E037458C0C0E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T16:09:28.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC50E3039AA939D2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T15:27:14.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD414347571E415A2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T16:09:28.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDF5A77772DA88D2F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T16:09:28.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8339856CC34E6C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T16:09:28.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN490  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN490 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8d/W3CN490.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN490 ;
+        adm:logEntry        bda:LGC50E3039AA939D2D , bda:LGE8339856CC34E6C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3764  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sdom gsum gcig bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3765  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of sdom gsum gcig bsdus/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3766  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of sdom gsum gcig bsdus/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3767  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of sdom gsum gcig bsdus/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3768  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of sdom gsum gcig bsdus/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN490  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3764 , bdr:I3CN3765 , bdr:I3CN3766 , bdr:I3CN3767 , bdr:I3CN3768 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "11/2016"@en .
+}

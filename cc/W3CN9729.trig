@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN9729 {
+    bda:I3CN9731  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN9731 ;
+        adm:logEntry        bda:LGDC2E0E06CB7BA42E , bda:LGIM16565D1B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGDC2E0E06CB7BA42E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-24T16:58:42.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF22BC002F80CA2AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-24T16:58:42.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM16565D1B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-07-16T01:57:43.829Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN9729  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN9729 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cc/W3CN9729.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN9729 ;
+        adm:logEntry        bda:LGF22BC002F80CA2AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN9731  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of ma Ni'i phan yon/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   32 .
+    
+    bdr:W3CN9729  a         :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN9731 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D29081"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

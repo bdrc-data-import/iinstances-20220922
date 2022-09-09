@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W20460 {
+    bda:I1KG13584  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG13584 ;
+        adm:logEntry        bda:LG5AF5D5E7204C038E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG36604DA9AD2C6886
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2013-01-23T15:47:56.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5AF5D5E7204C038E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-23T15:47:56.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W20460  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W20460 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "16/W20460.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W20460 ;
+        adm:logEntry        bda:LG36604DA9AD2C6886 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG13584  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lha mo'i 'khrab gzhung gi nang don snying bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W20460  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG13584 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 1/2013"@en .
+}

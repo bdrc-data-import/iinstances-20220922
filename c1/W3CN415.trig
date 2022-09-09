@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN415 {
+    bda:I3CN421  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3CN421 ;
+        adm:logEntry        bda:LG8D0D02EAAE717737 , bda:LGB37D118DD47AF42D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8D0D02EAAE717737
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-07T15:33:22.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA1458A87633BD616
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-07T15:33:22.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB37D118DD47AF42D
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-08T13:55:01.902Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN415  a          adm:AdminData ;
+        adm:access          bda:AccessRestrictedSealed ;
+        adm:adminAbout      bdr:W3CN415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c1/W3CN415.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN415 ;
+        adm:logEntry        bda:LGA1458A87633BD616 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN421  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of rin po che gyu'i yi ge can bzhugs so/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   472 .
+    
+    bdr:W3CN415  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN421 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

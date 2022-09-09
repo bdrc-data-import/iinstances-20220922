@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN15290 {
+    bda:I3CN15818  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN15818 ;
+        adm:logEntry        bda:LG8DF65D5754D2FBC0 , bda:LGAAA9F7C5709308E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8DF65D5754D2FBC0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-30T10:05:58.571Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG972ABAD65CF3943E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T10:05:58.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAA9F7C5709308E2
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:06:59.828Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN15290  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN15290 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "73/W3CN15290.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN15290 ;
+        adm:logEntry        bda:LG972ABAD65CF3943E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN15818  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gnam chos thugs gter las u pa rA tsa dang nA ga rak+sha'i chos skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   483 .
+    
+    bdr:W3CN15290  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN15818 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6445 {
+    bda:I3CN6447  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6447 ;
+        adm:logEntry        bda:LG650E256A02EECE2B , bda:LGCA0807AEEF19EF4A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG650E256A02EECE2B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T15:29:53.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCA0807AEEF19EF4A
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:12:18.781Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD7776912BD1FAB4E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:29:54.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6445  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6445 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e4/W3CN6445.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6445 ;
+        adm:logEntry        bda:LGD7776912BD1FAB4E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6447  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sku gsum sgrub brgyud pa'i bla rabs kyi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1076 .
+    
+    bdr:W3CN6445  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6447 ;
+        :numberOfVolumes    1 .
+}

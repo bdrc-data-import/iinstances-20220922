@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2DB4613 {
+    bda:I1PD27432  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD27432 ;
+        adm:logEntry        bda:LG40CE40583E74DE65 , bda:LGA5DABCC5F69391B3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD27433  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD27433 ;
+        adm:logEntry        bda:LGB771AE757DA065DC , bda:LGE69F52BF2A6A7CDE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG40CE40583E74DE65
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-12-11T10:12:31.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA5DABCC5F69391B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-21T10:12:45.483Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGB771AE757DA065DC
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-07-21T10:12:45.75Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGD54942BE9268D555
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-12-11T10:12:32.281Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE69F52BF2A6A7CDE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-12-11T10:12:32.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W2DB4613  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2DB4613 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "d4/W2DB4613.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2DB4613 ;
+        adm:logEntry        bda:LGD54942BE9268D555 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD27432  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lam rim bla ma brgyud pa'i rnam thar"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   622 .
+    
+    bdr:I1PD27433  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of lam rim bla ma brgyud pa'i rnam thar"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   664 .
+    
+    bdr:W2DB4613  a         :ImageInstance ;
+        :inCollection       bdr:PR3JW7543 ;
+        :instanceHasVolume  bdr:I1PD27432 , bdr:I1PD27433 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

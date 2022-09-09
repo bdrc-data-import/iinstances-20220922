@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4666 {
+    bda:I3CN4668  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4668 ;
+        adm:logEntry        bda:LG2B9C838C14FD0A60 , bda:LG962E6C7EBBEB505F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B9C838C14FD0A60
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:25:06.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG962E6C7EBBEB505F
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:10:51.174Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE4B1CA344AFCACEF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:25:06.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4666  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4666 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a0/W3CN4666.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4666 ;
+        adm:logEntry        bda:LGE4B1CA344AFCACEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4668  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rten 'brel gyi rnam bzhag lung rigs bang mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   68 .
+    
+    bdr:W3CN4666  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4668 ;
+        :numberOfVolumes    1 .
+}

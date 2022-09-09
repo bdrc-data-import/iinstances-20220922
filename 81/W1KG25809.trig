@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25809 {
+    bda:I1KG25811  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25811 ;
+        adm:logEntry        bda:LG6FCE335D271739F2 , bda:LGC34A585AD11B3F29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6FCE335D271739F2
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:10:43.147Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBDFBD7F5FF3B61A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T12:25:48.183Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC34A585AD11B3F29
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T12:25:48.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25809  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25809 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "81/W1KG25809.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25809 ;
+        adm:logEntry        bda:LGBDFBD7F5FF3B61A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25811  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 藏族古日历和祭祀图谱研究"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   562 .
+    
+    bdr:ID87E96C978215C154
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710687" .
+    
+    bdr:W1KG25809  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID87E96C978215C154 ;
+        :instanceHasVolume  bdr:I1KG25811 ;
+        :numberOfVolumes    1 .
+}

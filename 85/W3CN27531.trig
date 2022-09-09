@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN27531 {
+    bda:I3CN27537  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN27537 ;
+        adm:logEntry        bda:LG4750DEDF680C732A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN27538  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN27538 ;
+        adm:logEntry        bda:LG5F43EDA95DBC67BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN27539  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN27539 ;
+        adm:logEntry        bda:LG2D2BCA36F0878D42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN27540  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN27540 ;
+        adm:logEntry        bda:LGCC7C3E4D3D467893 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN27541  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN27541 ;
+        adm:logEntry        bda:LG5EAA2676D349BE5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2D2BCA36F0878D42
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:34:19.507Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4750DEDF680C732A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:34:19.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55CFEAB6E1293FB0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-31T17:34:19.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5EAA2676D349BE5A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:34:19.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5F43EDA95DBC67BA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:34:19.403Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCC7C3E4D3D467893
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-31T17:34:19.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN27531  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN27531 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "85/W3CN27531.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN27531 ;
+        adm:logEntry        bda:LG55CFEAB6E1293FB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN27537  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN27538  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN27539  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN27540  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN27541  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN27531  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN27537 , bdr:I3CN27538 , bdr:I3CN27539 , bdr:I3CN27540 , bdr:I3CN27541 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "2022"@en .
+}

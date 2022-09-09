@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1CZ1216 {
+    bda:I1CZ2085  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ2085 ;
+        adm:logEntry        bda:LG87C590338320368F , bda:LGC4027CE80C52FDF8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG87C590338320368F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-10-02T12:40:57.295Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC1C3A5D8745F556C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-14T17:03:28.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC4027CE80C52FDF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-24T15:20:05.14Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF2B8E8A1759BD16F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-10-02T12:40:57.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1CZ1216  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1CZ1216 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "62/W1CZ1216.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1CZ1216 ;
+        adm:logEntry        bda:LGC1C3A5D8745F556C , bda:LGF2B8E8A1759BD16F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1CZ2085  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bde mchog lu hi pa'i sgrub thabs"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   60 .
+    
+    bdr:W1CZ1216  a         :ImageInstance ;
+        :inCollection       bdr:PR01CTC09 ;
+        :instanceHasVolume  bdr:I1CZ2085 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: dups"@en , "scanned from original microfilm copy of an dbu med manuscript"@en .
+}

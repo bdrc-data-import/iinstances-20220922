@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ295933 {
+    bda:I4CZ329727  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329727 ;
+        adm:logEntry        bda:LGF2825FF17A54C657 , bda:LGIM0FD02A61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18FF098D39630DF3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-29T12:21:40.701Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7F4A511588C1E4F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-25T12:09:52.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF2825FF17A54C657
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-29T12:21:40.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM0FD02A61  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-01T23:25:43.224Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ295933  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ295933 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9e/W4CZ295933.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ295933 ;
+        adm:logEntry        bda:LG18FF098D39630DF3 , bda:LG7F4A511588C1E4F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ329727  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of tshad ma sde bdun la 'jug pa'i sgo sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   670 .
+    
+    bdr:W4CZ295933  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ329727 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.3799,3800,3860"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

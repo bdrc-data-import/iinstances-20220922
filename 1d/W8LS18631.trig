@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18631 {
+    bda:I8LS18633  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18633 ;
+        adm:logEntry        bda:LG261EB018F539410F , bda:LG94463EA0E44D5452 , bda:LGIM1537AC36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25AB6315C4A8D613
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:30:01.228Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG261EB018F539410F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:10:11.17Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG94463EA0E44D5452
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:30:01.128Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM1537AC36  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:39:04.311Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18631  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18631 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1d/W8LS18631.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18631 ;
+        adm:logEntry        bda:LG25AB6315C4A8D613 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18633  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of phyugs las lag rtsal go chod ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   223 .
+    
+    bdr:IDD73A4727BE3C0867
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732565" .
+    
+    bdr:W8LS18631  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD73A4727BE3C0867 ;
+        :instanceHasVolume  bdr:I8LS18633 ;
+        :numberOfVolumes    1 .
+}

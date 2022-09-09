@@ -1,0 +1,147 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG18276 {
+    bda:I1KG18280  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18280 ;
+        adm:logEntry        bda:LGE89CA7C30C6B91EB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18281  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18281 ;
+        adm:logEntry        bda:LG9493239FFB522122 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18282  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18282 ;
+        adm:logEntry        bda:LG6CDD718CAB7578A1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18283  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18283 ;
+        adm:logEntry        bda:LG63B917B01E710D8C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18284  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18284 ;
+        adm:logEntry        bda:LGA4F52A8CC2E56F7E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG57D20116B0B9C0D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-08-04T14:39:27.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG63B917B01E710D8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-04T14:39:27.752Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6CDD718CAB7578A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-04T14:39:27.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9493239FFB522122
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-04T14:39:27.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA4F52A8CC2E56F7E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-04T14:39:27.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE89CA7C30C6B91EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-08-04T14:39:27.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG18276  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG18276 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "dd/W1KG18276.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG18276 ;
+        adm:logEntry        bda:LG57D20116B0B9C0D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18280  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of grub chen thang stong bka' 'bum gyi rgyab chos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   506 .
+    
+    bdr:I1KG18281  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of grub chen thang stong bka' 'bum gyi rgyab chos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   292 .
+    
+    bdr:I1KG18282  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of grub chen thang stong bka' 'bum gyi rgyab chos/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   556 .
+    
+    bdr:I1KG18283  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of grub chen thang stong bka' 'bum gyi rgyab chos/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   610 .
+    
+    bdr:I1KG18284  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of grub chen thang stong bka' 'bum gyi rgyab chos/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   544 .
+    
+    bdr:W1KG18276  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :inCollection       bdr:PR1CTC12 ;
+        :instanceHasVolume  bdr:I1KG18280 , bdr:I1KG18281 , bdr:I1KG18282 , bdr:I1KG18283 , bdr:I1KG18284 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 8/2014"@en .
+}

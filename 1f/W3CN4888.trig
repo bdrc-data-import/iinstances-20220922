@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4888 {
+    bda:I3CN8647  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8647 ;
+        adm:logEntry        bda:LG67DA87AEF6EAFC3E , bda:LG78353EA99AAE07AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3EC84ED7F6111643
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:52:45.956Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG67DA87AEF6EAFC3E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-05-26T16:38:37.335Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG78353EA99AAE07AF
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-10T21:29:07.723Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGCA923DC3EF6A1DE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-05-26T16:38:37.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4888  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4888 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1f/W3CN4888.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4888 ;
+        adm:logEntry        bda:LG3EC84ED7F6111643 , bda:LGCA923DC3EF6A1DE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8647  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of jo gdan spos khang dgon gyi chos spyod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   518 .
+    
+    bdr:W3CN4888  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8647 ;
+        :numberOfVolumes    1 .
+}

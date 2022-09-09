@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76163 {
+    bda:I8LS76165  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76165 ;
+        adm:logEntry        bda:LGA6B2E9C2A65F6FF6 , bda:LGIMF3990796 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG402E1BF7BAD6C526
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-25T15:39:13.644Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA6B2E9C2A65F6FF6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-25T15:39:13.51Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMF3990796  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:37:48.424Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS76163  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76163 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b3/W8LS76163.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76163 ;
+        adm:logEntry        bda:LG402E1BF7BAD6C526 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76165  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snyang ngag dper brjod phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   462 .
+    
+    bdr:W8LS76163  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76165 ;
+        :numberOfVolumes    1 .
+}

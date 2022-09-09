@@ -1,0 +1,140 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W28898 {
+    bda:I4926  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4926 ;
+        adm:logEntry        bda:LG1D409D39FD6DE13A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4927  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4927 ;
+        adm:logEntry        bda:LG0251BE373F70E0EE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4928  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4928 ;
+        adm:logEntry        bda:LGBEF9CBC4B725925C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4929  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4929 ;
+        adm:logEntry        bda:LG1B75CDB6F4BA28B9 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4930  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4930 ;
+        adm:logEntry        bda:LG4326799092ACE448 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0251BE373F70E0EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:21:33.175Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1B75CDB6F4BA28B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:21:35.269Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1D409D39FD6DE13A
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:21:32.222Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4326799092ACE448
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:21:35.597Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBEF9CBC4B725925C
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-28T16:21:33.425Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM60F924CD  a     adm:UpdateData ;
+        adm:logAgent        "admin/imagegroups-zero-tbrcIntro-by-list.xql" ;
+        adm:logDate         "2020-06-26T16:21:40.517Z"^^xsd:dateTime ;
+        adm:logMessage      "setting tbrcIntro = 2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W28898  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W28898 ;
+        adm:facetIndex      26 ;
+        adm:gitPath         "63/W28898.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W28898 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4926  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:I4927  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   490 .
+    
+    bdr:I4928  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   472 .
+    
+    bdr:I4929  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:I4930  a            :ImageGroup ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   464 .
+    
+    bdr:W28898  a           :ImageInstance ;
+        :inCollection       bdr:PR1CTC13 ;
+        :instanceHasVolume  bdr:I4926 , bdr:I4927 , bdr:I4928 , bdr:I4929 , bdr:I4930 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

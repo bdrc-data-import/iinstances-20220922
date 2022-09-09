@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4273 {
+    bda:I3CN4292  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4292 ;
+        adm:logEntry        bda:LG10BDAD7CCE1A90F5 , bda:LG53F272CB5B6E6A61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG10BDAD7CCE1A90F5
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-12T14:48:33.153Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG53F272CB5B6E6A61
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T12:11:13.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3DD3AAF526D33F0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T12:11:13.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4273  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4273 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ff/W3CN4273.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4273 ;
+        adm:logEntry        bda:LGA3DD3AAF526D33F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4292  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rdzogs pa chen po klong chen snying thig gi khrid yig ye shes bla ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   172 .
+    
+    bdr:W3CN4273  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN4292 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

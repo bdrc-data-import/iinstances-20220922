@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17826 {
+    bda:I8LS17834  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17834 ;
+        adm:logEntry        bda:LG472F39F534C0040C , bda:LGF1870F9EEA2D4B39 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG472F39F534C0040C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-13T10:15:11.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF1870F9EEA2D4B39
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:53.39Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF6C7034CFDA4C0D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-13T10:15:12.041Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17826  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17826 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d3/W8LS17826.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17826 ;
+        adm:logEntry        bda:LGF6C7034CFDA4C0D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17834  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rlung rgyu tshul gi snyan rgyud la sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   74 .
+    
+    bdr:W8LS17826  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17834 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "06/2016"@en .
+}

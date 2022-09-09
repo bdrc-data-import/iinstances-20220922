@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18832 {
+    bda:I8LS18834  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18834 ;
+        adm:logEntry        bda:LG8F4A5CCA957EFDDB , bda:LGF176EA07E7FDEEC2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8F4A5CCA957EFDDB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:12:15.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE12E4BEEBE071B70
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:12:15.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF176EA07E7FDEEC2
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-18T21:24:58.65Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18832  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18832 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "33/W8LS18832.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18832 ;
+        adm:logEntry        bda:LGE12E4BEEBE071B70 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18834  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dmangs rtsod gtug bsher skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   180 .
+    
+    bdr:IDED61466C6A06D39A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147755473" .
+    
+    bdr:W8LS18832  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDED61466C6A06D39A ;
+        :instanceHasVolume  bdr:I8LS18834 ;
+        :numberOfVolumes    1 .
+}

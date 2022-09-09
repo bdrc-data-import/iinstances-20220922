@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4657 {
+    bda:I3CN4659  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4659 ;
+        adm:logEntry        bda:LG6AD4E21C42903F9D , bda:LG9D1E67C65C24EAEC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6AD4E21C42903F9D
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:08:36.368Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9D1E67C65C24EAEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:23:27.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA5A7B27C33D0606
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:23:27.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4657  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN4657 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b5/W3CN4657.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4657 ;
+        adm:logEntry        bda:LGEA5A7B27C33D0606 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4659  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya bod dbyin gsum gsar byung rgyun bkol ming mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   280 .
+    
+    bdr:W3CN4657  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4659 ;
+        :numberOfVolumes    1 .
+}

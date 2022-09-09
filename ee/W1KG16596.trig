@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16596 {
+    bda:I4PD4439  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4439 ;
+        adm:logEntry        bda:LG7D4BCA333CF4EA33 , bda:LGF676183FB224F63F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD4440  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4440 ;
+        adm:logEntry        bda:LG07F94D9E90D4AB17 , bda:LG416DD48076386FDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD4441  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4441 ;
+        adm:logEntry        bda:LG3B265BC911BD4579 , bda:LG5BBD41B2AEB1A377 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07F94D9E90D4AB17
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-22T14:34:23.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3B265BC911BD4579
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-22T14:34:27.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG416DD48076386FDB
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:46.723Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5375EA5BC7FA323A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-22T14:34:33.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG5BBD41B2AEB1A377
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:46.927Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7D4BCA333CF4EA33
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-22T14:34:17.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF676183FB224F63F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:46.44Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG16596  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16596 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "ee/W1KG16596.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16596 ;
+        adm:logEntry        bda:LG5375EA5BC7FA323A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4439  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sman ris gsal ba'i me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   874 .
+    
+    bdr:I4PD4440  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of sman ris gsal ba'i me long /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   700 .
+    
+    bdr:I4PD4441  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of sman ris gsal ba'i me long /"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:W1KG16596  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4439 , bdr:I4PD4440 , bdr:I4PD4441 ;
+        :numberOfVolumes    3 .
+}

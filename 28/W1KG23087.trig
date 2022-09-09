@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23087 {
+    bda:I1KG23198  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23198 ;
+        adm:logEntry        bda:LG9EF9B1934AE244EC , bda:LGAF887D91BFE56074 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5C10778998B2C4B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-31T14:26:14.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9EF9B1934AE244EC
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-02T20:22:56.527Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAF887D91BFE56074
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-31T14:26:14.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG23087  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG23087 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "28/W1KG23087.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23087 ;
+        adm:logEntry        bda:LG5C10778998B2C4B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23198  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of slob chung bod yig bslab bya gsar ba'i khrid byus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   434 .
+    
+    bdr:W1KG23087  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23198 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 3/2016"@en .
+}

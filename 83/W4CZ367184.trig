@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ367184 {
+    bda:I4CZ367282  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367282 ;
+        adm:logEntry        bda:LG3D0C2F1F8E02E88F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ367283  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367283 ;
+        adm:logEntry        bda:LG0723A919802AA4BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ367284  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367284 ;
+        adm:logEntry        bda:LG01D41042613D6766 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ367285  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367285 ;
+        adm:logEntry        bda:LGF1E742F5373B23AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG01D41042613D6766
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:25.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG0723A919802AA4BB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:25.054Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG3D0C2F1F8E02E88F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:24.938Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG455841514B0FDB9D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:15:25.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF1E742F5373B23AB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:15:25.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ367184  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ367184 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "83/W4CZ367184.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ367184 ;
+        adm:logEntry        bda:LG455841514B0FDB9D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ367282  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ blo bzang dam chos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ367283  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ blo bzang dam chos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ367284  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ blo bzang dam chos/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ367285  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/ blo bzang dam chos/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ367184  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ367282 , bdr:I4CZ367283 , bdr:I4CZ367284 , bdr:I4CZ367285 ;
+        :numberOfVolumes    4 .
+}

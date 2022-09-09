@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2679 {
+    bda:I3CN2681  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2681 ;
+        adm:logEntry        bda:LG1A1714FAD8AA01D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG1A1714FAD8AA01D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-05T12:03:10.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG823C608A5C9C2E40
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-05T12:03:10.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN2679  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2679 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "69/W3CN2679.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2679 ;
+        adm:logEntry        bda:LG823C608A5C9C2E40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2681  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dbang gong ma gsum gyi khrid yig gi zin bris/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN2679  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2681 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

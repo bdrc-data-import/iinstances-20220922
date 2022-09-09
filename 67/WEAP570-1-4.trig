@@ -1,0 +1,120 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WEAP570-1-4 {
+    bda:I0EAP570-1-4-1
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-1 .
+    
+    bda:I0EAP570-1-4-2
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-2 .
+    
+    bda:I0EAP570-1-4-3
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-3 .
+    
+    bda:I0EAP570-1-4-4
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-4 .
+    
+    bda:I0EAP570-1-4-5
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-5 .
+    
+    bda:I0EAP570-1-4-6
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-6 .
+    
+    bda:I0EAP570-1-4-7
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-7 .
+    
+    bda:I0EAP570-1-4-8
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-8 .
+    
+    bda:I0EAP570-1-4-9
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0EAP570-1-4-9 .
+    
+    bda:WEAP570-1-4  a      adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:WEAP570-1-4 ;
+        adm:contentLegal    bda:LD_EAP_content ;
+        adm:gitPath         "67/WEAP570-1-4.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:WEAP570-1-4 ;
+        adm:metadataLegal   bda:LD_EAP_metadata ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I0EAP570-1-4-1
+        a                   :ImageGroup ;
+        skos:prefLabel      "dgongs 'dus ka"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-1/manifest> ;
+        :volumeNumber       1 .
+    
+    bdr:I0EAP570-1-4-2
+        a                   :ImageGroup ;
+        skos:prefLabel      "dgongs 'dus kha"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-2/manifest> ;
+        :volumeNumber       2 .
+    
+    bdr:I0EAP570-1-4-3
+        a                   :ImageGroup ;
+        skos:prefLabel      "dgongs 'dus ga"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-3/manifest> ;
+        :volumeNumber       3 .
+    
+    bdr:I0EAP570-1-4-4
+        a                   :ImageGroup ;
+        skos:prefLabel      "dgongs 'dus nga"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-4/manifest> ;
+        :volumeNumber       4 .
+    
+    bdr:I0EAP570-1-4-5
+        a                   :ImageGroup ;
+        skos:prefLabel      "dus pa mdo dbang ka"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-5/manifest> ;
+        :volumeNumber       5 .
+    
+    bdr:I0EAP570-1-4-6
+        a                   :ImageGroup ;
+        skos:prefLabel      "dus pa mdo dbang kha"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-6/manifest> ;
+        :volumeNumber       6 .
+    
+    bdr:I0EAP570-1-4-7
+        a                   :ImageGroup ;
+        skos:prefLabel      "dus pa mdo dbang ga"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-7/manifest> ;
+        :volumeNumber       7 .
+    
+    bdr:I0EAP570-1-4-8
+        a                   :ImageGroup ;
+        skos:prefLabel      "dus pa mdo dbang nga"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-8/manifest> ;
+        :volumeNumber       8 .
+    
+    bdr:I0EAP570-1-4-9
+        a                   :ImageGroup ;
+        skos:prefLabel      "Kanjur dbu shog"@bo-x-ewts ;
+        :hasIIIFManifest    <https://eap.bl.uk/archive-file/EAP570-1-4-9/manifest> ;
+        :volumeNumber       9 .
+    
+    bdr:WEAP570-1-4  a      :ImageInstance ;
+        :inCollection       bdr:PR0EAP570-1 ;
+        :instanceHasVolume  bdr:I0EAP570-1-4-1 , bdr:I0EAP570-1-4-2 , bdr:I0EAP570-1-4-3 , bdr:I0EAP570-1-4-4 , bdr:I0EAP570-1-4-5 , bdr:I0EAP570-1-4-6 , bdr:I0EAP570-1-4-7 , bdr:I0EAP570-1-4-8 , bdr:I0EAP570-1-4-9 ;
+        :numberOfVolumes    9 .
+}

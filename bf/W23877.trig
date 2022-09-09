@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W23877 {
+    bda:I00KG010114  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010114 ;
+        adm:logEntry        bda:LG7B31C3DE5FA606F4 , bda:LGBAD27A04FC6AC3E8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I00KG010115  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010115 ;
+        adm:logEntry        bda:LG61F2DC548F8B25CB , bda:LG6793DC4485119C4B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG61F2DC548F8B25CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-23T14:06:08.025Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6793DC4485119C4B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:50:52.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7B31C3DE5FA606F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:50:50.357Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAC0ADF5522624306
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-07-11T13:50:52.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBAD27A04FC6AC3E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-02-23T14:06:06.98Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W23877  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W23877 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "bf/W23877.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W23877 ;
+        adm:logEntry        bda:LGAC0ADF5522624306 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I00KG010114  a      :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/_blo bzang don grub"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   604 .
+    
+    bdr:I00KG010115  a      :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/_blo bzang don grub"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   645 .
+    
+    bdr:W23877  a           :ImageInstance ;
+        :inCollection       bdr:PR01DOR11 , bdr:PR01JW33478 , bdr:PR1PL480 , bdr:PR3JW7543 ;
+        :instanceHasVolume  bdr:I00KG010114 , bdr:I00KG010115 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2008"@en .
+}

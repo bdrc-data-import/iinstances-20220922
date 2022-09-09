@@ -1,0 +1,133 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17427 {
+    bda:I4PD354  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD354 ;
+        adm:logEntry        bda:LG4E117C165BE0A69D , bda:LG860845F520B05821 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD355  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD355 ;
+        adm:logEntry        bda:LG7F64616742D020D9 , bda:LGB23EBC5549999B2C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD356  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD356 ;
+        adm:logEntry        bda:LG02985B90361CCEBB , bda:LG6F7F9A92AF63736B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD357  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD357 ;
+        adm:logEntry        bda:LG3FE30B3D36CFE638 , bda:LG9188329566902A9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02985B90361CCEBB
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:05.294Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3FE30B3D36CFE638
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:40:36.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG4E117C165BE0A69D
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:04.914Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6F7F9A92AF63736B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:40:35.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7F64616742D020D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:40:34.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG860845F520B05821
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-14T19:40:32.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9188329566902A9E
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:05.465Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA1E96D51FE8F5F87
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-14T19:40:38.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB23EBC5549999B2C
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:36:05.118Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD17427  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17427 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "5c/W2PD17427.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17427 ;
+        adm:logEntry        bda:LGA1E96D51FE8F5F87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD354  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal yul dgon nas 'tshol bsdu zhus pa'i 'ja' tshon snying po'i gter chos bris ma phyogs bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   444 .
+    
+    bdr:I4PD355  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of dpal yul dgon nas 'tshol bsdu zhus pa'i 'ja' tshon snying po'i gter chos bris ma phyogs bsdus/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   840 .
+    
+    bdr:I4PD356  a          :ImageGroup ;
+        :biblioNote         "Volume 3 of dpal yul dgon nas 'tshol bsdu zhus pa'i 'ja' tshon snying po'i gter chos bris ma phyogs bsdus/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   326 .
+    
+    bdr:I4PD357  a          :ImageGroup ;
+        :biblioNote         "Volume 4 of dpal yul dgon nas 'tshol bsdu zhus pa'i 'ja' tshon snying po'i gter chos bris ma phyogs bsdus/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   468 .
+    
+    bdr:W2PD17427  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD354 , bdr:I4PD355 , bdr:I4PD356 , bdr:I4PD357 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ302382 {
+    bda:I4CZ302495  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ302495 ;
+        adm:logEntry        bda:LGBAE4205764BE7659 , bda:LGIM4715274D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBAE4205764BE7659
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-06T12:10:05.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE90B9D3EADF6E3AE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-06T12:10:06.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4715274D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-23T00:22:20.573Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ302382  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ302382 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8a/W4CZ302382.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ302382 ;
+        adm:logEntry        bda:LGE90B9D3EADF6E3AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ302495  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of kun bzang snying tig gi chos skor:"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:W4CZ302382  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ302495 ;
+        :numberOfVolumes    1 .
+}

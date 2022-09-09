@@ -1,0 +1,181 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2929 {
+    bda:I3CN2931  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2931 ;
+        adm:logEntry        bda:LGB88A49DFB6984E68 , bda:LGIM6F0C4CEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2932  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2932 ;
+        adm:logEntry        bda:LG92A5492F1CCF731B , bda:LGIMCFDA51A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2933  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2933 ;
+        adm:logEntry        bda:LG6696E1688B62A04C , bda:LGIM6879848D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2934  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2934 ;
+        adm:logEntry        bda:LG93BDC03623F599A6 , bda:LGIME01ED6AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2935  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2935 ;
+        adm:logEntry        bda:LGD84C80850F40B6B6 , bda:LGIM73D7E7D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2936  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2936 ;
+        adm:logEntry        bda:LG153E1613F01DEAFB , bda:LGIMD73E61BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG153E1613F01DEAFB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:30.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2412ECC3E902B00C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-23T11:16:30.593Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6696E1688B62A04C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:30.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG92A5492F1CCF731B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:30.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG93BDC03623F599A6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:30.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB88A49DFB6984E68
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:29.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD84C80850F40B6B6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-23T11:16:30.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6879848D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:34.826Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6F0C4CEA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:34.398Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM73D7E7D1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:35.281Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCFDA51A1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:34.622Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD73E61BD  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:35.534Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME01ED6AC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-25T22:26:35.034Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN2929  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2929 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "2c/W3CN2929.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2929 ;
+        adm:logEntry        bda:LG2412ECC3E902B00C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2931  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   682 .
+    
+    bdr:I3CN2932  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   753 .
+    
+    bdr:I3CN2933  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   232 .
+    
+    bdr:I3CN2934  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   637 .
+    
+    bdr:I3CN2935  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   999 .
+    
+    bdr:I3CN2936  a         :ImageGroup ;
+        :biblioNote         "Volume 6 of 'jang yul phyogs nas rnyed pa'i bon gyi dpe rnying tshan pa dang po/"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   706 .
+    
+    bdr:W3CN2929  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2931 , bdr:I3CN2932 , bdr:I3CN2933 , bdr:I3CN2934 , bdr:I3CN2935 , bdr:I3CN2936 ;
+        :numberOfVolumes    6 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

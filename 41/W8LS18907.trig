@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18907 {
+    bda:I8LS18909  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18909 ;
+        adm:logEntry        bda:LG4190EB467245DE82 , bda:LGC1D7364E27D0BB5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4190EB467245DE82
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-14T23:27:27.139Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC1D7364E27D0BB5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:22:15.895Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEB0E01405A3C2612
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:22:16.011Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18907  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18907 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "41/W8LS18907.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18907 ;
+        adm:logEntry        bda:LGEB0E01405A3C2612 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18909  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of grong gseb las byed pa'i bca' khrims dang srid jus kyi mdzub ston/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   356 .
+    
+    bdr:ID48D534DF39E427F6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147734859" .
+    
+    bdr:W8LS18907  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID48D534DF39E427F6 ;
+        :instanceHasVolume  bdr:I8LS18909 ;
+        :numberOfVolumes    1 .
+}

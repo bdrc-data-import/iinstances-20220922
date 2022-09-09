@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76750 {
+    bda:I8LS76752  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76752 ;
+        adm:logEntry        bda:LG6BB44D1C45BEFCA3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG6BB44D1C45BEFCA3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-14T08:31:59.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF7F28D2F87EA9601
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-14T08:31:59.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS76750  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76750 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ec/W8LS76750.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76750 ;
+        adm:logEntry        bda:LGF7F28D2F87EA9601 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76752  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhugs pa dang gnas pa'i 'phags pa'i dge 'dun gyi rnam bzhag mtha' dpyod skal bzang 'jug ngogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS76750  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76752 ;
+        :numberOfVolumes    1 .
+}

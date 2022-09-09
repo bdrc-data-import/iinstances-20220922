@@ -1,0 +1,118 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W10754 {
+    bda:I2313  a            adm:AdminData ;
+        adm:adminAbout      bdr:I2313 ;
+        adm:logEntry        bda:LGB74A763561A1D9D1 , bda:LGDE309738ABAFAC9C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2392  a            adm:AdminData ;
+        adm:adminAbout      bdr:I2392 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4445  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4445 ;
+        adm:logEntry        bda:LG0DDE3CBF3EDA5032 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4446  a            adm:AdminData ;
+        adm:adminAbout      bdr:I4446 ;
+        adm:logEntry        bda:LG53937EC10BC27932 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DDE3CBF3EDA5032
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-03T16:38:40.465Z"^^xsd:dateTime ;
+        adm:logMessage      "edited volume and changed image group"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG53937EC10BC27932
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-03T16:38:41.7Z"^^xsd:dateTime ;
+        adm:logMessage      "edited volume and changed image group"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGB74A763561A1D9D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-05-03T16:38:42.841Z"^^xsd:dateTime ;
+        adm:logMessage      "edited volume and changed image group"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDE309738ABAFAC9C
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-07-31"^^xsd:date ;
+        adm:logMessage      "no problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W10754  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W10754 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "ba/W10754.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W10754 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2313  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   786 .
+    
+    bdr:I2392  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1098 .
+    
+    bdr:I4445  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   872 .
+    
+    bdr:I4446  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   324 .
+    
+    bdr:W10754  a           :ImageInstance ;
+        :inCollection       bdr:PR00JW501092 , bdr:PR01DOR7 , bdr:PR01JW33478 ;
+        :instanceHasVolume  bdr:I2313 , bdr:I2392 , bdr:I4445 , bdr:I4446 ;
+        :missingVolumes     "3,5-2,4" ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at the Tibetan Buddhist Resource Center."@en , "Scanned by Satluj Siti"@en .
+}

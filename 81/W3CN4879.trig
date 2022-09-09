@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4879 {
+    bda:I3CN8645  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8645 ;
+        adm:logEntry        bda:LG94C34A0C8A7C5C20 , bda:LGE6D6B1C10BA55ADF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG94C34A0C8A7C5C20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-05-26T15:16:24.585Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAB0B14E69601ADBF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:48:58.633Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBBD5EC7296CA52FC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-05-26T15:16:24.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6D6B1C10BA55ADF
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-10T21:29:07.097Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN4879  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN4879 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "81/W3CN4879.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4879 ;
+        adm:logEntry        bda:LGAB0B14E69601ADBF , bda:LGBBD5EC7296CA52FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8645  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod lugs gso rig gi rgyun mthong nad 'gog bcos kyi dri ba dris lan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   150 .
+    
+    bdr:ID51912326850E8B2A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147717606" .
+    
+    bdr:W3CN4879  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID51912326850E8B2A ;
+        :instanceHasVolume  bdr:I3CN8645 ;
+        :numberOfVolumes    1 .
+}

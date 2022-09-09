@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD19113 {
+    bda:I2PD19153  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19153 ;
+        adm:logEntry        bda:LG410D193FFFE3644F , bda:LG4136A06971C8FB14 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD19154  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19154 ;
+        adm:logEntry        bda:LG30CEC7FDC0228F25 , bda:LG57F5910BE7522613 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30CEC7FDC0228F25
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:25.326Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG410D193FFFE3644F
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:25.086Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4136A06971C8FB14
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T22:42:08.198Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG57F5910BE7522613
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T22:42:08.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9164AFBD7F251DF0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T22:42:09.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD19113  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD19113 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "15/W2PD19113.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD19113 ;
+        adm:logEntry        bda:LG9164AFBD7F251DF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19153  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snyan rtsoms kha shas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   218 .
+    
+    bdr:I2PD19154  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of snyan rtsoms kha shas/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   204 .
+    
+    bdr:W2PD19113  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I2PD19153 , bdr:I2PD19154 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

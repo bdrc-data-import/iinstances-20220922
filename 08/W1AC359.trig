@@ -1,0 +1,158 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC359 {
+    bda:I2PD18503  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18503 ;
+        adm:logEntry        bda:LG33987B59A0AD938C , bda:LG79B7AD15490402EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18504  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18504 ;
+        adm:logEntry        bda:LG08340180A94CDDE7 , bda:LG9799ECD89F8BAFDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18505  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18505 ;
+        adm:logEntry        bda:LG489737AAC328B75E , bda:LGD78543F11ECCC64E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18506  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18506 ;
+        adm:logEntry        bda:LGBACE1E0AB3E70130 , bda:LGBCC01B1A499CA7DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18507  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18507 ;
+        adm:logEntry        bda:LG8C2D27D7D379F75C , bda:LGF44E7C8516BF6451 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08340180A94CDDE7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T02:24:39.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG33987B59A0AD938C
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:22.435Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG489737AAC328B75E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T02:24:41.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG79B7AD15490402EF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T02:24:36.899Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8C2D27D7D379F75C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T02:24:43.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9799ECD89F8BAFDB
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:22.711Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBACE1E0AB3E70130
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:23.25Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBCC01B1A499CA7DB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T02:24:42.919Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD78543F11ECCC64E
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:22.997Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDC86C48795058872
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-18T02:24:45.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF44E7C8516BF6451
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:23.521Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC359  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC359 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "08/W1AC359.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC359 ;
+        adm:logEntry        bda:LGDC86C48795058872 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18503  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sngags chas kyi rnam bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   376 .
+    
+    bdr:I2PD18504  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of sngags chas kyi rnam bshad/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   318 .
+    
+    bdr:I2PD18505  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of sngags chas kyi rnam bshad/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   450 .
+    
+    bdr:I2PD18506  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of sngags chas kyi rnam bshad/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   366 .
+    
+    bdr:I2PD18507  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of sngags chas kyi rnam bshad/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   202 .
+    
+    bdr:W1AC359  a          :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I2PD18503 , bdr:I2PD18504 , bdr:I2PD18505 , bdr:I2PD18506 , bdr:I2PD18507 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

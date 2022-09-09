@@ -1,0 +1,94 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00EGS1016278 {
+    bda:I00JW501157  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00JW501157 ;
+        adm:logEntry        bda:LG551A1B815593FD04 , bda:LGA366343A0DBEE580 , bda:LGC74DB50216769254 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG268B301E5BC126EF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-11-13T10:56:58.464Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG551A1B815593FD04
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-04T13:05:44.809Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scan info"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG6682BCC323B5B894
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-11-13T13:14:23.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGA366343A0DBEE580
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-11-13T10:56:56.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGC74DB50216769254
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-05T16:48:47.422Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W00EGS1016278
+        a                   adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W00EGS1016278 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "c1/W00EGS1016278.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W00EGS1016278 ;
+        adm:logEntry        bda:LG268B301E5BC126EF , bda:LG6682BCC323B5B894 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I00JW501157  a      :ImageGroup ;
+        :biblioNote         "Volume 1 of gcod kyi chos skor three texts on the history and practice of the zi-byed and gcod precepts"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   606 .
+    
+    bdr:W00EGS1016278
+        a                   :ImageInstance ;
+        :inCollection       bdr:PR01JW11672 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I00JW501157 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

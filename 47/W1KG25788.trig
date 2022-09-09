@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25788 {
+    bda:I1KG25790  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25790 ;
+        adm:logEntry        bda:LGAD9D8C5E541470C3 , bda:LGFDD24D7BC8D58053 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGAD9D8C5E541470C3
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:35.396Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB53384D47B4B0BCF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T12:11:53.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFDD24D7BC8D58053
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T12:11:53.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25788  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25788 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "47/W1KG25788.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25788 ;
+        adm:logEntry        bda:LGB53384D47B4B0BCF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25790  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'bring rgyugs nying bcud kun 'dus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   268 .
+    
+    bdr:IDE1724989A002266F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733024" .
+    
+    bdr:W1KG25788  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE1724989A002266F ;
+        :instanceHasVolume  bdr:I1KG25790 ;
+        :numberOfVolumes    1 .
+}

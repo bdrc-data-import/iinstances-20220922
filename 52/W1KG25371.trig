@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25371 {
+    bda:I1KG25373  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25373 ;
+        adm:logEntry        bda:LG63B6349FF1DE12FC , bda:LGEB0C9364CEB6EF71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1065C7368558C1E1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T11:32:35.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG63B6349FF1DE12FC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T11:32:35.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEB0C9364CEB6EF71
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:13.236Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25371  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25371 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "52/W1KG25371.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25371 ;
+        adm:logEntry        bda:LG1065C7368558C1E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25373  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal 'byor rig pa'i gzhig stangs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   392 .
+    
+    bdr:ID860806F9A91B5A34
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147757826" .
+    
+    bdr:W1KG25371  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID860806F9A91B5A34 ;
+        :instanceHasVolume  bdr:I1KG25373 ;
+        :numberOfVolumes    1 .
+}

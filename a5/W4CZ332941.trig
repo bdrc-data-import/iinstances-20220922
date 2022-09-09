@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ332941 {
+    bda:I4CZ342670  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ342670 ;
+        adm:logEntry        bda:LGCBD40AB681F151F5 , bda:LGIM6816E9F5 , bda:LGIMD89BA2D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ342671  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ342671 ;
+        adm:logEntry        bda:LGB9B727DB6272B91E , bda:LGIMC3C8AFFC , bda:LGIME85962CB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGB9B727DB6272B91E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-30T15:59:57.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGCBD40AB681F151F5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-30T15:59:57.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE39131A33188702B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-30T15:59:57.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM6816E9F5  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-24T02:01:14.584Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC3C8AFFC  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-24T02:01:14.762Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD89BA2D4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-23T21:43:09.464Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME85962CB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-23T21:43:09.835Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ332941  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ332941 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a5/W4CZ332941.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ332941 ;
+        adm:logEntry        bda:LGE39131A33188702B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ342670  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gtam rgyud kyi lam nas mes po'i zhabs rjes 'tshol ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   284 .
+    
+    bdr:I4CZ342671  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gtam rgyud kyi lam nas mes po'i zhabs rjes 'tshol ba/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:W4CZ332941  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ342670 , bdr:I4CZ342671 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives Acc. No. 13370, 13373"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2902 {
+    bda:I3CN2904  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2904 ;
+        adm:logEntry        bda:LG142B511E3B6D1B3B , bda:LG538E106D3E91B7D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG142B511E3B6D1B3B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-16T10:29:02.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG30355270573947FC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-16T10:29:02.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG538E106D3E91B7D1
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-08T13:54:46.242Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN2902  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2902 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d1/W3CN2902.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2902 ;
+        adm:logEntry        bda:LG30355270573947FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2904  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of brda sprod pa ka la pa'i mdo'i 'grel pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   214 .
+    
+    bdr:W3CN2902  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2904 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

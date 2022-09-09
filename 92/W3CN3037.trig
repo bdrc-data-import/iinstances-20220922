@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3037 {
+    bda:I3CN3515  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3515 ;
+        adm:logEntry        bda:LG308BB1A39F1505DE , bda:LG6BDE82EDBC1589D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG308BB1A39F1505DE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:11:46.872Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6BDE82EDBC1589D1
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:08:25.889Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB79137E375BD11F5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T12:11:47.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3037  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3037 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "92/W3CN3037.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3037 ;
+        adm:logEntry        bda:LGB79137E375BD11F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3515  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gdan sa chen po bkras lhun gyi lo rgyus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   232 .
+    
+    bdr:W3CN3037  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I3CN3515 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

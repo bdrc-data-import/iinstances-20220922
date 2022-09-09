@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17637 {
+    bda:I2PD19276  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19276 ;
+        adm:logEntry        bda:LG436B5019E5A0BD46 , bda:LG678AA10A3B6DDD27 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14CF40BC7B51FBE3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-02T02:49:52.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG436B5019E5A0BD46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-02T02:49:50.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG678AA10A3B6DDD27
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:47.29Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD17637  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17637 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5d/W2PD17637.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17637 ;
+        adm:logEntry        bda:LG14CF40BC7B51FBE3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19276  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rab byung bcu bdun pa'i shing lug lo'i lo tho/ spyi lo 2015lo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   130 .
+    
+    bdr:W2PD17637  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD19276 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

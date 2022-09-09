@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG229029 {
+    bda:I2KG229139  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229139 ;
+        adm:logEntry        bda:LGC24445F6CB15FAD6 , bda:LGIM44C9BB63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG229140  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229140 ;
+        adm:logEntry        bda:LG25425B95CAD007D9 , bda:LGIMBFE41EA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG229141  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229141 ;
+        adm:logEntry        bda:LG8B20EFB151961842 , bda:LGIM6940EC34 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG25425B95CAD007D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-06T12:25:22.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8B20EFB151961842
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-06T12:25:22.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC24445F6CB15FAD6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-06T12:25:21.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGED9667013F5A506C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-07-06T12:25:22.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM44C9BB63  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-07-14T22:12:36.066Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6940EC34  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-07-14T22:12:36.836Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBFE41EA1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-07-14T22:12:36.462Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG229029  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2KG229029 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "01/W2KG229029.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG229029 ;
+        adm:logEntry        bda:LGED9667013F5A506C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG229139  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gtsang ma klu 'bum dkar nag khra gsum g.yung drung theg pa chen po'i mdo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   580 .
+    
+    bdr:I2KG229140  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gtsang ma klu 'bum dkar nag khra gsum g.yung drung theg pa chen po'i mdo/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   594 .
+    
+    bdr:I2KG229141  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of gtsang ma klu 'bum dkar nag khra gsum g.yung drung theg pa chen po'i mdo/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   596 .
+    
+    bdr:W2KG229029  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG229139 , bdr:I2KG229140 , bdr:I2KG229141 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 7/2021"@en .
+}

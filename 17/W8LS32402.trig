@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS32402 {
+    bda:I8LS32548  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS32548 ;
+        adm:logEntry        bda:LG455B712B5BCC58B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG455B712B5BCC58B5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-16T09:04:56.891Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG67ED3A391728A921
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-16T09:04:57.008Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS32402  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS32402 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "17/W8LS32402.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS32402 ;
+        adm:logEntry        bda:LG67ED3A391728A921 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS32548  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso cha lag dang bcas pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS32402  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I8LS32548 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

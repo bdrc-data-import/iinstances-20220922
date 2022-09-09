@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21544 {
+    bda:I3CN21744  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21744 ;
+        adm:logEntry        bda:LG5FAAE05F55F4F36E , bda:LGIM8F5B1DAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5FAAE05F55F4F36E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T14:47:41.679Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG71AFF4714BA2011A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-06T14:47:41.745Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8F5B1DAE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-24T00:03:07.553Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN21544  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN21544 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "44/W3CN21544.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21544 ;
+        adm:logEntry        bda:LG71AFF4714BA2011A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21744  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ri bo dwangs bsil lam rgya nag ri bo rtse lnga'i gnas yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   212 .
+    
+    bdr:IDFB9343C7C2FA0C14
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730744" .
+    
+    bdr:W3CN21544  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFB9343C7C2FA0C14 ;
+        :instanceHasVolume  bdr:I3CN21744 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

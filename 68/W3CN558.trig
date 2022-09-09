@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN558 {
+    bda:I3CN3985  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3985 ;
+        adm:logEntry        bda:LG76496C3D949315D7 , bda:LGA0A9BA75A75973EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1FAD3551314F0EFD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T18:21:34.466Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76496C3D949315D7
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:29.852Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA0A9BA75A75973EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T18:21:34.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN558  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN558 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "68/W3CN558.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN558 ;
+        adm:logEntry        bda:LG1FAD3551314F0EFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3985  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sum rtags kyi 'grel pa blo gsar 'jug ngogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   154 .
+    
+    bdr:W3CN558  a          :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN3985 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ65567 {
+    bda:I4CZ65613  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65613 ;
+        adm:logEntry        bda:LG19EA92307E08610B , bda:LG77B3B17ABD9267C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG051EAF1AE77A9385
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-27T11:11:07.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG19EA92307E08610B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-27T11:11:07.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG77B3B17ABD9267C2
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T21:48:23.054Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ65567  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ65567 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f8/W4CZ65567.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ65567 ;
+        adm:logEntry        bda:LG051EAF1AE77A9385 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ65613  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhi khro dgongs pa rang grol gyi rdzogs rim bar do drug gi sngon 'gro dang rgyud sbyong ba'i khrid thar lam snang byed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:W4CZ65567  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ65613 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

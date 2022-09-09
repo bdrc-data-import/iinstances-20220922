@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3380 {
+    bda:I3CN8593  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8593 ;
+        adm:logEntry        bda:LG2A584EF9E9AC3383 , bda:LG5884C79B9B360BBB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8594  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8594 ;
+        adm:logEntry        bda:LG1921E786BE419371 , bda:LG64B48D43799E396D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1921E786BE419371
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:13.084Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2A584EF9E9AC3383
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:12.417Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5884C79B9B360BBB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-14T16:40:02.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG643CF4022C34AABB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T12:33:14.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64B48D43799E396D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-14T16:40:02.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB28BD4D8EEF44B37
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-14T16:40:02.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3380  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3380 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2e/W3CN3380.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3380 ;
+        adm:logEntry        bda:LG643CF4022C34AABB , bda:LGB28BD4D8EEF44B37 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8593  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of deb ther sngon po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   704 .
+    
+    bdr:I3CN8594  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of deb ther sngon po/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   610 .
+    
+    bdr:W3CN3380  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8593 , bdr:I3CN8594 ;
+        :numberOfVolumes    2 .
+}

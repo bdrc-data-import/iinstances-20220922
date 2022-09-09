@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23051 {
+    bda:I1KG23200  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23200 ;
+        adm:logEntry        bda:LG0F5A0651F1973299 , bda:LG9CA711DBECDBEF16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F5A0651F1973299
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-31T14:27:20.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9CA711DBECDBEF16
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-02T20:22:55.869Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFDF831E61A3ED318
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-31T14:27:20.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG23051  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG23051 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d2/W1KG23051.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23051 ;
+        adm:logEntry        bda:LGFDF831E61A3ED318 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23200  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of grangs rig gzhung lugs rnam bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   290 .
+    
+    bdr:ID15EBF0B267F76E16
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722136" .
+    
+    bdr:W1KG23051  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID15EBF0B267F76E16 ;
+        :instanceHasVolume  bdr:I1KG23200 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 3/2016"@en .
+}

@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1GS49973 {
+    bda:I1GS50180  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1GS50180 ;
+        adm:logEntry        bda:LG27F556404BEB77F2 , bda:LG3079426CCD0540B3 , bda:LGC0B80E4471B75A4C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMF2C59B48 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27F556404BEB77F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-20T10:40:06.251Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG3079426CCD0540B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-07T12:36:38.316Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGB9BD115C204C50C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-06-18T11:26:51.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGC0B80E4471B75A4C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-18T11:25:31.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMF2C59B48  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-06T21:50:27.665Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1GS49973  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1GS49973 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "6d/W1GS49973.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1GS49973 ;
+        adm:logEntry        bda:LGB9BD115C204C50C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1GS50180  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of kan lho'i bod brgyud nang bstan dgon sde so so'i lo rgyud mdor bsdus : 1"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   237 .
+    
+    bdr:W1GS49973  a        :ImageInstance ;
+        :inCollection       bdr:PR01JW11672 ;
+        :instanceHasVolume  bdr:I1GS50180 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

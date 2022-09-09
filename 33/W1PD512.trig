@@ -1,0 +1,103 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD512 {
+    bda:I1PD5290  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1PD5290 ;
+        adm:logEntry        bda:LG2523441EDA392FA5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2DB112  a          adm:AdminData ;
+        adm:adminAbout      bdr:I2DB112 ;
+        adm:logEntry        bda:LG0C305B9A55D7D553 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0C305B9A55D7D553
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-04-25T15:28:15.278Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LG2523441EDA392FA5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-05-16T10:36:50.501Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG5105A095183EE0E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-05-16T10:36:50.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9213453B4FD7A3D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-04-25T15:28:15.934Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1PD512  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD512 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "33/W1PD512.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD512 ;
+        adm:logEntry        bda:LG5105A095183EE0E7 , bda:LG9213453B4FD7A3D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD5290  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of xia he xian dang shi zi liao"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   71 .
+    
+    bdr:I2DB112  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of xia he xian dang shi zi liao"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:IDCF789423A950FE98
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711075" .
+    
+    bdr:W1PD512  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCF789423A950FE98 ;
+        :instanceHasVolume  bdr:I1PD5290 , bdr:I2DB112 ;
+        :missingVolumes     "2-0,2" ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1CZ2382 {
+    bda:I1CZ2441  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ2441 ;
+        adm:logEntry        bda:LG19A1AB16D51A6F56 , bda:LGB46F353B0A89CF39 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1CZ2442  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ2442 ;
+        adm:logEntry        bda:LG6D47DA7D28EEFC5A , bda:LGDF5E0BC806C04697 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19A1AB16D51A6F56
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-12T15:22:03.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6D47DA7D28EEFC5A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-12T15:22:04.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6E71A227D5AF10F1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-12T15:22:04.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB46F353B0A89CF39
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-27T15:28:46.384Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDF5E0BC806C04697
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-27T15:28:46.946Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1CZ2382  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1CZ2382 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "9c/W1CZ2382.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1CZ2382 ;
+        adm:logEntry        bda:LG6E71A227D5AF10F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1CZ2441  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sgra 'grel legs bshad mthong ba don ldan shes bya'i bdag nyid dgyes pa'i bzhad sgra"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   558 .
+    
+    bdr:I1CZ2442  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of sgra 'grel legs bshad mthong ba don ldan shes bya'i bdag nyid dgyes pa'i bzhad sgra"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   626 .
+    
+    bdr:W1CZ2382  a         :ImageInstance ;
+        :inCollection       bdr:PR01JW11672 ;
+        :instanceHasVolume  bdr:I1CZ2441 , bdr:I1CZ2442 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: from 04. (0000 drive) on Dummy 22."@en .
+}

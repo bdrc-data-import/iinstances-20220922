@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18661 {
+    bda:I8LS18663  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18663 ;
+        adm:logEntry        bda:LGBCF4908FDB7D68CF , bda:LGD8175F2FAB9E5B5E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA7605A46D568E88A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:40:09.991Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBCF4908FDB7D68CF
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:10:17.377Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD8175F2FAB9E5B5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:40:09.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18661  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18661 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d2/W8LS18661.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18661 ;
+        adm:logEntry        bda:LGA7605A46D568E88A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18663  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtswa thang dang gzan rtswa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   95 .
+    
+    bdr:IDE223133DE7AA0434
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738551" .
+    
+    bdr:W8LS18661  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE223133DE7AA0434 ;
+        :instanceHasVolume  bdr:I8LS18663 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,104 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2CZ7960 {
+    bda:I1KG3550  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG3550 ;
+        adm:logEntry        bda:LG81697D4EE808B9EA , bda:LGA3C38759417CF0DA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG3551  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG3551 ;
+        adm:logEntry        bda:LG5242FA4962BD8CFE , bda:LGE8B0B070128E389E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5242FA4962BD8CFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-06T12:56:30.046Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG81697D4EE808B9EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-22T09:46:08.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA3C38759417CF0DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-10-06T12:56:29.859Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGBC9AC9BBCCEA27A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-09-22T09:46:14.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE8B0B070128E389E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-09-22T09:46:10.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W2CZ7960  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2CZ7960 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "06/W2CZ7960.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2CZ7960 ;
+        adm:logEntry        bda:LGBC9AC9BBCCEA27A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG3550  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sangs rgyas mnyam sbyor lcags smyug ma"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   488 .
+    
+    bdr:I1KG3551  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of sangs rgyas mnyam sbyor lcags smyug ma"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   510 .
+    
+    bdr:W2CZ7960  a         :ImageInstance ;
+        :inCollection       bdr:PR1PL480 , bdr:PR60CTX96 ;
+        :instanceHasVolume  bdr:I1KG3550 , bdr:I1KG3551 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2009"@en .
+}

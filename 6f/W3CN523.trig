@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN523 {
+    bda:I3CN8486  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8486 ;
+        adm:logEntry        bda:LG8D736E4ED3627B7B , bda:LGBA0DDFA4E11A3C80 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8D736E4ED3627B7B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-13T11:51:09.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBA0DDFA4E11A3C80
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:07.451Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC9EED11E0DBB6618
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-13T11:51:09.797Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN523  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN523 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6f/W3CN523.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN523 ;
+        adm:logEntry        bda:LGC9EED11E0DBB6618 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8486  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of tshul khrims dbang mo'i 'das log rnam thar dngul dkar me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   158 .
+    
+    bdr:W3CN523  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8486 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG234653 {
+    bda:I2KG234810  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG234810 ;
+        adm:logEntry        bda:LGC137FBEC7A6D88D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG234811  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG234811 ;
+        adm:logEntry        bda:LG0D11A0EF8C2F1BF4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG234812  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG234812 ;
+        adm:logEntry        bda:LGADC04A9150EC7505 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG234813  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG234813 ;
+        adm:logEntry        bda:LG06EB28E7564B85F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG234814  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG234814 ;
+        adm:logEntry        bda:LG0A3A0941313D430E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG06EB28E7564B85F1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T11:11:05.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0A3A0941313D430E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T11:11:05.154Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0D11A0EF8C2F1BF4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T11:11:04.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG613E20B355BB98AA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:11:05.256Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGADC04A9150EC7505
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T11:11:04.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC137FBEC7A6D88D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-28T11:11:04.751Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG234653  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG234653 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "5e/W2KG234653.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG234653 ;
+        adm:logEntry        bda:LG613E20B355BB98AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG234810  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub lam gyi rim pa'i khrid yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG234811  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of byang chub lam gyi rim pa'i khrid yig"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG234812  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of byang chub lam gyi rim pa'i khrid yig"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG234813  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of byang chub lam gyi rim pa'i khrid yig"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG234814  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of byang chub lam gyi rim pa'i khrid yig"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG234653  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG234810 , bdr:I2KG234811 , bdr:I2KG234812 , bdr:I2KG234813 , bdr:I2KG234814 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+}

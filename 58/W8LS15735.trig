@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS15735 {
+    bda:I8LS15761  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS15761 ;
+        adm:logEntry        bda:LG9970A97174A3B98D , bda:LGA95AF4695FF7FF3C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9970A97174A3B98D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-13T12:44:58.02Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA95AF4695FF7FF3C
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-03T20:32:23.198Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE388CCC8F1217730
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-13T12:44:58.049Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS15735  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS15735 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "58/W8LS15735.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS15735 ;
+        adm:logEntry        bda:LGE388CCC8F1217730 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS15761  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of kaH thog yab sras kyi zhal gyi gdams pa brgya pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:W8LS15735  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS15761 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
+}

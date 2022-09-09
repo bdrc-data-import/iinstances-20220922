@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4678 {
+    bda:I3CN4680  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4680 ;
+        adm:logEntry        bda:LG7FAC9E224866A7F8 , bda:LGIM84DAC15A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7FAC9E224866A7F8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:30:08.959Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD4705528C2D77EF1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:30:09.075Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM84DAC15A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-07T02:29:02.268Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN4678  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4678 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f0/W3CN4678.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4678 ;
+        adm:logEntry        bda:LGD4705528C2D77EF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4680  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dus pa chen po las sa'i snying po'i 'khor lo bcu pa zhes bya ba theg pa chen po'i mdo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   294 .
+    
+    bdr:W3CN4678  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4680 ;
+        :numberOfVolumes    1 .
+}

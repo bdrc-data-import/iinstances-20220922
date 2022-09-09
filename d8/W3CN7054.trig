@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7054 {
+    bda:I3CN7056  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7056 ;
+        adm:logEntry        bda:LG34429B999FFFE377 , bda:LG9434F1B1F5B8AE7D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG34429B999FFFE377
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:39.469Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6E858CDEC233BE7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T11:59:13.694Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9434F1B1F5B8AE7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T11:59:13.594Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN7054  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN7054 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d8/W3CN7054.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7054 ;
+        adm:logEntry        bda:LG6E858CDEC233BE7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7056  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gnyen sgrig khyim tshang gi khrims lugs shes bya'i dris lan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   244 .
+    
+    bdr:W3CN7054  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I3CN7056 ;
+        :numberOfVolumes    1 .
+}

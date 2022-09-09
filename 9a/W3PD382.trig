@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD382 {
+    bda:I4PD4219  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4219 ;
+        adm:logEntry        bda:LG1BAC169F64E15C93 , bda:LGD72075D59FAA8C7D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1BAC169F64E15C93
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:41.879Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5461584C24A74122
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T17:30:57.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD72075D59FAA8C7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T17:30:55.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W3PD382  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3PD382 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9a/W3PD382.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD382 ;
+        adm:logEntry        bda:LG5461584C24A74122 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4219  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zin tig sdom byang phan bde'i 'dod 'jo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:W3PD382  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4219 ;
+        :numberOfVolumes    1 .
+}

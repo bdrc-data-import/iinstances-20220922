@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16554 {
+    bda:I2PD18657  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18657 ;
+        adm:logEntry        bda:LG36EA6420DBA8E31D , bda:LG5CDBBD6AD337D354 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG36EA6420DBA8E31D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T20:28:53.844Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG5CDBBD6AD337D354
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-17T02:29:10.434Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG61CED0FA901D656B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T20:28:54.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG16554  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16554 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1b/W1KG16554.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16554 ;
+        adm:logEntry        bda:LG61CED0FA901D656B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18657  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dge 'dun chos 'phel dang chab spel tshe brtan phun tshogs kyi rig gzhung bsam blo skor gyi bgro gleng tshogs 'du'i dpyad rtsom legs btus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   408 .
+    
+    bdr:ID5E580A08A495FFFC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726853" .
+    
+    bdr:W1KG16554  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5E580A08A495FFFC ;
+        :instanceHasVolume  bdr:I2PD18657 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

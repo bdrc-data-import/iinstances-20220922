@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22830 {
+    bda:I3CN23401  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN23401 ;
+        adm:logEntry        bda:LG60F2927BD540AC9C , bda:LGIM7A3CE40E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN23402  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN23402 ;
+        adm:logEntry        bda:LG68612E7ED3CB22FB , bda:LGIM705CD5BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG38CF54A076026371
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-08-05T19:48:18.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG60F2927BD540AC9C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-05T19:48:18.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG68612E7ED3CB22FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-05T19:48:18.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81CEB8AB0F0EF793
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-28T10:03:38.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM705CD5BC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-18T02:11:28.977Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7A3CE40E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-18T02:11:28.7Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN22830  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN22830 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "19/W3CN22830.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22830 ;
+        adm:logEntry        bda:LG38CF54A076026371 , bda:LG81CEB8AB0F0EF793 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN23401  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of spyod 'jug 'grel pa rgyal sras yon tan bum bzang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   784 .
+    
+    bdr:I3CN23402  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of spyod 'jug 'grel pa rgyal sras yon tan bum bzang /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   388 .
+    
+    bdr:W3CN22830  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN23401 , bdr:I3CN23402 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

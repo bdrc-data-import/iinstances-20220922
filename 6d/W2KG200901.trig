@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG200901 {
+    bda:I2KG200932  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG200932 ;
+        adm:logEntry        bda:LG5601C891AD79814D , bda:LGIMD20A1F23 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG200933  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG200933 ;
+        adm:logEntry        bda:LG832A37D8CA544748 , bda:LGIMFC6AC5ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG200934  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG200934 ;
+        adm:logEntry        bda:LGCF310A18F2154D04 , bda:LGIM0D75D011 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5601C891AD79814D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-29T19:37:53.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG832A37D8CA544748
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-29T19:37:53.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA17EB0560440D102
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-29T19:37:53.384Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCF310A18F2154D04
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-29T19:37:53.306Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM0D75D011  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-16T22:44:06.349Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD20A1F23  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-16T22:44:05.79Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFC6AC5ED  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-16T22:44:06.067Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG200901  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG200901 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6d/W2KG200901.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG200901 ;
+        adm:logEntry        bda:LGA17EB0560440D102 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG200932  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of si tu kun mkhyen chos kyi 'byung gnas kyi bka' 'bum las pod cha ja nya gsum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   718 .
+    
+    bdr:I2KG200933  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of si tu kun mkhyen chos kyi 'byung gnas kyi bka' 'bum las pod cha ja nya gsum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   674 .
+    
+    bdr:I2KG200934  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of si tu kun mkhyen chos kyi 'byung gnas kyi bka' 'bum las pod cha ja nya gsum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   852 .
+    
+    bdr:W2KG200901  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG200932 , bdr:I2KG200933 , bdr:I2KG200934 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

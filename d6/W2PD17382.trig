@@ -1,0 +1,979 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17382 {
+    bda:I1KG81273  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81273 ;
+        adm:logEntry        bda:LG28D939B9DE5B289F , bda:LGIM76622F05 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81274  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81274 ;
+        adm:logEntry        bda:LGC60756D221E1081B , bda:LGIM8439660C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81275  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81275 ;
+        adm:logEntry        bda:LGCBDEBB9979CFA9CD , bda:LGIM941C4BB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81276  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81276 ;
+        adm:logEntry        bda:LG080ECD2763207371 , bda:LGIMCF55F3D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81277  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81277 ;
+        adm:logEntry        bda:LG7439347CEEC4F4DC , bda:LGIMCB59CA8E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81278  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81278 ;
+        adm:logEntry        bda:LG88F6B253F007C285 , bda:LGIME2EF4656 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81279  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81279 ;
+        adm:logEntry        bda:LG7A5A0B423190C844 , bda:LGIMA43CE0C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81280  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81280 ;
+        adm:logEntry        bda:LGAB30908E1DB241BB , bda:LGIM4F3B75D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81281  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81281 ;
+        adm:logEntry        bda:LGC22970E36ED4A608 , bda:LGIMA0443537 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81282  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81282 ;
+        adm:logEntry        bda:LG7E2616EDF3829C53 , bda:LGIM70EA14A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81283  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81283 ;
+        adm:logEntry        bda:LG70E125469C1D6A14 , bda:LGIM7BA2312D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81284  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81284 ;
+        adm:logEntry        bda:LG48395ADBDAD5F1C5 , bda:LGIM7EEC2128 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81285  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81285 ;
+        adm:logEntry        bda:LGAF2A26094CFABF7B , bda:LGIMAF453474 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81286  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81286 ;
+        adm:logEntry        bda:LGF19E86D61D7374BE , bda:LGIM786780A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81287  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81287 ;
+        adm:logEntry        bda:LGB24EA3194C7FD666 , bda:LGIM1AABC6FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81288  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81288 ;
+        adm:logEntry        bda:LGCCBB1F3D983D9DD1 , bda:LGIM1A72B50A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81289  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81289 ;
+        adm:logEntry        bda:LG3B3B7F1ABE8B186B , bda:LGIMEC6916EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81290  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81290 ;
+        adm:logEntry        bda:LGD916BA54A242CE20 , bda:LGIMB59DE92F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81291  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81291 ;
+        adm:logEntry        bda:LGFAE0E941903A6371 , bda:LGIM64D76E57 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81292  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81292 ;
+        adm:logEntry        bda:LG3288CCCCFBE7BD7D , bda:LGIM0FC3F7F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81293  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81293 ;
+        adm:logEntry        bda:LGF8207302C4C07CD4 , bda:LGIMA28D7DCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81294  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81294 ;
+        adm:logEntry        bda:LG820736F1468A7526 , bda:LGIME9529E4C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81295  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81295 ;
+        adm:logEntry        bda:LG5EE783817657AC0B , bda:LGIM8A829FD7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81296  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81296 ;
+        adm:logEntry        bda:LGDE19B60500271BB6 , bda:LGIM646DF474 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81297  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81297 ;
+        adm:logEntry        bda:LG2D59704EA8261CBD , bda:LGIM946965D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81298  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81298 ;
+        adm:logEntry        bda:LG3DD709980A0AB47C , bda:LGIM698E66DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81299  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81299 ;
+        adm:logEntry        bda:LGEAEC220806F0F13D , bda:LGIMCA698AE9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81300  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81300 ;
+        adm:logEntry        bda:LG9DD79EA39507E36B , bda:LGIM250AB300 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81301  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81301 ;
+        adm:logEntry        bda:LG60F6824F1F794777 , bda:LGIMD680F8D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81302  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81302 ;
+        adm:logEntry        bda:LG3040B2BE2854805B , bda:LGIM31DD28FD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81303  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81303 ;
+        adm:logEntry        bda:LGDFC6F1893E802D48 , bda:LGIME85B0875 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81304  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81304 ;
+        adm:logEntry        bda:LG9667D2274B7431EB , bda:LGIMA87291F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81305  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81305 ;
+        adm:logEntry        bda:LGDB666D8C9B13BA0A , bda:LGIMB8AA7A12 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81306  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81306 ;
+        adm:logEntry        bda:LG2E266B2771D38F49 , bda:LGIMD1B8F271 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81307  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81307 ;
+        adm:logEntry        bda:LGABAE08EE6431AE8D , bda:LGIM8078DC53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81308  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81308 ;
+        adm:logEntry        bda:LG4F91DBC29F99FF2F , bda:LGIM9D8D74D1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81309  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81309 ;
+        adm:logEntry        bda:LGA2685826055F196A , bda:LGIM36D2CD31 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81310  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81310 ;
+        adm:logEntry        bda:LG2A6876F66AAAAEDB , bda:LGIM5A7A4F02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG81311  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81311 ;
+        adm:logEntry        bda:LG48B559AC9D258DFC , bda:LGIMF5DF05BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG080ECD2763207371
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG28D939B9DE5B289F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.3Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2A6876F66AAAAEDB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2D59704EA8261CBD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.329Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2E266B2771D38F49
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.093Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3040B2BE2854805B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3288CCCCFBE7BD7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG35108D9BA7152849
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-12T12:38:43.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3B3B7F1ABE8B186B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3DD709980A0AB47C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG48395ADBDAD5F1C5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG48B559AC9D258DFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4F91DBC29F99FF2F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5EE783817657AC0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG60F6824F1F794777
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG70E125469C1D6A14
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7439347CEEC4F4DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7A5A0B423190C844
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E2616EDF3829C53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG820736F1468A7526
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG88F6B253F007C285
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9667D2274B7431EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9DD79EA39507E36B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.569Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA2685826055F196A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAB30908E1DB241BB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGABAE08EE6431AE8D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:43.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAF2A26094CFABF7B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB24EA3194C7FD666
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC22970E36ED4A608
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC60756D221E1081B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.379Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCBDEBB9979CFA9CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:40.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCCAD76C79BCC6DF1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-08-11T15:45:41.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCCBB1F3D983D9DD1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.596Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD916BA54A242CE20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.759Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDB666D8C9B13BA0A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDE19B60500271BB6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDFC6F1893E802D48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEAEC220806F0F13D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:42.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF19E86D61D7374BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF8207302C4C07CD4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFAE0E941903A6371
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:38:41.841Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM0FC3F7F7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:52.333Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM1A72B50A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:51.157Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM1AABC6FE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:50.894Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM250AB300  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:54.623Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM31DD28FD  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:55.12Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM36D2CD31  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:57.211Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM4F3B75D5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:48.586Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5A7A4F02  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:57.47Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM646DF474  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:53.497Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM64D76E57  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:52.023Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM698E66DA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:54.007Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM70EA14A5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:49.412Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM76622F05  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:46.451Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM786780A7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:50.619Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7BA2312D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:49.827Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7EEC2128  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:50.099Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8078DC53  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:56.575Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8439660C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:46.79Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8A829FD7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:53.257Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM941C4BB8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:47.095Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM946965D8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:53.767Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM9D8D74D1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:56.816Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA0443537  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:48.992Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA28D7DCC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:52.621Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA43CE0C2  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:48.221Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA87291F5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:55.683Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAF453474  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:50.355Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB59DE92F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:51.693Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB8AA7A12  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:55.959Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCA698AE9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:54.323Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCB59CA8E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:47.676Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCF55F3D5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:47.366Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD1B8F271  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:56.261Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD680F8D4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:54.887Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME2EF4656  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:47.901Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME85B0875  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:55.421Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME9529E4C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:52.847Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC6916EE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:51.413Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF5DF05BA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-13T13:47:57.78Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD17382  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17382 ;
+        adm:facetIndex      79 ;
+        adm:gitPath         "d6/W2PD17382.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17382 ;
+        adm:logEntry        bda:LG35108D9BA7152849 , bda:LGCCAD76C79BCC6DF1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG81273  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   930 .
+    
+    bdr:I1KG81274  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   700 .
+    
+    bdr:I1KG81275  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   762 .
+    
+    bdr:I1KG81276  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   788 .
+    
+    bdr:I1KG81277  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   784 .
+    
+    bdr:I1KG81278  a        :ImageGroup ;
+        :biblioNote         "Volume 6 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   418 .
+    
+    bdr:I1KG81279  a        :ImageGroup ;
+        :biblioNote         "Volume 7 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       7 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   714 .
+    
+    bdr:I1KG81280  a        :ImageGroup ;
+        :biblioNote         "Volume 8 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       8 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   466 .
+    
+    bdr:I1KG81281  a        :ImageGroup ;
+        :biblioNote         "Volume 9 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       9 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   768 .
+    
+    bdr:I1KG81282  a        :ImageGroup ;
+        :biblioNote         "Volume 10 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       10 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   994 .
+    
+    bdr:I1KG81283  a        :ImageGroup ;
+        :biblioNote         "Volume 11 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       11 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1176 .
+    
+    bdr:I1KG81284  a        :ImageGroup ;
+        :biblioNote         "Volume 12 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       12 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   660 .
+    
+    bdr:I1KG81285  a        :ImageGroup ;
+        :biblioNote         "Volume 13 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       13 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   632 .
+    
+    bdr:I1KG81286  a        :ImageGroup ;
+        :biblioNote         "Volume 14 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       14 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   462 .
+    
+    bdr:I1KG81287  a        :ImageGroup ;
+        :biblioNote         "Volume 15 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       15 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   782 .
+    
+    bdr:I1KG81288  a        :ImageGroup ;
+        :biblioNote         "Volume 16 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       16 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:I1KG81289  a        :ImageGroup ;
+        :biblioNote         "Volume 17 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       17 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   504 .
+    
+    bdr:I1KG81290  a        :ImageGroup ;
+        :biblioNote         "Volume 18 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       18 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   730 .
+    
+    bdr:I1KG81291  a        :ImageGroup ;
+        :biblioNote         "Volume 19 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       19 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   842 .
+    
+    bdr:I1KG81292  a        :ImageGroup ;
+        :biblioNote         "Volume 20 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       20 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   670 .
+    
+    bdr:I1KG81293  a        :ImageGroup ;
+        :biblioNote         "Volume 21 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       21 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   446 .
+    
+    bdr:I1KG81294  a        :ImageGroup ;
+        :biblioNote         "Volume 22 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       22 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   460 .
+    
+    bdr:I1KG81295  a        :ImageGroup ;
+        :biblioNote         "Volume 23 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       23 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   594 .
+    
+    bdr:I1KG81296  a        :ImageGroup ;
+        :biblioNote         "Volume 24 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       24 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:I1KG81297  a        :ImageGroup ;
+        :biblioNote         "Volume 25 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       25 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   630 .
+    
+    bdr:I1KG81298  a        :ImageGroup ;
+        :biblioNote         "Volume 26 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       26 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   596 .
+    
+    bdr:I1KG81299  a        :ImageGroup ;
+        :biblioNote         "Volume 27 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       27 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   718 .
+    
+    bdr:I1KG81300  a        :ImageGroup ;
+        :biblioNote         "Volume 28 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       28 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   722 .
+    
+    bdr:I1KG81301  a        :ImageGroup ;
+        :biblioNote         "Volume 29 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       29 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   550 .
+    
+    bdr:I1KG81302  a        :ImageGroup ;
+        :biblioNote         "Volume 30 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       30 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   418 .
+    
+    bdr:I1KG81303  a        :ImageGroup ;
+        :biblioNote         "Volume 31 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       31 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   644 .
+    
+    bdr:I1KG81304  a        :ImageGroup ;
+        :biblioNote         "Volume 32 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       32 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   584 .
+    
+    bdr:I1KG81305  a        :ImageGroup ;
+        :biblioNote         "Volume 33 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       33 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   598 .
+    
+    bdr:I1KG81306  a        :ImageGroup ;
+        :biblioNote         "Volume 34 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       34 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   734 .
+    
+    bdr:I1KG81307  a        :ImageGroup ;
+        :biblioNote         "Volume 35 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       35 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   948 .
+    
+    bdr:I1KG81308  a        :ImageGroup ;
+        :biblioNote         "Volume 36 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       36 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   330 .
+    
+    bdr:I1KG81309  a        :ImageGroup ;
+        :biblioNote         "Volume 37 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       37 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   696 .
+    
+    bdr:I1KG81310  a        :ImageGroup ;
+        :biblioNote         "Volume 38 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       38 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   428 .
+    
+    bdr:I1KG81311  a        :ImageGroup ;
+        :biblioNote         "Volume 39 of rnying ma rgyud 'bum/(bris ma/ gzhi chen dgon/)"@en ;
+        :volumeNumber       39 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   436 .
+    
+    bdr:W2PD17382  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG81273 , bdr:I1KG81274 , bdr:I1KG81275 , bdr:I1KG81276 , bdr:I1KG81277 , bdr:I1KG81278 , bdr:I1KG81279 , bdr:I1KG81280 , bdr:I1KG81281 , bdr:I1KG81282 , bdr:I1KG81283 , bdr:I1KG81284 , bdr:I1KG81285 , bdr:I1KG81286 , bdr:I1KG81287 , bdr:I1KG81288 , bdr:I1KG81289 , bdr:I1KG81290 , bdr:I1KG81291 , bdr:I1KG81292 , bdr:I1KG81293 , bdr:I1KG81294 , bdr:I1KG81295 , bdr:I1KG81296 , bdr:I1KG81297 , bdr:I1KG81298 , bdr:I1KG81299 , bdr:I1KG81300 , bdr:I1KG81301 , bdr:I1KG81302 , bdr:I1KG81303 , bdr:I1KG81304 , bdr:I1KG81305 , bdr:I1KG81306 , bdr:I1KG81307 , bdr:I1KG81308 , bdr:I1KG81309 , bdr:I1KG81310 , bdr:I1KG81311 ;
+        :numberOfVolumes    39 ;
+        :scanInfo           "Scanned from the original manuscript of the Zhichen Gonpa, Kardze County."@en , "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

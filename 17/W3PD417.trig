@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD417 {
+    bda:I4PD4688  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4688 ;
+        adm:logEntry        bda:LG130615206F229240 , bda:LGC0E00517F3C65008 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG130615206F229240
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T02:00:37.203Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5A0FC9776DCB8733
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-07T15:56:38.009Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC0E00517F3C65008
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-07T15:56:37.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W3PD417  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD417 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "17/W3PD417.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD417 ;
+        adm:logEntry        bda:LG5A0FC9776DCB8733 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4688  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zhang bod sngags kyi bklag thabs sprin gyi zeg ma zhes bya ba tsha ba'i nad sel sogs/ （rig gnas skor/）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   316 .
+    
+    bdr:W3PD417  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4688 ;
+        :numberOfVolumes    1 .
+}

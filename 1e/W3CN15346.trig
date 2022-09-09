@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN15346 {
+    bda:I3CN15923  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN15923 ;
+        adm:logEntry        bda:LGB9FEB5CA621AFA02 , bda:LGEF7AF4307F3C9FFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2A1ADFDD2CFF1267
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T15:13:30.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB9FEB5CA621AFA02
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:07:07.874Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEF7AF4307F3C9FFB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-30T15:13:30.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN15346  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN15346 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1e/W3CN15346.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN15346 ;
+        adm:logEntry        bda:LG2A1ADFDD2CFF1267 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN15923  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nA ro chos drug gi khrid yig bde chen gsal ba'i 'od zer stong ldan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   496 .
+    
+    bdr:W3CN15346  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN15923 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

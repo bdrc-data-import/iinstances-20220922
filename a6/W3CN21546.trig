@@ -1,0 +1,115 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21546 {
+    bda:I3CN21947  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21947 ;
+        adm:logEntry        bda:LGAF4C497A28E9EADE , bda:LGIMBDE50466 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21948  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21948 ;
+        adm:logEntry        bda:LG87EED13BD43B8090 , bda:LGIM21233971 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN21949  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21949 ;
+        adm:logEntry        bda:LGF5EFC74E83987CF8 , bda:LGIMC7F53F85 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15F1EAAAD003D6A8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-12T16:34:22.088Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87EED13BD43B8090
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-12T16:34:21.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF4C497A28E9EADE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-12T16:34:21.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF5EFC74E83987CF8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-12T16:34:22.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM21233971  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-03T21:18:43.107Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBDE50466  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-03T21:18:42.888Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC7F53F85  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-03T21:18:43.308Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN21546  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN21546 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "a6/W3CN21546.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21546 ;
+        adm:logEntry        bda:LG15F1EAAAD003D6A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21947  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of stong ra mkhan brgyud kyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   508 .
+    
+    bdr:I3CN21948  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of stong ra mkhan brgyud kyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   435 .
+    
+    bdr:I3CN21949  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of stong ra mkhan brgyud kyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   340 .
+    
+    bdr:IDDF7368BA23737793
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724157" .
+    
+    bdr:W3CN21546  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDF7368BA23737793 ;
+        :instanceHasVolume  bdr:I3CN21947 , bdr:I3CN21948 , bdr:I3CN21949 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

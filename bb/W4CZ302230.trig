@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ302230 {
+    bda:I4CZ302303  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ302303 ;
+        adm:logEntry        bda:LG6E1344F1D1F752DD , bda:LGIMD102C55C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6E1344F1D1F752DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T15:18:15.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG8EE7B7DB6CD2C7F8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-22T10:45:22.278Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF7C999752B897DFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-29T15:18:15.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIMD102C55C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-07T22:49:28.12Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ302230  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ302230 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "bb/W4CZ302230.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ302230 ;
+        adm:logEntry        bda:LG8EE7B7DB6CD2C7F8 , bda:LGF7C999752B897DFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ302303  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of sde dge chos kyi rgyal po rim byon gyi rnam thar dge legs nor bu'i phreng ba 'dod dgu rab 'phel sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2246 .
+    
+    bdr:W4CZ302230  a       :ImageInstance ;
+        :inCollection       bdr:PR1NGMPP00 ;
+        :instanceHasVolume  bdr:I4CZ302303 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from Nepal German manascript preservation project."@en , "scaned from microfiche"@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG4283 {
+    bda:I2KG207271  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG207271 ;
+        adm:logEntry        bda:LG600AF9C12A59B59D , bda:LGIM774BDB03 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG600AF9C12A59B59D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-06T13:31:49.459Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAA1923B62C8ACFEB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-06T13:31:49.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM774BDB03  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-10T13:49:07.529Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG4283  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG4283 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b8/W1KG4283.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG4283 ;
+        adm:logEntry        bda:LGAA1923B62C8ACFEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG207271  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of ma hA tsi na'i rtsis gzhung 'jam dpal dgyes pa'i mchod sprin"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   242 .
+    
+    bdr:IDBF20CCAC20666C89
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147745289" .
+    
+    bdr:W1KG4283  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBF20CCAC20666C89 ;
+        :instanceHasVolume  bdr:I2KG207271 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "5/2019"@en , "images provided by Edward Henning."@en .
+}

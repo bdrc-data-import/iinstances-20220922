@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AB8 {
+    bda:I2KG201061  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG201061 ;
+        adm:logEntry        bda:LG7115114E25795E54 , bda:LGIM2BDDC136 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7115114E25795E54
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-04-15T12:53:32.548Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBC6295DBA1BE47FE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-04-15T12:53:32.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM2BDDC136  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-10T13:49:07.07Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AB8  a            adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AB8 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "92/W1AB8.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AB8 ;
+        adm:logEntry        bda:LGBC6295DBA1BE47FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG201061  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   27 .
+    
+    bdr:IDB119B1EAD3B6B401
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147749980" .
+    
+    bdr:W1AB8  a            :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB119B1EAD3B6B401 ;
+        :instanceHasVolume  bdr:I2KG201061 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "4/2018"@en .
+}

@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG26109 {
+    bda:I1KG26337  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG26337 ;
+        adm:logEntry        bda:LG7CC66E4FBF8D28DC , bda:LGA4614E154700666D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG26338  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG26338 ;
+        adm:logEntry        bda:LG1FEAB28A559B4B17 , bda:LGC360F6189F4CB4C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1FEAB28A559B4B17
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:43.155Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG25910D2D7CBA88ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-03-24T12:50:28.416Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7CC66E4FBF8D28DC
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:42.928Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA4614E154700666D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-24T12:50:28.136Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC360F6189F4CB4C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-24T12:50:28.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG26109  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG26109 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "37/W1KG26109.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG26109 ;
+        adm:logEntry        bda:LG25910D2D7CBA88ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG26337  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sher phyin lung gi snye ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   390 .
+    
+    bdr:I1KG26338  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of sher phyin lung gi snye ma/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   300 .
+    
+    bdr:W1KG26109  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG26337 , bdr:I1KG26338 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 3/2017"@en .
+}

@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74318 {
+    bda:I4CZ74336  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74336 ;
+        adm:logEntry        bda:LG642FE15551403C8F , bda:LG863E4BEEE0931748 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ74337  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74337 ;
+        adm:logEntry        bda:LG1B44F788576E895B , bda:LG57D6EE01C1879104 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ74338  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74338 ;
+        adm:logEntry        bda:LGBC1776C2AF96134A , bda:LGC7F01441612D4E28 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E23100FF5D9F47E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T16:39:42.525Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1B44F788576E895B
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:33.933Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG57D6EE01C1879104
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T16:39:42.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG642FE15551403C8F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:33.108Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG863E4BEEE0931748
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T16:39:42.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBC1776C2AF96134A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T16:39:42.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC7F01441612D4E28
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:35.01Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ74318  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74318 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "08/W4CZ74318.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74318 ;
+        adm:logEntry        bda:LG0E23100FF5D9F47E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74336  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/ blo gros rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   516 .
+    
+    bdr:I4CZ74337  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung thor bu/ blo gros rgya mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   192 .
+    
+    bdr:I4CZ74338  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung thor bu/ blo gros rgya mtsho/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   265 .
+    
+    bdr:W4CZ74318  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74336 , bdr:I4CZ74337 , bdr:I4CZ74338 ;
+        :numberOfVolumes    3 .
+}

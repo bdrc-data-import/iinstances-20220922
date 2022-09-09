@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ65568 {
+    bda:I4CZ65615  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65615 ;
+        adm:logEntry        bda:LG7D37E563F5BE9292 , bda:LGA150EFF952EF3827 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ65616  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65616 ;
+        adm:logEntry        bda:LG24FB764C2964EF30 , bda:LG5A37245233CD61EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ65617  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65617 ;
+        adm:logEntry        bda:LG48D9423EFBFBC5EB , bda:LG499EEF4D494E9397 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C62EE3B9E930FF5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-27T11:19:19.623Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG24FB764C2964EF30
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-27T11:19:19.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG48D9423EFBFBC5EB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-27T11:19:19.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG499EEF4D494E9397
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-12T01:41:44.275Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5A37245233CD61EA
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-12T01:41:43.917Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7D37E563F5BE9292
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-12T01:41:43.605Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA150EFF952EF3827
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-27T11:19:19.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ65568  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ65568 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "46/W4CZ65568.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ65568 ;
+        adm:logEntry        bda:LG0C62EE3B9E930FF5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ65615  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bon gyi chos spyod phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   438 .
+    
+    bdr:I4CZ65616  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bon gyi chos spyod phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   710 .
+    
+    bdr:I4CZ65617  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bon gyi chos spyod phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:W4CZ65568  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ65615 , bdr:I4CZ65616 , bdr:I4CZ65617 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W21682 {
+    bda:I1KG23300  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23300 ;
+        adm:logEntry        bda:LG3E49F40E6EF22923 , bda:LGIMFA11DAE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG23301  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23301 ;
+        adm:logEntry        bda:LG8A50359F80C800D2 , bda:LGF24351F5FC11DB55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3E49F40E6EF22923
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-08T11:52:14.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8A50359F80C800D2
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-03T19:20:08.374Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC54DD06B2CD6EEF0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-08T11:52:14.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF24351F5FC11DB55
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-08T11:52:14.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIMFA11DAE2  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-03T21:58:05.46Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W21682  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W21682 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "e6/W21682.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W21682 ;
+        adm:logEntry        bda:LGC54DD06B2CD6EEF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23300  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi gtam dpe mthong ba 'dzum shor"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:I1KG23301  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod kyi gtam dpe mthong ba 'dzum shor"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   202 .
+    
+    bdr:W21682  a           :ImageInstance ;
+        :inCollection       bdr:PR1CTC17 ;
+        :instanceHasVolume  bdr:I1KG23300 , bdr:I1KG23301 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

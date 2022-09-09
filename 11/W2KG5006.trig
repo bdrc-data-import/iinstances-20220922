@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG5006 {
+    bda:I2KG211317  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG211317 ;
+        adm:logEntry        bda:LG8E7A324B33EAA14F , bda:LGIM1137DA53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8E7A324B33EAA14F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-23T14:41:14.241Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB4B80E506793934B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-23T14:41:14.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM1137DA53  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-24T23:16:08.691Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG5006  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG5006 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "11/W2KG5006.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG5006 ;
+        adm:logEntry        bda:LGB4B80E506793934B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG211317  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal ldan lhan cig skyes ma rdo rje rnal 'byor ma'i sgrub thabs dkyil 'khor gyi cho ga gsang chen mchog gi myur lam gsal ba'i 'dren pa sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   444 .
+    
+    bdr:W2KG5006  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG211317 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

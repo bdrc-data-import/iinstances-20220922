@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC323 {
+    bda:I2PD18673  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18673 ;
+        adm:logEntry        bda:LG0B18C7F0134861C3 , bda:LGA9759AAED0DA95C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B18C7F0134861C3
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:48.302Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA9759AAED0DA95C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T21:43:11.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCA224B30048DA961
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T21:43:11.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC323  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1AC323 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/W1AC323.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC323 ;
+        adm:logEntry        bda:LGCA224B30048DA961 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18673  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags rdo rje theg pa'i spyi don nor bu'i 'od zer/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   200 .
+    
+    bdr:W1AC323  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18673 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

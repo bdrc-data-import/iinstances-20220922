@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6894 {
+    bda:I3CN6896  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6896 ;
+        adm:logEntry        bda:LG1C19C3652DFCE0F7 , bda:LGF46A200E21470A5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C19C3652DFCE0F7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T09:38:38.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64AC0470A0D9BFF2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T09:38:38.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF46A200E21470A5A
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:45.058Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6894  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6894 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "8e/W3CN6894.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6894 ;
+        adm:logEntry        bda:LG64AC0470A0D9BFF2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6896  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod ljongs zhing nang gi rtsa ngan med pa bzo thabs skor gyi shes bya/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   155 .
+    
+    bdr:W3CN6894  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6896 ;
+        :numberOfVolumes    1 .
+}

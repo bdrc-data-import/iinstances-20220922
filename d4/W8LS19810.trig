@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19810 {
+    bda:I8LS19812  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19812 ;
+        adm:logEntry        bda:LG864A191F43D3EF3B , bda:LGDC5779D081F9CC75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG864A191F43D3EF3B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-09T11:41:23.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB42D5B9FDB8E46F5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-09T11:41:23.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDC5779D081F9CC75
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-07T00:18:03.098Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19810  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19810 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d4/W8LS19810.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19810 ;
+        adm:logEntry        bda:LGB42D5B9FDB8E46F5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19812  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sgrub chen bka' brgyad kyi rdzong 'phrang srog gsum man ngag gab pa mngon phyung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   22 .
+    
+    bdr:W8LS19810  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19812 ;
+        :numberOfVolumes    1 .
+}

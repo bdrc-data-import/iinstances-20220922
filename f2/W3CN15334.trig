@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN15334 {
+    bda:I3CN15889  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN15889 ;
+        adm:logEntry        bda:LG824EFFDACB77305D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN15890  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN15890 ;
+        adm:logEntry        bda:LGFB3605C4C25E7204 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG58AD7178F79D45C7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-30T12:28:54.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG824EFFDACB77305D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-30T12:28:54.178Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFB3605C4C25E7204
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-30T12:28:54.279Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN15334  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN15334 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f2/W3CN15334.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN15334 ;
+        adm:logEntry        bda:LG58AD7178F79D45C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN15889  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of karma pa'i dgongs pa gsal bar byed pa'i bstan bcos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN15890  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of karma pa'i dgongs pa gsal bar byed pa'i bstan bcos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN15334  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN15889 , bdr:I3CN15890 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "18"@en .
+}

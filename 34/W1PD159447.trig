@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159447 {
+    bda:I2PD18951  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18951 ;
+        adm:logEntry        bda:LG2AE2544507DCA825 , bda:LG9F3BC81ADBD3880C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2AE2544507DCA825
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:41.456Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9C03D0F54DE1DDDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-24T05:29:06.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9F3BC81ADBD3880C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-24T05:29:05.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD159447  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159447 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "34/W1PD159447.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159447 ;
+        adm:logEntry        bda:LG9C03D0F54DE1DDDE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18951  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dul ba blo gsar 'jug pa'i them skas"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   544 .
+    
+    bdr:IDC3F73F903E26CFCF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708701" .
+    
+    bdr:W1PD159447  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC3F73F903E26CFCF ;
+        :instanceHasVolume  bdr:I2PD18951 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

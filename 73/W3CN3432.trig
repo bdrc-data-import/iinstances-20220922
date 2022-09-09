@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3432 {
+    bda:I3CN8613  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8613 ;
+        adm:logEntry        bda:LG6D3A579AB9E9C675 , bda:LGE5DDA47B235F6860 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8614  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8614 ;
+        adm:logEntry        bda:LG6D7942ACC46A90DC , bda:LG774A8D37B3BF1FCB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8615  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8615 ;
+        adm:logEntry        bda:LG242BFE64EBA0090E , bda:LG868BED3113DBFDB7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8616  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8616 ;
+        adm:logEntry        bda:LG4EEC599D69E42677 , bda:LG8942C6D51C5EA208 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG242BFE64EBA0090E
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:10.264Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2D30D00DEA5AAF60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-15T12:05:58.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4EEC599D69E42677
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:10.464Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6D3A579AB9E9C675
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-24T16:40:25.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D7942ACC46A90DC
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:10.043Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG774A8D37B3BF1FCB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-24T16:40:25.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG868BED3113DBFDB7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-24T16:40:25.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8942C6D51C5EA208
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-04-24T16:40:25.755Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9576F1C553A3A37C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-04-24T16:40:25.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE5DDA47B235F6860
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:09.829Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN3432  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN3432 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "73/W3CN3432.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3432 ;
+        adm:logEntry        bda:LG2D30D00DEA5AAF60 , bda:LG9576F1C553A3A37C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8613  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun tsong kha pa chen po'i rnam thar phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   662 .
+    
+    bdr:I3CN8614  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of rje btsun tsong kha pa chen po'i rnam thar phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   714 .
+    
+    bdr:I3CN8615  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of rje btsun tsong kha pa chen po'i rnam thar phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   538 .
+    
+    bdr:I3CN8616  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of rje btsun tsong kha pa chen po'i rnam thar phyogs bsgrigs/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   458 .
+    
+    bdr:W3CN3432  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8613 , bdr:I3CN8614 , bdr:I3CN8615 , bdr:I3CN8616 ;
+        :numberOfVolumes    4 .
+}

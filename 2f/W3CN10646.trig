@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN10646 {
+    bda:I3CN10648  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN10648 ;
+        adm:logEntry        bda:LG7998B2CE6A51B30E , bda:LGIMFBE7DE1D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN10649  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN10649 ;
+        adm:logEntry        bda:LG2B334FD039A481B0 , bda:LGIM91325A0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B334FD039A481B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-27T10:37:55.273Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7998B2CE6A51B30E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-27T10:37:54.823Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE650FFDBBE956DAA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-27T10:37:55.724Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM91325A0E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-14T23:32:39.737Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFBE7DE1D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-14T23:32:39.452Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN10646  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN10646 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "2f/W3CN10646.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN10646 ;
+        adm:logEntry        bda:LGE650FFDBBE956DAA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN10648  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bstan bcos mngon par rtogs pa'i rgyan 'grel ba dang bcas pa'i brgal lan skal bzang mgul rgyan"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   602 .
+    
+    bdr:I3CN10649  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bstan bcos mngon par rtogs pa'i rgyan 'grel ba dang bcas pa'i brgal lan skal bzang mgul rgyan"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   440 .
+    
+    bdr:W3CN10646  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN10648 , bdr:I3CN10649 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D33584, D33585"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

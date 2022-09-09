@@ -1,0 +1,136 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00EGS1016963 {
+    bda:I00EGS1016965
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I00EGS1016965 ;
+        adm:logEntry        bda:LG56124F5043907406 , bda:LGB4D0E5C02C35F883 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I00EGS1016966
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I00EGS1016966 ;
+        adm:logEntry        bda:LG2F3D6D02A99DA90C , bda:LG562B970489D9D0B4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I00EGS1016967
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I00EGS1016967 ;
+        adm:logEntry        bda:LG08645E925AAF8961 , bda:LGDDB4BA99EB1BFBB9 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08645E925AAF8961
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T11:27:43.574Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG187CFA4EC7D57629
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2006-12-19T22:37:15.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG2F3D6D02A99DA90C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-19T22:37:12.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG56124F5043907406
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T11:27:38.995Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG562B970489D9D0B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-12T11:27:42.808Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGB4D0E5C02C35F883
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-19T22:37:11.328Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGDDB4BA99EB1BFBB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-19T22:37:14.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W00EGS1016963
+        a                   adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W00EGS1016963 ;
+        adm:facetIndex      16 ;
+        adm:gitPath         "87/W00EGS1016963.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W00EGS1016963 ;
+        adm:logEntry        bda:LG187CFA4EC7D57629 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I00EGS1016965
+        a                   :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/_pad+ma nyin byed dbang po"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   798 .
+    
+    bdr:I00EGS1016966
+        a                   :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/_pad+ma nyin byed dbang po"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   834 .
+    
+    bdr:I00EGS1016967
+        a                   :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/_pad+ma nyin byed dbang po"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   782 .
+    
+    bdr:W00EGS1016963
+        a                   :ImageInstance ;
+        :inCollection       bdr:PR01DOR112 , bdr:PR01JW33478 , bdr:PR1GS49488 ;
+        :instanceHasVolume  bdr:I00EGS1016965 , bdr:I00EGS1016966 , bdr:I00EGS1016967 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en , "scanned from a set of prints from the blocks carved at palpung monastery in kham."@en .
+}

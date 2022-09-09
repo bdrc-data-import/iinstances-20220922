@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25773 {
+    bda:I1KG25775  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25775 ;
+        adm:logEntry        bda:LG1E0F65CCC1A10369 , bda:LGD83DB544D4BC8210 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E0F65CCC1A10369
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:34.314Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9DA7220F9E6F5C25
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:56:31.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD83DB544D4BC8210
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:56:31.272Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25773  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25773 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "38/W1KG25773.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25773 ;
+        adm:logEntry        bda:LG9DA7220F9E6F5C25 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25775  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi dgon sde'i slob gso/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   289 .
+    
+    bdr:ID758FB1DA64A8B161
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147750230" .
+    
+    bdr:W1KG25773  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID758FB1DA64A8B161 ;
+        :instanceHasVolume  bdr:I1KG25775 ;
+        :numberOfVolumes    1 .
+}

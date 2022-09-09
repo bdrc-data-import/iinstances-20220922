@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3MS18 {
+    bda:I3MS20  a           adm:AdminData ;
+        adm:adminAbout      bdr:I3MS20 ;
+        adm:logEntry        bda:LGACD5F341CDE74E5A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGACD5F341CDE74E5A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-27T14:31:48.098Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:W3MS18  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3MS18 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "fc/W3MS18.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3MS18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I3MS20  a           :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags pa gser 'od dam pa mdo sde'i dbang bo'i rgyal po/ (sgo dmar dga' ldan phun tshogs gling shing dpar)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3MS18  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I3MS20 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA."@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16569 {
+    bda:I2PD17893  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17893 ;
+        adm:logEntry        bda:LG662889961F415D87 , bda:LGF47AEE9F2A13635D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG662889961F415D87
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-17T02:29:14.324Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE363F2D2BF1B3E5D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T20:26:35.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF47AEE9F2A13635D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T20:26:34.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG16569  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16569 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "50/W1KG16569.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16569 ;
+        adm:logEntry        bda:LGE363F2D2BF1B3E5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17893  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dzam gling spyi bsang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   368 .
+    
+    bdr:IDFF72E1415E9E9913
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719273" .
+    
+    bdr:W1KG16569  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFF72E1415E9E9913 ;
+        :instanceHasVolume  bdr:I2PD17893 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

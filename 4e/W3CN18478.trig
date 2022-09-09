@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN18478 {
+    bda:I3CN19918  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN19918 ;
+        adm:logEntry        bda:LG33114C56549BBB78 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN19919  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN19919 ;
+        adm:logEntry        bda:LGB9AD8A576CD3D777 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG33114C56549BBB78
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-06T16:19:57.609Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3FDF27D1FCF2481D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-06T16:19:57.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB9AD8A576CD3D777
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-06T16:19:57.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN18478  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN18478 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4e/W3CN18478.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN18478 ;
+        adm:logEntry        bda:LG3FDF27D1FCF2481D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN19918  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/ klong chen rab 'byams/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN19919  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung thor bu/ klong chen rab 'byams/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN18478  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN19918 , bdr:I3CN19919 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "19"@en .
+}

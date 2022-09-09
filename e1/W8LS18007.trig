@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18007 {
+    bda:I8LS18022  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18022 ;
+        adm:logEntry        bda:LG1BDA7CEAF110F080 , bda:LG86CF9A319619EEFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS18023  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18023 ;
+        adm:logEntry        bda:LG015226B35E01B1D8 , bda:LGF1578D07F1EB4A6F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS18024  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18024 ;
+        adm:logEntry        bda:LG511FB8DDCCA62878 , bda:LGA6ACDA5BF2345472 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG015226B35E01B1D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-29T10:36:56.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1BDA7CEAF110F080
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-29T10:36:56.568Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG511FB8DDCCA62878
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-29T10:36:56.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG86CF9A319619EEFE
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:54.093Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA6ACDA5BF2345472
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:54.532Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEFC969691EF72614
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-29T10:36:56.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF1578D07F1EB4A6F
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:54.291Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18007  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS18007 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e1/W8LS18007.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18007 ;
+        adm:logEntry        bda:LGEFC969691EF72614 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18022  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ karma pa bcu drug rang byung rig pa'i rdo rje/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   338 .
+    
+    bdr:I8LS18023  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ karma pa bcu drug rang byung rig pa'i rdo rje/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   368 .
+    
+    bdr:I8LS18024  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ karma pa bcu drug rang byung rig pa'i rdo rje/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   348 .
+    
+    bdr:W8LS18007  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS18022 , bdr:I8LS18023 , bdr:I8LS18024 ;
+        :numberOfVolumes    3 .
+}

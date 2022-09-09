@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1EE17 {
+    bda:I1KG80345  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80345 ;
+        adm:logEntry        bda:LG8185742E6621C470 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG65FE2843446B15FC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T14:13:36.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8185742E6621C470
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T14:13:36.135Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1EE17  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1EE17 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "5c/W1EE17.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1EE17 ;
+        adm:logEntry        bda:LG65FE2843446B15FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80345  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub sems dpa'i spyod pa la 'jug pa/（sog yig）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1EE17  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG80345 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "9/2017"@en .
+}

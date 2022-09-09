@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17540 {
+    bda:I8LS17549  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17549 ;
+        adm:logEntry        bda:LG1F651871C6B2507E , bda:LG6B032BEBF7989756 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F651871C6B2507E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-27T10:32:46.09Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG6B032BEBF7989756
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-14T03:48:36.838Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG86D3952351B4EFCC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-27T10:32:46.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17540  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17540 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6e/W8LS17540.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17540 ;
+        adm:logEntry        bda:LG86D3952351B4EFCC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17549  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skal ldan rgya mtsho'i skyes rabs snang ba'i sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   352 .
+    
+    bdr:W8LS17540  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17549 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

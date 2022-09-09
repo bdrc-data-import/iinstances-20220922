@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG14709 {
+    bda:I2PD19785  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19785 ;
+        adm:logEntry        bda:LG30EE7DB90A3DF676 , bda:LG5662470A7D805786 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30EE7DB90A3DF676
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:03.932Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5662470A7D805786
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-13T04:33:38.404Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7CA0DD104E442E3B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-13T04:33:39.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG14709  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG14709 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ee/W1KG14709.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG14709 ;
+        adm:logEntry        bda:LG7CA0DD104E442E3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19785  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod ljongs su bskyod pa/ srog chags dang skye dngos sne mang rang bzhin dang srung skyob bya gzhag"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:W1KG14709  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD19785 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

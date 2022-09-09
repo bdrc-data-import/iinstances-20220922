@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25572 {
+    bda:I1KG25574  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25574 ;
+        adm:logEntry        bda:LG085190FDB8619E94 , bda:LG86C873D73BD3B569 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG085190FDB8619E94
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:17:11.744Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG640FB3FEFADA563A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:17:11.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG86C873D73BD3B569
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:28.058Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25572  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25572 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b1/W1KG25572.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25572 ;
+        adm:logEntry        bda:LG640FB3FEFADA563A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25574  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of khri 'dus srong gi mgur glur dpyad pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   266 .
+    
+    bdr:ID4DD2F1F86BC53D03
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720732" .
+    
+    bdr:W1KG25572  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4DD2F1F86BC53D03 ;
+        :instanceHasVolume  bdr:I1KG25574 ;
+        :numberOfVolumes    1 .
+}

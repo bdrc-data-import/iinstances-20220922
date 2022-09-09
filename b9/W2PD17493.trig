@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17493 {
+    bda:I2PD20115  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20115 ;
+        adm:logEntry        bda:LG1B9EA77970FCB784 , bda:LG49579916D7615EF0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD20116  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20116 ;
+        adm:logEntry        bda:LG36419F3D97413402 , bda:LGBE42A476B155212D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD20117  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20117 ;
+        adm:logEntry        bda:LG59C3F0FB73913503 , bda:LG70BB9421DB0895DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B9EA77970FCB784
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-29T05:20:59.67Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG36419F3D97413402
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-29T05:21:00.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG49579916D7615EF0
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-27T23:22:26.08Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG59C3F0FB73913503
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-27T23:22:26.557Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG70BB9421DB0895DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-29T05:21:01.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBCF2629BD6854233
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-29T05:21:01.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBE42A476B155212D
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-27T23:22:26.335Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD17493  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17493 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "b9/W2PD17493.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17493 ;
+        adm:logEntry        bda:LGBCF2629BD6854233 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20115  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhi khro'i tsakli/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   62 .
+    
+    bdr:I2PD20116  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of zhi khro'i tsakli/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   36 .
+    
+    bdr:I2PD20117  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of zhi khro'i tsakli/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   66 .
+    
+    bdr:W2PD17493  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD20115 , bdr:I2PD20116 , bdr:I2PD20117 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

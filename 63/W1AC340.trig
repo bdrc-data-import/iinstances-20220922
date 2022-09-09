@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC340 {
+    bda:I2PD18297  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18297 ;
+        adm:logEntry        bda:LG449003F9700E5E3E , bda:LGF91EE694F3950D74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG449003F9700E5E3E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-16T04:32:26.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCBCAFACE56C68360
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T04:32:27.512Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF91EE694F3950D74
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:52.272Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC340  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC340 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "63/W1AC340.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC340 ;
+        adm:logEntry        bda:LGCBCAFACE56C68360 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18297  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sems kyi stobs/ tshong gi mig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   256 .
+    
+    bdr:IDE02B21C87EF080E3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730021" .
+    
+    bdr:W1AC340  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE02B21C87EF080E3 ;
+        :instanceHasVolume  bdr:I2PD18297 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

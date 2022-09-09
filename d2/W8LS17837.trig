@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17837 {
+    bda:I8LS17858  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17858 ;
+        adm:logEntry        bda:LGC2B2C0132F338B7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS17859  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17859 ;
+        adm:logEntry        bda:LG7AAB1ED0D861E905 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG7AAB1ED0D861E905
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-16T12:38:11.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG98FE28B5BC454551
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-16T12:38:11.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC2B2C0132F338B7F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-16T12:38:10.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17837  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17837 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d2/W8LS17837.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17837 ;
+        adm:logEntry        bda:LG98FE28B5BC454551 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17858  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdzod 'brel dwogs gcod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS17859  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of mdzod 'brel dwogs gcod/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS17837  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17858 , bdr:I8LS17859 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

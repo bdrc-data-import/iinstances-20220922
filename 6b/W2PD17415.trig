@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17415 {
+    bda:I4PD302  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD302 ;
+        adm:logEntry        bda:LG7313EF0EAD0A7F1C , bda:LG833A4421B65F6128 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7313EF0EAD0A7F1C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-11-09T20:27:55.247Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG833A4421B65F6128
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-23T22:35:56.691Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9058F187D2CA164A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-11-09T20:27:56.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17415  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6b/W2PD17415.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17415 ;
+        adm:logEntry        bda:LG9058F187D2CA164A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD302  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags pa gser 'od dam pa mdo sde'i dbang po rgyal po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   432 .
+    
+    bdr:W2PD17415  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD302 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

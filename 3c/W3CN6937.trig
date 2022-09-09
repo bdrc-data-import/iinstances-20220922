@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6937 {
+    bda:I3CN6939  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6939 ;
+        adm:logEntry        bda:LG3C85B4A22F8627A1 , bda:LGCCA1635AB35E14AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A4AE22E19445ED5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:26:00.375Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3C85B4A22F8627A1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:26:00.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCCA1635AB35E14AA
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:33.528Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6937  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6937 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "3c/W3CN6937.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6937 ;
+        adm:logEntry        bda:LG0A4AE22E19445ED5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6939  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi khrims srol gyi lo rgyus yig tshag phyogs sgrig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:ID1D1D7FC9AD0FCAE1
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746990" .
+    
+    bdr:W3CN6937  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1D1D7FC9AD0FCAE1 ;
+        :instanceHasVolume  bdr:I3CN6939 ;
+        :numberOfVolumes    1 .
+}

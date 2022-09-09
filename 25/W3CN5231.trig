@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5231 {
+    bda:I3CN5233  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5233 ;
+        adm:logEntry        bda:LG7E432F5B83D91F39 , bda:LGF06E4A5E4B06B6BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG70F9BE980FAD4E4A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:41:40.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7E432F5B83D91F39
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T16:41:40.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF06E4A5E4B06B6BB
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-12T14:48:38.003Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5231  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5231 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "25/W3CN5231.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5231 ;
+        adm:logEntry        bda:LG70F9BE980FAD4E4A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5233  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mkhas dang grub pa'i bdag nyid chen po bka' drin sum ldan rje btsun bla ma rin po che sangs rgyas phrin las dpal bzang po mchog gi rnam par thar pa mdo tsam brjod pa dad pa'i sgo 'phar 'byed pa'i lde'u mig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:W3CN5231  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN5233 ;
+        :numberOfVolumes    1 .
+}

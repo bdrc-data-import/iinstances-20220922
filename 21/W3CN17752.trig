@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN17752 {
+    bda:I3CN17761  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN17761 ;
+        adm:logEntry        bda:LG4EA1D9E89634CE85 , bda:LGIMFA23342B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN17762  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN17762 ;
+        adm:logEntry        bda:LG419FED5F0EE8B72E , bda:LGIM39C1EC3A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG419FED5F0EE8B72E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-08T12:48:00.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4EA1D9E89634CE85
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-08T12:48:00.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A3417DA9244B857
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-08T12:48:00.672Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAECBC4FA0FC88DDF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-07T17:30:12.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM39C1EC3A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-26T21:31:45.468Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFA23342B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-26T21:31:45.268Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN17752  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN17752 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "21/W3CN17752.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN17752 ;
+        adm:logEntry        bda:LG7A3417DA9244B857 , bda:LGAECBC4FA0FC88DDF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN17761  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zungs khrag dron mo gangs can ljongs su mchod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   422 .
+    
+    bdr:I3CN17762  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of zungs khrag dron mo gangs can ljongs su mchod/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   444 .
+    
+    bdr:W3CN17752  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN17761 , bdr:I3CN17762 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. 30461"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
+}

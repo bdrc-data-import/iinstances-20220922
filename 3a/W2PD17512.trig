@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17512 {
+    bda:I4PD1345  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1345 ;
+        adm:logEntry        bda:LG389BCE5009E59371 , bda:LGBF7062ADD135B1EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1346  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1346 ;
+        adm:logEntry        bda:LG1B44DB5825A0E558 , bda:LGEE49D7064B272C81 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1347  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1347 ;
+        adm:logEntry        bda:LG6DF242BB19564017 , bda:LGB08AC2CFFC344D42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1B44DB5825A0E558
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-09T19:30:33.755Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG389BCE5009E59371
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-09T19:30:33.533Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG552306C424C3CE67
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-19T00:28:21.234Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6DF242BB19564017
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-09T19:30:33.975Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB08AC2CFFC344D42
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-19T00:28:20.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBF7062ADD135B1EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-19T00:28:17.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEE49D7064B272C81
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-19T00:28:18.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17512  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD17512 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3a/W2PD17512.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17512 ;
+        adm:logEntry        bda:LG552306C424C3CE67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1345  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of si tu pad+ma nyin byed kyi bka' 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   946 .
+    
+    bdr:I4PD1346  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of si tu pad+ma nyin byed kyi bka' 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   878 .
+    
+    bdr:I4PD1347  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of si tu pad+ma nyin byed kyi bka' 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   904 .
+    
+    bdr:W2PD17512  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC14 ;
+        :instanceHasVolume  bdr:I4PD1345 , bdr:I4PD1346 , bdr:I4PD1347 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

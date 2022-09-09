@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17983 {
+    bda:I8LS17992  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17992 ;
+        adm:logEntry        bda:LG72583C5310C84FC7 , bda:LG84642B3136949EA2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG72583C5310C84FC7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-02T11:48:43.899Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG84642B3136949EA2
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:48:10.427Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE0309D02194D7E90
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-02T11:48:43.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17983  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS17983 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "59/W8LS17983.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17983 ;
+        adm:logEntry        bda:LGE0309D02194D7E90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17992  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun bla ma rin po che sangs rgyas phrin las dpal bzang po'i rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   142 .
+    
+    bdr:IDD5C80482924B08B3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718537" .
+    
+    bdr:W8LS17983  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD5C80482924B08B3 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS17992 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 08/2016"@en .
+}

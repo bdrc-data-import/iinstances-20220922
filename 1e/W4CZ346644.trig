@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ346644 {
+    bda:I4CZ354460  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ354460 ;
+        adm:logEntry        bda:LG1ACEDBC267B170F2 , bda:LGIM16A3FBD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ354461  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ354461 ;
+        adm:logEntry        bda:LG0FCF6A7FF8A84C84 , bda:LGIM5FFB58EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0FCF6A7FF8A84C84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-27T14:53:52.325Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1ACEDBC267B170F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-27T14:53:52.225Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9270D874EFD89935
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-27T14:53:52.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM16A3FBD6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T07:43:27.67Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5FFB58EE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T07:43:27.932Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ346644  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ346644 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1e/W4CZ346644.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ346644 ;
+        adm:logEntry        bda:LG9270D874EFD89935 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ354460  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dwags po bshad sgrub gling grwa tshang gi chos 'byung kun btus rgyal bstannor bu'i mdzes rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   774 .
+    
+    bdr:I4CZ354461  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of dwags po bshad sgrub gling grwa tshang gi chos 'byung kun btus rgyal bstannor bu'i mdzes rgyan/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   764 .
+    
+    bdr:W4CZ346644  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ354460 , bdr:I4CZ354461 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no:D36360-D36361"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

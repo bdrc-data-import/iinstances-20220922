@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16705 {
+    bda:I2PD18214  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18214 ;
+        adm:logEntry        bda:LG82166D63AB2007CE , bda:LGE3A1593F3AFA9DD4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG82166D63AB2007CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-15T21:49:28.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE3A1593F3AFA9DD4
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:50.546Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGECF807093A53CEDA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-15T21:49:29.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG16705  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16705 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b0/W1KG16705.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16705 ;
+        adm:logEntry        bda:LGECF807093A53CEDA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18214  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zla ba'i rmi lam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   290 .
+    
+    bdr:ID4B9CF3D411399F21
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728673" .
+    
+    bdr:W1KG16705  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4B9CF3D411399F21 ;
+        :instanceHasVolume  bdr:I2PD18214 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

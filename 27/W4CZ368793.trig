@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ368793 {
+    bda:I4CZ368979  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ368979 ;
+        adm:logEntry        bda:LGBEE28F72CB8351FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ368980  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ368980 ;
+        adm:logEntry        bda:LG7A70765FCA178411 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG4C693B11A29EB120
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T09:53:14.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7A70765FCA178411
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-25T09:53:14.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBEE28F72CB8351FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-25T09:53:14.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ368793  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ368793 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "27/W4CZ368793.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ368793 ;
+        adm:logEntry        bda:LG4C693B11A29EB120 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ368979  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi rig gnas rgyun shes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ368980  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of bod kyi rig gnas rgyun shes/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ368793  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ368979 , bdr:I4CZ368980 ;
+        :numberOfVolumes    2 .
+}

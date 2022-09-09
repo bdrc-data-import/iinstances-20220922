@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC420 {
+    bda:I2PD18279  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18279 ;
+        adm:logEntry        bda:LG314EEA8D3DDC32E4 , bda:LGB8FCDFC9D92A3EAF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG314EEA8D3DDC32E4
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:35.931Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG41741E9D4ED9F84A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-16T03:45:34.51Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB8FCDFC9D92A3EAF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-16T03:45:33.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC420  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC420 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d2/W1AC420.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC420 ;
+        adm:logEntry        bda:LG41741E9D4ED9F84A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18279  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdo smad khyo kho'i lo rgyus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   294 .
+    
+    bdr:IDAA2F31F0B356CBC2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742441" .
+    
+    bdr:W1AC420  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAA2F31F0B356CBC2 ;
+        :instanceHasVolume  bdr:I2PD18279 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

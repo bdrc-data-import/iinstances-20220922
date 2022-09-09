@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5597 {
+    bda:I3CN5599  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5599 ;
+        adm:logEntry        bda:LG43728F66D3045BE0 , bda:LGFC398A80A955EF51 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG39AA0264D05D6133
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T12:57:25.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG43728F66D3045BE0
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:30.497Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFC398A80A955EF51
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T12:57:25.339Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5597  a         adm:AdminData ;
+        adm:access          bda:AccessRestrictedTemporarily ;
+        adm:adminAbout      bdr:W3CN5597 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dc/W3CN5597.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5597 ;
+        adm:logEntry        bda:LG39AA0264D05D6133 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5599  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of lam rim rnam grol lag bcangs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   776 .
+    
+    bdr:W3CN5597  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5599 ;
+        :numberOfVolumes    1 .
+}

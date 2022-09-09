@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG200924 {
+    bda:I2KG207275  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG207275 ;
+        adm:logEntry        bda:LG8DBF8AF9F1952EF3 , bda:LGIM752AFB16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG207276  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG207276 ;
+        adm:logEntry        bda:LG2EBE4BB11EC973E4 , bda:LGIM095C137F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EBE4BB11EC973E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-07T11:35:13.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG62E96186A5321481
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-07T11:35:13.574Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8DBF8AF9F1952EF3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-07T11:35:13.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM095C137F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-24T21:20:54.727Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM752AFB16  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-05-24T21:20:54.465Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG200924  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG200924 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/W2KG200924.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG200924 ;
+        adm:logEntry        bda:LG62E96186A5321481 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG207275  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bka' 'bum/ mi pham phun tshogs shes rab/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   726 .
+    
+    bdr:I2KG207276  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of bka' 'bum/ mi pham phun tshogs shes rab/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   684 .
+    
+    bdr:W2KG200924  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG207275 , bdr:I2KG207276 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "5/2019"@en , "copy made from the texts belong to Jamphal Raptan"@en .
+}

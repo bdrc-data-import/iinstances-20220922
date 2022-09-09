@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2403 {
+    bda:I3CN2405  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2405 ;
+        adm:logEntry        bda:LG0CCB7574ADD66040 , bda:LGB013B70305B40AC0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CCB7574ADD66040
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-04T13:44:52.914Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5D51B9D71BD607AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-04T13:44:52.964Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB013B70305B40AC0
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-10T02:09:04.502Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN2403  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2403 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7b/W3CN2403.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2403 ;
+        adm:logEntry        bda:LG5D51B9D71BD607AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2405  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyal gyi sh+rI'i dpe tshan gsum pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   135 .
+    
+    bdr:W3CN2403  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2405 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

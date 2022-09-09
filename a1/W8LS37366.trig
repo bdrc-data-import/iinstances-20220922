@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS37366 {
+    bda:I8LS37374  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS37374 ;
+        adm:logEntry        bda:LG821FACE9F130AB22 , bda:LGF643FFB2E049BB2A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG821FACE9F130AB22
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-08T09:06:37.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD3DEA4236B7E2307
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-08T09:06:37.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF643FFB2E049BB2A
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:07:37.821Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS37366  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS37366 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a1/W8LS37366.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS37366 ;
+        adm:logEntry        bda:LGD3DEA4236B7E2307 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS37374  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lam gnyis kyi mngon rtogs dbang gi chu bo nor bu'i gter mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   852 .
+    
+    bdr:W8LS37366  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS37374 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

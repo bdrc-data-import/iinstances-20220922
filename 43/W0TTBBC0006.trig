@@ -1,0 +1,93 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W0TTBBC0006 {
+    bda:I0TTBBC0006_001
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0TTBBC0006_001 ;
+        adm:logEntry        bda:LGIMD8DD6D40 , bda:LGIMF807BF40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0TTBBC0006_002
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0TTBBC0006_002 ;
+        adm:logEntry        bda:LGIM2659D803 , bda:LGIMD8DD6D40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0TTBBC0006_003
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0TTBBC0006_003 ;
+        adm:logEntry        bda:LGIM2C361E80 , bda:LGIMD8DD6D40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM2659D803  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-12T01:47:39.25Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM2C361E80  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-12T01:47:39.493Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD8DD6D40  a     adm:InitialDataImport ;
+        adm:logAgent        "NGMP Importer" ;
+        adm:logDate         "2020-07-20T16:08:04.18Z"^^xsd:dateTime ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF807BF40  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-12T01:47:38.959Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W0TTBBC0006  a      adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W0TTBBC0006 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "43/W0TTBBC0006.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W0TTBBC0006 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I0TTBBC0006_001
+        a                   :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   665 .
+    
+    bdr:I0TTBBC0006_002
+        a                   :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   186 .
+    
+    bdr:I0TTBBC0006_003
+        a                   :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   465 .
+    
+    bdr:W0TTBBC0006  a      :ImageInstance ;
+        :inCollection       bdr:PR1NGMPP00 , bdr:PR1TIBET00 ;
+        :instanceHasVolume  bdr:I0TTBBC0006_001 , bdr:I0TTBBC0006_002 , bdr:I0TTBBC0006_003 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Digitization by the projects 'Tibetan Book Evolution and Technology (TiBET)' and 'Transforming Tibetan and Buddhist Book Culture (TTBBC)', provided on BDRC with due authorization. Original folders: NGMPP_AT_167_4 + NGMPP_AT_167_5 + NGMPP_AT_168_1"@en .
+}

@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22351 {
+    bda:I3CN22713  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22713 ;
+        adm:logEntry        bda:LG8B6F16DC797B30BE , bda:LGIMD29DED90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN22714  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22714 ;
+        adm:logEntry        bda:LG41D75B7FCE4E912C , bda:LGIM7992F959 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN22715  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22715 ;
+        adm:logEntry        bda:LGFA0DBD6313613EF7 , bda:LGIM54D998E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG41D75B7FCE4E912C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-28T15:42:54.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8B6F16DC797B30BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-28T15:42:53.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9CF0634795D23081
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-04-28T15:42:54.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFA0DBD6313613EF7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-04-28T15:42:54.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM54D998E9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-24T23:58:49.565Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7992F959  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-24T23:58:49.229Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD29DED90  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-24T23:58:48.772Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN22351  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN22351 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0f/W3CN22351.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22351 ;
+        adm:logEntry        bda:LG9CF0634795D23081 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN22713  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dmigs brtse ma'i chos skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   602 .
+    
+    bdr:I3CN22714  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of dmigs brtse ma'i chos skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   772 .
+    
+    bdr:I3CN22715  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of dmigs brtse ma'i chos skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   652 .
+    
+    bdr:W3CN22351  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC17 ;
+        :instanceHasVolume  bdr:I3CN22713 , bdr:I3CN22714 , bdr:I3CN22715 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

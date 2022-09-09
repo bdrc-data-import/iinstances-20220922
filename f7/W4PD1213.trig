@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4PD1213 {
+    bda:I4PD1561  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1561 ;
+        adm:logEntry        bda:LG184A70519454D7EF , bda:LGC9AD0C19155B130D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG184A70519454D7EF
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T21:48:35.615Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG67F3ABB9E528B4DF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-10T14:59:57.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC9AD0C19155B130D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T14:59:56.02Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W4PD1213  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4PD1213 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f7/W4PD1213.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4PD1213 ;
+        adm:logEntry        bda:LG67F3ABB9E528B4DF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1561  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of tshad ma rnam 'grel gyi gzhung gsal por bshad pa legs bshad snang ba'i gter/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   904 .
+    
+    bdr:W4PD1213  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I4PD1561 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

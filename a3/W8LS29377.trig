@@ -1,0 +1,98 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS29377 {
+    bda:I8LS71431  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS71431 ;
+        adm:logEntry        bda:LG19962D38E57AFFE6 , bda:LGIM5FA0616F , bda:LGIM6E98BCBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS71432  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS71432 ;
+        adm:logEntry        bda:LG1E0071CFA1A18951 , bda:LGIM7B5C3AB8 , bda:LGIMB2DBB144 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG19962D38E57AFFE6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-22T16:18:59.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1E0071CFA1A18951
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-22T16:18:59.314Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8B4DBBFA95C90D2F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-22T16:18:59.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM5FA0616F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:27:44.934Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6E98BCBC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-03T07:54:15.123Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7B5C3AB8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-03T07:54:15.387Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB2DBB144  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:27:45.199Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS29377  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS29377 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a3/W8LS29377.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS29377 ;
+        adm:logEntry        bda:LG8B4DBBFA95C90D2F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS71431  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rnam thar gser gyi phreng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   202 .
+    
+    bdr:I8LS71432  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rnam thar gser gyi phreng ba/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   699 .
+    
+    bdr:W8LS29377  a        :ImageInstance ;
+        :inCollection       bdr:PR1NGMPP00 ;
+        :instanceHasVolume  bdr:I8LS71431 , bdr:I8LS71432 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available by Hirshberg NGMPP pdf, Ms.No.933, Reel No.AT92/3"@en .
+}

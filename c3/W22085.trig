@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22085 {
+    bda:I1KG24202  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24202 ;
+        adm:logEntry        bda:LGBBB06D498EF5F317 , bda:LGF8306F8F5E50C963 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9E1BBC47D0EE327E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-07-13T15:31:09.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBBB06D498EF5F317
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-07-13T15:31:09.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF8306F8F5E50C963
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-09T20:49:25.764Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W22085  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W22085 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c3/W22085.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22085 ;
+        adm:logEntry        bda:LG9E1BBC47D0EE327E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24202  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'brug dkar po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   264 .
+    
+    bdr:ID6B2B8D355D821DD0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746340" .
+    
+    bdr:W22085  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6B2B8D355D821DD0 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG24202 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2016"@en .
+}

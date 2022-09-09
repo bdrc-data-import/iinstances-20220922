@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20192 {
+    bda:I8LS20194  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20194 ;
+        adm:logEntry        bda:LG081F73C995CEDCD2 , bda:LG2962774F3559401E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG081F73C995CEDCD2
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:42.543Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2962774F3559401E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T15:31:39.418Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF3F34BE393AF047B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T15:31:39.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20192  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS20192 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "dd/W8LS20192.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20192 ;
+        adm:logEntry        bda:LGF3F34BE393AF047B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20194  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bla ma sku gsum sgrub pa'i bsnyen yig grub gnyis nor ster/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   40 .
+    
+    bdr:W8LS20192  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20194 ;
+        :numberOfVolumes    1 .
+}

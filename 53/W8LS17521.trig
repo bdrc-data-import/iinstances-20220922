@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17521 {
+    bda:I8LS17527  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17527 ;
+        adm:logEntry        bda:LG4C7B6F995F61220C , bda:LG7CF2B0315F3B2920 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4C7B6F995F61220C
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-14T03:48:32.929Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7CF2B0315F3B2920
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-25T14:37:20.553Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBCBDA3D8CC71A151
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-25T14:37:20.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17521  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17521 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "53/W8LS17521.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17521 ;
+        adm:logEntry        bda:LGBCBDA3D8CC71A151 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17527  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bse khrab can la mchod gtor 'bul tshul/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   46 .
+    
+    bdr:W8LS17521  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17527 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

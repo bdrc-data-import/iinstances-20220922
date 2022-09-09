@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24952 {
+    bda:I1KG24954  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24954 ;
+        adm:logEntry        bda:LG290ACD4D247F6A2A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG24955  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24955 ;
+        adm:logEntry        bda:LG60B6EFEB569F4DDA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG290ACD4D247F6A2A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T09:43:08.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG60B6EFEB569F4DDA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T09:43:08.985Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFBECDE92468D8783
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T09:43:09.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24952  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24952 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cf/W1KG24952.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24952 ;
+        adm:logEntry        bda:LGFBECDE92468D8783 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusAcquiring .
+    
+    bdr:I1KG24954  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of slob chen rgya'i skad yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG24955  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of slob chen rgya'i skad yig"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG24952  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24954 , bdr:I1KG24955 ;
+        :numberOfVolumes    2 .
+}

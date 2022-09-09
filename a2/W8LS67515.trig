@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS67515 {
+    bda:I8LS67520  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67520 ;
+        adm:logEntry        bda:LGDA1AFADF85AC47B4 , bda:LGIM7A26B181 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67521  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67521 ;
+        adm:logEntry        bda:LG324982A0209B5315 , bda:LGIM6710F0EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3075776CEE958140
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-11T09:52:42.418Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG324982A0209B5315
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-11T09:52:42.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDA1AFADF85AC47B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-11T09:52:42.277Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM6710F0EC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-18T22:57:03.892Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7A26B181  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-05-18T22:57:03.688Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS67515  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS67515 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a2/W8LS67515.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS67515 ;
+        adm:logEntry        bda:LG3075776CEE958140 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67520  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of g.yung drung bon gyi bstan 'byung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   596 .
+    
+    bdr:I8LS67521  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of g.yung drung bon gyi bstan 'byung /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   656 .
+    
+    bdr:W8LS67515  a        :ImageInstance ;
+        :inCollection       bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I8LS67520 , bdr:I8LS67521 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made from LTWA collection, Acc. No. 000109"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

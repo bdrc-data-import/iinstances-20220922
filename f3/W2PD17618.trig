@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17618 {
+    bda:I4PD4642  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4642 ;
+        adm:logEntry        bda:LG3A1DE489A27769B3 , bda:LGC51682448AE242B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3A1DE489A27769B3
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:43.002Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8CCE892CE3EC0953
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-07T08:51:44.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC51682448AE242B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-07T08:51:43.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17618  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17618 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f3/W2PD17618.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17618 ;
+        adm:logEntry        bda:LG8CCE892CE3EC0953 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4642  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 十三世达赖喇嘛的近侍 土登贡培"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   166 .
+    
+    bdr:W2PD17618  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4642 ;
+        :numberOfVolumes    1 .
+}

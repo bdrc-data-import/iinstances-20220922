@@ -1,0 +1,64 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD20579 {
+    bda:I4PD2012  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2012 ;
+        adm:logEntry        bda:LGF1555950CD82EFF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4PD2013  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2013 ;
+        adm:logEntry        bda:LG617E5A0AD5784789 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG617E5A0AD5784789
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T11:12:22.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF1555950CD82EFF9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-22T11:12:21.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD20579  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2PD20579 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "76/W2PD20579.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD20579 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD2012  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bka' gdams rin po che'i glegs bam pha chos dang bu chos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4PD2013  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of bka' gdams rin po che'i glegs bam pha chos dang bu chos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2PD20579  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD2012 , bdr:I4PD2013 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

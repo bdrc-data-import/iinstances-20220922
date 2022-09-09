@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8030 {
+    bda:I3CN8032  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8032 ;
+        adm:logEntry        bda:LG97FB0A54B665AC90 , bda:LGE195582262D71ADD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG97FB0A54B665AC90
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:47.075Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC5562847D6BCAAFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:35:08.132Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE195582262D71ADD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:35:08.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN8030  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN8030 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "eb/W3CN8030.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8030 ;
+        adm:logEntry        bda:LGC5562847D6BCAAFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8032  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of a ma dran pa'i le'u/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   156 .
+    
+    bdr:W3CN8030  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8032 ;
+        :numberOfVolumes    1 .
+}

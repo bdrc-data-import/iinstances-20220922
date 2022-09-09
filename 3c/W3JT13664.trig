@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13664 {
+    bda:I3JT13674  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3JT13674 ;
+        adm:logEntry        bda:LGAAA3D144A63A90A4 , bda:LGIM4EAB9CEE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG68D8C3059022042B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-05T15:34:35.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGAAA3D144A63A90A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-05T15:34:35.542Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4EAB9CEE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-24T22:33:32.249Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3JT13664  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13664 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/W3JT13664.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3JT13664 ;
+        adm:logEntry        bda:LG68D8C3059022042B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3JT13674  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rdo rje sems dpa' bla ma'i rnal 'byor dang 'brel ba'i rus chog sAtsa+tsha sgrub thabs kyi cho ga ngan song las sgrol ba'i gru gzings/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   20 .
+    
+    bdr:W3JT13664  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3JT13674 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 12/2014"@en .
+}

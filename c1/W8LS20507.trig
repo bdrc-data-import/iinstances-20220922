@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20507 {
+    bda:I8LS20509  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20509 ;
+        adm:logEntry        bda:LGE232067DC59B021B , bda:LGF9A2FF5404D3B419 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD21BE79D66DF834A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T10:42:57.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE232067DC59B021B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:42:57.272Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF9A2FF5404D3B419
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:50.765Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS20507  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20507 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c1/W8LS20507.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20507 ;
+        adm:logEntry        bda:LGD21BE79D66DF834A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20509  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of thon mi'i slob gso'i bgro gleng gi dpyad rtsom phyogs bsgrigs [-] thon mi'i slob gso/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   360 .
+    
+    bdr:ID0347E4ABFE4CA793
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709765" .
+    
+    bdr:W8LS20507  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0347E4ABFE4CA793 ;
+        :instanceHasVolume  bdr:I8LS20509 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5132 {
+    bda:I3CN5134  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5134 ;
+        adm:logEntry        bda:LG4EC99CF3FB77E4BD , bda:LG5E51056C1A51BF7A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4EC99CF3FB77E4BD
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:45:50.305Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5E51056C1A51BF7A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T16:22:34.094Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD943E3C06A3FE18
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:22:34.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5132  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5132 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0e/W3CN5132.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5132 ;
+        adm:logEntry        bda:LGFD943E3C06A3FE18 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5134  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of snying thig gi sngon 'gro'i ngag 'don/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   622 .
+    
+    bdr:W3CN5132  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5134 ;
+        :numberOfVolumes    1 .
+}

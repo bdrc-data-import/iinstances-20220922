@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20114 {
+    bda:I8LS20116  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20116 ;
+        adm:logEntry        bda:LG77B91810A74B6E84 , bda:LG7F219CC5133322BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG77B91810A74B6E84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T08:54:22.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7F219CC5133322BB
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-25T21:08:04.154Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF1D47A731A9096B6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T08:54:22.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20114  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS20114 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "89/W8LS20114.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20114 ;
+        adm:logEntry        bda:LGF1D47A731A9096B6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20116  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sbyangs chog nyung bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   52 .
+    
+    bdr:W8LS20114  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20116 ;
+        :numberOfVolumes    1 .
+}

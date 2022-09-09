@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS32681 {
+    bda:I8LS33265  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS33265 ;
+        adm:logEntry        bda:LG14E9634BEA51AE7A , bda:LGDF60EBD384EAC937 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14E9634BEA51AE7A
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:07:23.173Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9A0FBCCB6DFB1F11
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-07T10:45:55.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDF60EBD384EAC937
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-07T10:45:55.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS32681  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS32681 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6b/W8LS32681.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS32681 ;
+        adm:logEntry        bda:LG9A0FBCCB6DFB1F11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS33265  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dug phung rig 'dzin tshan khrus bsang dkar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   96 .
+    
+    bdr:W8LS32681  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS33265 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

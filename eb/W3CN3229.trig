@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3229 {
+    bda:I3CN3365  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3365 ;
+        adm:logEntry        bda:LG8A99C698AC2646D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG28A3DDC0C3217902
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-07T15:16:32.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A99C698AC2646D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-07T15:16:32.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3229  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN3229 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "eb/W3CN3229.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3229 ;
+        adm:logEntry        bda:LG28A3DDC0C3217902 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusAccessioned .
+    
+    bdr:I3CN3365  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of ljongs zhing lnga'i slob chung mthar phyin slob ma'i bod yig sbyang gzhi gnad bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN3229  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3365 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

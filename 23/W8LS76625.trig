@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76625 {
+    bda:I8LS76717  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76717 ;
+        adm:logEntry        bda:LG7A1F30CB244BB62C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG178008095395C063
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-07T14:13:55.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7A1F30CB244BB62C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-07T14:13:55.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS76625  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76625 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "23/W8LS76625.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76625 ;
+        adm:logEntry        bda:LG178008095395C063 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76717  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub sems kyi bstod pa rin chen sgron ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS76625  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76717 ;
+        :numberOfVolumes    1 .
+}

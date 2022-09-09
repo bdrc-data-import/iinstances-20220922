@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W15588 {
+    bda:I1PD382  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1PD382 ;
+        adm:logEntry        bda:LG0E3C73925B670004 , bda:LG18EEBF9049170F62 , bda:LGC2C0E4082AEE0ADA , bda:LGF5C8160A16715C47 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E3C73925B670004
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-03-01T11:35:37.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG18EEBF9049170F62
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-09-24T09:53:17.981Z"^^xsd:dateTime ;
+        adm:logMessage      "marked image group as qc complete"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG57A257DAB39D40D8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-03-01T11:35:38.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC2C0E4082AEE0ADA
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-09-25T13:11:58.028Z"^^xsd:dateTime ;
+        adm:logMessage      "image group marked true; annotation revised"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF5C8160A16715C47
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-10-08T08:36:37.875Z"^^xsd:dateTime ;
+        adm:logMessage      "image map reviewed"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W15588  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W15588 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "99/W15588.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W15588 ;
+        adm:logEntry        bda:LG57A257DAB39D40D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD382  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of yan lag brgyad pa'i snying po bsdus pa"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   528 .
+    
+    bdr:W15588  a           :ImageInstance ;
+        :inCollection       bdr:PR60CTX96 ;
+        :instanceHasVolume  bdr:I1PD382 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

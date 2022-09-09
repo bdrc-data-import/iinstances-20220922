@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8586 {
+    bda:I00KG03128  a       adm:AdminData ;
+        adm:adminAbout      bdr:I00KG03128 ;
+        adm:logEntry        bda:LGD4D36DE3ED1F961E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGD4D36DE3ED1F961E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-09-07T13:06:34.889Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W8586  a            adm:AdminData ;
+        adm:adminAbout      bdr:W8586 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "9e/W8586.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8586 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I00KG03128  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dur khrod bdag po yab yum gyi gtor chog"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8586  a            :ImageInstance ;
+        :instanceHasVolume  bdr:I00KG03128 ;
+        :numberOfVolumes    1 .
+}

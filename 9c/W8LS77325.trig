@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77325 {
+    bda:I8LS77342  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77342 ;
+        adm:logEntry        bda:LGBB01B9CD98E4A426 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS77343  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77343 ;
+        adm:logEntry        bda:LG64551678B2E4A598 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG64551678B2E4A598
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-11T14:42:24.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG80154F1ACEAEAF7C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-11T14:42:24.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBB01B9CD98E4A426
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-07-11T14:42:23.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77325  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS77325 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9c/W8LS77325.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77325 ;
+        adm:logEntry        bda:LG80154F1ACEAEAF7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77342  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyal pa'i bstan bcos tshad ma rnam 'grel gyi rnam bshad lung dang rigs pa'i gter mdzod/ smad cha/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS77343  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rgyal pa'i bstan bcos tshad ma rnam 'grel gyi rnam bshad lung dang rigs pa'i gter mdzod/ smad cha/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77325  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77342 , bdr:I8LS77343 ;
+        :numberOfVolumes    2 .
+}

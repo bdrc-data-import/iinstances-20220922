@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC336 {
+    bda:I4PD4480  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4480 ;
+        adm:logEntry        bda:LG30E26593F694C7CF , bda:LGBE21131B0F9F09D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG30E26593F694C7CF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-24T18:28:38.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8D3079F75B09177D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-24T18:28:40.48Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBE21131B0F9F09D6
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:51.359Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC336  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1AC336 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "62/W1AC336.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC336 ;
+        adm:logEntry        bda:LG8D3079F75B09177D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4480  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of re khe dgon chen gyi ris med blo sbyong chos skor/（sa skya'i blo sbyong brgya rtsa/）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   414 .
+    
+    bdr:W1AC336  a          :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I4PD4480 ;
+        :numberOfVolumes    1 .
+}

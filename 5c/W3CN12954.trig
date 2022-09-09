@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN12954 {
+    bda:I3CN12956  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12956 ;
+        adm:logEntry        bda:LG57CB610819BAB471 , bda:LGIM3345CBD8 , bda:LGIMC5EF4688 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG57CB610819BAB471
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-24T10:41:30.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCE25201B8B59DCE2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-24T10:41:30.203Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM3345CBD8  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-02T04:24:17.102Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC5EF4688  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-01T05:26:57.061Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN12954  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN12954 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5c/W3CN12954.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN12954 ;
+        adm:logEntry        bda:LGCE25201B8B59DCE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN12956  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of theg chen bstan pa'i snying po'i 'grel pa dang dam chos dgongs gcig gi rnam bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   450 .
+    
+    bdr:W3CN12954  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN12956 ;
+        :numberOfVolumes    1 .
+}

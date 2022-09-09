@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5615 {
+    bda:I3CN5617  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5617 ;
+        adm:logEntry        bda:LG06474A5B1D85704A , bda:LG6C3FDAB5F3E91EE5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06474A5B1D85704A
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:07:20.715Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6C3FDAB5F3E91EE5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T13:00:52.509Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF464E04610947F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T13:00:52.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN5615  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN5615 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "22/W3CN5615.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5615 ;
+        adm:logEntry        bda:LGAF464E04610947F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5617  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of khe las gsar pa'i byung 'phel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   198 .
+    
+    bdr:ID9C2785B466C640B6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714092" .
+    
+    bdr:W3CN5615  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9C2785B466C640B6 ;
+        :instanceHasVolume  bdr:I3CN5617 ;
+        :numberOfVolumes    1 .
+}

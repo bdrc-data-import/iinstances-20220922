@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26760 {
+    bda:I3CN26762  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26762 ;
+        adm:logEntry        bda:LG8A68B663B39567F9 , bda:LGIM33263F2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6500ED11EB4207FE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-17T19:43:17.348Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A68B663B39567F9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-17T19:43:17.215Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM33263F2D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:46:33.817Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN26760  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26760 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "30/W3CN26760.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26760 ;
+        adm:logEntry        bda:LG6500ED11EB4207FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26762  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lus sbyin dang dur gcod sogs nyer mkho phyogs bsdebs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   188 .
+    
+    bdr:W3CN26760  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26762 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

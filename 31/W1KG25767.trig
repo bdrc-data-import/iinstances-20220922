@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25767 {
+    bda:I1KG25769  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25769 ;
+        adm:logEntry        bda:LG7E67EC5D049F901C , bda:LGB4BD6F9A0D03FD5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E88D98E739FC0CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:54:22.629Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E67EC5D049F901C
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:33.876Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB4BD6F9A0D03FD5C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:54:22.548Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25767  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25767 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "31/W1KG25767.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25767 ;
+        adm:logEntry        bda:LG4E88D98E739FC0CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25769  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhang bod bu yi bgro gleng /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   422 .
+    
+    bdr:ID89A40B14FC532ECB
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147741764" .
+    
+    bdr:W1KG25767  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID89A40B14FC532ECB ;
+        :instanceHasVolume  bdr:I1KG25769 ;
+        :numberOfVolumes    1 .
+}

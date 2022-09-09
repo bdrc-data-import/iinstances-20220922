@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6621 {
+    bda:I3CN6623  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6623 ;
+        adm:logEntry        bda:LG5649533DD91E1FD0 , bda:LG7A650DDF6B6C4EB4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4393A3F996662558
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T16:49:22.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5649533DD91E1FD0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T16:49:22.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7A650DDF6B6C4EB4
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:38:41.564Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6621  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6621 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "78/W3CN6621.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6621 ;
+        adm:logEntry        bda:LG4393A3F996662558 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6623  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod rang skyongs ljongs kyi dmangs gzhas legs bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1357 .
+    
+    bdr:W3CN6621  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6623 ;
+        :numberOfVolumes    1 .
+}

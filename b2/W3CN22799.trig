@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22799 {
+    bda:I3CN22819  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22819 ;
+        adm:logEntry        bda:LG6764A219FB3547F2 , bda:LGIM0139F23A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN22820  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22820 ;
+        adm:logEntry        bda:LGAA078872CBE963B8 , bda:LGIM5754D0C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6764A219FB3547F2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-19T14:07:45.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA92A64F5E9D45199
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-19T14:07:46.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA078872CBE963B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-05-19T14:07:45.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0139F23A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-18T02:09:24.575Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5754D0C0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-18T02:09:24.819Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN22799  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN22799 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b2/W3CN22799.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22799 ;
+        adm:logEntry        bda:LGA92A64F5E9D45199 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN22819  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags yul nas bod sog yul du bstan pa dar tshul pad dkar phreng mdzes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   494 .
+    
+    bdr:I3CN22820  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of 'phags yul nas bod sog yul du bstan pa dar tshul pad dkar phreng mdzes/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   470 .
+    
+    bdr:W3CN22799  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN22819 , bdr:I3CN22820 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

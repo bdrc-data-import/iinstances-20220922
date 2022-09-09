@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25548 {
+    bda:I1KG25550  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25550 ;
+        adm:logEntry        bda:LG1CC80BF1130B4D68 , bda:LGE2A50EE2CCF82270 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1CC80BF1130B4D68
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T09:38:12.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG22E81AD3BFA85FEB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T09:38:12.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE2A50EE2CCF82270
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:26.351Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25548  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25548 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f2/W1KG25548.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25548 ;
+        adm:logEntry        bda:LG22E81AD3BFA85FEB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25550  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dus chen rig gnas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   178 .
+    
+    bdr:IDDA51872A07224593
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726543" .
+    
+    bdr:W1KG25548  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDA51872A07224593 ;
+        :instanceHasVolume  bdr:I1KG25550 ;
+        :numberOfVolumes    1 .
+}

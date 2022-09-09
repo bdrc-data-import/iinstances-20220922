@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG228517 {
+    bda:I2KG228519  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG228519 ;
+        adm:logEntry        bda:LG8852A44E214D60BF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG8852A44E214D60BF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-03-12T13:13:14.574Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF0DC17C0C10FD755
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-12T13:13:14.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG228517  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG228517 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b7/W2KG228517.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG228517 ;
+        adm:logEntry        bda:LGF0DC17C0C10FD755 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG228519  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of pad+ma bka thang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG228517  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG228519 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available by Hirshberg NGMPP, Reel No. L 291/2"@en , "Scanned at Nepal-German Manuscript Preservation Project, University of Hamburg. Comments: 3/2021"@en .
+}

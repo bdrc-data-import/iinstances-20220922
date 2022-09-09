@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25551 {
+    bda:I1KG25553  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25553 ;
+        adm:logEntry        bda:LG50C7060A9F440FF7 , bda:LGC3F99E8792978337 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG50C7060A9F440FF7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T09:38:41.75Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5809B6FE5AD1FE77
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T09:38:41.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC3F99E8792978337
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:26.542Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25551  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25551 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4d/W1KG25551.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25551 ;
+        adm:logEntry        bda:LG5809B6FE5AD1FE77 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25553  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi lo rgyus rig gnas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   330 .
+    
+    bdr:ID421D8D80A57A46BB
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719328" .
+    
+    bdr:W1KG25551  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID421D8D80A57A46BB ;
+        :instanceHasVolume  bdr:I1KG25553 ;
+        :numberOfVolumes    1 .
+}

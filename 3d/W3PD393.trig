@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD393 {
+    bda:I2PD17923  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17923 ;
+        adm:logEntry        bda:LG8E50BAE261F6430E , bda:LGED21BC230DA0FD71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD17924  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17924 ;
+        adm:logEntry        bda:LG52496BC0517690CA , bda:LG99D59328D0B49968 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG52496BC0517690CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-11T02:25:57.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG77D29BE25E930840
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-11T02:25:58.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8E50BAE261F6430E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-11T02:25:56.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG99D59328D0B49968
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:43.858Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGED21BC230DA0FD71
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:43.577Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3PD393  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD393 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "3d/W3PD393.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD393 ;
+        adm:logEntry        bda:LG77D29BE25E930840 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17923  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sog po rta rdzong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   590 .
+    
+    bdr:I2PD17924  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of sog po rta rdzong /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   514 .
+    
+    bdr:W3PD393  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD17923 , bdr:I2PD17924 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

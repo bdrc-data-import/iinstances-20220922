@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19138 {
+    bda:I8LS19140  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19140 ;
+        adm:logEntry        bda:LGB6B2E61D73458FE9 , bda:LGB762CBD19AE58AA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA4B4508A22FC1C32
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T15:05:05.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB6B2E61D73458FE9
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-17T23:39:12.024Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB762CBD19AE58AA1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:05:04.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19138  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19138 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f4/W8LS19138.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19138 ;
+        adm:logEntry        bda:LGA4B4508A22FC1C32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19140  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gtug bsher byed phyogs skor gyi dpe 'grel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   409 .
+    
+    bdr:ID448E02BB0017DAC0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718868" .
+    
+    bdr:W8LS19138  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID448E02BB0017DAC0 ;
+        :instanceHasVolume  bdr:I8LS19140 ;
+        :numberOfVolumes    1 .
+}

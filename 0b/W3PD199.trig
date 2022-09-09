@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD199 {
+    bda:I4PD4617  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4617 ;
+        adm:logEntry        bda:LG0CA08D699E1750F6 , bda:LG6FF5A798FCA2DAB8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CA08D699E1750F6
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:31.979Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6FF5A798FCA2DAB8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-06T17:48:27.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG94EB13E44A1767A4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-06T17:48:30.06Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W3PD199  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD199 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0b/W3PD199.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD199 ;
+        adm:logEntry        bda:LG94EB13E44A1767A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4617  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of kong po rgya mda' rdzong gi dkar chag"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1018 .
+    
+    bdr:W3PD199  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4617 ;
+        :numberOfVolumes    1 .
+}

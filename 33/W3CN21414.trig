@@ -1,0 +1,181 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN21414 {
+    bda:I2KG220300  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220300 ;
+        adm:logEntry        bda:LGD79735695E17DA50 , bda:LGIM96C048A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG220301  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220301 ;
+        adm:logEntry        bda:LG2C40D20926D455BC , bda:LGIM790CD17F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG220302  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220302 ;
+        adm:logEntry        bda:LG057401270B29AABF , bda:LGIM039E3DD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG220303  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220303 ;
+        adm:logEntry        bda:LGFB76ABCF8E18DEEC , bda:LGIM2AA2D8EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG220304  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220304 ;
+        adm:logEntry        bda:LGD60B0FC59479BF44 , bda:LGIMCECC7648 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG220305  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220305 ;
+        adm:logEntry        bda:LGD2C9E9768F005E16 , bda:LGIMDCB532C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG057401270B29AABF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2C40D20926D455BC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7D7DD3FDAAC7D0B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T11:45:17.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD2C9E9768F005E16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD60B0FC59479BF44
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD79735695E17DA50
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFB76ABCF8E18DEEC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T11:45:17.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM039E3DD6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:47.325Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM2AA2D8EC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:47.602Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM790CD17F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:46.989Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM96C048A0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:46.681Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCECC7648  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:47.923Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMDCB532C0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:03:48.223Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN21414  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN21414 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "33/W3CN21414.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN21414 ;
+        adm:logEntry        bda:LG7D7DD3FDAAC7D0B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG220300  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   252 .
+    
+    bdr:I2KG220301  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   622 .
+    
+    bdr:I2KG220302  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   408 .
+    
+    bdr:I2KG220303  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   380 .
+    
+    bdr:I2KG220304  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   762 .
+    
+    bdr:I2KG220305  a       :ImageGroup ;
+        :biblioNote         "Volume 6 of ha shul skal bzang tshe dpag gis nyar tshags mdzad pa'i kaM tshang dpe rnying phyogs bsdebs/"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:W3CN21414  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG220300 , bdr:I2KG220301 , bdr:I2KG220302 , bdr:I2KG220303 , bdr:I2KG220304 , bdr:I2KG220305 ;
+        :numberOfVolumes    6 ;
+        :scanInfo           "12/2020"@en .
+}

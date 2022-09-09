@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76083 {
+    bda:I8LS76085  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76085 ;
+        adm:logEntry        bda:LG4E296228550E5F59 , bda:LGIM8CE7AAD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3BA8C2A9F7943D52
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-21T14:47:42.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG4E296228550E5F59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-21T14:47:42.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM8CE7AAD0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:16:49.077Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS76083  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS76083 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "97/W8LS76083.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76083 ;
+        adm:logEntry        bda:LG3BA8C2A9F7943D52 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76085  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mes po'i phyugs nor g.yu rnying dgu rgyud/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   224 .
+    
+    bdr:W8LS76083  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76085 ;
+        :numberOfVolumes    1 .
+}

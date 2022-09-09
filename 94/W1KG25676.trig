@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25676 {
+    bda:I1KG25678  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25678 ;
+        adm:logEntry        bda:LG81440C5D883B4F70 , bda:LGE0C8F220DCE9F178 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG81440C5D883B4F70
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:08:16.45Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8F3295B5728B96A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T16:53:03.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE0C8F220DCE9F178
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:53:03.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25676  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25676 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/W1KG25676.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25676 ;
+        adm:logEntry        bda:LG8F3295B5728B96A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25678  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of krung hwa mi dmangs spyi mthun rgyal khab kyi khrims yig phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   663 .
+    
+    bdr:IDC7D0AE6A22BE6C3C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147745464" .
+    
+    bdr:W1KG25676  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC7D0AE6A22BE6C3C ;
+        :instanceHasVolume  bdr:I1KG25678 ;
+        :numberOfVolumes    1 .
+}

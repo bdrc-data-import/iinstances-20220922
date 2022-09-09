@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1CZ1135 {
+    bda:I1CZ1530  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ1530 ;
+        adm:logEntry        bda:LG03D4C282E12D1C53 , bda:LG04AD324DE97E7905 , bda:LGE9384278DBED270C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG03D4C282E12D1C53
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-29T09:58:52.486Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG04AD324DE97E7905
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-20T10:46:25.734Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG5113CCF13A96EAB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-08-09T10:56:29.995Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE9384278DBED270C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-09T10:56:29.542Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1CZ1135  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1CZ1135 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d6/W1CZ1135.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1CZ1135 ;
+        adm:logEntry        bda:LG5113CCF13A96EAB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1CZ1530  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sgrub thabs rgya mtsho nas bshad pa'i lha tshogs rnams kyi mngon rtogs rjes gnang gi cho ga dang bcas pa'i tho yig gi don 'grel 'dod dgu'i ljon shing rin po che'i snye ma"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:W1CZ1135  a         :ImageInstance ;
+        :inCollection       bdr:PR1GS49488 ;
+        :instanceHasVolume  bdr:I1CZ1530 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: scanned from microfilm - Soma 0001 (0000 drive) on Dummy 9. ZJ59"@en , "scanned from microfilm copy of an dbu med manuscript"@en .
+}

@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18415 {
+    bda:I8LS18425  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18425 ;
+        adm:logEntry        bda:LGC87A39ECBE5ED674 , bda:LGFB7364BB939BA953 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B0E9352D677BA8B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T08:59:25.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC87A39ECBE5ED674
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-13T06:11:12.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFB7364BB939BA953
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T08:59:25.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18415  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS18415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "db/W8LS18415.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18415 ;
+        adm:logEntry        bda:LG3B0E9352D677BA8B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18425  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgyal rabs bon gyi 'byung gnas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   672 .
+    
+    bdr:W8LS18415  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I8LS18425 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1CZ1871 {
+    bda:I1CZ1949  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ1949 ;
+        adm:logEntry        bda:LG35F1CD0D2F4A5A5B , bda:LGBD52C31417A73325 , bda:LGC9E647C2AD55F9ED , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14177E55540A7A89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-09-17T15:01:38.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG35F1CD0D2F4A5A5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-13T11:58:49.799Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBD52C31417A73325
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-09-17T15:01:38.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC9E647C2AD55F9ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-20T11:14:16.109Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1CZ1871  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1CZ1871 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "17/W1CZ1871.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1CZ1871 ;
+        adm:logEntry        bda:LG14177E55540A7A89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1CZ1949  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/_ gzhon nu blo gros"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   680 .
+    
+    bdr:W1CZ1871  a         :ImageInstance ;
+        :inCollection       bdr:PR1GS49488 ;
+        :instanceHasVolume  bdr:I1CZ1949 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: from Roll#MC800000181-0000324 (0000 drive) on Dummy 12, 335 ff."@en , "scanned from original microfilm copy of an dbu med manuscript"@en .
+}

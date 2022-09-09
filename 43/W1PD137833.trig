@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137833 {
+    bda:I4PD4213  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4213 ;
+        adm:logEntry        bda:LG6BC6E61D1EE8BB7B , bda:LG7A934D55DE2C9607 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6BC6E61D1EE8BB7B
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-23T00:56:39.557Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7A934D55DE2C9607
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T17:24:47.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF3108A209E71EE11
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T17:24:49.116Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137833  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137833 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "43/W1PD137833.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137833 ;
+        adm:logEntry        bda:LGF3108A209E71EE11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4213  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dkar mdzes bod rigs rang skyong khul slob gso'i lo rgyus deb ther/（1991-2005）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:W1PD137833  a       :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I4PD4213 ;
+        :numberOfVolumes    1 .
+}

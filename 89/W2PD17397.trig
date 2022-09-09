@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17397 {
+    bda:I4PD2973  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2973 ;
+        adm:logEntry        bda:LG7BE661A25E5B2596 , bda:LG9A8DA7E471CEF6EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7BE661A25E5B2596
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-14T11:16:30.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9A8DA7E471CEF6EC
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:58.133Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA03F77CFE1CC344F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-14T11:16:32.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17397  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17397 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "89/W2PD17397.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17397 ;
+        adm:logEntry        bda:LGA03F77CFE1CC344F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD2973  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of paN chen sku phreng bdun pa bstan pa'i nyi ma'i rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   646 .
+    
+    bdr:W2PD17397  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I4PD2973 ;
+        :numberOfVolumes    1 .
+}

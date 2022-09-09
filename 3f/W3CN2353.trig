@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2353 {
+    bda:I3CN2355  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2355 ;
+        adm:logEntry        bda:LG104DBFD380D25F71 , bda:LG8033B3EA25905B07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2356  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2356 ;
+        adm:logEntry        bda:LG38D8422F1EEF28CF , bda:LG4616A610C7BB0804 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN2357  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2357 ;
+        adm:logEntry        bda:LG0B4FBB0213CACDE3 , bda:LG2F7430217FDEA201 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0B4FBB0213CACDE3
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-17T20:14:54.302Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG104DBFD380D25F71
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-17T20:14:53.777Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2F7430217FDEA201
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T15:54:02.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG38D8422F1EEF28CF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T15:54:02.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4085B35DD06FF4D2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-16T15:54:02.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4616A610C7BB0804
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-17T20:14:54.05Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8033B3EA25905B07
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T15:54:02.157Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN2353  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2353 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3f/W3CN2353.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2353 ;
+        adm:logEntry        bda:LG4085B35DD06FF4D2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2355  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of klu 'bum dkar nag khra gsum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   227 .
+    
+    bdr:I3CN2356  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of klu 'bum dkar nag khra gsum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   634 .
+    
+    bdr:I3CN2357  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of klu 'bum dkar nag khra gsum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   626 .
+    
+    bdr:W3CN2353  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2355 , bdr:I3CN2356 , bdr:I3CN2357 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

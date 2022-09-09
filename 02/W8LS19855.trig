@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19855 {
+    bda:I8LS19857  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19857 ;
+        adm:logEntry        bda:LGDEAF8206DDF1C571 , bda:LGE04EE651BD8C3392 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4136C55BD90C94B5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T09:29:11.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDEAF8206DDF1C571
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T09:29:11.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE04EE651BD8C3392
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-15T00:19:47.472Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19855  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19855 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "02/W8LS19855.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19855 ;
+        adm:logEntry        bda:LG4136C55BD90C94B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19857  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gdams pa ma bsgom sangs rgyas las brtsams pa'i theg mchog rdzogs pa chen po'i gtam rig 'dzin mnyes pa'i mchod sprin/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   44 .
+    
+    bdr:W8LS19855  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19857 ;
+        :numberOfVolumes    1 .
+}

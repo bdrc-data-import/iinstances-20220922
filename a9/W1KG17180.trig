@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG17180 {
+    bda:I1KG18048  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18048 ;
+        adm:logEntry        bda:LG556B1E1887EBE0C5 , bda:LGAC7EEAE4E2BC0CD2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18049  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18049 ;
+        adm:logEntry        bda:LG62F065430FDCD11A , bda:LG7B491818B620BD1F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG556B1E1887EBE0C5
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:27.672Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG62F065430FDCD11A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-25T15:45:21.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7B491818B620BD1F
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:27.852Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAC7EEAE4E2BC0CD2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-25T15:45:21.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC9B7BEEAABB2FD42
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-25T15:45:21.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG17180  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG17180 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a9/W1KG17180.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG17180 ;
+        adm:logEntry        bda:LGC9B7BEEAABB2FD42 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18048  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gangs gter rin po che'i rdzong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   492 .
+    
+    bdr:I1KG18049  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gangs gter rin po che'i rdzong /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   392 .
+    
+    bdr:IDB8E06707F1783D9B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709513" .
+    
+    bdr:W1KG17180  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB8E06707F1783D9B ;
+        :instanceHasVolume  bdr:I1KG18048 , bdr:I1KG18049 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 6/2014"@en .
+}

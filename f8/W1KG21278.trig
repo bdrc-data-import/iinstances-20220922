@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG21278 {
+    bda:I1KG21325  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21325 ;
+        adm:logEntry        bda:LG91FE31156D368F7D , bda:LGD27D5AD00D47FDD1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1EFA5DBE8C6B4ACD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-03-10T14:55:37.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG91FE31156D368F7D
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-09T23:16:08.439Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD27D5AD00D47FDD1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-10T14:55:37.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG21278  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG21278 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f8/W1KG21278.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG21278 ;
+        adm:logEntry        bda:LG1EFA5DBE8C6B4ACD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG21325  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bden pa'i le'u/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   254 .
+    
+    bdr:IDA7E51128FA552B13
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147734162" .
+    
+    bdr:W1KG21278  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA7E51128FA552B13 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG21325 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 3/2015"@en .
+}

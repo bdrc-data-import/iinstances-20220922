@@ -1,0 +1,84 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5546 {
+    bda:I3CN5548  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5548 ;
+        adm:logEntry        bda:LG13203F2192A83396 , bda:LGDC4F160C2CB95EC9 , bda:LGIMB72C5E75 , bda:LGIMC2142B9F , bda:LGIMD62FAC39 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13203F2192A83396
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:15.285Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG32E2FA1C912AD434
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T12:38:37.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDC4F160C2CB95EC9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T12:38:37.125Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMB72C5E75  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-05T17:27:44.401Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC2142B9F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-05T15:14:40.272Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD62FAC39  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-05T17:29:05.163Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5546  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN5546 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0a/W3CN5546.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5546 ;
+        adm:logEntry        bda:LG32E2FA1C912AD434 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5548  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of khro ru tshe rnam gyi gsung rtsom/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   318 .
+    
+    bdr:IDF4033E2132A89D5E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724647" .
+    
+    bdr:W3CN5546  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF4033E2132A89D5E ;
+        :instanceHasVolume  bdr:I3CN5548 ;
+        :numberOfVolumes    1 .
+}

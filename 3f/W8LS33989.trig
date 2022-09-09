@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS33989 {
+    bda:I8LS33991  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS33991 ;
+        adm:logEntry        bda:LG88B53C176337D6BD , bda:LGIM57F0F45B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG88B53C176337D6BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-06-05T10:23:16.889Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB83CBB5C9040BB85
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-05T10:23:17.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM57F0F45B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-04-06T04:45:53.211Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS33989  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS33989 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3f/W8LS33989.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS33989 ;
+        adm:logEntry        bda:LGB83CBB5C9040BB85 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS33991  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ched du brjod pa'i tshoms dang chos kyi tshigs bcad gnyis sbrags nas bstan pa'i bstan bcos bde skyid 'byung gnas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   992 .
+    
+    bdr:W8LS33989  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS33991 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection"@en .
+}

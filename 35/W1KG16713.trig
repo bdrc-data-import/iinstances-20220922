@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG16713 {
+    bda:I2PD18102  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18102 ;
+        adm:logEntry        bda:LG84FE926DF0B48DFC , bda:LGD1B5F5669599AB15 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18103  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18103 ;
+        adm:logEntry        bda:LG0C1E3AF96F02C3F6 , bda:LG820200369746D972 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C1E3AF96F02C3F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T20:34:11.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6E1E682665293A62
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T20:34:12.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG820200369746D972
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:52.129Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG84FE926DF0B48DFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T20:34:10.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD1B5F5669599AB15
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:51.883Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG16713  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG16713 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "35/W1KG16713.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG16713 ;
+        adm:logEntry        bda:LG6E1E682665293A62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18102  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpe war mchog sprul 'jam dbyangs bsod nams dbang po'i gsan yig 'dod rgu'i bang mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   594 .
+    
+    bdr:I2PD18103  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of dpe war mchog sprul 'jam dbyangs bsod nams dbang po'i gsan yig 'dod rgu'i bang mdzod/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   506 .
+    
+    bdr:ID6195BC321617092B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720112" .
+    
+    bdr:W1KG16713  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6195BC321617092B ;
+        :instanceHasVolume  bdr:I2PD18102 , bdr:I2PD18103 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

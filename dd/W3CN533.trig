@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN533 {
+    bda:I3CN8637  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8637 ;
+        adm:logEntry        bda:LG1AF158E66258DCD2 , bda:LGEA5769ECD7FF24CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8638  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8638 ;
+        adm:logEntry        bda:LG105712FE48CE39A5 , bda:LGE10FA63E34B4CBBE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8639  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8639 ;
+        adm:logEntry        bda:LG7C4254FFD26C3B52 , bda:LGDA36A274D3CC123E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG105712FE48CE39A5
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:07.895Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG1AF158E66258DCD2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-05-24T16:11:06.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7C4254FFD26C3B52
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:08.123Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBD30A63F8B074614
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-05-24T16:11:06.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDA36A274D3CC123E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-05-24T16:11:06.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE10FA63E34B4CBBE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-05-24T16:11:06.223Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEA5769ECD7FF24CE
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:07.683Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN533  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN533 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "dd/W3CN533.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN533 ;
+        adm:logEntry        bda:LGBD30A63F8B074614 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8637  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of lam ston gyi sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   468 .
+    
+    bdr:I3CN8638  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of lam ston gyi sgron me/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   478 .
+    
+    bdr:I3CN8639  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of lam ston gyi sgron me/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   596 .
+    
+    bdr:W3CN533  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8637 , bdr:I3CN8638 , bdr:I3CN8639 ;
+        :numberOfVolumes    3 .
+}

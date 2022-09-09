@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25791 {
+    bda:I1KG25793  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25793 ;
+        adm:logEntry        bda:LG13C7EE2DF8B7FF20 , bda:LG74EC7480A34C2269 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG13C7EE2DF8B7FF20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T12:12:18.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6EE2B91FB99D1C08
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T12:12:18.441Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG74EC7480A34C2269
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:35.592Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25791  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25791 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "78/W1KG25791.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25791 ;
+        adm:logEntry        bda:LG6EE2B91FB99D1C08 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25793  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mtho rgyugs myur lam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   347 .
+    
+    bdr:IDDC023EF02DE062E6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709860" .
+    
+    bdr:W1KG25791  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDC023EF02DE062E6 ;
+        :instanceHasVolume  bdr:I1KG25793 ;
+        :numberOfVolumes    1 .
+}

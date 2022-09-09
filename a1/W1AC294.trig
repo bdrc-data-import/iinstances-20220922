@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC294 {
+    bda:I2PD18251  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18251 ;
+        adm:logEntry        bda:LG9C5EA29707CE7EF2 , bda:LGE3A398AAB8B6846C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9C5EA29707CE7EF2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-15T23:55:42.902Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE3A398AAB8B6846C
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-08T00:00:45.135Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF2070681F9A88F32
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-15T23:55:43.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC294  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC294 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/W1AC294.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC294 ;
+        adm:logEntry        bda:LGF2070681F9A88F32 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18251  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nyams rtogs dmar rjen/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   246 .
+    
+    bdr:IDCDE0A6BF078BA18B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743002" .
+    
+    bdr:W1AC294  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCDE0A6BF078BA18B ;
+        :instanceHasVolume  bdr:I2PD18251 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

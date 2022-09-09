@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG235481 {
+    bda:I2KG238005  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238005 ;
+        adm:logEntry        bda:LGC16EB19F4EE96B68 , bda:LGIMFEAF67A1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG238006  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238006 ;
+        adm:logEntry        bda:LGA47B9D0F25957871 , bda:LGIM32171C9A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7C5BC5F141CB5035
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T06:30:16.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA47B9D0F25957871
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:30:16.183Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC16EB19F4EE96B68
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:30:16.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM32171C9A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:08:32.465Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFEAF67A1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:08:32.145Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG235481  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG235481 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ba/W2KG235481.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG235481 ;
+        adm:logEntry        bda:LG7C5BC5F141CB5035 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG238005  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of 'grel ba don gsal gyi mchan 'grel kun bzang zhing gi nyi ma thar 'dod mun sel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   580 .
+    
+    bdr:I2KG238006  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of 'grel ba don gsal gyi mchan 'grel kun bzang zhing gi nyi ma thar 'dod mun sel/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:W2KG235481  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG238005 , bdr:I2KG238006 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+}

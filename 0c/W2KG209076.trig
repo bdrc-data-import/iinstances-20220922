@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG209076 {
+    bda:I2KG209139  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209139 ;
+        adm:logEntry        bda:LG27A484560C9CED9A , bda:LGIM80ACAC36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27A484560C9CED9A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-08T11:25:57.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5FFD6ADFC17A723F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-08T11:25:57.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM80ACAC36  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-12T22:18:53.106Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG209076  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG209076 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0c/W2KG209076.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG209076 ;
+        adm:logEntry        bda:LG5FFD6ADFC17A723F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG209139  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal gsang ba 'dus pa'i bskyed rdzogs gnyis kyi sdom nyams len gsal ba'i brjed byang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   165 .
+    
+    bdr:W2KG209076  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG209139 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2019"@en .
+}

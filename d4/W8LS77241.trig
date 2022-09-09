@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77241 {
+    bda:I8LS77243  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77243 ;
+        adm:logEntry        bda:LG946456F6BB454065 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG4EB69BBF14E46B75
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-27T08:51:44.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG946456F6BB454065
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-27T08:51:44.654Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77241  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS77241 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "d4/W8LS77241.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77241 ;
+        adm:logEntry        bda:LG4EB69BBF14E46B75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77243  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags yul gyi nang pa'i gzhung las byung ba'i tshan rig dang lta grub kun btus/ nang pa'i tshan rig gi skor/ stod cha"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77241  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77243 ;
+        :numberOfVolumes    1 .
+}

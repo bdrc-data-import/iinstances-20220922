@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ308414 {
+    bda:I4CZ370822  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ370822 ;
+        adm:logEntry        bda:LG08107A37E55A9F70 , bda:LGIME611EF5C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08107A37E55A9F70
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-22T10:33:13.851Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGD7E862433B055ADD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-22T10:33:13.96Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIME611EF5C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-07-08T23:46:38.58Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ308414  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ308414 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b8/W4CZ308414.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ308414 ;
+        adm:logEntry        bda:LGD7E862433B055ADD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ370822  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags spyi'i mchod gtor byin gyi rlabs pa'i rim pa 'dzad med bdud rtsi rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1252 .
+    
+    bdr:W4CZ308414  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ370822 ;
+        :numberOfVolumes    1 .
+}

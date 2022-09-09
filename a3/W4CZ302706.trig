@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ302706 {
+    bda:I4CZ307468  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ307468 ;
+        adm:logEntry        bda:LGC24B322401F793E2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGC24B322401F793E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-30T11:59:11.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGEB288F9D6F3067A0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-30T11:59:11.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ302706  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ302706 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a3/W4CZ302706.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ302706 ;
+        adm:logEntry        bda:LGEB288F9D6F3067A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ307468  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dul ba mtha' dag gi snying po'i don legs par bshad pa rin po che'i phreng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ302706  a       :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I4CZ307468 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

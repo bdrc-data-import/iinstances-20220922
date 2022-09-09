@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20069 {
+    bda:I8LS20071  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20071 ;
+        adm:logEntry        bda:LG2EC309C9009789E7 , bda:LG54FEA4FA9D28752C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2EC309C9009789E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-13T11:54:19.029Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG54FEA4FA9D28752C
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:46:07.545Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF13C5BEBCAA6543D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-13T11:54:19.146Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20069  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS20069 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "89/W8LS20069.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20069 ;
+        adm:logEntry        bda:LGF13C5BEBCAA6543D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20071  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal gsang ba snying po de kho na nyid nges pa'i rgyud kyi rgyal po'i brgal lan gyi rnam bzhag cung zad 'god pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   120 .
+    
+    bdr:W8LS20069  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20071 ;
+        :numberOfVolumes    1 .
+}

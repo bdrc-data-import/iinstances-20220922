@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24467 {
+    bda:I1KG24485  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24485 ;
+        adm:logEntry        bda:LG31DA35713001ABAB , bda:LGDB6881CDEB9A86B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31DA35713001ABAB
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:00:40.678Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBA419240C7727C5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-21T11:08:44.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDB6881CDEB9A86B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-21T11:08:44.091Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24467  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG24467 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "30/W1KG24467.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24467 ;
+        adm:logEntry        bda:LGBA419240C7727C5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24485  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of legs par gsungs pa 'dul ba rgya mtsho'i snying po gsal byed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   472 .
+    
+    bdr:W1KG24467  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24485 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "9/2016"@en .
+}

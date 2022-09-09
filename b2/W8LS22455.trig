@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS22455 {
+    bda:I8LS22457  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS22457 ;
+        adm:logEntry        bda:LGC9C0F3866ABCBB5D , bda:LGIMAF1B0740 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC9C0F3866ABCBB5D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-07-26T15:42:27.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDE497B89EB9D0A4F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-07-26T15:42:27.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMAF1B0740  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-18T02:51:39.393Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS22455  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS22455 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b2/W8LS22455.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS22455 ;
+        adm:logEntry        bda:LGDE497B89EB9D0A4F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS22457  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sher phyin bsdus don rin chen phrng ba dang / grub mtha' rgya mtshor 'jug pa'i gru rdzings/ sa lam gyi rnam gzhag mkhas pa'i yid 'phrog"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   160 .
+    
+    bdr:W8LS22455  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS22457 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. 3960"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

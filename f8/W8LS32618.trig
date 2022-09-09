@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS32618 {
+    bda:I8LS32823  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS32823 ;
+        adm:logEntry        bda:LG9463655D96477FA8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG02176BEEF60CCC44
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-24T15:20:01.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9463655D96477FA8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-24T15:20:00.945Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS32618  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS32618 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f8/W8LS32618.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS32618 ;
+        adm:logEntry        bda:LG02176BEEF60CCC44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS32823  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gros 'debs bcu gnyis ma/ legs par bshad pa nyon mongs gdung sel dang legs par bshad pa zhen 'khris kun gcod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS32618  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I8LS32823 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18688 {
+    bda:I8LS18690  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18690 ;
+        adm:logEntry        bda:LGE29EF9826BF38E97 , bda:LGF93959FDD272B0A3 , bda:LGIMFF43C916 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG499A85727BDF9189
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:45:26.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE29EF9826BF38E97
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:41.268Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF93959FDD272B0A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:45:26.459Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMFF43C916  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:45:45.919Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18688  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18688 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b6/W8LS18688.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18688 ;
+        adm:logEntry        bda:LG499A85727BDF9189 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18690  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of meng tsi/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   550 .
+    
+    bdr:IDA03F330FAD4CDA0E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711626" .
+    
+    bdr:W8LS18688  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA03F330FAD4CDA0E ;
+        :instanceHasVolume  bdr:I8LS18690 ;
+        :numberOfVolumes    1 .
+}

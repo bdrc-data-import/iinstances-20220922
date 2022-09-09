@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2908 {
+    bda:I3CN2910  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2910 ;
+        adm:logEntry        bda:LG7E88CC8099F49C0B , bda:LGA041BAA61BB8D06C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7E88CC8099F49C0B
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-08T13:54:47.368Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8125750E66941D96
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-17T10:35:16.017Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA041BAA61BB8D06C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-17T10:35:15.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN2908  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2908 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e7/W3CN2908.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2908 ;
+        adm:logEntry        bda:LG8125750E66941D96 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2910  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mkhas btsun yon tan bzang po'i gsung phyogs bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   704 .
+    
+    bdr:W3CN2908  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2910 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

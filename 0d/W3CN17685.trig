@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN17685 {
+    bda:I3CN17688  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN17688 ;
+        adm:logEntry        bda:LGC1E6BBFE01CAC9C1 , bda:LGIM5CE46BED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN17689  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN17689 ;
+        adm:logEntry        bda:LGAA5499F164D3D0F1 , bda:LGIMA406217C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN17690  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN17690 ;
+        adm:logEntry        bda:LG8F05673EDD0E20AD , bda:LGIM8FED7BF6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8F05673EDD0E20AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-02T15:33:07.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA5499F164D3D0F1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-02T15:33:06.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC1E6BBFE01CAC9C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-08-02T15:33:06.852Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCAC13DB839A95446
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-08-02T15:33:07.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5CE46BED  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-02T21:24:23.181Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8FED7BF6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-02T21:24:23.583Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA406217C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-06-02T21:24:23.382Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN17685  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN17685 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0d/W3CN17685.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN17685 ;
+        adm:logEntry        bda:LGCAC13DB839A95446 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN17688  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ phyag rdor skyabs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   984 .
+    
+    bdr:I3CN17689  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ phyag rdor skyabs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   506 .
+    
+    bdr:I3CN17690  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ phyag rdor skyabs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   500 .
+    
+    bdr:W3CN17685  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN17688 , bdr:I3CN17689 , bdr:I3CN17690 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. 31639, 31640, 31641"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
+}

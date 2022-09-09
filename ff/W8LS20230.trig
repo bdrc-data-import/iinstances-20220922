@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20230 {
+    bda:I8LS20232  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20232 ;
+        adm:logEntry        bda:LG5590BF461E30EFB8 , bda:LG641C26A99E8D06B2 , bda:LGIM2C73A5C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5590BF461E30EFB8
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-17T23:39:12.249Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG641C26A99E8D06B2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T09:24:21.571Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC808CEA337EFC3CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T09:24:21.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM2C73A5C1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-18T00:05:14.152Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS20230  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20230 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "ff/W8LS20230.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20230 ;
+        adm:logEntry        bda:LGC808CEA337EFC3CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20232  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtsis 'khor gyi rmang gzhi'i shes bya ris mtshon ma[ Excel2007]'jug ngogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   216 .
+    
+    bdr:IDF2B2E4438DF37F0D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147749322" .
+    
+    bdr:W8LS20230  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF2B2E4438DF37F0D ;
+        :instanceHasVolume  bdr:I8LS20232 ;
+        :numberOfVolumes    1 .
+}

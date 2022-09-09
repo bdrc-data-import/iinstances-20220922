@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25728 {
+    bda:I1KG25730  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25730 ;
+        adm:logEntry        bda:LG0CDE3346662FAADD , bda:LG617D22B81A176DA4 , bda:LG9C04C170C05B84B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0CDE3346662FAADD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T11:37:23.958Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG617D22B81A176DA4
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-12-12T19:18:52.985Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG9C04C170C05B84B8
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:30.946Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGADA2C0E9356B8595
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T11:37:24.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25728  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25728 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "95/W1KG25728.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25728 ;
+        adm:logEntry        bda:LGADA2C0E9356B8595 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25730  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of klu sgrub dgongs rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   242 .
+    
+    bdr:IDCCA0C0DEA6E45D1B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708737" .
+    
+    bdr:W1KG25728  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCCA0C0DEA6E45D1B ;
+        :instanceHasVolume  bdr:I1KG25730 ;
+        :numberOfVolumes    1 .
+}

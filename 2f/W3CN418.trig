@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN418 {
+    bda:I3CN2859  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2859 ;
+        adm:logEntry        bda:LG48FE7F350F3A5282 , bda:LGA3919BA13ECB16C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG05AD6BFCB61239B4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-07T15:40:23.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG48FE7F350F3A5282
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-07T15:40:23.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA3919BA13ECB16C1
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-08T13:55:02.991Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN418  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN418 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2f/W3CN418.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN418 ;
+        adm:logEntry        bda:LG05AD6BFCB61239B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2859  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/ 'ba' ra ba rgyal mtshan dpal bzang/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   764 .
+    
+    bdr:W3CN418  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2859 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

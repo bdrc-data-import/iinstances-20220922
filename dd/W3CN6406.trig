@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6406 {
+    bda:I3CN6408  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6408 ;
+        adm:logEntry        bda:LG4B38C56C8C9D8B7D , bda:LGD21ECE598D75EE31 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B38C56C8C9D8B7D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-09T15:55:34.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD21ECE598D75EE31
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:10:34.895Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDCBDE462ACC9828E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-09T15:55:34.168Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6406  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6406 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dd/W3CN6406.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6406 ;
+        adm:logEntry        bda:LGDCBDE462ACC9828E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6408  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gso rig zung 'brel gyi sman bcos lag deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   152 .
+    
+    bdr:ID098515E2F2EC4376
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147735041" .
+    
+    bdr:W3CN6406  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID098515E2F2EC4376 ;
+        :instanceHasVolume  bdr:I3CN6408 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8399 {
+    bda:I3CN8401  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8401 ;
+        adm:logEntry        bda:LG57AAEDA45815785D , bda:LGCBEE0C9F2E02E33A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8402  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8402 ;
+        adm:logEntry        bda:LGD443E43C929D510E , bda:LGF084FEBC984610AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8403  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8403 ;
+        adm:logEntry        bda:LG1C33096869F837B8 , bda:LGFF053FE4911427EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1C33096869F837B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-16T11:10:24.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG57AAEDA45815785D
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:13:23.93Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA48BEC05EA858625
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-16T11:10:24.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCBEE0C9F2E02E33A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-16T11:10:24.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD443E43C929D510E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-16T11:10:24.562Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF084FEBC984610AE
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:13:25.261Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFF053FE4911427EE
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:13:26.536Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN8399  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN8399 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "6e/W3CN8399.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8399 ;
+        adm:logEntry        bda:LGA48BEC05EA858625 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8401  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod yul dmangs khrod kyi rtsa chen dpe rnying phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   918 .
+    
+    bdr:I3CN8402  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of bod yul dmangs khrod kyi rtsa chen dpe rnying phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   758 .
+    
+    bdr:I3CN8403  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of bod yul dmangs khrod kyi rtsa chen dpe rnying phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   438 .
+    
+    bdr:W3CN8399  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8401 , bdr:I3CN8402 , bdr:I3CN8403 ;
+        :numberOfVolumes    3 .
+}

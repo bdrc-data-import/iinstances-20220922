@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN12205 {
+    bda:I3CN12207  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12207 ;
+        adm:logEntry        bda:LG5B14B9C9CA9563DD , bda:LGIM475456F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5B14B9C9CA9563DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-02T13:01:16.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6FC4B44D823FB137
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-02T13:01:16.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM475456F0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-10T00:36:34.383Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN12205  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN12205 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a5/W3CN12205.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN12205 ;
+        adm:logEntry        bda:LG6FC4B44D823FB137 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN12207  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ngag dbang byams pa rin po che'i rnam par thar pa dad pa'i 'dab brgya bzhad par byed pa'i nyi ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   294 .
+    
+    bdr:W3CN12205  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN12207 ;
+        :numberOfVolumes    1 .
+}

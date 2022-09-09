@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159521 {
+    bda:I2PD19011  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19011 ;
+        adm:logEntry        bda:LG04CE85DE51BFCB02 , bda:LG30C45A64AE337A50 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04CE85DE51BFCB02
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T21:23:30.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG10056737EF724B7E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T21:23:31.305Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG30C45A64AE337A50
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:43.776Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1PD159521  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159521 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "56/W1PD159521.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159521 ;
+        adm:logEntry        bda:LG10056737EF724B7E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19011  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snyan ngag"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   322 .
+    
+    bdr:IDFC3C84E26540C64A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147731535" .
+    
+    bdr:W1PD159521  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFC3C84E26540C64A ;
+        :instanceHasVolume  bdr:I2PD19011 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6885 {
+    bda:I3CN6887  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6887 ;
+        adm:logEntry        bda:LG07A7C2D3EE6E7F47 , bda:LGF7F54570E6E367FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07A7C2D3EE6E7F47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T09:07:07.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC6B4B17F1AC58AB5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T09:07:07.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF7F54570E6E367FF
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:44.445Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6885  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6885 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "84/W3CN6885.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6885 ;
+        adm:logEntry        bda:LGC6B4B17F1AC58AB5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6887  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of jo nang pa'i grub mtha' spyi bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   326 .
+    
+    bdr:ID6A9F866F778C75E5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716095" .
+    
+    bdr:W3CN6885  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6A9F866F778C75E5 ;
+        :instanceHasVolume  bdr:I3CN6887 ;
+        :numberOfVolumes    1 .
+}

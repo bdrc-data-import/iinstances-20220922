@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76057 {
+    bda:I8LS76059  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76059 ;
+        adm:logEntry        bda:LG0A8206E645F9E7FB , bda:LGIM208D76D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS76060  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76060 ;
+        adm:logEntry        bda:LGB183AEA149A82CD5 , bda:LGIME13AC364 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS76061  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76061 ;
+        adm:logEntry        bda:LG0149466C3E451885 , bda:LGIM89D01B37 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0149466C3E451885
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-18T09:01:54.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG0A8206E645F9E7FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-18T09:01:53.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA5B173F3492DBF29
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-18T09:01:54.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB183AEA149A82CD5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-18T09:01:54.342Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM208D76D7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:09.86Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM89D01B37  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:10.378Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME13AC364  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:10.129Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS76057  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS76057 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "0a/W8LS76057.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76057 ;
+        adm:logEntry        bda:LGA5B173F3492DBF29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76059  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yid gdung mu 'brel dpe tshogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   330 .
+    
+    bdr:I8LS76060  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of yid gdung mu 'brel dpe tshogs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:I8LS76061  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of yid gdung mu 'brel dpe tshogs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   326 .
+    
+    bdr:W8LS76057  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76059 , bdr:I8LS76060 , bdr:I8LS76061 ;
+        :numberOfVolumes    3 .
+}

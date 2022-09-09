@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG15901 {
+    bda:I1KG86854  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG86854 ;
+        adm:logEntry        bda:LG0A1948429006F75D , bda:LGIM10FAA0E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG86855  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG86855 ;
+        adm:logEntry        bda:LG55ABFF905514029B , bda:LGIM905979E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG86856  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG86856 ;
+        adm:logEntry        bda:LG14A0A178595AE54B , bda:LGIMCC4F5DBE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A1948429006F75D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-29T15:37:15.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG14A0A178595AE54B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-29T15:37:15.651Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG55ABFF905514029B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-29T15:37:15.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD58F8C36DE398C50
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-29T15:37:15.843Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM10FAA0E7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T06:25:55.333Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM905979E4  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T06:25:55.625Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCC4F5DBE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T06:25:55.908Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG15901  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG15901 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "d1/W1KG15901.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG15901 ;
+        adm:logEntry        bda:LGD58F8C36DE398C50 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG86854  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ bstan pa'i dbang phyug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   734 .
+    
+    bdr:I1KG86855  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ bstan pa'i dbang phyug"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   636 .
+    
+    bdr:I1KG86856  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ bstan pa'i dbang phyug"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   652 .
+    
+    bdr:W1KG15901  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I1KG86854 , bdr:I1KG86855 , bdr:I1KG86856 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "3/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

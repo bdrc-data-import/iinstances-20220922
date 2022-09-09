@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73662 {
+    bda:I8LS73664  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73664 ;
+        adm:logEntry        bda:LG1A7CF6D82E0BDAE0 , bda:LGIMA4DDF3EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A7CF6D82E0BDAE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-01T09:44:42.853Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB64C1347C8086A75
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-01T09:44:42.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMA4DDF3EC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-14T01:29:59.264Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS73662  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73662 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "11/W8LS73662.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73662 ;
+        adm:logEntry        bda:LGB64C1347C8086A75 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73664  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of man ngag gud du sbas pa'i u pa de sh rin po che'i za ma tog las snying gtam sum cu pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:W8LS73662  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73664 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
+}

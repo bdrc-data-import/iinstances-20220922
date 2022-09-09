@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4047 {
+    bda:I3CN4229  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4229 ;
+        adm:logEntry        bda:LG7D33F4E8CA0549FF , bda:LG92736F40AC04848B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7D33F4E8CA0549FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T16:13:21.229Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG92736F40AC04848B
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:09:19.582Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB78A6D157968A359
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T16:13:21.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4047  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN4047 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c8/W3CN4047.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4047 ;
+        adm:logEntry        bda:LGB78A6D157968A359 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4229  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mnyam med shAkya'i rgyal po'i 'khrungs skar mchod pa kun bzang mchod sprin/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   168 .
+    
+    bdr:W3CN4047  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4229 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

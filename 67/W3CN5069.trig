@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5069 {
+    bda:I3CN5071  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5071 ;
+        adm:logEntry        bda:LG76C3E12192BA2B0B , bda:LGEB7F2F80BD86A0B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG109D4FDCA496A9B5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T15:06:43.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG76C3E12192BA2B0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T15:06:43.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEB7F2F80BD86A0B3
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-30T22:24:54.264Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5069  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5069 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "67/W3CN5069.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5069 ;
+        adm:logEntry        bda:LG109D4FDCA496A9B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5071  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of byang sems bdag nyid chen po g.yu thog 7karma bsod nams mchog gi rnam thar skal bzang snying gi gsos sman/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   95 .
+    
+    bdr:W3CN5069  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN5071 ;
+        :numberOfVolumes    1 .
+}

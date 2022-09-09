@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ58515 {
+    bda:I4CZ329814  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329814 ;
+        adm:logEntry        bda:LG962D6EF9E9D22B00 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ329815  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329815 ;
+        adm:logEntry        bda:LG25FEE8DECC2650B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ329816  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329816 ;
+        adm:logEntry        bda:LG2874EA2CFE374581 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ329817  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329817 ;
+        adm:logEntry        bda:LGB905EBB0145A975E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ329818  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329818 ;
+        adm:logEntry        bda:LGBD7EBA0FD54D4DD4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ329819  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ329819 ;
+        adm:logEntry        bda:LGAB5CC8308970CC69 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG25FEE8DECC2650B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG2874EA2CFE374581
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG87C2F957333C63CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-31T15:50:30.026Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG962D6EF9E9D22B00
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAB5CC8308970CC69
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB905EBB0145A975E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBD7EBA0FD54D4DD4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-31T15:50:29.791Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ58515  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ58515 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "3a/W4CZ58515.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ58515 ;
+        adm:logEntry        bda:LG87C2F957333C63CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ329814  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ329815  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ329816  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ329817  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ329818  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ329819  a       :ImageGroup ;
+        :biblioNote         "Volume 6 of bon rgya dgon du zhugs pa'i bon dpe bris snying /"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ58515  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ329814 , bdr:I4CZ329815 , bdr:I4CZ329816 , bdr:I4CZ329817 , bdr:I4CZ329818 , bdr:I4CZ329819 ;
+        :numberOfVolumes    6 .
+}

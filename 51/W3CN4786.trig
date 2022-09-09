@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4786 {
+    bda:I3CN4788  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4788 ;
+        adm:logEntry        bda:LG165E61B75A04CE0D , bda:LG3CC92656027C871D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1570DB592BFBE3A5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:00:04.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG165E61B75A04CE0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T11:00:04.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3CC92656027C871D
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-14T23:27:22.15Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN4786  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4786 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "51/W3CN4786.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4786 ;
+        adm:logEntry        bda:LG1570DB592BFBE3A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4788  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bslab pa kun btus pa'i tshig le'ur byas pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   474 .
+    
+    bdr:W3CN4786  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4788 ;
+        :numberOfVolumes    1 .
+}

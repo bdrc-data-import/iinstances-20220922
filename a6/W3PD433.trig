@@ -1,0 +1,138 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD433 {
+    bda:I3PD463  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3PD463 ;
+        adm:logEntry        bda:LGDB8E2755EA7BF725 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3PD464  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3PD464 ;
+        adm:logEntry        bda:LGD65BBE161F021092 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3PD465  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3PD465 ;
+        adm:logEntry        bda:LG5F6FC699117F137B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3PD466  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3PD466 ;
+        adm:logEntry        bda:LG48DCC5BAEAA9E050 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3PD467  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3PD467 ;
+        adm:logEntry        bda:LGBEDD9C2E3FD2F5C9 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG48DCC5BAEAA9E050
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-19T20:31:51.965Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG5F6FC699117F137B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-19T20:31:45.859Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBEDD9C2E3FD2F5C9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-19T20:31:53.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD65BBE161F021092
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-19T20:31:44.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDB8E2755EA7BF725
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-03-19T20:31:42.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W3PD433  a          adm:AdminData ;
+        adm:access          bda:AccessRestrictedSealed ;
+        adm:adminAbout      bdr:W3PD433 ;
+        adm:facetIndex      21 ;
+        adm:gitPath         "a6/W3PD433.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD433 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3PD463  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of dag snang rgya can skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1104 .
+    
+    bdr:I3PD464  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of dag snang rgya can skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   976 .
+    
+    bdr:I3PD465  a          :ImageGroup ;
+        :biblioNote         "Volume 3 of dag snang rgya can skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   458 .
+    
+    bdr:I3PD466  a          :ImageGroup ;
+        :biblioNote         "Volume 4 of dag snang rgya can skor/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   552 .
+    
+    bdr:I3PD467  a          :ImageGroup ;
+        :biblioNote         "Volume 5 of dag snang rgya can skor/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   478 .
+    
+    bdr:W3PD433  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3PD463 , bdr:I3PD464 , bdr:I3PD465 , bdr:I3PD466 , bdr:I3PD467 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

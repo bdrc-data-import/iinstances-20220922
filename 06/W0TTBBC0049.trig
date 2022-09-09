@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W0TTBBC0049 {
+    bda:I0TTBBC0049_001
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0TTBBC0049_001 ;
+        adm:logEntry        bda:LGIMCB83A60E , bda:LGIMD8DD6D40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0TTBBC0049_002
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I0TTBBC0049_002 ;
+        adm:logEntry        bda:LGIM64E94C4D , bda:LGIMD8DD6D40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM64E94C4D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-29T21:46:07.802Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCB83A60E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-29T21:46:07.561Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD8DD6D40  a     adm:InitialDataImport ;
+        adm:logAgent        "NGMP Importer" ;
+        adm:logDate         "2020-07-20T16:08:04.18Z"^^xsd:dateTime ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W0TTBBC0049  a      adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W0TTBBC0049 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "06/W0TTBBC0049.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W0TTBBC0049 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I0TTBBC0049_001
+        a                   :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   110 .
+    
+    bdr:I0TTBBC0049_002
+        a                   :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   417 .
+    
+    bdr:W0TTBBC0049  a      :ImageInstance ;
+        :inCollection       bdr:PR1NGMPP00 , bdr:PR1TIBET00 ;
+        :instanceHasVolume  bdr:I0TTBBC0049_001 , bdr:I0TTBBC0049_002 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Digitization by the projects 'Tibetan Book Evolution and Technology (TiBET)' and 'Transforming Tibetan and Buddhist Book Culture (TTBBC)', provided on BDRC with due authorization. Original folders: NGMPP_L_250_8 + NGMPP_L_251_1"@en .
+}

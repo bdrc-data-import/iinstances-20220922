@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN1823 {
+    bda:I3CN1828  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN1828 ;
+        adm:logEntry        bda:LGF6C492153A597DE5 , bda:LGIM7BD5446C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN1829  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN1829 ;
+        adm:logEntry        bda:LG231C2BFC483557C7 , bda:LGIMCA25E5C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN1830  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN1830 ;
+        adm:logEntry        bda:LG0A7B7E26D4300A5E , bda:LGIMEC1DC900 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0A7B7E26D4300A5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-16T10:06:15.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG0C4D0AB137A2CDEA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-16T10:06:15.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG231C2BFC483557C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-16T10:06:15.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6C492153A597DE5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-16T10:06:15.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM7BD5446C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:33.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCA25E5C0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:33.83Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC1DC900  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:34.079Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN1823  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN1823 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "79/W3CN1823.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN1823 ;
+        adm:logEntry        bda:LG0C4D0AB137A2CDEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN1828  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sog yul du spar ba'i mdo rgyud khag cig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   594 .
+    
+    bdr:I3CN1829  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of sog yul du spar ba'i mdo rgyud khag cig"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   208 .
+    
+    bdr:I3CN1830  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of sog yul du spar ba'i mdo rgyud khag cig"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1134 .
+    
+    bdr:W3CN1823  a         :ImageInstance ;
+        :inCollection       bdr:PR1LOKESH01 ;
+        :instanceHasVolume  bdr:I3CN1828 , bdr:I3CN1829 , bdr:I3CN1830 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 06/2015"@en .
+}

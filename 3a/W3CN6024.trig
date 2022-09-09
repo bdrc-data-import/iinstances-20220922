@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6024 {
+    bda:I1KG85664  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG85664 ;
+        adm:logEntry        bda:LGF53E9326E9EBE414 , bda:LGIMDB89D5F0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG85665  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG85665 ;
+        adm:logEntry        bda:LG183D98E562C05467 , bda:LGIMBC222532 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG183D98E562C05467
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-02T15:43:18.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1A2D33E25E193E61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-02T15:43:18.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD0D7AA182C75729B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T16:31:09.61Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF53E9326E9EBE414
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-02T15:43:18.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIMBC222532  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-06-18T22:38:45.175Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMDB89D5F0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-06-18T22:38:44.764Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6024  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6024 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "3a/W3CN6024.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6024 ;
+        adm:logEntry        bda:LG1A2D33E25E193E61 , bda:LGD0D7AA182C75729B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG85664  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of legs bshad gser phreng /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   526 .
+    
+    bdr:I1KG85665  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of legs bshad gser phreng /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   436 .
+    
+    bdr:IDB5D850672C33A23F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746605" .
+    
+    bdr:W3CN6024  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB5D850672C33A23F ;
+        :instanceHasVolume  bdr:I1KG85664 , bdr:I1KG85665 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "1/2018"@en .
+}

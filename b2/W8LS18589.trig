@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18589 {
+    bda:I8LS18591  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18591 ;
+        adm:logEntry        bda:LG72E0CC9CF83AF4CA , bda:LG8AECAFB3649A057E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6363CD240C89B026
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:23:09.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG72E0CC9CF83AF4CA
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:29.521Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8AECAFB3649A057E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:23:09.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18589  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18589 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b2/W8LS18589.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18589 ;
+        adm:logEntry        bda:LG6363CD240C89B026 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18591  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yul gtad bya rim jus 'god/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   551 .
+    
+    bdr:ID16BE34DC99E7BA31
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715758" .
+    
+    bdr:W8LS18589  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID16BE34DC99E7BA31 ;
+        :instanceHasVolume  bdr:I8LS18591 ;
+        :numberOfVolumes    1 .
+}

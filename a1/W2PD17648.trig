@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17648 {
+    bda:I2PD19249  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19249 ;
+        adm:logEntry        bda:LG180E8B82471AE499 , bda:LGC7873CAAC7BFD05F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG180E8B82471AE499
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T22:41:43.457Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC7873CAAC7BFD05F
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:49.832Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEE2EE01AAB6FC97F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T22:41:44.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2PD17648  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17648 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "a1/W2PD17648.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17648 ;
+        adm:logEntry        bda:LGEE2EE01AAB6FC97F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19249  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya kong rig 'dzin mthar phyin gyis lam sang bris pa'i snyan rtsom/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   208 .
+    
+    bdr:IDAF4844F202983613
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711349" .
+    
+    bdr:W2PD17648  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAF4844F202983613 ;
+        :instanceHasVolume  bdr:I2PD19249 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

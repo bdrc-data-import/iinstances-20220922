@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25569 {
+    bda:I1KG25571  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25571 ;
+        adm:logEntry        bda:LG35C2771E2CE85552 , bda:LGBAD8402A77964FA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG29A5CEAA15B15902
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:08:27.959Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG35C2771E2CE85552
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:27.84Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBAD8402A77964FA9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:08:27.878Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25569  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25569 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e8/W1KG25569.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25569 ;
+        adm:logEntry        bda:LG29A5CEAA15B15902 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25571  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of kha sang gi tsho ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:IDF4C24543C01A4F78
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742952" .
+    
+    bdr:W1KG25569  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF4C24543C01A4F78 ;
+        :instanceHasVolume  bdr:I1KG25571 ;
+        :numberOfVolumes    1 .
+}

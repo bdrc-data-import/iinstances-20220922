@@ -1,0 +1,130 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ346626 {
+    bda:I4CZ346779  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ346779 ;
+        adm:logEntry        bda:LG7AA56D3F97A13C96 , bda:LGIMC5606755 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ346780  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ346780 ;
+        adm:logEntry        bda:LG880F85597669FA16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ346781  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ346781 ;
+        adm:logEntry        bda:LG119BA2AF87C51D5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ346782  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ346782 ;
+        adm:logEntry        bda:LG4B21BD959A7917B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ346783  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ346783 ;
+        adm:logEntry        bda:LGD1E74A0A7F03CED9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG119BA2AF87C51D5F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T11:04:51.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4B21BD959A7917B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T11:04:51.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7AA56D3F97A13C96
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T11:04:51.148Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG880F85597669FA16
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T11:04:51.249Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC9854E4DA0D478D3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-07-01T11:04:51.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGD1E74A0A7F03CED9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-01T11:04:51.549Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIMC5606755  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-10T00:26:24.567Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ346626  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ346626 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "00/W4CZ346626.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ346626 ;
+        adm:logEntry        bda:LGC9854E4DA0D478D3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ346779  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of smyon pa'i snying gi ri mo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   644 .
+    
+    bdr:I4CZ346780  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of smyon pa'i snying gi ri mo/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ346781  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of smyon pa'i snying gi ri mo/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ346782  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of smyon pa'i snying gi ri mo/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ346783  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of smyon pa'i snying gi ri mo/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ346626  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ346779 , bdr:I4CZ346780 , bdr:I4CZ346781 , bdr:I4CZ346782 , bdr:I4CZ346783 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D33097"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

@@ -1,0 +1,133 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG763 {
+    bda:I2KG209246  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209246 ;
+        adm:logEntry        bda:LG87982007627CD4D6 , bda:LGIM6AEC1D84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209247  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209247 ;
+        adm:logEntry        bda:LG1F198B54B9D88EC7 , bda:LGIM2EAA1C5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209248  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209248 ;
+        adm:logEntry        bda:LG99E5693E8BE13841 , bda:LGIMEB16020F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2KG209249  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209249 ;
+        adm:logEntry        bda:LG1F0157A039AA539D , bda:LGIM3DF90160 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1F0157A039AA539D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T15:58:59.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1F198B54B9D88EC7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T15:58:59.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG87982007627CD4D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T15:58:59.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG99E5693E8BE13841
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T15:58:59.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF14A0ED1121625FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-21T15:58:59.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM2EAA1C5D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-07T22:28:16.492Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3DF90160  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-07T22:28:16.98Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6AEC1D84  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-07T22:28:16.218Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEB16020F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-07T22:28:16.671Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG763  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG763 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "b5/W2KG763.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG763 ;
+        adm:logEntry        bda:LGF14A0ED1121625FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG209246  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of sgrub brgyud kyi snying po dpal gya ba 'brong ngur pa chen por bka' babs pa'i chos skor phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   399 .
+    
+    bdr:I2KG209247  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of sgrub brgyud kyi snying po dpal gya ba 'brong ngur pa chen por bka' babs pa'i chos skor phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   417 .
+    
+    bdr:I2KG209248  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of sgrub brgyud kyi snying po dpal gya ba 'brong ngur pa chen por bka' babs pa'i chos skor phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   228 .
+    
+    bdr:I2KG209249  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of sgrub brgyud kyi snying po dpal gya ba 'brong ngur pa chen por bka' babs pa'i chos skor phyogs bsgrigs/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   198 .
+    
+    bdr:W2KG763  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG209246 , bdr:I2KG209247 , bdr:I2KG209248 , bdr:I2KG209249 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "11/2019"@en .
+}

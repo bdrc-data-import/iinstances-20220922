@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7540 {
+    bda:I3CN7542  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7542 ;
+        adm:logEntry        bda:LG2B118E2A583CF85C , bda:LGD24B03CE9C5030EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2B118E2A583CF85C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:58:13.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4BAE75851A2AF48A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T16:58:13.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD24B03CE9C5030EF
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:12:43.511Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN7540  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN7540 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fd/W3CN7540.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7540 ;
+        adm:logEntry        bda:LG4BAE75851A2AF48A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7542  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rigs lnga bde gshegs bsdus pa'i tshom bu tshogs su sgrub pa'i lag len nyer mkho nyin byed snang ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   709 .
+    
+    bdr:W3CN7540  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN7542 ;
+        :numberOfVolumes    1 .
+}

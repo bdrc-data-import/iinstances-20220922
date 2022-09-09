@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19066 {
+    bda:I8LS19068  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19068 ;
+        adm:logEntry        bda:LG04A137D8C013839B , bda:LG330B90C44E0C06CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04A137D8C013839B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:49:20.035Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG330B90C44E0C06CC
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:51.958Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG4D861147C328CB46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:49:20.152Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19066  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19066 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "36/W8LS19066.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19066 ;
+        adm:logEntry        bda:LG4D861147C328CB46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19068  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skad gnyis slob ma'i dbyin yig slob deb/__bod kyi dmangs srol/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   486 .
+    
+    bdr:ID1E8479EB20F56719
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710066" .
+    
+    bdr:W8LS19066  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1E8479EB20F56719 ;
+        :instanceHasVolume  bdr:I8LS19068 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG22039 {
+    bda:I1KG22082  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22082 ;
+        adm:logEntry        bda:LG305770C6DD7B3FC1 , bda:LG416B89C9C4153ADF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG305770C6DD7B3FC1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-09T16:51:27.573Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG416B89C9C4153ADF
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-21T16:02:34.894Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAAC9176E042CF3D4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-09T16:51:27.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG22039  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG22039 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "3c/W1KG22039.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG22039 ;
+        adm:logEntry        bda:LGAAC9176E042CF3D4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG22082  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi la gzhas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   268 .
+    
+    bdr:W1KG22039  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I1KG22082 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 6/2015"@en .
+}

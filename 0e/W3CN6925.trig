@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6925 {
+    bda:I3CN6927  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6927 ;
+        adm:logEntry        bda:LG7D679D49C9DD95D5 , bda:LG8D7748797D73B1AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7D679D49C9DD95D5
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:32.888Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8D7748797D73B1AA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:22:55.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDE8B66704BB8145A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:22:55.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6925  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6925 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0e/W3CN6925.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6925 ;
+        adm:logEntry        bda:LGDE8B66704BB8145A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6927  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi gdung rabs rnam thar thung du khag drug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   244 .
+    
+    bdr:W3CN6925  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6927 ;
+        :numberOfVolumes    1 .
+}

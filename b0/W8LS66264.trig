@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66264 {
+    bda:I8LS66266  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66266 ;
+        adm:logEntry        bda:LGB8AFD02AADE47F62 , bda:LGIMEAF01D61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS66267  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS66267 ;
+        adm:logEntry        bda:LGB077B673B7E2B7C3 , bda:LGIMC8BBB235 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG9289C3C4A4FA8ABC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-24T15:47:05.221Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB077B673B7E2B7C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-24T15:47:05.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB8AFD02AADE47F62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-24T15:47:05.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMC8BBB235  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-06T02:10:36.177Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEAF01D61  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-06T02:10:35.87Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66264  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66264 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "b0/W8LS66264.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66264 ;
+        adm:logEntry        bda:LG9289C3C4A4FA8ABC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS66266  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi nye rabs lo rgyus/1913-1951/ stod cha dang smad cha/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   512 .
+    
+    bdr:I8LS66267  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod kyi nye rabs lo rgyus/1913-1951/ stod cha dang smad cha/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   668 .
+    
+    bdr:W8LS66264  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS66266 , bdr:I8LS66267 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made from LTWA collection, Acc. No. 013563, Acc. No. 013566"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

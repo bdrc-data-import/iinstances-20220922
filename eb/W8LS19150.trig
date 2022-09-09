@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19150 {
+    bda:I8LS19152  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19152 ;
+        adm:logEntry        bda:LG3CB3F7CF8C2BE5D4 , bda:LGEF85128809A49498 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG12C75B7FBB7E8891
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T15:06:44.842Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG3CB3F7CF8C2BE5D4
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:54:10.555Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEF85128809A49498
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:06:44.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19150  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19150 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "eb/W8LS19150.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19150 ;
+        adm:logEntry        bda:LG12C75B7FBB7E8891 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19152  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of kung si'i skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:ID1E20206A4FC57977
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726595" .
+    
+    bdr:W8LS19150  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1E20206A4FC57977 ;
+        :instanceHasVolume  bdr:I8LS19152 ;
+        :numberOfVolumes    1 .
+}

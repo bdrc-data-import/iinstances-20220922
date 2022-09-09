@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD415 {
+    bda:I4PD4684  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD4684 ;
+        adm:logEntry        bda:LG9B1AC4B31FC5C06B , bda:LGF51ED5735221687F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG83176A940522A33C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-07T15:54:55.503Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9B1AC4B31FC5C06B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-07T15:54:54.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF51ED5735221687F
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:51.097Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3PD415  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fa/W3PD415.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD415 ;
+        adm:logEntry        bda:LG83176A940522A33C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD4684  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags ngag don 'phrul gyi lde mig sogs/ （mtshan nyid skor/）"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   448 .
+    
+    bdr:W3PD415  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD4684 ;
+        :numberOfVolumes    1 .
+}

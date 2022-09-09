@@ -1,0 +1,63 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8404 {
+    bda:I3CN8406  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8406 ;
+        adm:logEntry        bda:LGC68F957C50F349FB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN8407  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8407 ;
+        adm:logEntry        bda:LG97923DBA2725BCAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG97923DBA2725BCAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-23T12:46:23.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC68F957C50F349FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-23T12:46:23.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN8404  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN8404 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e9/W3CN8404.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8404 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I3CN8406  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of W3CN8046"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN8407  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of W3CN8046"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN8404  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8406 , bdr:I3CN8407 ;
+        :numberOfVolumes    2 .
+}

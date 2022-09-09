@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17357 {
+    bda:I8LS17365  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17365 ;
+        adm:logEntry        bda:LGBA8FFFB87C70AC42 , bda:LGBBB7F29E6B21EFBF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG028D5E3312677556
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-02-19T11:32:43.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBA8FFFB87C70AC42
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-02-19T11:32:43.303Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBBB7F29E6B21EFBF
+        a                   adm:Synced ;
+        adm:logDate         "2017-02-24T23:26:04.353Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS17357  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17357 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f9/W8LS17357.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17357 ;
+        adm:logEntry        bda:LG028D5E3312677556 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17365  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of byang chub lam gyi rim pa'i khrid mdor bsdus 'khyer bde/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   16 .
+    
+    bdr:W8LS17357  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17365 ;
+        :numberOfVolumes    1 ;
+        :qualityGrade       0 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

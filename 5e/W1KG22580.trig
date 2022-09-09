@@ -1,0 +1,126 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG22580 {
+    bda:I1KG22588  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22588 ;
+        adm:logEntry        bda:LG5A08978590D6C2C8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22589  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22589 ;
+        adm:logEntry        bda:LGBD0146CA1A3EF4AA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22590  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22590 ;
+        adm:logEntry        bda:LG18B9EF9F724A0354 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG22591  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG22591 ;
+        adm:logEntry        bda:LGCE823C31D88531A4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18B9EF9F724A0354
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T11:51:01.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5A08978590D6C2C8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T11:51:01.313Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBD0146CA1A3EF4AA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T11:51:01.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCE823C31D88531A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-16T11:51:01.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDCF30928E8D57A69
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-01-04T15:46:50.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG22580  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG22580 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "5e/W1KG22580.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG22580 ;
+        adm:logEntry        bda:LGDCF30928E8D57A69 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG22588  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod rang skyong ljongs dpe mdzod khang gi gna' dpe'i dkar chag"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   560 .
+    
+    bdr:I1KG22589  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod rang skyong ljongs dpe mdzod khang gi gna' dpe'i dkar chag"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   646 .
+    
+    bdr:I1KG22590  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bod rang skyong ljongs dpe mdzod khang gi gna' dpe'i dkar chag"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   560 .
+    
+    bdr:I1KG22591  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of bod rang skyong ljongs dpe mdzod khang gi gna' dpe'i dkar chag"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   440 .
+    
+    bdr:W1KG22580  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG22588 , bdr:I1KG22589 , bdr:I1KG22590 , bdr:I1KG22591 ;
+        :numberOfVolumes    4 .
+}

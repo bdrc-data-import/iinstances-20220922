@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN5291 {
+    bda:I3CN5293  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN5293 ;
+        adm:logEntry        bda:LG244B859DD562D6D1 , bda:LG9152F2AF642AF783 , bda:LGAF5F2E15F252CECA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG244B859DD562D6D1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T16:51:10.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4A561CB3EBE43579
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T16:51:10.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9152F2AF642AF783
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-10-04T22:40:41.134Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGAF5F2E15F252CECA
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:04.843Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN5291  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN5291 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "93/W3CN5291.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN5291 ;
+        adm:logEntry        bda:LG4A561CB3EBE43579 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN5293  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of chos spyod kyi rim pa byang chen spyod pa'i sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   59 .
+    
+    bdr:W3CN5291  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN5293 ;
+        :numberOfVolumes    1 .
+}

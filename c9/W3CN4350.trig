@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4350 {
+    bda:I3CN4558  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4558 ;
+        adm:logEntry        bda:LG02C87A3518278DC6 , bda:LGF38CB83FB881EEE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02C87A3518278DC6
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:45:47.138Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG1E661FF59AEB20ED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T17:37:08.51Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF38CB83FB881EEE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T17:37:08.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4350  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4350 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c9/W3CN4350.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4350 ;
+        adm:logEntry        bda:LG1E661FF59AEB20ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4558  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of tha snyad rgyun bkol phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   38 .
+    
+    bdr:W3CN4350  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4558 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

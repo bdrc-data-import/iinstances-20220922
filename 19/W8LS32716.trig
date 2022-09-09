@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS32716 {
+    bda:I8LS43847  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS43847 ;
+        adm:logEntry        bda:LG178FB2D5B58088A7 , bda:LGIM24BFEB11 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG178FB2D5B58088A7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-18T15:38:04.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFD08DEBFFE7C1F98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-18T15:38:05.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM24BFEB11  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-04-06T04:45:51.726Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS32716  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS32716 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "19/W8LS32716.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS32716 ;
+        adm:logEntry        bda:LGFD08DEBFFE7C1F98 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS43847  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yul chen po nye ba'i tshan+d+o ha bal po'i gnas kyi dkar chag gangs can rna ba'i bdud rtsi/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   70 .
+    
+    bdr:W8LS32716  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS43847 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No. D31307"@en .
+}

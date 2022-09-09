@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG89130 {
+    bda:I1KG89311  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG89311 ;
+        adm:logEntry        bda:LG203E4F5EE783EA2A , bda:LG4BE26C0D67AB68DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG203E4F5EE783EA2A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-06-07T16:33:50.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4BE26C0D67AB68DE
+        a                   adm:Synced ;
+        adm:logDate         "2018-11-14T23:06:59.069Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAA134C873283B6EA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-06-07T16:33:50.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG89130  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG89130 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "90/W1KG89130.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG89130 ;
+        adm:logEntry        bda:LGAA134C873283B6EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG89311  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags bla med kyi cho ga spyi la nye bar mkho ba'i phyag bzhes mchog thun dngos grub 'gugs pa'i lcags kyu/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   129 .
+    
+    bdr:W1KG89130  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG89311 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3MS104 {
+    bda:I3MS106  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS106 ;
+        adm:logEntry        bda:LGC783E3BEA153BC09 , bda:LGDB1BEEEE5303434A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS107  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS107 ;
+        adm:logEntry        bda:LGE82D74B2CB7A902D , bda:LGFF36F86591FEC810 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS108  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS108 ;
+        adm:logEntry        bda:LG258C247539F137D6 , bda:LGA1A9C7EA388C96CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG170CA3201F3C7C2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-06-24T16:34:49.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG258C247539F137D6
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-13T00:57:19.1Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA1A9C7EA388C96CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-24T16:34:49.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGC783E3BEA153BC09
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-24T16:34:49.352Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGDB1BEEEE5303434A
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-13T00:57:18.639Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE82D74B2CB7A902D
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-13T00:57:18.882Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFF36F86591FEC810
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-24T16:34:49.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:W3MS104  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3MS104 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a6/W3MS104.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3MS104 ;
+        adm:logEntry        bda:LG170CA3201F3C7C2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3MS106  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of reb gong chu ma'i sngags mang du bzhugs pa'i dpe rnying gi skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   62 .
+    
+    bdr:I3MS107  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of reb gong chu ma'i sngags mang du bzhugs pa'i dpe rnying gi skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   82 .
+    
+    bdr:I3MS108  a          :ImageGroup ;
+        :biblioNote         "Volume 3 of reb gong chu ma'i sngags mang du bzhugs pa'i dpe rnying gi skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   10 .
+    
+    bdr:W3MS104  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3MS106 , bdr:I3MS107 , bdr:I3MS108 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

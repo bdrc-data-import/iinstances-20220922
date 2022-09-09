@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6415 {
+    bda:I3CN6417  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6417 ;
+        adm:logEntry        bda:LG65F87E30E5E0F889 , bda:LGBFE5607CEF142CE0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG65F87E30E5E0F889
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:11:22.425Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBFE5607CEF142CE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T13:02:02.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2A5180BA24237B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T13:02:02.59Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6415  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6415 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "38/W3CN6415.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6415 ;
+        adm:logEntry        bda:LGD2A5180BA24237B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6417  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod du rgyun mthong gi rang byung gnod 'tshe'i skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   112 .
+    
+    bdr:W3CN6415  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6417 ;
+        :numberOfVolumes    1 .
+}

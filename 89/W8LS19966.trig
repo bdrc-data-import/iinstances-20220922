@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19966 {
+    bda:I8LS19968  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19968 ;
+        adm:logEntry        bda:LG3FD2DEDAE42CFE7B , bda:LG571EA8E2FEBD73E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3FD2DEDAE42CFE7B
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-15T00:20:05.361Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG571EA8E2FEBD73E4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T15:06:03.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9D841164FBF7DA55
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:06:03.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19966  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19966 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "89/W8LS19966.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19966 ;
+        adm:logEntry        bda:LG9D841164FBF7DA55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19968  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gnam chos thugs kyi gter kah'i gu ru pad+ma'i skyes rabs rnam thar bkod pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   26 .
+    
+    bdr:W8LS19966  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19968 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77070 {
+    bda:I8LS77072  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77072 ;
+        adm:logEntry        bda:LG5397AAA899AD3297 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG384DB43CF39C9407
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-21T10:45:01.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG5397AAA899AD3297
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-21T10:45:01.401Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77070  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS77070 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "27/W8LS77070.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77070 ;
+        adm:logEntry        bda:LG384DB43CF39C9407 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77072  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rten 'brel mtha' dpyod chen mo dang / bsam gzugs mtha' dpyod 'bring po bcas phyigs gcig tu bkod pa legs bshad mdzod kyi sgo 'byed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77070  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77072 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

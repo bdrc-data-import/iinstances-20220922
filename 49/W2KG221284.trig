@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG221284 {
+    bda:I2KG221293  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG221293 ;
+        adm:logEntry        bda:LG0C96E1B41081C2D9 , bda:LGIM6A8EE236 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C96E1B41081C2D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-01-25T11:54:18.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD6B2627AC342C7F9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-25T11:54:18.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM6A8EE236  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-05T03:00:49.489Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG221284  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG221284 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "49/W2KG221284.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG221284 ;
+        adm:logEntry        bda:LGD6B2627AC342C7F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG221293  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bla chen chos dpal bzang po'i rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   141 .
+    
+    bdr:W2KG221284  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG221293 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Dzongkar Choede Monastery, Gurupura, Hunsur Taluk, Mysore District, 571188 Karnataka, India. Comments: 1/2021"@en .
+}

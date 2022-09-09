@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG21890 {
+    bda:I1KG21906  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21906 ;
+        adm:logEntry        bda:LG777ECA64896D47C7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG21907  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21907 ;
+        adm:logEntry        bda:LG9F3731859C8C7E6D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG21908  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21908 ;
+        adm:logEntry        bda:LGDB82910EC46A6CBC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG777ECA64896D47C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-11T15:00:36.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9F3731859C8C7E6D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-11T15:00:36.938Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA152ADF111A6BE3C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-11T15:00:37.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDB82910EC46A6CBC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-11T15:00:36.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG21890  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG21890 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "c0/W1KG21890.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG21890 ;
+        adm:logEntry        bda:LGA152ADF111A6BE3C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG21906  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdo dban gi skor : a structured presentation of the abhiseka of buddhist practice of the rnin-ma-pa bka'-ma tradition focussing upon the mahayoga, anuyoga, and atiyoga systems of realization from the late 16th century"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   524 .
+    
+    bdr:I1KG21907  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of mdo dban gi skor : a structured presentation of the abhiseka of buddhist practice of the rnin-ma-pa bka'-ma tradition focussing upon the mahayoga, anuyoga, and atiyoga systems of realization from the late 16th century"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:I1KG21908  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of mdo dban gi skor : a structured presentation of the abhiseka of buddhist practice of the rnin-ma-pa bka'-ma tradition focussing upon the mahayoga, anuyoga, and atiyoga systems of realization from the late 16th century"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   522 .
+    
+    bdr:W1KG21890  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC13 ;
+        :instanceHasVolume  bdr:I1KG21906 , bdr:I1KG21907 , bdr:I1KG21908 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 5/2015"@en .
+}

@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG17441 {
+    bda:I1KG17837  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17837 ;
+        adm:logEntry        bda:LGAC72773E6B260358 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG17838  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17838 ;
+        adm:logEntry        bda:LGA4FC500FF87457E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG17839  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17839 ;
+        adm:logEntry        bda:LG329EF0475162F116 , bda:LGIM6451D2AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG17840  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17840 ;
+        adm:logEntry        bda:LG1DAF8D18DB3A1276 , bda:LGIM99508247 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1DAF8D18DB3A1276
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T12:58:26.689Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG329EF0475162F116
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T12:58:26.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5B402EBAA7B62072
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-17T12:58:26.722Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA4FC500FF87457E9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T12:58:26.622Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAC72773E6B260358
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T12:58:26.586Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM6451D2AF  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-03T22:57:51.426Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM99508247  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-03T22:57:51.646Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG17441  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG17441 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "df/W1KG17441.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG17441 ;
+        adm:logEntry        bda:LG5B402EBAA7B62072 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG17837  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gangs rgyun/ (dus deb/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG17838  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gangs rgyun/ (dus deb/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG17839  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gangs rgyun/ (dus deb/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   118 .
+    
+    bdr:I1KG17840  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gangs rgyun/ (dus deb/)"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   98 .
+    
+    bdr:W1KG17441  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG17837 , bdr:I1KG17838 , bdr:I1KG17839 , bdr:I1KG17840 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 6/2014"@en .
+}

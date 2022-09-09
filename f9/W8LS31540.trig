@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS31540 {
+    bda:I8LS31584  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS31584 ;
+        adm:logEntry        bda:LGDE223F1792A7D949 , bda:LGIM524A0744 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD4D8E9D775A00F09
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-01T09:22:57.319Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDE223F1792A7D949
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-01T09:22:57.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM524A0744  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-10T23:39:15.78Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS31540  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS31540 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f9/W8LS31540.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS31540 ;
+        adm:logEntry        bda:LGD4D8E9D775A00F09 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS31584  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zla gsang thig le zhes bya ba rgyud kyi rgyal po chen po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   787 .
+    
+    bdr:W8LS31540  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS31584 ;
+        :numberOfVolumes    1 .
+}

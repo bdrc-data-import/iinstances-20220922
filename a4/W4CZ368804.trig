@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ368804 {
+    bda:I4CZ368994  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ368994 ;
+        adm:logEntry        bda:LG8B0A70B01C4FEFD9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG8B0A70B01C4FEFD9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-25T10:57:29.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG95B7D8454B734FFA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:57:29.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ368804  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ368804 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a4/W4CZ368804.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ368804 ;
+        adm:logEntry        bda:LG95B7D8454B734FFA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ368994  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bod brgyud nang bstan gyi rten dang yo byad kyi mtshon don 'grel bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ368804  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ368994 ;
+        :numberOfVolumes    1 .
+}

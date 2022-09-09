@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20269 {
+    bda:I8LS20271  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20271 ;
+        adm:logEntry        bda:LG14EC039935031893 , bda:LG84BB4B18CEA5C484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG14EC039935031893
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-05T01:03:59.528Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG27EEAEA4C10AC65C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T09:46:40.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG84BB4B18CEA5C484
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T09:46:40.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20269  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20269 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d9/W8LS20269.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20269 ;
+        adm:logEntry        bda:LG27EEAEA4C10AC65C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20271  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhang bod lo rgyus ti se'i 'od/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   567 .
+    
+    bdr:ID7FCCC137A6D52CA6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147717454" .
+    
+    bdr:W8LS20269  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7FCCC137A6D52CA6 ;
+        :instanceHasVolume  bdr:I8LS20271 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3218 {
+    bda:I3CN3312  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3312 ;
+        adm:logEntry        bda:LG144F4C4A37D151B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3313  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3313 ;
+        adm:logEntry        bda:LGD67CDA3D0E07438E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG144F4C4A37D151B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-04T15:23:38.656Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD67CDA3D0E07438E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-04T15:23:38.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF2B7EE7808222599
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-04T15:23:38.83Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3218  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN3218 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b3/W3CN3218.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3218 ;
+        adm:logEntry        bda:LGF2B7EE7808222599 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3312  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of rtogs brjod rin chen phreng ba/ stod smad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3313  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of rtogs brjod rin chen phreng ba/ stod smad/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN3218  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3312 , bdr:I3CN3313 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "11/2016"@en .
+}

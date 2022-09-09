@@ -1,0 +1,96 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN12981 {
+    bda:I3CN12983  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12983 ;
+        adm:logEntry        bda:LGBF121559DA347B6A , bda:LGIM0BE50B1E , bda:LGIM73A8D155 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12984  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12984 ;
+        adm:logEntry        bda:LG91FBE22A8634E480 , bda:LGIM10B49F28 , bda:LGIM21FCEC6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2943EFDF189926FD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-01-29T14:57:09.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91FBE22A8634E480
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T14:57:09.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBF121559DA347B6A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T14:57:09.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0BE50B1E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T15:46:32.998Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM10B49F28  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-09-29T06:05:32.756Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM21FCEC6E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T15:46:33.423Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM73A8D155  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-09-29T06:05:32.298Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN12981  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN12981 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "f4/W3CN12981.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN12981 ;
+        adm:logEntry        bda:LG2943EFDF189926FD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN12983  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ku ru kul+le'i chos skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   480 .
+    
+    bdr:I3CN12984  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of ku ru kul+le'i chos skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   38 .
+    
+    bdr:W3CN12981  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN12983 , bdr:I3CN12984 ;
+        :numberOfVolumes    2 .
+}

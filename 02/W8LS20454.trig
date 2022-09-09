@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20454 {
+    bda:I8LS20456  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20456 ;
+        adm:logEntry        bda:LG1311EF45386312AC , bda:LG8BFD5E2D34E654B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS20457  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20457 ;
+        adm:logEntry        bda:LG097596599F247047 , bda:LG18CD3DFFDDA88509 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS20458  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20458 ;
+        adm:logEntry        bda:LG9A289E53E131AB36 , bda:LGC96E540AEE02A1B0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG097596599F247047
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:45.751Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG1311EF45386312AC
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:45.513Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG18CD3DFFDDA88509
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:21:51.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8BFD5E2D34E654B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:21:51.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG98D3F68B6356256F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T10:21:51.544Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9A289E53E131AB36
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:45.995Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC96E540AEE02A1B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:21:51.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20454  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20454 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "02/W8LS20454.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20454 ;
+        adm:logEntry        bda:LG98D3F68B6356256F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20456  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rma lho'i dmangs khrod rig gnas dpe tshogs gser gyi thang ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   578 .
+    
+    bdr:I8LS20457  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rma lho'i dmangs khrod rig gnas dpe tshogs gser gyi thang ma/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   536 .
+    
+    bdr:I8LS20458  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of rma lho'i dmangs khrod rig gnas dpe tshogs gser gyi thang ma/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   425 .
+    
+    bdr:W8LS20454  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20456 , bdr:I8LS20457 , bdr:I8LS20458 ;
+        :numberOfVolumes    3 .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W5211 {
+    bda:I1KG21192  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21192 ;
+        adm:logEntry        bda:LG17E46203CD8A0ED5 , bda:LGB13FFF8F6DA2C1BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG175FBE7CE1C2693B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-02-12T12:43:22.858Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG17E46203CD8A0ED5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-12T12:43:22.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB13FFF8F6DA2C1BB
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-06T00:30:02.353Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W5211  a            adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W5211 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "97/W5211.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W5211 ;
+        adm:logEntry        bda:LG175FBE7CE1C2693B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG21192  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bslab bya nor bu'i phreng ba"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   194 .
+    
+    bdr:IDBBEF88DA0E3CC1B5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732174" .
+    
+    bdr:W5211  a            :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBBEF88DA0E3CC1B5 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG21192 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2/2015"@en .
+}

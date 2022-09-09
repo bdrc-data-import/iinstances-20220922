@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ65564 {
+    bda:I4CZ65605  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65605 ;
+        adm:logEntry        bda:LG016B9D4CFF923882 , bda:LG401DEC5514BB307E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG016B9D4CFF923882
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T21:48:19.55Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG401DEC5514BB307E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T16:32:11.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG58D92D6536508608
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T16:32:11.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ65564  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ65564 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "97/W4CZ65564.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ65564 ;
+        adm:logEntry        bda:LG58D92D6536508608 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ65605  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of seng gdong gtso 'khor gsum gyi bdag 'dun bsgral ls gtor bzlog"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   94 .
+    
+    bdr:W4CZ65564  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ65605 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

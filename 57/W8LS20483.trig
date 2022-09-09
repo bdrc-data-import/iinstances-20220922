@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20483 {
+    bda:I8LS20485  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20485 ;
+        adm:logEntry        bda:LG785CCE7B2608EAF5 , bda:LGB1DC0F31C8E1DDC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG785CCE7B2608EAF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:39:41.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB1DC0F31C8E1DDC8
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:48.742Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC040FC5287F2BAB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T10:39:41.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20483  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20483 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "57/W8LS20483.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20483 ;
+        adm:logEntry        bda:LGC040FC5287F2BAB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20485  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gangs can pa'i sdeb sbyor rig pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   161 .
+    
+    bdr:ID3FD0464A52D25517
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724104" .
+    
+    bdr:W8LS20483  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3FD0464A52D25517 ;
+        :instanceHasVolume  bdr:I8LS20485 ;
+        :numberOfVolumes    1 .
+}

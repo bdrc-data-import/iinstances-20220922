@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159383 {
+    bda:I2PD18484  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18484 ;
+        adm:logEntry        bda:LG1827AC6744B6F8F6 , bda:LG531B8C5A134F6038 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18485  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18485 ;
+        adm:logEntry        bda:LG6DCBFC5EA1BF6656 , bda:LG93E83D445EEBC17B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18486  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18486 ;
+        adm:logEntry        bda:LG2436B521DFAFB9E8 , bda:LG37E8A12F5632BABE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1827AC6744B6F8F6
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:03:09.186Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2436B521DFAFB9E8
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:03:11.382Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG37E8A12F5632BABE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-17T21:58:56.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG531B8C5A134F6038
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-17T21:58:54.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6DCBFC5EA1BF6656
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:03:10.302Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG93E83D445EEBC17B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-17T21:58:55.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE6540D648AF2545F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-17T21:58:56.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD159383  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159383 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "78/W1PD159383.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159383 ;
+        adm:logEntry        bda:LGE6540D648AF2545F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18484  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   390 .
+    
+    bdr:I2PD18485  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of rje btsun tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   496 .
+    
+    bdr:I2PD18486  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of rje btsun tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   414 .
+    
+    bdr:W1PD159383  a       :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I2PD18484 , bdr:I2PD18485 , bdr:I2PD18486 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

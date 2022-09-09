@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24716 {
+    bda:I1KG24718  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24718 ;
+        adm:logEntry        bda:LGD2AF003325995766 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG24719  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24719 ;
+        adm:logEntry        bda:LG3737267A6E9A6009 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2A8A9880CD40D7A9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:25:33.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3737267A6E9A6009
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:25:33.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD2AF003325995766
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:25:33.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24716  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24716 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "67/W1KG24716.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24716 ;
+        adm:logEntry        bda:LG2A8A9880CD40D7A9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24718  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gso rig dgos pa kun 'byung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG24719  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gso rig dgos pa kun 'byung /"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG24716  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24718 , bdr:I1KG24719 ;
+        :numberOfVolumes    2 .
+}

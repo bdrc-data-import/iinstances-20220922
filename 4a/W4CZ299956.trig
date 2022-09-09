@@ -1,0 +1,74 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ299956 {
+    bda:I2KG200903  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG200903 ;
+        adm:logEntry        bda:LGFEF0709CEA00E0B5 , bda:LGIM0629B8A7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0D4AE1E1E577DFBD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-28T16:17:00.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA9FC8816853BB16A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-27T10:40:56.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC3608719D9CB3A5D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-03-27T10:20:15.561Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFEF0709CEA00E0B5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-27T10:40:56.137Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM0629B8A7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-10T20:57:56.849Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ299956  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ299956 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4a/W4CZ299956.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ299956 ;
+        adm:logEntry        bda:LG0D4AE1E1E577DFBD , bda:LGA9FC8816853BB16A , bda:LGC3608719D9CB3A5D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG200903  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of lany+dza'i ma phyi/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   46 .
+    
+    bdr:W4CZ299956  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I2KG200903 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "3/2019"@en , "copy made available from the library of tibetan works and archives; ltwa acc. no. 3318"@en .
+}

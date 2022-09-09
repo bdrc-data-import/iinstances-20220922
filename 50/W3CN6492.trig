@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6492 {
+    bda:I3CN6494  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6494 ;
+        adm:logEntry        bda:LG4B05BCFC33FB157D , bda:LGE7EEA4CF29D5BBCD , bda:LGF6A03F08F79C39C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4B05BCFC33FB157D
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-04-26T16:43:36.846Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG71961B065F8A7654
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:53:35.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE7EEA4CF29D5BBCD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T15:53:35.329Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF6A03F08F79C39C7
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:13:09.75Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN6492  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6492 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "50/W3CN6492.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6492 ;
+        adm:logEntry        bda:LG71961B065F8A7654 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6494  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of tun hong bod kyi gter yig las mtha' gcod pa'i tshig gi khyad chos brjod pa thon mi'i zhal 'dzum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   250 .
+    
+    bdr:IDECDC9D5940BB24F4
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727952" .
+    
+    bdr:W3CN6492  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDECDC9D5940BB24F4 ;
+        :instanceHasVolume  bdr:I3CN6494 ;
+        :numberOfVolumes    1 .
+}

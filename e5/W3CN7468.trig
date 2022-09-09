@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7468 {
+    bda:I3CN7470  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7470 ;
+        adm:logEntry        bda:LGAAAE9F9CBAA1F3C5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN7471  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7471 ;
+        adm:logEntry        bda:LG9A5E0F896118DFA3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN7472  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7472 ;
+        adm:logEntry        bda:LGB7771934EA66631E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN7473  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7473 ;
+        adm:logEntry        bda:LG0671817D062AEEAB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN7474  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7474 ;
+        adm:logEntry        bda:LG2E0743D02471622D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0671817D062AEEAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:32:31.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2E0743D02471622D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:32:31.624Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9A5E0F896118DFA3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:32:31.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAAE9F9CBAA1F3C5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:32:31.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7771934EA66631E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T16:32:31.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN7468  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN7468 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e5/W3CN7468.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7468 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I3CN7470  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal sprul bka' 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN7471  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of dpal sprul bka' 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN7472  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of dpal sprul bka' 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN7473  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of dpal sprul bka' 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN7474  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of dpal sprul bka' 'bum/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN7468  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN7470 , bdr:I3CN7471 , bdr:I3CN7472 , bdr:I3CN7473 , bdr:I3CN7474 ;
+        :numberOfVolumes    5 .
+}

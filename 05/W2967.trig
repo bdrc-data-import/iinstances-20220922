@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2967 {
+    bda:I1KG24446  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24446 ;
+        adm:logEntry        bda:LG3D6290C95280E06F , bda:LG3E71044E7E639373 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D6290C95280E06F
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-31T20:51:27.724Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3E71044E7E639373
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-08-25T17:14:43.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBE19CA1EF1FD2938
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-08-25T17:14:43.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2967  a            adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2967 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "05/W2967.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2967 ;
+        adm:logEntry        bda:LGBE19CA1EF1FD2938 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24446  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tshul khrims nyi ma'i rnam thar par byang tshigs bcad"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   256 .
+    
+    bdr:W2967  a            :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I1KG24446 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "8/2016"@en .
+}

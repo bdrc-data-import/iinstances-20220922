@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18072 {
+    bda:I8LS18112  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18112 ;
+        adm:logEntry        bda:LGD30C5A24536EBD59 , bda:LGD60DBF56E6878511 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5A4876B7C9AD356F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-22T09:20:17.851Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD30C5A24536EBD59
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-28T21:39:46.408Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD60DBF56E6878511
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-22T09:20:17.731Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18072  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS18072 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "84/W8LS18072.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18072 ;
+        adm:logEntry        bda:LG5A4876B7C9AD356F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18112  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dus 'brel gso sbyong tshogs pa'i nyi ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   66 .
+    
+    bdr:W8LS18072  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS18112 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

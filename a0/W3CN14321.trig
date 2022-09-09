@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN14321 {
+    bda:I3CN14323  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN14323 ;
+        adm:logEntry        bda:LGAD04F3C1842626CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGA4B6820D136AB192
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-28T11:53:29.977Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAD04F3C1842626CD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-28T11:53:29.876Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN14321  a        adm:AdminData ;
+        adm:access          bda:AccessRestrictedSealed ;
+        adm:adminAbout      bdr:W3CN14321 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a0/W3CN14321.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN14321 ;
+        adm:logEntry        bda:LGA4B6820D136AB192 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN14323  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dag snang rgya can las byung ba'i yi dam lha tshogs rnams kyi mchod gtor bca' tshul/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN14321  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I3CN14323 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

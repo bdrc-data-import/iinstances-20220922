@@ -1,0 +1,99 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4PD1168 {
+    bda:I4PD1186  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1186 ;
+        adm:logEntry        bda:LGC2C5ED9EB3E0A942 , bda:LGD017D19092A42BF1 , bda:LGEB9520CB703AA38C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1187  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1187 ;
+        adm:logEntry        bda:LG01C7DB50DAA411CD , bda:LG71A40C4C6BA81ED8 , bda:LGAEAF2818D219BFFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG01C7DB50DAA411CD
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-01-13T00:57:22.206Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG5BC6DEB0B3F6E161
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-18T15:48:53.536Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG71A40C4C6BA81ED8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-18T15:48:52.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAEAF2818D219BFFD
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-09T22:04:37.112Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC2C5ED9EB3E0A942
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-09T22:04:36.838Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD017D19092A42BF1
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-01-13T00:57:21.895Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGEB9520CB703AA38C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-18T15:48:51.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W4PD1168  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4PD1168 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "1a/W4PD1168.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4PD1168 ;
+        adm:logEntry        bda:LG5BC6DEB0B3F6E161 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1186  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of snga 'gyur rgyal ba dpal yul pa'i lugs kyi cho ga 'don cha'i skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1544 .
+    
+    bdr:I4PD1187  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of snga 'gyur rgyal ba dpal yul pa'i lugs kyi cho ga 'don cha'i skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   1792 .
+    
+    bdr:W4PD1168  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD1186 , bdr:I4PD1187 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

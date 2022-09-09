@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19527 {
+    bda:I8LS19529  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19529 ;
+        adm:logEntry        bda:LG06EF08400D8DA144 , bda:LG2DBFD8C785800F88 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06EF08400D8DA144
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-13T06:12:09.783Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2DBFD8C785800F88
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T16:10:45.002Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG3C2694F61A1F7659
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T16:10:45.119Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19527  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19527 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0b/W8LS19527.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19527 ;
+        adm:logEntry        bda:LG3C2694F61A1F7659 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19529  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sangs rgyas sprul pa bye ba phrag brgya la/ dpa' bo mkha' 'gro'i mdzad pa bye ba brgya/ chos dbyings skye ba med pa'i mkha' klong nas/ 'dzam gling paN chen skyes rabs rin po che/ mdzad pa phrin las 'di na mkha' 'gor'i gsung / 'bru g.yang rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   568 .
+    
+    bdr:W8LS19527  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I8LS19529 ;
+        :numberOfVolumes    1 .
+}

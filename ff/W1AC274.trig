@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC274 {
+    bda:I2PD20339  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD20339 ;
+        adm:logEntry        bda:LGC2337812E8DD3BF3 , bda:LGEF9C1DD4E2D5DAFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGC2337812E8DD3BF3
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:02.979Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD0A2916F112E4361
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-01-20T04:06:24.265Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGEF9C1DD4E2D5DAFD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-20T04:06:23.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC274  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC274 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ff/W1AC274.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC274 ;
+        adm:logEntry        bda:LGD0A2916F112E4361 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD20339  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nyin gcig gi cho 'phrul/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   354 .
+    
+    bdr:W1AC274  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD20339 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

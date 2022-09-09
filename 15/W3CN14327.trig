@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN14327 {
+    bda:I3CN14329  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN14329 ;
+        adm:logEntry        bda:LG09BB397C7A9FEFAD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG09BB397C7A9FEFAD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-03-28T16:33:39.996Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7B82AB3F924EF5F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-03-28T16:33:40.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN14327  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN14327 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "15/W3CN14327.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN14327 ;
+        adm:logEntry        bda:LGB7B82AB3F924EF5F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN14329  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dar mo sman rams pa'i gdams ngag bka' rgya ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN14327  a        :ImageInstance ;
+        :inCollection       bdr:PR1NLM00 ;
+        :instanceHasVolume  bdr:I3CN14329 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+}

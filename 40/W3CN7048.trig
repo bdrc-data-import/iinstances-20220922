@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7048 {
+    bda:I3CN7050  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7050 ;
+        adm:logEntry        bda:LG2C92C0097CE42A28 , bda:LGB6E36319D9447BB1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2C92C0097CE42A28
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-01T23:13:16.376Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB6E36319D9447BB1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T11:58:35.602Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDECCFF3998583387
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T11:58:35.703Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN7048  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN7048 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "40/W3CN7048.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7048 ;
+        adm:logEntry        bda:LGDECCFF3998583387 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7050  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of lho kha'i grags can mi sna rim byon gyi mtshan mdzod nyi khug gi rgad po dang mos pa'i gtam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   560 .
+    
+    bdr:IDFCC8EB98372D4BF6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719212" .
+    
+    bdr:W3CN7048  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFCC8EB98372D4BF6 ;
+        :instanceHasVolume  bdr:I3CN7050 ;
+        :numberOfVolumes    1 .
+}

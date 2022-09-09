@@ -1,0 +1,150 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00KG010095 {
+    bda:I00KG010109  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010109 ;
+        adm:logEntry        bda:LG4D9151A9F90313ED , bda:LG5C0FAA6FB225E08D , bda:LG731E99596E9637DF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:I00KG010110  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010110 ;
+        adm:logEntry        bda:LG354EFA0C25A60ACC , bda:LG7C8D7F174C8A277E , bda:LG9AB56B9323AFE780 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:I00KG010111  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010111 ;
+        adm:logEntry        bda:LG03EB00CF2B982F3F , bda:LG5390CBD3671675D5 , bda:LGEB1F30E796B41053 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:I00KG010112  a      adm:AdminData ;
+        adm:adminAbout      bdr:I00KG010112 ;
+        adm:logEntry        bda:LG054502727BF94620 , bda:LG23388A5D9FA486ED , bda:LGEA5FD79D674D321F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:LG03EB00CF2B982F3F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:22:04.763Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG054502727BF94620
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-29T12:47:31.485Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG23388A5D9FA486ED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:22:05.013Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG354EFA0C25A60ACC
+        a                   adm:WithdrawData ;
+        adm:logDate         "2009-08-18T11:06:59.857Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of W00KG01660"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG4D9151A9F90313ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-29T12:47:26.351Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5390CBD3671675D5
+        a                   adm:WithdrawData ;
+        adm:logDate         "2009-08-18T11:07:00.192Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of W00KG01660"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG5C0FAA6FB225E08D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:22:03.622Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG731E99596E9637DF
+        a                   adm:WithdrawData ;
+        adm:logDate         "2009-08-18T11:06:59.509Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of W00KG01660"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG7C8D7F174C8A277E
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-29T12:47:27.802Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9AB56B9323AFE780
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-07-11T13:22:04.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEA5FD79D674D321F
+        a                   adm:WithdrawData ;
+        adm:logDate         "2009-08-18T11:07:00.522Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn in favor of W00KG01660"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGEB1F30E796B41053
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-10-29T12:47:28.583Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W00KG010095  a      adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W00KG010095 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "23/W00KG010095.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W00KG010095 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I00KG010109  a      :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/_bsod nams lhun grub"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I00KG010110  a      :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung thor bu/_bsod nams lhun grub"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I00KG010111  a      :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung thor bu/_bsod nams lhun grub"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I00KG010112  a      :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung thor bu/_bsod nams lhun grub"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W00KG010095  a      :ImageInstance ;
+        :instanceHasVolume  bdr:I00KG010109 , bdr:I00KG010110 , bdr:I00KG010111 , bdr:I00KG010112 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2008"@en .
+}

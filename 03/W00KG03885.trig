@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00KG03885 {
+    bda:I00KG03955  a       adm:AdminData ;
+        adm:adminAbout      bdr:I00KG03955 ;
+        adm:logEntry        bda:LG0458F005166B48E7 , bda:LG31B6B13B0DF44FC0 , bda:LGDEB283756573AC13 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0458F005166B48E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-19T15:44:28.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2A4F2E022478CE74
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-19T15:44:29.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG31B6B13B0DF44FC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-21T17:05:50.922Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDEB283756573AC13
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-21T17:08:21.414Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W00KG03885  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W00KG03885 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "03/W00KG03885.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W00KG03885 ;
+        adm:logEntry        bda:LG2A4F2E022478CE74 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I00KG03955  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of sher phyin tshig don rnam bshad ma pham zhal lung"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:W00KG03885  a       :ImageInstance ;
+        :inCollection       bdr:PR3JW7543 ;
+        :instanceHasVolume  bdr:I00KG03955 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: from (0000 drive) of Dummy 23, ma pham, 133 ff."@en .
+}

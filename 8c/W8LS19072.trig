@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19072 {
+    bda:I8LS19074  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19074 ;
+        adm:logEntry        bda:LG2F291921116E7CDD , bda:LGB9B5946FCBD6EA0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2F291921116E7CDD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:49:58.358Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG30B13CDF71787CFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:49:58.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB9B5946FCBD6EA0A
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:52.594Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19072  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19072 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "8c/W8LS19072.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19072 ;
+        adm:logEntry        bda:LG30B13CDF71787CFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19074  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of skye ldan rdzas 'gyur rig pa/_smad cha/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   272 .
+    
+    bdr:ID29CC76B78C78C921
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719705" .
+    
+    bdr:W8LS19072  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID29CC76B78C78C921 ;
+        :instanceHasVolume  bdr:I8LS19074 ;
+        :numberOfVolumes    1 .
+}

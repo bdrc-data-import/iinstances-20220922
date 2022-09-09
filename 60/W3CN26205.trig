@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26205 {
+    bda:I3CN26210  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26210 ;
+        adm:logEntry        bda:LG577C17658210ED48 , bda:LGIM1F69EC20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN26211  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26211 ;
+        adm:logEntry        bda:LGD752C176281E6704 , bda:LGIM8AE96649 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN26212  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26212 ;
+        adm:logEntry        bda:LG662E4DA33E1450B8 , bda:LGIMEE9813FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG50A4BFAFF6475B01
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-02T20:20:53.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG577C17658210ED48
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-02T20:20:53.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG662E4DA33E1450B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-02T20:20:53.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD752C176281E6704
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-02T20:20:53.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM1F69EC20  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:21.628Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8AE96649  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:21.896Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEE9813FA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:22.109Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN26205  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26205 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "60/W3CN26205.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26205 ;
+        adm:logEntry        bda:LG50A4BFAFF6475B01 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26210  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ bkra shis 'od zer/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   394 .
+    
+    bdr:I3CN26211  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ bkra shis 'od zer/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   264 .
+    
+    bdr:I3CN26212  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ bkra shis 'od zer/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   52 .
+    
+    bdr:W3CN26205  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26210 , bdr:I3CN26211 , bdr:I3CN26212 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "2021"@en .
+}

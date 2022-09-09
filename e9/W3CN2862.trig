@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2862 {
+    bda:I3CN2864  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2864 ;
+        adm:logEntry        bda:LG64B5860BD4BA93A9 , bda:LGFFFD62C644480CBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5DC161D3F9F21A06
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-06-08T16:15:22.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG64B5860BD4BA93A9
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-21T04:05:09.133Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFFFD62C644480CBC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-06-08T16:15:22.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN2862  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2862 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e9/W3CN2862.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2862 ;
+        adm:logEntry        bda:LG5DC161D3F9F21A06 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2864  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zab mo nang don gyi 'grel bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   810 .
+    
+    bdr:W3CN2862  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2864 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Images from the DVDs of \"bod kyi shing spar lag rtsal gyi byung rim mdor bsdus bzhugs so (A brief introduction to the history of Tibetan printing technology)\", Paltsek, 2013."@en .
+}

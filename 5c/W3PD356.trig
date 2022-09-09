@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD356 {
+    bda:I2PD18770  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18770 ;
+        adm:logEntry        bda:LG110B8DBF407A2221 , bda:LG30BEC73057EB5CF5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06C4B0588A6ED8DD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T21:08:29.536Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG110B8DBF407A2221
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:38.915Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG30BEC73057EB5CF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T21:08:28.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W3PD356  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3PD356 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5c/W3PD356.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD356 ;
+        adm:logEntry        bda:LG06C4B0588A6ED8DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18770  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gzi mig gis 'chor ba'i mchi ma/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   154 .
+    
+    bdr:IDF18C1C39CE02D70F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147731823" .
+    
+    bdr:W3PD356  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF18C1C39CE02D70F ;
+        :instanceHasVolume  bdr:I2PD18770 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

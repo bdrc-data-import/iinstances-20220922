@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20445 {
+    bda:I8LS20447  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20447 ;
+        adm:logEntry        bda:LG6121A9706DB425ED , bda:LG8553565056DA2B59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG21D452964CD6DF02
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T10:18:37.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG6121A9706DB425ED
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:45.264Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8553565056DA2B59
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:18:37.04Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20445  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20445 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "74/W8LS20445.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20445 ;
+        adm:logEntry        bda:LG21D452964CD6DF02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20447  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mdo smad reb gong gi zho 'ong g.yang sde phyug mo'i lo rgyus zhib tu brjod pa ngo mtshar gtam gyi bang mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   729 .
+    
+    bdr:ID06823652FFF6B95A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714324" .
+    
+    bdr:W8LS20445  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID06823652FFF6B95A ;
+        :instanceHasVolume  bdr:I8LS20447 ;
+        :numberOfVolumes    1 .
+}

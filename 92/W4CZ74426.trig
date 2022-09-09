@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74426 {
+    bda:I4CZ74428  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74428 ;
+        adm:logEntry        bda:LG63A29E27E9842751 , bda:LG910D46A9F40F3C10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG26376902AE0E8F7C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:34:11.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG63A29E27E9842751
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:47:55.528Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG910D46A9F40F3C10
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:34:11.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ74426  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74426 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "92/W4CZ74426.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74426 ;
+        adm:logEntry        bda:LG26376902AE0E8F7C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74428  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   289 .
+    
+    bdr:W4CZ74426  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74428 ;
+        :numberOfVolumes    1 .
+}

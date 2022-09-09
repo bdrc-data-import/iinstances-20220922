@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS17530 {
+    bda:I8LS17545  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17545 ;
+        adm:logEntry        bda:LG650DFC82D5B2507D , bda:LGEC8743AB4103C78D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG650DFC82D5B2507D
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-14T03:48:35.615Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG842B199B14820256
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-27T09:11:38.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEC8743AB4103C78D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-27T09:11:38.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS17530  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS17530 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "86/W8LS17530.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS17530 ;
+        adm:logEntry        bda:LG842B199B14820256 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17545  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ye shes mgon po phyag drug pa'i gtor chog bskang gso cha lag dang bcas pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   70 .
+    
+    bdr:W8LS17530  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17545 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

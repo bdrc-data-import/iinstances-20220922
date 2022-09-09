@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24759 {
+    bda:I1KG24761  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24761 ;
+        adm:logEntry        bda:LG0F63AF37762C796A , bda:LGDA844573DB192D3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0F63AF37762C796A
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:34:55.739Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDA844573DB192D3B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:13:01.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF6B6A07CB2AC0C4F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:13:01.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24759  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24759 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "e1/W1KG24759.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24759 ;
+        adm:logEntry        bda:LGF6B6A07CB2AC0C4F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24761  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod lugs gso rig gi dngul khab lag len/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   233 .
+    
+    bdr:ID1DE1AA3DA922802F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147752184" .
+    
+    bdr:W1KG24759  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1DE1AA3DA922802F ;
+        :instanceHasVolume  bdr:I1KG24761 ;
+        :numberOfVolumes    1 .
+}

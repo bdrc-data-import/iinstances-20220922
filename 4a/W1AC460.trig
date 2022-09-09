@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC460 {
+    bda:I2PD18737  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18737 ;
+        adm:logEntry        bda:LG333AED25525431DE , bda:LG9767D00F9F00F8F9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG333AED25525431DE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T04:42:56.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG90102AA35D70AB3F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T04:42:57.909Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9767D00F9F00F8F9
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:40.965Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC460  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1AC460 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4a/W1AC460.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC460 ;
+        adm:logEntry        bda:LG90102AA35D70AB3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18737  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dkar mdzes khul bod brgyud nang bstan do dam skor gcig thog drug snon gyi yig cha phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   138 .
+    
+    bdr:W1AC460  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18737 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

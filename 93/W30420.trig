@@ -1,0 +1,101 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W30420 {
+    bda:I6114  a            adm:AdminData ;
+        adm:adminAbout      bdr:I6114 ;
+        adm:logEntry        bda:LG951C7CA5FEBEFA0C , bda:LGF30D445573038CCF , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I6115  a            adm:AdminData ;
+        adm:adminAbout      bdr:I6115 ;
+        adm:logEntry        bda:LG3479DAE2F7F1404D , bda:LG8DEBBEC54B248A2D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3479DAE2F7F1404D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-02T06:41:05.296Z"^^xsd:dateTime ;
+        adm:logMessage      "checked"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG8DEBBEC54B248A2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-02T06:27:22.625Z"^^xsd:dateTime ;
+        adm:logMessage      "image groups marked true"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG951C7CA5FEBEFA0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-02T06:27:20Z"^^xsd:dateTime ;
+        adm:logMessage      "image groups marked true"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF30D445573038CCF
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-06-02T06:41:04.953Z"^^xsd:dateTime ;
+        adm:logMessage      "checked"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM60F924CD  a     adm:UpdateData ;
+        adm:logAgent        "admin/imagegroups-zero-tbrcIntro-by-list.xql" ;
+        adm:logDate         "2020-06-26T16:21:40.517Z"^^xsd:dateTime ;
+        adm:logMessage      "setting tbrcIntro = 2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W30420  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W30420 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "93/W30420.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W30420 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I6114  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   776 .
+    
+    bdr:I6115  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   918 .
+    
+    bdr:W30420  a           :ImageInstance ;
+        :inCollection       bdr:PR1GS49488 ;
+        :instanceHasVolume  bdr:I6114 , bdr:I6115 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

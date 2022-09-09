@@ -1,0 +1,106 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN9778 {
+    bda:I3CN9780  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN9780 ;
+        adm:logEntry        bda:LGA76E8E24815D4A27 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN9781  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN9781 ;
+        adm:logEntry        bda:LG3191BB80A2C38D84 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN9782  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN9782 ;
+        adm:logEntry        bda:LGAF2B8A196194990C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN9783  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN9783 ;
+        adm:logEntry        bda:LG0BEC6710FF77A0CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0BEC6710FF77A0CE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T15:48:16.871Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3191BB80A2C38D84
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T15:48:16.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA76E8E24815D4A27
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T15:48:16.57Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAF2B8A196194990C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T15:48:16.771Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEDDC2FBDA898BF6D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-29T15:48:16.971Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN9778  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN9778 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "26/W3CN9778.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN9778 ;
+        adm:logEntry        bda:LGEDDC2FBDA898BF6D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN9780  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal snga 'gyur rnying ma'i bka' dgongs phur gsum chos sde/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN9781  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of dpal snga 'gyur rnying ma'i bka' dgongs phur gsum chos sde/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN9782  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of dpal snga 'gyur rnying ma'i bka' dgongs phur gsum chos sde/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN9783  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of dpal snga 'gyur rnying ma'i bka' dgongs phur gsum chos sde/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN9778  a         :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I3CN9780 , bdr:I3CN9781 , bdr:I3CN9782 , bdr:I3CN9783 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D29957, D29958, D29959, D29960."@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

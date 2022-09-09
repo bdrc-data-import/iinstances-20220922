@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25059 {
+    bda:I1KG25061  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25061 ;
+        adm:logEntry        bda:LG8EA1EADE3207E6F3 , bda:LGA5FC9CA8AD35E70E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8EA1EADE3207E6F3
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-12T00:34:13.406Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA5FC9CA8AD35E70E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:11:01.284Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCC257C58C1E88C67
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:11:01.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25059  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25059 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "21/W1KG25059.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25059 ;
+        adm:logEntry        bda:LGCC257C58C1E88C67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25061  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bla ma mchod pa'i 'khrid yig snyan rgyud man ngag gi gter mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   388 .
+    
+    bdr:W1KG25059  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG25061 ;
+        :numberOfVolumes    1 .
+}

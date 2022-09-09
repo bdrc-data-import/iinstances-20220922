@@ -1,0 +1,157 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3412 {
+    bda:I3CN4482  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4482 ;
+        adm:logEntry        bda:LG39B223825BC2265C , bda:LG55AD185157D7F187 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4483  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4483 ;
+        adm:logEntry        bda:LG71461CACF6FE4798 , bda:LGEEA6CC8F54FE24EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4484  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4484 ;
+        adm:logEntry        bda:LGAA220133FA260D37 , bda:LGF8E6B991A09E1380 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4485  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4485 ;
+        adm:logEntry        bda:LG0C4A905E9272443A , bda:LGD674CF26397F7373 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4486  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4486 ;
+        adm:logEntry        bda:LG87D01023EC5B3DF1 , bda:LG9A674FAA523DE16C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C4A905E9272443A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T15:14:02.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG39B223825BC2265C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T15:14:01.973Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG55AD185157D7F187
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:28.291Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG71461CACF6FE4798
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:29.007Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG87D01023EC5B3DF1
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:31.484Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9A674FAA523DE16C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T15:14:02.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA220133FA260D37
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T15:14:02.173Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD674CF26397F7373
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:30.446Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEC1B13E7D07615F4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-28T15:14:02.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEEA6CC8F54FE24EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T15:14:02.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF8E6B991A09E1380
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:29.706Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN3412  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN3412 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "99/W3CN3412.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3412 ;
+        adm:logEntry        bda:LGEC1B13E7D07615F4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4482  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of skyed tshal 'jam dbyangs kun dga' chos bzang gi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   406 .
+    
+    bdr:I3CN4483  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of skyed tshal 'jam dbyangs kun dga' chos bzang gi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   362 .
+    
+    bdr:I3CN4484  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of skyed tshal 'jam dbyangs kun dga' chos bzang gi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   516 .
+    
+    bdr:I3CN4485  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of skyed tshal 'jam dbyangs kun dga' chos bzang gi gsung 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   446 .
+    
+    bdr:I3CN4486  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of skyed tshal 'jam dbyangs kun dga' chos bzang gi gsung 'bum/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   430 .
+    
+    bdr:W3CN3412  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4482 , bdr:I3CN4483 , bdr:I3CN4484 , bdr:I3CN4485 , bdr:I3CN4486 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "11/2016"@en .
+}

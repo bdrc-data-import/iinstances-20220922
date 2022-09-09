@@ -1,0 +1,85 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN879 {
+    bda:I3CN881  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3CN881 ;
+        adm:logEntry        bda:LG93AD07B01C62B818 , bda:LGIM38D8F46A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN882  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3CN882 ;
+        adm:logEntry        bda:LG438E00FE28CE242B , bda:LGIM0813B9C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG438E00FE28CE242B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-11T16:39:47.229Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG93AD07B01C62B818
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-11T16:39:47.177Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE0211C123AF580D6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-12-11T16:39:47.263Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0813B9C1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-08T01:25:51.092Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM38D8F46A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-08T01:25:50.783Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN879  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN879 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6f/W3CN879.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN879 ;
+        adm:logEntry        bda:LGE0211C123AF580D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN881  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of lung rtogs bstan pa'i nyi ma'i dngos gzhi'i zin bris sogs zin bris khag cig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   272 .
+    
+    bdr:I3CN882  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of lung rtogs bstan pa'i nyi ma'i dngos gzhi'i zin bris sogs zin bris khag cig"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   482 .
+    
+    bdr:W3CN879  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN881 , bdr:I3CN882 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 12/2014"@en .
+}

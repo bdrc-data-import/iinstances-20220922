@@ -1,0 +1,252 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22124 {
+    bda:I0150  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0150 ;
+        adm:logEntry        bda:LGD180809E763A4F18 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0151  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0151 ;
+        adm:logEntry        bda:LGABB54674FCED85A4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0152  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0152 ;
+        adm:logEntry        bda:LGD65B2D48FED634C4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0153  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0153 ;
+        adm:logEntry        bda:LGB239EED6C40F76CB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0154  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0154 ;
+        adm:logEntry        bda:LGB8E55AAF1681FFE7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0155  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0155 ;
+        adm:logEntry        bda:LG465888200405F2C5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0156  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0156 ;
+        adm:logEntry        bda:LG883CC992937FFFEC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0157  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0157 ;
+        adm:logEntry        bda:LG2FB7142594F5ADA0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0158  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0158 ;
+        adm:logEntry        bda:LG45DB4C15E602B157 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0159  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0159 ;
+        adm:logEntry        bda:LG002EB6D027DACAB5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0160  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0160 ;
+        adm:logEntry        bda:LGD9C9383F433978F8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I0161  a            adm:AdminData ;
+        adm:adminAbout      bdr:I0161 ;
+        adm:logEntry        bda:LG8E5F6A0FC178C789 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG002EB6D027DACAB5
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "Problems with 256, 260 cut off, replaced 256, 259,"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG2FB7142594F5ADA0
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "pages 213, 214, 215, 216 missing, Pages scanned, q"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG45DB4C15E602B157
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG465888200405F2C5
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG883CC992937FFFEC
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG8E5F6A0FC178C789
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGABB54674FCED85A4
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGB239EED6C40F76CB
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGB8E55AAF1681FFE7
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGD180809E763A4F18
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGD65B2D48FED634C4
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGD9C9383F433978F8
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "Page 228 is not clear, no action, its is on origin"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W22124  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W22124 ;
+        adm:facetIndex      49 ;
+        adm:gitPath         "52/W22124.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22124 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I0150  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   620 .
+    
+    bdr:I0151  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   504 .
+    
+    bdr:I0152  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   362 .
+    
+    bdr:I0153  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   373 .
+    
+    bdr:I0154  a            :ImageGroup ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   790 .
+    
+    bdr:I0155  a            :ImageGroup ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   662 .
+    
+    bdr:I0156  a            :ImageGroup ;
+        :volumeNumber       7 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   840 .
+    
+    bdr:I0157  a            :ImageGroup ;
+        :volumeNumber       8 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   480 .
+    
+    bdr:I0158  a            :ImageGroup ;
+        :volumeNumber       9 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   522 .
+    
+    bdr:I0159  a            :ImageGroup ;
+        :volumeNumber       10 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   716 .
+    
+    bdr:I0160  a            :ImageGroup ;
+        :volumeNumber       11 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   588 .
+    
+    bdr:I0161  a            :ImageGroup ;
+        :volumeNumber       12 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   602 .
+    
+    bdr:W22124  a           :ImageInstance ;
+        :inCollection       bdr:PR01JW33478 , bdr:PR03DCN1 , bdr:PRHD02 ;
+        :instanceHasVolume  bdr:I0150 , bdr:I0151 , bdr:I0152 , bdr:I0153 , bdr:I0154 , bdr:I0155 , bdr:I0156 , bdr:I0157 , bdr:I0158 , bdr:I0159 , bdr:I0160 , bdr:I0161 ;
+        :numberOfVolumes    12 .
+}

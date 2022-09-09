@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24925 {
+    bda:I1KG24927  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24927 ;
+        adm:logEntry        bda:LG2D3879F8DDCADB72 , bda:LGF138A2EE7A1BDB1D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG24928  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24928 ;
+        adm:logEntry        bda:LG38563825102A044A , bda:LGC0D2575334E284B4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG24929  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24929 ;
+        adm:logEntry        bda:LG28EE004A306C7EF1 , bda:LG9493F694ED2666FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28EE004A306C7EF1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T16:42:14.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2D3879F8DDCADB72
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T16:42:13.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG38563825102A044A
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:45:43.26Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9493F694ED2666FC
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:45:43.5Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC0D2575334E284B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T16:42:14Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD32DB5FC883B175F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T16:42:14.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF138A2EE7A1BDB1D
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-29T03:45:42.987Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG24925  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24925 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "e2/W1KG24925.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24925 ;
+        adm:logEntry        bda:LGD32DB5FC883B175F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24927  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of krung go gung khran tang gi lo rgyus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   752 .
+    
+    bdr:I1KG24928  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of krung go gung khran tang gi lo rgyus/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   698 .
+    
+    bdr:I1KG24929  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of krung go gung khran tang gi lo rgyus/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   618 .
+    
+    bdr:W1KG24925  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24927 , bdr:I1KG24928 , bdr:I1KG24929 ;
+        :numberOfVolumes    3 .
+}

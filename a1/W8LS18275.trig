@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18275 {
+    bda:I8LS18288  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18288 ;
+        adm:logEntry        bda:LG4DD560DC5A231A9B , bda:LGF6A86EC25ACB2626 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4DD560DC5A231A9B
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-27T02:52:56.123Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF6A86EC25ACB2626
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-17T11:02:37.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF7063B75BAC5457B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-17T11:02:38.082Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18275  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS18275 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a1/W8LS18275.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18275 ;
+        adm:logEntry        bda:LGF7063B75BAC5457B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18288  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal nA ro chos drug gi khrid yig brjed byang /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:W8LS18275  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS18288 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "10/2016"@en .
+}

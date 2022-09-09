@@ -1,0 +1,140 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W30336 {
+    bda:I1KG1263  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG1263 ;
+        adm:logEntry        bda:LG3FF35744A11E2B80 , bda:LG506D77A6CD5DAB32 , bda:LG544CF0EE9A41F84B , bda:LGE52EC9C59B0F0075 , bda:LGFDE27B39358FFF33 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG1264  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG1264 ;
+        adm:logEntry        bda:LG3C9C3A2AA6F6E2D2 , bda:LG4B0CFCCEDE15DAB8 , bda:LG6060EC13698B44DA , bda:LG8420211D9791F94B , bda:LGA0AF85907EC4A880 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3C9C3A2AA6F6E2D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:51:32.343Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG3FF35744A11E2B80
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-12-17T16:25:00.603Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4B0CFCCEDE15DAB8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:53:27.906Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG506D77A6CD5DAB32
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:53:27.718Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG53F7CACE5C12DC82
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-12-17T16:25:01.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG544CF0EE9A41F84B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:51:32.171Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG6060EC13698B44DA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-12-17T16:25:01.306Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8420211D9791F94B
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T11:48:21Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGA0AF85907EC4A880
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:49:36.859Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGE52EC9C59B0F0075
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T11:48:20.843Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGFDE27B39358FFF33
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-04T09:49:36.687Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W30336  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W30336 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "b2/W30336.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W30336 ;
+        adm:logEntry        bda:LG53F7CACE5C12DC82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG1263  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of commentaries on the guhyagarbha tantra and other rare nyingmapa texts from the library of dudjom rimpoche"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   637 .
+    
+    bdr:I1KG1264  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of commentaries on the guhyagarbha tantra and other rare nyingmapa texts from the library of dudjom rimpoche"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   722 .
+    
+    bdr:W30336  a           :ImageInstance ;
+        :inCollection       bdr:PR1GS49488 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I1KG1263 , bdr:I1KG1264 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2008"@en .
+}

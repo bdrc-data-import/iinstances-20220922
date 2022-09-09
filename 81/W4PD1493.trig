@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4PD1493 {
+    bda:I4PD1552  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1552 ;
+        adm:logEntry        bda:LG7DE8147A874CF05D , bda:LGB4F85295F689C335 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1553  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1553 ;
+        adm:logEntry        bda:LG50E875AF330E772B , bda:LG7DF47A508679F090 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4PD1554  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1554 ;
+        adm:logEntry        bda:LG2BE5246E0F8399CC , bda:LGAE11DF1BF3C1253E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2BE5246E0F8399CC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T13:13:55.328Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG50E875AF330E772B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T13:13:54.195Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7DE8147A874CF05D
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-12T00:04:01.329Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7DF47A508679F090
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-12T00:04:01.566Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAE11DF1BF3C1253E
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-12T00:04:03.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAE2881E514999992
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-10T13:13:56.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB4F85295F689C335
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-10T13:13:53.078Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W4PD1493  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4PD1493 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "81/W4PD1493.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4PD1493 ;
+        adm:logEntry        bda:LGAE2881E514999992 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1552  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of mang thos klu sgrub rgya mtsho'i gsung phyogs bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   354 .
+    
+    bdr:I4PD1553  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of mang thos klu sgrub rgya mtsho'i gsung phyogs bsdus/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   614 .
+    
+    bdr:I4PD1554  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of mang thos klu sgrub rgya mtsho'i gsung phyogs bsdus/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   356 .
+    
+    bdr:W4PD1493  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD1552 , bdr:I4PD1553 , bdr:I4PD1554 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

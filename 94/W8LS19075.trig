@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19075 {
+    bda:I8LS19077  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19077 ;
+        adm:logEntry        bda:LG07D61881DD927C5E , bda:LG3CDE98BE0FEA9F6B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG07D61881DD927C5E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:50:24.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG3CDE98BE0FEA9F6B
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:52.873Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG55F392F22C5F1BF7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:50:25.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19075  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19075 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "94/W8LS19075.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19075 ;
+        adm:logEntry        bda:LG55F392F22C5F1BF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19077  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod sman rtsi shing rig pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   454 .
+    
+    bdr:ID5E05551510F0FA35
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720645" .
+    
+    bdr:W8LS19075  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5E05551510F0FA35 ;
+        :instanceHasVolume  bdr:I8LS19077 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19673 {
+    bda:I8LS19675  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19675 ;
+        adm:logEntry        bda:LG193B9D0159A5539B , bda:LG5CE74B2455DF36F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG193B9D0159A5539B
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-28T00:08:53.824Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5CE74B2455DF36F1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T12:12:23.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD54D4F5B1C6DDBB9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T12:12:23.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19673  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19673 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2a/W8LS19673.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19673 ;
+        adm:logEntry        bda:LGD54D4F5B1C6DDBB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19675  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of badz+ra gu ru'i don cung zad dbye ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   14 .
+    
+    bdr:W8LS19673  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19675 ;
+        :numberOfVolumes    1 .
+}

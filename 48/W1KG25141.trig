@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25141 {
+    bda:I1KG25143  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25143 ;
+        adm:logEntry        bda:LG7F9FBCBBC84083C6 , bda:LG9C9571BBC31E4B46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2CB5F38997998BE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T10:47:56.792Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7F9FBCBBC84083C6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:47:56.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9C9571BBC31E4B46
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:10.419Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25141  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25141 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "48/W1KG25141.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25141 ;
+        adm:logEntry        bda:LG2CB5F38997998BE1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25143  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lta ba'i skor las 'phros pa'i mkhas pa'i legs bshad gces sgrig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   314 .
+    
+    bdr:W1KG25141  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG25143 ;
+        :numberOfVolumes    1 .
+}

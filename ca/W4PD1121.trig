@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4PD1121 {
+    bda:I4PD1177  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD1177 ;
+        adm:logEntry        bda:LG18921AD6D4817F3C , bda:LG4EB1AC9B2EE86604 , bda:LGDD69A97B97E9A939 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG18921AD6D4817F3C
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-01-13T00:57:21.113Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LG4EB1AC9B2EE86604
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-09T22:04:36.306Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB26FA500903A569C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-09T15:21:16.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDD69A97B97E9A939
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-09T15:21:14.886Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W4PD1121  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4PD1121 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ca/W4PD1121.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4PD1121 ;
+        adm:logEntry        bda:LGB26FA500903A569C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD1177  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of lam mchog bdud kyi gcod yul dang gcod kyi tshogs las yon tan kun 'byung gis dmigs pa'i zab khyad bla ma'i zhal gdams zin bris/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   74 .
+    
+    bdr:W4PD1121  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD1177 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

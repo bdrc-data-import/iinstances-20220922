@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25658 {
+    bda:I1KG25660  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25660 ;
+        adm:logEntry        bda:LG39FDC48C1D9A3BC5 , bda:LGF334A1DF1F607528 , bda:LGIMBDA1E25B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31B0872186E6C1EA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T15:05:06.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG39FDC48C1D9A3BC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T15:05:06.657Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF334A1DF1F607528
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-12T14:48:29.743Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBDA1E25B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-26T23:32:57.207Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25658  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25658 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "03/W1KG25658.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25658 ;
+        adm:logEntry        bda:LG31B0872186E6C1EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25660  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snyan ngag me long /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   184 .
+    
+    bdr:ID87B650837417708F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713170" .
+    
+    bdr:W1KG25658  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID87B650837417708F ;
+        :instanceHasVolume  bdr:I1KG25660 ;
+        :numberOfVolumes    1 .
+}

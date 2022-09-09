@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20677 {
+    bda:I8LS20679  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20679 ;
+        adm:logEntry        bda:LG3B8E974CF8FB3FFE , bda:LG6BF2F0B0FFB2862F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B8E974CF8FB3FFE
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:27.634Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6BF2F0B0FFB2862F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T14:31:55.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBCB5E50A95739F07
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:31:55.729Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20677  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20677 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ab/W8LS20677.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20677 ;
+        adm:logEntry        bda:LGBCB5E50A95739F07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20679  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod skad yig rmang gzhi bslab deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   243 .
+    
+    bdr:W8LS20677  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20679 ;
+        :numberOfVolumes    1 .
+}

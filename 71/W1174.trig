@@ -1,0 +1,131 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1174 {
+    bda:I1791  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1791 ;
+        adm:logEntry        bda:LGDA8C8F3434F6DE9C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1792  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1792 ;
+        adm:logEntry        bda:LG401682959E31C126 , bda:LGAA699AA2C7A6890B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1793  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1793 ;
+        adm:logEntry        bda:LG3779B45671E2CB8E , bda:LG502DD224E6046FE8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1794  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1794 ;
+        adm:logEntry        bda:LGC1E46B03BDFA2C24 , bda:LGDCD230EC67A0CD33 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3779B45671E2CB8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-10-16T10:05:34.309Z"^^xsd:dateTime ;
+        adm:logMessage      "changed volume no."@en .
+    
+    bda:LG401682959E31C126
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems - changes page numbering"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG502DD224E6046FE8
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems - changes page numbering"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGAA699AA2C7A6890B
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-10-16T10:05:26.491Z"^^xsd:dateTime ;
+        adm:logMessage      "changed volume no."@en .
+    
+    bda:LGC1E46B03BDFA2C24
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems - changes page numbering"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGDA8C8F3434F6DE9C
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-06-19"^^xsd:date ;
+        adm:logMessage      "No problems - changes page numbering"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGDCD230EC67A0CD33
+        a                   adm:UpdateData ;
+        adm:logDate         "2006-10-16T10:05:43.099Z"^^xsd:dateTime ;
+        adm:logMessage      "changed volume no."@en .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1174  a            adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1174 ;
+        adm:facetIndex      20 ;
+        adm:gitPath         "71/W1174.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1174 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1791  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   806 .
+    
+    bdr:I1792  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   818 .
+    
+    bdr:I1793  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   918 .
+    
+    bdr:I1794  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   962 .
+    
+    bdr:W1174  a            :ImageInstance ;
+        :inCollection       bdr:PR01DOR5 , bdr:PR01JW33478 , bdr:PRHD01 ;
+        :instanceHasVolume  bdr:I1791 , bdr:I1792 , bdr:I1793 , bdr:I1794 ;
+        :numberOfVolumes    4 .
+}

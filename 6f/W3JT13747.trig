@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13747 {
+    bda:I3JT13755  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3JT13755 ;
+        adm:logEntry        bda:LG68B26F1B715E93E0 , bda:LGIMA9DBD17D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG68B26F1B715E93E0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-14T16:02:13.248Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGEE080D55A6FB7084
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-14T16:02:13.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIMA9DBD17D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-27T04:35:24.711Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3JT13747  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13747 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "6f/W3JT13747.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3JT13747 ;
+        adm:logEntry        bda:LGEE080D55A6FB7084 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3JT13755  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rdo rje gcod pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   152 .
+    
+    bdr:W3JT13747  a        :ImageInstance ;
+        :inCollection       bdr:PR1VIENNA00 ;
+        :instanceHasVolume  bdr:I3JT13755 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+}

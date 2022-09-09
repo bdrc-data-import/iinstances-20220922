@@ -1,0 +1,115 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS67728 {
+    bda:I8LS67731  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67731 ;
+        adm:logEntry        bda:LGF2E5B32A8DB7C985 , bda:LGIM835AB3DE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67732  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67732 ;
+        adm:logEntry        bda:LG355B5D3BB1E20029 , bda:LGIM51CDD798 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67733  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67733 ;
+        adm:logEntry        bda:LG531FC179DBBA72BD , bda:LGIM9849AF0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG355B5D3BB1E20029
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T10:32:31.753Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG40358AD77280899F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-21T10:32:31.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG531FC179DBBA72BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T10:32:31.82Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF2E5B32A8DB7C985
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-21T10:32:31.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM51CDD798  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-14T21:32:18.6Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM835AB3DE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-14T21:32:18.405Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM9849AF0B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-01-14T21:32:18.784Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS67728  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS67728 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "31/W8LS67728.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS67728 ;
+        adm:logEntry        bda:LG40358AD77280899F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67731  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tshul khrims lhun 'grub kyi brtsams chos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   150 .
+    
+    bdr:I8LS67732  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of tshul khrims lhun 'grub kyi brtsams chos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   158 .
+    
+    bdr:I8LS67733  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of tshul khrims lhun 'grub kyi brtsams chos/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   262 .
+    
+    bdr:IDF80A12671C67E743
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147760247" .
+    
+    bdr:W8LS67728  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF80A12671C67E743 ;
+        :instanceHasVolume  bdr:I8LS67731 , bdr:I8LS67732 , bdr:I8LS67733 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3PD986 {
+    bda:I4PD209  a          adm:AdminData ;
+        adm:adminAbout      bdr:I4PD209 ;
+        adm:logEntry        bda:LG0DBB208ECB66674F , bda:LGD7CE45F5A1542FAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0DBB208ECB66674F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-10-22T16:05:01.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG57B1324579AB3612
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-10-22T15:56:54.577Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBB23E44A1987FC53
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-10-22T16:05:02.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD7CE45F5A1542FAE
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-03T23:14:56.493Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3PD986  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3PD986 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cf/W3PD986.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3PD986 ;
+        adm:logEntry        bda:LG57B1324579AB3612 , bda:LGBB23E44A1987FC53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD209  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang snying 'grel pa phyogs bcu'i mun sel/(mdo mang mkhan legs bshad kyi phyag dpe/ mchan can/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   484 .
+    
+    bdr:W3PD986  a          :ImageInstance ;
+        :inCollection       bdr:PR1CTC15 ;
+        :instanceHasVolume  bdr:I4PD209 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

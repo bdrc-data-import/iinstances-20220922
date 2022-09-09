@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7845 {
+    bda:I3CN7847  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7847 ;
+        adm:logEntry        bda:LG205AF4F05BC9CE41 , bda:LGEFCC1BA9A590B27C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7848  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7848 ;
+        adm:logEntry        bda:LG385817E6224420B4 , bda:LG832D24F12A0FD727 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN7849  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7849 ;
+        adm:logEntry        bda:LG8D696C6343773CF0 , bda:LGE833F0218758BD3A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG205AF4F05BC9CE41
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T15:53:59.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG385817E6224420B4
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:36.34Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6E79C48BE66D1B6A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T15:53:59.918Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG832D24F12A0FD727
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T15:53:59.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8D696C6343773CF0
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:37.055Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE833F0218758BD3A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T15:53:59.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEFCC1BA9A590B27C
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-26T20:57:35.656Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN7845  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN7845 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "9a/W3CN7845.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7845 ;
+        adm:logEntry        bda:LG6E79C48BE66D1B6A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7847  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bla med rdo rje theg pa'i lam gyi sngon 'gro thar ba dang thams cad mkhyen pa'i lam gyi sgron me/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   426 .
+    
+    bdr:I3CN7848  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of bla med rdo rje theg pa'i lam gyi sngon 'gro thar ba dang thams cad mkhyen pa'i lam gyi sgron me/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   438 .
+    
+    bdr:I3CN7849  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of bla med rdo rje theg pa'i lam gyi sngon 'gro thar ba dang thams cad mkhyen pa'i lam gyi sgron me/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   506 .
+    
+    bdr:W3CN7845  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN7847 , bdr:I3CN7848 , bdr:I3CN7849 ;
+        :numberOfVolumes    3 .
+}

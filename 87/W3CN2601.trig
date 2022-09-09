@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2601 {
+    bda:I3CN2603  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2603 ;
+        adm:logEntry        bda:LG3BA8A3EF5810B17D , bda:LGA54107691BCCEF47 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3BA8A3EF5810B17D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-10T11:20:24.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5C3E9D3E7788343F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-10T11:20:24.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA54107691BCCEF47
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-10T02:09:09.106Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN2601  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2601 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "87/W3CN2601.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2601 ;
+        adm:logEntry        bda:LG5C3E9D3E7788343F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2603  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of sdom gsum rab dbye'i 'grel chen/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   427 .
+    
+    bdr:W3CN2601  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2603 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13624 {
+    bda:I3JT13631  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3JT13631 ;
+        adm:logEntry        bda:LG9157B1D9389BE0A3 , bda:LGIM7D46D900 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3F0A50F55EDC93CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-19T16:38:09.286Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG9157B1D9389BE0A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-19T16:38:09.253Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM7D46D900  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-09T23:53:32.714Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3JT13624  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13624 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "97/W3JT13624.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3JT13624 ;
+        adm:logEntry        bda:LG3F0A50F55EDC93CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3JT13631  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zur mang drung pa rin po che'i sku phreng rim byon dang sku phreng gsum gyi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   12 .
+    
+    bdr:W3JT13624  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3JT13631 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
+}

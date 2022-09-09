@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN25897 {
+    bda:I3CN25918  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN25918 ;
+        adm:logEntry        bda:LG9F9C163CF8BCED47 , bda:LGIM5B684DEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG710E3BF276BB37E0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-02T12:21:43.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9F9C163CF8BCED47
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-03-02T12:21:43.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM5B684DEF  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:25:19.109Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN25897  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN25897 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ec/W3CN25897.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN25897 ;
+        adm:logEntry        bda:LG710E3BF276BB37E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN25918  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of brda sprod rig pa'i dka' gnad gsal bkrol rig 'phrul lde mig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   796 .
+    
+    bdr:W3CN25897  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN25918 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

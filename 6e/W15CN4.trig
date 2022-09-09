@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W15CN4 {
+    bda:I15CN6  a           adm:AdminData ;
+        adm:adminAbout      bdr:I15CN6 ;
+        adm:logEntry        bda:LG28BEEA883666D541 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG28BEEA883666D541
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-22T10:34:29.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W15CN4  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W15CN4 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "6e/W15CN4.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W15CN4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I15CN6  a           :ImageGroup ;
+        :biblioNote         "Volume 1 of testing 005 install of new Windows laptop"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W15CN4  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I15CN6 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: ignore - testing - 005"@en .
+}

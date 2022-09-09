@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG17056 {
+    bda:I1KG80335  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80335 ;
+        adm:logEntry        bda:LGADF39B6BA840349F , bda:LGIM7286C0ED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGADF39B6BA840349F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T13:54:04.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB95D7BD4A4EBB4A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-04-16T15:59:45.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBC243739CAD15BE6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T13:54:04.9Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM7286C0ED  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-16T22:34:23.662Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG17056  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG17056 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "93/W1KG17056.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG17056 ;
+        adm:logEntry        bda:LGB95D7BD4A4EBB4A6 , bda:LGBC243739CAD15BE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80335  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bal bo'i lug rdzong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   454 .
+    
+    bdr:ID0D62422E1555C7DF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147739725" .
+    
+    bdr:W1KG17056  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0D62422E1555C7DF ;
+        :instanceHasVolume  bdr:I1KG80335 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "9/2017"@en .
+}

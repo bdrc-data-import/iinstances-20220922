@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76389 {
+    bda:I8LS76391  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76391 ;
+        adm:logEntry        bda:LGBD8D6B4D143CE0DE , bda:LGIM4E7D9677 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBD8D6B4D143CE0DE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-27T10:09:59.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC4CF47AF134AB74C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-27T10:09:59.299Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM4E7D9677  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-01T21:05:42.106Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS76389  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76389 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "38/W8LS76389.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76389 ;
+        adm:logEntry        bda:LGC4CF47AF134AB74C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76391  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of grub mtha' bzhi'i lugs kyi kun rdzob dang don dam pa'i don rnam par bshad pa legs bshad dpyid kyi dpal mo'i glu dbyangs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:W8LS76389  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76391 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3407 {
+    bda:I3CN4388  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4388 ;
+        adm:logEntry        bda:LG7AF6B50A8CF70F87 , bda:LGFAD67961BC400C9D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0845C984453554AC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T14:54:00.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7AF6B50A8CF70F87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-28T14:54:00.562Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFAD67961BC400C9D
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-04T22:40:31.547Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN3407  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN3407 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f8/W3CN3407.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3407 ;
+        adm:logEntry        bda:LG0845C984453554AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4388  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of legs bshad nyi ma'i snying po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   420 .
+    
+    bdr:ID7B7BEF2F5C189B79
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737686" .
+    
+    bdr:W3CN3407  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7B7BEF2F5C189B79 ;
+        :instanceHasVolume  bdr:I3CN4388 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

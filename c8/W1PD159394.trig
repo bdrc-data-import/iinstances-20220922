@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159394 {
+    bda:I2PD18934  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18934 ;
+        adm:logEntry        bda:LG54E3858C2FB251DC , bda:LG9FC3FAAE3C952860 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG54E3858C2FB251DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-24T03:13:44.637Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6FB8CF159B7D8DC3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-24T03:13:45.421Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9FC3FAAE3C952860
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:03:16.958Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1PD159394  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159394 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "c8/W1PD159394.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159394 ;
+        adm:logEntry        bda:LG6FB8CF159B7D8DC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18934  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nang bstan dpal 'byor rig pa/ (stod cha/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   272 .
+    
+    bdr:IDBF87E0AD03429C1B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725559" .
+    
+    bdr:W1PD159394  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBF87E0AD03429C1B ;
+        :instanceHasVolume  bdr:I2PD18934 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

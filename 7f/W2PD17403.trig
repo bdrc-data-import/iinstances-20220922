@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2PD17403 {
+    bda:I4PD2997  a         adm:AdminData ;
+        adm:adminAbout      bdr:I4PD2997 ;
+        adm:logEntry        bda:LGA29660538119C1A5 , bda:LGB399B48C6E617546 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG22609E4D6B2A4CF7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-09-14T15:09:15.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA29660538119C1A5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-14T15:09:14.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB399B48C6E617546
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:59.529Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2PD17403  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2PD17403 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7f/W2PD17403.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2PD17403 ;
+        adm:logEntry        bda:LG22609E4D6B2A4CF7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4PD2997  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 中国藏学研究中心20年学术演讲录"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   202 .
+    
+    bdr:W2PD17403  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4PD2997 ;
+        :numberOfVolumes    1 .
+}

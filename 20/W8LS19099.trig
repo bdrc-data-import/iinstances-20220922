@@ -1,0 +1,72 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19099 {
+    bda:I8LS19101  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19101 ;
+        adm:logEntry        bda:LG586CBEC092E876A8 , bda:LGD3070C090AF1CC6C , bda:LGIM553F67A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG028E4554B5007ECD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T14:59:25.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG586CBEC092E876A8
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:54.74Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD3070C090AF1CC6C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:59:24.959Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM553F67A3  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-18T00:00:29.893Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19099  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19099 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "20/W8LS19099.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19099 ;
+        adm:logEntry        bda:LG028E4554B5007ECD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19101  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bde 'jags do dam chad gcod bca' khrims bslab deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   220 .
+    
+    bdr:ID1AA11D537A555B9D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728800" .
+    
+    bdr:W8LS19099  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1AA11D537A555B9D ;
+        :instanceHasVolume  bdr:I8LS19101 ;
+        :numberOfVolumes    1 .
+}

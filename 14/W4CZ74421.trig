@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74421 {
+    bda:I4CZ74423  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74423 ;
+        adm:logEntry        bda:LG532F1A7F1513C3A9 , bda:LGAAB2E4DE911F7960 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ74424  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74424 ;
+        adm:logEntry        bda:LGA33C58411ED3545D , bda:LGE6C030D57377DF2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ74425  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74425 ;
+        adm:logEntry        bda:LG31BA42FA27837495 , bda:LG363E6F0A41BA14E5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG31BA42FA27837495
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:29:26.429Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG363E6F0A41BA14E5
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:45.304Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG532F1A7F1513C3A9
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:43.39Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA33C58411ED3545D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:29:26.328Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAAB2E4DE911F7960
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:29:26.211Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDD7262BD64CF69A0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:29:26.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE6C030D57377DF2E
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:44.261Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ74421  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74421 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "14/W4CZ74421.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74421 ;
+        adm:logEntry        bda:LGDD7262BD64CF69A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74423  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bsangs yig gi skor phyogs bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   64 .
+    
+    bdr:I4CZ74424  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bsangs yig gi skor phyogs bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   222 .
+    
+    bdr:I4CZ74425  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bsangs yig gi skor phyogs bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   277 .
+    
+    bdr:W4CZ74421  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74423 , bdr:I4CZ74424 , bdr:I4CZ74425 ;
+        :numberOfVolumes    3 .
+}

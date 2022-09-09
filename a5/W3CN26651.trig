@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26651 {
+    bda:I3CN26667  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26667 ;
+        adm:logEntry        bda:LG16CB7C36BEF3583F , bda:LGIMD19E6DE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG16CB7C36BEF3583F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-31T20:41:53.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8854551D87878D44
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-31T20:41:53.511Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMD19E6DE8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-14T05:38:30.575Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN26651  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26651 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a5/W3CN26651.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26651 ;
+        adm:logEntry        bda:LG8854551D87878D44 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26667  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of zhal 'don nyer mkho phyogs bsgrigs bskal bzang yid bzhin re skong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   344 .
+    
+    bdr:W3CN26651  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26667 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

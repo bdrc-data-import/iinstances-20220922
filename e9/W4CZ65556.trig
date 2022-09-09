@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ65556 {
+    bda:I4CZ65589  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65589 ;
+        adm:logEntry        bda:LG459726115BCF7216 , bda:LGAE42333AF81F485A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1DF367FDB21DE122
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-05-26T15:17:15.861Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG459726115BCF7216
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T21:48:12.735Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAE42333AF81F485A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-05-26T15:17:15.745Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ65556  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ65556 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e9/W4CZ65556.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ65556 ;
+        adm:logEntry        bda:LG1DF367FDB21DE122 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ65589  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/_chos dbyings stobs ldan rdo rje/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   116 .
+    
+    bdr:W4CZ65556  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ65589 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

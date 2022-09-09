@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN2373 {
+    bda:I3CN2375  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN2375 ;
+        adm:logEntry        bda:LG830F4F0D62AE155A , bda:LGFEDDD9FFD9639251 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09C28712D164B17E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-17T15:03:37.059Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG830F4F0D62AE155A
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-24T23:53:26.68Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFEDDD9FFD9639251
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-17T15:03:37.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN2373  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN2373 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c3/W3CN2373.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN2373 ;
+        adm:logEntry        bda:LG09C28712D164B17E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN2375  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of kha mchu nag po zhi bar byed pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   13 .
+    
+    bdr:W3CN2373  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN2375 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

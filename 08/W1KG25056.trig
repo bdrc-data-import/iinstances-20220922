@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25056 {
+    bda:I1KG25058  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25058 ;
+        adm:logEntry        bda:LG6185977FDB2CF5DB , bda:LGA6842A7F53DD449E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6185977FDB2CF5DB
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:53:58.261Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG995D6CCD0F17B73E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:10:05.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA6842A7F53DD449E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-30T16:10:05.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25056  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25056 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/W1KG25056.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25056 ;
+        adm:logEntry        bda:LG995D6CCD0F17B73E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25058  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yongs 'dzin ye shes rgyal mtshan gyi rnam thar thub bstan pad+mo rgyas pa'i nyin byed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   394 .
+    
+    bdr:W1KG25056  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I1KG25058 ;
+        :numberOfVolumes    1 .
+}

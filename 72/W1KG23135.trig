@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23135 {
+    bda:I1KG23260  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23260 ;
+        adm:logEntry        bda:LG775EA1C22BAE5812 , bda:LGEE6753B91F98A4C2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG775EA1C22BAE5812
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-02T20:22:57.211Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE4E0DDD2F81D4941
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-06T14:17:15.382Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGEE6753B91F98A4C2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-06T14:17:15.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG23135  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG23135 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "72/W1KG23135.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23135 ;
+        adm:logEntry        bda:LGE4E0DDD2F81D4941 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23260  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of so sor thar pa'i mdo dang 'dul ba'i gleng gzhi bcas/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   370 .
+    
+    bdr:W1KG23135  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23260 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

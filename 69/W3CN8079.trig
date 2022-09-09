@@ -1,0 +1,80 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8079 {
+    bda:I3CN8081  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8081 ;
+        adm:logEntry        bda:LG164ABC4EC6F320A3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN8082  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8082 ;
+        adm:logEntry        bda:LG534E16D9E42CB1D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN8083  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8083 ;
+        adm:logEntry        bda:LG82E20E36D5B1BAFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG164ABC4EC6F320A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:43:55.307Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG534E16D9E42CB1D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:43:55.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG82E20E36D5B1BAFE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:43:55.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN8079  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN8079 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "69/W3CN8079.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8079 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:I3CN8081  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of RFP 2017 1RFP FY2016 2016 Processing Status RFP FY2015 2015 Processing Status WorksList Explore kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN8082  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of RFP 2017 1RFP FY2016 2016 Processing Status RFP FY2015 2015 Processing Status WorksList Explore kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN8083  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of RFP 2017 1RFP FY2016 2016 Processing Status RFP FY2015 2015 Processing Status WorksList Explore kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN8079  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8081 , bdr:I3CN8082 , bdr:I3CN8083 ;
+        :numberOfVolumes    3 .
+}

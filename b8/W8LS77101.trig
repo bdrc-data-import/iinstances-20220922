@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS77101 {
+    bda:I8LS77103  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS77103 ;
+        adm:logEntry        bda:LGA52375C9B614B3AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG9AA632E0B7873C2E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T07:57:20.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA52375C9B614B3AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-27T07:57:20.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS77101  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS77101 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b8/W8LS77101.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS77101 ;
+        adm:logEntry        bda:LG9AA632E0B7873C2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS77103  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dbus mtha' rnam 'byed dang chos dang chos nyid rnam 'byed rtsa 'grel/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS77101  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS77103 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73616 {
+    bda:I8LS73618  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73618 ;
+        adm:logEntry        bda:LG008456FE8DF7471C , bda:LGIM73E28E24 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG008456FE8DF7471C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-24T09:50:53.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG298D18E4DE2234AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-24T09:50:53.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM73E28E24  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-08T23:22:27.297Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS73616  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73616 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ac/W8LS73616.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73616 ;
+        adm:logEntry        bda:LG298D18E4DE2234AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73618  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of thugs chen bcu gcig zhal gyi smyung gnas cho ga"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   50 .
+    
+    bdr:W8LS73616  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73618 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
+}

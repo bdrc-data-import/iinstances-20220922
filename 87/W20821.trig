@@ -1,0 +1,943 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W20821 {
+    bda:I1KG14805  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14805 ;
+        adm:logEntry        bda:LG2CBBD2ABEC232240 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14806  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14806 ;
+        adm:logEntry        bda:LGCE9E06B41C57FD72 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14807  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14807 ;
+        adm:logEntry        bda:LG247842766824C613 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14808  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14808 ;
+        adm:logEntry        bda:LG3ED316CB8E6E2416 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14809  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14809 ;
+        adm:logEntry        bda:LG9AA9A91F58FD5EB3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14810  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14810 ;
+        adm:logEntry        bda:LGBFB707F17B170688 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14811  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14811 ;
+        adm:logEntry        bda:LG9816A5D48C45BE20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14812  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14812 ;
+        adm:logEntry        bda:LGCA5AADA671FF3358 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14813  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14813 ;
+        adm:logEntry        bda:LG17F441D42332FF0C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG14814  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG14814 ;
+        adm:logEntry        bda:LG2560B07DA1D5B745 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35620  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35620 ;
+        adm:logEntry        bda:LG7CD5993D08A3E76B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35621  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35621 ;
+        adm:logEntry        bda:LG149387EDB3D9103E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35622  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35622 ;
+        adm:logEntry        bda:LGC93019A56C59C421 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35623  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35623 ;
+        adm:logEntry        bda:LG278E986183334944 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35624  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35624 ;
+        adm:logEntry        bda:LG4C4AF19FA1DB4BAE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35625  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35625 ;
+        adm:logEntry        bda:LG73D3A4767BA23C50 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35626  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35626 ;
+        adm:logEntry        bda:LG9ED8783602F0279E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35627  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35627 ;
+        adm:logEntry        bda:LG9932A27682000769 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35628  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35628 ;
+        adm:logEntry        bda:LG2C8C2672C4C223FF , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35629  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35629 ;
+        adm:logEntry        bda:LGB1585D7BBFFA5F36 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35630  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35630 ;
+        adm:logEntry        bda:LGB5D26DB4D6300AE1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35631  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35631 ;
+        adm:logEntry        bda:LGAF6F5079051E8F65 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35632  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35632 ;
+        adm:logEntry        bda:LG43179C7721C2CBD8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35633  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35633 ;
+        adm:logEntry        bda:LGAF288152F0D5A5FE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35634  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35634 ;
+        adm:logEntry        bda:LG623A3A1C5FD188F6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35635  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35635 ;
+        adm:logEntry        bda:LGA4A41495A500AB44 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35636  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35636 ;
+        adm:logEntry        bda:LG4AAF52ABF930E2A4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35637  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35637 ;
+        adm:logEntry        bda:LG32DAC40DD55EB2C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35638  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35638 ;
+        adm:logEntry        bda:LG8E632F8B9BFD667D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35639  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35639 ;
+        adm:logEntry        bda:LG697E3DB72B7F1238 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35640  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35640 ;
+        adm:logEntry        bda:LG268465ECE7D67ED0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35641  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35641 ;
+        adm:logEntry        bda:LGED694E7C0AB92C0C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35642  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35642 ;
+        adm:logEntry        bda:LG93419F6D22B732E2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35643  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35643 ;
+        adm:logEntry        bda:LG3E2F0330B0885F46 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35644  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35644 ;
+        adm:logEntry        bda:LGC7063E9E00DC3BB2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35645  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35645 ;
+        adm:logEntry        bda:LGDE6BBF37949BD066 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35646  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35646 ;
+        adm:logEntry        bda:LG66969942045FABA4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35647  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35647 ;
+        adm:logEntry        bda:LG785F15CCCA46062B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35648  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35648 ;
+        adm:logEntry        bda:LGE762300B07343901 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35649  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35649 ;
+        adm:logEntry        bda:LG58465EFE442D7B09 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35650  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35650 ;
+        adm:logEntry        bda:LG80BF86B52D80A054 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35651  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35651 ;
+        adm:logEntry        bda:LGE4711A0D48192E09 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1PD35652  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35652 ;
+        adm:logEntry        bda:LG09C8744427CFFAD4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35653  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35653 ;
+        adm:logEntry        bda:LGCFB6A8DCFA9154B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35654  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35654 ;
+        adm:logEntry        bda:LGC7A5AF620551A0CF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35655  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35655 ;
+        adm:logEntry        bda:LGB1C14FC3EC305AA5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35656  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35656 ;
+        adm:logEntry        bda:LG7DE2EFFDA14C07EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35657  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35657 ;
+        adm:logEntry        bda:LGCFBCA502DCAF7944 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35658  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35658 ;
+        adm:logEntry        bda:LG8708F9D057E7BDE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35659  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35659 ;
+        adm:logEntry        bda:LG01A513591912FB26 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD35660  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD35660 ;
+        adm:logEntry        bda:LGA2DC711CF8FE4E29 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG01A513591912FB26
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG09C8744427CFFAD4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:33.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG149387EDB3D9103E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:26.423Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG17F441D42332FF0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:55.975Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG182361A2B9DEC5CD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-04-18T13:08:36.949Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG247842766824C613
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:36.335Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2560B07DA1D5B745
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:59.583Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG268465ECE7D67ED0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG278E986183334944
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:26.783Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG2C8C2672C4C223FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.598Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG2CBBD2ABEC232240
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:25.559Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG32DAC40DD55EB2C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:30.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3E2F0330B0885F46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.968Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3ED316CB8E6E2416
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:40.042Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG43179C7721C2CBD8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:28.381Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG4AAF52ABF930E2A4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:30.668Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG4C4AF19FA1DB4BAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:26.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG58465EFE442D7B09
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:33.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG623A3A1C5FD188F6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:28.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG66969942045FABA4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:32.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG697E3DB72B7F1238
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG73D3A4767BA23C50
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG785F15CCCA46062B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:32.939Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7CD5993D08A3E76B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:26.204Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG7DE2EFFDA14C07EC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG80BF86B52D80A054
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:33.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8708F9D057E7BDE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG8E632F8B9BFD667D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG93419F6D22B732E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9816A5D48C45BE20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:49.119Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9932A27682000769
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.425Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9AA9A91F58FD5EB3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:43.004Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9ED8783602F0279E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.253Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA2DC711CF8FE4E29
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.808Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA4A41495A500AB44
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:29.133Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAF288152F0D5A5FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:28.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAF6F5079051E8F65
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:28.177Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB1585D7BBFFA5F36
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB1C14FC3EC305AA5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.135Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGB5D26DB4D6300AE1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:27.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBFB707F17B170688
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:46.033Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC7063E9E00DC3BB2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:32.172Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC7A5AF620551A0CF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:34.145Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC93019A56C59C421
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:26.658Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCA5AADA671FF3358
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:53.098Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCE9E06B41C57FD72
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-07-09T16:43:31.619Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group for W20821"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCFB6A8DCFA9154B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:34.02Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCFBCA502DCAF7944
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:36.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDE6BBF37949BD066
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:32.689Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE4711A0D48192E09
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:33.472Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE762300B07343901
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:33.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGED694E7C0AB92C0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-18T13:08:31.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W20821  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W20821 ;
+        adm:facetIndex      152 ;
+        adm:gitPath         "87/W20821.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W20821 ;
+        adm:logEntry        bda:LG182361A2B9DEC5CD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG14805  a        :ImageGroup ;
+        :volumeNumber       42 .
+    
+    bdr:I1KG14806  a        :ImageGroup ;
+        :volumeNumber       43 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   126 .
+    
+    bdr:I1KG14807  a        :ImageGroup ;
+        :volumeNumber       44 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   126 .
+    
+    bdr:I1KG14808  a        :ImageGroup ;
+        :volumeNumber       45 .
+    
+    bdr:I1KG14809  a        :ImageGroup ;
+        :volumeNumber       46 .
+    
+    bdr:I1KG14810  a        :ImageGroup ;
+        :volumeNumber       47 .
+    
+    bdr:I1KG14811  a        :ImageGroup ;
+        :volumeNumber       48 .
+    
+    bdr:I1KG14812  a        :ImageGroup ;
+        :volumeNumber       49 .
+    
+    bdr:I1KG14813  a        :ImageGroup ;
+        :volumeNumber       50 .
+    
+    bdr:I1KG14814  a        :ImageGroup ;
+        :volumeNumber       51 .
+    
+    bdr:I1PD35620  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:I1PD35621  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   96 .
+    
+    bdr:I1PD35622  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   122 .
+    
+    bdr:I1PD35623  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   138 .
+    
+    bdr:I1PD35624  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   156 .
+    
+    bdr:I1PD35625  a        :ImageGroup ;
+        :biblioNote         "Volume 6 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   194 .
+    
+    bdr:I1PD35626  a        :ImageGroup ;
+        :biblioNote         "Volume 7 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       7 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   130 .
+    
+    bdr:I1PD35627  a        :ImageGroup ;
+        :biblioNote         "Volume 8 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       8 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:I1PD35628  a        :ImageGroup ;
+        :biblioNote         "Volume 9 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       9 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   110 .
+    
+    bdr:I1PD35629  a        :ImageGroup ;
+        :biblioNote         "Volume 10 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       10 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   110 .
+    
+    bdr:I1PD35630  a        :ImageGroup ;
+        :biblioNote         "Volume 11 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       11 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   150 .
+    
+    bdr:I1PD35631  a        :ImageGroup ;
+        :biblioNote         "Volume 12 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       12 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   118 .
+    
+    bdr:I1PD35632  a        :ImageGroup ;
+        :biblioNote         "Volume 13 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       13 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:I1PD35633  a        :ImageGroup ;
+        :biblioNote         "Volume 14 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       14 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:I1PD35634  a        :ImageGroup ;
+        :biblioNote         "Volume 15 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       15 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   126 .
+    
+    bdr:I1PD35635  a        :ImageGroup ;
+        :biblioNote         "Volume 16 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       16 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   142 .
+    
+    bdr:I1PD35636  a        :ImageGroup ;
+        :biblioNote         "Volume 17 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       17 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:I1PD35637  a        :ImageGroup ;
+        :biblioNote         "Volume 18 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       18 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35638  a        :ImageGroup ;
+        :biblioNote         "Volume 19 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       19 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:I1PD35639  a        :ImageGroup ;
+        :biblioNote         "Volume 20 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       20 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   150 .
+    
+    bdr:I1PD35640  a        :ImageGroup ;
+        :biblioNote         "Volume 21 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       21 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   130 .
+    
+    bdr:I1PD35641  a        :ImageGroup ;
+        :biblioNote         "Volume 22 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       22 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   146 .
+    
+    bdr:I1PD35642  a        :ImageGroup ;
+        :biblioNote         "Volume 23 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       23 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   136 .
+    
+    bdr:I1PD35643  a        :ImageGroup ;
+        :biblioNote         "Volume 24 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       24 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:I1PD35644  a        :ImageGroup ;
+        :biblioNote         "Volume 25 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       25 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   142 .
+    
+    bdr:I1PD35645  a        :ImageGroup ;
+        :biblioNote         "Volume 26 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       26 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   118 .
+    
+    bdr:I1PD35646  a        :ImageGroup ;
+        :biblioNote         "Volume 27 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       27 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   114 .
+    
+    bdr:I1PD35647  a        :ImageGroup ;
+        :biblioNote         "Volume 28 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       28 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   140 .
+    
+    bdr:I1PD35648  a        :ImageGroup ;
+        :biblioNote         "Volume 29 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       29 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
+    
+    bdr:I1PD35649  a        :ImageGroup ;
+        :biblioNote         "Volume 30 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       30 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   126 .
+    
+    bdr:I1PD35650  a        :ImageGroup ;
+        :biblioNote         "Volume 31 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       31 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   148 .
+    
+    bdr:I1PD35651  a        :ImageGroup ;
+        :biblioNote         "Volume 32 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       32 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   150 .
+    
+    bdr:I1PD35652  a        :ImageGroup ;
+        :biblioNote         "Volume 33 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       33 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35653  a        :ImageGroup ;
+        :biblioNote         "Volume 34 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       34 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35654  a        :ImageGroup ;
+        :biblioNote         "Volume 35 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       35 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35655  a        :ImageGroup ;
+        :biblioNote         "Volume 36 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       36 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35656  a        :ImageGroup ;
+        :biblioNote         "Volume 37 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       37 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35657  a        :ImageGroup ;
+        :biblioNote         "Volume 38 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       38 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35658  a        :ImageGroup ;
+        :biblioNote         "Volume 39 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       39 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35659  a        :ImageGroup ;
+        :biblioNote         "Volume 40 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       40 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD35660  a        :ImageGroup ;
+        :biblioNote         "Volume 41 of bod ljongs sgyu rtsal zhib 'jug"@en ;
+        :volumeNumber       41 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:IDBD38672228402294
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726406" .
+    
+    bdr:W20821  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBD38672228402294 ;
+        :instanceHasVolume  bdr:I1KG14805 , bdr:I1KG14806 , bdr:I1KG14807 , bdr:I1KG14808 , bdr:I1KG14809 , bdr:I1KG14810 , bdr:I1KG14811 , bdr:I1KG14812 , bdr:I1KG14813 , bdr:I1KG14814 , bdr:I1PD35620 , bdr:I1PD35621 , bdr:I1PD35622 , bdr:I1PD35623 , bdr:I1PD35624 , bdr:I1PD35625 , bdr:I1PD35626 , bdr:I1PD35627 , bdr:I1PD35628 , bdr:I1PD35629 , bdr:I1PD35630 , bdr:I1PD35631 , bdr:I1PD35632 , bdr:I1PD35633 , bdr:I1PD35634 , bdr:I1PD35635 , bdr:I1PD35636 , bdr:I1PD35637 , bdr:I1PD35638 , bdr:I1PD35639 , bdr:I1PD35640 , bdr:I1PD35641 , bdr:I1PD35642 , bdr:I1PD35643 , bdr:I1PD35644 , bdr:I1PD35645 , bdr:I1PD35646 , bdr:I1PD35647 , bdr:I1PD35648 , bdr:I1PD35649 , bdr:I1PD35650 , bdr:I1PD35651 , bdr:I1PD35652 , bdr:I1PD35653 , bdr:I1PD35654 , bdr:I1PD35655 , bdr:I1PD35656 , bdr:I1PD35657 , bdr:I1PD35658 , bdr:I1PD35659 , bdr:I1PD35660 ;
+        :numberOfVolumes    51 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2008"@en .
+}

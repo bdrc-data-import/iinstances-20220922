@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4040 {
+    bda:I3CN4202  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4202 ;
+        adm:logEntry        bda:LG04A5682AC51D016E , bda:LG7568FFFFF8E8F774 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG04A5682AC51D016E
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:09:18.66Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7568FFFFF8E8F774
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-21T15:34:53.72Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGDCE5E6643AA6C1A6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-21T15:34:53.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4040  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4040 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ce/W3CN4040.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4040 ;
+        adm:logEntry        bda:LGDCE5E6643AA6C1A6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4202  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of snga 'gyur rnying ma'i glegs bam rin po che/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   704 .
+    
+    bdr:W3CN4040  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC16 ;
+        :instanceHasVolume  bdr:I3CN4202 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

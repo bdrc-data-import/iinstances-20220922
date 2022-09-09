@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26294 {
+    bda:I3CN26296  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26296 ;
+        adm:logEntry        bda:LGBAA5FDD58FDD2C38 , bda:LGIM9BCF0BAD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBAA5FDD58FDD2C38
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-26T22:12:05.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1560F8DDFF517BB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-26T22:12:05.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM9BCF0BAD  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-29T00:43:30.768Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN26294  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26294 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d3/W3CN26294.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26294 ;
+        adm:logEntry        bda:LGF1560F8DDFF517BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26296  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ dge 'dun chos skyong /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   634 .
+    
+    bdr:W3CN26294  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26296 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

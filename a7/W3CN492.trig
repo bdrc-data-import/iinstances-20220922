@@ -1,0 +1,128 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN492 {
+    bda:I3CN21174  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21174 ;
+        adm:logEntry        bda:LG8C6613FD4237783A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21175  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21175 ;
+        adm:logEntry        bda:LGCF93A820CAD4C80E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21176  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21176 ;
+        adm:logEntry        bda:LGD23E3596F113971A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21177  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21177 ;
+        adm:logEntry        bda:LGAAB97604B28C4CC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN21178  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN21178 ;
+        adm:logEntry        bda:LGF676FF0BE40DB4D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG1F01E8C303B62BDA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-06-06T13:35:44.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2C8142D34D00178D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T15:54:41.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8C6613FD4237783A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-06T13:35:43.899Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAAB97604B28C4CC4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-06T13:35:44.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCF93A820CAD4C80E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-06T13:35:44.016Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD23E3596F113971A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-06T13:35:44.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF676FF0BE40DB4D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-06T13:35:44.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN492  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN492 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "a7/W3CN492.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN492 ;
+        adm:logEntry        bda:LG1F01E8C303B62BDA , bda:LG2C8142D34D00178D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN21174  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ tshar chen blo gsal rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21175  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ tshar chen blo gsal rgya mtsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21176  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ tshar chen blo gsal rgya mtsho/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21177  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/ tshar chen blo gsal rgya mtsho/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN21178  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of gsung 'bum/ tshar chen blo gsal rgya mtsho/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN492  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN21174 , bdr:I3CN21175 , bdr:I3CN21176 , bdr:I3CN21177 , bdr:I3CN21178 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "2019"@en .
+}

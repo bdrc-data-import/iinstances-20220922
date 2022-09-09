@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ58846 {
+    bda:I4CZ65023  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ65023 ;
+        adm:logEntry        bda:LG22A7FD5A325104CD , bda:LG2D6169E67D845AF2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1A8453FC69CD6A53
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-13T10:28:33.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG22A7FD5A325104CD
+        a                   adm:Synced ;
+        adm:logDate         "2017-03-24T07:08:42.563Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG2D6169E67D845AF2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-13T10:28:33.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ58846  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ58846 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "96/W4CZ58846.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ58846 ;
+        adm:logEntry        bda:LG1A8453FC69CD6A53 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ65023  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'ba' rom don brgyud shor phu pa'i chos spyod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   541 .
+    
+    bdr:W4CZ58846  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ65023 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

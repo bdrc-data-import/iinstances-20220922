@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W25197 {
+    bda:I1KG23068  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23068 ;
+        adm:logEntry        bda:LG28E3932451131EF0 , bda:LG88DF0685827DC37A , bda:LGC9A57E6B9536A103 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG28E3932451131EF0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-08T15:39:25.619Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG88DF0685827DC37A
+        a                   adm:Synced ;
+        adm:logDate         "2016-05-23T15:38:53.702Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8A486B2C592FDA89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-08T15:39:25.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC9A57E6B9536A103
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-05-23T20:47:17.92Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W25197  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W25197 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1a/W25197.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W25197 ;
+        adm:logEntry        bda:LG8A486B2C592FDA89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23068  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtsom rig la 'jug pa'i sgo tshig sbyor bang mdzod"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   320 .
+    
+    bdr:W25197  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23068 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 3/2016"@en .
+}

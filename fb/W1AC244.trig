@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC244 {
+    bda:I2PD18140  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18140 ;
+        adm:logEntry        bda:LG748AE786BCB088A7 , bda:LGD5867F51F5C66044 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG748AE786BCB088A7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T22:33:02.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG989DA7B5B5016FFD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-14T22:33:03.643Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD5867F51F5C66044
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-08T00:00:38.711Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AC244  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC244 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "fb/W1AC244.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC244 ;
+        adm:logEntry        bda:LG989DA7B5B5016FFD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18140  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'jigs med rdo rje'i gso rig brtsams chos gces bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   564 .
+    
+    bdr:IDC56A646BDF35D0DE
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718309" .
+    
+    bdr:W1AC244  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC56A646BDF35D0DE ;
+        :instanceHasVolume  bdr:I2PD18140 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AB7 {
+    bda:I1KG89125  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG89125 ;
+        adm:logEntry        bda:LG17278B046AA37B62 , bda:LGIM85A66138 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17278B046AA37B62
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-04-23T16:47:00.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFC89802E82F6EA71
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-04-23T16:47:00.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM85A66138  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-18T20:20:29.729Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1AB7  a            adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AB7 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "78/W1AB7.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AB7 ;
+        adm:logEntry        bda:LGFC89802E82F6EA71 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG89125  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of nye sgyur nyi shu pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   232 .
+    
+    bdr:ID071EAAA792AEB556
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738065" .
+    
+    bdr:W1AB7  a            :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID071EAAA792AEB556 ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG89125 ;
+        :numberOfVolumes    1 .
+}

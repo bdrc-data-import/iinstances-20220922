@@ -1,0 +1,114 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8142 {
+    bda:I3CN8144  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8144 ;
+        adm:logEntry        bda:LG54236B5859AA5626 , bda:LGF34BDA376FB56BE6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8145  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8145 ;
+        adm:logEntry        bda:LG9B7FF7A08DD2EB53 , bda:LGB7DDC43BEFCC5BFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN8146  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8146 ;
+        adm:logEntry        bda:LG40CEBD4A59A2FA71 , bda:LGD93509BA8392CC8C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG40CEBD4A59A2FA71
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-30T22:25:04.688Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG54236B5859AA5626
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:49:18.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D9C8AE51F4623E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:49:18.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG9B7FF7A08DD2EB53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:49:18.383Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB7DDC43BEFCC5BFB
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-30T22:25:04.477Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD93509BA8392CC8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:49:18.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF34BDA376FB56BE6
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-30T22:25:04.211Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN8142  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN8142 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "3b/W3CN8142.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8142 ;
+        adm:logEntry        bda:LG6D9C8AE51F4623E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8144  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   626 .
+    
+    bdr:I3CN8145  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   550 .
+    
+    bdr:I3CN8146  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of kaHthog dge rtse bstan pa rnam rgyal gyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   494 .
+    
+    bdr:ID3E3E92EFB294D48D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147754241" .
+    
+    bdr:W3CN8142  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3E3E92EFB294D48D ;
+        :instanceHasVolume  bdr:I3CN8144 , bdr:I3CN8145 , bdr:I3CN8146 ;
+        :numberOfVolumes    3 .
+}

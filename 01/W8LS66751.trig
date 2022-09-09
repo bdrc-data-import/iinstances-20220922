@@ -1,0 +1,157 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66751 {
+    bda:I8LS67798  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67798 ;
+        adm:logEntry        bda:LG8ED2D0064DBCF92D , bda:LGIM33C6E12A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67799  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67799 ;
+        adm:logEntry        bda:LG0694DD079C4C3768 , bda:LGIM9352FEEA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67800  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67800 ;
+        adm:logEntry        bda:LGE4BEF9D4303B8589 , bda:LGIM48D70494 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67801  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67801 ;
+        adm:logEntry        bda:LG1FBB954E0A7D6C99 , bda:LGIMD1DD669D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67802  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67802 ;
+        adm:logEntry        bda:LGD32F3E3C4F72584D , bda:LGIMCEFAD8A2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0694DD079C4C3768
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T09:19:05.974Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1FBB954E0A7D6C99
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T09:19:06.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8ED2D0064DBCF92D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T09:19:05.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD32F3E3C4F72584D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T09:19:06.224Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE4BEF9D4303B8589
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-25T09:19:06.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFC1DC043721EEE2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-25T09:19:06.308Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM33C6E12A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:02.837Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM48D70494  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:03.205Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM9352FEEA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:03.009Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCEFAD8A2  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:03.604Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD1DD669D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:03.377Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66751  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66751 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "01/W8LS66751.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66751 ;
+        adm:logEntry        bda:LGFC1DC043721EEE2D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67798  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod yig yig gzugs sbyong deb/ 1-5"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2 .
+    
+    bdr:I8LS67799  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod yig yig gzugs sbyong deb/ 1-5"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2 .
+    
+    bdr:I8LS67800  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bod yig yig gzugs sbyong deb/ 1-5"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2 .
+    
+    bdr:I8LS67801  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of bod yig yig gzugs sbyong deb/ 1-5"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   92 .
+    
+    bdr:I8LS67802  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of bod yig yig gzugs sbyong deb/ 1-5"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   90 .
+    
+    bdr:W8LS66751  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS67798 , bdr:I8LS67799 , bdr:I8LS67800 , bdr:I8LS67801 , bdr:I8LS67802 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

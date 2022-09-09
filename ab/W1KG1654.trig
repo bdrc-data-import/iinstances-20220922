@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG1654 {
+    bda:I1KG1706  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG1706 ;
+        adm:logEntry        bda:LG4ECEB9AB3EBD5DB2 , bda:LGF3E9747383E52484 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4ECEB9AB3EBD5DB2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-03-12T11:42:52.054Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8D70CD69BF036CB0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2009-03-12T11:42:52.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF3E9747383E52484
+        a                   adm:Synced ;
+        adm:logDate         "2016-08-03T23:14:55.892Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG1654  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG1654 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ab/W1KG1654.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG1654 ;
+        adm:logEntry        bda:LG8D70CD69BF036CB0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG1706  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'jam dbyangs mkhyen brtse'i dbang po'i rnam thar bsdus pa u dum+ba ra'i dga' tshal"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   238 .
+    
+    bdr:W1KG1654  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG1706 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2009"@en .
+}

@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD159525 {
+    bda:I2PD18969  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18969 ;
+        adm:logEntry        bda:LGD94981D4BAE2CFCC , bda:LGF678E01182C09BE0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGD94981D4BAE2CFCC
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:47.947Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDD0F2A9550E23027
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-24T23:34:52.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF678E01182C09BE0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-24T23:34:51.272Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD159525  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD159525 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "da/W1PD159525.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD159525 ;
+        adm:logEntry        bda:LGDD0F2A9550E23027 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18969  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lhug rtsom/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   292 .
+    
+    bdr:ID6A8B7CB5F30ACE13
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724230" .
+    
+    bdr:W1PD159525  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6A8B7CB5F30ACE13 ;
+        :instanceHasVolume  bdr:I2PD18969 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

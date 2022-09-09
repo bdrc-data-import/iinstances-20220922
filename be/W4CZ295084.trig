@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ295084 {
+    bda:I4CZ307644  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ307644 ;
+        adm:logEntry        bda:LG195C3A609E8734E5 , bda:LGIM7EFE791B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I4CZ307645  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ307645 ;
+        adm:logEntry        bda:LGA651EB3025E30D55 , bda:LGIMC249D9F2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG195C3A609E8734E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-01T16:30:15.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA651EB3025E30D55
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-05-01T16:30:15.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA878945640F527F4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-05-01T16:30:15.285Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAFBDA023F97C2FD3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-23T09:35:50.057Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM7EFE791B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-12T17:58:55.74Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC249D9F2  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-08-12T17:58:56.103Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ295084  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ295084 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "be/W4CZ295084.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ295084 ;
+        adm:logEntry        bda:LGA878945640F527F4 , bda:LGAFBDA023F97C2FD3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ307644  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dus kyi 'khor lo lha dgu la brten pa'i sgrub thabs dang mchod chog nyer mkho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   219 .
+    
+    bdr:I4CZ307645  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of dus kyi 'khor lo lha dgu la brten pa'i sgrub thabs dang mchod chog nyer mkho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   315 .
+    
+    bdr:W4CZ295084  a       :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I4CZ307644 , bdr:I4CZ307645 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D34578-79"@en .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137819 {
+    bda:I2PD18971  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18971 ;
+        adm:logEntry        bda:LG45E8736F8A82ABA2 , bda:LG73DAC889D75DD711 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG45E8736F8A82ABA2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-25T02:17:50.837Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG73DAC889D75DD711
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-20T01:11:19.748Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEBA6351BFE3DC5EE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-25T02:17:51.653Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137819  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137819 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2d/W1PD137819.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137819 ;
+        adm:logEntry        bda:LGEBA6351BFE3DC5EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18971  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rgya bod dngul rtsa'i tshig mdzod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   930 .
+    
+    bdr:W1PD137819  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18971 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

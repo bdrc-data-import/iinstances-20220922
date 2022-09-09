@@ -1,0 +1,157 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3MS677 {
+    bda:I3MS679  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS679 ;
+        adm:logEntry        bda:LG6824C8F066091B10 , bda:LGIMA228ADFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS680  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS680 ;
+        adm:logEntry        bda:LG2698AA4511B74097 , bda:LGIMFF556731 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS681  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS681 ;
+        adm:logEntry        bda:LG87C00C43053CC371 , bda:LGIMBDF468AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS682  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS682 ;
+        adm:logEntry        bda:LG228FCDAE0B3AD7F4 , bda:LGIM535D7E80 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3MS683  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3MS683 ;
+        adm:logEntry        bda:LGA472390BE800CD53 , bda:LGIMD4D097C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG228FCDAE0B3AD7F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-18T10:27:39.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2698AA4511B74097
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-18T10:27:39.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG2AAA080FCDEEB0BB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-09-18T10:27:39.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG6824C8F066091B10
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-18T10:27:39.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LG87C00C43053CC371
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-18T10:27:39.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGA472390BE800CD53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-09-18T10:27:39.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00020 .
+    
+    bda:LGIM535D7E80  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-15T21:47:55.498Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA228ADFB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-15T21:47:53.837Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBDF468AB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-15T21:47:54.871Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD4D097C7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-15T21:47:55.937Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFF556731  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-10-15T21:47:54.306Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3MS677  a          adm:AdminData ;
+        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:adminAbout      bdr:W3MS677 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "c3/W3MS677.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3MS677 ;
+        adm:logEntry        bda:LG2AAA080FCDEEB0BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3MS679  a          :ImageGroup ;
+        :biblioNote         "Volume 1 of nang chen 'khrul zhig dgon gyi dpe cha skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   156 .
+    
+    bdr:I3MS680  a          :ImageGroup ;
+        :biblioNote         "Volume 2 of nang chen 'khrul zhig dgon gyi dpe cha skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   166 .
+    
+    bdr:I3MS681  a          :ImageGroup ;
+        :biblioNote         "Volume 3 of nang chen 'khrul zhig dgon gyi dpe cha skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   432 .
+    
+    bdr:I3MS682  a          :ImageGroup ;
+        :biblioNote         "Volume 4 of nang chen 'khrul zhig dgon gyi dpe cha skor/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   272 .
+    
+    bdr:I3MS683  a          :ImageGroup ;
+        :biblioNote         "Volume 5 of nang chen 'khrul zhig dgon gyi dpe cha skor/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   115 .
+    
+    bdr:W3MS677  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3MS679 , bdr:I3MS680 , bdr:I3MS681 , bdr:I3MS682 , bdr:I3MS683 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

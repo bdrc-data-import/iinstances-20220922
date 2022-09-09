@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6424 {
+    bda:I3CN6426  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6426 ;
+        adm:logEntry        bda:LG99021EEEE4687CD1 , bda:LGD66926A8C0FF04CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG99021EEEE4687CD1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T15:23:05.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD66926A8C0FF04CE
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:09.501Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDC07A7AECC0A820E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-12T15:23:06.004Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6424  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6424 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "d4/W3CN6424.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6424 ;
+        adm:logEntry        bda:LGDC07A7AECC0A820E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6426  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of lhug rtsom sum cu pa dang dpyad pa tshig sum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   340 .
+    
+    bdr:ID17C780DC8E929C79
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147755361" .
+    
+    bdr:W3CN6424  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID17C780DC8E929C79 ;
+        :instanceHasVolume  bdr:I3CN6426 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2DB4579 {
+    bda:I00KG03989  a       adm:AdminData ;
+        adm:adminAbout      bdr:I00KG03989 ;
+        adm:logEntry        bda:LG351179C8DEF58D44 , bda:LG69AE02F1C07ECA42 , bda:LG813A8A9D4D5625C3 , bda:LG99443D75FD85E046 , bda:LGAACA61A33AA3E4F2 , bda:LGC2AC25DA60682ACC , bda:LGC9E14D8868D165FE , bda:LGCEE77A77614886D4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG351179C8DEF58D44
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T13:44:51.933Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG69AE02F1C07ECA42
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-11-08T13:45:48.547Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG813A8A9D4D5625C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-11T12:35:18.312Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LG94302B681AA6F6EC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-26T13:50:35.711Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG99443D75FD85E046
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-11T12:38:01.203Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
+    
+    bda:LGAACA61A33AA3E4F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-12-08T11:48:46.427Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGC2AC25DA60682ACC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-26T13:50:35.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC9E14D8868D165FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-01T09:39:33.171Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGCEE77A77614886D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-01T09:40:39.718Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF527DD5581B0A541
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-11-21T14:45:17.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00003 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W2DB4579  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2DB4579 ;
+        adm:facetIndex      12 ;
+        adm:gitPath         "9b/W2DB4579.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2DB4579 ;
+        adm:logEntry        bda:LG94302B681AA6F6EC , bda:LGF527DD5581B0A541 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I00KG03989  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of zab mo nang gi don gsal bar byed pa'i 'grel pa"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   348 .
+    
+    bdr:W2DB4579  a         :ImageInstance ;
+        :inCollection       bdr:PR3JW7543 ;
+        :instanceHasVolume  bdr:I00KG03989 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en , "scanned from photocopy of an dbu can manuscript"@en .
+}

@@ -1,0 +1,90 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD152294 {
+    bda:I1KG77144  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG77144 ;
+        adm:logEntry        bda:LG441F65AB51028968 , bda:LGABA78842C0ED638A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG77145  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG77145 ;
+        adm:logEntry        bda:LG12E8BC19EAB28547 , bda:LGAB3B51ED9C5C1D35 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG12E8BC19EAB28547
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:08:20.728Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG329BC8E4F2B40107
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-04T10:22:44.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG441F65AB51028968
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:08:19.637Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAB3B51ED9C5C1D35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-04T10:22:44.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGABA78842C0ED638A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-04T10:22:43.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1PD152294  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD152294 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b6/W1PD152294.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD152294 ;
+        adm:logEntry        bda:LG329BC8E4F2B40107 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG77144  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gna' rtsom gces btus slob deb gsar ma gzhon nu'i lang tsho/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   521 .
+    
+    bdr:I1KG77145  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gna' rtsom gces btus slob deb gsar ma gzhon nu'i lang tsho/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   417 .
+    
+    bdr:IDB93465DD2759FAE0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738086" .
+    
+    bdr:W1PD152294  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB93465DD2759FAE0 ;
+        :instanceHasVolume  bdr:I1KG77144 , bdr:I1KG77145 ;
+        :numberOfVolumes    2 .
+}

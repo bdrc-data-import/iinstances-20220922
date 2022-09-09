@@ -1,0 +1,79 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00KG0538 {
+    bda:I1KG80385  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80385 ;
+        adm:logEntry        bda:LG2543A9E441B89D46 , bda:LGIM0685C612 , bda:LGIMEF0AE5BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2543A9E441B89D46
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T16:11:10.014Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG48D0390FB44F2AA6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T16:11:10.097Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6284571B5BB28EC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-04-11T10:51:09.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM0685C612  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-16T14:55:20.591Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEF0AE5BD  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-16T20:18:09.469Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W00KG0538  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W00KG0538 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "1c/W00KG0538.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W00KG0538 ;
+        adm:logEntry        bda:LG48D0390FB44F2AA6 , bda:LG6284571B5BB28EC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80385  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of snyan ngag gsar pa la dpyad pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   294 .
+    
+    bdr:IDD91712052EB83CEC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712264" .
+    
+    bdr:W00KG0538  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD91712052EB83CEC ;
+        :instanceHasVolume  bdr:I1KG80385 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "9/2017"@en .
+}

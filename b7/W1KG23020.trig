@@ -1,0 +1,68 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23020 {
+    bda:I1KG23084  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23084 ;
+        adm:logEntry        bda:LG20712039A044BC1F , bda:LG7793D838C7919017 , bda:LG9F4662CB9631AEA1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG20712039A044BC1F
+        a                   adm:Synced ;
+        adm:logDate         "2016-05-23T18:46:03.091Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7793D838C7919017
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-10T11:49:20.673Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG89F5CF8BC3DCF257
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-10T11:49:20.7Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9F4662CB9631AEA1
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2016-05-23T20:41:30.691Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG23020  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG23020 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b7/W1KG23020.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG23020 ;
+        adm:logEntry        bda:LG89F5CF8BC3DCF257 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23084  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'khor 'das bar gyi rtog 'gyu/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   232 .
+    
+    bdr:W1KG23020  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23084 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 3/2016"@en .
+}

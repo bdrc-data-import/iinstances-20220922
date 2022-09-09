@@ -1,0 +1,117 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W7335 {
+    bda:I3478  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3478 ;
+        adm:logEntry        bda:LG0E808EC33697FD0E , bda:LG6E4574A08A536C87 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3479  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3479 ;
+        adm:logEntry        bda:LG123A861A57DBB42F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3480  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3480 ;
+        adm:logEntry        bda:LGA36B56CD2677B056 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3481  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3481 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0E808EC33697FD0E
+        a                   adm:ContentQC ;
+        adm:logMessage      "4/5 /04" ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG123A861A57DBB42F
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T10:22:29.389Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed volume map"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LG6E4574A08A536C87
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T10:22:30.622Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed volume map"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGA36B56CD2677B056
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-04-23T10:22:23.752Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed volume map"@en ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W7335  a            adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W7335 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "e3/W7335.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W7335 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3478  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   600 .
+    
+    bdr:I3479  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   477 .
+    
+    bdr:I3480  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   469 .
+    
+    bdr:I3481  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   595 .
+    
+    bdr:W7335  a            :ImageInstance ;
+        :inCollection       bdr:PR01DOR3 , bdr:PR01JW33478 , bdr:PRHD02 ;
+        :instanceHasVolume  bdr:I3478 , bdr:I3479 , bdr:I3480 , bdr:I3481 ;
+        :missingVolumes     "1-2,4-0,3" ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "New Delhi"@en .
+}

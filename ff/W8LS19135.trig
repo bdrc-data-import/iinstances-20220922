@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19135 {
+    bda:I8LS19137  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19137 ;
+        adm:logEntry        bda:LG5DE7DB6A6234D6A4 , bda:LG8D42C8D6AFED702A , bda:LGIMAA499FF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG532EC5588AD22183
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T15:04:45.532Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG5DE7DB6A6234D6A4
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:54:09.88Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8D42C8D6AFED702A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:04:45.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMAA499FF9  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-18T00:04:03.969Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS19135  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS19135 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ff/W8LS19135.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19135 ;
+        adm:logEntry        bda:LG532EC5588AD22183 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19137  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun chos kyi rgyal po tsong kha pa chen po'i rtogs pa brjod pa'i snyan dngags thub bstan rin po'i che'i rgyan ngo mtshar ba'i me tog chun po zhes bya ba bzhugs so/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   398 .
+    
+    bdr:W8LS19135  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19137 ;
+        :numberOfVolumes    1 .
+}

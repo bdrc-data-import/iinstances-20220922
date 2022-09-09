@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS31394 {
+    bda:I8LS31435  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS31435 ;
+        adm:logEntry        bda:LG614432C8A8E7E397 , bda:LGIM918F0B22 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG614432C8A8E7E397
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-02-21T15:54:59.582Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD1ED6D7AFFE4231E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-02-21T15:54:59.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM918F0B22  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-06-18T22:38:49.615Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS31394  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS31394 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "14/W8LS31394.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS31394 ;
+        adm:logEntry        bda:LGD1ED6D7AFFE4231E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS31435  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of khye'u spos 'dzin rin chen smra ba'i bshes gnyen gnas dbyung gi gtam yod pas mtshar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   28 .
+    
+    bdr:W8LS31394  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS31435 ;
+        :numberOfVolumes    1 .
+}

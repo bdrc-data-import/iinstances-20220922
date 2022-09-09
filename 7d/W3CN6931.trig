@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN6931 {
+    bda:I3CN6933  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN6933 ;
+        adm:logEntry        bda:LG09C1FC6399B4B4D0 , bda:LG8325310036E6CEE2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG09C1FC6399B4B4D0
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:33.109Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3788613F20512B59
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T10:24:30.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8325310036E6CEE2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T10:24:30.313Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN6931  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN6931 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7d/W3CN6931.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN6931 ;
+        adm:logEntry        bda:LG3788613F20512B59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN6933  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi gna' rabs mchims kyi rus rgyud skor brjod pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   214 .
+    
+    bdr:W3CN6931  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN6933 ;
+        :numberOfVolumes    1 .
+}

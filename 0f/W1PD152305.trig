@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD152305 {
+    bda:I2PD18832  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18832 ;
+        adm:logEntry        bda:LG849265E638549F91 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2PD18833  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18833 ;
+        adm:logEntry        bda:LGAFAEFF1E4DF21C6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG849265E638549F91
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T02:27:18.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9E7DDA3867D52468
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-23T02:27:20.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGAFAEFF1E4DF21C6E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-23T02:27:19.77Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD152305  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1PD152305 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "0f/W1PD152305.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD152305 ;
+        adm:logEntry        bda:LG9E7DDA3867D52468 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18832  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi lo tsA'i rig lam rnam bshad blo gsal 'jug ngogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2PD18833  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod kyi lo tsA'i rig lam rnam bshad blo gsal 'jug ngogs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1PD152305  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18832 , bdr:I2PD18833 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

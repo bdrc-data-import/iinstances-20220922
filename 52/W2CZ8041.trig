@@ -1,0 +1,109 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2CZ8041 {
+    bda:I1KG18823  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18823 ;
+        adm:logEntry        bda:LGE6CCBA84183C4153 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18824  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18824 ;
+        adm:logEntry        bda:LGBB4B7FB55F5FED11 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG18825  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG18825 ;
+        adm:logEntry        bda:LGC7030C09F0C9F04B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGA90899704C56DBF5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-03T11:46:31.126Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBB4B7FB55F5FED11
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T11:46:31.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC7030C09F0C9F04B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T11:46:31.09Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE6CCBA84183C4153
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-03T11:46:30.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W2CZ8041  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2CZ8041 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "52/W2CZ8041.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2CZ8041 ;
+        adm:logEntry        bda:LGA90899704C56DBF5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG18823  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tshad ma rig pa'i skor rgya gzhung rtsa 'grel bdam bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   686 .
+    
+    bdr:I1KG18824  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of tshad ma rig pa'i skor rgya gzhung rtsa 'grel bdam bsgrigs/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   852 .
+    
+    bdr:I1KG18825  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of tshad ma rig pa'i skor rgya gzhung rtsa 'grel bdam bsgrigs/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2CZ8041  a         :ImageInstance ;
+        :inCollection       bdr:PR1CTC12 ;
+        :instanceHasVolume  bdr:I1KG18823 , bdr:I1KG18824 , bdr:I1KG18825 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
+}

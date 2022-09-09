@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ368846 {
+    bda:I4CZ369362  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ369362 ;
+        adm:logEntry        bda:LG3D7F2CD3A8F63B6D , bda:LGIM3E5C8CA7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1E5FE0FF07F831A8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T10:17:53.488Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG3D7F2CD3A8F63B6D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-30T10:17:53.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM3E5C8CA7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-07T23:01:22.069Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ368846  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ368846 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "10/W4CZ368846.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ368846 ;
+        adm:logEntry        bda:LG1E5FE0FF07F831A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ369362  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dag yig gsar bsgrigs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   938 .
+    
+    bdr:W4CZ368846  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ369362 ;
+        :numberOfVolumes    1 .
+}

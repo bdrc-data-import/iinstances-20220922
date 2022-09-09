@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19721 {
+    bda:I8LS19723  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19723 ;
+        adm:logEntry        bda:LG15ED1B4261941BF5 , bda:LGADBA4C14417ADD9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG15ED1B4261941BF5
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-13T06:12:49.333Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGADBA4C14417ADD9E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T14:28:39.297Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE5E88B53E4474D7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-08T14:28:39.413Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19721  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19721 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "de/W8LS19721.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19721 ;
+        adm:logEntry        bda:LGE5E88B53E4474D7F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19723  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of ye shes bla ma'i sngon 'gro'i zin bris/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   114 .
+    
+    bdr:W8LS19721  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19723 ;
+        :numberOfVolumes    1 .
+}

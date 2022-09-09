@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ74326 {
+    bda:I4CZ74355  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ74355 ;
+        adm:logEntry        bda:LGE9CACF76E323786A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG037A7C680E61643D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-07T15:29:13.896Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE9CACF76E323786A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-07T15:29:13.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ74326  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ74326 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "1e/W4CZ74326.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ74326 ;
+        adm:logEntry        bda:LG037A7C680E61643D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ74355  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rdo rje gcod pa sogs chos tshan gsum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ74326  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ74355 ;
+        :numberOfVolumes    1 .
+}

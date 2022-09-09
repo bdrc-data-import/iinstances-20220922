@@ -1,0 +1,108 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76121 {
+    bda:I8LS76123  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76123 ;
+        adm:logEntry        bda:LG06778D367A441D12 , bda:LGIM356C3517 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS76124  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76124 ;
+        adm:logEntry        bda:LGCDB804C0DF73C4E2 , bda:LGIM92EF5A8F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS76125  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76125 ;
+        adm:logEntry        bda:LG8BCAE2B99885E899 , bda:LGIM17B8BB9E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG06778D367A441D12
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-24T14:56:17.177Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG33D9865BF0F6F9B2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-24T14:56:17.559Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8BCAE2B99885E899
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-24T14:56:17.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGCDB804C0DF73C4E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-24T14:56:17.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM17B8BB9E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:34:00.513Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM356C3517  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:33:59.866Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM92EF5A8F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:34:00.198Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS76121  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76121 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "a3/W8LS76121.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76121 ;
+        adm:logEntry        bda:LG33D9865BF0F6F9B2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76123  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of phar phyin gyi dgongs don gsal byed yid bzhin nor ltar dogs slong mkhas pa'i yid 'phrog dga' bskyed/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   619 .
+    
+    bdr:I8LS76124  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of phar phyin gyi dgongs don gsal byed yid bzhin nor ltar dogs slong mkhas pa'i yid 'phrog dga' bskyed/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   516 .
+    
+    bdr:I8LS76125  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of phar phyin gyi dgongs don gsal byed yid bzhin nor ltar dogs slong mkhas pa'i yid 'phrog dga' bskyed/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   651 .
+    
+    bdr:W8LS76121  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76123 , bdr:I8LS76124 , bdr:I8LS76125 ;
+        :numberOfVolumes    3 .
+}

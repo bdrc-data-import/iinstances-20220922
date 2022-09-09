@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25180 {
+    bda:I1KG25182  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25182 ;
+        adm:logEntry        bda:LG66ECB413C9233752 , bda:LGBF00ADBA4ACBE358 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0339F53BA5C4CF19
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T11:45:20.798Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG66ECB413C9233752
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T11:45:20.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBF00ADBA4ACBE358
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-13T01:36:13.258Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25180  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25180 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b2/W1KG25180.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25180 ;
+        adm:logEntry        bda:LG0339F53BA5C4CF19 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25182  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of karma si tu'i sum rtags 'grel chen mkhas pa'i mgul rgyan mu rig 'phreng mdzes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   218 .
+    
+    bdr:W1KG25180  a        :ImageInstance ;
+        :inCollection       bdr:PR1CTC14 ;
+        :instanceHasVolume  bdr:I1KG25182 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W30474 {
+    bda:I1KG23324  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG23324 ;
+        adm:logEntry        bda:LGA29337EC6B1658B2 , bda:LGF643BA1E41D95798 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4E53FEF244D80D33
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-04-12T10:01:56.251Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA29337EC6B1658B2
+        a                   adm:Synced ;
+        adm:logDate         "2016-06-06T21:56:38.785Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF643BA1E41D95798
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-04-12T10:01:56.179Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W30474  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W30474 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "50/W30474.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W30474 ;
+        adm:logEntry        bda:LG4E53FEF244D80D33 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG23324  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi mchod bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   112 .
+    
+    bdr:W30474  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG23324 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 4/2016"@en .
+}

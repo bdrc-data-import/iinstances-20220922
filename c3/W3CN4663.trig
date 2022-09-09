@@ -1,0 +1,144 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4663 {
+    bda:I3CN4722  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4722 ;
+        adm:logEntry        bda:LG4529770CAA26EA74 , bda:LGB311626D91782DB9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4723  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4723 ;
+        adm:logEntry        bda:LG5B24A07BA453EBC5 , bda:LGE5D8FB7607A3CB3F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4724  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4724 ;
+        adm:logEntry        bda:LG996A5988E5913009 , bda:LGEDAABE6BAA6FAFC2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN4725  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4725 ;
+        adm:logEntry        bda:LG014E7A9D059DCD5D , bda:LGD495AB84FC023C36 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG014E7A9D059DCD5D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:14:09.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG148267575C2AE796
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T10:14:09.631Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG4529770CAA26EA74
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:10.674Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG5B24A07BA453EBC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:14:09.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7142ECA27FA54015
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-30T16:24:31.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG996A5988E5913009
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:11.159Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB311626D91782DB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:14:09.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD495AB84FC023C36
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:11.36Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE5D8FB7607A3CB3F
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-01T21:46:10.945Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEDAABE6BAA6FAFC2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:14:09.398Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4663  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN4663 ;
+        adm:facetIndex      10 ;
+        adm:gitPath         "c3/W3CN4663.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4663 ;
+        adm:logEntry        bda:LG148267575C2AE796 , bda:LG7142ECA27FA54015 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4722  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal bla rung mkhan po tshul khrims blo gros kyi gsung 'bum/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   328 .
+    
+    bdr:I3CN4723  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of dpal bla rung mkhan po tshul khrims blo gros kyi gsung 'bum/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   412 .
+    
+    bdr:I3CN4724  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of dpal bla rung mkhan po tshul khrims blo gros kyi gsung 'bum/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   412 .
+    
+    bdr:I3CN4725  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of dpal bla rung mkhan po tshul khrims blo gros kyi gsung 'bum/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   406 .
+    
+    bdr:ID1FBECB42D3E66AA0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733553" .
+    
+    bdr:W3CN4663  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1FBECB42D3E66AA0 ;
+        :instanceHasVolume  bdr:I3CN4722 , bdr:I3CN4723 , bdr:I3CN4724 , bdr:I3CN4725 ;
+        :numberOfVolumes    4 .
+}

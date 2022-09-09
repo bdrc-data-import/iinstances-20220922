@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19428 {
+    bda:I8LS19430  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19430 ;
+        adm:logEntry        bda:LG677EB5A8560859A3 , bda:LGD9649C74CA3801A5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG677EB5A8560859A3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T10:54:57.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD9649C74CA3801A5
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-20T02:01:00.477Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFC335C415A0CEFA4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T10:54:58.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19428  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19428 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f2/W8LS19428.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19428 ;
+        adm:logEntry        bda:LGFC335C415A0CEFA4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19430  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bkra shis kyi bshad pa skal bzang dgyes pa'i rol mo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   16 .
+    
+    bdr:W8LS19428  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19430 ;
+        :numberOfVolumes    1 .
+}

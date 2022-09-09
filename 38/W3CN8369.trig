@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN8369 {
+    bda:I3CN8371  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8371 ;
+        adm:logEntry        bda:LG4A9A51BA806A2B7C , bda:LG6D4186591BAC23F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4A9A51BA806A2B7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T17:32:47.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6D4186591BAC23F7
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:49.988Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGEBCB0EFA691D19B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T17:32:47.597Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN8369  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN8369 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "38/W3CN8369.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN8369 ;
+        adm:logEntry        bda:LGEBCB0EFA691D19B3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN8371  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of yan lag brgyad pa'i gzhung las bsdus pa'i nor bu'i phreng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   274 .
+    
+    bdr:W3CN8369  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN8371 ;
+        :numberOfVolumes    1 .
+}

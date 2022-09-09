@@ -1,0 +1,69 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W19704 {
+    bda:I1KG21810  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG21810 ;
+        adm:logEntry        bda:LG870B549F6F726641 , bda:LG8FE4ED23498E281F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG378D713771BEB5BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-04-29T12:47:02.144Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG870B549F6F726641
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-29T12:47:02.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8FE4ED23498E281F
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-09T23:59:44.687Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W19704  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W19704 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "ae/W19704.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W19704 ;
+        adm:logEntry        bda:LG378D713771BEB5BC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG21810  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rtsis skar nag gi lo rgyus phyogs bsdus/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   94 .
+    
+    bdr:IDC7E0EFBE1ACBFE48
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729556" .
+    
+    bdr:W19704  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC7E0EFBE1ACBFE48 ;
+        :digitalLendingPossible  false ;
+        :inCollection       bdr:PR1CTC14 ;
+        :instanceHasVolume  bdr:I1KG21810 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 4/2015"@en .
+}

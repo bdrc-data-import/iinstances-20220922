@@ -1,0 +1,70 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS75760 {
+    bda:I8LS75762  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75762 ;
+        adm:logEntry        bda:LG0901B4D6D836215D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS75763  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75763 ;
+        adm:logEntry        bda:LG4154088CE4B5E5AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0901B4D6D836215D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-25T10:03:11.024Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG4154088CE4B5E5AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-25T10:03:11.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC46E216EDDD2414D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-25T10:03:11.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS75760  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS75760 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ae/W8LS75760.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS75760 ;
+        adm:logEntry        bda:LGC46E216EDDD2414D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS75762  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/tsa yus dka' bcu ba mgon po 'phrin las rab brtan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS75763  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/tsa yus dka' bcu ba mgon po 'phrin las rab brtan/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS75760  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS75762 , bdr:I8LS75763 ;
+        :numberOfVolumes    2 .
+}

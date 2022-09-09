@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20195 {
+    bda:I8LS20197  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20197 ;
+        adm:logEntry        bda:LG27FC871DB96CB02A , bda:LGB1A74621880EC52B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG27FC871DB96CB02A
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-24T21:33:42.805Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB1A74621880EC52B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T15:32:56.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF22EEB42CAEB11D8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-14T15:32:57.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS20195  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS20195 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "38/W8LS20195.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20195 ;
+        adm:logEntry        bda:LGF22EEB42CAEB11D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20197  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of thugs chen bsnyen yig thos grol snying po/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   22 .
+    
+    bdr:W8LS20195  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20197 ;
+        :numberOfVolumes    1 .
+}

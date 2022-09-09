@@ -1,0 +1,128 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG9588 {
+    bda:I1KG9634  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG9634 ;
+        adm:logEntry        bda:LG66D936A2F82DA3E7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG9635  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG9635 ;
+        adm:logEntry        bda:LG322A3E751C69B118 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG9636  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG9636 ;
+        adm:logEntry        bda:LG6A27A591546485D3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG9637  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1KG9637 ;
+        adm:logEntry        bda:LGE84808C39A7745DC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0FFCD4EB66D954A4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-05-04T16:50:58.787Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG322A3E751C69B118
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-04T16:50:55.768Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG66D936A2F82DA3E7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-04T16:50:55.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6A27A591546485D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-04T16:50:57.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE84808C39A7745DC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-05-04T16:50:57.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W1KG9588  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG9588 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "0b/W1KG9588.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG9588 ;
+        adm:logEntry        bda:LG0FFCD4EB66D954A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG9634  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of bka' brgyad bde gshegs 'dus pa'i chos skor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   658 .
+    
+    bdr:I1KG9635  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of bka' brgyad bde gshegs 'dus pa'i chos skor/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   520 .
+    
+    bdr:I1KG9636  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of bka' brgyad bde gshegs 'dus pa'i chos skor/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   554 .
+    
+    bdr:I1KG9637  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of bka' brgyad bde gshegs 'dus pa'i chos skor/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   512 .
+    
+    bdr:W1KG9588  a         :ImageInstance ;
+        :inCollection       bdr:PR01CTC09 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I1KG9634 , bdr:I1KG9635 , bdr:I1KG9636 , bdr:I1KG9637 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 5/2011"@en .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18478 {
+    bda:I8LS18480  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18480 ;
+        adm:logEntry        bda:LG266885763A5B63AA , bda:LG653649E85A66A950 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG266885763A5B63AA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T10:59:42.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG653649E85A66A950
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:20.113Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD82A741AD3C61F58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T10:59:42.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18478  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18478 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "83/W8LS18478.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18478 ;
+        adm:logEntry        bda:LGD82A741AD3C61F58 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18480  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lho kha sa khul gyi gnas yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   215 .
+    
+    bdr:ID393939C0DD87ACB9
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725397" .
+    
+    bdr:W8LS18478  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID393939C0DD87ACB9 ;
+        :instanceHasVolume  bdr:I8LS18480 ;
+        :numberOfVolumes    1 .
+}

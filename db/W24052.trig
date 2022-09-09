@@ -1,0 +1,146 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W24052 {
+    bda:I3821  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3821 ;
+        adm:logEntry        bda:LGCD15267C68D2FDB3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3822  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3822 ;
+        adm:logEntry        bda:LGEB7912F05D3AEC8A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3823  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3823 ;
+        adm:logEntry        bda:LG0C089ACAEA92E668 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3824  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3824 ;
+        adm:logEntry        bda:LG449170BF9FB44C4F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3825  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3825 ;
+        adm:logEntry        bda:LGA96B57E682B32DBC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3826  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3826 ;
+        adm:logEntry        bda:LG31FB3C819F5B053D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0C089ACAEA92E668
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG31FB3C819F5B053D
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG449170BF9FB44C4F
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logMessage      "pages 273, 274, 275, 276 missing"@en ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGA96B57E682B32DBC
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGCD15267C68D2FDB3
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGEB7912F05D3AEC8A
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W24052  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W24052 ;
+        adm:facetIndex      25 ;
+        adm:gitPath         "db/W24052.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W24052 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3821  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   654 .
+    
+    bdr:I3822  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   548 .
+    
+    bdr:I3823  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   812 .
+    
+    bdr:I3824  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   548 .
+    
+    bdr:I3825  a            :ImageGroup ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   686 .
+    
+    bdr:I3826  a            :ImageGroup ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   700 .
+    
+    bdr:W24052  a           :ImageInstance ;
+        :inCollection       bdr:PR00DCN56 , bdr:PR01JW33478 , bdr:PRHD02 ;
+        :instanceHasVolume  bdr:I3821 , bdr:I3822 , bdr:I3823 , bdr:I3824 , bdr:I3825 , bdr:I3826 ;
+        :numberOfVolumes    6 ;
+        :scanInfo           "scanned at the tibetan buddhist resource center, 115 5th ave., 7th floor, new york city, ny 10003 2003"@en .
+}

@@ -1,0 +1,110 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W23843 {
+    bda:I3017  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3017 ;
+        adm:logEntry        bda:LG429FE17C521132E4 , bda:LG89BE8C8A5F7E6219 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3018  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3018 ;
+        adm:logEntry        bda:LG8F65B2F8AA8CB15A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3019  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3019 ;
+        adm:logEntry        bda:LG7144C96DA7838FB0 , bda:LG97C4810DD5C5BEA1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG429FE17C521132E4
+        a                   adm:ContentQC ;
+        adm:logDate         "2003-08"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG7144C96DA7838FB0
+        a                   adm:ContentQC ;
+        adm:logDate         "2003-08"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG89BE8C8A5F7E6219
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-09T16:38:03.847Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG8F65B2F8AA8CB15A
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-09T16:38:05.909Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LG97C4810DD5C5BEA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-01-09T16:38:07.753Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W23843  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W23843 ;
+        adm:facetIndex      15 ;
+        adm:gitPath         "be/W23843.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W23843 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3017  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   686 .
+    
+    bdr:I3018  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   536 .
+    
+    bdr:I3019  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   430 .
+    
+    bdr:W23843  a           :ImageInstance ;
+        :inCollection       bdr:PR01DOR11 , bdr:PR01JW11672 , bdr:PR01JW33478 , bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I3017 , bdr:I3018 , bdr:I3019 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "scanned by rabten at the tibetan buddhist resource center, 115 5th ave, 7th floor, new york city, ny 10003 2003"@en .
+}

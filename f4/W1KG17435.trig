@@ -1,0 +1,105 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG17435 {
+    bda:I1KG17781  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17781 ;
+        adm:logEntry        bda:LG4231E2C8E075F6C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG17782  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17782 ;
+        adm:logEntry        bda:LG376C279B4116F058 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG17783  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17783 ;
+        adm:logEntry        bda:LG25DB3BD04D5ACAED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1KG17784  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG17784 ;
+        adm:logEntry        bda:LGC0034718DF5C23AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG25DB3BD04D5ACAED
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T10:35:22.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG376C279B4116F058
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T10:35:22.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4231E2C8E075F6C6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T10:35:22.816Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG54E36B26E74EC6BE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-06-17T10:35:22.951Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC0034718DF5C23AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-06-17T10:35:22.917Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG17435  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG17435 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "f4/W1KG17435.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG17435 ;
+        adm:logEntry        bda:LG54E36B26E74EC6BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG17781  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of od/ spyi tshogs dus deb/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG17782  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of od/ spyi tshogs dus deb/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG17783  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of od/ spyi tshogs dus deb/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1KG17784  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of od/ spyi tshogs dus deb/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG17435  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG17781 , bdr:I1KG17782 , bdr:I1KG17783 , bdr:I1KG17784 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 6/2014"@en .
+}

@@ -1,0 +1,97 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7738 {
+    bda:I1KG26431  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG26431 ;
+        adm:logEntry        bda:LGB3179CC2E0EBC33F , bda:LGD2F718E85390A199 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG26432  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG26432 ;
+        adm:logEntry        bda:LG7DF401A519CB60AA , bda:LGFFDF5220F5C5D78F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F171EF4CE5E84CB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T12:21:14.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG7DF401A519CB60AA
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:08.908Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8EAC08B889A15860
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-06-02T16:52:16.789Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB3179CC2E0EBC33F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-02T16:52:16.62Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD2F718E85390A199
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:07.793Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFFDF5220F5C5D78F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-02T16:52:16.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W3CN7738  a         adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN7738 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "59/W3CN7738.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7738 ;
+        adm:logEntry        bda:LG5F171EF4CE5E84CB , bda:LG8EAC08B889A15860 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG26431  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of chu yis dris lan shes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   226 .
+    
+    bdr:I1KG26432  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of chu yis dris lan shes/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   250 .
+    
+    bdr:IDD16BC361CEF44C60
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147731150" .
+    
+    bdr:W3CN7738  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD16BC361CEF44C60 ;
+        :instanceHasVolume  bdr:I1KG26431 , bdr:I1KG26432 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "6/2017"@en .
+}

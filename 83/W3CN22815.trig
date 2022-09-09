@@ -1,0 +1,73 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22815 {
+    bda:I3CN22903  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN22903 ;
+        adm:logEntry        bda:LG8DDF59ED30E7495E , bda:LGIM8F6FD203 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17DF478A99D37055
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-05-29T13:42:00.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8308ADD78DE390C3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-06-02T16:51:45.31Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8DDF59ED30E7495E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-06-02T16:55:05.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGBE0B70F6D73BB127
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-06-02T16:55:05.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM8F6FD203  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T22:56:29.088Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN22815  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN22815 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "83/W3CN22815.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22815 ;
+        adm:logEntry        bda:LG17DF478A99D37055 , bda:LG8308ADD78DE390C3 , bda:LGBE0B70F6D73BB127 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN22903  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun ye shes rgyal mtshan gyi sku gsung thugs kyi rtogs pa brjod pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   434 .
+    
+    bdr:W3CN22815  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN22903 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+}

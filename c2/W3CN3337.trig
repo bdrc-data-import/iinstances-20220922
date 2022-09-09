@@ -1,0 +1,122 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3337 {
+    bda:I3CN3627  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3627 ;
+        adm:logEntry        bda:LGEFF7A8DE22C32817 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3628  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3628 ;
+        adm:logEntry        bda:LGE3B9C41F4039A532 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3629  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3629 ;
+        adm:logEntry        bda:LG81AF387EC52F6D20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3630  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3630 ;
+        adm:logEntry        bda:LG925CCD17F6C4E71D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I3CN3631  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3631 ;
+        adm:logEntry        bda:LG14F8B69E6333D3BA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG14F8B69E6333D3BA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:21.733Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG81AF387EC52F6D20
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:21.533Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG8A24FD8B2EAF8116
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T12:49:21.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG925CCD17F6C4E71D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:21.633Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE3B9C41F4039A532
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:21.433Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEFF7A8DE22C32817
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T12:49:21.317Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN3337  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3337 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "c2/W3CN3337.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN3337 ;
+        adm:logEntry        bda:LG8A24FD8B2EAF8116 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN3627  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of drag sngags gling pa'i gter chos/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3628  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of drag sngags gling pa'i gter chos/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3629  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of drag sngags gling pa'i gter chos/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3630  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of drag sngags gling pa'i gter chos/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I3CN3631  a         :ImageGroup ;
+        :biblioNote         "Volume 5 of drag sngags gling pa'i gter chos/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN3337  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3627 , bdr:I3CN3628 , bdr:I3CN3629 , bdr:I3CN3630 , bdr:I3CN3631 ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "11/2016"@en .
+}

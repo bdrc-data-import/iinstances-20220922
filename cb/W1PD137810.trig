@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137810 {
+    bda:I2PD19676  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19676 ;
+        adm:logEntry        bda:LGFA62A3E53525138F , bda:LGFADBF3C4A4F490AC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8C6E26E7B2DAE256
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-09T04:16:06.569Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFA62A3E53525138F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-09T04:16:05.778Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFADBF3C4A4F490AC
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-20T01:11:18.3Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1PD137810  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137810 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cb/W1PD137810.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137810 ;
+        adm:logEntry        bda:LG8C6E26E7B2DAE256 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19676  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dbus 'dzin gyi gzhung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   100 .
+    
+    bdr:IDCF7D9EB11E2DD486
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147734827" .
+    
+    bdr:W1PD137810  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCF7D9EB11E2DD486 ;
+        :instanceHasVolume  bdr:I2PD19676 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

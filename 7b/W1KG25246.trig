@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25246 {
+    bda:I1KG25248  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25248 ;
+        adm:logEntry        bda:LG45605BA599DC8581 , bda:LGA4C752A10D48E043 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33977F07FC8C4EAF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T14:18:46.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG45605BA599DC8581
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T14:18:46.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA4C752A10D48E043
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-19T15:43:15.721Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG25246  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG25246 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7b/W1KG25246.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25246 ;
+        adm:logEntry        bda:LG33977F07FC8C4EAF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25248  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dge ldan khri thog rim byon gyi rnam thar las/ khri thog drug cu re brgyad dang bdun cu tham pa dang bdun cu don bzhi bcas kyi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   255 .
+    
+    bdr:W1KG25246  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG25248 ;
+        :numberOfVolumes    1 .
+}

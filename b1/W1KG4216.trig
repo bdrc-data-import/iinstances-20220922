@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG4216 {
+    bda:I1PD97323  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD97323 ;
+        adm:logEntry        bda:LG3A75FB06E9BE0199 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0FC45F9C00CA6851
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-01-22T09:47:57.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3A75FB06E9BE0199
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-01-22T09:47:57.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1KG4216  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG4216 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "b1/W1KG4216.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG4216 ;
+        adm:logEntry        bda:LG0FC45F9C00CA6851 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD97323  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gso ba rig pa'i lag len gces rigs phyogs gcig tu sdebs pa gnad don gsal ba nor bu'i 'phreng ba"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG4216  a         :ImageInstance ;
+        :inCollection       bdr:PR1PL480 ;
+        :instanceHasVolume  bdr:I1PD97323 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2010"@en .
+}

@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1EAP10665 {
+    bda:I1EAP10665  a       adm:AdminData ;
+        adm:adminAbout      bdr:I1EAP10665 ;
+        adm:logEntry        bda:LGIM21BE35D9 , bda:LGIM6336C861 , bda:LGIMAE8B0DEC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGIM21BE35D9  a     adm:InitialDataImport ;
+        adm:logAgent        "works-eap-imprt.xql" ;
+        adm:logDate         "2019-06-27T21:32:15.103Z"^^xsd:dateTime ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM6336C861  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater Managed" ;
+        adm:logDate         "2020-01-15T06:17:04.418Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAE8B0DEC  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-02-17T06:02:12.053Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1EAP10665  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1EAP10665 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "7f/W1EAP10665.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1EAP10665 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1EAP10665  a       :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   233 .
+    
+    bdr:W1EAP10665  a       :ImageInstance ;
+        :inCollection       bdr:PR1EAP1150 , bdr:PR1FPL01 ;
+        :instanceHasVolume  bdr:I1EAP10665 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "This manuscript was digitized at the Fragile Palm Leaves Foundation in Thailand with the generous support of Khyentse Foundation"@en , "This manuscript was digitized with the generous support of the British Library’s Endangered Archives Programme and Arcadia, a charitable fund of Lisbet Rausing and Peter Baldwin. The manuscripts were made available by the Fragile Palm Leaves Foundation."@en .
+}

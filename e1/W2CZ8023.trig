@@ -1,0 +1,71 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2CZ8023 {
+    bda:I1PD106808  a       adm:AdminData ;
+        adm:adminAbout      bdr:I1PD106808 ;
+        adm:logEntry        bda:LGFCACFB0236F926C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I1PD106809  a       adm:AdminData ;
+        adm:adminAbout      bdr:I1PD106809 ;
+        adm:logEntry        bda:LG64D9FB4E6CA232C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG64D9FB4E6CA232C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-07-13T16:03:12.577Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG6A52EDF5DB5AA190
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-07-13T16:03:12.66Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFCACFB0236F926C1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-07-13T16:03:12.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W2CZ8023  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2CZ8023 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e1/W2CZ8023.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2CZ8023 ;
+        adm:logEntry        bda:LG6A52EDF5DB5AA190 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD106808  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of kun dga' legs pa'i rnam thar"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I1PD106809  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of kun dga' legs pa'i rnam thar"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2CZ8023  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I1PD106808 , bdr:I1PD106809 ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+}

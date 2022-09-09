@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC285 {
+    bda:I2PD18818  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18818 ;
+        adm:logEntry        bda:LGA10589FB498E5A6F , bda:LGBEC7AC251643F2D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGA10589FB498E5A6F
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-08T00:00:42.05Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBE79E8610962F52A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-22T23:15:53.816Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGBEC7AC251643F2D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T23:15:52.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC285  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC285 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "18/W1AC285.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC285 ;
+        adm:logEntry        bda:LGBE79E8610962F52A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18818  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bon gyi rig gnas dang bod spyi tshogs kyi 'cham mthun/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   246 .
+    
+    bdr:ID4DC5D4A8BBA92418
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147753158" .
+    
+    bdr:W1AC285  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4DC5D4A8BBA92418 ;
+        :instanceHasVolume  bdr:I2PD18818 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

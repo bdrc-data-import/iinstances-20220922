@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN516 {
+    bda:I3CN3902  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN3902 ;
+        adm:logEntry        bda:LG6604F44E0E76D5D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG6604F44E0E76D5D9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-10T17:39:03.923Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD28F8A7D5F08F3D0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-10T17:39:04.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN516  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN516 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a8/W3CN516.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN516 ;
+        adm:logEntry        bda:LGD28F8A7D5F08F3D0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusAccessioned .
+    
+    bdr:I3CN3902  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of zab mo nang gi don sogs/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN516  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN3902 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "11/2016"@en .
+}

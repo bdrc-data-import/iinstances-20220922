@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS19485 {
+    bda:I8LS19487  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS19487 ;
+        adm:logEntry        bda:LGAE35CDE13CC7E67B , bda:LGE4C343D39849B9A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3457AFB5159762C0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-06T12:39:37.165Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGAE35CDE13CC7E67B
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-13T06:11:56.292Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE4C343D39849B9A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-06T12:39:37.066Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS19485  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS19485 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "85/W8LS19485.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS19485 ;
+        adm:logEntry        bda:LG3457AFB5159762C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS19487  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal chen rdo rje phur pa rgyud lugs kyi sgrub thabs rdo rje khros pai bcud dam dpag bsam ljong pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   14 .
+    
+    bdr:W8LS19485  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS19487 ;
+        :numberOfVolumes    1 .
+}

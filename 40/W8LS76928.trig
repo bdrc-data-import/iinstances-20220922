@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76928 {
+    bda:I8LS76932  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76932 ;
+        adm:logEntry        bda:LG31AD3E877AFA5156 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG31AD3E877AFA5156
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-28T10:15:50.979Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG33A58C5C9CB7D788
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-28T10:15:51.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS76928  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS76928 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "40/W8LS76928.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76928 ;
+        adm:logEntry        bda:LG33A58C5C9CB7D788 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76932  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of thang chen mo'i sde snod 'dzin pa'i skyes chen dag nub phyogs phyags yul du dam pa'i chos kyi dgongs pa 'tshol bar phyin pa'i rtogs brjod/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS76928  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76932 ;
+        :numberOfVolumes    1 .
+}

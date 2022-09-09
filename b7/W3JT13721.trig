@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13721 {
+    bda:I3JT13740  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3JT13740 ;
+        adm:logEntry        bda:LG54179A031E04DCE8 , bda:LGIM363258C8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3C50D65E14A15357
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-13T14:42:43.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LG54179A031E04DCE8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-13T14:42:43.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGIM363258C8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-03T07:41:01.138Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3JT13721  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13721 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b7/W3JT13721.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3JT13721 ;
+        adm:logEntry        bda:LG3C50D65E14A15357 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3JT13740  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mtho rabs dgos srung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   102 .
+    
+    bdr:W3JT13721  a        :ImageInstance ;
+        :inCollection       bdr:PR1VIENNA00 ;
+        :instanceHasVolume  bdr:I3JT13740 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "copy made available by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+}

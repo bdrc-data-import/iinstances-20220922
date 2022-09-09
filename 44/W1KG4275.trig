@@ -1,0 +1,153 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG4275 {
+    bda:I1KG80347  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80347 ;
+        adm:logEntry        bda:LG7E20D3FD82FEF8B7 , bda:LGIM24D87889 , bda:LGIM275C9993 , bda:LGIMD3453C14 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG80348  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80348 ;
+        adm:logEntry        bda:LG8C7C5214F0AF2484 , bda:LGIM01FEAF1D , bda:LGIM37707831 , bda:LGIMC7313B6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1KG80349  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80349 ;
+        adm:logEntry        bda:LG3B060C24A26442E6 , bda:LGIM1618102E , bda:LGIMB8C7AB69 , bda:LGIME0592D68 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3B060C24A26442E6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T14:17:03.696Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E20D3FD82FEF8B7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T14:17:03.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8C7C5214F0AF2484
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T14:17:03.606Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC03342E8359AF55C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2010-03-10T16:38:46.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF901E37156859895
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T14:17:03.78Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM01FEAF1D  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:46.113Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM1618102E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T16:43:00Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM24D87889  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T16:42:59.392Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM275C9993  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:45.735Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM37707831  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T16:42:59.664Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB8C7AB69  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:39.399Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC7313B6E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:38.964Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD3453C14  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:38.587Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME0592D68  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-04-24T21:23:46.501Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG4275  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG4275 ;
+        adm:facetIndex      13 ;
+        adm:gitPath         "44/W1KG4275.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG4275 ;
+        adm:logEntry        bda:LGC03342E8359AF55C , bda:LGF901E37156859895 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80347  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sa skya pa dang sa skya pa ma yin pa'i bla ma kha shas kyi rnam thar/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   664 .
+    
+    bdr:I1KG80348  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of sa skya pa dang sa skya pa ma yin pa'i bla ma kha shas kyi rnam thar/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   738 .
+    
+    bdr:I1KG80349  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of sa skya pa dang sa skya pa ma yin pa'i bla ma kha shas kyi rnam thar/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   424 .
+    
+    bdr:W1KG4275  a         :ImageInstance ;
+        :inCollection       bdr:PR60CTX96 ;
+        :instanceHasReproduction  bdr:IE1KG4275 ;
+        :instanceHasVolume  bdr:I1KG80347 , bdr:I1KG80348 , bdr:I1KG80349 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "9/2019"@en .
+}

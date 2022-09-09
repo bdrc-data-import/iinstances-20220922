@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ369286 {
+    bda:I4CZ369565  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ369565 ;
+        adm:logEntry        bda:LG46D9BE419F7BC119 , bda:LGIME528D260 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG46D9BE419F7BC119
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-26T12:42:35.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9BF493568AE2A569
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T12:42:35.41Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIME528D260  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-29T01:10:26.013Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W4CZ369286  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ369286 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "47/W4CZ369286.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ369286 ;
+        adm:logEntry        bda:LG9BF493568AE2A569 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ369565  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang ba 'dus pa'i rdzogs rim rim lnga gdan rdzogs kyi dmar khrid/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   188 .
+    
+    bdr:W4CZ369286  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ369565 ;
+        :numberOfVolumes    1 .
+}

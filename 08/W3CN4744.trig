@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN4744 {
+    bda:I3CN4746  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN4746 ;
+        adm:logEntry        bda:LG6BF4CDEE7F0D03B7 , bda:LGFB18ABDF84B4F15B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG210652D623B49622
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T10:45:49.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6BF4CDEE7F0D03B7
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-12T00:34:13.818Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGFB18ABDF84B4F15B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T10:45:49.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN4744  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN4744 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "08/W3CN4744.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN4744 ;
+        adm:logEntry        bda:LG210652D623B49622 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN4746  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of 'dul ba 'od ldan/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   204 .
+    
+    bdr:W3CN4744  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN4746 ;
+        :numberOfVolumes    1 .
+}

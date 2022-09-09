@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC331 {
+    bda:I2PD19237  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD19237 ;
+        adm:logEntry        bda:LGBC3F55EE242F457F , bda:LGC82B50C26184A91D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBC3F55EE242F457F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T22:26:21.159Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGC82B50C26184A91D
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-14T00:03:45.975Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD57C0164C9F48ADF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-01T22:26:21.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC331  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC331 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "6f/W1AC331.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC331 ;
+        adm:logEntry        bda:LGD57C0164C9F48ADF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD19237  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rta nag cang shes/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   446 .
+    
+    bdr:ID266D294133F80132
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733056" .
+    
+    bdr:W1AC331  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID266D294133F80132 ;
+        :instanceHasVolume  bdr:I2PD19237 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

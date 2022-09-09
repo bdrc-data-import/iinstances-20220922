@@ -1,0 +1,112 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W24031 {
+    bda:I3835  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3835 ;
+        adm:logEntry        bda:LGCF68FB58E0461B53 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3836  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3836 ;
+        adm:logEntry        bda:LG8B67F37993B89585 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3837  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3837 ;
+        adm:logEntry        bda:LG96204BC0092AF5BD , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3838  a            adm:AdminData ;
+        adm:adminAbout      bdr:I3838 ;
+        adm:logEntry        bda:LG08D4910A1176FA44 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG08D4910A1176FA44
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG8B67F37993B89585
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LG96204BC0092AF5BD
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGCF68FB58E0461B53
+        a                   adm:ContentQC ;
+        adm:logDate         "2004-01"^^xsd:gYearMonth ;
+        adm:logWho          bdu:U00071 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W24031  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W24031 ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "ae/W24031.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W24031 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3835  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   436 .
+    
+    bdr:I3836  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   532 .
+    
+    bdr:I3837  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   524 .
+    
+    bdr:I3838  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   624 .
+    
+    bdr:W24031  a           :ImageInstance ;
+        :inCollection       bdr:PR1PL480 , bdr:PRHD02 ;
+        :instanceHasVolume  bdr:I3835 , bdr:I3836 , bdr:I3837 , bdr:I3838 ;
+        :numberOfVolumes    4 .
+}

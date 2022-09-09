@@ -1,0 +1,134 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN12069 {
+    bda:I3CN12071  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12071 ;
+        adm:logEntry        bda:LG742C56DB96E6E748 , bda:LGIM63ECC816 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12072  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12072 ;
+        adm:logEntry        bda:LGAEB5F5F5296E7882 , bda:LGIM5457DF2A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12073  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12073 ;
+        adm:logEntry        bda:LGA6E622BB349E05F4 , bda:LGIM8A361043 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I3CN12074  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN12074 ;
+        adm:logEntry        bda:LG049FF5A1808F89E5 , bda:LGIM0F7B2D1E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG049FF5A1808F89E5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-19T15:01:15.06Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG742C56DB96E6E748
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-19T15:01:14.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA6E622BB349E05F4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-19T15:01:14.96Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAEB5F5F5296E7882
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-19T15:01:14.844Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCAB887ECEA61B8AD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-19T15:01:15.161Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0F7B2D1E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-08-20T23:19:33.164Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5457DF2A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-08-20T23:19:32.469Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM63ECC816  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-08-20T23:19:32.104Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8A361043  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-08-20T23:19:32.811Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN12069  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN12069 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "a8/W3CN12069.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN12069 ;
+        adm:logEntry        bda:LGCAB887ECEA61B8AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN12071  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dung dkar chos rje'i gces nyar dpe tshogs/ (dum bu gsum pa/)"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   364 .
+    
+    bdr:I3CN12072  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of dung dkar chos rje'i gces nyar dpe tshogs/ (dum bu gsum pa/)"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   327 .
+    
+    bdr:I3CN12073  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of dung dkar chos rje'i gces nyar dpe tshogs/ (dum bu gsum pa/)"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   617 .
+    
+    bdr:I3CN12074  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of dung dkar chos rje'i gces nyar dpe tshogs/ (dum bu gsum pa/)"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   416 .
+    
+    bdr:W3CN12069  a        :ImageInstance ;
+        :inCollection       bdr:PR1PEMAKOD00 ;
+        :instanceHasVolume  bdr:I3CN12071 , bdr:I3CN12072 , bdr:I3CN12073 , bdr:I3CN12074 ;
+        :numberOfVolumes    4 ;
+        :scanInfo           "copy made available from Bob Mayer-Pemako"@en , "Part of the project \"Two Family Libraries from Pemako\" by Robert Mayer. Material photographed in the course of 2016 by Mr Tenzin Dhonyoe, who works for the Multimedia Section of the Shantarakshita Library, Central University for Tibetan Studies. The funds were offered by the Oxford University, John Fell OUP Research Fund."@en .
+}

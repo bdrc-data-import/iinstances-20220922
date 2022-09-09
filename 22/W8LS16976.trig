@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS16976 {
+    bda:I8LS24050  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS24050 ;
+        adm:logEntry        bda:LG7E05FDCBA9950C17 , bda:LGIM69E10468 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS24051  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS24051 ;
+        adm:logEntry        bda:LGAB990C6E80DCE927 , bda:LGIMDEE8CDF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS24052  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS24052 ;
+        adm:logEntry        bda:LG5524F20AAF271A4A , bda:LGIM9F0C138E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1D0371EE7D1C6169
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-15T16:48:05.491Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG41EE83C8422B5AFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-14T09:29:55.422Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG5524F20AAF271A4A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-15T16:48:05.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG7E05FDCBA9950C17
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-15T16:48:05.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGAB990C6E80DCE927
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-15T16:48:05.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM69E10468  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T01:10:59.561Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM9F0C138E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T01:10:59.984Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMDEE8CDF9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-07-17T01:10:59.796Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS16976  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS16976 ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "22/W8LS16976.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS16976 ;
+        adm:logEntry        bda:LG1D0371EE7D1C6169 , bda:LG41EE83C8422B5AFB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS24050  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of g.yu'i phreng ba/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   742 .
+    
+    bdr:I8LS24051  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of g.yu'i phreng ba/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   2 .
+    
+    bdr:I8LS24052  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of g.yu'i phreng ba/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   838 .
+    
+    bdr:W8LS16976  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I8LS24050 , bdr:I8LS24051 , bdr:I8LS24052 ;
+        :numberOfVolumes    3 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

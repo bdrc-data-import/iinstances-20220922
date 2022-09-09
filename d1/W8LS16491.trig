@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS16491 {
+    bda:I8LS16501  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS16501 ;
+        adm:logEntry        bda:LGB00029778016574D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LGB00029778016574D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-13T15:04:03.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF83D22585031309A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-13T15:04:03.178Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS16491  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS16491 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "d1/W8LS16491.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS16491 ;
+        adm:logEntry        bda:LGF83D22585031309A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS16501  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of pad+ma'i snyan brgyud yang gsang bla med/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   579 .
+    
+    bdr:W8LS16491  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS16501 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 05/2015"@en .
+}

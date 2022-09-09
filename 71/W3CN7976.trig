@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN7976 {
+    bda:I3CN7978  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN7978 ;
+        adm:logEntry        bda:LGF1F2B5C96AF3BDB3 , bda:LGFD8CA8619A24A8AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LGBA6B3E0CEB4A6D89
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T16:29:28.338Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGF1F2B5C96AF3BDB3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T16:29:28.239Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFD8CA8619A24A8AE
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:43.487Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN7976  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN7976 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "71/W3CN7976.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN7976 ;
+        adm:logEntry        bda:LGBA6B3E0CEB4A6D89 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN7978  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of brtse dung /"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   111 .
+    
+    bdr:W3CN7976  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN7978 ;
+        :numberOfVolumes    1 .
+}

@@ -1,0 +1,61 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26656 {
+    bda:I3CN26677  a        adm:AdminData ;
+        adm:adminAbout      bdr:I3CN26677 ;
+        adm:logEntry        bda:LG7B4C796C7B6BD7C2 , bda:LGIMDF53579F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG7B4C796C7B6BD7C2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-31T20:57:06.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE8104371274BF6F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-31T20:57:06.983Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIMDF53579F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-14T05:44:32.904Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W3CN26656  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN26656 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "df/W3CN26656.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN26656 ;
+        adm:logEntry        bda:LGE8104371274BF6F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3CN26677  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yul chos mes po'i snying nor/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   408 .
+    
+    bdr:W3CN26656  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I3CN26677 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "2021"@en .
+}

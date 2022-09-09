@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG25861 {
+    bda:I1KG25863  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG25863 ;
+        adm:logEntry        bda:LG5160A0210939F6F6 , bda:LGB5A372307A2427C6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5160A0210939F6F6
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:54:01.956Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB5A372307A2427C6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T14:51:09.911Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF27EAFB0F27B48E1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T14:51:09.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG25861  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG25861 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cd/W1KG25861.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG25861 ;
+        adm:logEntry        bda:LGF27EAFB0F27B48E1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG25863  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of yul mdo smad kyi srid pa'i yul lha gzhi bdag gi byung ba brjod pa'i deb ther khra bo/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   544 .
+    
+    bdr:ID62E0DB3B85D3CD52
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730595" .
+    
+    bdr:W1KG25861  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID62E0DB3B85D3CD52 ;
+        :instanceHasVolume  bdr:I1KG25863 ;
+        :numberOfVolumes    1 .
+}

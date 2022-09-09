@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS16014 {
+    bda:I8LS16016  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS16016 ;
+        adm:logEntry        bda:LG12B1452E46F1A71A , bda:LGIM79219A3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG12B1452E46F1A71A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-13T08:56:56.499Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1EA332DF9103CEC4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-13T08:56:56.599Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM79219A3E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-29T02:32:05.925Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS16014  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS16014 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "eb/W8LS16014.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS16014 ;
+        adm:logEntry        bda:LG1EA332DF9103CEC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS16016  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sher phyin pod ka pa/ rgyud rdo rje snying po da pa dang mdo sde pod zha pa/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   228 .
+    
+    bdr:W8LS16014  a        :ImageInstance ;
+        :inCollection       bdr:PR1VIENNA00 ;
+        :instanceHasVolume  bdr:I8LS16016 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+}

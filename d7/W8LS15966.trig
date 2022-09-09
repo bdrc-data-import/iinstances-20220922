@@ -1,0 +1,62 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS15966 {
+    bda:I8LS15968  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS15968 ;
+        adm:logEntry        bda:LG33A3FD00AC99E168 , bda:LGIM736900D9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG33A3FD00AC99E168
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-06T11:41:24.291Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG59A4A398BF7A1C9D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-01-06T11:41:24.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM736900D9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-09-24T02:15:48.99Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS15966  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS15966 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d7/W8LS15966.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS15966 ;
+        adm:logEntry        bda:LG59A4A398BF7A1C9D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS15968  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gnas chen gangs ri mtsho gsum sogs kyi gnas yig"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   55 .
+    
+    bdr:W8LS15966  a        :ImageInstance ;
+        :inCollection       bdr:PR1VIENNA00 ;
+        :instanceHasVolume  bdr:I8LS15968 ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+}

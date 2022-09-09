@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18577 {
+    bda:I8LS18579  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18579 ;
+        adm:logEntry        bda:LG70F9A749B9EC9DB9 , bda:LGF71F5AEAF7E714C7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG70F9A749B9EC9DB9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:17:51.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE126843328831BB6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:17:51.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF71F5AEAF7E714C7
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:28.449Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS18577  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18577 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9e/W8LS18577.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18577 ;
+        adm:logEntry        bda:LGE126843328831BB6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18579  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gzhi grangs mdzod rgyud khongs rnam bshad/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   695 .
+    
+    bdr:IDE1A0AD33961AF333
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147719213" .
+    
+    bdr:W8LS18577  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE1A0AD33961AF333 ;
+        :instanceHasVolume  bdr:I8LS18579 ;
+        :numberOfVolumes    1 .
+}
