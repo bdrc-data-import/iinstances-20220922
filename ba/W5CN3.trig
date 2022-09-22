@@ -1,0 +1,124 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.ldspdi.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W5CN3 {
+    bda:LG0W5CN3_6LAPIQFFQWZQ
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-19T16:06:32.367Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@bo ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_95TEZWEHVGV0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T15:04:38.379Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_EQ06XH9LZBJH
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-19T16:01:03.088Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@bo ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_NKVP3J2OCHYT
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-19T15:58:42.518Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@bo ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_PAVNHVS1UJU5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-20T15:04:40.488Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_SPRJZM4JRW8H
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-19T15:59:54.402Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:LG0W5CN3_UIC833FPLIFE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-19T16:04:43.486Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@bo ;
+        adm:logWho          bdu:U0ES615087297 .
+    
+    bda:W5CN3  a            adm:AdminData ;
+        rdfs:comment        "testing"@en ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W5CN3 ;
+        adm:graphId         bdg:W5CN3 ;
+        adm:logEntry        bda:LG0W5CN3_6LAPIQFFQWZQ , bda:LG0W5CN3_95TEZWEHVGV0 , bda:LG0W5CN3_EQ06XH9LZBJH , bda:LG0W5CN3_NKVP3J2OCHYT , bda:LG0W5CN3_PAVNHVS1UJU5 , bda:LG0W5CN3_SPRJZM4JRW8H , bda:LG0W5CN3_UIC833FPLIFE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I5CN6  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I5CN7  a            bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I5CN8  a            bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:NTW5CN3QI0NJ48T
+        a                   bdo:Note ;
+        bdo:noteText        "ok"@en .
+    
+    bdr:W5CN3  a            bdo:ImageInstance ;
+        bdo:inCollection    bdr:G5CN2 ;
+        bdo:instanceHasVolume  bdr:I5CN6 , bdr:I5CN7 , bdr:I5CN8 ;
+        bdo:isComplete      true ;
+        bdo:note            bdr:NTW5CN3QI0NJ48T ;
+        bdo:scanInfo        "scanned at field"@bo-x-ewts .
+}

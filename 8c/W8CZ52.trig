@@ -1,0 +1,174 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.ldspdi.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ52 {
+    bda:LG0W8CZ52_EUPTQL8I9Y04
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T15:30:57.673Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ52_JAWCQAPBHQK5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-27T14:27:29.258Z"^^xsd:dateTime ;
+        adm:logMessage      "nsrq"@bo ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:W8CZ52  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ52 ;
+        adm:graphId         bdg:W8CZ52 ;
+        adm:logEntry        bda:LG0W8CZ52_EUPTQL8I9Y04 , bda:LG0W8CZ52_JAWCQAPBHQK5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ291  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ455  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ456  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ457  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ458  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ459  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ460  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ461  a          bdo:ImageGroup ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ462  a          bdo:ImageGroup ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ463  a          bdo:ImageGroup ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ464  a          bdo:ImageGroup ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ465  a          bdo:ImageGroup ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ466  a          bdo:ImageGroup ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ467  a          bdo:ImageGroup ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ468  a          bdo:ImageGroup ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ469  a          bdo:ImageGroup ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ470  a          bdo:ImageGroup ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ471  a          bdo:ImageGroup ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ472  a          bdo:ImageGroup ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ473  a          bdo:ImageGroup ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ474  a          bdo:ImageGroup ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ475  a          bdo:ImageGroup ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ476  a          bdo:ImageGroup ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ477  a          bdo:ImageGroup ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ478  a          bdo:ImageGroup ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W8CZ52  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ291 , bdr:I8CZ455 , bdr:I8CZ456 , bdr:I8CZ457 , bdr:I8CZ458 , bdr:I8CZ459 , bdr:I8CZ460 , bdr:I8CZ461 , bdr:I8CZ462 , bdr:I8CZ463 , bdr:I8CZ464 , bdr:I8CZ465 , bdr:I8CZ466 , bdr:I8CZ467 , bdr:I8CZ468 , bdr:I8CZ469 , bdr:I8CZ470 , bdr:I8CZ471 , bdr:I8CZ472 , bdr:I8CZ473 , bdr:I8CZ474 , bdr:I8CZ475 , bdr:I8CZ476 , bdr:I8CZ477 , bdr:I8CZ478 ;
+        bdo:scanInfo        "Scan at Great Enlightenment Buddhist Institute Society (GEBIS)"@en .
+}

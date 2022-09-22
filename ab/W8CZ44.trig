@@ -1,0 +1,524 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.ldspdi.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ44 {
+    bda:LG0W8CZ44_3CSC6JSEBSCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-30T20:50:01.332Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ44_GXY6NKVR2XCX
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-14T15:57:04.500Z"^^xsd:dateTime ;
+        adm:logMessage      "གསར་པ"@bo ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ44_IXDUIDZGWGIH
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-14T15:55:36.684Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ44_LRWY2FJVPOBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-30T20:46:24.097Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ44_YSD4TZAHB0FR
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-14T15:55:38.031Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:W8CZ44  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ44 ;
+        adm:graphId         bdg:W8CZ44 ;
+        adm:logEntry        bda:LG0W8CZ44_3CSC6JSEBSCC , bda:LG0W8CZ44_GXY6NKVR2XCX , bda:LG0W8CZ44_IXDUIDZGWGIH , bda:LG0W8CZ44_LRWY2FJVPOBF , bda:LG0W8CZ44_YSD4TZAHB0FR ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ299  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ300  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ301  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ302  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ303  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ304  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ305  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ306  a          bdo:ImageGroup ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ307  a          bdo:ImageGroup ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ308  a          bdo:ImageGroup ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ309  a          bdo:ImageGroup ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ310  a          bdo:ImageGroup ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ311  a          bdo:ImageGroup ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ312  a          bdo:ImageGroup ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ313  a          bdo:ImageGroup ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ314  a          bdo:ImageGroup ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ315  a          bdo:ImageGroup ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ316  a          bdo:ImageGroup ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ317  a          bdo:ImageGroup ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ318  a          bdo:ImageGroup ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ319  a          bdo:ImageGroup ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ320  a          bdo:ImageGroup ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ321  a          bdo:ImageGroup ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ322  a          bdo:ImageGroup ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ323  a          bdo:ImageGroup ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ324  a          bdo:ImageGroup ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ325  a          bdo:ImageGroup ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ326  a          bdo:ImageGroup ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ327  a          bdo:ImageGroup ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ328  a          bdo:ImageGroup ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ329  a          bdo:ImageGroup ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ330  a          bdo:ImageGroup ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ331  a          bdo:ImageGroup ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ332  a          bdo:ImageGroup ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ333  a          bdo:ImageGroup ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ334  a          bdo:ImageGroup ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ335  a          bdo:ImageGroup ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ336  a          bdo:ImageGroup ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ337  a          bdo:ImageGroup ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ338  a          bdo:ImageGroup ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ339  a          bdo:ImageGroup ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ340  a          bdo:ImageGroup ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ341  a          bdo:ImageGroup ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ342  a          bdo:ImageGroup ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ343  a          bdo:ImageGroup ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ344  a          bdo:ImageGroup ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ345  a          bdo:ImageGroup ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ346  a          bdo:ImageGroup ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ347  a          bdo:ImageGroup ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ348  a          bdo:ImageGroup ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ349  a          bdo:ImageGroup ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ350  a          bdo:ImageGroup ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ351  a          bdo:ImageGroup ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ352  a          bdo:ImageGroup ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ353  a          bdo:ImageGroup ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ354  a          bdo:ImageGroup ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ355  a          bdo:ImageGroup ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ356  a          bdo:ImageGroup ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ357  a          bdo:ImageGroup ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ358  a          bdo:ImageGroup ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ359  a          bdo:ImageGroup ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ360  a          bdo:ImageGroup ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ361  a          bdo:ImageGroup ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ362  a          bdo:ImageGroup ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ363  a          bdo:ImageGroup ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ364  a          bdo:ImageGroup ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ365  a          bdo:ImageGroup ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ366  a          bdo:ImageGroup ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ367  a          bdo:ImageGroup ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ368  a          bdo:ImageGroup ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ369  a          bdo:ImageGroup ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ370  a          bdo:ImageGroup ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ371  a          bdo:ImageGroup ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ372  a          bdo:ImageGroup ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ373  a          bdo:ImageGroup ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ374  a          bdo:ImageGroup ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ375  a          bdo:ImageGroup ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ376  a          bdo:ImageGroup ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ377  a          bdo:ImageGroup ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ378  a          bdo:ImageGroup ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ379  a          bdo:ImageGroup ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ380  a          bdo:ImageGroup ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ381  a          bdo:ImageGroup ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ382  a          bdo:ImageGroup ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ383  a          bdo:ImageGroup ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ384  a          bdo:ImageGroup ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ385  a          bdo:ImageGroup ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ386  a          bdo:ImageGroup ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ387  a          bdo:ImageGroup ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ388  a          bdo:ImageGroup ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ389  a          bdo:ImageGroup ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ390  a          bdo:ImageGroup ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ391  a          bdo:ImageGroup ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ392  a          bdo:ImageGroup ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ393  a          bdo:ImageGroup ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ394  a          bdo:ImageGroup ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ395  a          bdo:ImageGroup ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ396  a          bdo:ImageGroup ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ397  a          bdo:ImageGroup ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ398  a          bdo:ImageGroup ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ399  a          bdo:ImageGroup ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ400  a          bdo:ImageGroup ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ401  a          bdo:ImageGroup ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ402  a          bdo:ImageGroup ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ403  a          bdo:ImageGroup ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ404  a          bdo:ImageGroup ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ405  a          bdo:ImageGroup ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ406  a          bdo:ImageGroup ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W8CZ44  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ299 , bdr:I8CZ300 , bdr:I8CZ301 , bdr:I8CZ302 , bdr:I8CZ303 , bdr:I8CZ304 , bdr:I8CZ305 , bdr:I8CZ306 , bdr:I8CZ307 , bdr:I8CZ308 , bdr:I8CZ309 , bdr:I8CZ310 , bdr:I8CZ311 , bdr:I8CZ312 , bdr:I8CZ313 , bdr:I8CZ314 , bdr:I8CZ315 , bdr:I8CZ316 , bdr:I8CZ317 , bdr:I8CZ318 , bdr:I8CZ319 , bdr:I8CZ320 , bdr:I8CZ321 , bdr:I8CZ322 , bdr:I8CZ323 , bdr:I8CZ324 , bdr:I8CZ325 , bdr:I8CZ326 , bdr:I8CZ327 , bdr:I8CZ328 , bdr:I8CZ329 , bdr:I8CZ330 , bdr:I8CZ331 , bdr:I8CZ332 , bdr:I8CZ333 , bdr:I8CZ334 , bdr:I8CZ335 , bdr:I8CZ336 , bdr:I8CZ337 , bdr:I8CZ338 , bdr:I8CZ339 , bdr:I8CZ340 , bdr:I8CZ341 , bdr:I8CZ342 , bdr:I8CZ343 , bdr:I8CZ344 , bdr:I8CZ345 , bdr:I8CZ346 , bdr:I8CZ347 , bdr:I8CZ348 , bdr:I8CZ349 , bdr:I8CZ350 , bdr:I8CZ351 , bdr:I8CZ352 , bdr:I8CZ353 , bdr:I8CZ354 , bdr:I8CZ355 , bdr:I8CZ356 , bdr:I8CZ357 , bdr:I8CZ358 , bdr:I8CZ359 , bdr:I8CZ360 , bdr:I8CZ361 , bdr:I8CZ362 , bdr:I8CZ363 , bdr:I8CZ364 , bdr:I8CZ365 , bdr:I8CZ366 , bdr:I8CZ367 , bdr:I8CZ368 , bdr:I8CZ369 , bdr:I8CZ370 , bdr:I8CZ371 , bdr:I8CZ372 , bdr:I8CZ373 , bdr:I8CZ374 , bdr:I8CZ375 , bdr:I8CZ376 , bdr:I8CZ377 , bdr:I8CZ378 , bdr:I8CZ379 , bdr:I8CZ380 , bdr:I8CZ381 , bdr:I8CZ382 , bdr:I8CZ383 , bdr:I8CZ384 , bdr:I8CZ385 , bdr:I8CZ386 , bdr:I8CZ387 , bdr:I8CZ388 , bdr:I8CZ389 , bdr:I8CZ390 , bdr:I8CZ391 , bdr:I8CZ392 , bdr:I8CZ393 , bdr:I8CZ394 , bdr:I8CZ395 , bdr:I8CZ396 , bdr:I8CZ397 , bdr:I8CZ398 , bdr:I8CZ399 , bdr:I8CZ400 , bdr:I8CZ401 , bdr:I8CZ402 , bdr:I8CZ403 , bdr:I8CZ404 , bdr:I8CZ405 , bdr:I8CZ406 ;
+        bdo:scanInfo        "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) in Canada."@en .
+}
