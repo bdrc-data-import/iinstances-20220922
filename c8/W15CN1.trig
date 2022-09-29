@@ -24,10 +24,8 @@ bdg:W15CN1 {
         adm:logWho          bdu:U00007 .
     
     bda:W15CN1  a           adm:AdminData ;
-        :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W15CN1 ;
-        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "c8/W15CN1.trig" ;
         adm:gitRepo         bda:GR0014 ;
@@ -39,14 +37,11 @@ bdg:W15CN1 {
     bdr:I15CN3  a           :ImageGroup ;
         :biblioNote         "Volume 1 of testing 001 for Windows laptoop install"@en ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W15CN1 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
     bdr:W15CN1  a           :ImageInstance ;
         :instanceHasVolume  bdr:I15CN3 ;
-        :instanceReproductionOf  bdr:MW15CN1 ;
-        :isRoot             true ;
         :numberOfVolumes    1 ;
         :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: ignore - testing only - 001"@en .
 }
