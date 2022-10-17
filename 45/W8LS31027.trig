@@ -27,12 +27,6 @@ bdg:W8LS31027 {
         adm:logEntry        bda:LG2E7414EFF7004502 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG18EDBD9CBF8F6AE9
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-01-11T14:18:01.066Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:LG2E7414EFF7004502
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-01-11T14:18:00.95Z"^^xsd:dateTime ;
@@ -58,10 +52,9 @@ bdg:W8LS31027 {
         adm:gitPath         "45/W8LS31027.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS31027 ;
-        adm:logEntry        bda:LG18EDBD9CBF8F6AE9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS31048  a        :ImageGroup ;
         :biblioNote         "Volume 1 of shes bya kun khyab/"@en ;
@@ -82,6 +75,7 @@ bdg:W8LS31027 {
         :volumePagesTotal   0 .
     
     bdr:W8LS31027  a        :ImageInstance ;
+        :inCollection       bdr:PR1KG1 ;
         :instanceHasVolume  bdr:I8LS31048 , bdr:I8LS31049 , bdr:I8LS31050 ;
         :numberOfVolumes    3 .
 }
