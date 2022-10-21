@@ -1,22 +1,80 @@
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS68229 {
+    bda:I8CZ11  a           adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ11 ;
+        adm:logEntry        bda:LG0W8LS68229_DR5H062GOKQJ .
+    
+    bda:I8LS68223  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68223 ;
+        adm:logEntry        bda:LG0W8LS68229_DR5H062GOKQJ .
+    
+    bda:I8LS68224  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68224 ;
+        adm:logEntry        bda:LG0W8LS68229_DR5H062GOKQJ .
+    
+    bda:I8LS68225  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68225 ;
+        adm:logEntry        bda:LG0W8LS68229_DR5H062GOKQJ .
+    
     bda:I8LS68231  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68231 ;
-        adm:logEntry        bda:LG439B40C348C73CB9 , bda:LGIM0542941D , bda:LGIM15A54694 , bda:LGIM194B12FE , bda:LGIM19CB1547 , bda:LGIM226E0346 , bda:LGIM33101D51 , bda:LGIM3AA5BD07 , bda:LGIM3FDA5694 , bda:LGIM4909EE61 , bda:LGIM64F4D217 , bda:LGIM733E8010 , bda:LGIMB6F7C55E , bda:LGIMBC099A9D , bda:LGIMBD38936D , bda:LGIMCE9027E8 , bda:LGIMD0BD1256 , bda:LGIMD50A4010 , bda:LGIMD7F8B68F , bda:LGIMF632A369 , bda:LGIMFAD7DA3C ;
+        adm:logEntry        bda:LG0W8LS68229_DR5H062GOKQJ , bda:LG439B40C348C73CB9 , bda:LGIM0542941D , bda:LGIM15A54694 , bda:LGIM194B12FE , bda:LGIM19CB1547 , bda:LGIM226E0346 , bda:LGIM33101D51 , bda:LGIM3AA5BD07 , bda:LGIM3FDA5694 , bda:LGIM4909EE61 , bda:LGIM64F4D217 , bda:LGIM733E8010 , bda:LGIMB6F7C55E , bda:LGIMBC099A9D , bda:LGIMBD38936D , bda:LGIMCE9027E8 , bda:LGIMD0BD1256 , bda:LGIMD50A4010 , bda:LGIMD7F8B68F , bda:LGIMF632A369 , bda:LGIMFAD7DA3C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS68229_DR5H062GOKQJ
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2022-10-21T03:37:04.676020Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG439B40C348C73CB9
         a                   adm:InitialDataCreation ;
@@ -162,20 +220,30 @@ bdg:W8LS68229 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS68231  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of rtsis rig la 'jug pa'i sgo/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   224 .
+    bdr:I8CZ11  bdo:volumePagesTotal  10 .
+    
+    bdr:I8LS68223  bdo:volumePagesTotal
+            581 .
+    
+    bdr:I8LS68224  bdo:volumePagesTotal
+            670 .
+    
+    bdr:I8LS68225  bdo:volumePagesTotal
+            405 .
+    
+    bdr:I8LS68231  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rtsis rig la 'jug pa'i sgo/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  224 .
     
     bdr:IDF7A3ACC847CA691A
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147738816" .
     
-    bdr:W8LS68229  a        :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDF7A3ACC847CA691A ;
-        :instanceHasVolume  bdr:I8LS68231 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W8LS68229  a        bdo:ImageInstance ;
+        bf:identifiedBy     bdr:IDF7A3ACC847CA691A ;
+        bdo:instanceHasVolume  bdr:I8LS68231 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
