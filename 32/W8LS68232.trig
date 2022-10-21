@@ -47,11 +47,34 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS68232 {
+    bda:I8CZ11  a           adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ11 ;
+        adm:logEntry        bda:LG0W8LS68232_2G97AEQAEGWL .
+    
+    bda:I8LS68223  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68223 ;
+        adm:logEntry        bda:LG0W8LS68232_2G97AEQAEGWL .
+    
+    bda:I8LS68224  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68224 ;
+        adm:logEntry        bda:LG0W8LS68232_2G97AEQAEGWL .
+    
+    bda:I8LS68225  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68225 ;
+        adm:logEntry        bda:LG0W8LS68232_2G97AEQAEGWL .
+    
     bda:I8LS68234  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68234 ;
-        adm:logEntry        bda:LG0W8LS68232_40FTBMICQJPW , bda:LG0W8LS68232_CCUTFQOV6J9C , bda:LG0W8LS68232_DHAHHCIWZAKH , bda:LG0W8LS68232_SALL1WBLZBJW , bda:LG0W8LS68232_VSVUWHDT60HJ , bda:LGF5137E8FEE9285B7 , bda:LGIM3C0F89B7 , bda:LGIM3F723B6D , bda:LGIM987146FC ;
+        adm:logEntry        bda:LG0W8LS68232_2G97AEQAEGWL , bda:LG0W8LS68232_40FTBMICQJPW , bda:LG0W8LS68232_CCUTFQOV6J9C , bda:LG0W8LS68232_DHAHHCIWZAKH , bda:LG0W8LS68232_SALL1WBLZBJW , bda:LG0W8LS68232_VSVUWHDT60HJ , bda:LGF5137E8FEE9285B7 , bda:LGIM3C0F89B7 , bda:LGIM3F723B6D , bda:LGIM987146FC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS68232_2G97AEQAEGWL
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2022-10-21T03:37:20.785554Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS68232_40FTBMICQJPW
         a                   adm:ImagesUpdated ;
@@ -129,6 +152,17 @@ bdg:W8LS68232 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ11  bdo:volumePagesTotal  10 .
+    
+    bdr:I8LS68223  bdo:volumePagesTotal
+            581 .
+    
+    bdr:I8LS68224  bdo:volumePagesTotal
+            670 .
+    
+    bdr:I8LS68225  bdo:volumePagesTotal
+            405 .
     
     bdr:I8LS68234  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of g.yang las 'phors pa'i gtam/"@en ;
