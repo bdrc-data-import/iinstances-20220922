@@ -49,12 +49,19 @@
 bdg:W8LS77070 {
     bda:I8LS77072  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77072 ;
-        adm:logEntry        bda:LG0W8LS77070_6WTSW0RIAIMT , bda:LG5397AAA899AD3297 ;
+        adm:logEntry        bda:LG0W8LS77070_6WTSW0RIAIMT , bda:LG0W8LS77070_G5ZLYFJKEY8Z , bda:LG5397AAA899AD3297 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0W8LS77070_6WTSW0RIAIMT
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:18:37.478486Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77070_G5ZLYFJKEY8Z
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T10:16:58.291729Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
