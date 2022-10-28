@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77246 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77248 ;
+        adm:logEntry        bda:LG0W8LS77246_LDWU0JO0MN0M .
+    
     bda:I8LS77248  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77248 ;
         adm:logEntry        bda:LG0W8LS77246_JEJCCNSSZWWN , bda:LG4ECE7D00D707AD1A ;
@@ -55,6 +59,13 @@ bdg:W8LS77246 {
     bda:LG0W8LS77246_JEJCCNSSZWWN
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-28T00:25:39.261961Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77246_LDWU0JO0MN0M
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:39.791983Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77246 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77248  bdo:volumePagesTotal  196 .
     
     bdr:I8LS77248  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of byang chub lam rim chen mo'i sngon 'gro'i gsung chos/"@en ;
