@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77261 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77263 ;
+        adm:logEntry        bda:LG0W8LS77261_FODKWPNZ0VCS .
+    
     bda:I8LS77263  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77263 ;
         adm:logEntry        bda:LG0W8LS77261_ST78COECTB6A , bda:LGE51743CDAB4E3E51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS77261_FODKWPNZ0VCS
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:51.240333Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77261_ST78COECTB6A
         a                   adm:ImagesUpdated ;
@@ -82,6 +93,8 @@ bdg:W8LS77261 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77263  bdo:volumePagesTotal  300 .
     
     bdr:I8LS77263  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of theg chen blo sbyong gi khrid yig bdud rtsi'i snying po/"@en ;
