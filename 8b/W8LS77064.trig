@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77064 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77066 ;
+        adm:logEntry        bda:LG0W8LS77064_CDYN1ZSBZABX .
+    
     bda:I8LS77066  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77066 ;
         adm:logEntry        bda:LG0W8LS77064_GYOEZPFSP6PK , bda:LG41EB97B354930DEB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS77064_CDYN1ZSBZABX
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:47:33.613641Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77064_GYOEZPFSP6PK
         a                   adm:ImagesUpdated ;
@@ -82,6 +93,8 @@ bdg:W8LS77064 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77066  bdo:volumePagesTotal  396 .
     
     bdr:I8LS77066  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of drang nges rnam 'byed kyi dka' 'grel rtsom 'phro legs bshad snying po'i yang snying"@en ;
