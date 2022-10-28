@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76890 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76892 ;
+        adm:logEntry        bda:LG0W8LS76890_7IXIUZPOERBY .
+    
     bda:I8LS76892  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76892 ;
         adm:logEntry        bda:LG0W8LS76890_4A29CSSKYSOW , bda:LG9B8C0F7A2B2129B3 ;
@@ -55,6 +59,13 @@ bdg:W8LS76890 {
     bda:LG0W8LS76890_4A29CSSKYSOW
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:43:49.370630Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76890_7IXIUZPOERBY
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:20.152131Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76890 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76892  bdo:volumePagesTotal  484 .
     
     bdr:I8LS76892  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of ri chos nges don rgya mtsho/"@en ;
