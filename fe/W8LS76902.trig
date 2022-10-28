@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76902 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76904 ;
+        adm:logEntry        bda:LG0W8LS76902_XFL7T1YUOBAA .
+    
     bda:I8LS76904  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76904 ;
         adm:logEntry        bda:LG0W8LS76902_I5XOARJSKLV3 , bda:LG2FCAD3F5DF5AF62A ;
@@ -55,6 +59,13 @@ bdg:W8LS76902 {
     bda:LG0W8LS76902_I5XOARJSKLV3
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:44:51.530022Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76902_XFL7T1YUOBAA
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:26.693023Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76902 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76904  bdo:volumePagesTotal  80 .
     
     bdr:I8LS76904  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of dbu ma'i lde mig"@en ;
