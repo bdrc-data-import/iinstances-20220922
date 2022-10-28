@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76967 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76969 ;
+        adm:logEntry        bda:LG0W8LS76967_GKUODLBKQIAY .
+    
     bda:I8LS76969  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76969 ;
         adm:logEntry        bda:LG0W8LS76967_AP5MIS765RSX , bda:LGA131BF8729FAE9A5 ;
@@ -55,6 +59,13 @@ bdg:W8LS76967 {
     bda:LG0W8LS76967_AP5MIS765RSX
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:51:34.949903Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76967_GKUODLBKQIAY
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:57.515717Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76967 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76969  bdo:volumePagesTotal  248 .
     
     bdr:I8LS76969  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of bstan bcos mngon rtogs rgyan tshig don gyi sgo nas bshad pa bymas mgon zhal lung /"@en ;
