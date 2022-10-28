@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77098 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77100 ;
+        adm:logEntry        bda:LG0W8LS77098_GFTBJBHTZLG2 .
+    
     bda:I8LS77100  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77100 ;
         adm:logEntry        bda:LG0W8LS77098_SWBWYYFYT2C8 , bda:LGF672ACCCBCFDF32D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS77098_GFTBJBHTZLG2
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:47:52.716807Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77098_SWBWYYFYT2C8
         a                   adm:ImagesUpdated ;
@@ -82,6 +93,8 @@ bdg:W8LS77098 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77100  bdo:volumePagesTotal  148 .
     
     bdr:I8LS77100  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi mtshon byed kyi chos rnams kyi yan lag rgyas par bshad pa sbas don rab gsal/"@en ;
