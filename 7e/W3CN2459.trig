@@ -1,17 +1,56 @@
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN2459 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:21417 , bdr:21418 , bdr:21419 , bdr:21420 , bdr:21421 , bdr:21422 , bdr:21423 , bdr:21424 , bdr:21425 , bdr:21426 , bdr:21427 , bdr:21428 , bdr:21429 , bdr:21430 , bdr:21431 , bdr:21432 , bdr:21433 , bdr:21434 , bdr:21435 , bdr:21436 , bdr:21437 , bdr:21438 , bdr:21439 , bdr:21440 , bdr:21441 , bdr:21442 , bdr:21443 , bdr:21444 , bdr:21445 , bdr:21446 , bdr:21447 , bdr:21448 , bdr:21449 , bdr:2145 , bdr:21450 , bdr:21451 , bdr:21452 , bdr:21453 , bdr:21454 , bdr:21455 , bdr:21456 , bdr:21457 , bdr:21458 , bdr:21460 , bdr:21461 , bdr:21462 , bdr:21463 , bdr:21464 , bdr:21465 , bdr:21466 , bdr:21467 , bdr:21468 , bdr:21469 ;
+        adm:logEntry        bda:LG0W3CN2459_N240PVJLONFQ .
+    
     bda:I3CN21417  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21417 ;
         adm:logEntry        bda:LGCB316ECF717065D8 , bda:LGIM35DD4CAD ;
@@ -335,6 +374,13 @@ bdg:W3CN2459 {
         adm:logDate         "2019-10-02T15:14:22.076Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN2459_N240PVJLONFQ
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2022-10-28T09:51:52.574820Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1F688688E979C19D
         a                   adm:InitialDataCreation ;
@@ -984,326 +1030,432 @@ bdg:W3CN2459 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN21417  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   304 .
+    bdr:21417  bdo:volumePagesTotal  304 .
     
-    bdr:I3CN21418  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   380 .
+    bdr:21418  bdo:volumePagesTotal  380 .
     
-    bdr:I3CN21419  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   394 .
+    bdr:21419  bdo:volumePagesTotal  394 .
     
-    bdr:I3CN21420  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   378 .
+    bdr:21420  bdo:volumePagesTotal  378 .
     
-    bdr:I3CN21421  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   390 .
+    bdr:21421  bdo:volumePagesTotal  390 .
     
-    bdr:I3CN21422  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   408 .
+    bdr:21422  bdo:volumePagesTotal  408 .
     
-    bdr:I3CN21423  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   206 .
+    bdr:21423  bdo:volumePagesTotal  206 .
     
-    bdr:I3CN21424  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   332 .
+    bdr:21424  bdo:volumePagesTotal  332 .
     
-    bdr:I3CN21425  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   360 .
+    bdr:21425  bdo:volumePagesTotal  360 .
     
-    bdr:I3CN21426  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   400 .
+    bdr:21426  bdo:volumePagesTotal  400 .
     
-    bdr:I3CN21427  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   354 .
+    bdr:21427  bdo:volumePagesTotal  354 .
     
-    bdr:I3CN21428  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   408 .
+    bdr:21428  bdo:volumePagesTotal  408 .
     
-    bdr:I3CN21429  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   370 .
+    bdr:21429  bdo:volumePagesTotal  370 .
     
-    bdr:I3CN21430  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   396 .
+    bdr:21430  bdo:volumePagesTotal  396 .
     
-    bdr:I3CN21431  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   482 .
+    bdr:21431  bdo:volumePagesTotal  482 .
     
-    bdr:I3CN21432  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   408 .
+    bdr:21432  bdo:volumePagesTotal  408 .
     
-    bdr:I3CN21433  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   392 .
+    bdr:21433  bdo:volumePagesTotal  392 .
     
-    bdr:I3CN21434  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   290 .
+    bdr:21434  bdo:volumePagesTotal  290 .
     
-    bdr:I3CN21435  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   286 .
+    bdr:21435  bdo:volumePagesTotal  286 .
     
-    bdr:I3CN21436  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   264 .
+    bdr:21436  bdo:volumePagesTotal  264 .
     
-    bdr:I3CN21437  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   210 .
+    bdr:21437  bdo:volumePagesTotal  210 .
     
-    bdr:I3CN21438  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   308 .
+    bdr:21438  bdo:volumePagesTotal  308 .
     
-    bdr:I3CN21439  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   356 .
+    bdr:21439  bdo:volumePagesTotal  356 .
     
-    bdr:I3CN21440  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   282 .
+    bdr:21440  bdo:volumePagesTotal  282 .
     
-    bdr:I3CN21441  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   302 .
+    bdr:21441  bdo:volumePagesTotal  302 .
     
-    bdr:I3CN21442  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   342 .
+    bdr:21442  bdo:volumePagesTotal  342 .
     
-    bdr:I3CN21443  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   334 .
+    bdr:21443  bdo:volumePagesTotal  334 .
     
-    bdr:I3CN21444  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   448 .
+    bdr:21444  bdo:volumePagesTotal  448 .
     
-    bdr:I3CN21445  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   450 .
+    bdr:21445  bdo:volumePagesTotal  450 .
     
-    bdr:I3CN21446  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   332 .
+    bdr:21446  bdo:volumePagesTotal  332 .
     
-    bdr:I3CN21447  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   446 .
+    bdr:21447  bdo:volumePagesTotal  446 .
     
-    bdr:I3CN21448  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   352 .
+    bdr:21448  bdo:volumePagesTotal  352 .
     
-    bdr:I3CN21449  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   388 .
+    bdr:21449  bdo:volumePagesTotal  388 .
     
-    bdr:I3CN21450  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   350 .
+    bdr:2145  bdo:volumePagesTotal  5 .
     
-    bdr:I3CN21451  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   348 .
+    bdr:21450  bdo:volumePagesTotal  350 .
     
-    bdr:I3CN21452  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   310 .
+    bdr:21451  bdo:volumePagesTotal  348 .
     
-    bdr:I3CN21453  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   288 .
+    bdr:21452  bdo:volumePagesTotal  310 .
     
-    bdr:I3CN21454  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   390 .
+    bdr:21453  bdo:volumePagesTotal  288 .
     
-    bdr:I3CN21455  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   396 .
+    bdr:21454  bdo:volumePagesTotal  390 .
     
-    bdr:I3CN21456  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   384 .
+    bdr:21455  bdo:volumePagesTotal  396 .
     
-    bdr:I3CN21457  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   346 .
+    bdr:21456  bdo:volumePagesTotal  384 .
     
-    bdr:I3CN21458  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   522 .
+    bdr:21457  bdo:volumePagesTotal  346 .
     
-    bdr:I3CN21459  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   374 .
+    bdr:21458  bdo:volumePagesTotal  522 .
     
-    bdr:I3CN21460  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   726 .
+    bdr:21460  bdo:volumePagesTotal  726 .
     
-    bdr:I3CN21461  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   548 .
+    bdr:21461  bdo:volumePagesTotal  548 .
     
-    bdr:I3CN21462  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   614 .
+    bdr:21462  bdo:volumePagesTotal  614 .
     
-    bdr:I3CN21463  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   628 .
+    bdr:21463  bdo:volumePagesTotal  628 .
     
-    bdr:I3CN21464  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   396 .
+    bdr:21464  bdo:volumePagesTotal  396 .
     
-    bdr:I3CN21465  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   512 .
+    bdr:21465  bdo:volumePagesTotal  512 .
     
-    bdr:I3CN21466  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   326 .
+    bdr:21466  bdo:volumePagesTotal  326 .
     
-    bdr:I3CN21467  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   466 .
+    bdr:21467  bdo:volumePagesTotal  466 .
     
-    bdr:I3CN21468  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   388 .
+    bdr:21468  bdo:volumePagesTotal  388 .
     
-    bdr:I3CN21469  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of mkha' 'gro'i chos mdzod chen mo/"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   274 .
+    bdr:21469  bdo:volumePagesTotal  274 .
     
-    bdr:W3CN2459  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN21417 , bdr:I3CN21418 , bdr:I3CN21419 , bdr:I3CN21420 , bdr:I3CN21421 , bdr:I3CN21422 , bdr:I3CN21423 , bdr:I3CN21424 , bdr:I3CN21425 , bdr:I3CN21426 , bdr:I3CN21427 , bdr:I3CN21428 , bdr:I3CN21429 , bdr:I3CN21430 , bdr:I3CN21431 , bdr:I3CN21432 , bdr:I3CN21433 , bdr:I3CN21434 , bdr:I3CN21435 , bdr:I3CN21436 , bdr:I3CN21437 , bdr:I3CN21438 , bdr:I3CN21439 , bdr:I3CN21440 , bdr:I3CN21441 , bdr:I3CN21442 , bdr:I3CN21443 , bdr:I3CN21444 , bdr:I3CN21445 , bdr:I3CN21446 , bdr:I3CN21447 , bdr:I3CN21448 , bdr:I3CN21449 , bdr:I3CN21450 , bdr:I3CN21451 , bdr:I3CN21452 , bdr:I3CN21453 , bdr:I3CN21454 , bdr:I3CN21455 , bdr:I3CN21456 , bdr:I3CN21457 , bdr:I3CN21458 , bdr:I3CN21459 , bdr:I3CN21460 , bdr:I3CN21461 , bdr:I3CN21462 , bdr:I3CN21463 , bdr:I3CN21464 , bdr:I3CN21465 , bdr:I3CN21466 , bdr:I3CN21467 , bdr:I3CN21468 , bdr:I3CN21469 ;
-        :numberOfVolumes    53 ;
-        :scanInfo           "Sarah Library, College for Higher Tibetan Studies, P.O. Sarah, Dharamsala, District Kangra 176213 Himachal Pradesh, India"@en .
+    bdr:I3CN21417  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  304 .
+    
+    bdr:I3CN21418  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  380 .
+    
+    bdr:I3CN21419  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  394 .
+    
+    bdr:I3CN21420  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  378 .
+    
+    bdr:I3CN21421  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  390 .
+    
+    bdr:I3CN21422  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  408 .
+    
+    bdr:I3CN21423  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  206 .
+    
+    bdr:I3CN21424  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  332 .
+    
+    bdr:I3CN21425  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  360 .
+    
+    bdr:I3CN21426  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  400 .
+    
+    bdr:I3CN21427  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  354 .
+    
+    bdr:I3CN21428  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  408 .
+    
+    bdr:I3CN21429  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  370 .
+    
+    bdr:I3CN21430  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  396 .
+    
+    bdr:I3CN21431  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  482 .
+    
+    bdr:I3CN21432  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  408 .
+    
+    bdr:I3CN21433  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  392 .
+    
+    bdr:I3CN21434  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  290 .
+    
+    bdr:I3CN21435  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  286 .
+    
+    bdr:I3CN21436  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  264 .
+    
+    bdr:I3CN21437  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  210 .
+    
+    bdr:I3CN21438  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  308 .
+    
+    bdr:I3CN21439  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
+    
+    bdr:I3CN21440  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  282 .
+    
+    bdr:I3CN21441  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  302 .
+    
+    bdr:I3CN21442  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  342 .
+    
+    bdr:I3CN21443  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  334 .
+    
+    bdr:I3CN21444  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  448 .
+    
+    bdr:I3CN21445  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  450 .
+    
+    bdr:I3CN21446  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  332 .
+    
+    bdr:I3CN21447  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  446 .
+    
+    bdr:I3CN21448  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  352 .
+    
+    bdr:I3CN21449  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  388 .
+    
+    bdr:I3CN21450  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  350 .
+    
+    bdr:I3CN21451  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  348 .
+    
+    bdr:I3CN21452  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  310 .
+    
+    bdr:I3CN21453  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  288 .
+    
+    bdr:I3CN21454  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  390 .
+    
+    bdr:I3CN21455  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  396 .
+    
+    bdr:I3CN21456  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  384 .
+    
+    bdr:I3CN21457  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  346 .
+    
+    bdr:I3CN21458  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  522 .
+    
+    bdr:I3CN21459  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  374 .
+    
+    bdr:I3CN21460  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  726 .
+    
+    bdr:I3CN21461  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  548 .
+    
+    bdr:I3CN21462  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  614 .
+    
+    bdr:I3CN21463  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  628 .
+    
+    bdr:I3CN21464  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  396 .
+    
+    bdr:I3CN21465  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  512 .
+    
+    bdr:I3CN21466  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  326 .
+    
+    bdr:I3CN21467  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  466 .
+    
+    bdr:I3CN21468  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  388 .
+    
+    bdr:I3CN21469  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of mkha' 'gro'i chos mdzod chen mo/"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  274 .
+    
+    bdr:W3CN2459  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN21417 , bdr:I3CN21418 , bdr:I3CN21419 , bdr:I3CN21420 , bdr:I3CN21421 , bdr:I3CN21422 , bdr:I3CN21423 , bdr:I3CN21424 , bdr:I3CN21425 , bdr:I3CN21426 , bdr:I3CN21427 , bdr:I3CN21428 , bdr:I3CN21429 , bdr:I3CN21430 , bdr:I3CN21431 , bdr:I3CN21432 , bdr:I3CN21433 , bdr:I3CN21434 , bdr:I3CN21435 , bdr:I3CN21436 , bdr:I3CN21437 , bdr:I3CN21438 , bdr:I3CN21439 , bdr:I3CN21440 , bdr:I3CN21441 , bdr:I3CN21442 , bdr:I3CN21443 , bdr:I3CN21444 , bdr:I3CN21445 , bdr:I3CN21446 , bdr:I3CN21447 , bdr:I3CN21448 , bdr:I3CN21449 , bdr:I3CN21450 , bdr:I3CN21451 , bdr:I3CN21452 , bdr:I3CN21453 , bdr:I3CN21454 , bdr:I3CN21455 , bdr:I3CN21456 , bdr:I3CN21457 , bdr:I3CN21458 , bdr:I3CN21459 , bdr:I3CN21460 , bdr:I3CN21461 , bdr:I3CN21462 , bdr:I3CN21463 , bdr:I3CN21464 , bdr:I3CN21465 , bdr:I3CN21466 , bdr:I3CN21467 , bdr:I3CN21468 , bdr:I3CN21469 ;
+        bdo:numberOfVolumes  53 ;
+        bdo:scanInfo        "Sarah Library, College for Higher Tibetan Studies, P.O. Sarah, Dharamsala, District Kangra 176213 Himachal Pradesh, India"@en .
 }
