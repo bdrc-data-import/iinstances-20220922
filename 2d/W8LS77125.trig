@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77125 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77127 ;
+        adm:logEntry        bda:LG0W8LS77125_VYZMFXS7ZVF1 .
+    
     bda:I8LS77127  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77127 ;
         adm:logEntry        bda:LG02F23B7037A58424 , bda:LG0W8LS77125_4CDEDLJVEGMW ;
@@ -61,6 +65,13 @@ bdg:W8LS77125 {
     bda:LG0W8LS77125_4CDEDLJVEGMW
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-28T00:18:30.665354Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77125_VYZMFXS7ZVF1
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:01.746070Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77125 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77127  bdo:volumePagesTotal  172 .
     
     bdr:I8LS77127  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of bod brda'i rnam gzhag nyer mkho phyogs bsdebs ut+pala'i do shal dang po/"@en ;
