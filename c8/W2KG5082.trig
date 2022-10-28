@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG5082 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:238123 ;
+        adm:logEntry        bda:LG0W2KG5082_7W9CWVFAXFDD .
+    
     bda:I2KG238123  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238123 ;
         adm:logEntry        bda:LG17DE7C304013F6E2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG5082_7W9CWVFAXFDD
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:49:13.138365Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W2KG5082_KROONIL31W5X
         a                   adm:UpdateData ;
@@ -81,6 +92,8 @@ bdg:W2KG5082 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:238123  bdo:volumePagesTotal  200 .
     
     bdr:I2KG238123  a       bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of lta ba'i gnad la dpyad pa lung rigs rgyan phreng /"@en ;
