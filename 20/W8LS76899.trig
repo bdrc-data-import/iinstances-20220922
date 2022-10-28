@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76899 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76901 ;
+        adm:logEntry        bda:LG0W8LS76899_LSFLRYQ4LN2Q .
+    
     bda:I8LS76901  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76901 ;
         adm:logEntry        bda:LG0W8LS76899_BUAVLIHHOOER , bda:LGD34BBE81D0AB158D ;
@@ -55,6 +59,13 @@ bdg:W8LS76899 {
     bda:LG0W8LS76899_BUAVLIHHOOER
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:44:35.780454Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76899_LSFLRYQ4LN2Q
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:24.165800Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76899 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76901  bdo:volumePagesTotal  96 .
     
     bdr:I8LS76901  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of byang chub sems dpa' sems dpa' chen po rgyal sras thogs med bzang po'i rnam thar/"@en ;
