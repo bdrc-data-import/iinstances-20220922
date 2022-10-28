@@ -49,12 +49,19 @@
 bdg:W8LS77101 {
     bda:I8LS77103  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77103 ;
-        adm:logEntry        bda:LG0W8LS77101_CNN2NZVIBRTL , bda:LGA52375C9B614B3AF ;
+        adm:logEntry        bda:LG0W8LS77101_CNN2NZVIBRTL , bda:LG0W8LS77101_TFJKUJX25EBY , bda:LGA52375C9B614B3AF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0W8LS77101_CNN2NZVIBRTL
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:23:22.196960Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77101_TFJKUJX25EBY
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T10:17:15.201921Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
