@@ -49,8 +49,15 @@
 bdg:W2KG5082 {
     bda:I2KG238123  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238123 ;
-        adm:logEntry        bda:LG17DE7C304013F6E2 ;
+        adm:logEntry        bda:LG0W2KG5082_DCKG5EUNH1KK , bda:LG17DE7C304013F6E2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG5082_DCKG5EUNH1KK
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T10:18:28.507390Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W2KG5082_KROONIL31W5X
         a                   adm:UpdateData ;
@@ -86,7 +93,7 @@ bdg:W2KG5082 {
         bdo:biblioNote      "Volume 1 of lta ba'i gnad la dpyad pa lung rigs rgyan phreng /"@en ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  0 .
+        bdo:volumePagesTotal  200 .
     
     bdr:W2KG5082  a         bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I2KG238123 ;
