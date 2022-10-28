@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77116 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77118 ;
+        adm:logEntry        bda:LG0W8LS77116_YLG1O8PASOYC .
+    
     bda:I8LS77118  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77118 ;
         adm:logEntry        bda:LG0W8LS77116_KVYROIXRVG7M , bda:LG707004ABAAC50C33 ;
@@ -55,6 +59,13 @@ bdg:W8LS77116 {
     bda:LG0W8LS77116_KVYROIXRVG7M
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-28T00:17:17.464812Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77116_YLG1O8PASOYC
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:45:54.989337Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77116 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77118  bdo:volumePagesTotal  60 .
     
     bdr:I8LS77118  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of ngo sprod brnyan ded/"@en ;
