@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76924 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76927 ;
+        adm:logEntry        bda:LG0W8LS76924_C9EWHFGGULKS .
+    
     bda:I8LS76927  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76927 ;
         adm:logEntry        bda:LG0W8LS76924_4EITLDVHDFCE , bda:LG7AC1E33F58D35CC2 ;
@@ -55,6 +59,13 @@ bdg:W8LS76924 {
     bda:LG0W8LS76924_4EITLDVHDFCE
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:46:14.514874Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76924_C9EWHFGGULKS
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:34.735563Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76924 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76927  bdo:volumePagesTotal  144 .
     
     bdr:I8LS76927  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of sum rtags 'grel chung go bde'i lde mig"@en ;
