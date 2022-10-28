@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77236 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77238 ;
+        adm:logEntry        bda:LG0W8LS77236_CJTEJ9XRLZIN .
+    
     bda:I8LS77238  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77238 ;
         adm:logEntry        bda:LG0W8LS77236_5YV4DQY2K20T , bda:LG5593024913D4F07C ;
@@ -55,6 +59,13 @@ bdg:W8LS77236 {
     bda:LG0W8LS77236_5YV4DQY2K20T
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-28T00:23:59.684165Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77236_CJTEJ9XRLZIN
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:33.695732Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77236 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77238  bdo:volumePagesTotal  188 .
     
     bdr:I8LS77238  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of dge tshul gyi tshig le'ur byas pa/ dge sbyong gi kA ri kA lnga bcu pa'i tshig gi brjed byang / lnga bcu pa'i 'grel pa dge tshul gyi bya ba/ dge tshul gyi bslab bya gnam rtse ldeng ma/"@en ;
