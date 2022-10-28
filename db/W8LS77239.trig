@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77239 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77245 ;
+        adm:logEntry        bda:LG0W8LS77239_T35OLIDRE1CG .
+    
     bda:I8LS77245  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77245 ;
         adm:logEntry        bda:LG0W8LS77239_BPSCIMNH6VWG , bda:LG3C0D7BD6DAEA0DF6 ;
@@ -55,6 +59,13 @@ bdg:W8LS77239 {
     bda:LG0W8LS77239_BPSCIMNH6VWG
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-28T00:24:27.331839Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77239_T35OLIDRE1CG
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:35.988012Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77239 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77245  bdo:volumePagesTotal  540 .
     
     bdr:I8LS77245  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of 'phags yul gyi nang pa'i gzhung las byung ba'i tshan rig dang lta grub kun btus/ pod gnyis pa/"@en ;
