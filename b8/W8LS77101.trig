@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77101 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77103 ;
+        adm:logEntry        bda:LG0W8LS77101_O8OVI6BSXYMX .
+    
     bda:I8LS77103  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77103 ;
         adm:logEntry        bda:LG0W8LS77101_CNN2NZVIBRTL , bda:LGA52375C9B614B3AF ;
@@ -55,6 +59,13 @@ bdg:W8LS77101 {
     bda:LG0W8LS77101_CNN2NZVIBRTL
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:23:22.196960Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77101_O8OVI6BSXYMX
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:47:55.719404Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77101 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77103  bdo:volumePagesTotal  176 .
     
     bdr:I8LS77103  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of dbus mtha' rnam 'byed dang chos dang chos nyid rnam 'byed rtsa 'grel/"@en ;
