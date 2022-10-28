@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76928 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:76932 ;
+        adm:logEntry        bda:LG0W8LS76928_NY2H82HRVP1Q .
+    
     bda:I8LS76932  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76932 ;
         adm:logEntry        bda:LG0W8LS76928_CIX9N0MY56HF , bda:LG31AD3E877AFA5156 ;
@@ -55,6 +59,13 @@ bdg:W8LS76928 {
     bda:LG0W8LS76928_CIX9N0MY56HF
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:46:36.206518Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS76928_NY2H82HRVP1Q
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:48:37.193936Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS76928 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:76932  bdo:volumePagesTotal  232 .
     
     bdr:I8LS76932  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of thang chen mo'i sde snod 'dzin pa'i skyes chen dag nub phyogs phyags yul du dam pa'i chos kyi dgongs pa 'tshol bar phyin pa'i rtogs brjod/"@en ;
