@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77258 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77260 ;
+        adm:logEntry        bda:LG0W8LS77258_TOIVVDKEETCT .
+    
     bda:I8LS77260  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77260 ;
         adm:logEntry        bda:LG0W8LS77258_ZK2LY4Z3X0VT , bda:LG746F81837C3FB6AB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS77258_TOIVVDKEETCT
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:49.367685Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77258_ZK2LY4Z3X0VT
         a                   adm:ImagesUpdated ;
@@ -82,6 +93,8 @@ bdg:W8LS77258 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77260  bdo:volumePagesTotal  576 .
     
     bdr:I8LS77260  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of gsung rtsom/ kun mkhyen blo gros rin chen seng ge/"@en ;
