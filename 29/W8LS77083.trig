@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77083 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77085 ;
+        adm:logEntry        bda:LG0W8LS77083_MCEFOTXNNS3O .
+    
     bda:I8LS77085  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77085 ;
         adm:logEntry        bda:LG0W8LS77083_FGG2UJXVZ2EI , bda:LG7968F5ED41A11CB7 ;
@@ -61,6 +65,13 @@ bdg:W8LS77083 {
     bda:LG0W8LS77083_FGG2UJXVZ2EI
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:20:54.599293Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77083_MCEFOTXNNS3O
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:47:44.660849Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77083 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77085  bdo:volumePagesTotal  348 .
     
     bdr:I8LS77085  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of rje btsun bla ma thub pa'i dbang po mnyes pa'i mchod sprin mi mang thar pa chen pr 'khrid pa'i lam gyi sgron me/"@en ;
