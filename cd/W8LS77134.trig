@@ -47,10 +47,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77134 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77136 ;
+        adm:logEntry        bda:LG0W8LS77134_DYQZ2CZHFDTA .
+    
     bda:I8LS77136  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77136 ;
         adm:logEntry        bda:LG0W8LS77134_K1HSBE2J4AEF , bda:LG63A27DD6AAAE7540 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS77134_DYQZ2CZHFDTA
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:46:05.771631Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77134_K1HSBE2J4AEF
         a                   adm:ImagesUpdated ;
@@ -82,6 +93,8 @@ bdg:W8LS77134 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77136  bdo:volumePagesTotal  92 .
     
     bdr:I8LS77136  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of zhal 'don nyer mkho/ deb phreng bzhi pa/"@en ;
