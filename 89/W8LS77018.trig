@@ -47,6 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77018 {
+    bda:  a                 adm:AdminData ;
+        adm:adminAbout      bdr:77020 ;
+        adm:logEntry        bda:LG0W8LS77018_JMWEHFLSTMEU .
+    
     bda:I8LS77020  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77020 ;
         adm:logEntry        bda:LG04530889BAC2E7FC , bda:LG0W8LS77018_2VYJOCXVODWU ;
@@ -61,6 +65,13 @@ bdg:W8LS77018 {
     bda:LG0W8LS77018_2VYJOCXVODWU
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:10:27.904383Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W8LS77018_JMWEHFLSTMEU
+        a                   adm:Synced ;
+        adm:logDate         "2022-10-28T09:47:10.001059Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -82,6 +93,8 @@ bdg:W8LS77018 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:77020  bdo:volumePagesTotal  300 .
     
     bdr:I8LS77020  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of tshad ma'i bstan bcos rigs pa'i them skas/"@en ;
