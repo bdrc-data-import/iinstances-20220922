@@ -47,21 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76952 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76954 ;
-        adm:logEntry        bda:LG0W8LS76952_EHMY7AFPCS2T .
-    
     bda:I8LS76954  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76954 ;
         adm:logEntry        bda:LG0W8LS76952_K899YRFHKFVN , bda:LG5AC912829FD24305 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG0W8LS76952_EHMY7AFPCS2T
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:49.388921Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS76952_K899YRFHKFVN
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS76952 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76954  bdo:volumePagesTotal  272 .
     
     bdr:I8LS76954  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of sdom pa gsum gyi gnad kyi zin bris mdor bsdus pa/"@en ;

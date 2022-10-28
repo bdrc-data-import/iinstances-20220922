@@ -47,21 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77012 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:77014 ;
-        adm:logEntry        bda:LG0W8LS77012_FNK851MVZXZQ .
-    
     bda:I8LS77014  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77014 ;
         adm:logEntry        bda:LG0W8LS77012_V9ZVWWI1O7ET , bda:LG3521D04CF077A46B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG0W8LS77012_FNK851MVZXZQ
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:49:05.758105Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77012_V9ZVWWI1O7ET
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS77012 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:77014  bdo:volumePagesTotal  236 .
     
     bdr:I8LS77014  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of rang myong gsal ba'i me long gzur gnas blo ldan dgyes pa'i mchod sprin/"@en ;

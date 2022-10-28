@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76955 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76957 ;
-        adm:logEntry        bda:LG0W8LS76955_I1JJCRZG4VKX .
-    
     bda:I8LS76957  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76957 ;
         adm:logEntry        bda:LG0W8LS76955_VAMVXCHQRVE2 , bda:LGA518B6351C36419B ;
@@ -61,13 +57,6 @@ bdg:W8LS76955 {
         adm:logDate         "2022-03-30T08:50:18.61Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG0W8LS76955_I1JJCRZG4VKX
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:51.324301Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS76955_VAMVXCHQRVE2
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS76955 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76957  bdo:volumePagesTotal  230 .
     
     bdr:I8LS76957  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of thun mong bsdus pa'i sdom tshig blo gsal dga' bskyed/"@en ;

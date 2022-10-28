@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76908 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76911 ;
-        adm:logEntry        bda:LG0W8LS76908_HL4PXB9GCGAY .
-    
     bda:I8LS76911  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76911 ;
         adm:logEntry        bda:LG0W8LS76908_KGP08OU8BJA2 , bda:LGAFE223958A0E8BD0 ;
@@ -61,13 +57,6 @@ bdg:W8LS76908 {
         adm:logDate         "2022-03-24T13:18:41.736Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG0W8LS76908_HL4PXB9GCGAY
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:28.679342Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS76908_KGP08OU8BJA2
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS76908 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76911  bdo:volumePagesTotal  68 .
     
     bdr:I8LS76911  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of chos 'khor 'bel gtam pad dkar dgongs rgyan dang khyab bya khyab byed sems kyi 'bel gtam/"@en ;

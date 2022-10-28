@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76817 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76819 ;
-        adm:logEntry        bda:LG0W8LS76817_TGARQBZ92CEY .
-    
     bda:I8LS76819  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76819 ;
         adm:logEntry        bda:LG0W8LS76817_ZORYUJO5RECI , bda:LGAAB36BC0BF31856A ;
@@ -61,13 +57,6 @@ bdg:W8LS76817 {
         adm:logDate         "2022-03-21T08:57:27.173Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG0W8LS76817_TGARQBZ92CEY
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:04.321058Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS76817_ZORYUJO5RECI
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS76817 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76819  bdo:volumePagesTotal  604 .
     
     bdr:I8LS76819  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of 'phags yul gyi nang pa'i gzhung las byung ba'i tshan rig dang lta grub kun btus/ pod gnyis pa/"@en ;

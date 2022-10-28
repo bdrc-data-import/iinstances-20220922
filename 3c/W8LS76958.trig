@@ -47,21 +47,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76958 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76960 ;
-        adm:logEntry        bda:LG0W8LS76958_LBGTWSIW9XLU .
-    
     bda:I8LS76960  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76960 ;
         adm:logEntry        bda:LG0W8LS76958_QXEVPVUSFVIK , bda:LG8422C58E68D20ABF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG0W8LS76958_LBGTWSIW9XLU
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:53.370798Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS76958_QXEVPVUSFVIK
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS76958 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76960  bdo:volumePagesTotal  620 .
     
     bdr:I8LS76960  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of chos kyi tshigs su bcad pa/"@en ;

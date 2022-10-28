@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76880 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76883 ;
-        adm:logEntry        bda:LG0W8LS76880_U1IVMZYNAQY7 .
-    
     bda:I8LS76883  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76883 ;
         adm:logEntry        bda:LG0W8LS76880_GDOAT00X3KRC , bda:LG3DE4687317DB811C ;
@@ -59,13 +55,6 @@ bdg:W8LS76880 {
     bda:LG0W8LS76880_GDOAT00X3KRC
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:42:19.561889Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG0W8LS76880_U1IVMZYNAQY7
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:13.964016Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -93,8 +82,6 @@ bdg:W8LS76880 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76883  bdo:volumePagesTotal  336 .
     
     bdr:I8LS76883  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of nang chos dang 'brel ba'i dri lan blo gsar re skong dang / ston pa'i gsung gi bdud rtsi/"@en ;

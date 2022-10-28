@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG5083 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:238125 ;
-        adm:logEntry        bda:LG0W2KG5083_6HTJKY3Y3SZK .
-    
     bda:I2KG238125  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238125 ;
         adm:logEntry        bda:LG2E4AB9F3849DFAF6 ;
@@ -60,13 +56,6 @@ bdg:W2KG5083 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2022-10-03T09:47:13.642Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG0W2KG5083_6HTJKY3Y3SZK
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:49:15.754644Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG0W2KG5083_JZPT8UKKCRFZ
@@ -92,8 +81,6 @@ bdg:W2KG5083 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
-    
-    bdr:238125  bdo:volumePagesTotal  196 .
     
     bdr:I2KG238125  a       bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of dka' gnad dgongs bcud rnam dpyad rigs rgyan/"@en ;

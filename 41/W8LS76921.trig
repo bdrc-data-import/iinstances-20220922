@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76921 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:76923 ;
-        adm:logEntry        bda:LG0W8LS76921_LO6NJREBNT6R .
-    
     bda:I8LS76923  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76923 ;
         adm:logEntry        bda:LG0W8LS76921_KZTUHBAHKTKY , bda:LG1CBC8538EF7C3DC6 ;
@@ -59,13 +55,6 @@ bdg:W8LS76921 {
     bda:LG0W8LS76921_KZTUHBAHKTKY
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T01:45:55.218097Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG0W8LS76921_LO6NJREBNT6R
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:48:32.095608Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -93,8 +82,6 @@ bdg:W8LS76921 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:76923  bdo:volumePagesTotal  140 .
     
     bdr:I8LS76923  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of yon tan gzhir gyur ma'i bsdus 'grel 'jam mon bla ma dgyes pa'i mchod sprin/"@en ;

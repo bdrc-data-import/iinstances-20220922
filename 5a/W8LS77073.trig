@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77073 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:77075 ;
-        adm:logEntry        bda:LG0W8LS77073_5FWGNS4URP9X .
-    
     bda:I8LS77075  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77075 ;
         adm:logEntry        bda:LG01395C350BED870E , bda:LG0W8LS77073_KPPDAXRHRYBA ;
@@ -61,13 +57,6 @@ bdg:W8LS77073 {
         adm:logDate         "2022-04-21T13:01:40.181Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG0W8LS77073_5FWGNS4URP9X
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:47:39.829777Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG0W8LS77073_KPPDAXRHRYBA
         a                   adm:ImagesUpdated ;
@@ -93,8 +82,6 @@ bdg:W8LS77073 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:77075  bdo:volumePagesTotal  484 .
     
     bdr:I8LS77075  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of 'dul ba'i bslab bya dang gzhi gsum cho ga"@en ;

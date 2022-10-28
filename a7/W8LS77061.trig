@@ -47,10 +47,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS77061 {
-    bda:  a                 adm:AdminData ;
-        adm:adminAbout      bdr:77063 ;
-        adm:logEntry        bda:LG0W8LS77061_XQ2YN5GZX0ZT .
-    
     bda:I8LS77063  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS77063 ;
         adm:logEntry        bda:LG0W8LS77061_G101RDAFCMVD , bda:LG826D8C622F30FE0A ;
@@ -59,13 +55,6 @@ bdg:W8LS77061 {
     bda:LG0W8LS77061_G101RDAFCMVD
         a                   adm:ImagesUpdated ;
         adm:logDate         "2022-10-25T22:16:00.713596Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG0W8LS77061_XQ2YN5GZX0ZT
-        a                   adm:Synced ;
-        adm:logDate         "2022-10-28T09:47:31.751559Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -93,8 +82,6 @@ bdg:W8LS77061 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
-    
-    bdr:77063  bdo:volumePagesTotal  170 .
     
     bdr:I8LS77063  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of dam pa'i chos mngon pa mdzod kyi dogs dpyod blo gsal dga' skyed/"@en ;
