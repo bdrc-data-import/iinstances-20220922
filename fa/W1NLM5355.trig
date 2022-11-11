@@ -12,23 +12,23 @@ bdg:W1NLM5355 {
         adm:gitPath "fa/W1NLM5355.trig" ;
         adm:gitRepo bda:GR0014 ;
         adm:graphId bdg:W1NLM5355 ;
-        adm:logEntry bda:LG0NLMXGJDRZTAXOGT ;
+        adm:logEntry bda:LG0NLMCN5FK9JEB7A4 ;
         adm:metadataLegal bda:LD_BDRC_CC0 ;
         adm:restrictedInChina false ;
         adm:status bda:StatusReleased .
 
-    bda:LG0NLMXGJDRZTAXOGT a adm:InitialDataImport ;
+    bda:LG0NLMCN5FK9JEB7A4 a adm:InitialDataImport ;
         adm:logAgent "buda-scripts/imports/NLM/import-simple.py" ;
-        adm:logDate "2022-11-11T15:40:47.546049"^^xsd:dateTime ;
+        adm:logDate "2022-11-11T17:01:48.043992"^^xsd:dateTime ;
         adm:logMethod bda:BatchMethod .
 
-    bdr:I1NLM5355 a bdo:ImageInstance ;
+    bdr:I1NLM5355_001 a bdo:ImageInstance ;
         bdo:volumeNumber 1 ;
         bdo:volumePagesTbrcIntro 0 .
 
     bdr:W1NLM5355 a bdo:ImageInstance ;
         bdo:inCollection bdr:PR1NLM00 ;
-        bdo:instanceHasVolume bdr:I1NLM5355 ;
+        bdo:instanceHasVolume bdr:I1NLM5355_001 ;
         bdo:numberOfVolumes 1 ;
         bdo:scanInfo "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
 }
