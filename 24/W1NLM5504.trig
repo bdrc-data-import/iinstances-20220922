@@ -12,17 +12,24 @@ bdg:W1NLM5504 {
         adm:gitPath "24/W1NLM5504.trig" ;
         adm:gitRepo bda:GR0014 ;
         adm:graphId bdg:W1NLM5504 ;
-        adm:logEntry bda:LG0NLMCN5FK9JEB7A4 ;
+        adm:logEntry bda:LG0BDSWEIO07BVVLYX,
+            bda:LG0NLMCN5FK9JEB7A4 ;
         adm:metadataLegal bda:LD_BDRC_CC0 ;
         adm:restrictedInChina false ;
         adm:status bda:StatusReleased .
+
+    bda:LG0BDSWEIO07BVVLYX a adm:UpdateData ;
+        adm:logAgent "buda-scripts/batch/batch-change.py" ;
+        adm:logDate "2022-11-12T05:40:25.624283"^^xsd:dateTime ;
+        adm:logMessage "fix image group type"@en ;
+        adm:logMethod bda:BatchMethod .
 
     bda:LG0NLMCN5FK9JEB7A4 a adm:InitialDataImport ;
         adm:logAgent "buda-scripts/imports/NLM/import-simple.py" ;
         adm:logDate "2022-11-11T17:01:48.043992"^^xsd:dateTime ;
         adm:logMethod bda:BatchMethod .
 
-    bdr:I1NLM5504_001 a bdo:ImageInstance ;
+    bdr:I1NLM5504_001 a bdo:ImageGroup ;
         bdo:volumeNumber 1 ;
         bdo:volumePagesTbrcIntro 0 .
 
