@@ -1,20 +1,55 @@
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76982 {
     bda:I8LS76984  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76984 ;
-        adm:logEntry        bda:LG9EFE84EEC19F95D8 ;
+        adm:logEntry        bda:LG0W8LS76982_NGMPJOOTC1W8 , bda:LG9EFE84EEC19F95D8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS76985  a        adm:AdminData ;
@@ -142,6 +177,13 @@ bdg:W8LS76982 {
         adm:logDate         "2022-04-04T09:10:33.954Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LG0W8LS76982_NGMPJOOTC1W8
+        a                   adm:Synced ;
+        adm:logDate         "2022-12-07T00:50:20.948779Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1C108B2E06395F64
         a                   adm:InitialDataCreation ;
@@ -305,157 +347,157 @@ bdg:W8LS76982 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS76984  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76984  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  68 .
     
-    bdr:I8LS76985  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76985  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76986  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76986  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76987  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76987  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76988  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76988  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76989  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76989  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76990  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76990  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76991  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76991  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76992  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76992  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76993  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76993  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76994  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76994  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76995  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76995  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76996  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76996  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76997  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76997  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76998  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76998  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS76999  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76999  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77000  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77000  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77001  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77001  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77002  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77002  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77003  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77003  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77004  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77004  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77005  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77005  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77006  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77006  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77007  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77007  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS77008  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS77008  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of dga' shar byis pa'i brnyan deb/ 'don thengs dang po/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W8LS76982  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS76984 , bdr:I8LS76985 , bdr:I8LS76986 , bdr:I8LS76987 , bdr:I8LS76988 , bdr:I8LS76989 , bdr:I8LS76990 , bdr:I8LS76991 , bdr:I8LS76992 , bdr:I8LS76993 , bdr:I8LS76994 , bdr:I8LS76995 , bdr:I8LS76996 , bdr:I8LS76997 , bdr:I8LS76998 , bdr:I8LS76999 , bdr:I8LS77000 , bdr:I8LS77001 , bdr:I8LS77002 , bdr:I8LS77003 , bdr:I8LS77004 , bdr:I8LS77005 , bdr:I8LS77006 , bdr:I8LS77007 , bdr:I8LS77008 ;
-        :numberOfVolumes    25 .
+    bdr:W8LS76982  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS76984 , bdr:I8LS76985 , bdr:I8LS76986 , bdr:I8LS76987 , bdr:I8LS76988 , bdr:I8LS76989 , bdr:I8LS76990 , bdr:I8LS76991 , bdr:I8LS76992 , bdr:I8LS76993 , bdr:I8LS76994 , bdr:I8LS76995 , bdr:I8LS76996 , bdr:I8LS76997 , bdr:I8LS76998 , bdr:I8LS76999 , bdr:I8LS77000 , bdr:I8LS77001 , bdr:I8LS77002 , bdr:I8LS77003 , bdr:I8LS77004 , bdr:I8LS77005 , bdr:I8LS77006 , bdr:I8LS77007 , bdr:I8LS77008 ;
+        bdo:numberOfVolumes  25 .
 }
