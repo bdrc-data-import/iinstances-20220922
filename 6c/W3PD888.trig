@@ -1,14 +1,49 @@
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3PD888 {
@@ -119,6 +154,12 @@ bdg:W3PD888 {
         adm:logEntry        bda:LG10A72D4B0A68352C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W3PD888_G0D0HXVK4WMC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-12-08T22:10:45.767418Z"^^xsd:dateTime ;
+        adm:logMessage      "released as open access"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG10A72D4B0A68352C
         a                   adm:InitialDataCreation ;
@@ -253,127 +294,127 @@ bdg:W3PD888 {
         adm:logWho          bdu:U00006 .
     
     bda:W3PD888  a          adm:AdminData ;
-        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3PD888 ;
         adm:facetIndex      73 ;
         adm:gitPath         "6c/W3PD888.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3PD888 ;
-        adm:logEntry        bda:LGCC77EEC0B66BC93D ;
+        adm:logEntry        bda:LG0W3PD888_G0D0HXVK4WMC , bda:LGCC77EEC0B66BC93D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3PD921  a          :ImageGroup ;
-        :biblioNote         "Volume 1 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1144 .
+    bdr:I3PD921  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1144 .
     
-    bdr:I3PD922  a          :ImageGroup ;
-        :biblioNote         "Volume 2 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   162 .
+    bdr:I3PD922  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  162 .
     
-    bdr:I3PD923  a          :ImageGroup ;
-        :biblioNote         "Volume 3 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   386 .
+    bdr:I3PD923  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  386 .
     
-    bdr:I3PD924  a          :ImageGroup ;
-        :biblioNote         "Volume 4 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   292 .
+    bdr:I3PD924  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  292 .
     
-    bdr:I3PD925  a          :ImageGroup ;
-        :biblioNote         "Volume 5 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   362 .
+    bdr:I3PD925  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  362 .
     
-    bdr:I3PD926  a          :ImageGroup ;
-        :biblioNote         "Volume 6 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   612 .
+    bdr:I3PD926  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  612 .
     
-    bdr:I3PD927  a          :ImageGroup ;
-        :biblioNote         "Volume 7 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   686 .
+    bdr:I3PD927  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  686 .
     
-    bdr:I3PD928  a          :ImageGroup ;
-        :biblioNote         "Volume 8 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   718 .
+    bdr:I3PD928  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  718 .
     
-    bdr:I3PD929  a          :ImageGroup ;
-        :biblioNote         "Volume 9 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   442 .
+    bdr:I3PD929  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  442 .
     
-    bdr:I3PD930  a          :ImageGroup ;
-        :biblioNote         "Volume 10 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   230 .
+    bdr:I3PD930  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  230 .
     
-    bdr:I3PD931  a          :ImageGroup ;
-        :biblioNote         "Volume 11 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   496 .
+    bdr:I3PD931  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  496 .
     
-    bdr:I3PD932  a          :ImageGroup ;
-        :biblioNote         "Volume 12 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   460 .
+    bdr:I3PD932  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  460 .
     
-    bdr:I3PD933  a          :ImageGroup ;
-        :biblioNote         "Volume 13 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   112 .
+    bdr:I3PD933  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  112 .
     
-    bdr:I3PD934  a          :ImageGroup ;
-        :biblioNote         "Volume 14 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   514 .
+    bdr:I3PD934  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  514 .
     
-    bdr:I3PD935  a          :ImageGroup ;
-        :biblioNote         "Volume 15 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   602 .
+    bdr:I3PD935  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  602 .
     
-    bdr:I3PD936  a          :ImageGroup ;
-        :biblioNote         "Volume 16 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   174 .
+    bdr:I3PD936  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  174 .
     
-    bdr:I3PD937  a          :ImageGroup ;
-        :biblioNote         "Volume 17 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   589 .
+    bdr:I3PD937  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  589 .
     
-    bdr:I3PD938  a          :ImageGroup ;
-        :biblioNote         "Volume 18 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   210 .
+    bdr:I3PD938  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of nyag klu mo a bse dgon du bzhugs pa'i dpe rnying dpe dkon/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  210 .
     
-    bdr:W3PD888  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I3PD921 , bdr:I3PD922 , bdr:I3PD923 , bdr:I3PD924 , bdr:I3PD925 , bdr:I3PD926 , bdr:I3PD927 , bdr:I3PD928 , bdr:I3PD929 , bdr:I3PD930 , bdr:I3PD931 , bdr:I3PD932 , bdr:I3PD933 , bdr:I3PD934 , bdr:I3PD935 , bdr:I3PD936 , bdr:I3PD937 , bdr:I3PD938 ;
-        :numberOfVolumes    18 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3PD888  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3PD921 , bdr:I3PD922 , bdr:I3PD923 , bdr:I3PD924 , bdr:I3PD925 , bdr:I3PD926 , bdr:I3PD927 , bdr:I3PD928 , bdr:I3PD929 , bdr:I3PD930 , bdr:I3PD931 , bdr:I3PD932 , bdr:I3PD933 , bdr:I3PD934 , bdr:I3PD935 , bdr:I3PD936 , bdr:I3PD937 , bdr:I3PD938 ;
+        bdo:numberOfVolumes  18 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
