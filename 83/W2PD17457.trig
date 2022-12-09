@@ -1,20 +1,55 @@
 @prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
+@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dila:  <http://purl.dila.edu.tw/resource/> .
+@prefix eftr:  <http://purl.84000.co/resource/core/> .
+@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ola:   <https://openlibrary.org/authors/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix srcd:  <https://sakyaresearch.org/deities/> .
+@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
+@prefix srcpe: <https://sakyaresearch.org/persons/> .
+@prefix srcpl: <https://sakyaresearch.org/places/> .
+@prefix srcs:  <https://sakyaresearch.org/sources/> .
+@prefix srct:  <https://sakyaresearch.org/topics/> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix viaf:  <http://viaf.org/viaf/> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2PD17457 {
     bda:I4PD423  a          adm:AdminData ;
         adm:adminAbout      bdr:I4PD423 ;
-        adm:logEntry        bda:LG88B3125DDE6FAE1F , bda:LGEF766DB8B6F97ECC ;
+        adm:logEntry        bda:LG0W2PD17457_MJWQMQYZKUGI , bda:LG88B3125DDE6FAE1F , bda:LGEF766DB8B6F97ECC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -467,6 +502,13 @@ bdg:W2PD17457 {
         adm:logDate         "2016-08-01T16:22:42.957Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W2PD17457_MJWQMQYZKUGI
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2022-12-09T19:17:52.943582Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG16CE4F856B6169F9
         a                   adm:InitialDataCreation ;
@@ -1164,387 +1206,387 @@ bdg:W2PD17457 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4PD423  a          :ImageGroup ;
-        :biblioNote         "Volume 1 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   880 .
+    bdr:I4PD423  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  897 .
     
-    bdr:I4PD424  a          :ImageGroup ;
-        :biblioNote         "Volume 2 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1074 .
+    bdr:I4PD424  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1074 .
     
-    bdr:I4PD425  a          :ImageGroup ;
-        :biblioNote         "Volume 3 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   604 .
+    bdr:I4PD425  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  604 .
     
-    bdr:I4PD426  a          :ImageGroup ;
-        :biblioNote         "Volume 4 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   412 .
+    bdr:I4PD426  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  412 .
     
-    bdr:I4PD427  a          :ImageGroup ;
-        :biblioNote         "Volume 5 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   356 .
+    bdr:I4PD427  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
     
-    bdr:I4PD428  a          :ImageGroup ;
-        :biblioNote         "Volume 6 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   764 .
+    bdr:I4PD428  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  764 .
     
-    bdr:I4PD429  a          :ImageGroup ;
-        :biblioNote         "Volume 7 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   682 .
+    bdr:I4PD429  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  682 .
     
-    bdr:I4PD430  a          :ImageGroup ;
-        :biblioNote         "Volume 8 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   468 .
+    bdr:I4PD430  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  468 .
     
-    bdr:I4PD431  a          :ImageGroup ;
-        :biblioNote         "Volume 9 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   626 .
+    bdr:I4PD431  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  626 .
     
-    bdr:I4PD432  a          :ImageGroup ;
-        :biblioNote         "Volume 10 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   622 .
+    bdr:I4PD432  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  622 .
     
-    bdr:I4PD433  a          :ImageGroup ;
-        :biblioNote         "Volume 11 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   490 .
+    bdr:I4PD433  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  490 .
     
-    bdr:I4PD434  a          :ImageGroup ;
-        :biblioNote         "Volume 12 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   596 .
+    bdr:I4PD434  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  596 .
     
-    bdr:I4PD435  a          :ImageGroup ;
-        :biblioNote         "Volume 13 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   688 .
+    bdr:I4PD435  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  688 .
     
-    bdr:I4PD436  a          :ImageGroup ;
-        :biblioNote         "Volume 14 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   626 .
+    bdr:I4PD436  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  626 .
     
-    bdr:I4PD437  a          :ImageGroup ;
-        :biblioNote         "Volume 15 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   714 .
+    bdr:I4PD437  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  714 .
     
-    bdr:I4PD438  a          :ImageGroup ;
-        :biblioNote         "Volume 16 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   708 .
+    bdr:I4PD438  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  708 .
     
-    bdr:I4PD439  a          :ImageGroup ;
-        :biblioNote         "Volume 17 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   372 .
+    bdr:I4PD439  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  372 .
     
-    bdr:I4PD440  a          :ImageGroup ;
-        :biblioNote         "Volume 18 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   590 .
+    bdr:I4PD440  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  590 .
     
-    bdr:I4PD441  a          :ImageGroup ;
-        :biblioNote         "Volume 19 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   616 .
+    bdr:I4PD441  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  616 .
     
-    bdr:I4PD442  a          :ImageGroup ;
-        :biblioNote         "Volume 20 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   972 .
+    bdr:I4PD442  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  972 .
     
-    bdr:I4PD443  a          :ImageGroup ;
-        :biblioNote         "Volume 21 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   492 .
+    bdr:I4PD443  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  492 .
     
-    bdr:I4PD444  a          :ImageGroup ;
-        :biblioNote         "Volume 22 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   516 .
+    bdr:I4PD444  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  516 .
     
-    bdr:I4PD445  a          :ImageGroup ;
-        :biblioNote         "Volume 23 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   620 .
+    bdr:I4PD445  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  620 .
     
-    bdr:I4PD446  a          :ImageGroup ;
-        :biblioNote         "Volume 24 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   626 .
+    bdr:I4PD446  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  626 .
     
-    bdr:I4PD447  a          :ImageGroup ;
-        :biblioNote         "Volume 25 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   504 .
+    bdr:I4PD447  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  504 .
     
-    bdr:I4PD448  a          :ImageGroup ;
-        :biblioNote         "Volume 26 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   442 .
+    bdr:I4PD448  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  442 .
     
-    bdr:I4PD449  a          :ImageGroup ;
-        :biblioNote         "Volume 27 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   596 .
+    bdr:I4PD449  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  596 .
     
-    bdr:I4PD450  a          :ImageGroup ;
-        :biblioNote         "Volume 28 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   444 .
+    bdr:I4PD450  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  444 .
     
-    bdr:I4PD451  a          :ImageGroup ;
-        :biblioNote         "Volume 29 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   510 .
+    bdr:I4PD451  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  510 .
     
-    bdr:I4PD452  a          :ImageGroup ;
-        :biblioNote         "Volume 30 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   726 .
+    bdr:I4PD452  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  726 .
     
-    bdr:I4PD453  a          :ImageGroup ;
-        :biblioNote         "Volume 31 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   718 .
+    bdr:I4PD453  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  718 .
     
-    bdr:I4PD454  a          :ImageGroup ;
-        :biblioNote         "Volume 32 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   574 .
+    bdr:I4PD454  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  574 .
     
-    bdr:I4PD455  a          :ImageGroup ;
-        :biblioNote         "Volume 33 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   754 .
+    bdr:I4PD455  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  754 .
     
-    bdr:I4PD456  a          :ImageGroup ;
-        :biblioNote         "Volume 34 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   572 .
+    bdr:I4PD456  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  572 .
     
-    bdr:I4PD457  a          :ImageGroup ;
-        :biblioNote         "Volume 35 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   412 .
+    bdr:I4PD457  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  412 .
     
-    bdr:I4PD458  a          :ImageGroup ;
-        :biblioNote         "Volume 36 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   806 .
+    bdr:I4PD458  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  806 .
     
-    bdr:I4PD459  a          :ImageGroup ;
-        :biblioNote         "Volume 37 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   386 .
+    bdr:I4PD459  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  386 .
     
-    bdr:I4PD460  a          :ImageGroup ;
-        :biblioNote         "Volume 38 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   746 .
+    bdr:I4PD460  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  746 .
     
-    bdr:I4PD461  a          :ImageGroup ;
-        :biblioNote         "Volume 39 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   540 .
+    bdr:I4PD461  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  540 .
     
-    bdr:I4PD462  a          :ImageGroup ;
-        :biblioNote         "Volume 40 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   552 .
+    bdr:I4PD462  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  552 .
     
-    bdr:I4PD463  a          :ImageGroup ;
-        :biblioNote         "Volume 41 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   450 .
+    bdr:I4PD463  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  450 .
     
-    bdr:I4PD464  a          :ImageGroup ;
-        :biblioNote         "Volume 42 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   412 .
+    bdr:I4PD464  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  412 .
     
-    bdr:I4PD465  a          :ImageGroup ;
-        :biblioNote         "Volume 43 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   542 .
+    bdr:I4PD465  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  542 .
     
-    bdr:I4PD466  a          :ImageGroup ;
-        :biblioNote         "Volume 44 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   664 .
+    bdr:I4PD466  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  664 .
     
-    bdr:I4PD467  a          :ImageGroup ;
-        :biblioNote         "Volume 45 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   444 .
+    bdr:I4PD467  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  444 .
     
-    bdr:I4PD468  a          :ImageGroup ;
-        :biblioNote         "Volume 46 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   636 .
+    bdr:I4PD468  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  636 .
     
-    bdr:I4PD469  a          :ImageGroup ;
-        :biblioNote         "Volume 47 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   744 .
+    bdr:I4PD469  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  744 .
     
-    bdr:I4PD470  a          :ImageGroup ;
-        :biblioNote         "Volume 48 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   494 .
+    bdr:I4PD470  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  494 .
     
-    bdr:I4PD471  a          :ImageGroup ;
-        :biblioNote         "Volume 49 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   606 .
+    bdr:I4PD471  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  606 .
     
-    bdr:I4PD472  a          :ImageGroup ;
-        :biblioNote         "Volume 50 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   570 .
+    bdr:I4PD472  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  570 .
     
-    bdr:I4PD473  a          :ImageGroup ;
-        :biblioNote         "Volume 51 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   826 .
+    bdr:I4PD473  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  826 .
     
-    bdr:I4PD474  a          :ImageGroup ;
-        :biblioNote         "Volume 52 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   828 .
+    bdr:I4PD474  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  828 .
     
-    bdr:I4PD475  a          :ImageGroup ;
-        :biblioNote         "Volume 53 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   784 .
+    bdr:I4PD475  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  784 .
     
-    bdr:I4PD476  a          :ImageGroup ;
-        :biblioNote         "Volume 54 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   782 .
+    bdr:I4PD476  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  782 .
     
-    bdr:I4PD477  a          :ImageGroup ;
-        :biblioNote         "Volume 55 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   514 .
+    bdr:I4PD477  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  514 .
     
-    bdr:I4PD478  a          :ImageGroup ;
-        :biblioNote         "Volume 56 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   456 .
+    bdr:I4PD478  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  456 .
     
-    bdr:I4PD479  a          :ImageGroup ;
-        :biblioNote         "Volume 57 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   466 .
+    bdr:I4PD479  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  466 .
     
-    bdr:I4PD480  a          :ImageGroup ;
-        :biblioNote         "Volume 58 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   670 .
+    bdr:I4PD480  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  670 .
     
-    bdr:I4PD481  a          :ImageGroup ;
-        :biblioNote         "Volume 59 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   712 .
+    bdr:I4PD481  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  712 .
     
-    bdr:I4PD482  a          :ImageGroup ;
-        :biblioNote         "Volume 60 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   574 .
+    bdr:I4PD482  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  574 .
     
-    bdr:I4PD483  a          :ImageGroup ;
-        :biblioNote         "Volume 61 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   498 .
+    bdr:I4PD483  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  498 .
     
-    bdr:I4PD484  a          :ImageGroup ;
-        :biblioNote         "Volume 62 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   918 .
+    bdr:I4PD484  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  918 .
     
-    bdr:I4PD485  a          :ImageGroup ;
-        :biblioNote         "Volume 63 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   342 .
+    bdr:I4PD485  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of snga 'gyur byang gter chos skor phyogs bsgrigs/"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  342 .
     
-    bdr:W2PD17457  a        :ImageInstance ;
-        :inCollection       bdr:PR1CTC15 ;
-        :instanceHasVolume  bdr:I4PD423 , bdr:I4PD424 , bdr:I4PD425 , bdr:I4PD426 , bdr:I4PD427 , bdr:I4PD428 , bdr:I4PD429 , bdr:I4PD430 , bdr:I4PD431 , bdr:I4PD432 , bdr:I4PD433 , bdr:I4PD434 , bdr:I4PD435 , bdr:I4PD436 , bdr:I4PD437 , bdr:I4PD438 , bdr:I4PD439 , bdr:I4PD440 , bdr:I4PD441 , bdr:I4PD442 , bdr:I4PD443 , bdr:I4PD444 , bdr:I4PD445 , bdr:I4PD446 , bdr:I4PD447 , bdr:I4PD448 , bdr:I4PD449 , bdr:I4PD450 , bdr:I4PD451 , bdr:I4PD452 , bdr:I4PD453 , bdr:I4PD454 , bdr:I4PD455 , bdr:I4PD456 , bdr:I4PD457 , bdr:I4PD458 , bdr:I4PD459 , bdr:I4PD460 , bdr:I4PD461 , bdr:I4PD462 , bdr:I4PD463 , bdr:I4PD464 , bdr:I4PD465 , bdr:I4PD466 , bdr:I4PD467 , bdr:I4PD468 , bdr:I4PD469 , bdr:I4PD470 , bdr:I4PD471 , bdr:I4PD472 , bdr:I4PD473 , bdr:I4PD474 , bdr:I4PD475 , bdr:I4PD476 , bdr:I4PD477 , bdr:I4PD478 , bdr:I4PD479 , bdr:I4PD480 , bdr:I4PD481 , bdr:I4PD482 , bdr:I4PD483 , bdr:I4PD484 , bdr:I4PD485 ;
-        :numberOfVolumes    63 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W2PD17457  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC15 ;
+        bdo:instanceHasVolume  bdr:I4PD423 , bdr:I4PD424 , bdr:I4PD425 , bdr:I4PD426 , bdr:I4PD427 , bdr:I4PD428 , bdr:I4PD429 , bdr:I4PD430 , bdr:I4PD431 , bdr:I4PD432 , bdr:I4PD433 , bdr:I4PD434 , bdr:I4PD435 , bdr:I4PD436 , bdr:I4PD437 , bdr:I4PD438 , bdr:I4PD439 , bdr:I4PD440 , bdr:I4PD441 , bdr:I4PD442 , bdr:I4PD443 , bdr:I4PD444 , bdr:I4PD445 , bdr:I4PD446 , bdr:I4PD447 , bdr:I4PD448 , bdr:I4PD449 , bdr:I4PD450 , bdr:I4PD451 , bdr:I4PD452 , bdr:I4PD453 , bdr:I4PD454 , bdr:I4PD455 , bdr:I4PD456 , bdr:I4PD457 , bdr:I4PD458 , bdr:I4PD459 , bdr:I4PD460 , bdr:I4PD461 , bdr:I4PD462 , bdr:I4PD463 , bdr:I4PD464 , bdr:I4PD465 , bdr:I4PD466 , bdr:I4PD467 , bdr:I4PD468 , bdr:I4PD469 , bdr:I4PD470 , bdr:I4PD471 , bdr:I4PD472 , bdr:I4PD473 , bdr:I4PD474 , bdr:I4PD475 , bdr:I4PD476 , bdr:I4PD477 , bdr:I4PD478 , bdr:I4PD479 , bdr:I4PD480 , bdr:I4PD481 , bdr:I4PD482 , bdr:I4PD483 , bdr:I4PD484 , bdr:I4PD485 ;
+        bdo:numberOfVolumes  63 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
