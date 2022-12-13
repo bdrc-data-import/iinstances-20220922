@@ -1,0 +1,38 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W00KG03655 {
+    bda:I3KG150  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG150 ;
+        adm:logEntry        bdr:LG0W00KG03655_E128PEXXZB1W .
+    
+    bda:W00KG03655  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W00KG03655 ;
+        adm:graphId         bdg:W00KG03655 ;
+        adm:logEntry        bdr:LG0W00KG03655_E128PEXXZB1W ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG150  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W00KG03655_E128PEXXZB1W
+        a                   adm:InitialDataCreation , adm:ScanRequested ;
+        adm:logDate         "2022-12-13T16:09:59.114468Z"^^xsd:dateTime ;
+        adm:logMessage      "create through scan request tool"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bdr:W00KG03655  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG150 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Multimedia Section, Shantarakshita Library, CIHTS, Sarnath, Varanasi, U.P. India"@en ;
+        adm:adminAbout      bdr:W00KG03655 .
+}
