@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG209840 {
@@ -650,19 +645,19 @@ bdg:W2KG209840 {
     
     bda:I2KG209969  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209969 ;
-        adm:logEntry        bda:LGF82040DA713232AD , bda:LGIM1D9BCBA1 ;
+        adm:logEntry        bda:LG0W2KG209840_W4OQRMYYMY23 , bda:LGF82040DA713232AD , bda:LGIM1D9BCBA1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG209970  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209970 ;
-        adm:logEntry        bda:LG2C1A5E7A2CB0D597 , bda:LGIMA151DFE2 ;
+        adm:logEntry        bda:LG0W2KG209840_W4OQRMYYMY23 , bda:LG2C1A5E7A2CB0D597 , bda:LGIMA151DFE2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG209971  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209971 ;
-        adm:logEntry        bda:LG32D6FF8007AB62AB , bda:LGIM2ED7E92F ;
+        adm:logEntry        bda:LG0W2KG209840_W4OQRMYYMY23 , bda:LG32D6FF8007AB62AB , bda:LGIM2ED7E92F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -724,6 +719,13 @@ bdg:W2KG209840 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-31T10:34:51.306Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W2KG209840_W4OQRMYYMY23
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2022-12-14T23:28:47.097991Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG134C7C425707F05F
@@ -2010,669 +2012,669 @@ bdg:W2KG209840 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG209863  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   869 .
-    
-    bdr:I2KG209864  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   833 .
-    
-    bdr:I2KG209865  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   877 .
-    
-    bdr:I2KG209866  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   819 .
-    
-    bdr:I2KG209867  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1029 .
-    
-    bdr:I2KG209868  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1063 .
-    
-    bdr:I2KG209869  a       :ImageGroup ;
-        :biblioNote         "Volume 7 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   981 .
-    
-    bdr:I2KG209870  a       :ImageGroup ;
-        :biblioNote         "Volume 8 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   907 .
-    
-    bdr:I2KG209871  a       :ImageGroup ;
-        :biblioNote         "Volume 9 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   937 .
-    
-    bdr:I2KG209872  a       :ImageGroup ;
-        :biblioNote         "Volume 10 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   913 .
-    
-    bdr:I2KG209873  a       :ImageGroup ;
-        :biblioNote         "Volume 11 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   815 .
-    
-    bdr:I2KG209874  a       :ImageGroup ;
-        :biblioNote         "Volume 12 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   875 .
-    
-    bdr:I2KG209875  a       :ImageGroup ;
-        :biblioNote         "Volume 13 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   779 .
-    
-    bdr:I2KG209876  a       :ImageGroup ;
-        :biblioNote         "Volume 14 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   765 .
-    
-    bdr:I2KG209877  a       :ImageGroup ;
-        :biblioNote         "Volume 15 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   837 .
-    
-    bdr:I2KG209878  a       :ImageGroup ;
-        :biblioNote         "Volume 16 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   869 .
-    
-    bdr:I2KG209879  a       :ImageGroup ;
-        :biblioNote         "Volume 17 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   875 .
-    
-    bdr:I2KG209880  a       :ImageGroup ;
-        :biblioNote         "Volume 18 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   704 .
-    
-    bdr:I2KG209881  a       :ImageGroup ;
-        :biblioNote         "Volume 19 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1043 .
-    
-    bdr:I2KG209882  a       :ImageGroup ;
-        :biblioNote         "Volume 20 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   855 .
-    
-    bdr:I2KG209883  a       :ImageGroup ;
-        :biblioNote         "Volume 21 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   731 .
-    
-    bdr:I2KG209884  a       :ImageGroup ;
-        :biblioNote         "Volume 22 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   765 .
-    
-    bdr:I2KG209885  a       :ImageGroup ;
-        :biblioNote         "Volume 23 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   871 .
-    
-    bdr:I2KG209886  a       :ImageGroup ;
-        :biblioNote         "Volume 24 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   843 .
-    
-    bdr:I2KG209887  a       :ImageGroup ;
-        :biblioNote         "Volume 25 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   857 .
-    
-    bdr:I2KG209888  a       :ImageGroup ;
-        :biblioNote         "Volume 26 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   875 .
-    
-    bdr:I2KG209889  a       :ImageGroup ;
-        :biblioNote         "Volume 27 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   805 .
-    
-    bdr:I2KG209890  a       :ImageGroup ;
-        :biblioNote         "Volume 28 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   813 .
-    
-    bdr:I2KG209891  a       :ImageGroup ;
-        :biblioNote         "Volume 29 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   827 .
-    
-    bdr:I2KG209892  a       :ImageGroup ;
-        :biblioNote         "Volume 30 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   779 .
-    
-    bdr:I2KG209893  a       :ImageGroup ;
-        :biblioNote         "Volume 31 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   777 .
-    
-    bdr:I2KG209894  a       :ImageGroup ;
-        :biblioNote         "Volume 32 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   879 .
-    
-    bdr:I2KG209895  a       :ImageGroup ;
-        :biblioNote         "Volume 33 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   787 .
-    
-    bdr:I2KG209896  a       :ImageGroup ;
-        :biblioNote         "Volume 34 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   803 .
-    
-    bdr:I2KG209897  a       :ImageGroup ;
-        :biblioNote         "Volume 35 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   833 .
-    
-    bdr:I2KG209898  a       :ImageGroup ;
-        :biblioNote         "Volume 36 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   855 .
-    
-    bdr:I2KG209899  a       :ImageGroup ;
-        :biblioNote         "Volume 37 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   841 .
-    
-    bdr:I2KG209900  a       :ImageGroup ;
-        :biblioNote         "Volume 38 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   829 .
-    
-    bdr:I2KG209901  a       :ImageGroup ;
-        :biblioNote         "Volume 39 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   889 .
-    
-    bdr:I2KG209902  a       :ImageGroup ;
-        :biblioNote         "Volume 40 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   729 .
-    
-    bdr:I2KG209903  a       :ImageGroup ;
-        :biblioNote         "Volume 41 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   827 .
-    
-    bdr:I2KG209904  a       :ImageGroup ;
-        :biblioNote         "Volume 42 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   376 .
-    
-    bdr:I2KG209905  a       :ImageGroup ;
-        :biblioNote         "Volume 43 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   739 .
-    
-    bdr:I2KG209906  a       :ImageGroup ;
-        :biblioNote         "Volume 44 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   731 .
-    
-    bdr:I2KG209907  a       :ImageGroup ;
-        :biblioNote         "Volume 45 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   843 .
-    
-    bdr:I2KG209908  a       :ImageGroup ;
-        :biblioNote         "Volume 46 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   749 .
-    
-    bdr:I2KG209909  a       :ImageGroup ;
-        :biblioNote         "Volume 47 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   815 .
-    
-    bdr:I2KG209910  a       :ImageGroup ;
-        :biblioNote         "Volume 48 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   775 .
-    
-    bdr:I2KG209911  a       :ImageGroup ;
-        :biblioNote         "Volume 49 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   813 .
-    
-    bdr:I2KG209912  a       :ImageGroup ;
-        :biblioNote         "Volume 50 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   811 .
-    
-    bdr:I2KG209913  a       :ImageGroup ;
-        :biblioNote         "Volume 51 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   787 .
-    
-    bdr:I2KG209914  a       :ImageGroup ;
-        :biblioNote         "Volume 52 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   819 .
-    
-    bdr:I2KG209915  a       :ImageGroup ;
-        :biblioNote         "Volume 53 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   949 .
-    
-    bdr:I2KG209916  a       :ImageGroup ;
-        :biblioNote         "Volume 54 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   773 .
-    
-    bdr:I2KG209917  a       :ImageGroup ;
-        :biblioNote         "Volume 55 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   785 .
-    
-    bdr:I2KG209918  a       :ImageGroup ;
-        :biblioNote         "Volume 56 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   827 .
-    
-    bdr:I2KG209919  a       :ImageGroup ;
-        :biblioNote         "Volume 57 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1035 .
-    
-    bdr:I2KG209920  a       :ImageGroup ;
-        :biblioNote         "Volume 58 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   931 .
-    
-    bdr:I2KG209921  a       :ImageGroup ;
-        :biblioNote         "Volume 59 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1007 .
-    
-    bdr:I2KG209922  a       :ImageGroup ;
-        :biblioNote         "Volume 60 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   937 .
-    
-    bdr:I2KG209923  a       :ImageGroup ;
-        :biblioNote         "Volume 61 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   975 .
-    
-    bdr:I2KG209924  a       :ImageGroup ;
-        :biblioNote         "Volume 62 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   769 .
-    
-    bdr:I2KG209925  a       :ImageGroup ;
-        :biblioNote         "Volume 63 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   811 .
-    
-    bdr:I2KG209926  a       :ImageGroup ;
-        :biblioNote         "Volume 64 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   316 .
-    
-    bdr:I2KG209927  a       :ImageGroup ;
-        :biblioNote         "Volume 65 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   931 .
-    
-    bdr:I2KG209928  a       :ImageGroup ;
-        :biblioNote         "Volume 66 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   979 .
-    
-    bdr:I2KG209929  a       :ImageGroup ;
-        :biblioNote         "Volume 67 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1133 .
-    
-    bdr:I2KG209930  a       :ImageGroup ;
-        :biblioNote         "Volume 68 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   841 .
-    
-    bdr:I2KG209931  a       :ImageGroup ;
-        :biblioNote         "Volume 69 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   813 .
-    
-    bdr:I2KG209932  a       :ImageGroup ;
-        :biblioNote         "Volume 70 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   991 .
-    
-    bdr:I2KG209933  a       :ImageGroup ;
-        :biblioNote         "Volume 71 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1077 .
-    
-    bdr:I2KG209934  a       :ImageGroup ;
-        :biblioNote         "Volume 72 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   859 .
-    
-    bdr:I2KG209935  a       :ImageGroup ;
-        :biblioNote         "Volume 73 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   929 .
-    
-    bdr:I2KG209936  a       :ImageGroup ;
-        :biblioNote         "Volume 74 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   755 .
-    
-    bdr:I2KG209937  a       :ImageGroup ;
-        :biblioNote         "Volume 75 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   761 .
-    
-    bdr:I2KG209938  a       :ImageGroup ;
-        :biblioNote         "Volume 76 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   737 .
-    
-    bdr:I2KG209939  a       :ImageGroup ;
-        :biblioNote         "Volume 77 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   771 .
-    
-    bdr:I2KG209940  a       :ImageGroup ;
-        :biblioNote         "Volume 78 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   759 .
-    
-    bdr:I2KG209941  a       :ImageGroup ;
-        :biblioNote         "Volume 79 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   719 .
-    
-    bdr:I2KG209942  a       :ImageGroup ;
-        :biblioNote         "Volume 80 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   823 .
-    
-    bdr:I2KG209943  a       :ImageGroup ;
-        :biblioNote         "Volume 81 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   751 .
-    
-    bdr:I2KG209944  a       :ImageGroup ;
-        :biblioNote         "Volume 82 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   779 .
-    
-    bdr:I2KG209945  a       :ImageGroup ;
-        :biblioNote         "Volume 83 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   723 .
-    
-    bdr:I2KG209946  a       :ImageGroup ;
-        :biblioNote         "Volume 84 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   771 .
-    
-    bdr:I2KG209947  a       :ImageGroup ;
-        :biblioNote         "Volume 85 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   769 .
-    
-    bdr:I2KG209948  a       :ImageGroup ;
-        :biblioNote         "Volume 86 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   741 .
-    
-    bdr:I2KG209949  a       :ImageGroup ;
-        :biblioNote         "Volume 87 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   735 .
-    
-    bdr:I2KG209950  a       :ImageGroup ;
-        :biblioNote         "Volume 88 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   791 .
-    
-    bdr:I2KG209951  a       :ImageGroup ;
-        :biblioNote         "Volume 89 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   721 .
-    
-    bdr:I2KG209952  a       :ImageGroup ;
-        :biblioNote         "Volume 90 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   743 .
-    
-    bdr:I2KG209953  a       :ImageGroup ;
-        :biblioNote         "Volume 91 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   693 .
-    
-    bdr:I2KG209954  a       :ImageGroup ;
-        :biblioNote         "Volume 92 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   759 .
-    
-    bdr:I2KG209955  a       :ImageGroup ;
-        :biblioNote         "Volume 93 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   727 .
-    
-    bdr:I2KG209956  a       :ImageGroup ;
-        :biblioNote         "Volume 94 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   741 .
-    
-    bdr:I2KG209957  a       :ImageGroup ;
-        :biblioNote         "Volume 95 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   643 .
-    
-    bdr:I2KG209958  a       :ImageGroup ;
-        :biblioNote         "Volume 96 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   765 .
-    
-    bdr:I2KG209959  a       :ImageGroup ;
-        :biblioNote         "Volume 97 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   771 .
-    
-    bdr:I2KG209960  a       :ImageGroup ;
-        :biblioNote         "Volume 98 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   831 .
-    
-    bdr:I2KG209961  a       :ImageGroup ;
-        :biblioNote         "Volume 99 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   813 .
-    
-    bdr:I2KG209962  a       :ImageGroup ;
-        :biblioNote         "Volume 100 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   713 .
-    
-    bdr:I2KG209963  a       :ImageGroup ;
-        :biblioNote         "Volume 101 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       101 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   679 .
-    
-    bdr:I2KG209964  a       :ImageGroup ;
-        :biblioNote         "Volume 102 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       102 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   703 .
-    
-    bdr:I2KG209965  a       :ImageGroup ;
-        :biblioNote         "Volume 103 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       103 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   809 .
-    
-    bdr:I2KG209966  a       :ImageGroup ;
-        :biblioNote         "Volume 104 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       104 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   777 .
-    
-    bdr:I2KG209967  a       :ImageGroup ;
-        :biblioNote         "Volume 105 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       105 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   815 .
-    
-    bdr:I2KG209968  a       :ImageGroup ;
-        :biblioNote         "Volume 106 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       106 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   781 .
-    
-    bdr:I2KG209969  a       :ImageGroup ;
-        :biblioNote         "Volume 107 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       107 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   612 .
-    
-    bdr:I2KG209970  a       :ImageGroup ;
-        :biblioNote         "Volume 108 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       108 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   545 .
-    
-    bdr:I2KG209971  a       :ImageGroup ;
-        :biblioNote         "Volume 109 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       109 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   768 .
-    
-    bdr:I2KG209972  a       :ImageGroup ;
-        :biblioNote         "Volume 110 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
-        :volumeNumber       110 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   581 .
-    
-    bdr:W2KG209840  a       :ImageInstance ;
-        :inCollection       bdr:PR1VIENNA00 ;
-        :instanceHasVolume  bdr:I2KG209863 , bdr:I2KG209864 , bdr:I2KG209865 , bdr:I2KG209866 , bdr:I2KG209867 , bdr:I2KG209868 , bdr:I2KG209869 , bdr:I2KG209870 , bdr:I2KG209871 , bdr:I2KG209872 , bdr:I2KG209873 , bdr:I2KG209874 , bdr:I2KG209875 , bdr:I2KG209876 , bdr:I2KG209877 , bdr:I2KG209878 , bdr:I2KG209879 , bdr:I2KG209880 , bdr:I2KG209881 , bdr:I2KG209882 , bdr:I2KG209883 , bdr:I2KG209884 , bdr:I2KG209885 , bdr:I2KG209886 , bdr:I2KG209887 , bdr:I2KG209888 , bdr:I2KG209889 , bdr:I2KG209890 , bdr:I2KG209891 , bdr:I2KG209892 , bdr:I2KG209893 , bdr:I2KG209894 , bdr:I2KG209895 , bdr:I2KG209896 , bdr:I2KG209897 , bdr:I2KG209898 , bdr:I2KG209899 , bdr:I2KG209900 , bdr:I2KG209901 , bdr:I2KG209902 , bdr:I2KG209903 , bdr:I2KG209904 , bdr:I2KG209905 , bdr:I2KG209906 , bdr:I2KG209907 , bdr:I2KG209908 , bdr:I2KG209909 , bdr:I2KG209910 , bdr:I2KG209911 , bdr:I2KG209912 , bdr:I2KG209913 , bdr:I2KG209914 , bdr:I2KG209915 , bdr:I2KG209916 , bdr:I2KG209917 , bdr:I2KG209918 , bdr:I2KG209919 , bdr:I2KG209920 , bdr:I2KG209921 , bdr:I2KG209922 , bdr:I2KG209923 , bdr:I2KG209924 , bdr:I2KG209925 , bdr:I2KG209926 , bdr:I2KG209927 , bdr:I2KG209928 , bdr:I2KG209929 , bdr:I2KG209930 , bdr:I2KG209931 , bdr:I2KG209932 , bdr:I2KG209933 , bdr:I2KG209934 , bdr:I2KG209935 , bdr:I2KG209936 , bdr:I2KG209937 , bdr:I2KG209938 , bdr:I2KG209939 , bdr:I2KG209940 , bdr:I2KG209941 , bdr:I2KG209942 , bdr:I2KG209943 , bdr:I2KG209944 , bdr:I2KG209945 , bdr:I2KG209946 , bdr:I2KG209947 , bdr:I2KG209948 , bdr:I2KG209949 , bdr:I2KG209950 , bdr:I2KG209951 , bdr:I2KG209952 , bdr:I2KG209953 , bdr:I2KG209954 , bdr:I2KG209955 , bdr:I2KG209956 , bdr:I2KG209957 , bdr:I2KG209958 , bdr:I2KG209959 , bdr:I2KG209960 , bdr:I2KG209961 , bdr:I2KG209962 , bdr:I2KG209963 , bdr:I2KG209964 , bdr:I2KG209965 , bdr:I2KG209966 , bdr:I2KG209967 , bdr:I2KG209968 , bdr:I2KG209969 , bdr:I2KG209970 , bdr:I2KG209971 , bdr:I2KG209972 ;
-        :numberOfVolumes    110 ;
-        :scanInfo           "copy made available by the Resources for Kanjur and Tanjur Studies (rKTs), University of Vienna."@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+    bdr:I2KG209863  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  869 .
+    
+    bdr:I2KG209864  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  833 .
+    
+    bdr:I2KG209865  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  877 .
+    
+    bdr:I2KG209866  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  819 .
+    
+    bdr:I2KG209867  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1029 .
+    
+    bdr:I2KG209868  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1063 .
+    
+    bdr:I2KG209869  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  981 .
+    
+    bdr:I2KG209870  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  907 .
+    
+    bdr:I2KG209871  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  937 .
+    
+    bdr:I2KG209872  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  913 .
+    
+    bdr:I2KG209873  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  815 .
+    
+    bdr:I2KG209874  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  875 .
+    
+    bdr:I2KG209875  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  779 .
+    
+    bdr:I2KG209876  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  765 .
+    
+    bdr:I2KG209877  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  837 .
+    
+    bdr:I2KG209878  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  869 .
+    
+    bdr:I2KG209879  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  875 .
+    
+    bdr:I2KG209880  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  704 .
+    
+    bdr:I2KG209881  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1043 .
+    
+    bdr:I2KG209882  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  855 .
+    
+    bdr:I2KG209883  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  731 .
+    
+    bdr:I2KG209884  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  765 .
+    
+    bdr:I2KG209885  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  871 .
+    
+    bdr:I2KG209886  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  843 .
+    
+    bdr:I2KG209887  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  857 .
+    
+    bdr:I2KG209888  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  875 .
+    
+    bdr:I2KG209889  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  805 .
+    
+    bdr:I2KG209890  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  813 .
+    
+    bdr:I2KG209891  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  827 .
+    
+    bdr:I2KG209892  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  779 .
+    
+    bdr:I2KG209893  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  777 .
+    
+    bdr:I2KG209894  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  879 .
+    
+    bdr:I2KG209895  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  787 .
+    
+    bdr:I2KG209896  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  803 .
+    
+    bdr:I2KG209897  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  833 .
+    
+    bdr:I2KG209898  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  855 .
+    
+    bdr:I2KG209899  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  841 .
+    
+    bdr:I2KG209900  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  829 .
+    
+    bdr:I2KG209901  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  889 .
+    
+    bdr:I2KG209902  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  729 .
+    
+    bdr:I2KG209903  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  827 .
+    
+    bdr:I2KG209904  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  376 .
+    
+    bdr:I2KG209905  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  739 .
+    
+    bdr:I2KG209906  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  731 .
+    
+    bdr:I2KG209907  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  843 .
+    
+    bdr:I2KG209908  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  749 .
+    
+    bdr:I2KG209909  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  815 .
+    
+    bdr:I2KG209910  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  775 .
+    
+    bdr:I2KG209911  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  813 .
+    
+    bdr:I2KG209912  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  811 .
+    
+    bdr:I2KG209913  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  787 .
+    
+    bdr:I2KG209914  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  819 .
+    
+    bdr:I2KG209915  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  949 .
+    
+    bdr:I2KG209916  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  773 .
+    
+    bdr:I2KG209917  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  785 .
+    
+    bdr:I2KG209918  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  827 .
+    
+    bdr:I2KG209919  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1035 .
+    
+    bdr:I2KG209920  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  931 .
+    
+    bdr:I2KG209921  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1007 .
+    
+    bdr:I2KG209922  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  937 .
+    
+    bdr:I2KG209923  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  975 .
+    
+    bdr:I2KG209924  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  769 .
+    
+    bdr:I2KG209925  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  811 .
+    
+    bdr:I2KG209926  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  316 .
+    
+    bdr:I2KG209927  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  931 .
+    
+    bdr:I2KG209928  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  979 .
+    
+    bdr:I2KG209929  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1133 .
+    
+    bdr:I2KG209930  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  841 .
+    
+    bdr:I2KG209931  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  813 .
+    
+    bdr:I2KG209932  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  991 .
+    
+    bdr:I2KG209933  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1077 .
+    
+    bdr:I2KG209934  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  859 .
+    
+    bdr:I2KG209935  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  929 .
+    
+    bdr:I2KG209936  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  755 .
+    
+    bdr:I2KG209937  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  761 .
+    
+    bdr:I2KG209938  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  737 .
+    
+    bdr:I2KG209939  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  771 .
+    
+    bdr:I2KG209940  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  759 .
+    
+    bdr:I2KG209941  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  719 .
+    
+    bdr:I2KG209942  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  823 .
+    
+    bdr:I2KG209943  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  751 .
+    
+    bdr:I2KG209944  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  779 .
+    
+    bdr:I2KG209945  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  723 .
+    
+    bdr:I2KG209946  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  771 .
+    
+    bdr:I2KG209947  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  769 .
+    
+    bdr:I2KG209948  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  741 .
+    
+    bdr:I2KG209949  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  735 .
+    
+    bdr:I2KG209950  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  791 .
+    
+    bdr:I2KG209951  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  721 .
+    
+    bdr:I2KG209952  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  743 .
+    
+    bdr:I2KG209953  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  693 .
+    
+    bdr:I2KG209954  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  759 .
+    
+    bdr:I2KG209955  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  727 .
+    
+    bdr:I2KG209956  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  741 .
+    
+    bdr:I2KG209957  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  643 .
+    
+    bdr:I2KG209958  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  765 .
+    
+    bdr:I2KG209959  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  771 .
+    
+    bdr:I2KG209960  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  831 .
+    
+    bdr:I2KG209961  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  813 .
+    
+    bdr:I2KG209962  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  713 .
+    
+    bdr:I2KG209963  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 101 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  679 .
+    
+    bdr:I2KG209964  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 102 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  703 .
+    
+    bdr:I2KG209965  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 103 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  809 .
+    
+    bdr:I2KG209966  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 104 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  777 .
+    
+    bdr:I2KG209967  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 105 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  815 .
+    
+    bdr:I2KG209968  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 106 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  781 .
+    
+    bdr:I2KG209969  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 107 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  613 .
+    
+    bdr:I2KG209970  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 108 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  603 .
+    
+    bdr:I2KG209971  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 109 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    109 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1019 .
+    
+    bdr:I2KG209972  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 110 of bka' 'gyur/ (bkra shis g.yang rtse bris ma/)"@en ;
+        bdo:volumeNumber    110 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  581 .
+    
+    bdr:W2KG209840  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1VIENNA00 ;
+        bdo:instanceHasVolume  bdr:I2KG209863 , bdr:I2KG209864 , bdr:I2KG209865 , bdr:I2KG209866 , bdr:I2KG209867 , bdr:I2KG209868 , bdr:I2KG209869 , bdr:I2KG209870 , bdr:I2KG209871 , bdr:I2KG209872 , bdr:I2KG209873 , bdr:I2KG209874 , bdr:I2KG209875 , bdr:I2KG209876 , bdr:I2KG209877 , bdr:I2KG209878 , bdr:I2KG209879 , bdr:I2KG209880 , bdr:I2KG209881 , bdr:I2KG209882 , bdr:I2KG209883 , bdr:I2KG209884 , bdr:I2KG209885 , bdr:I2KG209886 , bdr:I2KG209887 , bdr:I2KG209888 , bdr:I2KG209889 , bdr:I2KG209890 , bdr:I2KG209891 , bdr:I2KG209892 , bdr:I2KG209893 , bdr:I2KG209894 , bdr:I2KG209895 , bdr:I2KG209896 , bdr:I2KG209897 , bdr:I2KG209898 , bdr:I2KG209899 , bdr:I2KG209900 , bdr:I2KG209901 , bdr:I2KG209902 , bdr:I2KG209903 , bdr:I2KG209904 , bdr:I2KG209905 , bdr:I2KG209906 , bdr:I2KG209907 , bdr:I2KG209908 , bdr:I2KG209909 , bdr:I2KG209910 , bdr:I2KG209911 , bdr:I2KG209912 , bdr:I2KG209913 , bdr:I2KG209914 , bdr:I2KG209915 , bdr:I2KG209916 , bdr:I2KG209917 , bdr:I2KG209918 , bdr:I2KG209919 , bdr:I2KG209920 , bdr:I2KG209921 , bdr:I2KG209922 , bdr:I2KG209923 , bdr:I2KG209924 , bdr:I2KG209925 , bdr:I2KG209926 , bdr:I2KG209927 , bdr:I2KG209928 , bdr:I2KG209929 , bdr:I2KG209930 , bdr:I2KG209931 , bdr:I2KG209932 , bdr:I2KG209933 , bdr:I2KG209934 , bdr:I2KG209935 , bdr:I2KG209936 , bdr:I2KG209937 , bdr:I2KG209938 , bdr:I2KG209939 , bdr:I2KG209940 , bdr:I2KG209941 , bdr:I2KG209942 , bdr:I2KG209943 , bdr:I2KG209944 , bdr:I2KG209945 , bdr:I2KG209946 , bdr:I2KG209947 , bdr:I2KG209948 , bdr:I2KG209949 , bdr:I2KG209950 , bdr:I2KG209951 , bdr:I2KG209952 , bdr:I2KG209953 , bdr:I2KG209954 , bdr:I2KG209955 , bdr:I2KG209956 , bdr:I2KG209957 , bdr:I2KG209958 , bdr:I2KG209959 , bdr:I2KG209960 , bdr:I2KG209961 , bdr:I2KG209962 , bdr:I2KG209963 , bdr:I2KG209964 , bdr:I2KG209965 , bdr:I2KG209966 , bdr:I2KG209967 , bdr:I2KG209968 , bdr:I2KG209969 , bdr:I2KG209970 , bdr:I2KG209971 , bdr:I2KG209972 ;
+        bdo:numberOfVolumes  110 ;
+        bdo:scanInfo        "copy made available by the Resources for Kanjur and Tanjur Studies (rKTs), University of Vienna."@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
 }
