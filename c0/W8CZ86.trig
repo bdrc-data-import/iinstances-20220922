@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ86 {
+    bda:LG0W8CZ86_LHS6JIBH5VBX
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-12-21T13:49:25.675339Z"^^xsd:dateTime ;
+        adm:logMessage      "nsr"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG0W8CZ86_WH0BILOC7SYS
         a                   adm:UpdateData ;
         adm:logDate         "2022-12-21T13:48:46.212775Z"^^xsd:dateTime ;
@@ -14,12 +20,12 @@ bdg:W8CZ86 {
         adm:logWho          bdu:U2089842660 .
     
     bda:W8CZ86  a           adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ86 ;
         adm:graphId         bdg:W8CZ86 ;
-        adm:logEntry        bda:LG0W8CZ86_WH0BILOC7SYS ;
+        adm:logEntry        bda:LG0W8CZ86_LHS6JIBH5VBX , bda:LG0W8CZ86_WH0BILOC7SYS ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I8CZ594  a          bdo:ImageGroup ;
