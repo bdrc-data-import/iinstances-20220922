@@ -1,26 +1,28 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76595 {
     bda:I8LS76658  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76658 ;
-        adm:logEntry        bda:LG5DAC8215C1721969 ;
+        adm:logEntry        bda:LG0W8LS76595_HKDHD4MUK9JI , bda:LG5DAC8215C1721969 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS76659  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76659 ;
-        adm:logEntry        bda:LG4C61139077034D2A ;
+        adm:logEntry        bda:LG0W8LS76595_HKDHD4MUK9JI , bda:LG4C61139077034D2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS76595_HKDHD4MUK9JI
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2022-12-22T02:42:24.929094Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG195B49533C98EF26
         a                   adm:ScanRequestCreation ;
@@ -52,19 +54,19 @@ bdg:W8LS76595 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS76658  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of lam rim mchan bzhi sbrags ma/stod cha dang smad cha/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76658  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of lam rim mchan bzhi sbrags ma/stod cha dang smad cha/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  754 .
     
-    bdr:I8LS76659  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of lam rim mchan bzhi sbrags ma/stod cha dang smad cha/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76659  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of lam rim mchan bzhi sbrags ma/stod cha dang smad cha/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  784 .
     
-    bdr:W8LS76595  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS76658 , bdr:I8LS76659 ;
-        :numberOfVolumes    2 .
+    bdr:W8LS76595  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS76658 , bdr:I8LS76659 ;
+        bdo:numberOfVolumes  2 .
 }
