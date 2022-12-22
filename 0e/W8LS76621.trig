@@ -1,21 +1,23 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76621 {
     bda:I8LS76709  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76709 ;
-        adm:logEntry        bda:LG2B8C10B014DBFB60 ;
+        adm:logEntry        bda:LG0W8LS76621_UOBAQCGDB8QK , bda:LG2B8C10B014DBFB60 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS76621_UOBAQCGDB8QK
+        a                   adm:Synced ;
+        adm:logDate         "2022-12-22T02:51:13.273999Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2B8C10B014DBFB60
         a                   adm:InitialDataCreation ;
@@ -41,13 +43,13 @@ bdg:W8LS76621 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS76709  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of byang chub sems dpa'i dpyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76709  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of byang chub sems dpa'i dpyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  368 .
     
-    bdr:W8LS76621  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS76709 ;
-        :numberOfVolumes    1 .
+    bdr:W8LS76621  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS76709 ;
+        bdo:numberOfVolumes  1 .
 }
