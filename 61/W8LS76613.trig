@@ -1,20 +1,15 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76613 {
     bda:I8LS76693  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76693 ;
-        adm:logEntry        bda:LG4A71FEFA603AD194 ;
+        adm:logEntry        bda:LG0W8LS76613_4WWK9VEYEG3Z , bda:LG4A71FEFA603AD194 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG05FEF22BCFB8AC9A
@@ -22,6 +17,13 @@ bdg:W8LS76613 {
         adm:logDate         "2022-03-02T09:31:45.604Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LG0W8LS76613_4WWK9VEYEG3Z
+        a                   adm:Synced ;
+        adm:logDate         "2022-12-22T02:49:27.042132Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG4A71FEFA603AD194
         a                   adm:InitialDataCreation ;
@@ -41,13 +43,13 @@ bdg:W8LS76613 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS76693  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of ston pa tshad ma'i skyes bur sgrub pa'i gtam bde chen khang bzang 'dzegs pa'i rin chen them skas/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76693  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of ston pa tshad ma'i skyes bur sgrub pa'i gtam bde chen khang bzang 'dzegs pa'i rin chen them skas/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  73 .
     
-    bdr:W8LS76613  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS76693 ;
-        :numberOfVolumes    1 .
+    bdr:W8LS76613  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS76693 ;
+        bdo:numberOfVolumes  1 .
 }

@@ -1,42 +1,57 @@
-@prefix adm: <http://purl.bdrc.io/ontology/admin/> .
-@prefix bda: <http://purl.bdrc.io/admindata/> .
-@prefix bdg: <http://purl.bdrc.io/graph/> .
-@prefix bdo: <http://purl.bdrc.io/ontology/core/> .
-@prefix bdr: <http://purl.bdrc.io/resource/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NLM5439 {
-    bda:W1NLM5439 a adm:AdminData ;
-        adm:access bda:AccessOpen ;
-        adm:adminAbout bdr:W1NLM5439 ;
-        adm:gitPath "50/W1NLM5439.trig" ;
-        adm:gitRepo bda:GR0014 ;
-        adm:graphId bdg:W1NLM5439 ;
-        adm:logEntry bda:LG0BDSWEIO07BVVLYX,
-            bda:LG0NLMCN5FK9JEB7A4 ;
-        adm:metadataLegal bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina false ;
-        adm:status bda:StatusReleased .
-
-    bda:LG0BDSWEIO07BVVLYX a adm:UpdateData ;
-        adm:logAgent "buda-scripts/batch/batch-change.py" ;
-        adm:logDate "2022-11-12T05:40:25.624283"^^xsd:dateTime ;
-        adm:logMessage "fix image group type"@en ;
-        adm:logMethod bda:BatchMethod .
-
-    bda:LG0NLMCN5FK9JEB7A4 a adm:InitialDataImport ;
-        adm:logAgent "buda-scripts/imports/NLM/import-simple.py" ;
-        adm:logDate "2022-11-11T17:01:48.043992"^^xsd:dateTime ;
-        adm:logMethod bda:BatchMethod .
-
-    bdr:I1NLM5439_001 a bdo:ImageGroup ;
-        bdo:volumeNumber 1 ;
-        bdo:volumePagesTbrcIntro 0 .
-
-    bdr:W1NLM5439 a bdo:ImageInstance ;
-        bdo:inCollection bdr:PR1NLM00 ;
-        bdo:instanceHasVolume bdr:I1NLM5439_001 ;
-        bdo:numberOfVolumes 1 ;
-        bdo:scanInfo "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
+    bda:I1NLM5439_001
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I1NLM5439_001 ;
+        adm:logEntry        bda:LG0W1NLM5439_OM9XTOTNNIPV .
+    
+    bda:LG0BDSWEIO07BVVLYX
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2022-11-12T05:40:25.624283"^^xsd:dateTime ;
+        adm:logMessage      "fix image group type"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0NLMCN5FK9JEB7A4
+        a                   adm:InitialDataImport ;
+        adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
+        adm:logDate         "2022-11-11T17:01:48.043992"^^xsd:dateTime ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W1NLM5439_OM9XTOTNNIPV
+        a                   adm:Synced ;
+        adm:logDate         "2022-12-23T16:13:18.905440Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1NLM5439  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1NLM5439 ;
+        adm:gitPath         "50/W1NLM5439.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1NLM5439 ;
+        adm:logEntry        bda:LG0BDSWEIO07BVVLYX , bda:LG0NLMCN5FK9JEB7A4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1NLM5439_001
+        a                   bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  224 .
+    
+    bdr:W1NLM5439  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I1NLM5439_001 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
 }
-

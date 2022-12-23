@@ -1,0 +1,38 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ84 {
+    bda:LG0W8CZ84_4HF6OPQ25C2X
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-12-20T15:30:45.371719Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@bo ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ84_UDCMUI0WXWMH
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-12-20T15:31:22.020074Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@bo ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:W8CZ84  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ84 ;
+        adm:graphId         bdg:W8CZ84 ;
+        adm:logEntry        bda:LG0W8CZ84_4HF6OPQ25C2X , bda:LG0W8CZ84_UDCMUI0WXWMH ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ592  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W8CZ84  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ592 ;
+        bdo:scanInfo        "Digital images of the text are made available through the kind support of Great Enlightenment Buddhist Institute Society (GEBIS) in Canada"@en .
+}

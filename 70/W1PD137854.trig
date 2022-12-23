@@ -9,7 +9,7 @@
 bdg:W1PD137854 {
     bda:I2PD18955  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18955 ;
-        adm:logEntry        bda:LG11FC6C85360C41BA ;
+        adm:logEntry        bda:LG0W1PD137854_T2VZ1PAADTRK , bda:LG11FC6C85360C41BA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0W1PD137854_FJ2C8POHF9CR
@@ -17,6 +17,13 @@ bdg:W1PD137854 {
         adm:logDate         "2022-12-15T19:08:45.746878Z"^^xsd:dateTime ;
         adm:logMessage      "changed TBRC intro pages"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W1PD137854_T2VZ1PAADTRK
+        a                   adm:Synced ;
+        adm:logDate         "2022-12-22T02:38:56.566153Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG11FC6C85360C41BA
         a                   adm:InitialDataCreation ;
@@ -46,7 +53,7 @@ bdg:W1PD137854 {
         bdo:biblioNote      "Volume 1 of bod kyi gso rig dang skar rtsis rig pa'i tshig mdzod/"@en ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 ;
-        bdo:volumePagesTotal  0 .
+        bdo:volumePagesTotal  898 .
     
     bdr:W1PD137854  a       bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I2PD18955 ;

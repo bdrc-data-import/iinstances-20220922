@@ -1,17 +1,16 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS24034 {
+    bda:I3KG152  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG152 ;
+        adm:logEntry        bdr:LG0W8LS24034_JYM1XMTOJPDF .
+    
     bda:I8LS24036  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS24036 ;
         adm:logEntry        bda:LG6ACF9DA927DEE317 , bda:LGIM32427762 ;
@@ -43,20 +42,31 @@ bdg:W8LS24034 {
         adm:gitPath         "62/W8LS24034.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS24034 ;
-        adm:logEntry        bda:LGC97738554FC5EA75 ;
+        adm:logEntry        bda:LGC97738554FC5EA75 , bdr:LG0W8LS24034_JYM1XMTOJPDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS24036  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of lam rim chen mo mchan bzhi sbrags/ glegs bam dang po/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   780 .
+    bdr:I3KG152  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
     
-    bdr:W8LS24034  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS24036 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D29998"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:I8LS24036  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of lam rim chen mo mchan bzhi sbrags/ glegs bam dang po/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  780 .
+    
+    bdr:LG0W8LS24034_JYM1XMTOJPDF
+        a                   adm:ScanRequested ;
+        adm:logDate         "2022-12-22T20:45:57.265170Z"^^xsd:dateTime ;
+        adm:logMessage      "add 1 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bdr:W8LS24034  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I3KG152 , bdr:I8LS24036 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D29998"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
