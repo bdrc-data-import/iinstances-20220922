@@ -1,0 +1,33 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER90 {
+    bda:LG0W1ER90_XBCBMKDCJ9B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-12-30T12:41:54.453660Z"^^xsd:dateTime ;
+        adm:logMessage      "scans"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER90  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1ER90 ;
+        adm:graphId         bdg:W1ER90 ;
+        adm:logEntry        bda:LG0W1ER90_XBCBMKDCJ9B1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1ER743  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1ER90  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1ER743 ;
+        bdo:isComplete      true ;
+        bdo:scanInfo        "Images imported from Internet Archive and cropped for OCR"@en .
+}
