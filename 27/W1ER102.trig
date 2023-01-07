@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER102 {
+    bda:LG0W1ER102_LIH5PCFZHVCA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-07T19:16:34.418291Z"^^xsd:dateTime ;
+        adm:logMessage      "dlp"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W1ER102_WBHWRLRSPMYV
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-07T18:38:01.756429Z"^^xsd:dateTime ;
@@ -17,7 +23,7 @@ bdg:W1ER102 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1ER102 ;
         adm:graphId         bdg:W1ER102 ;
-        adm:logEntry        bda:LG0W1ER102_WBHWRLRSPMYV ;
+        adm:logEntry        bda:LG0W1ER102_LIH5PCFZHVCA , bda:LG0W1ER102_WBHWRLRSPMYV ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -27,5 +33,6 @@ bdg:W1ER102 {
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:W1ER102  a          bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
         bdo:instanceHasVolume  bdr:I1ER755 .
 }
