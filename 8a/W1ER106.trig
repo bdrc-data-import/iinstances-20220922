@@ -13,15 +13,26 @@ bdg:W1ER106 {
         adm:logMessage      "create"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER106_FDL6EBQAFGUK
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-07T19:14:19.592082Z"^^xsd:dateTime ;
+        adm:logMessage      "vol"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1ER106  a          adm:AdminData ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1ER106 ;
         adm:graphId         bdg:W1ER106 ;
-        adm:logEntry        bda:LG0W1ER106_AWF4XSVERYBM ;
+        adm:logEntry        bda:LG0W1ER106_AWF4XSVERYBM , bda:LG0W1ER106_FDL6EBQAFGUK ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I1ER763  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W1ER106  a          bdo:ImageInstance ;
-        bdo:digitalLendingPossible  false .
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I1ER763 .
 }
