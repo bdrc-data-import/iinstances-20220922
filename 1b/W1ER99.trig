@@ -13,11 +13,17 @@ bdg:W1ER99 {
         adm:logMessage      "create"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER99_XSSR9QBJ1EYZ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-07T19:17:34.593430Z"^^xsd:dateTime ;
+        adm:logMessage      "dlp"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1ER99  a           adm:AdminData ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1ER99 ;
         adm:graphId         bdg:W1ER99 ;
-        adm:logEntry        bda:LG0W1ER99_W6QCISDGY0TV ;
+        adm:logEntry        bda:LG0W1ER99_W6QCISDGY0TV , bda:LG0W1ER99_XSSR9QBJ1EYZ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -27,5 +33,6 @@ bdg:W1ER99 {
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:W1ER99  a           bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
         bdo:instanceHasVolume  bdr:I1ER752 .
 }
