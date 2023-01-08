@@ -13,15 +13,26 @@ bdg:W1ER111 {
         adm:logMessage      "create"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER111_SOUJECX5KP7W
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-08T09:30:02.624364Z"^^xsd:dateTime ;
+        adm:logMessage      "volume"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1ER111  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1ER111 ;
         adm:graphId         bdg:W1ER111 ;
-        adm:logEntry        bda:LG0W1ER111_NCPLUMRO72LB ;
+        adm:logEntry        bda:LG0W1ER111_NCPLUMRO72LB , bda:LG0W1ER111_SOUJECX5KP7W ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
+    bdr:I1ER764  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W1ER111  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1ER764 ;
         bdo:scanInfo        "Images scanned from the microfilms in Berlin, reel B105/15"@en .
 }
