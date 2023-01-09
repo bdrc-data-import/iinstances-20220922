@@ -1,14 +1,11 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN3420 {
@@ -20,7 +17,7 @@ bdg:W3CN3420 {
     
     bda:I3CN6586  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6586 ;
-        adm:logEntry        bda:LGEF0211D2425EB390 , bda:LGF5A5574A85973E62 ;
+        adm:logEntry        bda:LG0W3CN3420_RFSOZZNG5CGN , bda:LGEF0211D2425EB390 , bda:LGF5A5574A85973E62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,6 +25,13 @@ bdg:W3CN3420 {
         adm:adminAbout      bdr:I3CN6587 ;
         adm:logEntry        bda:LGFB299FE976930053 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W3CN3420_RFSOZZNG5CGN
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-01-09T21:09:57.897602Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6C36B433C81D43F7
         a                   adm:ScanRequestCreation ;
@@ -77,31 +81,30 @@ bdg:W3CN3420 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN6585  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   562 .
+    bdr:I3CN6585  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  562 .
     
-    bdr:I3CN6586  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   481 .
+    bdr:I3CN6586  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  482 .
     
-    bdr:I3CN6587  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN6587  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bod kyi rtsom rig lo rgyus/ (4,5,6)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
     bdr:ID781B500DB57F1EA3
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147757265" .
     
-    bdr:W3CN3420  a         :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID781B500DB57F1EA3 ;
-        :instanceHasVolume  bdr:I3CN6585 , bdr:I3CN6586 , bdr:I3CN6587 ;
-        :numberOfVolumes    3 .
+    bdr:W3CN3420  a         bdo:ImageInstance ;
+        bf:identifiedBy     bdr:ID781B500DB57F1EA3 ;
+        bdo:instanceHasVolume  bdr:I3CN6585 , bdr:I3CN6586 , bdr:I3CN6587 ;
+        bdo:numberOfVolumes  3 .
 }
