@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER115 {
+    bda:LG0W1ER115_AQNYOJIUCTND
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-10T09:40:31.769960Z"^^xsd:dateTime ;
+        adm:logMessage      "create"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER115  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1ER115 ;
+        adm:graphId         bdg:W1ER115 ;
+        adm:logEntry        bda:LG0W1ER115_AQNYOJIUCTND ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1ER768  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1ER115  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1ER768 ;
+        bdo:scanInfo        "Images kindly provided by LTWA, accession number 14523"@en .
+}
