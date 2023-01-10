@@ -1,0 +1,28 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG45 {
+    bda:LG0W3KG45_ICC8JXWJBFUR
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-10T18:41:42.599852Z"^^xsd:dateTime ;
+        adm:logMessage      "created image group"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG45  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG45 ;
+        adm:graphId         bdg:W3KG45 ;
+        adm:logEntry        bda:LG0W3KG45_ICC8JXWJBFUR ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:W3KG45  a           bdo:ImageInstance ;
+        bdo:isComplete      true ;
+        bdo:scanInfo        "Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
+}
