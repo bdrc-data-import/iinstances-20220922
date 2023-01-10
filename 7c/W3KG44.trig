@@ -7,6 +7,46 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG44 {
+    bda:I3KG244  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG244 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG245  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG245 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG246  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG246 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG247  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG247 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG248  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG248 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG249  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG249 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG250  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG250 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG251  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG251 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG252  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG252 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
+    bda:I3KG253  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG253 ;
+        adm:logEntry        bdr:LG0W3KG44_FN4UNANPZ359 .
+    
     bda:LG0W3KG44_AL2SYJBAPFSU
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-10T17:24:10.428454Z"^^xsd:dateTime ;
@@ -17,12 +57,61 @@ bdg:W3KG44 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG44 ;
         adm:graphId         bdg:W3KG44 ;
-        adm:logEntry        bda:LG0W3KG44_AL2SYJBAPFSU ;
+        adm:logEntry        bda:LG0W3KG44_AL2SYJBAPFSU , bdr:LG0W3KG44_FN4UNANPZ359 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I3KG244  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG245  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG246  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG247  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG248  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG249  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG250  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG251  a          bdo:ImageGroup ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG252  a          bdo:ImageGroup ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG253  a          bdo:ImageGroup ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG44_FN4UNANPZ359
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-01-10T17:39:38.188131Z"^^xsd:dateTime ;
+        adm:logMessage      "add 10 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3KG44  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG244 , bdr:I3KG245 , bdr:I3KG246 , bdr:I3KG247 , bdr:I3KG248 , bdr:I3KG249 , bdr:I3KG250 , bdr:I3KG251 , bdr:I3KG252 , bdr:I3KG253 ;
         bdo:isComplete      true ;
+        bdo:numberOfVolumes  10 ;
         bdo:scanInfo        "Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
 }
