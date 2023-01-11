@@ -7,6 +7,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG47 {
+    bda:I3KG256  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG256 ;
+        adm:logEntry        bdr:LG0W3KG47_YVC6BL36PWZ1 .
+    
     bda:LG0W3KG47_K9EALCJBPFRC
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-11T01:59:45.575344Z"^^xsd:dateTime ;
@@ -17,12 +21,25 @@ bdg:W3KG47 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG47 ;
         adm:graphId         bdg:W3KG47 ;
-        adm:logEntry        bda:LG0W3KG47_K9EALCJBPFRC ;
+        adm:logEntry        bda:LG0W3KG47_K9EALCJBPFRC , bdr:LG0W3KG47_YVC6BL36PWZ1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I3KG256  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG47_YVC6BL36PWZ1
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-01-11T02:00:51.109938Z"^^xsd:dateTime ;
+        adm:logMessage      "add 1 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3KG47  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG256 ;
         bdo:isComplete      true ;
+        bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Digital images are made available through the kind support of Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
 }
