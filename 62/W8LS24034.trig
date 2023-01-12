@@ -9,13 +9,20 @@
 bdg:W8LS24034 {
     bda:I3KG152  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG152 ;
-        adm:logEntry        bdr:LG0W8LS24034_JYM1XMTOJPDF .
+        adm:logEntry        bda:LG0W8LS24034_EPDQOAQQMNRG , bdr:LG0W8LS24034_JYM1XMTOJPDF .
     
     bda:I8LS24036  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS24036 ;
         adm:logEntry        bda:LG6ACF9DA927DEE317 , bda:LGIM32427762 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS24034_EPDQOAQQMNRG
+        a                   adm:Synced ;
+        adm:logDate         "2023-01-12T02:42:13.767047Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6ACF9DA927DEE317
         a                   adm:InitialDataCreation ;
@@ -49,7 +56,8 @@ bdg:W8LS24034 {
     
     bdr:I3KG152  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  794 .
     
     bdr:I8LS24036  a        bdo:ImageGroup ;
         bdo:biblioNote      "Volume 1 of lam rim chen mo mchan bzhi sbrags/ glegs bam dang po/"@en ;
