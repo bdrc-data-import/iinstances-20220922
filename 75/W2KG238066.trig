@@ -1,26 +1,28 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG238066 {
     bda:I2KG238101  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238101 ;
-        adm:logEntry        bda:LGBD1EF1506D79D6F1 ;
+        adm:logEntry        bda:LG0W2KG238066_CGVYIGZQXHBP , bda:LGBD1EF1506D79D6F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I2KG238102  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238102 ;
-        adm:logEntry        bda:LGD18C5B9476FD39BB ;
+        adm:logEntry        bda:LG0W2KG238066_CGVYIGZQXHBP , bda:LGD18C5B9476FD39BB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG238066_CGVYIGZQXHBP
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-01-12T02:13:14.958232Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG3E2F32C81E3618C8
         a                   adm:ScanRequestCreation ;
@@ -52,21 +54,21 @@ bdg:W2KG238066 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG238101  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_sgam po pa bsod nams rin chen/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238101  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/_sgam po pa bsod nams rin chen/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  707 .
     
-    bdr:I2KG238102  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/_sgam po pa bsod nams rin chen/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238102  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/_sgam po pa bsod nams rin chen/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  387 .
     
-    bdr:W2KG238066  a       :ImageInstance ;
-        :inCollection       bdr:PR1KG1 ;
-        :instanceHasVolume  bdr:I2KG238101 , bdr:I2KG238102 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "Scanned at Palpung Sherabling Monastic seat, P.O. Upper Bhattu, District Kangra, Himachal Pradesh 176125, India."@en .
+    bdr:W2KG238066  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1KG1 ;
+        bdo:instanceHasVolume  bdr:I2KG238101 , bdr:I2KG238102 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned at Palpung Sherabling Monastic seat, P.O. Upper Bhattu, District Kangra, Himachal Pradesh 176125, India."@en .
 }
