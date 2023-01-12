@@ -1,36 +1,38 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG238067 {
     bda:I2KG238104  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238104 ;
-        adm:logEntry        bda:LG30B08E6A14D0E2A7 ;
+        adm:logEntry        bda:LG0W2KG238067_YE1BMAJNM52N , bda:LG30B08E6A14D0E2A7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I2KG238105  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238105 ;
-        adm:logEntry        bda:LG93EC78FFFFABFCA3 ;
+        adm:logEntry        bda:LG0W2KG238067_YE1BMAJNM52N , bda:LG93EC78FFFFABFCA3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I2KG238106  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238106 ;
-        adm:logEntry        bda:LGE409862E2233E1CA ;
+        adm:logEntry        bda:LG0W2KG238067_YE1BMAJNM52N , bda:LGE409862E2233E1CA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I2KG238107  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238107 ;
-        adm:logEntry        bda:LG2E1DD507EC5CAF4E ;
+        adm:logEntry        bda:LG0W2KG238067_YE1BMAJNM52N , bda:LG2E1DD507EC5CAF4E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG238067_YE1BMAJNM52N
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-01-12T02:21:44.010304Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2E1DD507EC5CAF4E
         a                   adm:InitialDataCreation ;
@@ -74,33 +76,33 @@ bdg:W2KG238067 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG238104  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238104  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  618 .
     
-    bdr:I2KG238105  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238105  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1073 .
     
-    bdr:I2KG238106  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238106  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  290 .
     
-    bdr:I2KG238107  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG238107  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/ karma nges legs bstan 'dzin/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  378 .
     
-    bdr:W2KG238067  a       :ImageInstance ;
-        :inCollection       bdr:PR1KG1 ;
-        :instanceHasVolume  bdr:I2KG238104 , bdr:I2KG238105 , bdr:I2KG238106 , bdr:I2KG238107 ;
-        :numberOfVolumes    4 ;
-        :scanInfo           "Scanned at Palpung Sherabling Monastic seat, P.O. Upper Bhattu, District Kangra, Himachal Pradesh 176125, India."@en .
+    bdr:W2KG238067  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1KG1 ;
+        bdo:instanceHasVolume  bdr:I2KG238104 , bdr:I2KG238105 , bdr:I2KG238106 , bdr:I2KG238107 ;
+        bdo:numberOfVolumes  4 ;
+        bdo:scanInfo        "Scanned at Palpung Sherabling Monastic seat, P.O. Upper Bhattu, District Kangra, Himachal Pradesh 176125, India."@en .
 }
