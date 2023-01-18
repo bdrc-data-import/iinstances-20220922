@@ -12,22 +12,29 @@ bdg:W8LS76614 {
         adm:logEntry        bda:LG0W8LS76614_C5YHXKQWHIOH , bda:LG3C71DFFBC4394BA2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0W8LS76614_C5YHXKQWHIOH
         a                   adm:Synced ;
-        adm:logDate         "2022-12-22T02:49:47.441768Z"^^xsd:dateTime ;
+        adm:logDate         "2022-12-22T02:49:47.441768+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG3C71DFFBC4394BA2
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-02T10:26:11.29Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-02T10:26:11.290000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG61A31D70B5293380
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-02T10:26:11.389Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-02T10:26:11.389000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -38,9 +45,9 @@ bdg:W8LS76614 {
         adm:gitPath         "0d/W8LS76614.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76614 ;
-        adm:logEntry        bda:LG61A31D70B5293380 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG61A31D70B5293380 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I8LS76695  a        bdo:ImageGroup ;

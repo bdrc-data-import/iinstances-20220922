@@ -22,34 +22,41 @@ bdg:W2KG238063 {
         adm:logEntry        bda:LG0W2KG238063_RC386CQX98HD , bda:LGD7FD50B24EB3345C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0W2KG238063_RC386CQX98HD
         a                   adm:ImagesUpdated , adm:Synced ;
-        adm:logDate         "2023-01-12T02:10:15.211233Z"^^xsd:dateTime ;
+        adm:logDate         "2023-01-12T02:10:15.211233+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG17B5255E39B9D629
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-21T17:32:03.832Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:32:03.832000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG6CF15C267E879432
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-09-21T17:32:04.029Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:32:04.029000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG9713448F96990168
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-21T17:32:03.715Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:32:03.715000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD7FD50B24EB3345C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-21T17:32:03.93Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:32:03.930000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -60,9 +67,9 @@ bdg:W2KG238063 {
         adm:gitPath         "7d/W2KG238063.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG238063 ;
-        adm:logEntry        bda:LG6CF15C267E879432 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG6CF15C267E879432 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I2KG238071  a       bdo:ImageGroup ;

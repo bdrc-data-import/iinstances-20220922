@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ369350 {
@@ -18,21 +13,28 @@ bdg:W4CZ369350 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG3B875403AECAB1BB
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-04-27T15:15:46.77Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:15:46.770000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG89A753D82AF13E54
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:15:46.45Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:15:46.450000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIM4463AA9F  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:38:22.57Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:38:22.570000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,18 +45,18 @@ bdg:W4CZ369350 {
         adm:gitPath         "2e/W4CZ369350.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ369350 ;
-        adm:logEntry        bda:LG3B875403AECAB1BB ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG3B875403AECAB1BB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ369644  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsang snying rgyud kyi spyi don rnam 'byed rin chen mdzod kyi lde mig"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   610 .
+    bdr:I4CZ369644  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsang snying rgyud kyi spyi don rnam 'byed rin chen mdzod kyi lde mig"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  610 .
     
-    bdr:W4CZ369350  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ369644 ;
-        :numberOfVolumes    1 .
+    bdr:W4CZ369350  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I4CZ369644 ;
+        bdo:numberOfVolumes  1 .
 }

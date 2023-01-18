@@ -14,20 +14,27 @@ bdg:W8LS76613 {
     
     bda:LG05FEF22BCFB8AC9A
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-02T09:31:45.604Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-02T09:31:45.604000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0W8LS76613_4WWK9VEYEG3Z
         a                   adm:Synced ;
-        adm:logDate         "2022-12-22T02:49:27.042132Z"^^xsd:dateTime ;
+        adm:logDate         "2022-12-22T02:49:27.042132+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG4A71FEFA603AD194
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-02T09:31:45.498Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-02T09:31:45.498000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -38,9 +45,9 @@ bdg:W8LS76613 {
         adm:gitPath         "61/W8LS76613.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76613 ;
-        adm:logEntry        bda:LG05FEF22BCFB8AC9A ;
+        adm:logEntry        bda:LG05FEF22BCFB8AC9A , bda:LG0BDSK6NYO3KSJR2N ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I8LS76693  a        bdo:ImageGroup ;

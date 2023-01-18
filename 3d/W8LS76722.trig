@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76722 {
@@ -17,15 +12,22 @@ bdg:W8LS76722 {
         adm:logEntry        bda:LG20BD025454FF49B7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG20BD025454FF49B7
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-08T10:47:56.196Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-08T10:47:56.196000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG3CE812EE67AAA9A0
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-08T10:47:56.299Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-08T10:47:56.299000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -36,18 +38,18 @@ bdg:W8LS76722 {
         adm:gitPath         "3d/W8LS76722.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76722 ;
-        adm:logEntry        bda:LG3CE812EE67AAA9A0 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG3CE812EE67AAA9A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS76724  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of dkon mchog rjes dran gyi mdo dang sbyar ba'i skyabs gsum las 'bras dang bcas pa'i rnam bzhag dang / de'i kha skong dmar spyod kyi dogs gcod rgya cher bshad pa/ srid pa 'khor lo'i rgyas bshad bcas/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS76724  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dkon mchog rjes dran gyi mdo dang sbyar ba'i skyabs gsum las 'bras dang bcas pa'i rnam bzhag dang / de'i kha skong dmar spyod kyi dogs gcod rgya cher bshad pa/ srid pa 'khor lo'i rgyas bshad bcas/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W8LS76722  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS76724 ;
-        :numberOfVolumes    1 .
+    bdr:W8LS76722  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS76724 ;
+        bdo:numberOfVolumes  1 .
 }

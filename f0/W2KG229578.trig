@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG229578 {
@@ -18,21 +13,28 @@ bdg:W2KG229578 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG1FFB41406510F587
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-09-28T14:50:12.934Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-28T14:50:12.934000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG536A39E57B4D9F70
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-28T14:50:12.837Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-28T14:50:12.837000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM60295FD3  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-09-30T00:54:09.88Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-30T00:54:09.880000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,19 +45,19 @@ bdg:W2KG229578 {
         adm:gitPath         "f0/W2KG229578.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG229578 ;
-        adm:logEntry        bda:LG1FFB41406510F587 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG1FFB41406510F587 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG229597  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of rtags rigs gzhung rgya mtshor 'jug pa'i gru gzings dang blo rigs rigs gzhung rgya mtsho'i snying po/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   133 .
+    bdr:I2KG229597  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rtags rigs gzhung rgya mtshor 'jug pa'i gru gzings dang blo rigs rigs gzhung rgya mtsho'i snying po/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  133 .
     
-    bdr:W2KG229578  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG229597 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 9/2021"@en .
+    bdr:W2KG229578  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2KG229597 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 9/2021"@en .
 }

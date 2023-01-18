@@ -12,22 +12,29 @@ bdg:W8LS76896 {
         adm:logEntry        bda:LG0W8LS76896_DXGLNZIX09R9 , bda:LG47B9AFBF9C880B30 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0W8LS76896_DXGLNZIX09R9
         a                   adm:Synced ;
-        adm:logDate         "2023-01-04T00:32:46.014188Z"^^xsd:dateTime ;
+        adm:logDate         "2023-01-04T00:32:46.014188+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG47B9AFBF9C880B30
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-24T08:26:35.799Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-24T08:26:35.799000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG915CE492D04ABD1E
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-24T08:26:35.915Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-24T08:26:35.915000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -38,9 +45,9 @@ bdg:W8LS76896 {
         adm:gitPath         "02/W8LS76896.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76896 ;
-        adm:logEntry        bda:LG915CE492D04ABD1E ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG915CE492D04ABD1E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I8LS76898  a        bdo:ImageGroup ;

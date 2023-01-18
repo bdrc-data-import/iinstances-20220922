@@ -17,21 +17,28 @@ bdg:W8LS76939 {
         adm:logEntry        bda:LG76E6B925E1EB1EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG2AF66CB1BAB8D911
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-29T08:13:35.486Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-29T08:13:35.486000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG76E6B925E1EB1EDC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-29T08:13:35.383Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-29T08:13:35.383000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGE36B40F6E6270A8A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-29T08:13:35.268Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-29T08:13:35.268000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -42,10 +49,10 @@ bdg:W8LS76939 {
         adm:gitPath         "ad/W8LS76939.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76939 ;
-        adm:logEntry        bda:LG2AF66CB1BAB8D911 , bdr:LG0W8LS76939_08HPBHESLLHT ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG2AF66CB1BAB8D911 , bdr:LG0W8LS76939_08HPBHESLLHT ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:W8LS24034 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS76941  a        bdo:ImageGroup ;
@@ -62,7 +69,7 @@ bdg:W8LS76939 {
     
     bdr:LG0W8LS76939_08HPBHESLLHT
         a                   adm:WithdrawData ;
-        adm:logDate         "2022-12-22T21:20:20.321486Z"^^xsd:dateTime ;
+        adm:logDate         "2022-12-22T21:20:20.321486+00:00"^^xsd:dateTime ;
         adm:logMessage      "withdraw W8LS76939 in favor of W8LS24034"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U1426146149 .

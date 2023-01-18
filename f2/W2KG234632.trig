@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG234632 {
@@ -18,21 +13,28 @@ bdg:W2KG234632 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0CDBF430C53FA108
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T18:36:44.636Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:36:44.636000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGBA60F6C7D7277256
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-04-27T18:36:44.726Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:36:44.726000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM1C2A7EE8  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-06T21:02:55.429Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-06T21:02:55.429000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,19 +45,19 @@ bdg:W2KG234632 {
         adm:gitPath         "f2/W2KG234632.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG234632 ;
-        adm:logEntry        bda:LGBA60F6C7D7277256 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LGBA60F6C7D7277256 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG234759  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of dbu ma rtsa she'i 'grel pa tshig gsal/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   522 .
+    bdr:I2KG234759  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dbu ma rtsa she'i 'grel pa tshig gsal/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  522 .
     
-    bdr:W2KG234632  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG234759 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+    bdr:W2KG234632  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2KG234759 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
 }

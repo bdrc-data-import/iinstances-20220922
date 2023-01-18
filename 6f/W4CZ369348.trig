@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ369348 {
@@ -48,81 +43,88 @@ bdg:W4CZ369348 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG33FBBF48C3736640
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.158Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.158000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG660080EB32D496B4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.064Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.064000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG83D21A5E9D6826DA
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-04-27T15:17:12.217Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:12.217000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG87962C4F69E1EDFD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.818Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.818000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG92F6E5D931BFDA78
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.399Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.399000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGBB638498FCE7AFCD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.285Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.285000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGC4F60651AE361A1B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T15:17:11.705Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T15:17:11.705000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIM4E436BD4  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:50.699Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:50.699000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM64D1942E  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:50.174Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:50.174000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM72B64D03  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:50.457Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:50.457000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM796D1630  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:49.68Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:49.680000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMD5395B5B  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:49.375Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:49.375000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIME6220517  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-17T00:35:49.933Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-17T00:35:49.933000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -133,48 +135,48 @@ bdg:W4CZ369348 {
         adm:gitPath         "6f/W4CZ369348.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ369348 ;
-        adm:logEntry        bda:LG83D21A5E9D6826DA ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG83D21A5E9D6826DA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ369648  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   516 .
+    bdr:I4CZ369648  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  516 .
     
-    bdr:I4CZ369649  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   516 .
+    bdr:I4CZ369649  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  516 .
     
-    bdr:I4CZ369650  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   628 .
+    bdr:I4CZ369650  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  628 .
     
-    bdr:I4CZ369651  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
+    bdr:I4CZ369651  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
     
-    bdr:I4CZ369652  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   492 .
+    bdr:I4CZ369652  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  492 .
     
-    bdr:I4CZ369653  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/ ngag dbang chos grags/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
+    bdr:I4CZ369653  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/ ngag dbang chos grags/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
     
-    bdr:W4CZ369348  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ369648 , bdr:I4CZ369649 , bdr:I4CZ369650 , bdr:I4CZ369651 , bdr:I4CZ369652 , bdr:I4CZ369653 ;
-        :numberOfVolumes    6 .
+    bdr:W4CZ369348  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I4CZ369648 , bdr:I4CZ369649 , bdr:I4CZ369650 , bdr:I4CZ369651 , bdr:I4CZ369652 , bdr:I4CZ369653 ;
+        bdo:numberOfVolumes  6 .
 }

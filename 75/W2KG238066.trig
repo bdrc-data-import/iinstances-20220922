@@ -17,28 +17,35 @@ bdg:W2KG238066 {
         adm:logEntry        bda:LG0W2KG238066_CGVYIGZQXHBP , bda:LGD18C5B9476FD39BB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0W2KG238066_CGVYIGZQXHBP
         a                   adm:ImagesUpdated , adm:Synced ;
-        adm:logDate         "2023-01-12T02:13:14.958232Z"^^xsd:dateTime ;
+        adm:logDate         "2023-01-12T02:13:14.958232+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG3E2F32C81E3618C8
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-09-21T17:36:22.929Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:36:22.929000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGBD1EF1506D79D6F1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-21T17:36:22.74Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:36:22.740000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD18C5B9476FD39BB
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-21T17:36:22.836Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-21T17:36:22.836000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -49,9 +56,9 @@ bdg:W2KG238066 {
         adm:gitPath         "75/W2KG238066.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG238066 ;
-        adm:logEntry        bda:LG3E2F32C81E3618C8 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG3E2F32C81E3618C8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I2KG238101  a       bdo:ImageGroup ;

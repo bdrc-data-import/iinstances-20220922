@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG230198 {
@@ -60,105 +55,112 @@ bdg:W2KG230198 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG51672E85D18EC2CD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.599Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.599000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG61B907B722B7C366
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.502Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.502000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG8DA203F6808E734F
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-02-08T18:26:55.997Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.997000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG98C3FD6814E91DB3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.189Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.189000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG9D5E368BF133D623
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.4Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.400000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGA768C239740DDBDC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.9Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.900000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGA96A20EC93D04EAE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.804Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.804000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD891D6D40BE075AC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.701Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.701000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGFA7663575B9C1EBF
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-08T18:26:55.301Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-08T18:26:55.301000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM13B2CAA2  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:54.156Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:54.156000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM1EE4E42E  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:55.501Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:55.501000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA59FE78B  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:54.386Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:54.386000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA6D21EED  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:53.562Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:53.562000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA73D2332  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:54.924Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:54.924000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAF50B081  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:55.192Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:55.192000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMBD721367  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:53.807Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:53.807000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMD9E549A7  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-02-11T01:52:54.625Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-11T01:52:54.625000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -169,61 +171,61 @@ bdg:W2KG230198 {
         adm:gitPath         "59/W2KG230198.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG230198 ;
-        adm:logEntry        bda:LG8DA203F6808E734F ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG8DA203F6808E734F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG232552  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   668 .
+    bdr:I2KG232552  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  668 .
     
-    bdr:I2KG232553  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   750 .
+    bdr:I2KG232553  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  750 .
     
-    bdr:I2KG232554  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   766 .
+    bdr:I2KG232554  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  766 .
     
-    bdr:I2KG232555  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   618 .
+    bdr:I2KG232555  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  618 .
     
-    bdr:I2KG232556  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   488 .
+    bdr:I2KG232556  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  488 .
     
-    bdr:I2KG232557  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   590 .
+    bdr:I2KG232557  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  590 .
     
-    bdr:I2KG232558  a       :ImageGroup ;
-        :biblioNote         "Volume 7 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   560 .
+    bdr:I2KG232558  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  560 .
     
-    bdr:I2KG232559  a       :ImageGroup ;
-        :biblioNote         "Volume 8 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   710 .
+    bdr:I2KG232559  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of gsung 'bum/ tshang kha nor bu dbang phyug"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  710 .
     
-    bdr:W2KG230198  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG232552 , bdr:I2KG232553 , bdr:I2KG232554 , bdr:I2KG232555 , bdr:I2KG232556 , bdr:I2KG232557 , bdr:I2KG232558 , bdr:I2KG232559 ;
-        :numberOfVolumes    8 ;
-        :scanInfo           "Scanned at ."@en .
+    bdr:W2KG230198  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2KG232552 , bdr:I2KG232553 , bdr:I2KG232554 , bdr:I2KG232555 , bdr:I2KG232556 , bdr:I2KG232557 , bdr:I2KG232558 , bdr:I2KG232559 ;
+        bdo:numberOfVolumes  8 ;
+        bdo:scanInfo        "Scanned at ."@en .
 }

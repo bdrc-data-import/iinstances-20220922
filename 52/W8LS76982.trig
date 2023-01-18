@@ -1,49 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
-@prefix adr:   <http://purl.bdrc.io/resource-nc/auth/> .
-@prefix as:    <http://www.w3.org/ns/activitystreams#> .
-@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
-@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
-@prefix bdan:  <http://purl.bdrc.io/annotation/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
-@prefix bdgu:  <http://purl.bdrc.io/graph-nc/user/> .
-@prefix bdgup: <http://purl.bdrc.io/graph-nc/user-private/> .
 @prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
-@prefix bdou:  <http://purl.bdrc.io/ontology/ext/user/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
-@prefix bds:   <http://purl.bdrc.io/ontology/shapes/core/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dila:  <http://purl.dila.edu.tw/resource/> .
-@prefix eftr:  <http://purl.84000.co/resource/core/> .
-@prefix f:     <java:io.bdrc.libraries.sparql.functions.> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix iiif2: <http://iiif.io/api/presentation/2#> .
-@prefix iiif3: <http://iiif.io/api/presentation/3#> .
-@prefix ldp:   <http://www.w3.org/ns/ldp#> .
-@prefix mbbt:  <http://mbingenheimer.net/tools/bibls/> .
-@prefix oa:    <http://www.w3.org/ns/oa#> .
-@prefix ola:   <https://openlibrary.org/authors/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
-@prefix sh:    <http://www.w3.org/ns/shacl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix srcd:  <https://sakyaresearch.org/deities/> .
-@prefix srcl:  <https://sakyaresearch.org/literary_forms/> .
-@prefix srcpe: <https://sakyaresearch.org/persons/> .
-@prefix srcpl: <https://sakyaresearch.org/places/> .
-@prefix srcs:  <https://sakyaresearch.org/sources/> .
-@prefix srct:  <https://sakyaresearch.org/topics/> .
-@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
-@prefix text:  <http://jena.apache.org/text#> .
-@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix viaf:  <http://viaf.org/viaf/> .
-@prefix wd:    <http://www.wikidata.org/entity/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS76982 {
@@ -172,166 +132,173 @@ bdg:W8LS76982 {
         adm:logEntry        bda:LGBE974124646D112F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0FE043BE358B5ED5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.954Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.954000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG0W8LS76982_NGMPJOOTC1W8
         a                   adm:Synced ;
-        adm:logDate         "2022-12-07T00:50:20.948779Z"^^xsd:dateTime ;
+        adm:logDate         "2022-12-07T00:50:20.948779+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG1C108B2E06395F64
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.674Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.674000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG1FA3C877FB6C716F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.006Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.006000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG34C1D2104A816614
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.069Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.069000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG605DDF0E67ECABA2
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.397Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.397000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG615F0ADA08715321
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-04-04T09:10:34.604Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.604000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG679F6F72A1D065C7
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.339Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.339000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG67B9867FF4964F39
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.568Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.568000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG71E13CA582906BCA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.181Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.181000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG783C9B3C6D7AAAE5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.726Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.726000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG79023752031AE35A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.454Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.454000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG799BAF9C5D08D304
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:34.067Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.067000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG7F37792E7B176288
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:34.173Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.173000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG814A48B1B0C00F63
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:31.848Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:31.848000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG8F1CAC6644ACBE63
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:34.374Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.374000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG91247E2B615CCF3A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:34.273Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.273000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG9EFE84EEC19F95D8
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:31.739Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:31.739000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGACBF5E4CD034978B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.213Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.213000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGAFDDA8D7BCC82EC6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.85Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.850000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGBE974124646D112F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:34.481Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:34.481000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGCA9BF30983858AEA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:31.966Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:31.966000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGCFB71BD2704A27BD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.81Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.810000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGD04C62D5ACEFAF25
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.615Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.615000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGDD1DA49D090B8C7D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:33.114Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:33.114000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGE541623E38B73887
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.291Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.291000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGEF55DCBB05529204
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-04T09:10:32.511Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-04T09:10:32.511000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -342,9 +309,9 @@ bdg:W8LS76982 {
         adm:gitPath         "52/W8LS76982.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76982 ;
-        adm:logEntry        bda:LG615F0ADA08715321 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG615F0ADA08715321 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I8LS76984  a        bdo:ImageGroup ;

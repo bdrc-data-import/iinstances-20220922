@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG234841 {
@@ -42,69 +37,76 @@ bdg:W2KG234841 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDSK6NYO3KSJR2N
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG527DD4EDFBBFDD26
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-04T07:37:47.505Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.505000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG64C946F1422C5C1D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-04T07:37:47.686Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.686000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG762B7F6800ABAF46
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-05-04T07:37:47.867Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.867000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGC1A4AECB7B3BE1BC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-04T07:37:47.775Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.775000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGE17784588A8D97C4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-04T07:37:47.596Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.596000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGED02703AADC7E212
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-04T07:37:47.396Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-04T07:37:47.396000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM147EC705  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-16T23:38:53.562Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-16T23:38:53.562000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM501E27D5  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-16T23:38:53.841Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-16T23:38:53.841000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA4CB1312  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-16T23:38:53.332Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-16T23:38:53.332000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMBB6D2439  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-16T23:38:52.82Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-16T23:38:52.820000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMD0278CA0  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-05-16T23:38:53.088Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-16T23:38:53.088000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -115,43 +117,43 @@ bdg:W2KG234841 {
         adm:gitPath         "d1/W2KG234841.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG234841 ;
-        adm:logEntry        bda:LG762B7F6800ABAF46 ;
+        adm:logEntry        bda:LG0BDSK6NYO3KSJR2N , bda:LG762B7F6800ABAF46 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG235378  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of sher phyin 'bum gyi pod kha cig"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   510 .
+    bdr:I2KG235378  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sher phyin 'bum gyi pod kha cig"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  510 .
     
-    bdr:I2KG235379  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of sher phyin 'bum gyi pod kha cig"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   535 .
+    bdr:I2KG235379  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of sher phyin 'bum gyi pod kha cig"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  535 .
     
-    bdr:I2KG235380  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of sher phyin 'bum gyi pod kha cig"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   569 .
+    bdr:I2KG235380  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of sher phyin 'bum gyi pod kha cig"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  569 .
     
-    bdr:I2KG235381  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of sher phyin 'bum gyi pod kha cig"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   756 .
+    bdr:I2KG235381  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of sher phyin 'bum gyi pod kha cig"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  756 .
     
-    bdr:I2KG235382  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of sher phyin 'bum gyi pod kha cig"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   422 .
+    bdr:I2KG235382  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of sher phyin 'bum gyi pod kha cig"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  422 .
     
-    bdr:W2KG234841  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG235378 , bdr:I2KG235379 , bdr:I2KG235380 , bdr:I2KG235381 , bdr:I2KG235382 ;
-        :numberOfVolumes    5 ;
-        :scanInfo           "Scanned at the Tibetan Manuscript Project Vienna (TMPV) (University of Vienna)."@en .
+    bdr:W2KG234841  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2KG235378 , bdr:I2KG235379 , bdr:I2KG235380 , bdr:I2KG235381 , bdr:I2KG235382 ;
+        bdo:numberOfVolumes  5 ;
+        bdo:scanInfo        "Scanned at the Tibetan Manuscript Project Vienna (TMPV) (University of Vienna)."@en .
 }
