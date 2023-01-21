@@ -7,11 +7,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ71 {
+    bda:I8CZ667  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ667 ;
+        adm:logEntry        bda:LG0W8CZ71_JWWUCOX08GHN .
+    
+    bda:I8CZ668  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ668 ;
+        adm:logEntry        bda:LG0W8CZ71_JWWUCOX08GHN .
+    
     bda:LG0W8CZ71_HNGNDXZXSRKI
         a                   adm:UpdateData ;
         adm:logDate         "2022-11-23T15:23:36.723357Z"^^xsd:dateTime ;
         adm:logMessage      "new s"@en ;
         adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ71_JWWUCOX08GHN
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-01-21T01:54:09.317429Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8CZ71_XWQDWWCVCUGC
         a                   adm:UpdateData ;
@@ -34,11 +49,13 @@ bdg:W8CZ71 {
     
     bdr:I8CZ667  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  50 .
     
     bdr:I8CZ668  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  70 .
     
     bdr:W8CZ71  a           bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ666 , bdr:I8CZ667 , bdr:I8CZ668 ;
