@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG18413 {
@@ -25,7 +20,7 @@ bdg:W1KG18413 {
     
     bda:I8LS21150  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS21150 ;
-        adm:logEntry        bda:LG7C1E11CB65BC70D1 ;
+        adm:logEntry        bda:LG0W1KG18413_ALI2YZEFTJI6 , bda:LG7C1E11CB65BC70D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS21151  a        adm:AdminData ;
@@ -262,6 +257,13 @@ bdg:W1KG18413 {
         adm:adminAbout      bdr:I8LS21197 ;
         adm:logEntry        bda:LG47C6006FA198D841 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W1KG18413_ALI2YZEFTJI6
+        a                   adm:Synced ;
+        adm:logDate         "2023-01-21T01:46:15.335041Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG17BC5C0DC862A3A0
         a                   adm:InitialDataCreation ;
@@ -587,309 +589,309 @@ bdg:W1KG18413 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS21148  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   110 .
+    bdr:I8LS21148  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  110 .
     
-    bdr:I8LS21149  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21149  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21150  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21150  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  87 .
     
-    bdr:I8LS21151  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21151  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21152  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21152  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21153  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21153  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21154  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21154  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21155  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21155  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21156  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21156  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21157  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21157  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21158  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21158  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21159  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21159  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21160  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21160  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21161  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21161  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21162  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21162  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21163  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21163  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21164  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21164  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21165  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21165  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21166  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21166  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21167  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21167  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21168  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21168  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21169  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21169  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21170  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21170  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21171  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21171  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21172  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21172  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21173  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21173  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21174  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21174  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21175  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21175  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21176  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21176  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21177  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21177  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21178  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21178  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21179  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21179  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21180  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21180  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21181  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21181  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21182  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21182  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21183  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21183  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21184  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21184  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21185  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21185  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21186  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21186  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21187  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21187  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21188  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21188  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21189  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21189  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21190  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21190  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21191  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21191  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21192  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21192  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21193  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21193  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21194  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21194  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21195  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21195  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21196  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21196  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS21197  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of byams brtse'i 'od snang / (dus deb/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS21197  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of byams brtse'i 'od snang / (dus deb/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W1KG18413  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS21148 , bdr:I8LS21149 , bdr:I8LS21150 , bdr:I8LS21151 , bdr:I8LS21152 , bdr:I8LS21153 , bdr:I8LS21154 , bdr:I8LS21155 , bdr:I8LS21156 , bdr:I8LS21157 , bdr:I8LS21158 , bdr:I8LS21159 , bdr:I8LS21160 , bdr:I8LS21161 , bdr:I8LS21162 , bdr:I8LS21163 , bdr:I8LS21164 , bdr:I8LS21165 , bdr:I8LS21166 , bdr:I8LS21167 , bdr:I8LS21168 , bdr:I8LS21169 , bdr:I8LS21170 , bdr:I8LS21171 , bdr:I8LS21172 , bdr:I8LS21173 , bdr:I8LS21174 , bdr:I8LS21175 , bdr:I8LS21176 , bdr:I8LS21177 , bdr:I8LS21178 , bdr:I8LS21179 , bdr:I8LS21180 , bdr:I8LS21181 , bdr:I8LS21182 , bdr:I8LS21183 , bdr:I8LS21184 , bdr:I8LS21185 , bdr:I8LS21186 , bdr:I8LS21187 , bdr:I8LS21188 , bdr:I8LS21189 , bdr:I8LS21190 , bdr:I8LS21191 , bdr:I8LS21192 , bdr:I8LS21193 , bdr:I8LS21194 , bdr:I8LS21195 , bdr:I8LS21196 , bdr:I8LS21197 ;
-        :numberOfVolumes    50 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W1KG18413  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I8LS21148 , bdr:I8LS21149 , bdr:I8LS21150 , bdr:I8LS21151 , bdr:I8LS21152 , bdr:I8LS21153 , bdr:I8LS21154 , bdr:I8LS21155 , bdr:I8LS21156 , bdr:I8LS21157 , bdr:I8LS21158 , bdr:I8LS21159 , bdr:I8LS21160 , bdr:I8LS21161 , bdr:I8LS21162 , bdr:I8LS21163 , bdr:I8LS21164 , bdr:I8LS21165 , bdr:I8LS21166 , bdr:I8LS21167 , bdr:I8LS21168 , bdr:I8LS21169 , bdr:I8LS21170 , bdr:I8LS21171 , bdr:I8LS21172 , bdr:I8LS21173 , bdr:I8LS21174 , bdr:I8LS21175 , bdr:I8LS21176 , bdr:I8LS21177 , bdr:I8LS21178 , bdr:I8LS21179 , bdr:I8LS21180 , bdr:I8LS21181 , bdr:I8LS21182 , bdr:I8LS21183 , bdr:I8LS21184 , bdr:I8LS21185 , bdr:I8LS21186 , bdr:I8LS21187 , bdr:I8LS21188 , bdr:I8LS21189 , bdr:I8LS21190 , bdr:I8LS21191 , bdr:I8LS21192 , bdr:I8LS21193 , bdr:I8LS21194 , bdr:I8LS21195 , bdr:I8LS21196 , bdr:I8LS21197 ;
+        bdo:numberOfVolumes  50 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
