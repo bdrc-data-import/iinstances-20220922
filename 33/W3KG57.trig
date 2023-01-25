@@ -13,14 +13,20 @@ bdg:W3KG57 {
         adm:logMessage      "saved and SR"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG57_VRH67FAU9ZZN
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T20:10:16.803275Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG57  a           adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG57 ;
         adm:graphId         bdg:W3KG57 ;
-        adm:logEntry        bda:LG0W3KG57_CRHJ3MCFKDED ;
+        adm:logEntry        bda:LG0W3KG57_CRHJ3MCFKDED , bda:LG0W3KG57_VRH67FAU9ZZN ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:W3KG57  a           bdo:ImageInstance ;
         bdo:inCollection    bdr:PR3KG2 ;
