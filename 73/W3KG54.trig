@@ -7,6 +7,34 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG54 {
+    bda:I3KG307  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG307 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG308  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG308 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG309  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG309 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG310  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG310 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG311  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG311 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG312  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG312 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
+    bda:I3KG313  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG313 ;
+        adm:logEntry        bdr:LG0W3KG54_QCZQCUCX0K1V .
+    
     bda:LG0W3KG54_YDJSZWONGZYG
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-25T15:03:21.716446Z"^^xsd:dateTime ;
@@ -17,13 +45,50 @@ bdg:W3KG54 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG54 ;
         adm:graphId         bdg:W3KG54 ;
-        adm:logEntry        bda:LG0W3KG54_YDJSZWONGZYG ;
+        adm:logEntry        bda:LG0W3KG54_YDJSZWONGZYG , bdr:LG0W3KG54_QCZQCUCX0K1V ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I3KG307  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG308  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG309  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG310  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG311  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG312  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG313  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG54_QCZQCUCX0K1V
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-01-25T15:11:41.958145Z"^^xsd:dateTime ;
+        adm:logMessage      "add 7 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3KG54  a           bdo:ImageInstance ;
         bdo:inCollection    bdr:PR3KG2 ;
+        bdo:instanceHasVolume  bdr:I3KG307 , bdr:I3KG308 , bdr:I3KG309 , bdr:I3KG310 , bdr:I3KG311 , bdr:I3KG312 , bdr:I3KG313 ;
         bdo:isComplete      true ;
+        bdo:numberOfVolumes  7 ;
         bdo:scanInfo        "Digital images of the text are made available through the generous support of Yeshe De Text Preservation Project, Cazadero, CA, USA"@en .
 }
