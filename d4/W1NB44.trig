@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NB44 {
+    bda:LG0W1NB44_KO2GVLTXHB1X
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T15:52:05.071764Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U678062094 .
+    
     bda:LG0W1NB44_S825AGLLR4DP
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-25T15:49:22.302669Z"^^xsd:dateTime ;
@@ -23,7 +29,7 @@ bdg:W1NB44 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NB44 ;
         adm:graphId         bdg:W1NB44 ;
-        adm:logEntry        bda:LG0W1NB44_S825AGLLR4DP , bda:LG0W1NB44_TWUK9JYXJQLM ;
+        adm:logEntry        bda:LG0W1NB44_KO2GVLTXHB1X , bda:LG0W1NB44_S825AGLLR4DP , bda:LG0W1NB44_TWUK9JYXJQLM ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -44,6 +50,18 @@ bdg:W1NB44 {
         bdo:volumeNumber    4 ;
         bdo:volumePagesTbrcIntro  0 .
     
+    bdr:I1NB44  a           bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1NB45  a           bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1NB46  a           bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W1NB44  a           bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I1NB40 , bdr:I1NB41 , bdr:I1NB42 , bdr:I1NB43 .
+        bdo:instanceHasVolume  bdr:I1NB40 , bdr:I1NB41 , bdr:I1NB42 , bdr:I1NB43 , bdr:I1NB44 , bdr:I1NB45 , bdr:I1NB46 .
 }
