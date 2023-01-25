@@ -13,27 +13,37 @@ bdg:W1NB44 {
         adm:logMessage      "batch add volumes"@en ;
         adm:logWho          bdu:U678062094 .
     
+    bda:LG0W1NB44_TWUK9JYXJQLM
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T15:50:11.088432Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U678062094 .
+    
     bda:W1NB44  a           adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NB44 ;
         adm:graphId         bdg:W1NB44 ;
-        adm:logEntry        bda:LG0W1NB44_S825AGLLR4DP ;
+        adm:logEntry        bda:LG0W1NB44_S825AGLLR4DP , bda:LG0W1NB44_TWUK9JYXJQLM ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1NB21  a           bdo:ImageGroup ;
+    bdr:I1NB40  a           bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 .
     
-    bdr:I1NB38  a           bdo:ImageGroup ;
+    bdr:I1NB41  a           bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
         bdo:volumePagesTbrcIntro  0 .
     
-    bdr:I1NB39  a           bdo:ImageGroup ;
+    bdr:I1NB42  a           bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
         bdo:volumePagesTbrcIntro  0 .
     
+    bdr:I1NB43  a           bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W1NB44  a           bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I1NB21 , bdr:I1NB38 , bdr:I1NB39 .
+        bdo:instanceHasVolume  bdr:I1NB40 , bdr:I1NB41 , bdr:I1NB42 , bdr:I1NB43 .
 }
