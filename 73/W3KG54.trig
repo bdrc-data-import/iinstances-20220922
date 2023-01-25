@@ -1,0 +1,29 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG54 {
+    bda:LG0W3KG54_YDJSZWONGZYG
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T15:03:21.716446Z"^^xsd:dateTime ;
+        adm:logMessage      "generate SR"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG54  a           adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG54 ;
+        adm:graphId         bdg:W3KG54 ;
+        adm:logEntry        bda:LG0W3KG54_YDJSZWONGZYG ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:W3KG54  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR3KG2 ;
+        bdo:isComplete      true ;
+        bdo:scanInfo        "Digital images of the text are made available through the generous support of Yeshe De Text Preservation Project, Cazadero, CA, USA"@en .
+}
