@@ -103,6 +103,12 @@ bdg:W3KG53 {
         adm:adminAbout      bdr:I3KG305 ;
         adm:logEntry        bdr:LG0W3KG53_ZYISCJEQL92O .
     
+    bda:LG0W3KG53_A5G9JLHZXPOR
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T15:09:15.628052Z"^^xsd:dateTime ;
+        adm:logMessage      "added collection"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:LG0W3KG53_ZWOBDFYX5GAB
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-23T17:39:47.981294Z"^^xsd:dateTime ;
@@ -113,7 +119,7 @@ bdg:W3KG53 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG53 ;
         adm:graphId         bdg:W3KG53 ;
-        adm:logEntry        bda:LG0W3KG53_ZWOBDFYX5GAB , bdr:LG0W3KG53_XF9F0FWRJUCI , bdr:LG0W3KG53_ZYISCJEQL92O ;
+        adm:logEntry        bda:LG0W3KG53_A5G9JLHZXPOR , bda:LG0W3KG53_ZWOBDFYX5GAB , bdr:LG0W3KG53_XF9F0FWRJUCI , bdr:LG0W3KG53_ZYISCJEQL92O ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -233,6 +239,7 @@ bdg:W3KG53 {
         adm:logWho          bdu:U1426146149 .
     
     bdr:W3KG53  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR3KG2 ;
         bdo:instanceHasVolume  bdr:I3KG281 , bdr:I3KG282 , bdr:I3KG283 , bdr:I3KG284 , bdr:I3KG285 , bdr:I3KG286 , bdr:I3KG287 , bdr:I3KG288 , bdr:I3KG289 , bdr:I3KG290 , bdr:I3KG291 , bdr:I3KG292 , bdr:I3KG293 , bdr:I3KG294 , bdr:I3KG295 , bdr:I3KG296 , bdr:I3KG297 , bdr:I3KG298 , bdr:I3KG299 , bdr:I3KG300 , bdr:I3KG301 , bdr:I3KG302 , bdr:I3KG303 , bdr:I3KG304 , bdr:I3KG305 ;
         bdo:isComplete      true ;
         bdo:numberOfVolumes  25 ;
