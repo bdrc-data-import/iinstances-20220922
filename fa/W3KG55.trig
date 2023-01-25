@@ -13,16 +13,23 @@ bdg:W3KG55 {
         adm:logMessage      "scan request"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG55_SFOUM6GHOARL
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-25T18:33:16.455825Z"^^xsd:dateTime ;
+        adm:logMessage      "scan request"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG55  a           adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG55 ;
         adm:graphId         bdg:W3KG55 ;
-        adm:logEntry        bda:LG0W3KG55_POLZOHWLRQYE ;
+        adm:logEntry        bda:LG0W3KG55_POLZOHWLRQYE , bda:LG0W3KG55_SFOUM6GHOARL ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:W3KG55  a           bdo:ImageInstance ;
         bdo:inCollection    bdr:PR3KG2 ;
+        bdo:isComplete      true ;
         bdo:scanInfo        "Digital images of the text are made available through the generous support of Yeshe De Text Preservation Project, Cazadero, CA, USA"@en .
 }
