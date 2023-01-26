@@ -7,6 +7,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG56 {
+    bda:I3KG328  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG328 ;
+        adm:logEntry        bdr:LG0W3KG56_AW7NPMRQ0IYS .
+    
+    bda:I3KG329  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG329 ;
+        adm:logEntry        bdr:LG0W3KG56_AW7NPMRQ0IYS .
+    
     bda:LG0W3KG56_4EBFJUSFSQAJ
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-25T15:54:19.291713Z"^^xsd:dateTime ;
@@ -17,13 +25,30 @@ bdg:W3KG56 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG56 ;
         adm:graphId         bdg:W3KG56 ;
-        adm:logEntry        bda:LG0W3KG56_4EBFJUSFSQAJ ;
+        adm:logEntry        bda:LG0W3KG56_4EBFJUSFSQAJ , bdr:LG0W3KG56_AW7NPMRQ0IYS ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I3KG328  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG329  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG56_AW7NPMRQ0IYS
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-01-26T00:17:38.960998Z"^^xsd:dateTime ;
+        adm:logMessage      "add 2 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3KG56  a           bdo:ImageInstance ;
         bdo:inCollection    bdr:PR3KG2 ;
+        bdo:instanceHasVolume  bdr:I3KG328 , bdr:I3KG329 ;
         bdo:isComplete      true ;
+        bdo:numberOfVolumes  2 ;
         bdo:scanInfo        "Digital images of the text are made available through the generous support of Yeshe De Text Preservation Project, Cazadero, CA, USA"@en .
 }
