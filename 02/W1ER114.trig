@@ -13,11 +13,17 @@ bdg:W1ER114 {
         adm:logMessage      "create"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER114_OWFVVXUXOMAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-26T15:12:24.885276Z"^^xsd:dateTime ;
+        adm:logMessage      "scan info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1ER114  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1ER114 ;
         adm:graphId         bdg:W1ER114 ;
-        adm:logEntry        bda:LG0W1ER114_6NTQKXSLUDBP ;
+        adm:logEntry        bda:LG0W1ER114_6NTQKXSLUDBP , bda:LG0W1ER114_OWFVVXUXOMAC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -28,5 +34,5 @@ bdg:W1ER114 {
     
     bdr:W1ER114  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I1ER767 ;
-        bdo:scanInfo        "images provided to BDRC in 2010, unknown origin"@en .
+        bdo:scanInfo        "Scanned from E. Gene Smith's personal library"@en .
 }
