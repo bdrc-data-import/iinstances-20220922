@@ -1,0 +1,27 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG208170 {
+    bda:LG0W2KG208170_TZ13P9DCKDRF
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-27T03:51:40.767039Z"^^xsd:dateTime ;
+        adm:logMessage      "Scan Request"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W2KG208170  a       adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG208170 ;
+        adm:graphId         bdg:W2KG208170 ;
+        adm:logEntry        bda:LG0W2KG208170_TZ13P9DCKDRF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:W2KG208170  a       bdo:ImageInstance ;
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
+}
