@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ132 {
+    bda:LG0W8CZ132_JTOBYQLNQDFA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-30T16:26:30.059653Z"^^xsd:dateTime ;
+        adm:logMessage      "add"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG0W8CZ132_WRA6UIBZVOGE
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-26T15:34:30.785302Z"^^xsd:dateTime ;
@@ -14,10 +20,10 @@ bdg:W8CZ132 {
         adm:logWho          bdu:U2089842660 .
     
     bda:W8CZ132  a          adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ132 ;
         adm:graphId         bdg:W8CZ132 ;
-        adm:logEntry        bda:LG0W8CZ132_WRA6UIBZVOGE ;
+        adm:logEntry        bda:LG0W8CZ132_JTOBYQLNQDFA , bda:LG0W8CZ132_WRA6UIBZVOGE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
