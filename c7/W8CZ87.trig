@@ -17,6 +17,12 @@ bdg:W8CZ87 {
         adm:logMessage      "new"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ87_UEWLTBFITC2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-30T14:46:25.505995Z"^^xsd:dateTime ;
+        adm:logMessage      "add info"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG0W8CZ87_ZEPTG8XQWGR9
         a                   adm:Synced ;
         adm:logDate         "2023-01-28T00:33:49.214807Z"^^xsd:dateTime ;
@@ -25,10 +31,10 @@ bdg:W8CZ87 {
         adm:logWho          bdu:U00016 .
     
     bda:W8CZ87  a           adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ87 ;
         adm:graphId         bdg:W8CZ87 ;
-        adm:logEntry        bda:LG0W8CZ87_4Z9T3WTXHBFM ;
+        adm:logEntry        bda:LG0W8CZ87_4Z9T3WTXHBFM , bda:LG0W8CZ87_UEWLTBFITC2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
