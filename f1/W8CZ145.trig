@@ -1,0 +1,61 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ145 {
+    bda:LG0W8CZ145_3PGYM7P5SZAO
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-31T17:27:00.617638Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:W8CZ145  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ145 ;
+        adm:graphId         bdg:W8CZ145 ;
+        adm:logEntry        bda:LG0W8CZ145_3PGYM7P5SZAO ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ692  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ693  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ694  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ695  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ696  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ697  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ698  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:NTW8CZ145HA0GLG9Z
+        a                   bdo:Note ;
+        bdo:noteText        "dpal ldan bkra shis sgo mang dpe mdzod khang /"@bo .
+    
+    bdr:W8CZ145  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ692 , bdr:I8CZ693 , bdr:I8CZ694 , bdr:I8CZ695 , bdr:I8CZ696 , bdr:I8CZ697 , bdr:I8CZ698 ;
+        bdo:note            bdr:NTW8CZ145HA0GLG9Z ;
+        bdo:scanInfo        "Digital images are made available through the kind support of Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India."@en .
+}
