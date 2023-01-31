@@ -7,6 +7,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER103 {
+    bda:I1ER756  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER756 ;
+        adm:logEntry        bda:LG0W1ER103_PUZY1AMFD7IC .
+    
     bda:LG0W1ER103_HICZYTL245C5
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-07T18:42:45.673062Z"^^xsd:dateTime ;
@@ -19,6 +23,13 @@ bdg:W1ER103 {
         adm:logMessage      "dlp"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER103_PUZY1AMFD7IC
+        a                   adm:Synced ;
+        adm:logDate         "2023-01-31T22:00:06.714151Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:W1ER103  a          adm:AdminData ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1ER103 ;
@@ -30,7 +41,8 @@ bdg:W1ER103 {
     
     bdr:I1ER756  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  400 .
     
     bdr:W1ER103  a          bdo:ImageInstance ;
         bdo:digitalLendingPossible  false ;
