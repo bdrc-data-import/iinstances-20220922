@@ -13,11 +13,17 @@ bdg:W8CZ145 {
         adm:logMessage      "batch add volumes"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ145_ZVTCBYGTGYJN
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-01-31T17:27:23.034837Z"^^xsd:dateTime ;
+        adm:logMessage      "new"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:W8CZ145  a          adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ145 ;
         adm:graphId         bdg:W8CZ145 ;
-        adm:logEntry        bda:LG0W8CZ145_3PGYM7P5SZAO ;
+        adm:logEntry        bda:LG0W8CZ145_3PGYM7P5SZAO , bda:LG0W8CZ145_ZVTCBYGTGYJN ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
