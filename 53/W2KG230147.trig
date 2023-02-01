@@ -15,7 +15,7 @@ bdg:W2KG230147 {
     
     bda:I2KG230166  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG230166 ;
-        adm:logEntry        bda:LG3E484C39B6F1C77A ;
+        adm:logEntry        bda:LG0W2KG230147_RV2MBHCSHRU8 , bda:LG3E484C39B6F1C77A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I2KG230167  a       adm:AdminData ;
@@ -145,6 +145,13 @@ bdg:W2KG230147 {
         adm:logDate         "2023-01-18T10:26:32.235082"^^xsd:dateTime ;
         adm:logMessage      "ric"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W2KG230147_RV2MBHCSHRU8
+        a                   adm:Synced ;
+        adm:logDate         "2023-02-01T22:44:22.114361Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG18D276C0358BACFC
         a                   adm:InitialDataCreation ;
@@ -324,7 +331,7 @@ bdg:W2KG230147 {
         bdo:biblioNote      "Volume 2 of dmu dge dgon pa'i lo tho/"@en ;
         bdo:volumeNumber    2 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  0 .
+        bdo:volumePagesTotal  419 .
     
     bdr:I2KG230167  a       bdo:ImageGroup ;
         bdo:biblioNote      "Volume 3 of dmu dge dgon pa'i lo tho/"@en ;
