@@ -87,7 +87,7 @@ bdg:W1KG4334 {
     
     bda:I1KG4355  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG4355 ;
-        adm:logEntry        bda:LG0W1KG4334_CNSDGZL7KNL3 , bda:LG6A7207AC94D6F868 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG4334_AYMSWLN77NQW , bda:LG0W1KG4334_CNSDGZL7KNL3 , bda:LG6A7207AC94D6F868 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -101,6 +101,13 @@ bdg:W1KG4334 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-03-16T10:23:56.024Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG4334_AYMSWLN77NQW
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-02-02T14:17:22.849743Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG0W1KG4334_CNSDGZL7KNL3
@@ -300,7 +307,7 @@ bdg:W1KG4334 {
         bdo:biblioNote      "Volume 14 of dpal spungs dpe rnying gsar bskrun : dkyil chog pod 'phreng"@en ;
         bdo:volumeNumber    14 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  289 .
+        bdo:volumePagesTotal  286 .
     
     bdr:W1KG4334  a         bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1KG1 , bdr:PR60CTX96 ;
