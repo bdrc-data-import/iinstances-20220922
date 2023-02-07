@@ -1,0 +1,45 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG228740 {
+    bda:LG0W2KG228740_KDPIGRKL08CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-07T18:19:16.161228Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W2KG228740  a       adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2KG228740 ;
+        adm:graphId         bdg:W2KG228740 ;
+        adm:logEntry        bda:LG0W2KG228740_KDPIGRKL08CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG344  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG345  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG346  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG347  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W2KG228740  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG344 , bdr:I3KG345 , bdr:I3KG346 , bdr:I3KG347 ;
+        bdo:isComplete      true ;
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
+}
