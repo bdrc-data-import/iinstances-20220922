@@ -31,6 +31,12 @@ bdg:W3CN8046 {
         adm:logMessage      "switched volume order"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3CN8046_VBGJ3ZX3IB01
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-07T03:19:54.890810Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:LG22C0384C3C6D1742
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-01-23T13:49:56.533Z"^^xsd:dateTime ;
@@ -68,7 +74,7 @@ bdg:W3CN8046 {
         adm:gitPath         "0e/W3CN8046.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8046 ;
-        adm:logEntry        bda:LG06A379273CFB1D9A , bda:LG0W3CN8046_245QR9EJGA5C , bda:LGE3F389D4BF1DCD78 ;
+        adm:logEntry        bda:LG06A379273CFB1D9A , bda:LG0W3CN8046_245QR9EJGA5C , bda:LG0W3CN8046_VBGJ3ZX3IB01 , bda:LGE3F389D4BF1DCD78 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -85,7 +91,15 @@ bdg:W3CN8046 {
         bdo:volumePagesTbrcIntro  2 ;
         bdo:volumePagesTotal  378 .
     
+    bdr:I3KG342  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG343  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W3CN8046  a         bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I3CN8409 , bdr:I3CN8410 ;
+        bdo:instanceHasVolume  bdr:I3CN8409 , bdr:I3CN8410 , bdr:I3KG342 , bdr:I3KG343 ;
         bdo:numberOfVolumes  2 .
 }
