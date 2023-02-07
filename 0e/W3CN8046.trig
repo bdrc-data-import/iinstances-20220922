@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN8046 {
@@ -29,6 +24,12 @@ bdg:W3CN8046 {
         adm:logDate         "2017-01-23T13:49:56.634Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN8046_245QR9EJGA5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-07T03:18:48.307826Z"^^xsd:dateTime ;
+        adm:logMessage      "switched volume order"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG22C0384C3C6D1742
         a                   adm:InitialDataCreation ;
@@ -67,24 +68,24 @@ bdg:W3CN8046 {
         adm:gitPath         "0e/W3CN8046.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8046 ;
-        adm:logEntry        bda:LG06A379273CFB1D9A , bda:LGE3F389D4BF1DCD78 ;
+        adm:logEntry        bda:LG06A379273CFB1D9A , bda:LG0W3CN8046_245QR9EJGA5C , bda:LGE3F389D4BF1DCD78 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN8409  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of mkha' 'gro ye shes mtsho rgyal gyi gsung rnam/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   284 .
+    bdr:I3CN8409  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mkha' 'gro ye shes mtsho rgyal gyi gsung rnam/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  284 .
     
-    bdr:I3CN8410  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of mkha' 'gro ye shes mtsho rgyal gyi gsung rnam/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   378 .
+    bdr:I3CN8410  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mkha' 'gro ye shes mtsho rgyal gyi gsung rnam/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  378 .
     
-    bdr:W3CN8046  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN8409 , bdr:I3CN8410 ;
-        :numberOfVolumes    2 .
+    bdr:W3CN8046  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN8409 , bdr:I3CN8410 ;
+        bdo:numberOfVolumes  2 .
 }
