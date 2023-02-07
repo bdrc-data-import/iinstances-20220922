@@ -17,7 +17,7 @@ bdg:W2KG228740 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG228740 ;
         adm:graphId         bdg:W2KG228740 ;
-        adm:logEntry        bda:LG0W2KG228740_KDPIGRKL08CC ;
+        adm:logEntry        bda:LG0W2KG228740_KDPIGRKL08CC , bdr:LG0W2KG228740_12TLT11J45M7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -37,6 +37,13 @@ bdg:W2KG228740 {
     bdr:I3KG347  a          bdo:ImageGroup ;
         bdo:volumeNumber    4 ;
         bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W2KG228740_12TLT11J45M7
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-07T18:22:34.779007Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
     
     bdr:W2KG228740  a       bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG344 , bdr:I3KG345 , bdr:I3KG346 , bdr:I3KG347 ;
