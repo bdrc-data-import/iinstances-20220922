@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ354992 {
@@ -69,7 +64,7 @@ bdg:W4CZ354992 {
     
     bda:I4CZ355252  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355252 ;
-        adm:logEntry        bda:LG51BE44D0D40C8B45 ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LG51BE44D0D40C8B45 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355253  a       adm:AdminData ;
@@ -109,32 +104,32 @@ bdg:W4CZ354992 {
     
     bda:I4CZ355260  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355260 ;
-        adm:logEntry        bda:LG7F36FBA12D4C0272 ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LG7F36FBA12D4C0272 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355261  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355261 ;
-        adm:logEntry        bda:LGF00C7AFC66CD0667 ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LGF00C7AFC66CD0667 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355262  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355262 ;
-        adm:logEntry        bda:LGF1BC9D3FACF51B4F ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LGF1BC9D3FACF51B4F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355263  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355263 ;
-        adm:logEntry        bda:LG5D325A185596AF27 ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LG5D325A185596AF27 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355264  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355264 ;
-        adm:logEntry        bda:LG8A146553E36B042B ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LG8A146553E36B042B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355265  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355265 ;
-        adm:logEntry        bda:LGB68085F17E5D0883 ;
+        adm:logEntry        bda:LG0W4CZ354992_S0092CSMANSI , bda:LGB68085F17E5D0883 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355266  a       adm:AdminData ;
@@ -416,6 +411,13 @@ bdg:W4CZ354992 {
         adm:logDate         "2019-12-10T12:25:28.084Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG0W4CZ354992_S0092CSMANSI
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-02-08T01:55:41.606418Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG110E4BDC4559CC90
         a                   adm:InitialDataCreation ;
@@ -855,459 +857,459 @@ bdg:W4CZ354992 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ355241  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355242  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355243  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355244  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355245  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355246  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355247  a       :ImageGroup ;
-        :biblioNote         "Volume 7 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355248  a       :ImageGroup ;
-        :biblioNote         "Volume 8 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355249  a       :ImageGroup ;
-        :biblioNote         "Volume 9 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355250  a       :ImageGroup ;
-        :biblioNote         "Volume 10 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355251  a       :ImageGroup ;
-        :biblioNote         "Volume 11 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355252  a       :ImageGroup ;
-        :biblioNote         "Volume 12 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355253  a       :ImageGroup ;
-        :biblioNote         "Volume 13 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355254  a       :ImageGroup ;
-        :biblioNote         "Volume 14 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355255  a       :ImageGroup ;
-        :biblioNote         "Volume 15 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355256  a       :ImageGroup ;
-        :biblioNote         "Volume 16 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355257  a       :ImageGroup ;
-        :biblioNote         "Volume 17 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355258  a       :ImageGroup ;
-        :biblioNote         "Volume 18 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355259  a       :ImageGroup ;
-        :biblioNote         "Volume 19 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355260  a       :ImageGroup ;
-        :biblioNote         "Volume 20 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355261  a       :ImageGroup ;
-        :biblioNote         "Volume 21 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355262  a       :ImageGroup ;
-        :biblioNote         "Volume 22 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355263  a       :ImageGroup ;
-        :biblioNote         "Volume 23 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355264  a       :ImageGroup ;
-        :biblioNote         "Volume 24 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355265  a       :ImageGroup ;
-        :biblioNote         "Volume 25 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355266  a       :ImageGroup ;
-        :biblioNote         "Volume 26 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355267  a       :ImageGroup ;
-        :biblioNote         "Volume 27 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355268  a       :ImageGroup ;
-        :biblioNote         "Volume 28 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355269  a       :ImageGroup ;
-        :biblioNote         "Volume 29 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355270  a       :ImageGroup ;
-        :biblioNote         "Volume 30 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355271  a       :ImageGroup ;
-        :biblioNote         "Volume 31 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355272  a       :ImageGroup ;
-        :biblioNote         "Volume 32 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355273  a       :ImageGroup ;
-        :biblioNote         "Volume 33 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355274  a       :ImageGroup ;
-        :biblioNote         "Volume 34 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355275  a       :ImageGroup ;
-        :biblioNote         "Volume 35 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355276  a       :ImageGroup ;
-        :biblioNote         "Volume 36 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355277  a       :ImageGroup ;
-        :biblioNote         "Volume 37 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355278  a       :ImageGroup ;
-        :biblioNote         "Volume 38 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355279  a       :ImageGroup ;
-        :biblioNote         "Volume 39 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355280  a       :ImageGroup ;
-        :biblioNote         "Volume 40 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355281  a       :ImageGroup ;
-        :biblioNote         "Volume 41 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355282  a       :ImageGroup ;
-        :biblioNote         "Volume 42 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355283  a       :ImageGroup ;
-        :biblioNote         "Volume 43 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355284  a       :ImageGroup ;
-        :biblioNote         "Volume 44 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355285  a       :ImageGroup ;
-        :biblioNote         "Volume 45 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355286  a       :ImageGroup ;
-        :biblioNote         "Volume 46 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355287  a       :ImageGroup ;
-        :biblioNote         "Volume 47 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355288  a       :ImageGroup ;
-        :biblioNote         "Volume 48 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355289  a       :ImageGroup ;
-        :biblioNote         "Volume 49 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355290  a       :ImageGroup ;
-        :biblioNote         "Volume 50 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355291  a       :ImageGroup ;
-        :biblioNote         "Volume 51 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355292  a       :ImageGroup ;
-        :biblioNote         "Volume 52 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355293  a       :ImageGroup ;
-        :biblioNote         "Volume 53 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355294  a       :ImageGroup ;
-        :biblioNote         "Volume 54 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355295  a       :ImageGroup ;
-        :biblioNote         "Volume 55 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355296  a       :ImageGroup ;
-        :biblioNote         "Volume 56 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355297  a       :ImageGroup ;
-        :biblioNote         "Volume 57 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355298  a       :ImageGroup ;
-        :biblioNote         "Volume 58 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355299  a       :ImageGroup ;
-        :biblioNote         "Volume 59 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355300  a       :ImageGroup ;
-        :biblioNote         "Volume 60 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355301  a       :ImageGroup ;
-        :biblioNote         "Volume 61 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355302  a       :ImageGroup ;
-        :biblioNote         "Volume 62 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355303  a       :ImageGroup ;
-        :biblioNote         "Volume 63 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355304  a       :ImageGroup ;
-        :biblioNote         "Volume 64 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355305  a       :ImageGroup ;
-        :biblioNote         "Volume 65 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355306  a       :ImageGroup ;
-        :biblioNote         "Volume 66 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355307  a       :ImageGroup ;
-        :biblioNote         "Volume 67 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355308  a       :ImageGroup ;
-        :biblioNote         "Volume 68 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355309  a       :ImageGroup ;
-        :biblioNote         "Volume 69 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355310  a       :ImageGroup ;
-        :biblioNote         "Volume 70 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355311  a       :ImageGroup ;
-        :biblioNote         "Volume 71 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355312  a       :ImageGroup ;
-        :biblioNote         "Volume 72 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355313  a       :ImageGroup ;
-        :biblioNote         "Volume 73 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355314  a       :ImageGroup ;
-        :biblioNote         "Volume 74 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ355315  a       :ImageGroup ;
-        :biblioNote         "Volume 75 of sgrol ma/ (dus deb/)"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W4CZ354992  a       :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I4CZ355241 , bdr:I4CZ355242 , bdr:I4CZ355243 , bdr:I4CZ355244 , bdr:I4CZ355245 , bdr:I4CZ355246 , bdr:I4CZ355247 , bdr:I4CZ355248 , bdr:I4CZ355249 , bdr:I4CZ355250 , bdr:I4CZ355251 , bdr:I4CZ355252 , bdr:I4CZ355253 , bdr:I4CZ355254 , bdr:I4CZ355255 , bdr:I4CZ355256 , bdr:I4CZ355257 , bdr:I4CZ355258 , bdr:I4CZ355259 , bdr:I4CZ355260 , bdr:I4CZ355261 , bdr:I4CZ355262 , bdr:I4CZ355263 , bdr:I4CZ355264 , bdr:I4CZ355265 , bdr:I4CZ355266 , bdr:I4CZ355267 , bdr:I4CZ355268 , bdr:I4CZ355269 , bdr:I4CZ355270 , bdr:I4CZ355271 , bdr:I4CZ355272 , bdr:I4CZ355273 , bdr:I4CZ355274 , bdr:I4CZ355275 , bdr:I4CZ355276 , bdr:I4CZ355277 , bdr:I4CZ355278 , bdr:I4CZ355279 , bdr:I4CZ355280 , bdr:I4CZ355281 , bdr:I4CZ355282 , bdr:I4CZ355283 , bdr:I4CZ355284 , bdr:I4CZ355285 , bdr:I4CZ355286 , bdr:I4CZ355287 , bdr:I4CZ355288 , bdr:I4CZ355289 , bdr:I4CZ355290 , bdr:I4CZ355291 , bdr:I4CZ355292 , bdr:I4CZ355293 , bdr:I4CZ355294 , bdr:I4CZ355295 , bdr:I4CZ355296 , bdr:I4CZ355297 , bdr:I4CZ355298 , bdr:I4CZ355299 , bdr:I4CZ355300 , bdr:I4CZ355301 , bdr:I4CZ355302 , bdr:I4CZ355303 , bdr:I4CZ355304 , bdr:I4CZ355305 , bdr:I4CZ355306 , bdr:I4CZ355307 , bdr:I4CZ355308 , bdr:I4CZ355309 , bdr:I4CZ355310 , bdr:I4CZ355311 , bdr:I4CZ355312 , bdr:I4CZ355313 , bdr:I4CZ355314 , bdr:I4CZ355315 ;
-        :numberOfVolumes    75 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D07358-D07363. D34151.D34432.D34434 D34151"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:I4CZ355241  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355242  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355243  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355244  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355245  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355246  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355247  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355248  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355249  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355250  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355251  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355252  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  74 .
+    
+    bdr:I4CZ355253  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355254  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355255  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355256  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355257  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355258  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355259  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355260  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  74 .
+    
+    bdr:I4CZ355261  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  106 .
+    
+    bdr:I4CZ355262  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  90 .
+    
+    bdr:I4CZ355263  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  88 .
+    
+    bdr:I4CZ355264  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  142 .
+    
+    bdr:I4CZ355265  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  122 .
+    
+    bdr:I4CZ355266  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355267  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355268  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355269  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355270  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355271  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355272  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355273  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355274  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355275  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355276  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355277  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355278  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355279  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355280  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355281  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355282  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355283  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355284  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355285  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355286  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355287  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355288  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355289  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355290  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355291  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355292  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355293  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355294  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355295  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355296  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355297  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355298  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355299  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355300  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355301  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355302  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355303  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355304  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355305  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355306  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355307  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355308  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355309  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355310  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355311  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355312  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355313  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355314  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ355315  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of sgrol ma/ (dus deb/)"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W4CZ354992  a       bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I4CZ355241 , bdr:I4CZ355242 , bdr:I4CZ355243 , bdr:I4CZ355244 , bdr:I4CZ355245 , bdr:I4CZ355246 , bdr:I4CZ355247 , bdr:I4CZ355248 , bdr:I4CZ355249 , bdr:I4CZ355250 , bdr:I4CZ355251 , bdr:I4CZ355252 , bdr:I4CZ355253 , bdr:I4CZ355254 , bdr:I4CZ355255 , bdr:I4CZ355256 , bdr:I4CZ355257 , bdr:I4CZ355258 , bdr:I4CZ355259 , bdr:I4CZ355260 , bdr:I4CZ355261 , bdr:I4CZ355262 , bdr:I4CZ355263 , bdr:I4CZ355264 , bdr:I4CZ355265 , bdr:I4CZ355266 , bdr:I4CZ355267 , bdr:I4CZ355268 , bdr:I4CZ355269 , bdr:I4CZ355270 , bdr:I4CZ355271 , bdr:I4CZ355272 , bdr:I4CZ355273 , bdr:I4CZ355274 , bdr:I4CZ355275 , bdr:I4CZ355276 , bdr:I4CZ355277 , bdr:I4CZ355278 , bdr:I4CZ355279 , bdr:I4CZ355280 , bdr:I4CZ355281 , bdr:I4CZ355282 , bdr:I4CZ355283 , bdr:I4CZ355284 , bdr:I4CZ355285 , bdr:I4CZ355286 , bdr:I4CZ355287 , bdr:I4CZ355288 , bdr:I4CZ355289 , bdr:I4CZ355290 , bdr:I4CZ355291 , bdr:I4CZ355292 , bdr:I4CZ355293 , bdr:I4CZ355294 , bdr:I4CZ355295 , bdr:I4CZ355296 , bdr:I4CZ355297 , bdr:I4CZ355298 , bdr:I4CZ355299 , bdr:I4CZ355300 , bdr:I4CZ355301 , bdr:I4CZ355302 , bdr:I4CZ355303 , bdr:I4CZ355304 , bdr:I4CZ355305 , bdr:I4CZ355306 , bdr:I4CZ355307 , bdr:I4CZ355308 , bdr:I4CZ355309 , bdr:I4CZ355310 , bdr:I4CZ355311 , bdr:I4CZ355312 , bdr:I4CZ355313 , bdr:I4CZ355314 , bdr:I4CZ355315 ;
+        bdo:numberOfVolumes  75 ;
+        bdo:scanInfo        "copy made available from the library of tibetan works and archives; ltwa acc. no. D07358-D07363. D34151.D34432.D34434 D34151"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
