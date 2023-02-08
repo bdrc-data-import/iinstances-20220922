@@ -1,46 +1,48 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ355000 {
     bda:I4CZ355544  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355544 ;
-        adm:logEntry        bda:LG45D8E0A0933D79C2 ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LG45D8E0A0933D79C2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355545  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355545 ;
-        adm:logEntry        bda:LG3C066BC1177C9467 ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LG3C066BC1177C9467 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355546  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355546 ;
-        adm:logEntry        bda:LG4B1BBFA154223330 ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LG4B1BBFA154223330 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355547  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355547 ;
-        adm:logEntry        bda:LG69232D154C899A0B ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LG69232D154C899A0B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355548  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355548 ;
-        adm:logEntry        bda:LGDC4E71274AFE06F8 ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LGDC4E71274AFE06F8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ355549  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355549 ;
-        adm:logEntry        bda:LG54BA0BE9904867BB ;
+        adm:logEntry        bda:LG0W4CZ355000_K9WEON4VMI9P , bda:LG54BA0BE9904867BB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W4CZ355000_K9WEON4VMI9P
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-02-08T01:57:10.766398Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG3C066BC1177C9467
         a                   adm:InitialDataCreation ;
@@ -96,46 +98,46 @@ bdg:W4CZ355000 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ355544  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355544  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  838 .
     
-    bdr:I4CZ355545  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355545  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  530 .
     
-    bdr:I4CZ355546  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355546  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  622 .
     
-    bdr:I4CZ355547  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355547  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  244 .
     
-    bdr:I4CZ355548  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355548  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  508 .
     
-    bdr:I4CZ355549  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ355549  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bka' 'bum/_rgyal dbang bstan 'dzin rgya mtsho/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  280 .
     
-    bdr:W4CZ355000  a       :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I4CZ355544 , bdr:I4CZ355545 , bdr:I4CZ355546 , bdr:I4CZ355547 , bdr:I4CZ355548 , bdr:I4CZ355549 ;
-        :missingVolumes     "7" ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D36304-D36306"@en .
+    bdr:W4CZ355000  a       bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I4CZ355544 , bdr:I4CZ355545 , bdr:I4CZ355546 , bdr:I4CZ355547 , bdr:I4CZ355548 , bdr:I4CZ355549 ;
+        bdo:missingVolumes  "7" ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "copy made available from the library of tibetan works and archives; ltwa acc. no.D36304-D36306"@en .
 }
