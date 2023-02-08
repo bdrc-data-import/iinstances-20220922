@@ -1,51 +1,53 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN17364 {
     bda:I3CN17366  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17366 ;
-        adm:logEntry        bda:LG1CB56D10E809C1D0 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LG1CB56D10E809C1D0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17367  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17367 ;
-        adm:logEntry        bda:LGB6DAE9747C3A4847 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LGB6DAE9747C3A4847 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17368  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17368 ;
-        adm:logEntry        bda:LG354A640363AEC054 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LG354A640363AEC054 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17369  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17369 ;
-        adm:logEntry        bda:LGC07D7BEC78492629 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LGC07D7BEC78492629 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17370  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17370 ;
-        adm:logEntry        bda:LG46C04BB611EA4ABC ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LG46C04BB611EA4ABC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17371  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17371 ;
-        adm:logEntry        bda:LGE7CE4427A5A52997 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LGE7CE4427A5A52997 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN17372  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN17372 ;
-        adm:logEntry        bda:LG3D4522A5CEC203A2 ;
+        adm:logEntry        bda:LG0W3CN17364_VKDNXGIP0JKN , bda:LG3D4522A5CEC203A2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W3CN17364_VKDNXGIP0JKN
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-02-08T01:29:27.077293Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1CB56D10E809C1D0
         a                   adm:InitialDataCreation ;
@@ -107,51 +109,51 @@ bdg:W3CN17364 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN17366  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17366  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  252 .
     
-    bdr:I3CN17367  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17367  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  242 .
     
-    bdr:I3CN17368  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17368  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  264 .
     
-    bdr:I3CN17369  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17369  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  238 .
     
-    bdr:I3CN17370  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17370  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  226 .
     
-    bdr:I3CN17371  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17371  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  212 .
     
-    bdr:I3CN17372  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of dkar brgyud gser 'phreng /"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN17372  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of dkar brgyud gser 'phreng /"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  206 .
     
-    bdr:W3CN17364  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I3CN17366 , bdr:I3CN17367 , bdr:I3CN17368 , bdr:I3CN17369 , bdr:I3CN17370 , bdr:I3CN17371 , bdr:I3CN17372 ;
-        :numberOfVolumes    7 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. 1523,1524,1525,1526,1527,1528,1529"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
+    bdr:W3CN17364  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I3CN17366 , bdr:I3CN17367 , bdr:I3CN17368 , bdr:I3CN17369 , bdr:I3CN17370 , bdr:I3CN17371 , bdr:I3CN17372 ;
+        bdo:numberOfVolumes  7 ;
+        bdo:scanInfo        "copy made available from the library of tibetan works and archives; ltwa acc. no. 1523,1524,1525,1526,1527,1528,1529"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
 }
