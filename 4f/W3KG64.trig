@@ -1,0 +1,35 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG64 {
+    bda:LG0W3KG64_RP7BCTFB1J7K
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-10T03:51:13.952942Z"^^xsd:dateTime ;
+        adm:logMessage      "scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG64  a           adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3KG64 ;
+        adm:graphId         bdg:W3KG64 ;
+        adm:logEntry        bda:LG0W3KG64_RP7BCTFB1J7K ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG352  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG353  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG64  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG352 , bdr:I3KG353 .
+}
