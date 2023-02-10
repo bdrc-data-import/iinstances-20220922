@@ -1,9 +1,14 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
-@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG24359 {
@@ -71,12 +76,6 @@ bdg:W1KG24359 {
         adm:logDate         "2016-09-28T14:51:19.118Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LG0W1KG24359_B1XKRU53XB9R
-        a                   adm:UpdateData ;
-        adm:logDate         "2023-02-10T04:25:32.664124Z"^^xsd:dateTime ;
-        adm:logMessage      "removed extra volume"@en ;
-        adm:logWho          bdu:U1426146149 .
     
     bda:LG17CA9AE3E2CB9420
         a                   adm:InitialDataCreation ;
@@ -175,62 +174,74 @@ bdg:W1KG24359 {
         adm:gitPath         "b4/W1KG24359.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24359 ;
-        adm:logEntry        bda:LG0W1KG24359_B1XKRU53XB9R , bda:LG7B177BA5C1A246E1 ;
+        adm:logEntry        bda:LG7B177BA5C1A246E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG24507  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 1 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  318 .
+    bdr:I1KG24507  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       1 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   318 .
     
-    bdr:I1KG24508  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 2 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24508  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       2 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24509  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 3 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24509  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       3 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24510  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 4 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    4 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24510  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       4 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24511  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 5 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    5 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  158 .
+    bdr:I1KG24511  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       5 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   158 .
     
-    bdr:I1KG24512  a        bdo:ImageGroup ;
-        bdo:biblioNote      "Volume 6 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumeNumber    6 ;
-        bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  220 .
+    bdr:I1KG24512  a        :ImageGroup ;
+        :biblioNote         "Volume 6 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       6 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   220 .
     
-    bdr:I1KG24513  bdo:biblioNote  "Volume 7 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24513  a        :ImageGroup ;
+        :biblioNote         "Volume 7 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       7 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24514  bdo:biblioNote  "Volume 8 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24514  a        :ImageGroup ;
+        :biblioNote         "Volume 8 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       8 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24515  bdo:biblioNote  "Volume 9 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24515  a        :ImageGroup ;
+        :biblioNote         "Volume 9 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       9 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:I1KG24516  bdo:biblioNote  "Volume 10 of dbyangs can sprul ba'i glegs bam/"@en ;
-        bdo:volumePagesTotal  0 .
+    bdr:I1KG24516  a        :ImageGroup ;
+        :biblioNote         "Volume 10 of dbyangs can sprul ba'i glegs bam/"@en ;
+        :volumeNumber       10 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
     
-    bdr:W1KG24359  a        bdo:ImageInstance ;
-        bdo:digitalLendingPossible  false ;
-        bdo:instanceHasVolume  bdr:I1KG24507 , bdr:I1KG24508 , bdr:I1KG24509 , bdr:I1KG24510 , bdr:I1KG24511 , bdr:I1KG24512 ;
-        bdo:numberOfVolumes  10 ;
-        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 9/2016"@en .
+    bdr:W1KG24359  a        :ImageInstance ;
+        :digitalLendingPossible  false ;
+        :instanceHasVolume  bdr:I1KG24507 , bdr:I1KG24508 , bdr:I1KG24509 , bdr:I1KG24510 , bdr:I1KG24511 , bdr:I1KG24512 , bdr:I1KG24513 , bdr:I1KG24514 , bdr:I1KG24515 , bdr:I1KG24516 ;
+        :numberOfVolumes    10 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 9/2016"@en .
 }
