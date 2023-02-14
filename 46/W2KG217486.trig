@@ -44,7 +44,7 @@ bdg:W2KG217486 {
         adm:gitPath         "46/W2KG217486.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG217486 ;
-        adm:logEntry        bda:LG0W2KG217486_CMGGHIIDRYG6 , bda:LG9AC4311AE0DE426B ;
+        adm:logEntry        bda:LG0W2KG217486_CMGGHIIDRYG6 , bda:LG9AC4311AE0DE426B , bdr:LG0W2KG217486_4PY7GOV3EXK0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -55,6 +55,13 @@ bdg:W2KG217486 {
     bdr:I3KG339  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W2KG217486_4PY7GOV3EXK0
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-14T19:27:56.791249Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
     
     bdr:W2KG217486  a       bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG339 ;
