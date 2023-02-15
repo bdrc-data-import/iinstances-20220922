@@ -17,7 +17,7 @@ bdg:W3KG64 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG64 ;
         adm:graphId         bdg:W3KG64 ;
-        adm:logEntry        bda:LG0W3KG64_RP7BCTFB1J7K ;
+        adm:logEntry        bda:LG0W3KG64_RP7BCTFB1J7K , bdr:LG0W3KG64_PWX42GSX3FNS ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -30,6 +30,14 @@ bdg:W3KG64 {
         bdo:volumeNumber    2 ;
         bdo:volumePagesTbrcIntro  0 .
     
+    bdr:LG0W3KG64_PWX42GSX3FNS
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-15T02:16:49.160879Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3KG64  a           bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I3KG352 , bdr:I3KG353 .
+        bdo:instanceHasVolume  bdr:I3KG352 , bdr:I3KG353 ;
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
 }
