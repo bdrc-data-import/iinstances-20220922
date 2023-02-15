@@ -17,7 +17,7 @@ bdg:W3KG62 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG62 ;
         adm:graphId         bdg:W3KG62 ;
-        adm:logEntry        bda:LG0W3KG62_ZOKWJPSWUNX0 ;
+        adm:logEntry        bda:LG0W3KG62_ZOKWJPSWUNX0 , bdr:LG0W3KG62_FR6DQ31QKKTP ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -25,6 +25,13 @@ bdg:W3KG62 {
     bdr:I3KG350  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG62_FR6DQ31QKKTP
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-15T02:16:08.029657Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
     
     bdr:W3KG62  a           bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG350 ;
