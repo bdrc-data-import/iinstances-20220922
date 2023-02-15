@@ -7,6 +7,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG65 {
+    bda:I3KG369  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG369 ;
+        adm:logEntry        bdr:LG0W3KG65_X5CEOAAS66JZ .
+    
+    bda:I3KG370  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG370 ;
+        adm:logEntry        bdr:LG0W3KG65_X5CEOAAS66JZ .
+    
     bda:LG0W3KG65_BTY3PYKVBFLM
         a                   adm:UpdateData ;
         adm:logDate         "2023-02-13T17:25:18.445248Z"^^xsd:dateTime ;
@@ -14,13 +22,31 @@ bdg:W3KG65 {
         adm:logWho          bdu:U1426146149 .
     
     bda:W3KG65  a           adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG65 ;
         adm:graphId         bdg:W3KG65 ;
-        adm:logEntry        bda:LG0W3KG65_BTY3PYKVBFLM ;
+        adm:logEntry        bda:LG0W3KG65_BTY3PYKVBFLM , bdr:LG0W3KG65_X5CEOAAS66JZ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:W3KG65  a           bdo:ImageInstance .
+    bdr:I3KG369  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG370  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG65_X5CEOAAS66JZ
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-02-15T02:17:14.229563Z"^^xsd:dateTime ;
+        adm:logMessage      "add 2 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bdr:W3KG65  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG369 , bdr:I3KG370 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
 }
