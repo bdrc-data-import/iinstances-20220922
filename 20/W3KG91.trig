@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG91 {
+    bda:LG0W3KG91_SB78TBKX735R
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-24T04:43:53.829423Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:LG0W3KG91_VALCPHM1GTX8
         a                   adm:UpdateData ;
         adm:logDate         "2023-02-24T04:42:51.852139Z"^^xsd:dateTime ;
@@ -17,7 +23,7 @@ bdg:W3KG91 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG91 ;
         adm:graphId         bdg:W3KG91 ;
-        adm:logEntry        bda:LG0W3KG91_VALCPHM1GTX8 ;
+        adm:logEntry        bda:LG0W3KG91_SB78TBKX735R , bda:LG0W3KG91_VALCPHM1GTX8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -102,15 +108,7 @@ bdg:W3KG91 {
         bdo:volumeNumber    20 ;
         bdo:volumePagesTbrcIntro  0 .
     
-    bdr:I3KG412  a          bdo:ImageGroup ;
-        bdo:volumeNumber    21 ;
-        bdo:volumePagesTbrcIntro  0 .
-    
-    bdr:I3KG413  a          bdo:ImageGroup ;
-        bdo:volumeNumber    22 ;
-        bdo:volumePagesTbrcIntro  0 .
-    
     bdr:W3KG91  a           bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I3KG392 , bdr:I3KG393 , bdr:I3KG394 , bdr:I3KG395 , bdr:I3KG396 , bdr:I3KG397 , bdr:I3KG398 , bdr:I3KG399 , bdr:I3KG400 , bdr:I3KG401 , bdr:I3KG402 , bdr:I3KG403 , bdr:I3KG404 , bdr:I3KG405 , bdr:I3KG406 , bdr:I3KG407 , bdr:I3KG408 , bdr:I3KG409 , bdr:I3KG410 , bdr:I3KG411 , bdr:I3KG412 , bdr:I3KG413 ;
+        bdo:instanceHasVolume  bdr:I3KG392 , bdr:I3KG393 , bdr:I3KG394 , bdr:I3KG395 , bdr:I3KG396 , bdr:I3KG397 , bdr:I3KG398 , bdr:I3KG399 , bdr:I3KG400 , bdr:I3KG401 , bdr:I3KG402 , bdr:I3KG403 , bdr:I3KG404 , bdr:I3KG405 , bdr:I3KG406 , bdr:I3KG407 , bdr:I3KG408 , bdr:I3KG409 , bdr:I3KG410 , bdr:I3KG411 ;
         bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
 }
