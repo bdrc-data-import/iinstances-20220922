@@ -9,7 +9,7 @@
 bdg:W1ER113 {
     bda:I1ER766  a          adm:AdminData ;
         adm:adminAbout      bdr:I1ER766 ;
-        adm:logEntry        bda:LG0W1ER113_PBZAXDGBCOQQ .
+        adm:logEntry        bda:LG0W1ER113_PBZAXDGBCOQQ , bda:LG0W1ER113_QMCEM5DUFW5C .
     
     bda:LG0W1ER113_IA16FBXPQSLX
         a                   adm:UpdateData ;
@@ -20,6 +20,13 @@ bdg:W1ER113 {
     bda:LG0W1ER113_PBZAXDGBCOQQ
         a                   adm:Synced ;
         adm:logDate         "2023-02-27T17:03:52.105559Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1ER113_QMCEM5DUFW5C
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-02-27T19:41:08.599731Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
