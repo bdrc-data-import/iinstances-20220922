@@ -455,6 +455,12 @@ bdg:W4CZ45314 {
         adm:adminAbout      bdr:I1BL220 ;
         adm:logEntry        bdr:LG0W4CZ45314_MWJSJ1FBL8JG .
     
+    bda:LG0W4CZ45314_RKGQHNZS4KQZ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-27T17:49:50.374136Z"^^xsd:dateTime ;
+        adm:logMessage      "no restriction in China"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W4CZ45314_ZPJ77NYFRMJF
         a                   adm:ImagesUpdated , adm:Synced ;
         adm:logDate         "2023-02-27T17:04:11.252346Z"^^xsd:dateTime ;
@@ -466,8 +472,9 @@ bdg:W4CZ45314 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ45314 ;
         adm:graphId         bdg:W4CZ45314 ;
-        adm:logEntry        bdr:LG0W4CZ45314_K8NRNTZUUZNF , bdr:LG0W4CZ45314_MWJSJ1FBL8JG ;
-        adm:restrictedInChina  true ;
+        adm:logEntry        bda:LG0W4CZ45314_RKGQHNZS4KQZ , bdr:LG0W4CZ45314_K8NRNTZUUZNF , bdr:LG0W4CZ45314_MWJSJ1FBL8JG ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I1BL109  a          bdo:ImageGroup ;
