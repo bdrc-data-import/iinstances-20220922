@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG24311 {
@@ -429,6 +424,12 @@ bdg:W1KG24311 {
         adm:logDate         "2016-08-19T15:38:56.966Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG24311_M9JP875IZECW
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-02-28T04:53:56.981790Z"^^xsd:dateTime ;
+        adm:logMessage      "copyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG102FEF0AA1ADE028
         a                   adm:InitialDataCreation ;
@@ -899,498 +900,498 @@ bdg:W1KG24311 {
         adm:logWho          bdu:U00016 .
     
     bda:W1KG24311  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24311 ;
         adm:facetIndex      81 ;
         adm:gitPath         "94/W1KG24311.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24311 ;
-        adm:logEntry        bda:LG3DE72F71DA79F9EF ;
+        adm:logEntry        bda:LG0W1KG24311_M9JP875IZECW , bda:LG3DE72F71DA79F9EF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG24363  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24364  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24365  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24366  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24367  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24368  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24369  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24370  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24371  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24372  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24373  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24374  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24375  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24376  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24377  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24378  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24379  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24380  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24381  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24382  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24383  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24384  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24385  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24386  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24387  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24388  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24389  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24390  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24391  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24392  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24393  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24394  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24395  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24396  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24397  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24398  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24399  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24400  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24401  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24402  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24403  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24404  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24405  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24406  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24407  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24408  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24409  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24410  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24411  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24412  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24413  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24414  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24415  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24416  a        :ImageGroup ;
-        :biblioNote         "Volume 54 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24417  a        :ImageGroup ;
-        :biblioNote         "Volume 55 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24418  a        :ImageGroup ;
-        :biblioNote         "Volume 56 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24419  a        :ImageGroup ;
-        :biblioNote         "Volume 57 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24420  a        :ImageGroup ;
-        :biblioNote         "Volume 58 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24421  a        :ImageGroup ;
-        :biblioNote         "Volume 59 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24422  a        :ImageGroup ;
-        :biblioNote         "Volume 60 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24423  a        :ImageGroup ;
-        :biblioNote         "Volume 61 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24424  a        :ImageGroup ;
-        :biblioNote         "Volume 62 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24425  a        :ImageGroup ;
-        :biblioNote         "Volume 63 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24426  a        :ImageGroup ;
-        :biblioNote         "Volume 64 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24427  a        :ImageGroup ;
-        :biblioNote         "Volume 65 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24428  a        :ImageGroup ;
-        :biblioNote         "Volume 66 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24429  a        :ImageGroup ;
-        :biblioNote         "Volume 67 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24430  a        :ImageGroup ;
-        :biblioNote         "Volume 68 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24431  a        :ImageGroup ;
-        :biblioNote         "Volume 69 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24432  a        :ImageGroup ;
-        :biblioNote         "Volume 70 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24433  a        :ImageGroup ;
-        :biblioNote         "Volume 71 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24434  a        :ImageGroup ;
-        :biblioNote         "Volume 72 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24435  a        :ImageGroup ;
-        :biblioNote         "Volume 73 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24436  a        :ImageGroup ;
-        :biblioNote         "Volume 74 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24437  a        :ImageGroup ;
-        :biblioNote         "Volume 75 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24438  a        :ImageGroup ;
-        :biblioNote         "Volume 76 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24439  a        :ImageGroup ;
-        :biblioNote         "Volume 77 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24440  a        :ImageGroup ;
-        :biblioNote         "Volume 78 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24441  a        :ImageGroup ;
-        :biblioNote         "Volume 79 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG24442  a        :ImageGroup ;
-        :biblioNote         "Volume 80 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W1KG24311  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG24363 , bdr:I1KG24364 , bdr:I1KG24365 , bdr:I1KG24366 , bdr:I1KG24367 , bdr:I1KG24368 , bdr:I1KG24369 , bdr:I1KG24370 , bdr:I1KG24371 , bdr:I1KG24372 , bdr:I1KG24373 , bdr:I1KG24374 , bdr:I1KG24375 , bdr:I1KG24376 , bdr:I1KG24377 , bdr:I1KG24378 , bdr:I1KG24379 , bdr:I1KG24380 , bdr:I1KG24381 , bdr:I1KG24382 , bdr:I1KG24383 , bdr:I1KG24384 , bdr:I1KG24385 , bdr:I1KG24386 , bdr:I1KG24387 , bdr:I1KG24388 , bdr:I1KG24389 , bdr:I1KG24390 , bdr:I1KG24391 , bdr:I1KG24392 , bdr:I1KG24393 , bdr:I1KG24394 , bdr:I1KG24395 , bdr:I1KG24396 , bdr:I1KG24397 , bdr:I1KG24398 , bdr:I1KG24399 , bdr:I1KG24400 , bdr:I1KG24401 , bdr:I1KG24402 , bdr:I1KG24403 , bdr:I1KG24404 , bdr:I1KG24405 , bdr:I1KG24406 , bdr:I1KG24407 , bdr:I1KG24408 , bdr:I1KG24409 , bdr:I1KG24410 , bdr:I1KG24411 , bdr:I1KG24412 , bdr:I1KG24413 , bdr:I1KG24414 , bdr:I1KG24415 , bdr:I1KG24416 , bdr:I1KG24417 , bdr:I1KG24418 , bdr:I1KG24419 , bdr:I1KG24420 , bdr:I1KG24421 , bdr:I1KG24422 , bdr:I1KG24423 , bdr:I1KG24424 , bdr:I1KG24425 , bdr:I1KG24426 , bdr:I1KG24427 , bdr:I1KG24428 , bdr:I1KG24429 , bdr:I1KG24430 , bdr:I1KG24431 , bdr:I1KG24432 , bdr:I1KG24433 , bdr:I1KG24434 , bdr:I1KG24435 , bdr:I1KG24436 , bdr:I1KG24437 , bdr:I1KG24438 , bdr:I1KG24439 , bdr:I1KG24440 , bdr:I1KG24441 , bdr:I1KG24442 ;
-        :numberOfVolumes    80 .
+    bdr:I1KG24363  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24364  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24365  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24366  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24367  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24368  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24369  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24370  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24371  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24372  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24373  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24374  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24375  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24376  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24377  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24378  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24379  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24380  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24381  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24382  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24383  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24384  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24385  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24386  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24387  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24388  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24389  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24390  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24391  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24392  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24393  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24394  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24395  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24396  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24397  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24398  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24399  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24400  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24401  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24402  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24403  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24404  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24405  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24406  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24407  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24408  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24409  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24410  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24411  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24412  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24413  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24414  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24415  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24416  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24417  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24418  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24419  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24420  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24421  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24422  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24423  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24424  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24425  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24426  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24427  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24428  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24429  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24430  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24431  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24432  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24433  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24434  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24435  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24436  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24437  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24438  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24439  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24440  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24441  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG24442  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of *rgyal dbang sku phreng rim byon gyi gsung 'bum dpe tshogs/"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W1KG24311  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG24363 , bdr:I1KG24364 , bdr:I1KG24365 , bdr:I1KG24366 , bdr:I1KG24367 , bdr:I1KG24368 , bdr:I1KG24369 , bdr:I1KG24370 , bdr:I1KG24371 , bdr:I1KG24372 , bdr:I1KG24373 , bdr:I1KG24374 , bdr:I1KG24375 , bdr:I1KG24376 , bdr:I1KG24377 , bdr:I1KG24378 , bdr:I1KG24379 , bdr:I1KG24380 , bdr:I1KG24381 , bdr:I1KG24382 , bdr:I1KG24383 , bdr:I1KG24384 , bdr:I1KG24385 , bdr:I1KG24386 , bdr:I1KG24387 , bdr:I1KG24388 , bdr:I1KG24389 , bdr:I1KG24390 , bdr:I1KG24391 , bdr:I1KG24392 , bdr:I1KG24393 , bdr:I1KG24394 , bdr:I1KG24395 , bdr:I1KG24396 , bdr:I1KG24397 , bdr:I1KG24398 , bdr:I1KG24399 , bdr:I1KG24400 , bdr:I1KG24401 , bdr:I1KG24402 , bdr:I1KG24403 , bdr:I1KG24404 , bdr:I1KG24405 , bdr:I1KG24406 , bdr:I1KG24407 , bdr:I1KG24408 , bdr:I1KG24409 , bdr:I1KG24410 , bdr:I1KG24411 , bdr:I1KG24412 , bdr:I1KG24413 , bdr:I1KG24414 , bdr:I1KG24415 , bdr:I1KG24416 , bdr:I1KG24417 , bdr:I1KG24418 , bdr:I1KG24419 , bdr:I1KG24420 , bdr:I1KG24421 , bdr:I1KG24422 , bdr:I1KG24423 , bdr:I1KG24424 , bdr:I1KG24425 , bdr:I1KG24426 , bdr:I1KG24427 , bdr:I1KG24428 , bdr:I1KG24429 , bdr:I1KG24430 , bdr:I1KG24431 , bdr:I1KG24432 , bdr:I1KG24433 , bdr:I1KG24434 , bdr:I1KG24435 , bdr:I1KG24436 , bdr:I1KG24437 , bdr:I1KG24438 , bdr:I1KG24439 , bdr:I1KG24440 , bdr:I1KG24441 , bdr:I1KG24442 ;
+        bdo:numberOfVolumes  80 .
 }
