@@ -20,6 +20,12 @@ bdg:W1NLM3748 {
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W1NLM3748_K025DFXN5KBJ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-02T06:58:16.082420Z"^^xsd:dateTime ;
+        adm:logMessage      "release"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -38,10 +44,10 @@ bdg:W1NLM3748 {
         adm:gitPath         "a7/W1NLM3748.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3748 ;
-        adm:logEntry        bda:LG0W1NLM3748_CUP76EYEGHTO ;
+        adm:logEntry        bda:LG0W1NLM3748_CUP76EYEGHTO , bda:LG0W1NLM3748_K025DFXN5KBJ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusScanned .
+        adm:status          bda:StatusReleased .
     
     bdr:I1NLM3748_001
         a                   bdo:ImageGroup ;
