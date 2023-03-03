@@ -1,0 +1,35 @@
+@prefix adm: <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda: <http://purl.bdrc.io/admindata/> .
+@prefix bdg: <http://purl.bdrc.io/graph/> .
+@prefix bdo: <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr: <http://purl.bdrc.io/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1NLM5853 {
+    bda:W1NLM5853 a adm:AdminData ;
+        adm:access bda:AccessOpen ;
+        adm:adminAbout bdr:W1NLM5853 ;
+        adm:gitPath "1d/W1NLM5853.trig" ;
+        adm:gitRepo bda:GR0014 ;
+        adm:graphId bdg:W1NLM5853 ;
+        adm:logEntry bda:LG0NLMWTL3HW1XDJ4H ;
+        adm:metadataLegal bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina false ;
+        adm:status bda:StatusReleased .
+
+    bda:LG0NLMWTL3HW1XDJ4H a adm:InitialDataImport ;
+        adm:logAgent "buda-scripts/imports/NLM/import-simple.py" ;
+        adm:logDate "2023-03-03T09:34:24.786681"^^xsd:dateTime ;
+        adm:logMethod bda:BatchMethod .
+
+    bdr:I1NLM5853_001 a bdo:ImageGroup ;
+        bdo:volumeNumber 1 ;
+        bdo:volumePagesTbrcIntro 0 .
+
+    bdr:W1NLM5853 a bdo:ImageInstance ;
+        bdo:inCollection bdr:PR1NLM00 ;
+        bdo:instanceHasVolume bdr:I1NLM5853_001 ;
+        bdo:numberOfVolumes 1 ;
+        bdo:scanInfo "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
+}
+
