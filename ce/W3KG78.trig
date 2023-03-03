@@ -13,11 +13,17 @@ bdg:W3KG78 {
         adm:logMessage      "generated scans"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG78_EQIUYTR90KXV
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-03T03:55:02.084597Z"^^xsd:dateTime ;
+        adm:logMessage      "saved again"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG78  a           adm:AdminData ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG78 ;
         adm:graphId         bdg:W3KG78 ;
-        adm:logEntry        bda:LG0W3KG78_BSZDW3GM1ZA1 ;
+        adm:logEntry        bda:LG0W3KG78_BSZDW3GM1ZA1 , bda:LG0W3KG78_EQIUYTR90KXV ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -28,5 +34,5 @@ bdg:W3KG78 {
     
     bdr:W3KG78  a           bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG379 ;
-        bdo:scanInfo        "Digital images are made available through the kind support of Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India"@en .
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India."@en .
 }
