@@ -9,13 +9,20 @@
 bdg:W3KG45 {
     bda:I3KG254  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG254 ;
-        adm:logEntry        bdr:LG0W3KG45_ERYABLFZCUE1 .
+        adm:logEntry        bda:LG0W3KG45_K8YIZALPYDHQ , bdr:LG0W3KG45_ERYABLFZCUE1 .
     
     bda:LG0W3KG45_ICC8JXWJBFUR
         a                   adm:UpdateData ;
         adm:logDate         "2023-01-10T18:41:42.599852Z"^^xsd:dateTime ;
         adm:logMessage      "created image group"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3KG45_K8YIZALPYDHQ
+        a                   adm:Synced ;
+        adm:logDate         "2023-03-03T16:43:26.666024Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3KG45  a           adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -28,7 +35,8 @@ bdg:W3KG45 {
     
     bdr:I3KG254  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  303 .
     
     bdr:LG0W3KG45_ERYABLFZCUE1
         a                   adm:ScanRequested ;
