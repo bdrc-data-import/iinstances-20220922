@@ -9,13 +9,20 @@
 bdg:W3KG60 {
     bda:I3KG368  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG368 ;
-        adm:logEntry        bdr:LG0W3KG60_2YWZFAJ0QJDS .
+        adm:logEntry        bda:LG0W3KG60_G8B5H7TTRZ2B , bdr:LG0W3KG60_2YWZFAJ0QJDS .
     
     bda:LG0W3KG60_FYG7G3ABFSJZ
         a                   adm:UpdateData ;
         adm:logDate         "2023-02-08T16:34:52.481613Z"^^xsd:dateTime ;
         adm:logMessage      "generated scans"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3KG60_G8B5H7TTRZ2B
+        a                   adm:Synced ;
+        adm:logDate         "2023-03-03T16:46:19.738609Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3KG60  a           adm:AdminData ;
         adm:access          bda:AccessFairUse ;
@@ -28,7 +35,8 @@ bdg:W3KG60 {
     
     bdr:I3KG368  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  132 .
     
     bdr:LG0W3KG60_2YWZFAJ0QJDS
         a                   adm:ScanRequested ;
