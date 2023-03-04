@@ -19,6 +19,12 @@ bdg:W3CN1475 {
         adm:logMessage      "open access"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W3CN1475_QOPTIKKSITCY
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-04T07:50:54.810189Z"^^xsd:dateTime ;
+        adm:logMessage      "remove scanInfo"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG4F2ADD5BA4311094
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-03-03T15:31:07.668Z"^^xsd:dateTime ;
@@ -44,7 +50,7 @@ bdg:W3CN1475 {
         adm:gitPath         "e1/W3CN1475.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN1475 ;
-        adm:logEntry        bda:LG0W3CN1475_DMNALRHFBAT4 , bda:LGB626547E4CE68235 ;
+        adm:logEntry        bda:LG0W3CN1475_DMNALRHFBAT4 , bda:LG0W3CN1475_QOPTIKKSITCY , bda:LGB626547E4CE68235 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -58,6 +64,5 @@ bdg:W3CN1475 {
     bdr:W3CN1475  a         bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1NCLK ;
         bdo:instanceHasVolume  bdr:I3CN1478 ;
-        bdo:numberOfVolumes  1 ;
-        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA."@en .
+        bdo:numberOfVolumes  1 .
 }
