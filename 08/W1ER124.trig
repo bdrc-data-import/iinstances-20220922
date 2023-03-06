@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER124 {
+    bda:LG0W1ER124_KXJHSWYRPCX7
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-06T08:55:13.214603Z"^^xsd:dateTime ;
+        adm:logMessage      "ric"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W1ER124_VMWVFTD7QISF
         a                   adm:UpdateData ;
         adm:logDate         "2023-03-06T08:52:45.367977Z"^^xsd:dateTime ;
@@ -17,9 +23,9 @@ bdg:W1ER124 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1ER124 ;
         adm:graphId         bdg:W1ER124 ;
-        adm:logEntry        bda:LG0W1ER124_VMWVFTD7QISF ;
+        adm:logEntry        bda:LG0W1ER124_KXJHSWYRPCX7 , bda:LG0W1ER124_VMWVFTD7QISF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I1ER798  a          bdo:ImageGroup ;
