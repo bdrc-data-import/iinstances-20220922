@@ -7,6 +7,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NLM5669 {
+    bda:I1NLM5669_001
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I1NLM5669_001 ;
+        adm:logEntry        bda:LG0W1NLM5669_ITN8Z2SHQIPY .
+    
     bda:LG0NLM6MKMPRAFG5FU
         a                   adm:InitialDataImport ;
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
@@ -16,6 +21,13 @@ bdg:W1NLM5669 {
     bda:LG0W1NLM5669_AEO44192XXAT
         a                   adm:Synced ;
         adm:logDate         "2023-03-03T17:06:25.011678Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1NLM5669_ITN8Z2SHQIPY
+        a                   adm:Synced ;
+        adm:logDate         "2023-03-06T23:36:54.786590Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -39,7 +51,8 @@ bdg:W1NLM5669 {
     bdr:I1NLM5669_001
         a                   bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  388 .
     
     bdr:W1NLM5669  a        bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1NLM00 ;
