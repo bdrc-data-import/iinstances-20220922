@@ -19,11 +19,17 @@ bdg:W1ER119 {
         adm:logMessage      "create"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER119_Z0SKLZGAJ6AK
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-06T08:29:53.277972Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1ER119  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1ER119 ;
         adm:graphId         bdg:W1ER119 ;
-        adm:logEntry        bda:LG0W1ER119_7SW0D5KUT79G , bda:LG0W1ER119_DYIJS4ZGUQQB ;
+        adm:logEntry        bda:LG0W1ER119_7SW0D5KUT79G , bda:LG0W1ER119_DYIJS4ZGUQQB , bda:LG0W1ER119_Z0SKLZGAJ6AK ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -36,7 +42,27 @@ bdg:W1ER119 {
         bdo:volumeNumber    2 ;
         bdo:volumePagesTbrcIntro  0 .
     
+    bdr:I1ER792  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1ER793  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1ER794  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1ER795  a          bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1ER796  a          bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
     bdr:W1ER119  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I1ER788 , bdr:I1ER789 ;
+        bdo:instanceHasVolume  bdr:I1ER788 , bdr:I1ER789 , bdr:I1ER792 , bdr:I1ER793 , bdr:I1ER794 , bdr:I1ER795 , bdr:I1ER796 ;
         bdo:scanInfo        "Scanned from NGMPP microfilms, reels AT 0062-02 to 06 and AT 0063-01 to 03"@en .
 }
