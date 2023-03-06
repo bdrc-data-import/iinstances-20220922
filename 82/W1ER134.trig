@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER134 {
+    bda:LG0W1ER134_IO9ANFHDTMM7
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-06T09:30:58.451548Z"^^xsd:dateTime ;
+        adm:logMessage      "create"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER134  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1ER134 ;
+        adm:graphId         bdg:W1ER134 ;
+        adm:logEntry        bda:LG0W1ER134_IO9ANFHDTMM7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1ER825  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1ER134  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1ER825 ;
+        bdo:scanInfo        "Scanned from NGMPP microfilms, reels L 0444-02"@en .
+}
