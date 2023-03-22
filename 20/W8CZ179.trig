@@ -13,6 +13,12 @@ bdg:W8CZ179 {
         adm:logMessage      "full catalog"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ179_PIGULFK9AQGJ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-22T09:58:56.224361Z"^^xsd:dateTime ;
+        adm:logMessage      "remove scanInfo"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ179_SNN11T0OZNEV
         a                   adm:UpdateData ;
         adm:logDate         "2023-03-21T16:21:04.950504Z"^^xsd:dateTime ;
@@ -23,11 +29,10 @@ bdg:W8CZ179 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ179 ;
         adm:graphId         bdg:W8CZ179 ;
-        adm:logEntry        bda:LG0W8CZ179_B4W2DHWBLHIK , bda:LG0W8CZ179_SNN11T0OZNEV ;
+        adm:logEntry        bda:LG0W8CZ179_B4W2DHWBLHIK , bda:LG0W8CZ179_PIGULFK9AQGJ , bda:LG0W8CZ179_SNN11T0OZNEV ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusScanned .
     
-    bdr:W8CZ179  a          bdo:ImageInstance ;
-        bdo:scanInfo        "copy made available from the collection of Hamburg"@en .
+    bdr:W8CZ179  a          bdo:ImageInstance .
 }
