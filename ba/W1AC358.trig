@@ -1,14 +1,11 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1AC358 {
@@ -17,6 +14,12 @@ bdg:W1AC358 {
         adm:logEntry        bda:LG113A20D77C427E6B , bda:LG9FE5F49F5C2D40C3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1AC358_IGMYVHR7VA85
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-22T09:29:10.652423Z"^^xsd:dateTime ;
+        adm:logMessage      "add collection"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG113A20D77C427E6B
         a                   adm:InitialDataCreation ;
@@ -43,24 +46,24 @@ bdg:W1AC358 {
         adm:gitPath         "ba/W1AC358.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC358 ;
-        adm:logEntry        bda:LGC934F55F24F63C94 ;
+        adm:logEntry        bda:LG0W1AC358_IGMYVHR7VA85 , bda:LGC934F55F24F63C94 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4PD4427  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of dwangs gsal shel gyi me long / －bod yig gi bka' bstan byung 'phel dang / khyad chos/ par ma khag dpe sdur par skrun byas p'i gns tshul bcas mdor bsdus su bkod p/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   374 .
+    bdr:I4PD4427  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dwangs gsal shel gyi me long / －bod yig gi bka' bstan byung 'phel dang / khyad chos/ par ma khag dpe sdur par skrun byas p'i gns tshul bcas mdor bsdus su bkod p/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  374 .
     
     bdr:IDAD8AF2896A645AD1
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147747027" .
     
-    bdr:W1AC358  a          :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDAD8AF2896A645AD1 ;
-        :instanceHasVolume  bdr:I4PD4427 ;
-        :numberOfVolumes    1 .
+    bdr:W1AC358  a          bdo:ImageInstance ;
+        bf:identifiedBy     bdr:IDAD8AF2896A645AD1 ;
+        bdo:inCollection    bdr:PR4JW5430 ;
+        bdo:instanceHasVolume  bdr:I4PD4427 ;
+        bdo:numberOfVolumes  1 .
 }
