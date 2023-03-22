@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2PD19644 {
@@ -233,6 +228,12 @@ bdg:W2PD19644 {
         adm:logDate         "2017-09-11T22:41:30.67Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W2PD19644_PP2QF63UVIPV
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-22T09:56:10.121768Z"^^xsd:dateTime ;
+        adm:logMessage      "add collection"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG104AA5807DEDD087
         a                   adm:Synced ;
@@ -637,217 +638,218 @@ bdg:W2PD19644 {
         adm:gitPath         "b1/W2PD19644.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD19644 ;
-        adm:logEntry        bda:LG9F785DE8F834D69E ;
+        adm:logEntry        bda:LG0W2PD19644_PP2QF63UVIPV , bda:LG9F785DE8F834D69E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2PD19696  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   167 .
+    bdr:I2PD19696  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  167 .
     
-    bdr:I2PD19697  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   419 .
+    bdr:I2PD19697  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  419 .
     
-    bdr:I2PD19698  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   981 .
+    bdr:I2PD19698  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  981 .
     
-    bdr:I2PD19699  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   70 .
+    bdr:I2PD19699  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  70 .
     
-    bdr:I2PD19700  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   340 .
+    bdr:I2PD19700  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  340 .
     
-    bdr:I2PD19701  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   88 .
+    bdr:I2PD19701  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  88 .
     
-    bdr:I2PD19702  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   136 .
+    bdr:I2PD19702  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  136 .
     
-    bdr:I2PD19703  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   909 .
+    bdr:I2PD19703  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  909 .
     
-    bdr:I2PD19704  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   186 .
+    bdr:I2PD19704  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  186 .
     
-    bdr:I2PD19705  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   336 .
+    bdr:I2PD19705  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  336 .
     
-    bdr:I2PD19706  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   431 .
+    bdr:I2PD19706  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  431 .
     
-    bdr:I2PD19707  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   108 .
+    bdr:I2PD19707  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  108 .
     
-    bdr:I2PD19708  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   154 .
+    bdr:I2PD19708  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  154 .
     
-    bdr:I2PD19709  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   300 .
+    bdr:I2PD19709  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  300 .
     
-    bdr:I2PD19710  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   512 .
+    bdr:I2PD19710  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  512 .
     
-    bdr:I2PD19711  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   229 .
+    bdr:I2PD19711  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  229 .
     
-    bdr:I2PD19712  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   738 .
+    bdr:I2PD19712  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  738 .
     
-    bdr:I2PD19713  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   76 .
+    bdr:I2PD19713  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  76 .
     
-    bdr:I2PD19714  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   110 .
+    bdr:I2PD19714  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  110 .
     
-    bdr:I2PD19715  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   531 .
+    bdr:I2PD19715  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  531 .
     
-    bdr:I2PD19716  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   96 .
+    bdr:I2PD19716  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  96 .
     
-    bdr:I2PD19717  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   611 .
+    bdr:I2PD19717  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  611 .
     
-    bdr:I2PD19718  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   34 .
+    bdr:I2PD19718  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  34 .
     
-    bdr:I2PD19719  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   298 .
+    bdr:I2PD19719  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  298 .
     
-    bdr:I2PD19720  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   187 .
+    bdr:I2PD19720  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  187 .
     
-    bdr:I2PD19721  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   524 .
+    bdr:I2PD19721  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  524 .
     
-    bdr:I2PD19722  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   53 .
+    bdr:I2PD19722  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  53 .
     
-    bdr:I2PD19723  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   852 .
+    bdr:I2PD19723  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  852 .
     
-    bdr:I2PD19724  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   682 .
+    bdr:I2PD19724  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  682 .
     
-    bdr:I2PD19725  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   26 .
+    bdr:I2PD19725  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  26 .
     
-    bdr:I2PD19726  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   165 .
+    bdr:I2PD19726  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  165 .
     
-    bdr:I2PD19727  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1454 .
+    bdr:I2PD19727  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1454 .
     
-    bdr:I2PD19728  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   252 .
+    bdr:I2PD19728  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  252 .
     
-    bdr:I2PD19729  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   114 .
+    bdr:I2PD19729  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  114 .
     
-    bdr:W2PD19644  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I2PD19696 , bdr:I2PD19697 , bdr:I2PD19698 , bdr:I2PD19699 , bdr:I2PD19700 , bdr:I2PD19701 , bdr:I2PD19702 , bdr:I2PD19703 , bdr:I2PD19704 , bdr:I2PD19705 , bdr:I2PD19706 , bdr:I2PD19707 , bdr:I2PD19708 , bdr:I2PD19709 , bdr:I2PD19710 , bdr:I2PD19711 , bdr:I2PD19712 , bdr:I2PD19713 , bdr:I2PD19714 , bdr:I2PD19715 , bdr:I2PD19716 , bdr:I2PD19717 , bdr:I2PD19718 , bdr:I2PD19719 , bdr:I2PD19720 , bdr:I2PD19721 , bdr:I2PD19722 , bdr:I2PD19723 , bdr:I2PD19724 , bdr:I2PD19725 , bdr:I2PD19726 , bdr:I2PD19727 , bdr:I2PD19728 , bdr:I2PD19729 ;
-        :numberOfVolumes    34 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+    bdr:W2PD19644  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NCLK ;
+        bdo:instanceHasVolume  bdr:I2PD19696 , bdr:I2PD19697 , bdr:I2PD19698 , bdr:I2PD19699 , bdr:I2PD19700 , bdr:I2PD19701 , bdr:I2PD19702 , bdr:I2PD19703 , bdr:I2PD19704 , bdr:I2PD19705 , bdr:I2PD19706 , bdr:I2PD19707 , bdr:I2PD19708 , bdr:I2PD19709 , bdr:I2PD19710 , bdr:I2PD19711 , bdr:I2PD19712 , bdr:I2PD19713 , bdr:I2PD19714 , bdr:I2PD19715 , bdr:I2PD19716 , bdr:I2PD19717 , bdr:I2PD19718 , bdr:I2PD19719 , bdr:I2PD19720 , bdr:I2PD19721 , bdr:I2PD19722 , bdr:I2PD19723 , bdr:I2PD19724 , bdr:I2PD19725 , bdr:I2PD19726 , bdr:I2PD19727 , bdr:I2PD19728 , bdr:I2PD19729 ;
+        bdo:numberOfVolumes  34 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
 }
