@@ -14,14 +14,14 @@ bdg:W8CZ61 {
     
     bda:LG0W8CZ61_GEVS4BBH4DGA
         a                   adm:Synced ;
-        adm:logDate         "2023-01-21T01:51:23.611116Z"^^xsd:dateTime ;
+        adm:logDate         "2023-01-21T01:51:23.611116+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG0W8CZ61_QW6ELRRZBFCA
-        a                   adm:UpdateData ;
-        adm:logDate         "2022-11-21T20:01:32.280632Z"^^xsd:dateTime ;
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-11-21T20:01:32.280632+00:00"^^xsd:dateTime ;
         adm:logMessage      "add cr"@bo ;
         adm:logWho          bdu:U2089842660 .
     
@@ -35,10 +35,10 @@ bdg:W8CZ61 {
         adm:status          bda:StatusReleased .
     
     bdr:I8CZ561  a          bdo:ImageGroup ;
-        skos:prefLabel      "sa skya legs bshad sum rkang ma/"@bo-x-ewts ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 ;
-        bdo:volumePagesTotal  246 .
+        bdo:volumePagesTotal  246 ;
+        skos:prefLabel      "sa skya legs bshad sum rkang ma/"@bo-x-ewts .
     
     bdr:W8CZ61  a           bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ561 ;
