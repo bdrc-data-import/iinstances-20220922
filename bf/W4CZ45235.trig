@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ45235 {
     bda:I4CZ45248  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CZ45248 ;
-        adm:logEntry        bda:LGE433CD9EA30ABDA3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W4CZ45235_GM8QNBDMVHNI , bda:LGE433CD9EA30ABDA3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W4CZ45235_GM8QNBDMVHNI
+        a                   adm:Synced ;
+        adm:logDate         "2023-03-24T22:19:00.300994Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG3285456796F168FC
         a                   adm:ScanRequestCreation ;
@@ -60,15 +62,15 @@ bdg:W4CZ45235 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ45248  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of rje btsun mi la ras pa'i gsung mgur mdzod nag ma/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   640 .
+    bdr:I4CZ45248  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rje btsun mi la ras pa'i gsung mgur mdzod nag ma/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  639 .
     
-    bdr:W4CZ45235  a        :ImageInstance ;
-        :inCollection       bdr:PR1CTC13 ;
-        :instanceHasVolume  bdr:I4CZ45248 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "copy made available from the rubin foundation"@en , "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 19/11/14"@en .
+    bdr:W4CZ45235  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC13 ;
+        bdo:instanceHasVolume  bdr:I4CZ45248 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "copy made available from the rubin foundation"@en , "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 19/11/14"@en .
 }
