@@ -18,17 +18,24 @@ bdg:W8CZ19 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ19 ;
         adm:graphId         bdg:W8CZ19 ;
-        adm:logEntry        bda:LG0W8CZ19_BTQTLPEEORDF ;
+        adm:logEntry        bda:LG0W8CZ19_BTQTLPEEORDF , bdr:LG0W8CZ19_I01RYZWSMVXG ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I8CZ24  a           bdo:ImageGroup ;
+        skos:prefLabel      "bla ma rgyang 'bod/"@bo-x-ewts ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 ;
-        skos:prefLabel      "bla ma rgyang 'bod/"@bo-x-ewts .
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W8CZ19_I01RYZWSMVXG
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-29T20:33:20.665063Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U2089842660 .
     
     bdr:W8CZ19  a           bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ24 ;
-        bdo:scanInfo        "bla ma rgyang 'bod/"@bo-x-ewts .
+        bdo:scanInfo        "Digital images of the text are made available through the kind support of Great Enlightenment Buddhist Institute Society (GEBIS) in Canada."@en .
 }
