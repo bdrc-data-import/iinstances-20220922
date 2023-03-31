@@ -13,6 +13,12 @@ bdg:W4CZ45235 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0W4CZ45235_01AOGZQTGNUT
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-03-31T06:07:09.629939Z"^^xsd:dateTime ;
+        adm:logMessage      "Drepung collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W4CZ45235_GM8QNBDMVHNI
         a                   adm:Synced ;
         adm:logDate         "2023-03-24T22:19:00.300994Z"^^xsd:dateTime ;
@@ -57,7 +63,7 @@ bdg:W4CZ45235 {
         adm:gitPath         "bf/W4CZ45235.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ45235 ;
-        adm:logEntry        bda:LG3285456796F168FC ;
+        adm:logEntry        bda:LG0W4CZ45235_01AOGZQTGNUT , bda:LG3285456796F168FC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -69,8 +75,8 @@ bdg:W4CZ45235 {
         bdo:volumePagesTotal  639 .
     
     bdr:W4CZ45235  a        bdo:ImageInstance ;
-        bdo:inCollection    bdr:PR1CTC13 ;
+        bdo:inCollection    bdr:PR1CTC13 , bdr:PR1NCLK ;
         bdo:instanceHasVolume  bdr:I4CZ45248 ;
         bdo:numberOfVolumes  1 ;
-        bdo:scanInfo        "copy made available from the rubin foundation"@en , "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 19/11/14"@en .
+        bdo:scanInfo        "Copy made available from the Rubin Foundation. Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. 19/11/14. Thanks to Etienne Bock and Kristin Blancke of Tibet Museum - Fondation Alain Bordier, Gruyères, Switzerland for helping arrange the page order of this text."@en .
 }
