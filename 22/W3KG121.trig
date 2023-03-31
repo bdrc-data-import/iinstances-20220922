@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG121 {
+    bda:LG0W3KG121_Z3OHNEHR6NXL
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-03-31T02:02:53.317510Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG121  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG121 ;
+        adm:graphId         bdg:W3KG121 ;
+        adm:logEntry        bda:LG0W3KG121_Z3OHNEHR6NXL ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG457  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG121  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG457 ;
+        bdo:scanInfo        "Scanned by Dzongkar Choede Monastery, Gurupura, Hunsur Taluk, Mysore District, 571188 Karnataka, India."@en .
+}
