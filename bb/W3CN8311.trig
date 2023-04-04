@@ -12,15 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN8311 {
-    bda:I3CN8313  a         adm:AdminData ;
-        adm:adminAbout      bdr:I3CN8313 ;
-        adm:logEntry        bda:LG5F09F808B78D018E , bda:LGB2E39AD09419AB0F ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+    bda:I3CN8315  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3CN8315 ;
+        adm:logEntry        bda:LGF16F6AD1A4B9B831 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN8316  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN8316 ;
-        adm:logEntry        bda:LG39A89513EC5C4877 ;
+        adm:logEntry        bda:LG9C72AB72B6FA8436 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG159B0AA3BCD0F26A
@@ -29,23 +28,17 @@ bdg:W3CN8311 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG39A89513EC5C4877
+    bda:LG9C72AB72B6FA8436
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T17:22:50.782Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG5F09F808B78D018E
+    bda:LGF16F6AD1A4B9B831
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T17:18:38.482Z"^^xsd:dateTime ;
+        adm:logDate         "2016-12-15T17:22:50.682Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LGB2E39AD09419AB0F
-        a                   adm:Synced ;
-        adm:logDate         "2017-11-09T20:49:42.081Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:LGF38705DA8A1FCF8F
         a                   adm:ScanRequestCreation ;
@@ -56,7 +49,7 @@ bdg:W3CN8311 {
     bda:W3CN8311  a         adm:AdminData ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN8311 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bb/W3CN8311.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8311 ;
@@ -65,11 +58,11 @@ bdg:W3CN8311 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN8313  a         :ImageGroup ;
+    bdr:I3CN8315  a         :ImageGroup ;
         :biblioNote         "Volume 1 of dri ba 'bum phrag ma/"@en ;
         :volumeNumber       1 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   220 .
+        :volumePagesTotal   0 .
     
     bdr:I3CN8316  a         :ImageGroup ;
         :biblioNote         "Volume 2 of dri ba 'bum phrag ma/"@en ;
@@ -84,6 +77,6 @@ bdg:W3CN8311 {
     bdr:W3CN8311  a         :ImageInstance ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDA0499B16B57996C9 ;
-        :instanceHasVolume  bdr:I3CN8313 , bdr:I3CN8316 ;
+        :instanceHasVolume  bdr:I3CN8315 , bdr:I3CN8316 ;
         :numberOfVolumes    2 .
 }

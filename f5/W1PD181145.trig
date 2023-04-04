@@ -12,17 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD181145 {
-    bda:I3PD71  a           adm:AdminData ;
-        adm:adminAbout      bdr:I3PD71 ;
-        adm:logEntry        bda:LG5984476AA41D131D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
-    
-    bda:LG5984476AA41D131D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-05-18T16:58:51.426Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:I1KG81329  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG81329 ;
+        adm:logEntry        bda:LGFF8720AB7B8EE69A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LGCBD99AF7E272E974
         a                   adm:ScanRequestCreation ;
@@ -36,28 +29,16 @@ bdg:W1PD181145 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
-        adm:logMessage      "Added ondisk"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages and added page list"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
+    bda:LGFF8720AB7B8EE69A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-12T12:41:24.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1PD181145  a       adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1PD181145 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "f5/W1PD181145.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD181145 ;
@@ -66,14 +47,14 @@ bdg:W1PD181145 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3PD71  a           :ImageGroup ;
+    bdr:I1KG81329  a        :ImageGroup ;
         :biblioNote         "Volume 1 of snga 'gyur g.yag ze dgon gyi gter ma'i sgrub mchod las/ rat phur gyi skor/"@en ;
         :volumeNumber       1 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   578 .
+        :volumePagesTotal   0 .
     
     bdr:W1PD181145  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I3PD71 ;
+        :instanceHasVolume  bdr:I1KG81329 ;
         :numberOfVolumes    1 ;
         :scanInfo           "10/2017"@en .
 }
