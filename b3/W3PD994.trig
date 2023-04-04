@@ -12,25 +12,41 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3PD994 {
-    bda:I1KG81256  a        adm:AdminData ;
-        adm:adminAbout      bdr:I1KG81256 ;
-        adm:logEntry        bda:LG9316B7BA8F926C02 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I3PD1198  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3PD1198 ;
+        adm:logEntry        bda:LGACFEBF21B90FA465 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:I1KG81257  a        adm:AdminData ;
-        adm:adminAbout      bdr:I1KG81257 ;
-        adm:logEntry        bda:LG852720FE319C7CFD ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I3PD1199  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3PD1199 ;
+        adm:logEntry        bda:LG02F81DAFFB9B4085 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:I1KG81258  a        adm:AdminData ;
-        adm:adminAbout      bdr:I1KG81258 ;
-        adm:logEntry        bda:LG691A7948D0322CB7 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I3PD1200  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3PD1200 ;
+        adm:logEntry        bda:LGA0FDA5E9FA350276 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:I1KG81259  a        adm:AdminData ;
-        adm:adminAbout      bdr:I1KG81259 ;
-        adm:logEntry        bda:LGC44F551EA75F1C7D ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I3PD1201  a         adm:AdminData ;
+        adm:adminAbout      bdr:I3PD1201 ;
+        adm:logEntry        bda:LG24A2050B97DE7C53 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG02F81DAFFB9B4085
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-08-06T21:47:19.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG24A2050B97DE7C53
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-08-06T21:47:19.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG56D7174E550130C3
         a                   adm:ScanRequestCreation ;
@@ -44,34 +60,40 @@ bdg:W3PD994 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG691A7948D0322CB7
+    bda:LGA0FDA5E9FA350276
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-12T11:03:10.149Z"^^xsd:dateTime ;
+        adm:logDate         "2015-08-06T21:47:19.176Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+        adm:logWho          bdu:U00021 .
     
-    bda:LG852720FE319C7CFD
+    bda:LGACFEBF21B90FA465
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-12T11:03:10.052Z"^^xsd:dateTime ;
+        adm:logDate         "2015-08-06T21:47:18.859Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+        adm:logWho          bdu:U00021 .
     
-    bda:LG9316B7BA8F926C02
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-12T11:03:09.96Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
-    bda:LGC44F551EA75F1C7D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-12T11:03:10.239Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bda:W3PD994  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3PD994 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      20 ;
         adm:gitPath         "b3/W3PD994.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3PD994 ;
@@ -80,32 +102,32 @@ bdg:W3PD994 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG81256  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gter chos/ khrag 'thung stobs ldan dpa' bo/"@en ;
+    bdr:I3PD1198  a         :ImageGroup ;
+        :biblioNote         "Volume 1 of khrag 'thung stobs ldan dpa' bo'i gter chos/"@en ;
         :volumeNumber       1 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   808 .
     
-    bdr:I1KG81257  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gter chos/ khrag 'thung stobs ldan dpa' bo/"@en ;
+    bdr:I3PD1199  a         :ImageGroup ;
+        :biblioNote         "Volume 2 of khrag 'thung stobs ldan dpa' bo'i gter chos/"@en ;
         :volumeNumber       2 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   578 .
     
-    bdr:I1KG81258  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gter chos/ khrag 'thung stobs ldan dpa' bo/"@en ;
+    bdr:I3PD1200  a         :ImageGroup ;
+        :biblioNote         "Volume 3 of khrag 'thung stobs ldan dpa' bo'i gter chos/"@en ;
         :volumeNumber       3 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   824 .
     
-    bdr:I1KG81259  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gter chos/ khrag 'thung stobs ldan dpa' bo/"@en ;
+    bdr:I3PD1201  a         :ImageGroup ;
+        :biblioNote         "Volume 4 of khrag 'thung stobs ldan dpa' bo'i gter chos/"@en ;
         :volumeNumber       4 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   518 .
     
     bdr:W3PD994  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG81256 , bdr:I1KG81257 , bdr:I1KG81258 , bdr:I1KG81259 ;
+        :instanceHasVolume  bdr:I3PD1198 , bdr:I3PD1199 , bdr:I3PD1200 , bdr:I3PD1201 ;
         :numberOfVolumes    4 ;
         :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }

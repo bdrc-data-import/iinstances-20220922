@@ -11,29 +11,17 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W1PD181145 {
-    bda:I3PD71  a           adm:AdminData ;
-        adm:adminAbout      bdr:I3PD71 ;
-        adm:logEntry        bda:LG5984476AA41D131D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+bdg:W1KG4236 {
+    bda:I1PD97702  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD97702 ;
+        adm:logEntry        bda:LG7D95F35761D27FF5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG5984476AA41D131D
+    bda:LG7D95F35761D27FF5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-05-18T16:58:51.426Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-04T12:14:44.8Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LGCBD99AF7E272E974
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-10-12T12:41:24.77Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGE1362B2AD69D4B26
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2014-05-18T16:58:52.494Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -54,26 +42,25 @@ bdg:W1PD181145 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:W1PD181145  a       adm:AdminData ;
+    bda:W1KG4236  a         adm:AdminData ;
         adm:access          bda:AccessOpen ;
-        adm:adminAbout      bdr:W1PD181145 ;
+        adm:adminAbout      bdr:W1KG4236 ;
         adm:facetIndex      5 ;
-        adm:gitPath         "f5/W1PD181145.trig" ;
+        adm:gitPath         "04/W1KG4236.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W1PD181145 ;
-        adm:logEntry        bda:LGCBD99AF7E272E974 , bda:LGE1362B2AD69D4B26 ;
+        adm:graphId         bdg:W1KG4236 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
-    bdr:I3PD71  a           :ImageGroup ;
-        :biblioNote         "Volume 1 of snga 'gyur g.yag ze dgon gyi gter ma'i sgrub mchod las/ rat phur gyi skor/"@en ;
+    bdr:I1PD97702  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rten 'brel bstod pa'i bka' khrid"@en ;
         :volumeNumber       1 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   578 .
+        :volumePagesTotal   286 .
     
-    bdr:W1PD181145  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I3PD71 ;
+    bdr:W1KG4236  a         :ImageInstance ;
+        :instanceHasVolume  bdr:I1PD97702 ;
         :numberOfVolumes    1 ;
-        :scanInfo           "10/2017"@en .
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2010"@en .
 }
