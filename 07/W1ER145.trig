@@ -7,11 +7,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER145 {
+    bda:I1ER832  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER832 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
+    bda:I1ER833  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER833 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
+    bda:I1ER834  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER834 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
+    bda:I1ER835  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER835 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
+    bda:I1ER836  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER836 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
+    bda:I1ER837  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER837 ;
+        adm:logEntry        bda:LG0W1ER145_IJBUZULVMJ1C .
+    
     bda:LG0W1ER145_2PCWKBTIT1ZA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-04-05T06:02:02.669440Z"^^xsd:dateTime ;
         adm:logMessage      "batch add volumes"@en ;
         adm:logWho          bdu:U1653882847 .
+    
+    bda:LG0W1ER145_IJBUZULVMJ1C
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-04-05T16:52:19.615443Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1ER145  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -24,27 +55,33 @@ bdg:W1ER145 {
     
     bdr:I1ER832  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  424 .
     
     bdr:I1ER833  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  268 .
     
     bdr:I1ER834  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  234 .
     
     bdr:I1ER835  a          bdo:ImageGroup ;
         bdo:volumeNumber    4 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  650 .
     
     bdr:I1ER836  a          bdo:ImageGroup ;
         bdo:volumeNumber    5 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  348 .
     
     bdr:I1ER837  a          bdo:ImageGroup ;
         bdo:volumeNumber    6 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  366 .
     
     bdr:W1ER145  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I1ER832 , bdr:I1ER833 , bdr:I1ER834 , bdr:I1ER835 , bdr:I1ER836 , bdr:I1ER837 ;
