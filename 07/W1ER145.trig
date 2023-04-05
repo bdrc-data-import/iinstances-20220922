@@ -37,6 +37,12 @@ bdg:W1ER145 {
         adm:logMessage      "batch add volumes"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W1ER145_FA2T9PPGL8EO
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-04-05T21:48:11.694361Z"^^xsd:dateTime ;
+        adm:logMessage      "fix scanInfo"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W1ER145_IJBUZULVMJ1C
         a                   adm:ImagesUpdated , adm:Synced ;
         adm:logDate         "2023-04-05T16:52:19.615443Z"^^xsd:dateTime ;
@@ -48,7 +54,7 @@ bdg:W1ER145 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1ER145 ;
         adm:graphId         bdg:W1ER145 ;
-        adm:logEntry        bda:LG0W1ER145_2PCWKBTIT1ZA ;
+        adm:logEntry        bda:LG0W1ER145_2PCWKBTIT1ZA , bda:LG0W1ER145_FA2T9PPGL8EO ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -85,5 +91,5 @@ bdg:W1ER145 {
     
     bdr:W1ER145  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I1ER832 , bdr:I1ER833 , bdr:I1ER834 , bdr:I1ER835 , bdr:I1ER836 , bdr:I1ER837 ;
-        bdo:scanInfo        "Scans created by the Tsadra Foundation in April 2023, based on a copy\nprovided by the Tana Yelpa Foundation"@en .
+        bdo:scanInfo        "Scans created by the Tsadra Foundation in April 2023, from a copy provided by Tana Dungsey Rinpoche and the Tana Yelpa Foundation."@en .
 }
