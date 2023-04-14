@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14303 {
@@ -20,7 +15,7 @@ bdg:W1KG14303 {
     
     bda:I1KG15194  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15194 ;
-        adm:logEntry        bda:LGBFC0FD2176BCC234 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG14303_KB9HEZNLBNO2 , bda:LGBFC0FD2176BCC234 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -58,6 +53,13 @@ bdg:W1KG14303 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-16T14:03:05.933Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG14303_KB9HEZNLBNO2
+        a                   adm:Synced ;
+        adm:logDate         "2023-04-14T21:55:21.410989Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG8944B4EA0D28FA31
@@ -132,51 +134,51 @@ bdg:W1KG14303 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG15193  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   362 .
+    bdr:I1KG15193  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  362 .
     
-    bdr:I1KG15194  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   328 .
+    bdr:I1KG15194  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  328 .
     
-    bdr:I1KG15195  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   328 .
+    bdr:I1KG15195  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  328 .
     
-    bdr:I1KG15196  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   336 .
+    bdr:I1KG15196  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  336 .
     
-    bdr:I1KG15197  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   360 .
+    bdr:I1KG15197  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  360 .
     
-    bdr:I1KG15198  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   305 .
+    bdr:I1KG15198  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  305 .
     
-    bdr:I1KG15199  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of gsung 'bum/_chos kyi blo gros/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   317 .
+    bdr:I1KG15199  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of gsung 'bum/_chos kyi blo gros/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  317 .
     
-    bdr:W1KG14303  a        :ImageInstance ;
-        :inCollection       bdr:PR1CTC13 , bdr:PR1NCLK ;
-        :instanceHasVolume  bdr:I1KG15193 , bdr:I1KG15194 , bdr:I1KG15195 , bdr:I1KG15196 , bdr:I1KG15197 , bdr:I1KG15198 , bdr:I1KG15199 ;
-        :numberOfVolumes    7 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 9/2013"@en .
+    bdr:W1KG14303  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC13 , bdr:PR1NCLK ;
+        bdo:instanceHasVolume  bdr:I1KG15193 , bdr:I1KG15194 , bdr:I1KG15195 , bdr:I1KG15196 , bdr:I1KG15197 , bdr:I1KG15198 , bdr:I1KG15199 ;
+        bdo:numberOfVolumes  7 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 9/2013"@en .
 }
