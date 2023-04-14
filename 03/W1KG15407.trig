@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG15407 {
     bda:I1KG15425  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15425 ;
-        adm:logEntry        bda:LG1A700247670E48C3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG15407_HGDYYJ3GJZEG , bda:LG1A700247670E48C3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG15407_HGDYYJ3GJZEG
+        a                   adm:Synced ;
+        adm:logDate         "2023-04-14T21:56:54.880823Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1A700247670E48C3
         a                   adm:InitialDataCreation ;
@@ -60,14 +62,14 @@ bdg:W1KG15407 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG15425  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of sde dge chos 'byung /"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   276 .
+    bdr:I1KG15425  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sde dge chos 'byung /"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  276 .
     
-    bdr:W1KG15407  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG15425 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 10/2013"@en , "scanned from photocopied book"@en .
+    bdr:W1KG15407  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG15425 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 10/2013"@en , "scanned from photocopied book"@en .
 }
