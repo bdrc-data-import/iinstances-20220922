@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG24995 {
     bda:I1KG24997  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24997 ;
-        adm:logEntry        bda:LG78490C23C83CB459 , bda:LG93CCAF3A66A71F89 ;
+        adm:logEntry        bda:LG0W1KG24995_IX5AFPF98MLJ , bda:LG78490C23C83CB459 , bda:LG93CCAF3A66A71F89 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG24995_IX5AFPF98MLJ
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-04-14T21:58:25.795675Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG78490C23C83CB459
         a                   adm:InitialDataCreation ;
@@ -48,13 +50,13 @@ bdg:W1KG24995 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG24997  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gzan chag gi las snon bsres sbyor dang nyin re'i gzan chag sbyor sdeb/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   68 .
+    bdr:I1KG24997  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gzan chag gi las snon bsres sbyor dang nyin re'i gzan chag sbyor sdeb/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  68 .
     
-    bdr:W1KG24995  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG24997 ;
-        :numberOfVolumes    1 .
+    bdr:W1KG24995  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG24997 ;
+        bdo:numberOfVolumes  1 .
 }
