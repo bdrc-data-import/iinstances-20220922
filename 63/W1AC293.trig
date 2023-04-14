@@ -1,20 +1,15 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1AC293 {
     bda:I4PD4416  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4416 ;
-        adm:logEntry        bda:LGA5FF6FB4678DE105 , bda:LGFF16191C58239C05 ;
+        adm:logEntry        bda:LG0W1AC293_ETXJVR6IHQBG , bda:LGA5FF6FB4678DE105 , bda:LGFF16191C58239C05 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,6 +36,13 @@ bdg:W1AC293 {
         adm:logDate         "2017-07-08T00:00:44.416Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W1AC293_ETXJVR6IHQBG
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-04-14T21:53:43.107679Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG17011968A6C0787C
         a                   adm:ScanRequestCreation ;
@@ -102,32 +104,32 @@ bdg:W1AC293 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4PD4416  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
+    bdr:I4PD4416  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
     
-    bdr:I4PD4417  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   646 .
+    bdr:I4PD4417  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  646 .
     
-    bdr:I4PD4418  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   332 .
+    bdr:I4PD4418  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  332 .
     
-    bdr:I4PD4419  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   692 .
+    bdr:I4PD4419  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of mkhan chen a pad rin po che mchog gi gsum 'bum/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  692 .
     
-    bdr:W1AC293  a          :ImageInstance ;
-        :inCollection       bdr:PR1CTC15 ;
-        :instanceHasVolume  bdr:I4PD4416 , bdr:I4PD4417 , bdr:I4PD4418 , bdr:I4PD4419 ;
-        :numberOfVolumes    4 .
+    bdr:W1AC293  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC15 ;
+        bdo:instanceHasVolume  bdr:I4PD4416 , bdr:I4PD4417 , bdr:I4PD4418 , bdr:I4PD4419 ;
+        bdo:numberOfVolumes  4 .
 }
