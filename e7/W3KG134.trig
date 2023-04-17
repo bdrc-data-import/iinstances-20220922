@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG134 {
+    bda:LG0W3KG134_0CIQMF5PLSKQ
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-04-17T19:33:52.363289Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scan"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG134  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3KG134 ;
+        adm:graphId         bdg:W3KG134 ;
+        adm:logEntry        bda:LG0W3KG134_0CIQMF5PLSKQ ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG473  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG134  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG473 ;
+        bdo:scanInfo        "Scanned by Sarah Library, College for Higher Tibetan Studies, IBD Sarah, Himachal Pradesh, India."@en .
+}
