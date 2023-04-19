@@ -1,20 +1,15 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ368776 {
     bda:I4CZ368944  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ368944 ;
-        adm:logEntry        bda:LG98E1A8BB7BAC8D38 ;
+        adm:logEntry        bda:LG0W4CZ368776_PZSVX9OBKDFS , bda:LG98E1A8BB7BAC8D38 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0245F70B4233DAC5
@@ -22,6 +17,13 @@ bdg:W4CZ368776 {
         adm:logDate         "2022-01-24T14:57:42.143Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG0W4CZ368776_PZSVX9OBKDFS
+        a                   adm:Synced ;
+        adm:logDate         "2023-04-19T21:24:16.929286Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG98E1A8BB7BAC8D38
         a                   adm:InitialDataCreation ;
@@ -41,13 +43,13 @@ bdg:W4CZ368776 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ368944  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of btsan byol bod mi'i khrims zhib khang gi dpang rtags rtsa 'dzin khrims yig"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I4CZ368944  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of btsan byol bod mi'i khrims zhib khang gi dpang rtags rtsa 'dzin khrims yig"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  140 .
     
-    bdr:W4CZ368776  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ368944 ;
-        :numberOfVolumes    1 .
+    bdr:W4CZ368776  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I4CZ368944 ;
+        bdo:numberOfVolumes  1 .
 }
