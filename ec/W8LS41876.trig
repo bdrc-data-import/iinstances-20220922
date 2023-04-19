@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS41876 {
@@ -25,7 +20,7 @@ bdg:W8LS41876 {
     
     bda:I8LS41889  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS41889 ;
-        adm:logEntry        bda:LG49E460242C8A5F1F ;
+        adm:logEntry        bda:LG0W8LS41876_Z9XGWYVBD8DS , bda:LG49E460242C8A5F1F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS41890  a        adm:AdminData ;
@@ -268,6 +263,13 @@ bdg:W8LS41876 {
         adm:logDate         "2018-10-31T09:51:32.626Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LG0W8LS41876_Z9XGWYVBD8DS
+        a                   adm:Synced ;
+        adm:logDate         "2023-04-19T01:18:12.570889Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG115FECA8CFEC1031
         a                   adm:InitialDataCreation ;
@@ -593,309 +595,309 @@ bdg:W8LS41876 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS41887  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of sgron me/ dus deb/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   334 .
+    bdr:I8LS41887  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  334 .
     
-    bdr:I8LS41888  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of sgron me/ dus deb/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41888  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41889  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of sgron me/ dus deb/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41889  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  520 .
     
-    bdr:I8LS41890  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of sgron me/ dus deb/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41890  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41891  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of sgron me/ dus deb/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41891  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41892  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of sgron me/ dus deb/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41892  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41893  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of sgron me/ dus deb/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41893  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41894  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of sgron me/ dus deb/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41894  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41895  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of sgron me/ dus deb/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41895  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41896  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of sgron me/ dus deb/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41896  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41897  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of sgron me/ dus deb/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41897  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41898  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of sgron me/ dus deb/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41898  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41899  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of sgron me/ dus deb/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41899  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41900  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of sgron me/ dus deb/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41900  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41901  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of sgron me/ dus deb/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41901  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41902  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of sgron me/ dus deb/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41902  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41903  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of sgron me/ dus deb/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41903  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41904  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of sgron me/ dus deb/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41904  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41905  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of sgron me/ dus deb/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41905  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41906  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of sgron me/ dus deb/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41906  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41907  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of sgron me/ dus deb/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41907  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41908  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of sgron me/ dus deb/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41908  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41909  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of sgron me/ dus deb/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41909  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41910  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of sgron me/ dus deb/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41910  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41911  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of sgron me/ dus deb/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41911  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41912  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of sgron me/ dus deb/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41912  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41913  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of sgron me/ dus deb/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41913  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41914  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of sgron me/ dus deb/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41914  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41915  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of sgron me/ dus deb/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41915  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41916  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of sgron me/ dus deb/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41916  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41917  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of sgron me/ dus deb/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41917  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41918  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of sgron me/ dus deb/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41918  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41919  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of sgron me/ dus deb/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41919  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41920  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of sgron me/ dus deb/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41920  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41921  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of sgron me/ dus deb/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41921  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41922  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of sgron me/ dus deb/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41922  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41923  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of sgron me/ dus deb/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41923  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41924  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of sgron me/ dus deb/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41924  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41925  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of sgron me/ dus deb/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41925  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41926  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of sgron me/ dus deb/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41926  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41927  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of sgron me/ dus deb/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41927  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41928  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of sgron me/ dus deb/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41928  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41929  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of sgron me/ dus deb/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41929  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41930  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of sgron me/ dus deb/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41930  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41931  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of sgron me/ dus deb/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41931  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41932  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of sgron me/ dus deb/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41932  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41933  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of sgron me/ dus deb/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41933  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41934  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of sgron me/ dus deb/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41934  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41935  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of sgron me/ dus deb/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41935  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS41936  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of sgron me/ dus deb/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS41936  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of sgron me/ dus deb/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W8LS41876  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS41887 , bdr:I8LS41888 , bdr:I8LS41889 , bdr:I8LS41890 , bdr:I8LS41891 , bdr:I8LS41892 , bdr:I8LS41893 , bdr:I8LS41894 , bdr:I8LS41895 , bdr:I8LS41896 , bdr:I8LS41897 , bdr:I8LS41898 , bdr:I8LS41899 , bdr:I8LS41900 , bdr:I8LS41901 , bdr:I8LS41902 , bdr:I8LS41903 , bdr:I8LS41904 , bdr:I8LS41905 , bdr:I8LS41906 , bdr:I8LS41907 , bdr:I8LS41908 , bdr:I8LS41909 , bdr:I8LS41910 , bdr:I8LS41911 , bdr:I8LS41912 , bdr:I8LS41913 , bdr:I8LS41914 , bdr:I8LS41915 , bdr:I8LS41916 , bdr:I8LS41917 , bdr:I8LS41918 , bdr:I8LS41919 , bdr:I8LS41920 , bdr:I8LS41921 , bdr:I8LS41922 , bdr:I8LS41923 , bdr:I8LS41924 , bdr:I8LS41925 , bdr:I8LS41926 , bdr:I8LS41927 , bdr:I8LS41928 , bdr:I8LS41929 , bdr:I8LS41930 , bdr:I8LS41931 , bdr:I8LS41932 , bdr:I8LS41933 , bdr:I8LS41934 , bdr:I8LS41935 , bdr:I8LS41936 ;
-        :numberOfVolumes    50 ;
-        :scanInfo           "copy made from LTWA collection, Acc.No.D30715"@en .
+    bdr:W8LS41876  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I8LS41887 , bdr:I8LS41888 , bdr:I8LS41889 , bdr:I8LS41890 , bdr:I8LS41891 , bdr:I8LS41892 , bdr:I8LS41893 , bdr:I8LS41894 , bdr:I8LS41895 , bdr:I8LS41896 , bdr:I8LS41897 , bdr:I8LS41898 , bdr:I8LS41899 , bdr:I8LS41900 , bdr:I8LS41901 , bdr:I8LS41902 , bdr:I8LS41903 , bdr:I8LS41904 , bdr:I8LS41905 , bdr:I8LS41906 , bdr:I8LS41907 , bdr:I8LS41908 , bdr:I8LS41909 , bdr:I8LS41910 , bdr:I8LS41911 , bdr:I8LS41912 , bdr:I8LS41913 , bdr:I8LS41914 , bdr:I8LS41915 , bdr:I8LS41916 , bdr:I8LS41917 , bdr:I8LS41918 , bdr:I8LS41919 , bdr:I8LS41920 , bdr:I8LS41921 , bdr:I8LS41922 , bdr:I8LS41923 , bdr:I8LS41924 , bdr:I8LS41925 , bdr:I8LS41926 , bdr:I8LS41927 , bdr:I8LS41928 , bdr:I8LS41929 , bdr:I8LS41930 , bdr:I8LS41931 , bdr:I8LS41932 , bdr:I8LS41933 , bdr:I8LS41934 , bdr:I8LS41935 , bdr:I8LS41936 ;
+        bdo:numberOfVolumes  50 ;
+        bdo:scanInfo        "copy made from LTWA collection, Acc.No.D30715"@en .
 }
