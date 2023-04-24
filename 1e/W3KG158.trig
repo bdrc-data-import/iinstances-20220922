@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG158 {
+    bda:LG0W3KG158_PQKFQPMIOIDO
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-04-24T21:05:09.816867Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scan"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG158  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG158 ;
+        adm:graphId         bdg:W3KG158 ;
+        adm:logEntry        bda:LG0W3KG158_PQKFQPMIOIDO ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG500  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG158  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG500 ;
+        bdo:scanInfo        "Digital images of the text are from the Institute of Tibetan Classics website."@en .
+}
