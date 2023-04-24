@@ -13,11 +13,17 @@ bdg:W3KG151 {
         adm:logMessage      "generated scan"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG151_Z4BIHFYC9EZ2
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-04-24T20:21:53.167518Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG151  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG151 ;
         adm:graphId         bdg:W3KG151 ;
-        adm:logEntry        bda:LG0W3KG151_1AX1VQBWAZNL ;
+        adm:logEntry        bda:LG0W3KG151_1AX1VQBWAZNL , bda:LG0W3KG151_Z4BIHFYC9EZ2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -28,5 +34,5 @@ bdg:W3KG151 {
     
     bdr:W3KG151  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG493 ;
-        bdo:scanInfo        "Digital images of the text are from the Insititute of Tibetan Classics website."@en .
+        bdo:scanInfo        "Digital images of the text are from the Institute of Tibetan Classics website."@en .
 }
