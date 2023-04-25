@@ -1,0 +1,32 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ223 {
+    bda:LG0W8CZ223_4UG4PGXJE9XA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-04-25T20:23:47.978424Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bda:W8CZ223  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ223 ;
+        adm:graphId         bdg:W8CZ223 ;
+        adm:logEntry        bda:LG0W8CZ223_4UG4PGXJE9XA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusScanned .
+    
+    bdr:I8CZ771  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W8CZ223  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ771 ;
+        bdo:scanInfo        "Photocopies from Hamburg"@en .
+}
