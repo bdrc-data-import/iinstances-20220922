@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4PD2393 {
@@ -296,6 +291,12 @@ bdg:W4PD2393 {
         adm:logDate         "2022-06-27T10:59:07.355Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W4PD2393_4L7OTR3IMMWK
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-03T03:11:01.347156Z"^^xsd:dateTime ;
+        adm:logMessage      "removed extra scans"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG1CEA40AB20628976
         a                   adm:InitialDataCreation ;
@@ -586,319 +587,283 @@ bdg:W4PD2393 {
         adm:gitPath         "9b/W4PD2393.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4PD2393 ;
-        adm:logEntry        bda:LG6586144B27413F60 ;
+        adm:logEntry        bda:LG0W4PD2393_4L7OTR3IMMWK , bda:LG6586144B27413F60 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN28016  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28016  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28017  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28017  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28018  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28018  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28019  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28019  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28020  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28020  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28021  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28021  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28022  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28022  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28023  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28023  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28024  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28024  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28025  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28025  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28026  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28026  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28027  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28027  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28028  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28028  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28029  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28029  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28030  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28030  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28031  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28031  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28032  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28032  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28033  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28033  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28034  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28034  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28035  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28035  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28036  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28036  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28037  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28037  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28038  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28038  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28039  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28039  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28040  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28040  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28041  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28041  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28042  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28042  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28043  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28043  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28044  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28044  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28045  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28045  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28046  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28046  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28047  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28047  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28048  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28048  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28049  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28049  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28050  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28050  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28051  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28051  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28052  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28052  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28053  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28053  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28054  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28054  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28055  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28055  bdo:biblioNote  "Volume 40 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28056  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28056  bdo:biblioNote  "Volume 41 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28057  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28057  bdo:biblioNote  "Volume 42 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28058  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28058  bdo:biblioNote  "Volume 43 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28059  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28059  bdo:biblioNote  "Volume 44 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28060  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28060  bdo:biblioNote  "Volume 45 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28061  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28061  bdo:biblioNote  "Volume 46 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28062  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28062  bdo:biblioNote  "Volume 47 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28063  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28063  bdo:biblioNote  "Volume 48 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28064  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28064  bdo:biblioNote  "Volume 49 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28065  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28065  bdo:biblioNote  "Volume 50 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN28066  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN28066  bdo:biblioNote  "Volume 51 of paN chen sku phreng rim byon gyi gsung 'bum/"@en ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W4PD2393  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN28016 , bdr:I3CN28017 , bdr:I3CN28018 , bdr:I3CN28019 , bdr:I3CN28020 , bdr:I3CN28021 , bdr:I3CN28022 , bdr:I3CN28023 , bdr:I3CN28024 , bdr:I3CN28025 , bdr:I3CN28026 , bdr:I3CN28027 , bdr:I3CN28028 , bdr:I3CN28029 , bdr:I3CN28030 , bdr:I3CN28031 , bdr:I3CN28032 , bdr:I3CN28033 , bdr:I3CN28034 , bdr:I3CN28035 , bdr:I3CN28036 , bdr:I3CN28037 , bdr:I3CN28038 , bdr:I3CN28039 , bdr:I3CN28040 , bdr:I3CN28041 , bdr:I3CN28042 , bdr:I3CN28043 , bdr:I3CN28044 , bdr:I3CN28045 , bdr:I3CN28046 , bdr:I3CN28047 , bdr:I3CN28048 , bdr:I3CN28049 , bdr:I3CN28050 , bdr:I3CN28051 , bdr:I3CN28052 , bdr:I3CN28053 , bdr:I3CN28054 , bdr:I3CN28055 , bdr:I3CN28056 , bdr:I3CN28057 , bdr:I3CN28058 , bdr:I3CN28059 , bdr:I3CN28060 , bdr:I3CN28061 , bdr:I3CN28062 , bdr:I3CN28063 , bdr:I3CN28064 , bdr:I3CN28065 , bdr:I3CN28066 ;
-        :numberOfVolumes    51 ;
-        :scanInfo           "6/2022"@en .
+    bdr:W4PD2393  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN28016 , bdr:I3CN28017 , bdr:I3CN28018 , bdr:I3CN28019 , bdr:I3CN28020 , bdr:I3CN28021 , bdr:I3CN28022 , bdr:I3CN28023 , bdr:I3CN28024 , bdr:I3CN28025 , bdr:I3CN28026 , bdr:I3CN28027 , bdr:I3CN28028 , bdr:I3CN28029 , bdr:I3CN28030 , bdr:I3CN28031 , bdr:I3CN28032 , bdr:I3CN28033 , bdr:I3CN28034 , bdr:I3CN28035 , bdr:I3CN28036 , bdr:I3CN28037 , bdr:I3CN28038 , bdr:I3CN28039 , bdr:I3CN28040 , bdr:I3CN28041 , bdr:I3CN28042 , bdr:I3CN28043 , bdr:I3CN28044 , bdr:I3CN28045 , bdr:I3CN28046 , bdr:I3CN28047 , bdr:I3CN28048 , bdr:I3CN28049 , bdr:I3CN28050 , bdr:I3CN28051 , bdr:I3CN28052 , bdr:I3CN28053 , bdr:I3CN28054 ;
+        bdo:numberOfVolumes  51 ;
+        bdo:scanInfo        "6/2022"@en .
 }
