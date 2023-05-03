@@ -1,55 +1,50 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG15080 {
     bda:I1KG80822  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80822 ;
-        adm:logEntry        bda:LGF6E16A73A18D2D7C ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LGF6E16A73A18D2D7C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80823  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80823 ;
-        adm:logEntry        bda:LGA1DF372E9E2DA25E ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LGA1DF372E9E2DA25E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80824  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80824 ;
-        adm:logEntry        bda:LG41EC21C8AE8B02D2 ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LG41EC21C8AE8B02D2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80825  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80825 ;
-        adm:logEntry        bda:LGE0506635AE159A58 ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LGE0506635AE159A58 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80826  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80826 ;
-        adm:logEntry        bda:LG8BD56A3245577D12 ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LG8BD56A3245577D12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80827  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80827 ;
-        adm:logEntry        bda:LGD87533D93ADBD02E ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LGD87533D93ADBD02E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80828  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80828 ;
-        adm:logEntry        bda:LGA99DD430ADE0DB04 ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LGA99DD430ADE0DB04 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80829  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80829 ;
-        adm:logEntry        bda:LG79AFFC2D38AAF323 ;
+        adm:logEntry        bda:LG0W1KG15080_PKUULCZRFRW2 , bda:LG79AFFC2D38AAF323 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG80830  a        adm:AdminData ;
@@ -534,6 +529,13 @@ bdg:W1KG15080 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-10-05T15:00:19.594Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG15080_PKUULCZRFRW2
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-05-03T18:24:55.922080Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG109DD7A139AD1653
@@ -1130,608 +1132,608 @@ bdg:W1KG15080 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG80822  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80823  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80824  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80825  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80826  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80827  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80828  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80829  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80830  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80831  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80832  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80833  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80834  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80835  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80836  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80837  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80838  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80839  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80840  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80841  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80842  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80843  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80844  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80845  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80846  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80847  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80848  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80849  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80850  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80851  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80852  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80853  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80854  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80855  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80856  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80857  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80858  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80859  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80860  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80861  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80862  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80863  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80864  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80865  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80866  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80867  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80868  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80869  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80870  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80871  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80872  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80873  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80874  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80875  a        :ImageGroup ;
-        :biblioNote         "Volume 54 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80876  a        :ImageGroup ;
-        :biblioNote         "Volume 55 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80877  a        :ImageGroup ;
-        :biblioNote         "Volume 56 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80878  a        :ImageGroup ;
-        :biblioNote         "Volume 57 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80879  a        :ImageGroup ;
-        :biblioNote         "Volume 58 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80880  a        :ImageGroup ;
-        :biblioNote         "Volume 59 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80881  a        :ImageGroup ;
-        :biblioNote         "Volume 60 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80882  a        :ImageGroup ;
-        :biblioNote         "Volume 61 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80883  a        :ImageGroup ;
-        :biblioNote         "Volume 62 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80884  a        :ImageGroup ;
-        :biblioNote         "Volume 63 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80885  a        :ImageGroup ;
-        :biblioNote         "Volume 64 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80886  a        :ImageGroup ;
-        :biblioNote         "Volume 65 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80887  a        :ImageGroup ;
-        :biblioNote         "Volume 66 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80888  a        :ImageGroup ;
-        :biblioNote         "Volume 67 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80889  a        :ImageGroup ;
-        :biblioNote         "Volume 68 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80890  a        :ImageGroup ;
-        :biblioNote         "Volume 69 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80891  a        :ImageGroup ;
-        :biblioNote         "Volume 70 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80892  a        :ImageGroup ;
-        :biblioNote         "Volume 71 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80893  a        :ImageGroup ;
-        :biblioNote         "Volume 72 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80894  a        :ImageGroup ;
-        :biblioNote         "Volume 73 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80895  a        :ImageGroup ;
-        :biblioNote         "Volume 74 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80896  a        :ImageGroup ;
-        :biblioNote         "Volume 75 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80897  a        :ImageGroup ;
-        :biblioNote         "Volume 76 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80898  a        :ImageGroup ;
-        :biblioNote         "Volume 77 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80899  a        :ImageGroup ;
-        :biblioNote         "Volume 78 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80900  a        :ImageGroup ;
-        :biblioNote         "Volume 79 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80901  a        :ImageGroup ;
-        :biblioNote         "Volume 80 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80902  a        :ImageGroup ;
-        :biblioNote         "Volume 81 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80903  a        :ImageGroup ;
-        :biblioNote         "Volume 82 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80904  a        :ImageGroup ;
-        :biblioNote         "Volume 83 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80905  a        :ImageGroup ;
-        :biblioNote         "Volume 84 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80906  a        :ImageGroup ;
-        :biblioNote         "Volume 85 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80907  a        :ImageGroup ;
-        :biblioNote         "Volume 86 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80908  a        :ImageGroup ;
-        :biblioNote         "Volume 87 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80909  a        :ImageGroup ;
-        :biblioNote         "Volume 88 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80910  a        :ImageGroup ;
-        :biblioNote         "Volume 89 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80911  a        :ImageGroup ;
-        :biblioNote         "Volume 90 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80912  a        :ImageGroup ;
-        :biblioNote         "Volume 91 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80913  a        :ImageGroup ;
-        :biblioNote         "Volume 92 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80914  a        :ImageGroup ;
-        :biblioNote         "Volume 93 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80915  a        :ImageGroup ;
-        :biblioNote         "Volume 94 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80916  a        :ImageGroup ;
-        :biblioNote         "Volume 95 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80917  a        :ImageGroup ;
-        :biblioNote         "Volume 96 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80918  a        :ImageGroup ;
-        :biblioNote         "Volume 97 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80919  a        :ImageGroup ;
-        :biblioNote         "Volume 98 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80920  a        :ImageGroup ;
-        :biblioNote         "Volume 99 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I1KG80921  a        :ImageGroup ;
-        :biblioNote         "Volume 100 of mi dmangs brnyan par/ (dus deb/)"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W1KG15080  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG80822 , bdr:I1KG80823 , bdr:I1KG80824 , bdr:I1KG80825 , bdr:I1KG80826 , bdr:I1KG80827 , bdr:I1KG80828 , bdr:I1KG80829 , bdr:I1KG80830 , bdr:I1KG80831 , bdr:I1KG80832 , bdr:I1KG80833 , bdr:I1KG80834 , bdr:I1KG80835 , bdr:I1KG80836 , bdr:I1KG80837 , bdr:I1KG80838 , bdr:I1KG80839 , bdr:I1KG80840 , bdr:I1KG80841 , bdr:I1KG80842 , bdr:I1KG80843 , bdr:I1KG80844 , bdr:I1KG80845 , bdr:I1KG80846 , bdr:I1KG80847 , bdr:I1KG80848 , bdr:I1KG80849 , bdr:I1KG80850 , bdr:I1KG80851 , bdr:I1KG80852 , bdr:I1KG80853 , bdr:I1KG80854 , bdr:I1KG80855 , bdr:I1KG80856 , bdr:I1KG80857 , bdr:I1KG80858 , bdr:I1KG80859 , bdr:I1KG80860 , bdr:I1KG80861 , bdr:I1KG80862 , bdr:I1KG80863 , bdr:I1KG80864 , bdr:I1KG80865 , bdr:I1KG80866 , bdr:I1KG80867 , bdr:I1KG80868 , bdr:I1KG80869 , bdr:I1KG80870 , bdr:I1KG80871 , bdr:I1KG80872 , bdr:I1KG80873 , bdr:I1KG80874 , bdr:I1KG80875 , bdr:I1KG80876 , bdr:I1KG80877 , bdr:I1KG80878 , bdr:I1KG80879 , bdr:I1KG80880 , bdr:I1KG80881 , bdr:I1KG80882 , bdr:I1KG80883 , bdr:I1KG80884 , bdr:I1KG80885 , bdr:I1KG80886 , bdr:I1KG80887 , bdr:I1KG80888 , bdr:I1KG80889 , bdr:I1KG80890 , bdr:I1KG80891 , bdr:I1KG80892 , bdr:I1KG80893 , bdr:I1KG80894 , bdr:I1KG80895 , bdr:I1KG80896 , bdr:I1KG80897 , bdr:I1KG80898 , bdr:I1KG80899 , bdr:I1KG80900 , bdr:I1KG80901 , bdr:I1KG80902 , bdr:I1KG80903 , bdr:I1KG80904 , bdr:I1KG80905 , bdr:I1KG80906 , bdr:I1KG80907 , bdr:I1KG80908 , bdr:I1KG80909 , bdr:I1KG80910 , bdr:I1KG80911 , bdr:I1KG80912 , bdr:I1KG80913 , bdr:I1KG80914 , bdr:I1KG80915 , bdr:I1KG80916 , bdr:I1KG80917 , bdr:I1KG80918 , bdr:I1KG80919 , bdr:I1KG80920 , bdr:I1KG80921 ;
-        :numberOfVolumes    100 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2017"@en .
+    bdr:I1KG80822  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  64 .
+    
+    bdr:I1KG80823  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  60 .
+    
+    bdr:I1KG80824  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  59 .
+    
+    bdr:I1KG80825  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  59 .
+    
+    bdr:I1KG80826  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  57 .
+    
+    bdr:I1KG80827  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  58 .
+    
+    bdr:I1KG80828  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  64 .
+    
+    bdr:I1KG80829  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  60 .
+    
+    bdr:I1KG80830  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80831  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80832  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80833  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80834  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80835  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80836  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80837  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80838  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80839  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80840  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80841  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80842  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80843  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80844  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80845  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80846  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80847  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80848  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80849  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80850  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80851  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80852  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80853  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80854  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80855  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80856  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80857  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80858  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80859  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80860  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80861  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80862  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80863  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80864  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80865  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80866  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80867  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80868  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80869  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80870  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80871  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80872  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80873  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80874  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80875  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80876  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80877  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80878  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80879  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80880  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80881  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80882  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80883  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80884  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80885  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80886  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80887  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80888  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80889  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80890  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80891  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80892  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80893  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80894  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80895  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80896  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80897  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80898  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80899  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80900  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80901  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80902  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80903  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80904  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80905  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80906  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80907  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80908  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80909  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80910  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80911  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80912  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80913  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80914  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80915  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80916  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80917  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80918  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80919  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80920  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I1KG80921  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of mi dmangs brnyan par/ (dus deb/)"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W1KG15080  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG80822 , bdr:I1KG80823 , bdr:I1KG80824 , bdr:I1KG80825 , bdr:I1KG80826 , bdr:I1KG80827 , bdr:I1KG80828 , bdr:I1KG80829 , bdr:I1KG80830 , bdr:I1KG80831 , bdr:I1KG80832 , bdr:I1KG80833 , bdr:I1KG80834 , bdr:I1KG80835 , bdr:I1KG80836 , bdr:I1KG80837 , bdr:I1KG80838 , bdr:I1KG80839 , bdr:I1KG80840 , bdr:I1KG80841 , bdr:I1KG80842 , bdr:I1KG80843 , bdr:I1KG80844 , bdr:I1KG80845 , bdr:I1KG80846 , bdr:I1KG80847 , bdr:I1KG80848 , bdr:I1KG80849 , bdr:I1KG80850 , bdr:I1KG80851 , bdr:I1KG80852 , bdr:I1KG80853 , bdr:I1KG80854 , bdr:I1KG80855 , bdr:I1KG80856 , bdr:I1KG80857 , bdr:I1KG80858 , bdr:I1KG80859 , bdr:I1KG80860 , bdr:I1KG80861 , bdr:I1KG80862 , bdr:I1KG80863 , bdr:I1KG80864 , bdr:I1KG80865 , bdr:I1KG80866 , bdr:I1KG80867 , bdr:I1KG80868 , bdr:I1KG80869 , bdr:I1KG80870 , bdr:I1KG80871 , bdr:I1KG80872 , bdr:I1KG80873 , bdr:I1KG80874 , bdr:I1KG80875 , bdr:I1KG80876 , bdr:I1KG80877 , bdr:I1KG80878 , bdr:I1KG80879 , bdr:I1KG80880 , bdr:I1KG80881 , bdr:I1KG80882 , bdr:I1KG80883 , bdr:I1KG80884 , bdr:I1KG80885 , bdr:I1KG80886 , bdr:I1KG80887 , bdr:I1KG80888 , bdr:I1KG80889 , bdr:I1KG80890 , bdr:I1KG80891 , bdr:I1KG80892 , bdr:I1KG80893 , bdr:I1KG80894 , bdr:I1KG80895 , bdr:I1KG80896 , bdr:I1KG80897 , bdr:I1KG80898 , bdr:I1KG80899 , bdr:I1KG80900 , bdr:I1KG80901 , bdr:I1KG80902 , bdr:I1KG80903 , bdr:I1KG80904 , bdr:I1KG80905 , bdr:I1KG80906 , bdr:I1KG80907 , bdr:I1KG80908 , bdr:I1KG80909 , bdr:I1KG80910 , bdr:I1KG80911 , bdr:I1KG80912 , bdr:I1KG80913 , bdr:I1KG80914 , bdr:I1KG80915 , bdr:I1KG80916 , bdr:I1KG80917 , bdr:I1KG80918 , bdr:I1KG80919 , bdr:I1KG80920 , bdr:I1KG80921 ;
+        bdo:numberOfVolumes  100 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2017"@en .
 }
