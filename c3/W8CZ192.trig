@@ -1,0 +1,37 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8CZ192 {
+    bda:I8CZ801  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ801 ;
+        adm:logEntry        bdr:LG0W8CZ192_443NRDQXR68R .
+    
+    bda:W8CZ192  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8CZ192 ;
+        adm:graphId         bdg:W8CZ192 ;
+        adm:logEntry        bdr:LG0W8CZ192_443NRDQXR68R ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8CZ801  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W8CZ192_443NRDQXR68R
+        a                   adm:InitialDataCreation , adm:ScanRequested ;
+        adm:logDate         "2023-05-04T15:49:16.357779Z"^^xsd:dateTime ;
+        adm:logMessage      "create through scan request tool"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U2089842660 .
+    
+    bdr:W8CZ192  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ801 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Photocopies from Hamburg"@en .
+}
