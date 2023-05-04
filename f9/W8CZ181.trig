@@ -15,13 +15,20 @@ bdg:W8CZ181 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ181 ;
         adm:graphId         bdg:W8CZ181 ;
-        adm:logEntry        bdr:LG0W8CZ181_RFWMJ17B6YQ3 ;
+        adm:logEntry        bdr:LG0W8CZ181_R61N9ZYXG83Z , bdr:LG0W8CZ181_RFWMJ17B6YQ3 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I8CZ795  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W8CZ181_R61N9ZYXG83Z
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-04T14:23:49.968751Z"^^xsd:dateTime ;
+        adm:logMessage      "changes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U2089842660 .
     
     bdr:LG0W8CZ181_RFWMJ17B6YQ3
         a                   adm:InitialDataCreation , adm:ScanRequested ;
