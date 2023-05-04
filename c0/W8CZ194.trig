@@ -7,6 +7,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ194 {
+    bda:I8CZ802  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ802 ;
+        adm:logEntry        bdr:LG0W8CZ194_QN3PBB5UGTB8 .
+    
     bda:LG0W8CZ194_BA3YFI8MBCBZ
         a                   adm:UpdateData ;
         adm:logDate         "2023-04-03T16:41:17.131776Z"^^xsd:dateTime ;
@@ -23,11 +27,24 @@ bdg:W8CZ194 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ194 ;
         adm:graphId         bdg:W8CZ194 ;
-        adm:logEntry        bda:LG0W8CZ194_BA3YFI8MBCBZ , bda:LG0W8CZ194_SPMN9TD6L9P7 ;
+        adm:logEntry        bda:LG0W8CZ194_BA3YFI8MBCBZ , bda:LG0W8CZ194_SPMN9TD6L9P7 , bdr:LG0W8CZ194_QN3PBB5UGTB8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:I8CZ802  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W8CZ194_QN3PBB5UGTB8
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-05-04T16:03:40.775231Z"^^xsd:dateTime ;
+        adm:logMessage      "add 1 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U2089842660 .
+    
     bdr:W8CZ194  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ802 ;
+        bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Photocopies from Hamburg"@en .
 }
