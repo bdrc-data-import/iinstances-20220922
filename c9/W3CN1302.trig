@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN1302 {
@@ -77,6 +72,12 @@ bdg:W3CN1302 {
         adm:logDate         "2017-11-30T02:00:21.127Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W3CN1302_GKMFGVHWEBIO
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-05T17:53:48.065611Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG11A3A9A5F2C21860
         a                   adm:Synced ;
@@ -211,74 +212,74 @@ bdg:W3CN1302 {
         adm:gitPath         "c9/W3CN1302.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN1302 ;
-        adm:logEntry        bda:LG6B324B0014366671 ;
+        adm:logEntry        bda:LG0W3CN1302_GKMFGVHWEBIO , bda:LG6B324B0014366671 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN1304  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   592 .
+    bdr:I3CN1304  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  592 .
     
-    bdr:I3CN1305  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   866 .
+    bdr:I3CN1305  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  866 .
     
-    bdr:I3CN1306  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   626 .
+    bdr:I3CN1306  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  626 .
     
-    bdr:I3CN1307  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   674 .
+    bdr:I3CN1307  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  674 .
     
-    bdr:I3CN1308  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   679 .
+    bdr:I3CN1308  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  679 .
     
-    bdr:I3CN1309  a         :ImageGroup ;
-        :biblioNote         "Volume 6 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   674 .
+    bdr:I3CN1309  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  674 .
     
-    bdr:I3CN1310  a         :ImageGroup ;
-        :biblioNote         "Volume 7 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   694 .
+    bdr:I3CN1310  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  694 .
     
-    bdr:I3CN1311  a         :ImageGroup ;
-        :biblioNote         "Volume 8 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   732 .
+    bdr:I3CN1311  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  732 .
     
-    bdr:I3CN1312  a         :ImageGroup ;
-        :biblioNote         "Volume 9 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   742 .
+    bdr:I3CN1312  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  742 .
     
-    bdr:I3CN1313  a         :ImageGroup ;
-        :biblioNote         "Volume 10 of smon thang gser bris rgyud po ti bcu/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   662 .
+    bdr:I3CN1313  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of smon thang gser bris rgyud po ti bcu/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  662 .
     
-    bdr:W3CN1302  a         :ImageInstance ;
-        :inCollection       bdr:PR1NGMPP00 , bdr:PR1VIENNA00 ;
-        :instanceHasVolume  bdr:I3CN1304 , bdr:I3CN1305 , bdr:I3CN1306 , bdr:I3CN1307 , bdr:I3CN1308 , bdr:I3CN1309 , bdr:I3CN1310 , bdr:I3CN1311 , bdr:I3CN1312 , bdr:I3CN1313 ;
-        :numberOfVolumes    10 ;
-        :scanInfo           "copy made available by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+    bdr:W3CN1302  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NGMPP00 , bdr:PR1VIENNA00 ;
+        bdo:instanceHasVolume  bdr:I3CN1304 , bdr:I3CN1305 , bdr:I3CN1306 , bdr:I3CN1307 , bdr:I3CN1308 , bdr:I3CN1309 , bdr:I3CN1310 , bdr:I3CN1311 , bdr:I3CN1312 , bdr:I3CN1313 ;
+        bdo:numberOfVolumes  10 ;
+        bdo:scanInfo        "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
 }
