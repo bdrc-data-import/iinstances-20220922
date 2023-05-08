@@ -11,16 +11,27 @@ bdg:W8CZ217 {
         adm:adminAbout      bdr:I8CZ803 ;
         adm:logEntry        bdr:LG0W8CZ217_72G0Q62DJET1 .
     
+    bda:LG0W8CZ217_DR78IJPE3JDR
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-08T14:46:45.309568Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:W8CZ217  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ217 ;
         adm:graphId         bdg:W8CZ217 ;
-        adm:logEntry        bdr:LG0W8CZ217_72G0Q62DJET1 ;
+        adm:logEntry        bda:LG0W8CZ217_DR78IJPE3JDR , bdr:LG0W8CZ217_72G0Q62DJET1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusScanned .
     
     bdr:I8CZ803  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I8CZ804  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:LG0W8CZ217_72G0Q62DJET1
@@ -31,7 +42,7 @@ bdg:W8CZ217 {
         adm:logWho          bdu:U2089842660 .
     
     bdr:W8CZ217  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I8CZ803 ;
+        bdo:instanceHasVolume  bdr:I8CZ803 , bdr:I8CZ804 ;
         bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Photocopies-from-Hamburg"@en .
 }
