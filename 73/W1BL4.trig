@@ -427,11 +427,18 @@ bdg:W1BL4 {
         adm:adminAbout      bdr:I1BL325 ;
         adm:logEntry        bdr:LG0W1BL4_0N7UIBCXFG1U .
     
+    bda:LG0W1BL4_49XPHHLLX66S
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-11T16:57:50.313098Z"^^xsd:dateTime ;
+        adm:logMessage      "add provenance info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1BL4  a            adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1BL4 ;
         adm:graphId         bdg:W1BL4 ;
-        adm:logEntry        bdr:LG0W1BL4_0N7UIBCXFG1U ;
+        adm:logEntry        bda:LG0W1BL4_49XPHHLLX66S , bdr:LG0W1BL4_0N7UIBCXFG1U ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
@@ -863,7 +870,8 @@ bdg:W1BL4 {
         adm:logWho          bdu:U1132599279 .
     
     bdr:W1BL4  a            bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1LOKESH01 ;
         bdo:instanceHasVolume  bdr:I1BL221 , bdr:I1BL222 , bdr:I1BL223 , bdr:I1BL224 , bdr:I1BL225 , bdr:I1BL226 , bdr:I1BL227 , bdr:I1BL228 , bdr:I1BL229 , bdr:I1BL230 , bdr:I1BL231 , bdr:I1BL232 , bdr:I1BL233 , bdr:I1BL234 , bdr:I1BL235 , bdr:I1BL236 , bdr:I1BL237 , bdr:I1BL238 , bdr:I1BL239 , bdr:I1BL240 , bdr:I1BL241 , bdr:I1BL242 , bdr:I1BL243 , bdr:I1BL244 , bdr:I1BL245 , bdr:I1BL246 , bdr:I1BL247 , bdr:I1BL248 , bdr:I1BL249 , bdr:I1BL250 , bdr:I1BL251 , bdr:I1BL252 , bdr:I1BL253 , bdr:I1BL254 , bdr:I1BL255 , bdr:I1BL256 , bdr:I1BL257 , bdr:I1BL258 , bdr:I1BL259 , bdr:I1BL260 , bdr:I1BL261 , bdr:I1BL262 , bdr:I1BL263 , bdr:I1BL264 , bdr:I1BL265 , bdr:I1BL266 , bdr:I1BL267 , bdr:I1BL268 , bdr:I1BL269 , bdr:I1BL270 , bdr:I1BL271 , bdr:I1BL272 , bdr:I1BL273 , bdr:I1BL274 , bdr:I1BL275 , bdr:I1BL276 , bdr:I1BL277 , bdr:I1BL278 , bdr:I1BL279 , bdr:I1BL280 , bdr:I1BL281 , bdr:I1BL282 , bdr:I1BL283 , bdr:I1BL284 , bdr:I1BL285 , bdr:I1BL286 , bdr:I1BL287 , bdr:I1BL288 , bdr:I1BL289 , bdr:I1BL290 , bdr:I1BL291 , bdr:I1BL292 , bdr:I1BL293 , bdr:I1BL294 , bdr:I1BL295 , bdr:I1BL296 , bdr:I1BL297 , bdr:I1BL298 , bdr:I1BL299 , bdr:I1BL300 , bdr:I1BL301 , bdr:I1BL302 , bdr:I1BL303 , bdr:I1BL304 , bdr:I1BL305 , bdr:I1BL306 , bdr:I1BL307 , bdr:I1BL308 , bdr:I1BL309 , bdr:I1BL310 , bdr:I1BL311 , bdr:I1BL312 , bdr:I1BL313 , bdr:I1BL314 , bdr:I1BL315 , bdr:I1BL316 , bdr:I1BL317 , bdr:I1BL318 , bdr:I1BL319 , bdr:I1BL320 , bdr:I1BL321 , bdr:I1BL322 , bdr:I1BL323 , bdr:I1BL324 , bdr:I1BL325 ;
         bdo:numberOfVolumes  105 ;
-        bdo:scanInfo        "colored images"@en .
+        bdo:scanInfo        "Scanned from the Lokesh Chandra collection at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
