@@ -13,13 +13,19 @@ bdg:W3KG164 {
         adm:logMessage      "generated scans"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG164_Z9Z7JZFKSNHA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-12T22:09:45.092409Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG164  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG164 ;
         adm:graphId         bdg:W3KG164 ;
-        adm:logEntry        bda:LG0W3KG164_XP3CGQXSEMPV ;
+        adm:logEntry        bda:LG0W3KG164_XP3CGQXSEMPV , bda:LG0W3KG164_Z9Z7JZFKSNHA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I3KG517  a          bdo:ImageGroup ;
