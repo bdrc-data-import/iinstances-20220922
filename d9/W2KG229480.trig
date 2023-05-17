@@ -9,15 +9,22 @@
 bdg:W2KG229480 {
     bda:I3KG514  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG514 ;
-        adm:logEntry        bdr:LG0W2KG229480_SHVO0XW2WWXW .
+        adm:logEntry        bda:LG0W2KG229480_GHJCZYXBT0Q6 , bdr:LG0W2KG229480_SHVO0XW2WWXW .
     
     bda:I3KG515  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG515 ;
-        adm:logEntry        bdr:LG0W2KG229480_SHVO0XW2WWXW .
+        adm:logEntry        bda:LG0W2KG229480_GHJCZYXBT0Q6 , bdr:LG0W2KG229480_SHVO0XW2WWXW .
     
     bda:I3KG516  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG516 ;
-        adm:logEntry        bdr:LG0W2KG229480_SHVO0XW2WWXW .
+        adm:logEntry        bda:LG0W2KG229480_GHJCZYXBT0Q6 , bdr:LG0W2KG229480_SHVO0XW2WWXW .
+    
+    bda:LG0W2KG229480_GHJCZYXBT0Q6
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-05-17T21:30:05.212035Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W2KG229480  a       adm:AdminData ;
         adm:access          bda:AccessFairUse ;
@@ -29,15 +36,18 @@ bdg:W2KG229480 {
     
     bdr:I3KG514  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  638 .
     
     bdr:I3KG515  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  814 .
     
     bdr:I3KG516  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  497 .
     
     bdr:LG0W2KG229480_SHVO0XW2WWXW
         a                   adm:InitialDataCreation , adm:ScanRequested ;
