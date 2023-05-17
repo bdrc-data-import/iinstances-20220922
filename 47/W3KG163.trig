@@ -7,6 +7,25 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG163 {
+    bda:I3KG511  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG511 ;
+        adm:logEntry        bda:LG0W3KG163_F7KG4CFJJPQY .
+    
+    bda:I3KG512  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG512 ;
+        adm:logEntry        bda:LG0W3KG163_F7KG4CFJJPQY .
+    
+    bda:I3KG513  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG513 ;
+        adm:logEntry        bda:LG0W3KG163_F7KG4CFJJPQY .
+    
+    bda:LG0W3KG163_F7KG4CFJJPQY
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-05-17T21:55:07.020956Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W3KG163_G8DYTIP9GLWE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-05-04T15:23:25.741404Z"^^xsd:dateTime ;
@@ -24,15 +43,18 @@ bdg:W3KG163 {
     
     bdr:I3KG511  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  620 .
     
     bdr:I3KG512  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  584 .
     
     bdr:I3KG513  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  624 .
     
     bdr:W3KG163  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG511 , bdr:I3KG512 , bdr:I3KG513 ;
