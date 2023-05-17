@@ -1,21 +1,23 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG208142 {
     bda:I2KG208371  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG208371 ;
-        adm:logEntry        bda:LGCD13594B73DDE3A8 ;
+        adm:logEntry        bda:LG0W2KG208142_UQ8MEH9ZFHYH , bda:LGCD13594B73DDE3A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG208142_UQ8MEH9ZFHYH
+        a                   adm:Synced ;
+        adm:logDate         "2023-05-17T20:44:24.248577Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG501D883B0C4E0A3F
         a                   adm:ScanRequestCreation ;
@@ -41,15 +43,15 @@ bdg:W2KG208142 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG208371  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I2KG208371  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  918 .
     
-    bdr:W2KG208142  a       :ImageInstance ;
-        :inCollection       bdr:PR1NLM00 ;
-        :instanceHasVolume  bdr:I2KG208371 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "8/2019"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+    bdr:W2KG208142  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I2KG208371 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "8/2019"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
 }
