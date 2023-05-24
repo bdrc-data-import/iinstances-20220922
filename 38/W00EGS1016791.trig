@@ -1,26 +1,21 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W00EGS1016791 {
     bda:I1CZ4686  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ4686 ;
-        adm:logEntry        bda:LGBEE5A7DF57DCE639 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W00EGS1016791_F1LZM3IO8JCD , bda:LGBEE5A7DF57DCE639 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1CZ4687  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ4687 ;
-        adm:logEntry        bda:LG8D748799D67E30C0 , bda:LGE4E26C6297BBAE0F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W00EGS1016791_F1LZM3IO8JCD , bda:LG8D748799D67E30C0 , bda:LGE4E26C6297BBAE0F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,6 +24,13 @@ bdg:W00EGS1016791 {
         adm:logDate         "2006-12-19T19:07:12.21Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG0W00EGS1016791_F1LZM3IO8JCD
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-05-24T21:11:43.469005Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2858A64FE131FF18
         a                   adm:ScanRequestCreation ;
@@ -90,21 +92,21 @@ bdg:W00EGS1016791 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1CZ4686  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of gling lnga mtsho bzhi'i 'jig rten gi mi sde dang kun khyab sems khur du bzhed pa'i srol gtod pa chen po snyigs dus mi bsun brlang spyod kyis 'tshe ba'i skabs 'dir byams dang snying rje'i bdag nyid 'tshe med zhi ba'i las 'gul ba chen po'dzam gling zhi bde'i ded dpon 'phags mchog spyan ras gzigs dbang mi yi gar du rol pa chos ldan bod chen po'i bstan srid dbu khrid...gsol 'debs mchis so cog phyogs gcig tu gces par bsdebs pa drang srong bden tshig grub pa'i dbyangs snyan"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   394 .
+    bdr:I1CZ4686  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gling lnga mtsho bzhi'i 'jig rten gi mi sde dang kun khyab sems khur du bzhed pa'i srol gtod pa chen po snyigs dus mi bsun brlang spyod kyis 'tshe ba'i skabs 'dir byams dang snying rje'i bdag nyid 'tshe med zhi ba'i las 'gul ba chen po'dzam gling zhi bde'i ded dpon 'phags mchog spyan ras gzigs dbang mi yi gar du rol pa chos ldan bod chen po'i bstan srid dbu khrid...gsol 'debs mchis so cog phyogs gcig tu gces par bsdebs pa drang srong bden tshig grub pa'i dbyangs snyan"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  394 .
     
-    bdr:I1CZ4687  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of gling lnga mtsho bzhi'i 'jig rten gi mi sde dang kun khyab sems khur du bzhed pa'i srol gtod pa chen po snyigs dus mi bsun brlang spyod kyis 'tshe ba'i skabs 'dir byams dang snying rje'i bdag nyid 'tshe med zhi ba'i las 'gul ba chen po'dzam gling zhi bde'i ded dpon 'phags mchog spyan ras gzigs dbang mi yi gar du rol pa chos ldan bod chen po'i bstan srid dbu khrid...gsol 'debs mchis so cog phyogs gcig tu gces par bsdebs pa drang srong bden tshig grub pa'i dbyangs snyan"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   292 .
+    bdr:I1CZ4687  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gling lnga mtsho bzhi'i 'jig rten gi mi sde dang kun khyab sems khur du bzhed pa'i srol gtod pa chen po snyigs dus mi bsun brlang spyod kyis 'tshe ba'i skabs 'dir byams dang snying rje'i bdag nyid 'tshe med zhi ba'i las 'gul ba chen po'dzam gling zhi bde'i ded dpon 'phags mchog spyan ras gzigs dbang mi yi gar du rol pa chos ldan bod chen po'i bstan srid dbu khrid...gsol 'debs mchis so cog phyogs gcig tu gces par bsdebs pa drang srong bden tshig grub pa'i dbyangs snyan"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  292 .
     
     bdr:W00EGS1016791
-        a                   :ImageInstance ;
-        :instanceHasVolume  bdr:I1CZ4686 , bdr:I1CZ4687 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, IN for the Tibetan Buddhist Resource Center, 150 17th st., New York, NY 10011, U.S.A 2006."@en .
+        a                   bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1CZ4686 , bdr:I1CZ4687 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, IN for the Tibetan Buddhist Resource Center, 150 17th st., New York, NY 10011, U.S.A 2006."@en .
 }
