@@ -7,6 +7,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER120 {
+    bda:I1ER790  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER790 ;
+        adm:logEntry        bda:LG0W1ER120_AKKINC2RUEAP .
+    
+    bda:LG0W1ER120_AKKINC2RUEAP
+        a                   adm:Synced ;
+        adm:logDate         "2023-05-24T17:41:09.905367Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W1ER120_HVSGS0NQXK1S
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-03-06T08:19:07.880523+00:00"^^xsd:dateTime ;
@@ -24,7 +35,8 @@ bdg:W1ER120 {
     
     bdr:I1ER790  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  116 .
     
     bdr:W1ER120  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I1ER790 ;
