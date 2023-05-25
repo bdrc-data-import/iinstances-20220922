@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD2074 {
@@ -47,6 +42,12 @@ bdg:W1PD2074 {
         adm:logEntry        bda:LG1B3A3842394FA9EC , bda:LG456749825CA35B01 , bda:LG4A342042933F1160 , bda:LG64DEFC578A1FFD1E , bda:LG6CA42D2140F87DAC , bda:LGA3AE487DDD1E2275 , bda:LGA418D2A2B45BD1EF , bda:LGE65AB8B3D3E0919C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1PD2074_JMWBABDUQLBF
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-25T13:16:35.942595Z"^^xsd:dateTime ;
+        adm:logMessage      "fix tbrc intro pages in 2 volumes"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG13F6482D9F07309B
         a                   adm:UpdateData ;
@@ -366,46 +367,48 @@ bdg:W1PD2074 {
         adm:gitPath         "59/W1PD2074.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD2074 ;
-        adm:logEntry        bda:LGF3AF6B575122250C ;
+        adm:logEntry        bda:LG0W1PD2074_JMWBABDUQLBF , bda:LGF3AF6B575122250C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I01JW11564  a       :ImageGroup ;
-        :volumeNumber       3 ;
-        :volumePagesTotal   1034 .
+    bdr:I01JW11564  a       bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1034 .
     
-    bdr:I01JW11565  a       :ImageGroup ;
-        :volumeNumber       5 ;
-        :volumePagesTotal   624 .
+    bdr:I01JW11565  a       bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  624 .
     
-    bdr:I1CZ978  a          :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   990 .
+    bdr:I1CZ978  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  990 .
     
-    bdr:I1CZ979  a          :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1200 .
+    bdr:I1CZ979  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1200 .
     
-    bdr:I1CZ981  a          :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
+    bdr:I1CZ981  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
     
-    bdr:I1CZ983  a          :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   382 .
+    bdr:I1CZ983  a          bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/_gzhan phan chos kyi snang ba"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  382 .
     
-    bdr:W1PD2074  a         :ImageInstance ;
-        :inCollection       bdr:PR01JW33478 , bdr:PR03DCN1 , bdr:PR1GS49488 ;
-        :instanceHasVolume  bdr:I01JW11564 , bdr:I01JW11565 , bdr:I1CZ978 , bdr:I1CZ979 , bdr:I1CZ981 , bdr:I1CZ983 ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
+    bdr:W1PD2074  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR01JW33478 , bdr:PR03DCN1 , bdr:PR1GS49488 ;
+        bdo:instanceHasVolume  bdr:I01JW11564 , bdr:I01JW11565 , bdr:I1CZ978 , bdr:I1CZ979 , bdr:I1CZ981 , bdr:I1CZ983 ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US."@en .
 }
