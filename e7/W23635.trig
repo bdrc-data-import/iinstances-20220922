@@ -68,6 +68,12 @@ bdg:W23635 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG0W23635_ZCALDXYODRVZ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-05-25T13:18:42.244004Z"^^xsd:dateTime ;
+        adm:logMessage      "fix two pages intro"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG1ABDBBA8986DA089
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-02-25T11:47:41.294Z"^^xsd:dateTime ;
@@ -129,16 +135,19 @@ bdg:W23635 {
         adm:gitPath         "e7/W23635.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23635 ;
+        adm:logEntry        bda:LG0W23635_ZCALDXYODRVZ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I1KG13611  a        bdo:ImageGroup ;
         bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
         bdo:volumePagesTotal  602 .
     
     bdr:I1KG13612  a        bdo:ImageGroup ;
         bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
         bdo:volumePagesTotal  602 .
     
     bdr:I1KG13613  a        bdo:ImageGroup ;
