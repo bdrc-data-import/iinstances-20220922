@@ -11,6 +11,12 @@ bdg:W8CZ179 {
         adm:adminAbout      bdr:I8CZ794 ;
         adm:logEntry        bdr:LG0W8CZ179_QOQ4GTA76M8V .
     
+    bda:LG0W8CZ179_AACYYDHIIL1V
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-05T15:42:29.248035Z"^^xsd:dateTime ;
+        adm:logMessage      "fix scan info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ179_B4W2DHWBLHIK
         a                   adm:UpdateData ;
         adm:logDate         "2023-03-21T16:19:14.109243+00:00"^^xsd:dateTime ;
@@ -33,7 +39,7 @@ bdg:W8CZ179 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ179 ;
         adm:graphId         bdg:W8CZ179 ;
-        adm:logEntry        bda:LG0W8CZ179_B4W2DHWBLHIK , bda:LG0W8CZ179_PIGULFK9AQGJ , bda:LG0W8CZ179_SNN11T0OZNEV , bdr:LG0W8CZ179_QOQ4GTA76M8V ;
+        adm:logEntry        bda:LG0W8CZ179_AACYYDHIIL1V , bda:LG0W8CZ179_B4W2DHWBLHIK , bda:LG0W8CZ179_PIGULFK9AQGJ , bda:LG0W8CZ179_SNN11T0OZNEV , bdr:LG0W8CZ179_QOQ4GTA76M8V ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusScanned .
@@ -51,6 +57,5 @@ bdg:W8CZ179 {
     
     bdr:W8CZ179  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ794 ;
-        bdo:numberOfVolumes  1 ;
-        bdo:scanInfo        "Photocopies from Hamburg"@en .
+        bdo:numberOfVolumes  1 .
 }
