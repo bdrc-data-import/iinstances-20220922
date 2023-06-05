@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ248 {
+    bda:LG0W8CZ248_DLLTMXG5BOPJ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-05T15:42:49.441329Z"^^xsd:dateTime ;
+        adm:logMessage      "fix scan info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ248_Q3ZSWYVWLFAG
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-05-08T20:29:45.034676Z"^^xsd:dateTime ;
@@ -17,7 +23,7 @@ bdg:W8CZ248 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ248 ;
         adm:graphId         bdg:W8CZ248 ;
-        adm:logEntry        bda:LG0W8CZ248_Q3ZSWYVWLFAG ;
+        adm:logEntry        bda:LG0W8CZ248_DLLTMXG5BOPJ , bda:LG0W8CZ248_Q3ZSWYVWLFAG ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -27,6 +33,5 @@ bdg:W8CZ248 {
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:W8CZ248  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I8CZ808 ;
-        bdo:scanInfo        "Photocopies-from-Hamburg"@en .
+        bdo:instanceHasVolume  bdr:I8CZ808 .
 }
