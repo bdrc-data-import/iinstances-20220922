@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ249 {
+    bda:LG0W8CZ249_0YS2ZVTVLBSR
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-05T20:38:08.415879Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG0W8CZ249_GRN1OCI94J6E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-05T20:37:04.282729Z"^^xsd:dateTime ;
@@ -17,10 +23,15 @@ bdg:W8CZ249 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ249 ;
         adm:graphId         bdg:W8CZ249 ;
-        adm:logEntry        bda:LG0W8CZ249_GRN1OCI94J6E ;
+        adm:logEntry        bda:LG0W8CZ249_0YS2ZVTVLBSR , bda:LG0W8CZ249_GRN1OCI94J6E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:W8CZ249  a          bdo:ImageInstance .
+    bdr:I8CZ814  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W8CZ249  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8CZ814 .
 }
