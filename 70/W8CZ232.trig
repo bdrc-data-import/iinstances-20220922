@@ -13,11 +13,17 @@ bdg:W8CZ232 {
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ232_BPIVRQ0UY9QL
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-05T15:57:48.356509Z"^^xsd:dateTime ;
+        adm:logMessage      "fix scan info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W8CZ232  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ232 ;
         adm:graphId         bdg:W8CZ232 ;
-        adm:logEntry        bda:LG0W8CZ232_9FM0TTXH3R7N ;
+        adm:logEntry        bda:LG0W8CZ232_9FM0TTXH3R7N , bda:LG0W8CZ232_BPIVRQ0UY9QL ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusScanned .
@@ -27,6 +33,5 @@ bdg:W8CZ232 {
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:W8CZ232  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I8CZ780 ;
-        bdo:scanInfo        "Photocopies from Hamburg"@en .
+        bdo:instanceHasVolume  bdr:I8CZ780 .
 }
