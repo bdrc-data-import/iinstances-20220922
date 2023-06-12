@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1CZ2229 {
     bda:I1CZ2295  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ2295 ;
-        adm:logEntry        bda:LG1D51FC56565D382C , bda:LG3AC92FD2E1933D7E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1CZ2229_JEUNXH6KODMT , bda:LG1D51FC56565D382C , bda:LG3AC92FD2E1933D7E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1CZ2229_JEUNXH6KODMT
+        a                   adm:Synced ;
+        adm:logDate         "2023-06-12T23:59:33.371608Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1D51FC56565D382C
         a                   adm:UpdateData ;
@@ -66,15 +68,15 @@ bdg:W1CZ2229 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1CZ2295  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of byams brtse dang drang bden gyi bla srog"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   524 .
+    bdr:I1CZ2295  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of byams brtse dang drang bden gyi bla srog"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  524 .
     
-    bdr:W1CZ2229  a         :ImageInstance ;
-        :inCollection       bdr:PR01JW11672 ;
-        :instanceHasVolume  bdr:I1CZ2295 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: from 02. (0000 drive) on Dummy 18, 14, 461 p."@en .
+    bdr:W1CZ2229  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR01JW11672 ;
+        bdo:instanceHasVolume  bdr:I1CZ2295 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: from 02. (0000 drive) on Dummy 18, 14, 461 p."@en .
 }
