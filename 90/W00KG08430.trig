@@ -1,34 +1,36 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W00KG08430 {
     bda:I00KG08436  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG08436 ;
-        adm:logEntry        bda:LGDB127290E2B17125 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W00KG08430_MP7DZBV4WGIE , bda:LGDB127290E2B17125 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I00KG08437  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG08437 ;
-        adm:logEntry        bda:LG687842AA0174BC82 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W00KG08430_MP7DZBV4WGIE , bda:LG687842AA0174BC82 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I00KG08438  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG08438 ;
-        adm:logEntry        bda:LG2F5F62CAD6C268F1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W00KG08430_MP7DZBV4WGIE , bda:LG2F5F62CAD6C268F1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W00KG08430_MP7DZBV4WGIE
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-06-12T23:43:49.244979Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2F5F62CAD6C268F1
         a                   adm:InitialDataCreation ;
@@ -84,28 +86,28 @@ bdg:W00KG08430 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I00KG08436  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung thor bu/_blo bzang dpal ldan"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   608 .
+    bdr:I00KG08436  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung thor bu/_blo bzang dpal ldan"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  608 .
     
-    bdr:I00KG08437  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung thor bu/_blo bzang dpal ldan"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   576 .
+    bdr:I00KG08437  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung thor bu/_blo bzang dpal ldan"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  576 .
     
-    bdr:I00KG08438  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung thor bu/_blo bzang dpal ldan"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   616 .
+    bdr:I00KG08438  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung thor bu/_blo bzang dpal ldan"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  616 .
     
-    bdr:W00KG08430  a       :ImageInstance ;
-        :inCollection       bdr:PR1CTC16 ;
-        :instanceHasReproduction  bdr:IE00KG08430 ;
-        :instanceHasVolume  bdr:I00KG08436 , bdr:I00KG08437 , bdr:I00KG08438 ;
-        :numberOfVolumes    3 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2008"@en .
+    bdr:W00KG08430  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC16 ;
+        bdo:instanceHasReproduction  bdr:IE00KG08430 ;
+        bdo:instanceHasVolume  bdr:I00KG08436 , bdr:I00KG08437 , bdr:I00KG08438 ;
+        bdo:numberOfVolumes  3 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2008"@en .
 }
