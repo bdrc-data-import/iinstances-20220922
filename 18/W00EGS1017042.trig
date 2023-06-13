@@ -19,6 +19,12 @@ bdg:W00EGS1017042 {
         adm:logMessage      "withdrawn in favor of W8LS23460"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W00EGS1017042_RMBYWAAUZTQQ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-13T07:38:09.525185Z"^^xsd:dateTime ;
+        adm:logMessage      "replace with"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG4AC4F22CE5A1691B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-12-20T10:33:49.277Z"^^xsd:dateTime ;
@@ -63,8 +69,9 @@ bdg:W00EGS1017042 {
         adm:gitPath         "18/W00EGS1017042.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00EGS1017042 ;
-        adm:logEntry        bda:LG0W00EGS1017042_JDZBUNB4G3UU , bda:LG75D1C32787520CCB ;
+        adm:logEntry        bda:LG0W00EGS1017042_JDZBUNB4G3UU , bda:LG0W00EGS1017042_RMBYWAAUZTQQ , bda:LG75D1C32787520CCB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:W8LS23460 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
