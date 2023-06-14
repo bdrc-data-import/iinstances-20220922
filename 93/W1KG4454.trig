@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG4454 {
     bda:I1KG4569  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG4569 ;
-        adm:logEntry        bda:LG6E801AD351C3F04F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG4454_23QQDUFVZZQH , bda:LG6E801AD351C3F04F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG4454_23QQDUFVZZQH
+        a                   adm:Synced ;
+        adm:logDate         "2023-06-14T15:09:31.997342Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6E801AD351C3F04F
         a                   adm:InitialDataCreation ;
@@ -60,15 +62,15 @@ bdg:W1KG4454 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG4569  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of dpal ldan chos rje'i bden gnyis dang zhwa dmar drang nges zin bris legs bshad snying po'i mchan dbyor"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   294 .
+    bdr:I1KG4569  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dpal ldan chos rje'i bden gnyis dang zhwa dmar drang nges zin bris legs bshad snying po'i mchan dbyor"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  294 .
     
-    bdr:W1KG4454  a         :ImageInstance ;
-        :instanceHasReproduction  bdr:IE1KG4454 ;
-        :instanceHasVolume  bdr:I1KG4569 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2010"@en .
+    bdr:W1KG4454  a         bdo:ImageInstance ;
+        bdo:instanceHasReproduction  bdr:IE1KG4454 ;
+        bdo:instanceHasVolume  bdr:I1KG4569 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2010"@en .
 }
