@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD45093 {
     bda:I1PD53300  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD53300 ;
-        adm:logEntry        bda:LGF33F42F25C2CD0F2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1PD45093_U53UJV8YYV6S , bda:LGF33F42F25C2CD0F2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1PD45093_U53UJV8YYV6S
+        a                   adm:Synced ;
+        adm:logDate         "2023-06-14T15:26:52.833485Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1FEF3459A26D7444
         a                   adm:ScanRequestCreation ;
@@ -60,13 +62,13 @@ bdg:W1PD45093 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1PD53300  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of shar dung ri"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   172 .
+    bdr:I1PD53300  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of shar dung ri"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  172 .
     
-    bdr:W1PD45093  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1PD53300 ;
-        :numberOfVolumes    1 .
+    bdr:W1PD45093  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1PD53300 ;
+        bdo:numberOfVolumes  1 .
 }
