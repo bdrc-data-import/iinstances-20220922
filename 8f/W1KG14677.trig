@@ -1,40 +1,42 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14677 {
     bda:I1KG15766  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15766 ;
-        adm:logEntry        bda:LGB33A8761F640E16A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG14677_7TIGLOJR2XAX , bda:LGB33A8761F640E16A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG15767  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15767 ;
-        adm:logEntry        bda:LG8E30FD3EA34A2578 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG14677_7TIGLOJR2XAX , bda:LG8E30FD3EA34A2578 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG15768  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15768 ;
-        adm:logEntry        bda:LGB4A69B9390045C6C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG14677_7TIGLOJR2XAX , bda:LGB4A69B9390045C6C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG15769  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15769 ;
-        adm:logEntry        bda:LGF4B98A85E7CBAC90 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG14677_7TIGLOJR2XAX , bda:LGF4B98A85E7CBAC90 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG14677_7TIGLOJR2XAX
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-06-14T15:01:54.270870Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG8DCD16DB4A587175
         a                   adm:ScanRequestCreation ;
@@ -96,33 +98,33 @@ bdg:W1KG14677 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG15766  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   356 .
+    bdr:I1KG15766  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
     
-    bdr:I1KG15767  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   430 .
+    bdr:I1KG15767  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  430 .
     
-    bdr:I1KG15768  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   246 .
+    bdr:I1KG15768  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  246 .
     
-    bdr:I1KG15769  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   246 .
+    bdr:I1KG15769  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of dpal ldan rgyud bzhi'i bka' mchan them spang ma/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  246 .
     
-    bdr:W1KG14677  a        :ImageInstance ;
-        :inCollection       bdr:PR1CTC11 ;
-        :instanceHasVolume  bdr:I1KG15766 , bdr:I1KG15767 , bdr:I1KG15768 , bdr:I1KG15769 ;
-        :numberOfVolumes    4 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2013"@en .
+    bdr:W1KG14677  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC11 ;
+        bdo:instanceHasVolume  bdr:I1KG15766 , bdr:I1KG15767 , bdr:I1KG15768 , bdr:I1KG15769 ;
+        bdo:numberOfVolumes  4 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2013"@en .
 }
