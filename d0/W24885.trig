@@ -1,20 +1,15 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W24885 {
     bda:I1GS105502  a       adm:AdminData ;
         adm:adminAbout      bdr:I1GS105502 ;
-        adm:logEntry        bda:LG0DD7529451989904 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0DD7529451989904 , bda:LG0W24885_RUYHD10WULTZ , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -23,6 +18,13 @@ bdg:W24885 {
         adm:logDate         "2008-05-29T16:16:19.886Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG0W24885_RUYHD10WULTZ
+        a                   adm:Synced ;
+        adm:logDate         "2023-06-15T05:52:03.732854Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE935DEF23668BFED
         a                   adm:ScanRequestCreation ;
@@ -60,13 +62,13 @@ bdg:W24885 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1GS105502  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of 'bri gung mtshams pa grub thob a mgon rin po che'i rnam thar"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   44 .
+    bdr:I1GS105502  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 'bri gung mtshams pa grub thob a mgon rin po che'i rnam thar"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  44 .
     
-    bdr:W24885  a           :ImageInstance ;
-        :instanceHasVolume  bdr:I1GS105502 ;
-        :numberOfVolumes    1 .
+    bdr:W24885  a           bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1GS105502 ;
+        bdo:numberOfVolumes  1 .
 }
