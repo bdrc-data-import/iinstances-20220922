@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG1789 {
     bda:I1KG1834  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1834 ;
-        adm:logEntry        bda:LG63FFFCDD58D3BCD1 , bda:LG9ADFB96F532AC046 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG1789_SWNGUI2WP1WD , bda:LG63FFFCDD58D3BCD1 , bda:LG9ADFB96F532AC046 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG1789_SWNGUI2WP1WD
+        a                   adm:Synced ;
+        adm:logDate         "2023-06-15T05:46:51.661020Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG346023C6F06902AC
         a                   adm:ScanRequestCreation ;
@@ -66,15 +68,15 @@ bdg:W1KG1789 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG1834  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of blo sbyong dang zhal gdams nyer mkho phyogs bsgrigs"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   368 .
+    bdr:I1KG1834  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of blo sbyong dang zhal gdams nyer mkho phyogs bsgrigs"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  368 .
     
-    bdr:W1KG1789  a         :ImageInstance ;
-        :inCollection       bdr:PR60CTX96 ;
-        :instanceHasVolume  bdr:I1KG1834 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2009"@en .
+    bdr:W1KG1789  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR60CTX96 ;
+        bdo:instanceHasVolume  bdr:I1KG1834 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 2009"@en .
 }
