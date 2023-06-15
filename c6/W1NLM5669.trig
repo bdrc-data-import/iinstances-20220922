@@ -10,7 +10,7 @@ bdg:W1NLM5669 {
     bda:I1NLM5669_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM5669_001 ;
-        adm:logEntry        bda:LG0W1NLM5669_ITN8Z2SHQIPY .
+        adm:logEntry        bda:LG0W1NLM5669_ITN8Z2SHQIPY , bda:LG0W1NLM5669_TDD87LFOCOSK .
     
     bda:LG0NLM6MKMPRAFG5FU
         a                   adm:InitialDataImport ;
@@ -28,6 +28,13 @@ bdg:W1NLM5669 {
     bda:LG0W1NLM5669_ITN8Z2SHQIPY
         a                   adm:Synced ;
         adm:logDate         "2023-03-06T23:36:54.786590Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1NLM5669_TDD87LFOCOSK
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-06-15T16:17:13.168992Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
