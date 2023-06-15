@@ -10,7 +10,7 @@ bdg:W1NLM5500 {
     bda:I1NLM5500_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM5500_001 ;
-        adm:logEntry        bda:LG0W1NLM5500_5FH25RW7FAIF .
+        adm:logEntry        bda:LG0W1NLM5500_0YEMTULC05YY , bda:LG0W1NLM5500_5FH25RW7FAIF .
     
     bda:I1nLM5500_001
         a                   adm:AdminData ;
@@ -29,6 +29,13 @@ bdg:W1NLM5500 {
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
         adm:logDate         "2022-11-11T17:01:48.043992"^^xsd:dateTime ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W1NLM5500_0YEMTULC05YY
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-06-15T15:58:37.968030Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W1NLM5500_5FH25RW7FAIF
         a                   adm:Synced ;
