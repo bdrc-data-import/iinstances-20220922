@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG19402 {
@@ -17,6 +12,12 @@ bdg:W1KG19402 {
         adm:logEntry        bda:LG352166285CF66CE8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG19402_HBTQR585IJZ8
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-16T12:57:34.959784Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG352166285CF66CE8
         a                   adm:InitialDataCreation ;
@@ -49,25 +50,25 @@ bdg:W1KG19402 {
         adm:logWho          bdu:U00006 .
     
     bda:W1KG19402  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W1KG19402 ;
         adm:facetIndex      5 ;
         adm:gitPath         "f1/W1KG19402.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG19402 ;
-        adm:logEntry        bda:LG80182F41FD18977D ;
+        adm:logEntry        bda:LG0W1KG19402_HBTQR585IJZ8 , bda:LG80182F41FD18977D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG20634  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of brgal lan 'jigs med gdong lnga'i sgra dbyangs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   254 .
+    bdr:I1KG20634  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of brgal lan 'jigs med gdong lnga'i sgra dbyangs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  254 .
     
-    bdr:W1KG19402  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG20634 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
+    bdr:W1KG19402  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG20634 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 11/2014"@en .
 }
