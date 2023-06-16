@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG4912 {
@@ -47,6 +42,12 @@ bdg:W1KG4912 {
         adm:logDate         "2010-04-22T12:52:42.934Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG4912_M3HCDDBXNBIX
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-16T12:54:58.639701Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG323C163AAE8F84CC
         a                   adm:InitialDataCreation ;
@@ -97,49 +98,49 @@ bdg:W1KG4912 {
         adm:logWho          bdu:U00006 .
     
     bda:W1KG4912  a         adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W1KG4912 ;
         adm:facetIndex      21 ;
         adm:gitPath         "e9/W1KG4912.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG4912 ;
-        adm:logEntry        bda:LG0904080A62AD5654 ;
+        adm:logEntry        bda:LG0904080A62AD5654 , bda:LG0W1KG4912_M3HCDDBXNBIX ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG4914  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of shugs ldan be'u bum"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   764 .
+    bdr:I1KG4914  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of shugs ldan be'u bum"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  764 .
     
-    bdr:I1KG4915  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of shugs ldan be'u bum"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
+    bdr:I1KG4915  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of shugs ldan be'u bum"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
     
-    bdr:I1KG4916  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of shugs ldan be'u bum"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
+    bdr:I1KG4916  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of shugs ldan be'u bum"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
     
-    bdr:I1KG4917  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of shugs ldan be'u bum"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   766 .
+    bdr:I1KG4917  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of shugs ldan be'u bum"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  766 .
     
-    bdr:I1KG4918  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of shugs ldan be'u bum"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   662 .
+    bdr:I1KG4918  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of shugs ldan be'u bum"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  662 .
     
-    bdr:W1KG4912  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG4914 , bdr:I1KG4915 , bdr:I1KG4916 , bdr:I1KG4917 , bdr:I1KG4918 ;
-        :numberOfVolumes    5 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 04/2010"@en .
+    bdr:W1KG4912  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG4914 , bdr:I1KG4915 , bdr:I1KG4916 , bdr:I1KG4917 , bdr:I1KG4918 ;
+        bdo:numberOfVolumes  5 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 04/2010"@en .
 }
