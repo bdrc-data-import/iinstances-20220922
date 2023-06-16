@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W29046 {
@@ -24,6 +19,12 @@ bdg:W29046 {
         adm:logDate         "2007-01-15T01:27:22.25Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG0W29046_0GXLVLHWXKIQ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-16T12:52:28.565767Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG1425C018823C6ECD
         a                   adm:InitialDataCreation ;
@@ -56,27 +57,27 @@ bdg:W29046 {
         adm:logWho          bdu:U00006 .
     
     bda:W29046  a           adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W29046 ;
         adm:facetIndex      6 ;
         adm:gitPath         "34/W29046.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W29046 ;
-        adm:logEntry        bda:LG00C829F968F08EA8 ;
+        adm:logEntry        bda:LG00C829F968F08EA8 , bda:LG0W29046_0GXLVLHWXKIQ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I00EGS1017298
-        a                   :ImageGroup ;
-        :biblioNote         "Volume 1 of brgal lan kun khyab 'brug sgra : gdong thog sprul sku la gdams pa brgal lan kun khyab snyan pa'i 'brug sgra"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   242 .
+        a                   bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of brgal lan kun khyab 'brug sgra : gdong thog sprul sku la gdams pa brgal lan kun khyab snyan pa'i 'brug sgra"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  242 .
     
-    bdr:W29046  a           :ImageInstance ;
-        :inCollection       bdr:PR1GS49488 ;
-        :instanceHasVolume  bdr:I00EGS1017298 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W29046  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1GS49488 ;
+        bdo:instanceHasVolume  bdr:I00EGS1017298 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
