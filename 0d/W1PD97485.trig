@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD97485 {
@@ -44,60 +39,60 @@ bdg:W1PD97485 {
     
     bda:LG231D37F8188BF47B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-02-03T14:30:50.34Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:50.340000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG341D8557242B8139
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-02-03T14:30:49.824Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:49.824000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG39C85C07FDFC261D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-02-03T14:30:49.99Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:49.990000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG3D8564ACA680002F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-02-03T14:30:49.692Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:49.692000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG62ADD3FB46F40797
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2010-02-03T13:54:09.949Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T13:54:09.949000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG7E0CC63B426120D7
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-02-03T14:30:50.174Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:50.174000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGD3A53AA272D73FFD
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2010-02-03T14:30:50.54Z"^^xsd:dateTime ;
+        adm:logDate         "2010-02-03T14:30:50.540000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-30T16:20:30.571000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-31T21:27:09.458000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Added ondisk"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logDate         "2016-04-28T23:50:58.855000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages and added page list"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -114,38 +109,38 @@ bdg:W1PD97485 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1PD97492  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_phyogs las rnam rgyal"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   706 .
+    bdr:I1PD97492  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/_phyogs las rnam rgyal"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  706 .
     
-    bdr:I1PD97493  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/_phyogs las rnam rgyal"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   670 .
+    bdr:I1PD97493  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/_phyogs las rnam rgyal"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  670 .
     
-    bdr:I1PD97494  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/_phyogs las rnam rgyal"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   652 .
+    bdr:I1PD97494  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/_phyogs las rnam rgyal"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  652 .
     
-    bdr:I1PD97495  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/_phyogs las rnam rgyal"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   706 .
+    bdr:I1PD97495  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/_phyogs las rnam rgyal"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  706 .
     
-    bdr:I1PD97496  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/_phyogs las rnam rgyal"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   45 .
+    bdr:I1PD97496  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/_phyogs las rnam rgyal"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  15 .
     
-    bdr:W1PD97485  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1PD97492 , bdr:I1PD97493 , bdr:I1PD97494 , bdr:I1PD97495 , bdr:I1PD97496 ;
-        :numberOfVolumes    5 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2010"@en .
+    bdr:W1PD97485  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1PD97492 , bdr:I1PD97493 , bdr:I1PD97494 , bdr:I1PD97495 , bdr:I1PD97496 ;
+        bdo:numberOfVolumes  5 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2010"@en .
 }

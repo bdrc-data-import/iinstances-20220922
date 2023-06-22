@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W28936 {
@@ -25,19 +20,19 @@ bdg:W28936 {
         adm:status          bda:StatusReleased .
     
     bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-30T16:20:30.571000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-31T21:27:09.458000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Added ondisk"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logDate         "2016-04-28T23:50:58.855000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages and added page list"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -53,19 +48,19 @@ bdg:W28936 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4924  a            :ImageGroup ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   544 .
+    bdr:I4924  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  543 .
     
-    bdr:I4925  a            :ImageGroup ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   647 .
+    bdr:I4925  a            bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  647 .
     
-    bdr:W28936  a           :ImageInstance ;
-        :inCollection       bdr:PR1CTC13 ;
-        :instanceHasVolume  bdr:I4924 , bdr:I4925 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W28936  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC13 ;
+        bdo:instanceHasVolume  bdr:I4924 , bdr:I4925 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
 }

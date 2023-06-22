@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2PD17608 {
@@ -20,26 +15,26 @@ bdg:W2PD17608 {
     
     bda:LG2877AB7D4340BEE8
         a                   adm:Synced ;
-        adm:logDate         "2018-01-26T22:14:46.266Z"^^xsd:dateTime ;
+        adm:logDate         "2018-01-26T22:14:46.266000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LG453CF441442F90E5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-01-06T17:34:49.125Z"^^xsd:dateTime ;
+        adm:logDate         "2017-01-06T17:34:49.125000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG597015B5F6BB583C
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2018-02-27T23:22:28.897Z"^^xsd:dateTime ;
+        adm:logDate         "2018-02-27T23:22:28.897000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGB59D68463AC356DD
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-01-06T17:34:50.048Z"^^xsd:dateTime ;
+        adm:logDate         "2017-01-06T17:34:50.048000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
@@ -55,13 +50,13 @@ bdg:W2PD17608 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4PD4598  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of 西藏贵族世家 1900-1951"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   486 .
+    bdr:I4PD4598  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 西藏贵族世家 1900-1951"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  824 .
     
-    bdr:W2PD17608  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4PD4598 ;
-        :numberOfVolumes    1 .
+    bdr:W2PD17608  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I4PD4598 ;
+        bdo:numberOfVolumes  1 .
 }

@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W19223 {
@@ -55,19 +50,19 @@ bdg:W19223 {
         adm:logWho          bdu:U00017 .
     
     bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-30T16:20:30.571000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-31T21:27:09.458000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Added ondisk"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logDate         "2016-04-28T23:50:58.855000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages and added page list"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -83,39 +78,39 @@ bdg:W19223 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4159  a            :ImageGroup ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   702 .
+    bdr:I4159  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  708 .
     
-    bdr:I4160  a            :ImageGroup ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   584 .
+    bdr:I4160  a            bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  584 .
     
-    bdr:I4161  a            :ImageGroup ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
+    bdr:I4161  a            bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
     
-    bdr:I4162  a            :ImageGroup ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   574 .
+    bdr:I4162  a            bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  574 .
     
-    bdr:I4163  a            :ImageGroup ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   552 .
+    bdr:I4163  a            bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  552 .
     
-    bdr:I4164  a            :ImageGroup ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   554 .
+    bdr:I4164  a            bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  554 .
     
-    bdr:W19223  a           :ImageInstance ;
-        :inCollection       bdr:PRHD03 ;
-        :instanceHasVolume  bdr:I4159 , bdr:I4160 , bdr:I4161 , bdr:I4162 , bdr:I4163 , bdr:I4164 ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "NY tbrc"@en , "scanned at the tibetan buddhist resource center at the rubin museum of art, 150 w 17th st., new york city, ny 10011 2004"@en .
+    bdr:W19223  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PRHD03 ;
+        bdo:instanceHasVolume  bdr:I4159 , bdr:I4160 , bdr:I4161 , bdr:I4162 , bdr:I4163 , bdr:I4164 ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "NY tbrc"@en , "scanned at the tibetan buddhist resource center at the rubin museum of art, 150 w 17th st., new york city, ny 10011 2004"@en .
 }

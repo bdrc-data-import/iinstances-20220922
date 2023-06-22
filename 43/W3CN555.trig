@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN555 {
@@ -20,26 +15,26 @@ bdg:W3CN555 {
     
     bda:LG1DE326EF2C990835
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-10T18:20:01.618Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-10T18:20:01.618000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG69E37F40AC6E6CD2
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-09-20T23:20:09.061Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-20T23:20:09.061000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LG8977553296078F80
         a                   adm:Synced ;
-        adm:logDate         "2017-04-21T18:11:15.622Z"^^xsd:dateTime ;
+        adm:logDate         "2017-04-21T18:11:15.622000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGB1926236AE58B52F
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-10T18:20:01.731Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-10T18:20:01.731000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -55,15 +50,15 @@ bdg:W3CN555 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN3979  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of blo+o sbyong mtshon cha 'khor lo'i 'grel pa dang 'jam dpal zhal lung lho rgyud/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   308 .
+    bdr:I3CN3979  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of blo+o sbyong mtshon cha 'khor lo'i 'grel pa dang 'jam dpal zhal lung lho rgyud/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  309 .
     
-    bdr:W3CN555  a          :ImageInstance ;
-        :inCollection       bdr:PR1CTC16 ;
-        :instanceHasVolume  bdr:I3CN3979 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "11/2016"@en .
+    bdr:W3CN555  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC16 ;
+        bdo:instanceHasVolume  bdr:I3CN3979 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "11/2016"@en .
 }

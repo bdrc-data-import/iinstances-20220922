@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3PD403 {
@@ -26,45 +21,45 @@ bdg:W3PD403 {
     
     bda:LG316CF83A043B258F
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-11-28T00:08:47.299Z"^^xsd:dateTime ;
+        adm:logDate         "2017-11-28T00:08:47.299000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LG4D2D59EDB1786671
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-12T03:59:40.309Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-12T03:59:40.309000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG7BC9A31818DC5576
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-11-28T00:08:47.609Z"^^xsd:dateTime ;
+        adm:logDate         "2017-11-28T00:08:47.609000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGAE51A45F96ACCC9F
         a                   adm:Synced ;
-        adm:logDate         "2017-08-17T23:39:11.127Z"^^xsd:dateTime ;
+        adm:logDate         "2017-08-17T23:39:11.127000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGD4819CC4A48D3CF7
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-12T03:59:37.837Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-12T03:59:37.837000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGE902A07FF752FB9C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-12T03:59:39.076Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-12T03:59:39.076000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGEADF3F39BF213286
         a                   adm:Synced ;
-        adm:logDate         "2017-08-17T23:39:11.342Z"^^xsd:dateTime ;
+        adm:logDate         "2017-08-17T23:39:11.342000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -80,20 +75,20 @@ bdg:W3PD403 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2PD18025  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of rdzogs pa chen po bsgrags pa skor gsum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   450 .
+    bdr:I2PD18025  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rdzogs pa chen po bsgrags pa skor gsum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  452 .
     
-    bdr:I2PD18026  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of rdzogs pa chen po bsgrags pa skor gsum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   444 .
+    bdr:I2PD18026  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of rdzogs pa chen po bsgrags pa skor gsum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  448 .
     
-    bdr:W3PD403  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I2PD18025 , bdr:I2PD18026 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+    bdr:W3PD403  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2PD18025 , bdr:I2PD18026 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
 }

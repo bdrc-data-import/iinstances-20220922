@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1934 {
@@ -321,19 +316,19 @@ bdg:W1934 {
         adm:logWho          bdu:U00017 , bdu:U00026 .
     
     bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-30T16:20:30.571000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-31T21:27:09.458000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Added ondisk"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logDate         "2016-04-28T23:50:58.855000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages and added page list"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -349,148 +344,148 @@ bdg:W1934 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I0734  a            :ImageGroup ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   610 .
+    bdr:I0734  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  610 .
     
-    bdr:I0735  a            :ImageGroup ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   630 .
+    bdr:I0735  a            bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  630 .
     
-    bdr:I0736  a            :ImageGroup ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
+    bdr:I0736  a            bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
     
-    bdr:I0737  a            :ImageGroup ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   900 .
+    bdr:I0737  a            bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  900 .
     
-    bdr:I0738  a            :ImageGroup ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   623 .
+    bdr:I0738  a            bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  622 .
     
-    bdr:I0739  a            :ImageGroup ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   876 .
+    bdr:I0739  a            bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  876 .
     
-    bdr:I0740  a            :ImageGroup ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   834 .
+    bdr:I0740  a            bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  834 .
     
-    bdr:I0741  a            :ImageGroup ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1002 .
+    bdr:I0741  a            bdo:ImageGroup ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1002 .
     
-    bdr:I0742  a            :ImageGroup ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   884 .
+    bdr:I0742  a            bdo:ImageGroup ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  884 .
     
-    bdr:I0743  a            :ImageGroup ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   690 .
+    bdr:I0743  a            bdo:ImageGroup ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  690 .
     
-    bdr:I0744  a            :ImageGroup ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   838 .
+    bdr:I0744  a            bdo:ImageGroup ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  838 .
     
-    bdr:I0745  a            :ImageGroup ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   704 .
+    bdr:I0745  a            bdo:ImageGroup ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  704 .
     
-    bdr:I0746  a            :ImageGroup ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   874 .
+    bdr:I0746  a            bdo:ImageGroup ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  874 .
     
-    bdr:I0747  a            :ImageGroup ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1022 .
+    bdr:I0747  a            bdo:ImageGroup ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1022 .
     
-    bdr:I0748  a            :ImageGroup ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   920 .
+    bdr:I0748  a            bdo:ImageGroup ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  920 .
     
-    bdr:I0749  a            :ImageGroup ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   560 .
+    bdr:I0749  a            bdo:ImageGroup ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  560 .
     
-    bdr:I0750  a            :ImageGroup ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   648 .
+    bdr:I0750  a            bdo:ImageGroup ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  648 .
     
-    bdr:I0751  a            :ImageGroup ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   732 .
+    bdr:I0751  a            bdo:ImageGroup ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  732 .
     
-    bdr:I0752  a            :ImageGroup ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   672 .
+    bdr:I0752  a            bdo:ImageGroup ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  672 .
     
-    bdr:I0753  a            :ImageGroup ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   776 .
+    bdr:I0753  a            bdo:ImageGroup ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  776 .
     
-    bdr:I0754  a            :ImageGroup ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   986 .
+    bdr:I0754  a            bdo:ImageGroup ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  986 .
     
-    bdr:I0755  a            :ImageGroup ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   668 .
+    bdr:I0755  a            bdo:ImageGroup ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  668 .
     
-    bdr:I0756  a            :ImageGroup ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   962 .
+    bdr:I0756  a            bdo:ImageGroup ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  962 .
     
-    bdr:I0757  a            :ImageGroup ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1062 .
+    bdr:I0757  a            bdo:ImageGroup ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1062 .
     
-    bdr:I0758  a            :ImageGroup ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1092 .
+    bdr:I0758  a            bdo:ImageGroup ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1092 .
     
-    bdr:I0759  a            :ImageGroup ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   662 .
+    bdr:I0759  a            bdo:ImageGroup ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  662 .
     
-    bdr:I0760  a            :ImageGroup ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   714 .
+    bdr:I0760  a            bdo:ImageGroup ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  714 .
     
-    bdr:I0761  a            :ImageGroup ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   638 .
+    bdr:I0761  a            bdo:ImageGroup ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  638 .
     
-    bdr:W1934  a            :ImageInstance ;
-        :inCollection       bdr:PR01DOR0 , bdr:PRHD02 ;
-        :instanceHasVolume  bdr:I0734 , bdr:I0735 , bdr:I0736 , bdr:I0737 , bdr:I0738 , bdr:I0739 , bdr:I0740 , bdr:I0741 , bdr:I0742 , bdr:I0743 , bdr:I0744 , bdr:I0745 , bdr:I0746 , bdr:I0747 , bdr:I0748 , bdr:I0749 , bdr:I0750 , bdr:I0751 , bdr:I0752 , bdr:I0753 , bdr:I0754 , bdr:I0755 , bdr:I0756 , bdr:I0757 , bdr:I0758 , bdr:I0759 , bdr:I0760 , bdr:I0761 ;
-        :numberOfVolumes    28 .
+    bdr:W1934  a            bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR01DOR0 , bdr:PRHD02 ;
+        bdo:instanceHasVolume  bdr:I0734 , bdr:I0735 , bdr:I0736 , bdr:I0737 , bdr:I0738 , bdr:I0739 , bdr:I0740 , bdr:I0741 , bdr:I0742 , bdr:I0743 , bdr:I0744 , bdr:I0745 , bdr:I0746 , bdr:I0747 , bdr:I0748 , bdr:I0749 , bdr:I0750 , bdr:I0751 , bdr:I0752 , bdr:I0753 , bdr:I0754 , bdr:I0755 , bdr:I0756 , bdr:I0757 , bdr:I0758 , bdr:I0759 , bdr:I0760 , bdr:I0761 ;
+        bdo:numberOfVolumes  28 .
 }

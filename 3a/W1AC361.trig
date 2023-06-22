@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1AC361 {
@@ -20,26 +15,26 @@ bdg:W1AC361 {
     
     bda:LG32B46E9FABB4D01A
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2018-02-27T23:21:49.762Z"^^xsd:dateTime ;
+        adm:logDate         "2018-02-27T23:21:49.762000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGA6581829924C522E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-16T13:01:25.253Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-16T13:01:25.253000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGC9E1C070FD5B02BC
         a                   adm:Synced ;
-        adm:logDate         "2018-01-26T22:14:45.514Z"^^xsd:dateTime ;
+        adm:logDate         "2018-01-26T22:14:45.514000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGE477049E9169E0EA
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-16T13:01:26.286Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-16T13:01:26.286000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
@@ -55,14 +50,14 @@ bdg:W1AC361 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4PD3943  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of ge sar sgrung gi sa ming zhib 'jug"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   616 .
+    bdr:I4PD3943  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of ge sar sgrung gi sa ming zhib 'jug"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1154 .
     
-    bdr:W1AC361  a          :ImageInstance ;
-        :inCollection       bdr:PR1CTC15 ;
-        :instanceHasVolume  bdr:I4PD3943 ;
-        :numberOfVolumes    1 .
+    bdr:W1AC361  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC15 ;
+        bdo:instanceHasVolume  bdr:I4PD3943 ;
+        bdo:numberOfVolumes  1 .
 }

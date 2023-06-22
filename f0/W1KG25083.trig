@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG25083 {
@@ -20,26 +15,26 @@ bdg:W1KG25083 {
     
     bda:LG26EECCEBAD6A8490
         a                   adm:Synced ;
-        adm:logDate         "2017-07-31T23:53:58.536Z"^^xsd:dateTime ;
+        adm:logDate         "2017-07-31T23:53:58.536000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LG30FC04CFBB5BD4E2
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-08-05T01:03:43.921Z"^^xsd:dateTime ;
+        adm:logDate         "2017-08-05T01:03:43.921000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LG3A3D8137773C5C89
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-30T16:44:19.27Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-30T16:44:19.270000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD40A2B48AEFF6DF4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-30T16:44:19.182Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-30T16:44:19.182000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -55,14 +50,14 @@ bdg:W1KG25083 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG25085  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of sum rtags kyi 'grel ba thu ma'i dgongs rgyan/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   146 .
+    bdr:I1KG25085  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sum rtags kyi 'grel ba thu ma'i dgongs rgyan/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  149 .
     
-    bdr:W1KG25083  a        :ImageInstance ;
-        :inCollection       bdr:PR1CTC16 ;
-        :instanceHasVolume  bdr:I1KG25085 ;
-        :numberOfVolumes    1 .
+    bdr:W1KG25083  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC16 ;
+        bdo:instanceHasVolume  bdr:I1KG25085 ;
+        bdo:numberOfVolumes  1 .
 }

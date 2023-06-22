@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS18002 {
@@ -20,26 +15,26 @@ bdg:W8LS18002 {
     
     bda:LG2B0F5852D0252813
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-08-05T11:52:12.216Z"^^xsd:dateTime ;
+        adm:logDate         "2016-08-05T11:52:12.216000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG8814F9F5CF2C7121
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2016-11-01T22:29:29.717Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-01T22:29:29.717000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGD414D2C835AEF78B
         a                   adm:Synced ;
-        adm:logDate         "2016-10-06T14:24:58.968Z"^^xsd:dateTime ;
+        adm:logDate         "2016-10-06T14:24:58.968000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGF57BC970ADA8FFBE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-08-05T11:52:12.099Z"^^xsd:dateTime ;
+        adm:logDate         "2016-08-05T11:52:12.099000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -55,15 +50,15 @@ bdg:W8LS18002 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS18011  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   546 .
+    bdr:I8LS18011  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  547 .
     
-    bdr:W8LS18002  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS18011 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 08/2016"@en .
+    bdr:W8LS18002  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I8LS18011 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 08/2016"@en .
 }

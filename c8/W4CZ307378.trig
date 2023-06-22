@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ307378 {
@@ -20,25 +15,25 @@ bdg:W4CZ307378 {
     
     bda:LG395E0586DB82B776
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-05-23T14:44:52.08Z"^^xsd:dateTime ;
+        adm:logDate         "2018-05-23T14:44:52.080000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG715387C0FBA73DDF
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-05-23T14:44:52.18Z"^^xsd:dateTime ;
+        adm:logDate         "2018-05-23T14:44:52.180000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGC32C5EF24A9188E1
         a                   adm:Synced ;
-        adm:logDate         "2018-11-14T23:07:11.194Z"^^xsd:dateTime ;
+        adm:logDate         "2018-11-14T23:07:11.194000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIME106204F  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2019-03-26T22:21:14.825Z"^^xsd:dateTime ;
+        adm:logDate         "2019-03-26T22:21:14.825000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -54,15 +49,15 @@ bdg:W4CZ307378 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ308298  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of bslab btus/ (mchan can/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   747 .
+    bdr:I4CZ308298  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bslab btus/ (mchan can/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  751 .
     
-    bdr:W4CZ307378  a       :ImageInstance ;
-        :inCollection       bdr:PR1CTC16 ;
-        :instanceHasVolume  bdr:I4CZ308298 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W4CZ307378  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC16 ;
+        bdo:instanceHasVolume  bdr:I4CZ308298 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }

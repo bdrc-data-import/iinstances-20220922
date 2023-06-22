@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS16968 {
@@ -20,25 +15,25 @@ bdg:W8LS16968 {
     
     bda:LG3B8AA3395B3AE78F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-12-18T12:46:10.203Z"^^xsd:dateTime ;
+        adm:logDate         "2015-12-18T12:46:10.203000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG4296D18C2832C9C7
         a                   adm:Synced ;
-        adm:logDate         "2017-03-14T03:48:17.862Z"^^xsd:dateTime ;
+        adm:logDate         "2017-03-14T03:48:17.862000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LG852B961027DEA8D5
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2015-12-18T12:46:10.235Z"^^xsd:dateTime ;
+        adm:logDate         "2015-12-18T12:46:10.235000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGB63D338808ECF055
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-06-13T01:36:23.966Z"^^xsd:dateTime ;
+        adm:logDate         "2017-06-13T01:36:23.966000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -55,14 +50,14 @@ bdg:W8LS16968 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS17027  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of smyung chog phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   63 .
+    bdr:I8LS17027  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of smyung chog phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  64 .
     
-    bdr:W8LS16968  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS17027 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W8LS16968  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS17027 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
