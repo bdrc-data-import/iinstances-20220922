@@ -39,7 +39,7 @@ bdg:W8CZ12 {
     
     bda:LG0W8CZ12_PJTKZ7ZKTD55
         a                   adm:UpdateData ;
-        adm:logDate         "2023-03-25T06:57:44.861616Z"^^xsd:dateTime ;
+        adm:logDate         "2023-03-25T06:57:44.861616+00:00"^^xsd:dateTime ;
         adm:logMessage      "fix volume 1"@en ;
         adm:logWho          bdu:U1653882847 .
     
@@ -60,7 +60,8 @@ bdg:W8CZ12 {
     
     bdr:I8CZ12  a           bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  24 .
     
     bdr:NTW8CZ12ZIYFZJOC
         a                   bdo:Note ;
