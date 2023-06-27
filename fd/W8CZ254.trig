@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ254 {
+    bda:LG0W8CZ254_MDMIDF4PGAQK
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-27T19:29:45.983911Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG0W8CZ254_WFE3XZJADE4B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-27T15:45:46.962225Z"^^xsd:dateTime ;
@@ -14,10 +20,10 @@ bdg:W8CZ254 {
         adm:logWho          bdu:U2089842660 .
     
     bda:W8CZ254  a          adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ254 ;
         adm:graphId         bdg:W8CZ254 ;
-        adm:logEntry        bda:LG0W8CZ254_WFE3XZJADE4B ;
+        adm:logEntry        bda:LG0W8CZ254_MDMIDF4PGAQK , bda:LG0W8CZ254_WFE3XZJADE4B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
