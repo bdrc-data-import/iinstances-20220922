@@ -7,11 +7,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG123 {
+    bda:I3KG459  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG459 ;
+        adm:logEntry        bda:LG0W3KG123_GOLCSGNWEH1G .
+    
+    bda:I3KG460  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG460 ;
+        adm:logEntry        bda:LG0W3KG123_GOLCSGNWEH1G .
+    
     bda:LG0W3KG123_EQ3AP3SKZLLA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-04-04T15:35:37.129099Z"^^xsd:dateTime ;
         adm:logMessage      "generated scans"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3KG123_GOLCSGNWEH1G
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-06-28T20:49:05.800022Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3KG123  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -24,11 +39,13 @@ bdg:W3KG123 {
     
     bdr:I3KG459  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  451 .
     
     bdr:I3KG460  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  458 .
     
     bdr:W3KG123  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG459 , bdr:I3KG460 .
