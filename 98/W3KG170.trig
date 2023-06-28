@@ -1,0 +1,45 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG170 {
+    bda:LG0W3KG170_IYCEIMYXNDQV
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-06-28T19:03:30.658864Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scan request"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG170  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG170 ;
+        adm:graphId         bdg:W3KG170 ;
+        adm:logEntry        bda:LG0W3KG170_IYCEIMYXNDQV ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG570  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG571  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG572  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:NTW3KG17088H1MTX9
+        a                   bdo:Note ;
+        bdo:noteText        "only volume no. 4, 5, and 7 are available."@en .
+    
+    bdr:W3KG170  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG570 , bdr:I3KG571 , bdr:I3KG572 ;
+        bdo:note            bdr:NTW3KG17088H1MTX9 ;
+        bdo:qualityGrade    5 .
+}
