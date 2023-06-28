@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN15727 {
@@ -18,21 +13,28 @@ bdg:W3CN15727 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGA5C252A52BD9565F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-05-24T15:53:14.051Z"^^xsd:dateTime ;
+        adm:logDate         "2018-05-24T15:53:14.051000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGB0E34B2D8E142B19
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-05-24T15:53:14.169Z"^^xsd:dateTime ;
+        adm:logDate         "2018-05-24T15:53:14.169000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM7BF32F37  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-05-30T00:15:42.72Z"^^xsd:dateTime ;
+        adm:logDate         "2020-05-30T00:15:42.720000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,20 +45,21 @@ bdg:W3CN15727 {
         adm:gitPath         "15/W3CN15727.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN15727 ;
-        adm:logEntry        bda:LGB0E34B2D8E142B19 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGB0E34B2D8E142B19 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN15740  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bya tshig gi rnam gzhag rgyas bshad/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   446 .
+    bdr:I3CN15740  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bya tshig gi rnam gzhag rgyas bshad/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  446 .
     
-    bdr:W3CN15727  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I3CN15740 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D35801"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
+    bdr:W3CN15727  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I3CN15740 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "copy made available from the library of tibetan works and archives; ltwa acc. no. D35801"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 18"@en .
 }

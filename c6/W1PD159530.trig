@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD159530 {
@@ -30,45 +25,52 @@ bdg:W1PD159530 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG4730F82458177F94
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-21T23:30:43.095Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-21T23:30:43.095000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG5F3544BC8F00E779
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-21T23:30:44.723Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-21T23:30:44.723000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG79F5F2F857831B69
         a                   adm:Synced ;
-        adm:logDate         "2018-02-14T00:04:52.589Z"^^xsd:dateTime ;
+        adm:logDate         "2018-02-14T00:04:52.589000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGB0E84C0858D61161
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-21T23:30:45.534Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-21T23:30:45.534000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGD44634AC3AD593C8
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-21T23:30:43.913Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-21T23:30:43.913000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGEB695BF6426A376B
         a                   adm:Synced ;
-        adm:logDate         "2018-02-14T00:04:51.789Z"^^xsd:dateTime ;
+        adm:logDate         "2018-02-14T00:04:51.789000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGF1380F7425D5CA75
         a                   adm:Synced ;
-        adm:logDate         "2018-02-14T00:04:53.443Z"^^xsd:dateTime ;
+        adm:logDate         "2018-02-14T00:04:53.443000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -79,30 +81,31 @@ bdg:W1PD159530 {
         adm:gitPath         "c6/W1PD159530.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD159530 ;
-        adm:logEntry        bda:LGB0E84C0858D61161 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGB0E84C0858D61161 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2PD18706  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   162 .
+    bdr:I2PD18706  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  162 .
     
-    bdr:I2PD18707  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   172 .
+    bdr:I2PD18707  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  172 .
     
-    bdr:I2PD18708  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   162 .
+    bdr:I2PD18708  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bsang mchod phyogs bsgrigs phan bde dpal ster/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  162 .
     
-    bdr:W1PD159530  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2PD18706 , bdr:I2PD18707 , bdr:I2PD18708 ;
-        :numberOfVolumes    3 .
+    bdr:W1PD159530  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I2PD18706 , bdr:I2PD18707 , bdr:I2PD18708 ;
+        bdo:numberOfVolumes  3 .
 }

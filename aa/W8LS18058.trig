@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS18058 {
@@ -18,21 +13,28 @@ bdg:W8LS18058 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG4C339F6FDC36EB2D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-10-05T09:25:28.001Z"^^xsd:dateTime ;
+        adm:logDate         "2016-10-05T09:25:28.001000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGA97028090AE9B5C0
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-10-05T09:25:28.101Z"^^xsd:dateTime ;
+        adm:logDate         "2016-10-05T09:25:28.101000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM761451AC  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-07-22T21:54:11.924Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-22T21:54:11.924000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,20 +45,21 @@ bdg:W8LS18058 {
         adm:gitPath         "aa/W8LS18058.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18058 ;
-        adm:logEntry        bda:LGA97028090AE9B5C0 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGA97028090AE9B5C0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS18205  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of tshig gi gter mdzod/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1395 .
+    bdr:I8LS18205  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of tshig gi gter mdzod/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1395 .
     
-    bdr:W8LS18058  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS18205 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "10/2016"@en , "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D20185"@en .
+    bdr:W8LS18058  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I8LS18205 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "10/2016"@en , "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D20185"@en .
 }

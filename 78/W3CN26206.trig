@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN26206 {
@@ -18,21 +13,28 @@ bdg:W3CN26206 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG26A3F2CE0F7055C0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-04-02T20:29:04.104Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-02T20:29:04.104000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGDAC7A4ADFB0AF2BF
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-04-02T20:29:04.221Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-02T20:29:04.221000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM8C0985D6  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-04-12T23:28:26.989Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-12T23:28:26.989000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,19 +45,20 @@ bdg:W3CN26206 {
         adm:gitPath         "78/W3CN26206.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26206 ;
-        adm:logEntry        bda:LGDAC7A4ADFB0AF2BF ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGDAC7A4ADFB0AF2BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN26214  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ dkon mchog gsum 'bangs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1374 .
+    bdr:I3CN26214  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ dkon mchog gsum 'bangs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1374 .
     
-    bdr:W3CN26206  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN26214 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN26206  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I3CN26214 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "2021"@en .
 }

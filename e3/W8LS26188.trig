@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS26188 {
@@ -24,39 +19,46 @@ bdg:W8LS26188 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG4EB8F000A7BAE3B3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-20T14:21:34.658Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-20T14:21:34.658000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LG774456ABB155ECB4
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-09-20T14:21:34.757Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-20T14:21:34.757000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGB9C9F994AD0EF1F5
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-09-20T14:14:55.087Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-20T14:14:55.087000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGD9E6015FD93A1D82
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-20T14:21:34.49Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-20T14:21:34.490000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIMB6B8D413  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-07-20T21:20:09.876Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-20T21:20:09.876000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIME1D6D973  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-07-20T21:20:09.616Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-20T21:20:09.616000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -67,26 +69,27 @@ bdg:W8LS26188 {
         adm:gitPath         "e3/W8LS26188.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS26188 ;
-        adm:logEntry        bda:LG774456ABB155ECB4 , bda:LGB9C9F994AD0EF1F5 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG774456ABB155ECB4 , bda:LGB9C9F994AD0EF1F5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS26192  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of tshad ma rnam 'grel gyi bshad pa legs bshad snang ba'i gter/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   424 .
+    bdr:I8LS26192  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of tshad ma rnam 'grel gyi bshad pa legs bshad snang ba'i gter/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  424 .
     
-    bdr:I8LS26193  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of tshad ma rnam 'grel gyi bshad pa legs bshad snang ba'i gter/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   514 .
+    bdr:I8LS26193  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of tshad ma rnam 'grel gyi bshad pa legs bshad snang ba'i gter/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  514 .
     
-    bdr:W8LS26188  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I8LS26192 , bdr:I8LS26193 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No.5082"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W8LS26188  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I8LS26192 , bdr:I8LS26193 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No.5082"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }

@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN10551 {
@@ -18,21 +13,28 @@ bdg:W3CN10551 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG2C879F2E4CA2AD13
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-18T16:04:55.955Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-18T16:04:55.955000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGB3FC725B613FC0B4
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-09-18T16:04:56.072Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-18T16:04:56.072000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIME81EBC09  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-07-03T02:26:09.264Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-03T02:26:09.264000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,20 +45,21 @@ bdg:W3CN10551 {
         adm:gitPath         "bd/W3CN10551.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN10551 ;
-        adm:logEntry        bda:LGB3FC725B613FC0B4 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGB3FC725B613FC0B4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN10553  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gzhung zhabs zur pa phag ri ba bde shar tshe ring rdo rje'i lo rgyus snying bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   450 .
+    bdr:I3CN10553  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gzhung zhabs zur pa phag ri ba bde shar tshe ring rdo rje'i lo rgyus snying bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  450 .
     
-    bdr:W3CN10551  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I3CN10553 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no. D31474"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W3CN10551  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I3CN10553 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "copy made available from the library of tibetan works and archives; ltwa acc. no. D31474"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }

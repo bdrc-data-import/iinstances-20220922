@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG20872 {
@@ -18,21 +13,28 @@ bdg:W1KG20872 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG7EDA88AA55F6E42E
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-15T16:07:38.254Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-15T16:07:38.254000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGED1215B30C752FE6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-15T16:07:38.171Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-15T16:07:38.171000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM5B52A800  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-05-04T23:27:28.095Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-04T23:27:28.095000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,20 +45,21 @@ bdg:W1KG20872 {
         adm:gitPath         "34/W1KG20872.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG20872 ;
-        adm:logEntry        bda:LG7EDA88AA55F6E42E ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG7EDA88AA55F6E42E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG24682  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bod kyi rtsom rig 'jug sgo/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   380 .
+    bdr:I1KG24682  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bod kyi rtsom rig 'jug sgo/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  380 .
     
-    bdr:W1KG20872  a        :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I1KG24682 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 11/2016"@en .
+    bdr:W1KG20872  a        bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I1KG24682 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 11/2016"@en .
 }

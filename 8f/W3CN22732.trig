@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN22732 {
@@ -18,21 +13,28 @@ bdg:W3CN22732 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG110437B9B2CAD79D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-04-30T23:48:50.277Z"^^xsd:dateTime ;
+        adm:logDate         "2020-04-30T23:48:50.277000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG1E1DA7C2C18722DC
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-04-30T23:48:50.374Z"^^xsd:dateTime ;
+        adm:logDate         "2020-04-30T23:48:50.374000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM27BA5D12  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-17T22:43:00.651Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-17T22:43:00.651000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,19 +45,20 @@ bdg:W3CN22732 {
         adm:gitPath         "8f/W3CN22732.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN22732 ;
-        adm:logEntry        bda:LG1E1DA7C2C18722DC ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG1E1DA7C2C18722DC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CN10190  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of rgya gar chos 'byung /"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   252 .
+    bdr:I4CN10190  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rgya gar chos 'byung /"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  252 .
     
-    bdr:W3CN22732  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CN10190 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN22732  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I4CN10190 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }

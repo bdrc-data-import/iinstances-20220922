@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG15911 {
@@ -24,33 +19,40 @@ bdg:W1KG15911 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG3AAD00921C094849
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-04-12T15:41:37.288Z"^^xsd:dateTime ;
+        adm:logDate         "2018-04-12T15:41:37.288000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG9C56CFBC8FC266CD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-04-12T15:41:37.206Z"^^xsd:dateTime ;
+        adm:logDate         "2018-04-12T15:41:37.206000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGBD5123E3829BE9C2
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-04-12T15:41:37.364Z"^^xsd:dateTime ;
+        adm:logDate         "2018-04-12T15:41:37.364000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM8423CC3B  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-08T21:22:42.494Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-08T21:22:42.494000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMFCDF7C62  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-08T21:22:42.146Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-08T21:22:42.146000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -61,26 +63,26 @@ bdg:W1KG15911 {
         adm:gitPath         "da/W1KG15911.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG15911 ;
-        adm:logEntry        bda:LGBD5123E3829BE9C2 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGBD5123E3829BE9C2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG89003  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of 'dul ba'i dka' gnas rnam par dpyad pa skal bzang re ba kun skong /"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   670 .
+    bdr:I1KG89003  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 'dul ba'i dka' gnas rnam par dpyad pa skal bzang re ba kun skong /"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  670 .
     
-    bdr:I1KG89004  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of 'dul ba'i dka' gnas rnam par dpyad pa skal bzang re ba kun skong /"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   348 .
+    bdr:I1KG89004  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of 'dul ba'i dka' gnas rnam par dpyad pa skal bzang re ba kun skong /"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  348 .
     
-    bdr:W1KG15911  a        :ImageInstance ;
-        :inCollection       bdr:PR1NLM00 ;
-        :instanceHasVolume  bdr:I1KG89003 , bdr:I1KG89004 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "4/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+    bdr:W1KG15911  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 , bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I1KG89003 , bdr:I1KG89004 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "4/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
 }

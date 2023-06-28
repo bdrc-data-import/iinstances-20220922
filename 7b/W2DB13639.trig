@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2DB13639 {
@@ -20,37 +15,44 @@ bdg:W2DB13639 {
     
     bda:LG06C1C87CA9B9A968
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2008-01-11T11:34:12.983Z"^^xsd:dateTime ;
+        adm:logDate         "2008-01-11T11:34:12.983000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGE96234A7D9D73746
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-01-11T11:34:12.78Z"^^xsd:dateTime ;
+        adm:logDate         "2008-01-11T11:34:12.780000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
-        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-30T16:20:30.571000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS002  a         adm:UpdateData ;
-        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logDate         "2016-03-31T21:27:09.458000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Added ondisk"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIGS003  a         adm:UpdateData ;
-        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logDate         "2016-04-28T23:50:58.855000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages and added page list"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
     bda:LGIM6556C66E  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-03-17T23:34:58.793Z"^^xsd:dateTime ;
+        adm:logDate         "2021-03-17T23:34:58.793000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -61,19 +63,20 @@ bdg:W2DB13639 {
         adm:gitPath         "7b/W2DB13639.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2DB13639 ;
-        adm:logEntry        bda:LG06C1C87CA9B9A968 ;
+        adm:logEntry        bda:LG06C1C87CA9B9A968 , bda:LG0BDS2GQOK1LC90JY ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1PD30945  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of man ngag rin chen 'byung gnas"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   678 .
+    bdr:I1PD30945  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of man ngag rin chen 'byung gnas"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  678 .
     
-    bdr:W2DB13639  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1PD30945 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W2DB13639  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I1PD30945 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }

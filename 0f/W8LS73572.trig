@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS73572 {
@@ -20,19 +15,26 @@ bdg:W8LS73572 {
     
     bda:LG027BF547EA32F897
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-09-21T09:16:27.84Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-21T09:16:27.840000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG4053760A380DCF23
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-21T09:16:27.407Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-21T09:16:27.407000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM5DA2B692  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-01-05T22:09:42.608Z"^^xsd:dateTime ;
+        adm:logDate         "2021-01-05T22:09:42.608000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,19 +45,20 @@ bdg:W8LS73572 {
         adm:gitPath         "0f/W8LS73572.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS73572 ;
-        adm:logEntry        bda:LG027BF547EA32F897 ;
+        adm:logEntry        bda:LG027BF547EA32F897 , bda:LG0BDS2GQOK1LC90JY ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS73574  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of sum rtags dag yig sogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   134 .
+    bdr:I8LS73574  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of sum rtags dag yig sogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  134 .
     
-    bdr:W8LS73572  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS73574 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
+    bdr:W8LS73572  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I8LS73574 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scans kindly provided by the Great Enlightenment Buddhist Institute Society (GEBIS) in Canada, made from an original copy provided by BDRC."@en .
 }

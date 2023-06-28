@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN22945 {
@@ -36,57 +31,64 @@ bdg:W3CN22945 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG51A5F8A79211BBFC
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-09-18T00:56:06.286Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-18T00:56:06.286000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG84178BC86E647A84
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-18T00:56:06.136Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-18T00:56:06.136000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG9BB1CC53DF91921B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-18T00:56:05.852Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-18T00:56:05.852000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGAA36862ECF59E482
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-18T00:56:06.019Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-18T00:56:06.019000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGAAA78BD62FC8D6E9
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-18T00:56:05.685Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-18T00:56:05.685000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM611F752D  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-10-02T00:35:40.321Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-02T00:35:40.321000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM7DA6F3A8  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-10-02T00:35:39.462Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-02T00:35:39.462000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMF6E8ADD5  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-10-02T00:35:40.008Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-02T00:35:40.008000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMFE6110A0  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-10-02T00:35:39.75Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-02T00:35:39.750000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -97,37 +99,38 @@ bdg:W3CN22945 {
         adm:gitPath         "b8/W3CN22945.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN22945 ;
-        adm:logEntry        bda:LG51A5F8A79211BBFC ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG51A5F8A79211BBFC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN25719  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   654 .
+    bdr:I3CN25719  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  654 .
     
-    bdr:I3CN25720  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1009 .
+    bdr:I3CN25720  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1009 .
     
-    bdr:I3CN25721  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1275 .
+    bdr:I3CN25721  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1275 .
     
-    bdr:I3CN25722  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   276 .
+    bdr:I3CN25722  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsang sngags rnying ma'i skyes chen 'ga'i rnam thar phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  276 .
     
-    bdr:W3CN22945  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN25719 , bdr:I3CN25720 , bdr:I3CN25721 , bdr:I3CN25722 ;
-        :numberOfVolumes    4 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN22945  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I3CN25719 , bdr:I3CN25720 , bdr:I3CN25721 , bdr:I3CN25722 ;
+        bdo:numberOfVolumes  4 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }

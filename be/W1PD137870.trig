@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD137870 {
@@ -18,21 +13,28 @@ bdg:W1PD137870 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG1A475A56968B0979
         a                   adm:Synced ;
-        adm:logDate         "2017-06-23T00:56:52.677Z"^^xsd:dateTime ;
+        adm:logDate         "2017-06-23T00:56:52.677000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LG98EA80A9F26F2FD3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-24T22:41:27.963Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-24T22:41:27.963000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGAC0A670D0623CC56
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2016-11-24T22:41:28.761Z"^^xsd:dateTime ;
+        adm:logDate         "2016-11-24T22:41:28.761000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
@@ -43,19 +45,20 @@ bdg:W1PD137870 {
         adm:gitPath         "be/W1PD137870.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD137870 ;
-        adm:logEntry        bda:LGAC0A670D0623CC56 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGAC0A670D0623CC56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2PD18963  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of si khron bod rig pa'i zhib 'jug (11)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   505 .
+    bdr:I2PD18963  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of si khron bod rig pa'i zhib 'jug (11)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  505 .
     
-    bdr:W1PD137870  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2PD18963 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+    bdr:W1PD137870  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I2PD18963 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
 }

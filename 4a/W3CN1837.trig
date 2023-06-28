@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN1837 {
@@ -18,21 +13,28 @@ bdg:W3CN1837 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG662792C80863EFFD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-06-16T15:04:52.693Z"^^xsd:dateTime ;
+        adm:logDate         "2015-06-16T15:04:52.693000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG7AFB6A95EC633D2D
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2015-06-16T15:04:52.726Z"^^xsd:dateTime ;
+        adm:logDate         "2015-06-16T15:04:52.726000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM500E59B3  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-08-21T11:34:58.225Z"^^xsd:dateTime ;
+        adm:logDate         "2020-08-21T11:34:58.225000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -43,20 +45,20 @@ bdg:W3CN1837 {
         adm:gitPath         "4a/W3CN1837.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN1837 ;
-        adm:logEntry        bda:LG7AFB6A95EC633D2D ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG7AFB6A95EC633D2D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN1839  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of bde mchog lha lnga'i sgrub thabs sogs chos tshan lnga/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   136 .
+    bdr:I3CN1839  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bde mchog lha lnga'i sgrub thabs sogs chos tshan lnga/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  136 .
     
-    bdr:W3CN1837  a         :ImageInstance ;
-        :inCollection       bdr:PR1LOKESH01 ;
-        :instanceHasVolume  bdr:I3CN1839 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 06/2015"@en .
+    bdr:W3CN1837  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 , bdr:PR1LOKESH01 ;
+        bdo:instanceHasVolume  bdr:I3CN1839 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 06/2015"@en .
 }

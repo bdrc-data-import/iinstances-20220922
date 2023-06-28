@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD95739 {
@@ -30,63 +25,70 @@ bdg:W1PD95739 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG5CCAE52769F205A1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-05-10T15:45:27.542Z"^^xsd:dateTime ;
+        adm:logDate         "2019-05-10T15:45:27.542000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG62B3A676A37E36F6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-05-10T15:45:27.462Z"^^xsd:dateTime ;
+        adm:logDate         "2019-05-10T15:45:27.462000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD3966FE68EEA61F0
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2019-05-10T15:45:27.71Z"^^xsd:dateTime ;
+        adm:logDate         "2019-05-10T15:45:27.710000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD6CCDD0F71CA5D57
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-05-10T15:45:27.624Z"^^xsd:dateTime ;
+        adm:logDate         "2019-05-10T15:45:27.624000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM1F78918F  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T11:25:21.774Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T11:25:21.774000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM203799CE  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T21:06:23.999Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T21:06:23.999000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM57D20D2A  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T21:06:24.317Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T21:06:24.317000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM65CF5D10  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T21:06:24.702Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T21:06:24.702000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM84BDCF4A  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T11:25:21.5Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T11:25:21.500000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMB004A959  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-07-31T11:25:21.067Z"^^xsd:dateTime ;
+        adm:logDate         "2020-07-31T11:25:21.067000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -97,31 +99,32 @@ bdg:W1PD95739 {
         adm:gitPath         "04/W1PD95739.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD95739 ;
-        adm:logEntry        bda:LGD3966FE68EEA61F0 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LGD3966FE68EEA61F0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG207371  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1772 .
+    bdr:I2KG207371  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1772 .
     
-    bdr:I2KG207372  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1740 .
+    bdr:I2KG207372  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1740 .
     
-    bdr:I2KG207373  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1664 .
+    bdr:I2KG207373  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of skad lnga shan sbyar gyi many+dzu'i skad gsal ba'i me long"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1664 .
     
-    bdr:W1PD95739  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG207371 , bdr:I2KG207372 , bdr:I2KG207373 ;
-        :numberOfVolumes    3 ;
-        :scanInfo           "5/2019"@en .
+    bdr:W1PD95739  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I2KG207371 , bdr:I2KG207372 , bdr:I2KG207373 ;
+        bdo:numberOfVolumes  3 ;
+        bdo:scanInfo        "5/2019"@en .
 }

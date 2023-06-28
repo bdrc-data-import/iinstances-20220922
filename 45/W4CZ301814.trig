@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301814 {
@@ -18,27 +13,34 @@ bdg:W4CZ301814 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG175F6E5723372140
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-12-14T14:12:10.788Z"^^xsd:dateTime ;
+        adm:logDate         "2017-12-14T14:12:10.788000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG77050DADF4319BB4
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-11-09T16:17:41.395Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:17:41.395000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG7D792ED7925789FA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-11-09T16:17:41.275Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:17:41.275000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIME692FA93  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-11-17T23:31:36.651Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-17T23:31:36.651000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -49,19 +51,20 @@ bdg:W4CZ301814 {
         adm:gitPath         "45/W4CZ301814.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301814 ;
-        adm:logEntry        bda:LG175F6E5723372140 , bda:LG77050DADF4319BB4 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG175F6E5723372140 , bda:LG77050DADF4319BB4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ364195  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of 'ba' ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   738 .
+    bdr:I4CZ364195  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 'ba' ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  738 .
     
-    bdr:W4CZ301814  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ364195 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Images from the DVDs of \"bod kyi shing spar lag rtsal gyi byung rim mdor bsdus bzhugs so (A brief introduction to the history of Tibetan printing technology)\", Paltsek, 2013."@en .
+    bdr:W4CZ301814  a       bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 ;
+        bdo:instanceHasVolume  bdr:I4CZ364195 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Images from the DVDs of \"bod kyi shing spar lag rtsal gyi byung rim mdor bsdus bzhugs so (A brief introduction to the history of Tibetan printing technology)\", Paltsek, 2013."@en .
 }

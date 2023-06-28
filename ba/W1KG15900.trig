@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG15900 {
@@ -24,33 +19,40 @@ bdg:W1KG15900 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG2D3148E9CC930519
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-03-29T15:00:30.669Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T15:00:30.669000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG74966D3DA715D528
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-03-29T15:00:31.076Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T15:00:31.076000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGF1C2CF74E46BB42E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-03-29T15:00:30.88Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T15:00:30.880000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM3C84F545  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-03T06:20:00.225Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-03T06:20:00.225000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMB6DA01DF  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-03T06:19:59.96Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-03T06:19:59.960000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -61,26 +63,26 @@ bdg:W1KG15900 {
         adm:gitPath         "ba/W1KG15900.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG15900 ;
-        adm:logEntry        bda:LG74966D3DA715D528 ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG74966D3DA715D528 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG86851  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ blo bzang don grub/ (bkras lhun par ma/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   656 .
+    bdr:I1KG86851  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ blo bzang don grub/ (bkras lhun par ma/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  656 .
     
-    bdr:I1KG86852  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ blo bzang don grub/ (bkras lhun par ma/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
+    bdr:I1KG86852  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ blo bzang don grub/ (bkras lhun par ma/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
     
-    bdr:W1KG15900  a        :ImageInstance ;
-        :inCollection       bdr:PR1NLM00 ;
-        :instanceHasVolume  bdr:I1KG86851 , bdr:I1KG86852 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "3/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+    bdr:W1KG15900  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 , bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I1KG86851 , bdr:I1KG86852 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "3/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
 }

@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG15904 {
@@ -30,45 +25,52 @@ bdg:W1KG15904 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:LG0BDS2GQOK1LC90JY
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-06-28T16:17:15.009541"^^xsd:dateTime ;
+        adm:logMessage      "add to CTC18"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG30849798052BC40C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-03-29T16:57:45.964Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T16:57:45.964000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG5920ADFC838849EC
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2018-03-29T16:57:46.123Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T16:57:46.123000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG7255C0A7269AF9A6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-03-29T16:57:45.884Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T16:57:45.884000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG77364B7DCCD16B44
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-03-29T16:57:46.043Z"^^xsd:dateTime ;
+        adm:logDate         "2018-03-29T16:57:46.043000+00:00"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM2F282F8D  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-03T06:47:12.901Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-03T06:47:12.901000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM3AB48B66  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-03T06:47:13.174Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-03T06:47:13.174000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8BB347A5  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-09-03T06:47:13.506Z"^^xsd:dateTime ;
+        adm:logDate         "2020-09-03T06:47:13.506000+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -79,32 +81,32 @@ bdg:W1KG15904 {
         adm:gitPath         "33/W1KG15904.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG15904 ;
-        adm:logEntry        bda:LG5920ADFC838849EC ;
+        adm:logEntry        bda:LG0BDS2GQOK1LC90JY , bda:LG5920ADFC838849EC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG86888  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   708 .
+    bdr:I1KG86888  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  708 .
     
-    bdr:I1KG86889  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   712 .
+    bdr:I1KG86889  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  712 .
     
-    bdr:I1KG86890  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   652 .
+    bdr:I1KG86890  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ dbyangs can grub pa'i rdo rje/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  652 .
     
-    bdr:W1KG15904  a        :ImageInstance ;
-        :inCollection       bdr:PR1NLM00 ;
-        :instanceHasVolume  bdr:I1KG86888 , bdr:I1KG86889 , bdr:I1KG86890 ;
-        :numberOfVolumes    3 ;
-        :scanInfo           "3/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
+    bdr:W1KG15904  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC18 , bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I1KG86888 , bdr:I1KG86889 , bdr:I1KG86890 ;
+        bdo:numberOfVolumes  3 ;
+        bdo:scanInfo        "3/2018"@en , "Scanned at the National Library of Mongolia by Asian Classics Input Project."@en .
 }
