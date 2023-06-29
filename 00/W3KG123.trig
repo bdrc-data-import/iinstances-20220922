@@ -15,6 +15,12 @@ bdg:W3KG123 {
         adm:adminAbout      bdr:I3KG460 ;
         adm:logEntry        bda:LG0W3KG123_GOLCSGNWEH1G .
     
+    bda:LG0W3KG123_1LR344KMGJ7G
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-29T03:44:40.196859Z"^^xsd:dateTime ;
+        adm:logMessage      "add collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W3KG123_EQ3AP3SKZLLA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-04-04T15:35:37.129099Z"^^xsd:dateTime ;
@@ -32,7 +38,7 @@ bdg:W3KG123 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG123 ;
         adm:graphId         bdg:W3KG123 ;
-        adm:logEntry        bda:LG0W3KG123_EQ3AP3SKZLLA ;
+        adm:logEntry        bda:LG0W3KG123_1LR344KMGJ7G , bda:LG0W3KG123_EQ3AP3SKZLLA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -48,5 +54,7 @@ bdg:W3KG123 {
         bdo:volumePagesTotal  458 .
     
     bdr:W3KG123  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I3KG459 , bdr:I3KG460 .
+        bdo:inCollection    bdr:PR1NCLK ;
+        bdo:instanceHasVolume  bdr:I3KG459 , bdr:I3KG460 ;
+        bdo:qualityGrade    4 .
 }
