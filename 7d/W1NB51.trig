@@ -13,6 +13,12 @@ bdg:W1NB51 {
         adm:logMessage      "retest"@en ;
         adm:logWho          bdu:U678062094 .
     
+    bda:LG0W1NB51_UXN36ZI8CVBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-06-29T08:04:01.548078Z"^^xsd:dateTime ;
+        adm:logMessage      "reretest"@en ;
+        adm:logWho          bdu:U678062094 .
+    
     bda:LG0W1NB51_YJZJALTMQT1I
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-29T08:03:25.039486Z"^^xsd:dateTime ;
@@ -23,11 +29,10 @@ bdg:W1NB51 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NB51 ;
         adm:graphId         bdg:W1NB51 ;
-        adm:logEntry        bda:LG0W1NB51_EHVSYAASREXZ , bda:LG0W1NB51_YJZJALTMQT1I ;
+        adm:logEntry        bda:LG0W1NB51_EHVSYAASREXZ , bda:LG0W1NB51_UXN36ZI8CVBA , bda:LG0W1NB51_YJZJALTMQT1I ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:W1NB51  a           bdo:ImageInstance ;
-        bdo:qualityGrade    5 .
+    bdr:W1NB51  a           bdo:ImageInstance .
 }
