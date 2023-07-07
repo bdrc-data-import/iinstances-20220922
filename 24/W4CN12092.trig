@@ -13,15 +13,28 @@ bdg:W4CN12092 {
         adm:logMessage      "scanrequest"@en ;
         adm:logWho          bdu:U0ES1788534075 .
     
+    bda:LG0W4CN12092_XA2U5R7A0BB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-07T21:30:07.049018Z"^^xsd:dateTime ;
+        adm:logMessage      "save & scanrequest"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:W4CN12092  a        adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CN12092 ;
         adm:graphId         bdg:W4CN12092 ;
-        adm:logEntry        bda:LG0W4CN12092_VWIAIF0WWTV7 ;
+        adm:logEntry        bda:LG0W4CN12092_VWIAIF0WWTV7 , bda:LG0W4CN12092_XA2U5R7A0BB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:NTW4CN1209207QK79R6
+        a                   bdo:Note ;
+        bdo:noteText        "haha"@en .
+    
     bdr:W4CN12092  a        bdo:ImageInstance ;
-        bdo:isComplete      false .
+        bdo:isComplete      false ;
+        bdo:note            bdr:NTW4CN1209207QK79R6 ;
+        bdo:qualityGrade    3 ;
+        bdo:scanInfo        "testing"@en .
 }
