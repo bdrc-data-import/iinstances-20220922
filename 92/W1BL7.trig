@@ -1,0 +1,37 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1BL7 {
+    bda:I1BL452  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1BL452 ;
+        adm:logEntry        bdr:LG0W1BL7_I9VHTHB5XDVI .
+    
+    bda:W1BL7  a            adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1BL7 ;
+        adm:graphId         bdg:W1BL7 ;
+        adm:logEntry        bdr:LG0W1BL7_I9VHTHB5XDVI ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1BL452  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W1BL7_I9VHTHB5XDVI
+        a                   adm:InitialDataCreation , adm:ScanRequested ;
+        adm:logDate         "2023-07-08T18:04:51.911877Z"^^xsd:dateTime ;
+        adm:logMessage      "create through scan request tool"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1132599279 .
+    
+    bdr:W1BL7  a            bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1BL452 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Made available by TMPV Vienna"@en .
+}
