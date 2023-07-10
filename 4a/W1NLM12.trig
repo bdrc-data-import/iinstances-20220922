@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NLM12 {
     bda:I1NLM12_001  a      adm:AdminData ;
         adm:adminAbout      bdr:I1NLM12_001 ;
-        adm:logEntry        bda:LG791FE5D2250EDE2E , bda:LGIM48AAB853 , bda:LGIMD9F15FB0 ;
+        adm:logEntry        bda:LG0W1NLM12_BEQMWYRH394D , bda:LG791FE5D2250EDE2E , bda:LGIM48AAB853 , bda:LGIMD9F15FB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1NLM12_BEQMWYRH394D
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-07-10T23:34:44.117011Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG791FE5D2250EDE2E
         a                   adm:Synced ;
@@ -46,14 +48,14 @@ bdg:W1NLM12 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1NLM12_001  a      :ImageGroup ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   409 .
+    bdr:I1NLM12_001  a      bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  410 .
     
-    bdr:W1NLM12  a          :ImageInstance ;
-        :inCollection       bdr:PR1NLM00 ;
-        :instanceHasVolume  bdr:I1NLM12_001 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
+    bdr:W1NLM12  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:instanceHasVolume  bdr:I1NLM12_001 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
 }
