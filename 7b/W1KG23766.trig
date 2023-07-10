@@ -1,0 +1,31 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG23766 {
+    bda:LG0W1KG23766_G8RJGGGAL3FU
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-07-10T16:36:15.765805Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W1KG23766  a        adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG23766 ;
+        adm:graphId         bdg:W1KG23766 ;
+        adm:logEntry        bda:LG0W1KG23766_G8RJGGGAL3FU ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG574  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1KG23766  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG574 .
+}
