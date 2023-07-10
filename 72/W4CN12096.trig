@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CN12096 {
+    bda:LG0W4CN12096_RQYYLYJDI1AL
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-10T18:45:05.885285Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG0W4CN12096_UIXL01UA55MV
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-07-08T01:06:59.998527Z"^^xsd:dateTime ;
@@ -17,14 +23,14 @@ bdg:W4CN12096 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CN12096 ;
         adm:graphId         bdg:W4CN12096 ;
-        adm:logEntry        bda:LG0W4CN12096_UIXL01UA55MV ;
+        adm:logEntry        bda:LG0W4CN12096_RQYYLYJDI1AL , bda:LG0W4CN12096_UIXL01UA55MV ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:I4CN12098  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  1 .
+        bdo:volumePagesTbrcIntro  0 .
     
     bdr:W4CN12096  a        bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I4CN12098 ;
