@@ -9,9 +9,16 @@
 bdg:W1FPL1233 {
     bda:I1FPL1233  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL1233 ;
-        adm:logEntry        bda:LG832A5DC13035D09C , bda:LGD66947BFB41327A7 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 ;
+        adm:logEntry        bda:LG0W1FPL1233_BVENN4Y3PMSK , bda:LG832A5DC13035D09C , bda:LGD66947BFB41327A7 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1FPL1233_BVENN4Y3PMSK
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-07-10T20:32:02.633150Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG832A5DC13035D09C
         a                   adm:ImagesUpdated ;
@@ -53,7 +60,7 @@ bdg:W1FPL1233 {
     bdr:I1FPL1233  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 ;
-        bdo:volumePagesTotal  291 .
+        bdo:volumePagesTotal  287 .
     
     bdr:W1FPL1233  a        bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1FPL01 ;
