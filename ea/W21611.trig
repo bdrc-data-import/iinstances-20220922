@@ -9,9 +9,16 @@
 bdg:W21611 {
     bda:I5691  a            adm:AdminData ;
         adm:adminAbout      bdr:I5691 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LG0W21611_B2GTQV03PSVP , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W21611_B2GTQV03PSVP
+        a                   adm:Synced ;
+        adm:logDate         "2023-07-11T14:38:37.268536Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -51,7 +58,7 @@ bdg:W21611 {
     bdr:I5691  a            bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  426 .
+        bdo:volumePagesTotal  425 .
     
     bdr:W21611  a           bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1CTC16 ;
