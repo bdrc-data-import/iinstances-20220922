@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG26281 {
@@ -923,6 +918,12 @@ bdg:W1KG26281 {
         adm:logDate         "2017-07-14T12:41:59.004Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1KG26281_JJGJDTNWPPDU
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-12T14:49:26.717245Z"^^xsd:dateTime ;
+        adm:logMessage      "add collection"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG12FAAF6E12DB4174
         a                   adm:InitialDataCreation ;
@@ -2599,872 +2600,873 @@ bdg:W1KG26281 {
         adm:gitPath         "ca/W1KG26281.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG26281 ;
-        adm:logEntry        bda:LG46E71DCD2F95D1B3 ;
+        adm:logEntry        bda:LG0W1KG26281_JJGJDTNWPPDU , bda:LG46E71DCD2F95D1B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG70410  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   630 .
-    
-    bdr:I1KG70411  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   882 .
-    
-    bdr:I1KG70412  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   661 .
-    
-    bdr:I1KG70413  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   664 .
-    
-    bdr:I1KG70414  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   494 .
-    
-    bdr:I1KG70415  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   452 .
-    
-    bdr:I1KG70416  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   414 .
-    
-    bdr:I1KG70417  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   380 .
-    
-    bdr:I1KG70418  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   471 .
-    
-    bdr:I1KG70419  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   310 .
-    
-    bdr:I1KG70420  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   428 .
-    
-    bdr:I1KG70421  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   500 .
-    
-    bdr:I1KG70422  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   462 .
-    
-    bdr:I1KG70423  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   186 .
-    
-    bdr:I1KG70424  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   784 .
-    
-    bdr:I1KG70425  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   792 .
-    
-    bdr:I1KG70426  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   982 .
-    
-    bdr:I1KG70427  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   967 .
-    
-    bdr:I1KG70428  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1402 .
-    
-    bdr:I1KG70429  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1050 .
-    
-    bdr:I1KG70430  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   660 .
-    
-    bdr:I1KG70431  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   746 .
-    
-    bdr:I1KG70432  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   782 .
-    
-    bdr:I1KG70433  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   386 .
-    
-    bdr:I1KG70434  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   674 .
-    
-    bdr:I1KG70435  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   672 .
-    
-    bdr:I1KG70436  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   684 .
-    
-    bdr:I1KG70437  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   987 .
-    
-    bdr:I1KG70438  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   906 .
-    
-    bdr:I1KG70439  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   814 .
-    
-    bdr:I1KG70440  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1935 .
-    
-    bdr:I1KG70441  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   974 .
-    
-    bdr:I1KG70442  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   940 .
-    
-    bdr:I1KG70443  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1837 .
-    
-    bdr:I1KG70444  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1166 .
-    
-    bdr:I1KG70445  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1768 .
-    
-    bdr:I1KG70446  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   2311 .
-    
-    bdr:I1KG70447  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   950 .
-    
-    bdr:I1KG70448  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1958 .
-    
-    bdr:I1KG70449  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1318 .
-    
-    bdr:I1KG70450  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1768 .
-    
-    bdr:I1KG70451  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1468 .
-    
-    bdr:I1KG70452  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   2298 .
-    
-    bdr:I1KG70453  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1188 .
-    
-    bdr:I1KG70454  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   924 .
-    
-    bdr:I1KG70455  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1728 .
-    
-    bdr:I1KG70456  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1690 .
-    
-    bdr:I1KG70457  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   2024 .
-    
-    bdr:I1KG70458  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   2203 .
-    
-    bdr:I1KG70459  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1492 .
-    
-    bdr:I1KG70460  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1413 .
-    
-    bdr:I1KG70461  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   984 .
-    
-    bdr:I1KG70462  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1154 .
-    
-    bdr:I1KG70463  a        :ImageGroup ;
-        :biblioNote         "Volume 54 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   814 .
-    
-    bdr:I1KG70464  a        :ImageGroup ;
-        :biblioNote         "Volume 55 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   840 .
-    
-    bdr:I1KG70465  a        :ImageGroup ;
-        :biblioNote         "Volume 56 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   704 .
-    
-    bdr:I1KG70466  a        :ImageGroup ;
-        :biblioNote         "Volume 57 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1412 .
-    
-    bdr:I1KG70467  a        :ImageGroup ;
-        :biblioNote         "Volume 58 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   698 .
-    
-    bdr:I1KG70468  a        :ImageGroup ;
-        :biblioNote         "Volume 59 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   844 .
-    
-    bdr:I1KG70469  a        :ImageGroup ;
-        :biblioNote         "Volume 60 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1377 .
-    
-    bdr:I1KG70470  a        :ImageGroup ;
-        :biblioNote         "Volume 61 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1040 .
-    
-    bdr:I1KG70471  a        :ImageGroup ;
-        :biblioNote         "Volume 62 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1246 .
-    
-    bdr:I1KG70472  a        :ImageGroup ;
-        :biblioNote         "Volume 63 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1190 .
-    
-    bdr:I1KG70473  a        :ImageGroup ;
-        :biblioNote         "Volume 64 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1206 .
-    
-    bdr:I1KG70474  a        :ImageGroup ;
-        :biblioNote         "Volume 65 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1122 .
-    
-    bdr:I1KG70475  a        :ImageGroup ;
-        :biblioNote         "Volume 66 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1356 .
-    
-    bdr:I1KG70476  a        :ImageGroup ;
-        :biblioNote         "Volume 67 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   558 .
-    
-    bdr:I1KG70477  a        :ImageGroup ;
-        :biblioNote         "Volume 68 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   614 .
-    
-    bdr:I1KG70478  a        :ImageGroup ;
-        :biblioNote         "Volume 69 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   280 .
-    
-    bdr:I1KG70479  a        :ImageGroup ;
-        :biblioNote         "Volume 70 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
-    
-    bdr:I1KG70480  a        :ImageGroup ;
-        :biblioNote         "Volume 71 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   464 .
-    
-    bdr:I1KG70481  a        :ImageGroup ;
-        :biblioNote         "Volume 72 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   284 .
-    
-    bdr:I1KG70482  a        :ImageGroup ;
-        :biblioNote         "Volume 73 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   188 .
-    
-    bdr:I1KG70483  a        :ImageGroup ;
-        :biblioNote         "Volume 74 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   558 .
-    
-    bdr:I1KG70484  a        :ImageGroup ;
-        :biblioNote         "Volume 75 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   318 .
-    
-    bdr:I1KG70485  a        :ImageGroup ;
-        :biblioNote         "Volume 76 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   538 .
-    
-    bdr:I1KG70486  a        :ImageGroup ;
-        :biblioNote         "Volume 77 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   488 .
-    
-    bdr:I1KG70487  a        :ImageGroup ;
-        :biblioNote         "Volume 78 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   608 .
-    
-    bdr:I1KG70488  a        :ImageGroup ;
-        :biblioNote         "Volume 79 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1040 .
-    
-    bdr:I1KG70489  a        :ImageGroup ;
-        :biblioNote         "Volume 80 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   682 .
-    
-    bdr:I1KG70490  a        :ImageGroup ;
-        :biblioNote         "Volume 81 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   636 .
-    
-    bdr:I1KG70491  a        :ImageGroup ;
-        :biblioNote         "Volume 82 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   482 .
-    
-    bdr:I1KG70492  a        :ImageGroup ;
-        :biblioNote         "Volume 83 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   356 .
-    
-    bdr:I1KG70493  a        :ImageGroup ;
-        :biblioNote         "Volume 84 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   356 .
-    
-    bdr:I1KG70494  a        :ImageGroup ;
-        :biblioNote         "Volume 85 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   402 .
-    
-    bdr:I1KG70495  a        :ImageGroup ;
-        :biblioNote         "Volume 86 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1278 .
-    
-    bdr:I1KG70496  a        :ImageGroup ;
-        :biblioNote         "Volume 87 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   800 .
-    
-    bdr:I1KG70497  a        :ImageGroup ;
-        :biblioNote         "Volume 88 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   956 .
-    
-    bdr:I1KG70498  a        :ImageGroup ;
-        :biblioNote         "Volume 89 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   212 .
-    
-    bdr:I1KG70499  a        :ImageGroup ;
-        :biblioNote         "Volume 90 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   844 .
-    
-    bdr:I1KG70500  a        :ImageGroup ;
-        :biblioNote         "Volume 91 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   822 .
-    
-    bdr:I1KG70501  a        :ImageGroup ;
-        :biblioNote         "Volume 92 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   822 .
-    
-    bdr:I1KG70502  a        :ImageGroup ;
-        :biblioNote         "Volume 93 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   682 .
-    
-    bdr:I1KG70503  a        :ImageGroup ;
-        :biblioNote         "Volume 94 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   568 .
-    
-    bdr:I1KG70504  a        :ImageGroup ;
-        :biblioNote         "Volume 95 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   584 .
-    
-    bdr:I1KG70505  a        :ImageGroup ;
-        :biblioNote         "Volume 96 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   572 .
-    
-    bdr:I1KG70506  a        :ImageGroup ;
-        :biblioNote         "Volume 97 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   528 .
-    
-    bdr:I1KG70507  a        :ImageGroup ;
-        :biblioNote         "Volume 98 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1556 .
-    
-    bdr:I1KG70508  a        :ImageGroup ;
-        :biblioNote         "Volume 99 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   914 .
-    
-    bdr:I1KG70509  a        :ImageGroup ;
-        :biblioNote         "Volume 100 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1192 .
-    
-    bdr:I1KG70510  a        :ImageGroup ;
-        :biblioNote         "Volume 101 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       101 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1166 .
-    
-    bdr:I1KG70511  a        :ImageGroup ;
-        :biblioNote         "Volume 102 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       102 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   582 .
-    
-    bdr:I1KG70512  a        :ImageGroup ;
-        :biblioNote         "Volume 103 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       103 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   500 .
-    
-    bdr:I1KG70513  a        :ImageGroup ;
-        :biblioNote         "Volume 104 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       104 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   214 .
-    
-    bdr:I1KG70514  a        :ImageGroup ;
-        :biblioNote         "Volume 105 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       105 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1596 .
-    
-    bdr:I1KG70515  a        :ImageGroup ;
-        :biblioNote         "Volume 106 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       106 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   602 .
-    
-    bdr:I1KG70516  a        :ImageGroup ;
-        :biblioNote         "Volume 107 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       107 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   860 .
-    
-    bdr:I1KG70517  a        :ImageGroup ;
-        :biblioNote         "Volume 108 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       108 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   662 .
-    
-    bdr:I1KG70518  a        :ImageGroup ;
-        :biblioNote         "Volume 109 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       109 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   938 .
-    
-    bdr:I1KG70519  a        :ImageGroup ;
-        :biblioNote         "Volume 110 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       110 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   910 .
-    
-    bdr:I1KG70520  a        :ImageGroup ;
-        :biblioNote         "Volume 111 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       111 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   818 .
-    
-    bdr:I1KG70521  a        :ImageGroup ;
-        :biblioNote         "Volume 112 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       112 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   34 .
-    
-    bdr:I1KG70522  a        :ImageGroup ;
-        :biblioNote         "Volume 113 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       113 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   268 .
-    
-    bdr:I1KG70523  a        :ImageGroup ;
-        :biblioNote         "Volume 114 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       114 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   530 .
-    
-    bdr:I1KG70524  a        :ImageGroup ;
-        :biblioNote         "Volume 115 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       115 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   728 .
-    
-    bdr:I1KG70525  a        :ImageGroup ;
-        :biblioNote         "Volume 116 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       116 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   658 .
-    
-    bdr:I1KG70526  a        :ImageGroup ;
-        :biblioNote         "Volume 117 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       117 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1256 .
-    
-    bdr:I1KG70527  a        :ImageGroup ;
-        :biblioNote         "Volume 118 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       118 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   312 .
-    
-    bdr:I1KG70528  a        :ImageGroup ;
-        :biblioNote         "Volume 119 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       119 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1052 .
-    
-    bdr:I1KG70529  a        :ImageGroup ;
-        :biblioNote         "Volume 120 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       120 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   964 .
-    
-    bdr:I1KG70530  a        :ImageGroup ;
-        :biblioNote         "Volume 121 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       121 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   510 .
-    
-    bdr:I1KG70531  a        :ImageGroup ;
-        :biblioNote         "Volume 122 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       122 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   370 .
-    
-    bdr:I1KG70532  a        :ImageGroup ;
-        :biblioNote         "Volume 123 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       123 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   845 .
-    
-    bdr:I1KG70533  a        :ImageGroup ;
-        :biblioNote         "Volume 124 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       124 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   368 .
-    
-    bdr:I1KG70534  a        :ImageGroup ;
-        :biblioNote         "Volume 125 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       125 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   485 .
-    
-    bdr:I1KG70535  a        :ImageGroup ;
-        :biblioNote         "Volume 126 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       126 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   610 .
-    
-    bdr:I1KG70536  a        :ImageGroup ;
-        :biblioNote         "Volume 127 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       127 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   370 .
-    
-    bdr:I1KG70537  a        :ImageGroup ;
-        :biblioNote         "Volume 128 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       128 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   544 .
-    
-    bdr:I1KG70538  a        :ImageGroup ;
-        :biblioNote         "Volume 129 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       129 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   862 .
-    
-    bdr:I1KG70539  a        :ImageGroup ;
-        :biblioNote         "Volume 130 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       130 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   494 .
-    
-    bdr:I1KG70540  a        :ImageGroup ;
-        :biblioNote         "Volume 131 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       131 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   384 .
-    
-    bdr:I1KG70541  a        :ImageGroup ;
-        :biblioNote         "Volume 132 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       132 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   644 .
-    
-    bdr:I1KG70542  a        :ImageGroup ;
-        :biblioNote         "Volume 133 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       133 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   684 .
-    
-    bdr:I1KG70543  a        :ImageGroup ;
-        :biblioNote         "Volume 134 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       134 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   486 .
-    
-    bdr:I1KG70544  a        :ImageGroup ;
-        :biblioNote         "Volume 135 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       135 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   464 .
-    
-    bdr:I1KG70545  a        :ImageGroup ;
-        :biblioNote         "Volume 136 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       136 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   522 .
-    
-    bdr:I1KG70546  a        :ImageGroup ;
-        :biblioNote         "Volume 137 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       137 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1792 .
-    
-    bdr:I1KG70547  a        :ImageGroup ;
-        :biblioNote         "Volume 138 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       138 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   720 .
-    
-    bdr:I1KG70548  a        :ImageGroup ;
-        :biblioNote         "Volume 139 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       139 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   386 .
-    
-    bdr:I1KG70549  a        :ImageGroup ;
-        :biblioNote         "Volume 140 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       140 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   420 .
-    
-    bdr:I1KG70550  a        :ImageGroup ;
-        :biblioNote         "Volume 141 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       141 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   360 .
-    
-    bdr:I1KG70551  a        :ImageGroup ;
-        :biblioNote         "Volume 142 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       142 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   344 .
-    
-    bdr:I1KG70552  a        :ImageGroup ;
-        :biblioNote         "Volume 143 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
-        :volumeNumber       143 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   176 .
-    
-    bdr:W1KG26281  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG70410 , bdr:I1KG70411 , bdr:I1KG70412 , bdr:I1KG70413 , bdr:I1KG70414 , bdr:I1KG70415 , bdr:I1KG70416 , bdr:I1KG70417 , bdr:I1KG70418 , bdr:I1KG70419 , bdr:I1KG70420 , bdr:I1KG70421 , bdr:I1KG70422 , bdr:I1KG70423 , bdr:I1KG70424 , bdr:I1KG70425 , bdr:I1KG70426 , bdr:I1KG70427 , bdr:I1KG70428 , bdr:I1KG70429 , bdr:I1KG70430 , bdr:I1KG70431 , bdr:I1KG70432 , bdr:I1KG70433 , bdr:I1KG70434 , bdr:I1KG70435 , bdr:I1KG70436 , bdr:I1KG70437 , bdr:I1KG70438 , bdr:I1KG70439 , bdr:I1KG70440 , bdr:I1KG70441 , bdr:I1KG70442 , bdr:I1KG70443 , bdr:I1KG70444 , bdr:I1KG70445 , bdr:I1KG70446 , bdr:I1KG70447 , bdr:I1KG70448 , bdr:I1KG70449 , bdr:I1KG70450 , bdr:I1KG70451 , bdr:I1KG70452 , bdr:I1KG70453 , bdr:I1KG70454 , bdr:I1KG70455 , bdr:I1KG70456 , bdr:I1KG70457 , bdr:I1KG70458 , bdr:I1KG70459 , bdr:I1KG70460 , bdr:I1KG70461 , bdr:I1KG70462 , bdr:I1KG70463 , bdr:I1KG70464 , bdr:I1KG70465 , bdr:I1KG70466 , bdr:I1KG70467 , bdr:I1KG70468 , bdr:I1KG70469 , bdr:I1KG70470 , bdr:I1KG70471 , bdr:I1KG70472 , bdr:I1KG70473 , bdr:I1KG70474 , bdr:I1KG70475 , bdr:I1KG70476 , bdr:I1KG70477 , bdr:I1KG70478 , bdr:I1KG70479 , bdr:I1KG70480 , bdr:I1KG70481 , bdr:I1KG70482 , bdr:I1KG70483 , bdr:I1KG70484 , bdr:I1KG70485 , bdr:I1KG70486 , bdr:I1KG70487 , bdr:I1KG70488 , bdr:I1KG70489 , bdr:I1KG70490 , bdr:I1KG70491 , bdr:I1KG70492 , bdr:I1KG70493 , bdr:I1KG70494 , bdr:I1KG70495 , bdr:I1KG70496 , bdr:I1KG70497 , bdr:I1KG70498 , bdr:I1KG70499 , bdr:I1KG70500 , bdr:I1KG70501 , bdr:I1KG70502 , bdr:I1KG70503 , bdr:I1KG70504 , bdr:I1KG70505 , bdr:I1KG70506 , bdr:I1KG70507 , bdr:I1KG70508 , bdr:I1KG70509 , bdr:I1KG70510 , bdr:I1KG70511 , bdr:I1KG70512 , bdr:I1KG70513 , bdr:I1KG70514 , bdr:I1KG70515 , bdr:I1KG70516 , bdr:I1KG70517 , bdr:I1KG70518 , bdr:I1KG70519 , bdr:I1KG70520 , bdr:I1KG70521 , bdr:I1KG70522 , bdr:I1KG70523 , bdr:I1KG70524 , bdr:I1KG70525 , bdr:I1KG70526 , bdr:I1KG70527 , bdr:I1KG70528 , bdr:I1KG70529 , bdr:I1KG70530 , bdr:I1KG70531 , bdr:I1KG70532 , bdr:I1KG70533 , bdr:I1KG70534 , bdr:I1KG70535 , bdr:I1KG70536 , bdr:I1KG70537 , bdr:I1KG70538 , bdr:I1KG70539 , bdr:I1KG70540 , bdr:I1KG70541 , bdr:I1KG70542 , bdr:I1KG70543 , bdr:I1KG70544 , bdr:I1KG70545 , bdr:I1KG70546 , bdr:I1KG70547 , bdr:I1KG70548 , bdr:I1KG70549 , bdr:I1KG70550 , bdr:I1KG70551 , bdr:I1KG70552 ;
-        :missingVolumes     "90,92-89,91" ;
-        :numberOfVolumes    143 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2017"@en .
+    bdr:I1KG70410  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  630 .
+    
+    bdr:I1KG70411  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  882 .
+    
+    bdr:I1KG70412  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  661 .
+    
+    bdr:I1KG70413  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  664 .
+    
+    bdr:I1KG70414  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  494 .
+    
+    bdr:I1KG70415  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  452 .
+    
+    bdr:I1KG70416  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  414 .
+    
+    bdr:I1KG70417  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  380 .
+    
+    bdr:I1KG70418  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  471 .
+    
+    bdr:I1KG70419  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  310 .
+    
+    bdr:I1KG70420  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  428 .
+    
+    bdr:I1KG70421  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  500 .
+    
+    bdr:I1KG70422  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  462 .
+    
+    bdr:I1KG70423  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  186 .
+    
+    bdr:I1KG70424  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  784 .
+    
+    bdr:I1KG70425  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  792 .
+    
+    bdr:I1KG70426  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  982 .
+    
+    bdr:I1KG70427  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  967 .
+    
+    bdr:I1KG70428  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1402 .
+    
+    bdr:I1KG70429  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1050 .
+    
+    bdr:I1KG70430  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  660 .
+    
+    bdr:I1KG70431  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  746 .
+    
+    bdr:I1KG70432  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  782 .
+    
+    bdr:I1KG70433  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  386 .
+    
+    bdr:I1KG70434  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  674 .
+    
+    bdr:I1KG70435  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  672 .
+    
+    bdr:I1KG70436  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  684 .
+    
+    bdr:I1KG70437  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  987 .
+    
+    bdr:I1KG70438  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  906 .
+    
+    bdr:I1KG70439  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  814 .
+    
+    bdr:I1KG70440  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1935 .
+    
+    bdr:I1KG70441  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  974 .
+    
+    bdr:I1KG70442  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  940 .
+    
+    bdr:I1KG70443  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1837 .
+    
+    bdr:I1KG70444  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1166 .
+    
+    bdr:I1KG70445  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1768 .
+    
+    bdr:I1KG70446  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  2311 .
+    
+    bdr:I1KG70447  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  950 .
+    
+    bdr:I1KG70448  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1958 .
+    
+    bdr:I1KG70449  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1318 .
+    
+    bdr:I1KG70450  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1768 .
+    
+    bdr:I1KG70451  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1468 .
+    
+    bdr:I1KG70452  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  2298 .
+    
+    bdr:I1KG70453  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1188 .
+    
+    bdr:I1KG70454  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  924 .
+    
+    bdr:I1KG70455  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1728 .
+    
+    bdr:I1KG70456  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1690 .
+    
+    bdr:I1KG70457  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  2024 .
+    
+    bdr:I1KG70458  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  2203 .
+    
+    bdr:I1KG70459  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1492 .
+    
+    bdr:I1KG70460  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1413 .
+    
+    bdr:I1KG70461  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  984 .
+    
+    bdr:I1KG70462  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1154 .
+    
+    bdr:I1KG70463  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  814 .
+    
+    bdr:I1KG70464  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  840 .
+    
+    bdr:I1KG70465  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  704 .
+    
+    bdr:I1KG70466  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1412 .
+    
+    bdr:I1KG70467  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  698 .
+    
+    bdr:I1KG70468  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  844 .
+    
+    bdr:I1KG70469  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1377 .
+    
+    bdr:I1KG70470  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1040 .
+    
+    bdr:I1KG70471  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1246 .
+    
+    bdr:I1KG70472  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1190 .
+    
+    bdr:I1KG70473  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1206 .
+    
+    bdr:I1KG70474  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1122 .
+    
+    bdr:I1KG70475  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1356 .
+    
+    bdr:I1KG70476  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  558 .
+    
+    bdr:I1KG70477  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  614 .
+    
+    bdr:I1KG70478  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  280 .
+    
+    bdr:I1KG70479  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
+    
+    bdr:I1KG70480  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  464 .
+    
+    bdr:I1KG70481  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  284 .
+    
+    bdr:I1KG70482  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  188 .
+    
+    bdr:I1KG70483  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  558 .
+    
+    bdr:I1KG70484  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  318 .
+    
+    bdr:I1KG70485  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  538 .
+    
+    bdr:I1KG70486  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  488 .
+    
+    bdr:I1KG70487  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  608 .
+    
+    bdr:I1KG70488  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1040 .
+    
+    bdr:I1KG70489  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  682 .
+    
+    bdr:I1KG70490  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  636 .
+    
+    bdr:I1KG70491  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  482 .
+    
+    bdr:I1KG70492  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
+    
+    bdr:I1KG70493  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
+    
+    bdr:I1KG70494  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  402 .
+    
+    bdr:I1KG70495  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1278 .
+    
+    bdr:I1KG70496  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  800 .
+    
+    bdr:I1KG70497  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  956 .
+    
+    bdr:I1KG70498  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  212 .
+    
+    bdr:I1KG70499  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  844 .
+    
+    bdr:I1KG70500  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  822 .
+    
+    bdr:I1KG70501  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  822 .
+    
+    bdr:I1KG70502  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  682 .
+    
+    bdr:I1KG70503  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  568 .
+    
+    bdr:I1KG70504  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  584 .
+    
+    bdr:I1KG70505  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  572 .
+    
+    bdr:I1KG70506  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  528 .
+    
+    bdr:I1KG70507  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1556 .
+    
+    bdr:I1KG70508  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  914 .
+    
+    bdr:I1KG70509  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1192 .
+    
+    bdr:I1KG70510  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 101 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1166 .
+    
+    bdr:I1KG70511  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 102 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  582 .
+    
+    bdr:I1KG70512  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 103 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  500 .
+    
+    bdr:I1KG70513  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 104 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  214 .
+    
+    bdr:I1KG70514  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 105 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1596 .
+    
+    bdr:I1KG70515  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 106 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  602 .
+    
+    bdr:I1KG70516  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 107 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  860 .
+    
+    bdr:I1KG70517  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 108 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  662 .
+    
+    bdr:I1KG70518  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 109 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    109 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  938 .
+    
+    bdr:I1KG70519  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 110 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    110 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  910 .
+    
+    bdr:I1KG70520  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 111 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    111 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  818 .
+    
+    bdr:I1KG70521  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 112 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    112 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  34 .
+    
+    bdr:I1KG70522  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 113 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    113 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  268 .
+    
+    bdr:I1KG70523  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 114 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    114 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  530 .
+    
+    bdr:I1KG70524  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 115 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    115 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  728 .
+    
+    bdr:I1KG70525  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 116 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    116 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  658 .
+    
+    bdr:I1KG70526  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 117 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    117 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1256 .
+    
+    bdr:I1KG70527  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 118 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    118 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  312 .
+    
+    bdr:I1KG70528  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 119 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    119 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1052 .
+    
+    bdr:I1KG70529  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 120 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    120 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  964 .
+    
+    bdr:I1KG70530  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 121 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    121 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  510 .
+    
+    bdr:I1KG70531  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 122 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    122 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  370 .
+    
+    bdr:I1KG70532  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 123 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    123 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  845 .
+    
+    bdr:I1KG70533  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 124 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    124 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  368 .
+    
+    bdr:I1KG70534  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 125 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    125 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  485 .
+    
+    bdr:I1KG70535  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 126 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    126 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  610 .
+    
+    bdr:I1KG70536  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 127 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    127 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  370 .
+    
+    bdr:I1KG70537  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 128 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    128 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  544 .
+    
+    bdr:I1KG70538  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 129 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    129 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  862 .
+    
+    bdr:I1KG70539  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 130 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    130 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  494 .
+    
+    bdr:I1KG70540  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 131 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    131 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  384 .
+    
+    bdr:I1KG70541  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 132 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    132 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  644 .
+    
+    bdr:I1KG70542  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 133 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    133 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  684 .
+    
+    bdr:I1KG70543  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 134 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    134 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  486 .
+    
+    bdr:I1KG70544  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 135 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    135 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  464 .
+    
+    bdr:I1KG70545  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 136 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    136 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  522 .
+    
+    bdr:I1KG70546  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 137 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    137 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1792 .
+    
+    bdr:I1KG70547  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 138 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    138 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  720 .
+    
+    bdr:I1KG70548  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 139 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    139 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  386 .
+    
+    bdr:I1KG70549  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 140 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    140 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  420 .
+    
+    bdr:I1KG70550  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 141 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    141 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  360 .
+    
+    bdr:I1KG70551  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 142 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    142 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  344 .
+    
+    bdr:I1KG70552  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 143 of mkhas dbang rag+hu wIra dang lokesha tsan+dra rnam gnyis kyis nyar tshags byas pa'i dpe tshogs/"@en ;
+        bdo:volumeNumber    143 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  176 .
+    
+    bdr:W1KG26281  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1LOKESH01 ;
+        bdo:instanceHasVolume  bdr:I1KG70410 , bdr:I1KG70411 , bdr:I1KG70412 , bdr:I1KG70413 , bdr:I1KG70414 , bdr:I1KG70415 , bdr:I1KG70416 , bdr:I1KG70417 , bdr:I1KG70418 , bdr:I1KG70419 , bdr:I1KG70420 , bdr:I1KG70421 , bdr:I1KG70422 , bdr:I1KG70423 , bdr:I1KG70424 , bdr:I1KG70425 , bdr:I1KG70426 , bdr:I1KG70427 , bdr:I1KG70428 , bdr:I1KG70429 , bdr:I1KG70430 , bdr:I1KG70431 , bdr:I1KG70432 , bdr:I1KG70433 , bdr:I1KG70434 , bdr:I1KG70435 , bdr:I1KG70436 , bdr:I1KG70437 , bdr:I1KG70438 , bdr:I1KG70439 , bdr:I1KG70440 , bdr:I1KG70441 , bdr:I1KG70442 , bdr:I1KG70443 , bdr:I1KG70444 , bdr:I1KG70445 , bdr:I1KG70446 , bdr:I1KG70447 , bdr:I1KG70448 , bdr:I1KG70449 , bdr:I1KG70450 , bdr:I1KG70451 , bdr:I1KG70452 , bdr:I1KG70453 , bdr:I1KG70454 , bdr:I1KG70455 , bdr:I1KG70456 , bdr:I1KG70457 , bdr:I1KG70458 , bdr:I1KG70459 , bdr:I1KG70460 , bdr:I1KG70461 , bdr:I1KG70462 , bdr:I1KG70463 , bdr:I1KG70464 , bdr:I1KG70465 , bdr:I1KG70466 , bdr:I1KG70467 , bdr:I1KG70468 , bdr:I1KG70469 , bdr:I1KG70470 , bdr:I1KG70471 , bdr:I1KG70472 , bdr:I1KG70473 , bdr:I1KG70474 , bdr:I1KG70475 , bdr:I1KG70476 , bdr:I1KG70477 , bdr:I1KG70478 , bdr:I1KG70479 , bdr:I1KG70480 , bdr:I1KG70481 , bdr:I1KG70482 , bdr:I1KG70483 , bdr:I1KG70484 , bdr:I1KG70485 , bdr:I1KG70486 , bdr:I1KG70487 , bdr:I1KG70488 , bdr:I1KG70489 , bdr:I1KG70490 , bdr:I1KG70491 , bdr:I1KG70492 , bdr:I1KG70493 , bdr:I1KG70494 , bdr:I1KG70495 , bdr:I1KG70496 , bdr:I1KG70497 , bdr:I1KG70498 , bdr:I1KG70499 , bdr:I1KG70500 , bdr:I1KG70501 , bdr:I1KG70502 , bdr:I1KG70503 , bdr:I1KG70504 , bdr:I1KG70505 , bdr:I1KG70506 , bdr:I1KG70507 , bdr:I1KG70508 , bdr:I1KG70509 , bdr:I1KG70510 , bdr:I1KG70511 , bdr:I1KG70512 , bdr:I1KG70513 , bdr:I1KG70514 , bdr:I1KG70515 , bdr:I1KG70516 , bdr:I1KG70517 , bdr:I1KG70518 , bdr:I1KG70519 , bdr:I1KG70520 , bdr:I1KG70521 , bdr:I1KG70522 , bdr:I1KG70523 , bdr:I1KG70524 , bdr:I1KG70525 , bdr:I1KG70526 , bdr:I1KG70527 , bdr:I1KG70528 , bdr:I1KG70529 , bdr:I1KG70530 , bdr:I1KG70531 , bdr:I1KG70532 , bdr:I1KG70533 , bdr:I1KG70534 , bdr:I1KG70535 , bdr:I1KG70536 , bdr:I1KG70537 , bdr:I1KG70538 , bdr:I1KG70539 , bdr:I1KG70540 , bdr:I1KG70541 , bdr:I1KG70542 , bdr:I1KG70543 , bdr:I1KG70544 , bdr:I1KG70545 , bdr:I1KG70546 , bdr:I1KG70547 , bdr:I1KG70548 , bdr:I1KG70549 , bdr:I1KG70550 , bdr:I1KG70551 , bdr:I1KG70552 ;
+        bdo:missingVolumes  "90,92-89,91" ;
+        bdo:numberOfVolumes  143 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 7/2017"@en .
 }
