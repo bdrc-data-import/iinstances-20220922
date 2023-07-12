@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS66866 {
@@ -19,28 +14,35 @@ bdg:W8LS66866 {
     
     bda:I8LS68385  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68385 ;
-        adm:logEntry        bda:LGA545C4A339A226AC ;
+        adm:logEntry        bda:LG0W8LS66866_QGYGYPGLSJGG , bda:LGA545C4A339A226AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS68386  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68386 ;
-        adm:logEntry        bda:LG143A3E598CC2E763 ;
+        adm:logEntry        bda:LG0W8LS66866_QGYGYPGLSJGG , bda:LG143A3E598CC2E763 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS68387  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68387 ;
-        adm:logEntry        bda:LGD74F6C4A7A06C402 ;
+        adm:logEntry        bda:LG0W8LS66866_QGYGYPGLSJGG , bda:LGD74F6C4A7A06C402 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS68388  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68388 ;
-        adm:logEntry        bda:LGC07892F0FD7CD9B1 ;
+        adm:logEntry        bda:LG0W8LS66866_QGYGYPGLSJGG , bda:LGC07892F0FD7CD9B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS68389  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68389 ;
-        adm:logEntry        bda:LG4490D258668B0BEF ;
+        adm:logEntry        bda:LG0W8LS66866_QGYGYPGLSJGG , bda:LG4490D258668B0BEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W8LS66866_QGYGYPGLSJGG
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-07-12T20:42:42.994109Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG143A3E598CC2E763
         a                   adm:InitialDataCreation ;
@@ -96,44 +98,44 @@ bdg:W8LS66866 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS68384  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68384  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I8LS68385  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68385  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  724 .
     
-    bdr:I8LS68386  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68386  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  548 .
     
-    bdr:I8LS68387  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68387  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  695 .
     
-    bdr:I8LS68388  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68388  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  604 .
     
-    bdr:I8LS68389  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I8LS68389  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/ mkhas dbang 'jigs med theg mchog"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  558 .
     
-    bdr:W8LS66866  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS68384 , bdr:I8LS68385 , bdr:I8LS68386 , bdr:I8LS68387 , bdr:I8LS68388 , bdr:I8LS68389 ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "images of volume one and two need to acquire"@en , "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W8LS66866  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS68384 , bdr:I8LS68385 , bdr:I8LS68386 , bdr:I8LS68387 , bdr:I8LS68388 , bdr:I8LS68389 ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "images of volume one and two need to acquire"@en , "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
