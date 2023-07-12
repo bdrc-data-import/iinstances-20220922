@@ -7,11 +7,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG167 {
+    bda:I3KG563  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG563 ;
+        adm:logEntry        bda:LG0W3KG167_SPEIFSOWTNUP .
+    
     bda:LG0W3KG167_QECN4PNAGDCL
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-26T20:18:54.744498Z"^^xsd:dateTime ;
         adm:logMessage      "generated scan request"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3KG167_SPEIFSOWTNUP
+        a                   adm:Synced ;
+        adm:logDate         "2023-07-12T02:28:30.202423Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3KG167  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -24,7 +35,8 @@ bdg:W3KG167 {
     
     bdr:I3KG563  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  308 .
     
     bdr:W3KG167  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG563 .
