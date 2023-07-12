@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CN12094 {
+    bda:LG0W4CN12094_RC5QO8VRGAZW
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-12T20:03:09.170593Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG0W4CN12094_ZQKLPGIKZMPL
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-07-07T22:43:02.127631Z"^^xsd:dateTime ;
@@ -17,7 +23,7 @@ bdg:W4CN12094 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CN12094 ;
         adm:graphId         bdg:W4CN12094 ;
-        adm:logEntry        bda:LG0W4CN12094_ZQKLPGIKZMPL ;
+        adm:logEntry        bda:LG0W4CN12094_RC5QO8VRGAZW , bda:LG0W4CN12094_ZQKLPGIKZMPL ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -29,5 +35,5 @@ bdg:W4CN12094 {
     bdr:W4CN12094  a        bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I4CN12094 ;
         bdo:isComplete      false ;
-        bdo:qualityGrade    2 .
+        bdo:qualityGrade    3 .
 }
