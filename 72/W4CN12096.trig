@@ -19,11 +19,17 @@ bdg:W4CN12096 {
         adm:logMessage      "scanrequest"@bo ;
         adm:logWho          bdu:U0ES1788534075 .
     
+    bda:LG0W4CN12096_VENKIMVGSVKD
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-12T20:06:13.416476Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:W4CN12096  a        adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CN12096 ;
         adm:graphId         bdg:W4CN12096 ;
-        adm:logEntry        bda:LG0W4CN12096_RQYYLYJDI1AL , bda:LG0W4CN12096_UIXL01UA55MV ;
+        adm:logEntry        bda:LG0W4CN12096_RQYYLYJDI1AL , bda:LG0W4CN12096_UIXL01UA55MV , bda:LG0W4CN12096_VENKIMVGSVKD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -35,6 +41,6 @@ bdg:W4CN12096 {
     bdr:W4CN12096  a        bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I4CN12098 ;
         bdo:isComplete      false ;
-        bdo:qualityGrade    1 ;
+        bdo:qualityGrade    3 ;
         bdo:scanInfo        "tshe gang gi las 'phro/"@en .
 }
