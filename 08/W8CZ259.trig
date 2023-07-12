@@ -7,6 +7,33 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ259 {
+    bda:I8CZ824  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ824 ;
+        adm:logEntry        bda:LG0W8CZ259_7GDTUY4BML0T .
+    
+    bda:I8CZ825  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ825 ;
+        adm:logEntry        bda:LG0W8CZ259_7GDTUY4BML0T .
+    
+    bda:I8CZ826  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ826 ;
+        adm:logEntry        bda:LG0W8CZ259_7GDTUY4BML0T .
+    
+    bda:I8CZ827  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ827 ;
+        adm:logEntry        bda:LG0W8CZ259_7GDTUY4BML0T .
+    
+    bda:I8CZ828  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ828 ;
+        adm:logEntry        bda:LG0W8CZ259_7GDTUY4BML0T .
+    
+    bda:LG0W8CZ259_7GDTUY4BML0T
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-07-12T02:36:18.851650Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W8CZ259_WW7QIVLQ5IJD
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-28T20:18:44.367723Z"^^xsd:dateTime ;
@@ -24,23 +51,28 @@ bdg:W8CZ259 {
     
     bdr:I8CZ824  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  492 .
     
     bdr:I8CZ825  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  424 .
     
     bdr:I8CZ826  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  530 .
     
     bdr:I8CZ827  a          bdo:ImageGroup ;
         bdo:volumeNumber    4 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  548 .
     
     bdr:I8CZ828  a          bdo:ImageGroup ;
         bdo:volumeNumber    5 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  476 .
     
     bdr:W8CZ259  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ824 , bdr:I8CZ825 , bdr:I8CZ826 , bdr:I8CZ827 , bdr:I8CZ828 ;
