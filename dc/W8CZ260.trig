@@ -7,6 +7,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ260 {
+    bda:I8CZ829  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ829 ;
+        adm:logEntry        bda:LG0W8CZ260_O5V3G462CLF9 .
+    
+    bda:I8CZ830  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ830 ;
+        adm:logEntry        bda:LG0W8CZ260_O5V3G462CLF9 .
+    
+    bda:LG0W8CZ260_O5V3G462CLF9
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-07-12T02:37:32.150234Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W8CZ260_WNEHNXTVVTTM
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-06-29T14:36:36.697940Z"^^xsd:dateTime ;
@@ -24,11 +39,13 @@ bdg:W8CZ260 {
     
     bdr:I8CZ829  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  820 .
     
     bdr:I8CZ830  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  750 .
     
     bdr:W8CZ260  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ829 , bdr:I8CZ830 .
