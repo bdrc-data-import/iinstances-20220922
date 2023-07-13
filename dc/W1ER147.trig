@@ -1,0 +1,36 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER147 {
+    bda:LG0W1ER147_W24KD7E2GXKX
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-07-13T12:33:01.950894Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER147  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1ER147 ;
+        adm:graphId         bdg:W1ER147 ;
+        adm:logEntry        bda:LG0W1ER147_W24KD7E2GXKX ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1ER838  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I1ER839  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1ER147  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1LOKESH01 ;
+        bdo:instanceHasVolume  bdr:I1ER838 , bdr:I1ER839 .
+}
