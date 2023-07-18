@@ -9,9 +9,16 @@
 bdg:W8LS18002 {
     bda:I8LS18011  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18011 ;
-        adm:logEntry        bda:LG8814F9F5CF2C7121 , bda:LGD414D2C835AEF78B , bda:LGF57BC970ADA8FFBE ;
+        adm:logEntry        bda:LG0W8LS18002_WMVRJEMCB8CR , bda:LG8814F9F5CF2C7121 , bda:LGD414D2C835AEF78B , bda:LGF57BC970ADA8FFBE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS18002_WMVRJEMCB8CR
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-07-18T01:56:34.500123Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2B0F5852D0252813
         a                   adm:ScanRequestCreation ;
@@ -54,7 +61,7 @@ bdg:W8LS18002 {
         bdo:biblioNote      "Volume 1 of pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@en ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  547 .
+        bdo:volumePagesTotal  546 .
     
     bdr:W8LS18002  a        bdo:ImageInstance ;
         bdo:digitalLendingPossible  false ;
