@@ -1,22 +1,26 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD159437 {
     bda:I2PD19033  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19033 ;
-        adm:logEntry        bda:LG835D0FC694C59631 , bda:LGFEF37957C9C3EA7D ;
+        adm:logEntry        bda:LG0W1PD159437_Z75NBPBT5OKL , bda:LG835D0FC694C59631 , bda:LGFEF37957C9C3EA7D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1PD159437_Z75NBPBT5OKL
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-07-19T02:20:16.200074Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG835D0FC694C59631
         a                   adm:InitialDataCreation ;
@@ -48,20 +52,19 @@ bdg:W1PD159437 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2PD19033  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of stod kyi ri shi ri dkar dang smad kyi ri shi ri dmar/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   366 .
+    bdr:I2PD19033  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of stod kyi ri shi ri dkar dang smad kyi ri shi ri dmar/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  356 .
     
     bdr:ID822A8E479A43DD68
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147759274" .
     
-    bdr:W1PD159437  a       :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID822A8E479A43DD68 ;
-        :instanceHasVolume  bdr:I2PD19033 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+    bdr:W1PD159437  a       bdo:ImageInstance ;
+        bf:identifiedBy     bdr:ID822A8E479A43DD68 ;
+        bdo:instanceHasVolume  bdr:I2PD19033 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
 }
