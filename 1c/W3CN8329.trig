@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN8329 {
@@ -177,6 +172,12 @@ bdg:W3CN8329 {
         adm:logDate         "2016-12-15T17:31:34.588Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN8329_FEVLM4VT38GB
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:48:42.597740Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG1A6839DAFA3727ED
         a                   adm:InitialDataCreation ;
@@ -377,204 +378,204 @@ bdg:W3CN8329 {
         adm:gitPath         "1c/W3CN8329.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8329 ;
-        adm:logEntry        bda:LG1EC4D9DFFF960A6C ;
+        adm:logEntry        bda:LG0W3CN8329_FEVLM4VT38GB , bda:LG1EC4D9DFFF960A6C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN8331  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8331  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8332  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8332  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8333  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8333  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8334  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8334  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8335  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8335  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8336  a         :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8336  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8337  a         :ImageGroup ;
-        :biblioNote         "Volume 7 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8337  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8338  a         :ImageGroup ;
-        :biblioNote         "Volume 8 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8338  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8339  a         :ImageGroup ;
-        :biblioNote         "Volume 9 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8339  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8340  a         :ImageGroup ;
-        :biblioNote         "Volume 10 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8340  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8341  a         :ImageGroup ;
-        :biblioNote         "Volume 11 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8341  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8342  a         :ImageGroup ;
-        :biblioNote         "Volume 12 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8342  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8343  a         :ImageGroup ;
-        :biblioNote         "Volume 13 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8343  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8344  a         :ImageGroup ;
-        :biblioNote         "Volume 14 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8344  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8345  a         :ImageGroup ;
-        :biblioNote         "Volume 15 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8345  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8346  a         :ImageGroup ;
-        :biblioNote         "Volume 16 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8346  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8347  a         :ImageGroup ;
-        :biblioNote         "Volume 17 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8347  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8348  a         :ImageGroup ;
-        :biblioNote         "Volume 18 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8348  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8349  a         :ImageGroup ;
-        :biblioNote         "Volume 19 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8349  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8350  a         :ImageGroup ;
-        :biblioNote         "Volume 20 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8350  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8351  a         :ImageGroup ;
-        :biblioNote         "Volume 21 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8351  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8352  a         :ImageGroup ;
-        :biblioNote         "Volume 22 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8352  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8353  a         :ImageGroup ;
-        :biblioNote         "Volume 23 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8353  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8354  a         :ImageGroup ;
-        :biblioNote         "Volume 24 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8354  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8355  a         :ImageGroup ;
-        :biblioNote         "Volume 25 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8355  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8356  a         :ImageGroup ;
-        :biblioNote         "Volume 26 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8356  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8357  a         :ImageGroup ;
-        :biblioNote         "Volume 27 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8357  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8358  a         :ImageGroup ;
-        :biblioNote         "Volume 28 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8358  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8359  a         :ImageGroup ;
-        :biblioNote         "Volume 29 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8359  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8360  a         :ImageGroup ;
-        :biblioNote         "Volume 30 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8360  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8361  a         :ImageGroup ;
-        :biblioNote         "Volume 31 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8361  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8362  a         :ImageGroup ;
-        :biblioNote         "Volume 32 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8362  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of gsung ngag rin po che lam 'bras bu dang bcas pa'i cho sskor gyi gsung rab bris ma phyogs bsdus/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN8329  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN8331 , bdr:I3CN8332 , bdr:I3CN8333 , bdr:I3CN8334 , bdr:I3CN8335 , bdr:I3CN8336 , bdr:I3CN8337 , bdr:I3CN8338 , bdr:I3CN8339 , bdr:I3CN8340 , bdr:I3CN8341 , bdr:I3CN8342 , bdr:I3CN8343 , bdr:I3CN8344 , bdr:I3CN8345 , bdr:I3CN8346 , bdr:I3CN8347 , bdr:I3CN8348 , bdr:I3CN8349 , bdr:I3CN8350 , bdr:I3CN8351 , bdr:I3CN8352 , bdr:I3CN8353 , bdr:I3CN8354 , bdr:I3CN8355 , bdr:I3CN8356 , bdr:I3CN8357 , bdr:I3CN8358 , bdr:I3CN8359 , bdr:I3CN8360 , bdr:I3CN8361 , bdr:I3CN8362 ;
-        :numberOfVolumes    32 .
+    bdr:W3CN8329  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN8331 , bdr:I3CN8332 , bdr:I3CN8333 , bdr:I3CN8334 , bdr:I3CN8335 , bdr:I3CN8336 , bdr:I3CN8337 , bdr:I3CN8338 , bdr:I3CN8339 , bdr:I3CN8340 , bdr:I3CN8341 , bdr:I3CN8342 , bdr:I3CN8343 , bdr:I3CN8344 , bdr:I3CN8345 , bdr:I3CN8346 , bdr:I3CN8347 , bdr:I3CN8348 , bdr:I3CN8349 , bdr:I3CN8350 , bdr:I3CN8351 , bdr:I3CN8352 , bdr:I3CN8353 , bdr:I3CN8354 , bdr:I3CN8355 , bdr:I3CN8356 , bdr:I3CN8357 , bdr:I3CN8358 , bdr:I3CN8359 , bdr:I3CN8360 , bdr:I3CN8361 , bdr:I3CN8362 ;
+        bdo:numberOfVolumes  32 .
 }
