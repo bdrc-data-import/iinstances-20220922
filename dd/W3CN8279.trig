@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN8279 {
@@ -128,6 +123,12 @@ bdg:W3CN8279 {
         adm:logDate         "2018-01-10T14:51:27.859Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN8279_0SVRT7XVVJ1H
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:44:16.054167Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG19596DEF43B3BC46
         a                   adm:InitialDataCreation ;
@@ -262,138 +263,138 @@ bdg:W3CN8279 {
         adm:gitPath         "dd/W3CN8279.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8279 ;
-        adm:logEntry        bda:LG3760F952556A2E38 , bda:LG4CD4451FD8F187D7 ;
+        adm:logEntry        bda:LG0W3CN8279_0SVRT7XVVJ1H , bda:LG3760F952556A2E38 , bda:LG4CD4451FD8F187D7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN12617  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12617  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12618  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12618  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12619  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12619  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12620  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12620  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12621  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12621  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12622  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12622  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12623  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12623  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12624  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12624  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12625  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12625  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12626  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12626  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12627  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12627  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12628  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12628  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12629  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12629  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12630  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12630  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12631  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12631  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12632  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12632  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12633  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12633  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12634  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12634  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12635  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12635  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12636  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12636  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN12637  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN12637  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of 'jam mgon a mes zhabs sogs sa skya'i mkhas pa 'ga' zhig gi gsung phyogs bsdus/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN8279  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN12617 , bdr:I3CN12618 , bdr:I3CN12619 , bdr:I3CN12620 , bdr:I3CN12621 , bdr:I3CN12622 , bdr:I3CN12623 , bdr:I3CN12624 , bdr:I3CN12625 , bdr:I3CN12626 , bdr:I3CN12627 , bdr:I3CN12628 , bdr:I3CN12629 , bdr:I3CN12630 , bdr:I3CN12631 , bdr:I3CN12632 , bdr:I3CN12633 , bdr:I3CN12634 , bdr:I3CN12635 , bdr:I3CN12636 , bdr:I3CN12637 ;
-        :numberOfVolumes    21 .
+    bdr:W3CN8279  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN12617 , bdr:I3CN12618 , bdr:I3CN12619 , bdr:I3CN12620 , bdr:I3CN12621 , bdr:I3CN12622 , bdr:I3CN12623 , bdr:I3CN12624 , bdr:I3CN12625 , bdr:I3CN12626 , bdr:I3CN12627 , bdr:I3CN12628 , bdr:I3CN12629 , bdr:I3CN12630 , bdr:I3CN12631 , bdr:I3CN12632 , bdr:I3CN12633 , bdr:I3CN12634 , bdr:I3CN12635 , bdr:I3CN12636 , bdr:I3CN12637 ;
+        bdo:numberOfVolumes  21 .
 }
