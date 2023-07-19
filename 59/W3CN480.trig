@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN480 {
@@ -242,6 +237,12 @@ bdg:W3CN480 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG0W3CN480_GZ7RNBYH3BT2
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:53:14.559817Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG10360C95991BFFF2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-12-21T14:36:58.902Z"^^xsd:dateTime ;
@@ -465,253 +466,253 @@ bdg:W3CN480 {
         adm:gitPath         "59/W3CN480.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN480 ;
-        adm:logEntry        bda:LG3EE9993AB642638F ;
+        adm:logEntry        bda:LG0W3CN480_GZ7RNBYH3BT2 , bda:LG3EE9993AB642638F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN18562  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18562  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18563  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18563  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18564  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18564  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18565  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18565  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18566  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18566  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18567  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18567  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18568  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18568  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18569  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18569  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18570  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18570  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18571  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18571  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18572  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18572  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18573  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18573  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18574  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18574  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18575  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18575  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18576  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18576  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18577  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18577  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18578  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18578  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18579  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18579  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18580  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18580  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18581  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18581  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18582  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18582  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18583  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18583  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18584  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18584  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18585  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18585  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18586  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18586  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18587  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18587  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18588  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18588  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18589  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18589  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18590  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18590  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18591  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18591  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18592  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18592  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18593  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18593  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18594  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18594  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18595  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18595  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18596  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18596  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18597  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18597  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18598  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18598  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18599  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18599  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18600  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18600  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN18601  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN18601  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of bka' brgyud pa'i dpe rnying phyogs bsdus/ (1)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN480  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN18562 , bdr:I3CN18563 , bdr:I3CN18564 , bdr:I3CN18565 , bdr:I3CN18566 , bdr:I3CN18567 , bdr:I3CN18568 , bdr:I3CN18569 , bdr:I3CN18570 , bdr:I3CN18571 , bdr:I3CN18572 , bdr:I3CN18573 , bdr:I3CN18574 , bdr:I3CN18575 , bdr:I3CN18576 , bdr:I3CN18577 , bdr:I3CN18578 , bdr:I3CN18579 , bdr:I3CN18580 , bdr:I3CN18581 , bdr:I3CN18582 , bdr:I3CN18583 , bdr:I3CN18584 , bdr:I3CN18585 , bdr:I3CN18586 , bdr:I3CN18587 , bdr:I3CN18588 , bdr:I3CN18589 , bdr:I3CN18590 , bdr:I3CN18591 , bdr:I3CN18592 , bdr:I3CN18593 , bdr:I3CN18594 , bdr:I3CN18595 , bdr:I3CN18596 , bdr:I3CN18597 , bdr:I3CN18598 , bdr:I3CN18599 , bdr:I3CN18600 , bdr:I3CN18601 ;
-        :numberOfVolumes    40 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN480  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN18562 , bdr:I3CN18563 , bdr:I3CN18564 , bdr:I3CN18565 , bdr:I3CN18566 , bdr:I3CN18567 , bdr:I3CN18568 , bdr:I3CN18569 , bdr:I3CN18570 , bdr:I3CN18571 , bdr:I3CN18572 , bdr:I3CN18573 , bdr:I3CN18574 , bdr:I3CN18575 , bdr:I3CN18576 , bdr:I3CN18577 , bdr:I3CN18578 , bdr:I3CN18579 , bdr:I3CN18580 , bdr:I3CN18581 , bdr:I3CN18582 , bdr:I3CN18583 , bdr:I3CN18584 , bdr:I3CN18585 , bdr:I3CN18586 , bdr:I3CN18587 , bdr:I3CN18588 , bdr:I3CN18589 , bdr:I3CN18590 , bdr:I3CN18591 , bdr:I3CN18592 , bdr:I3CN18593 , bdr:I3CN18594 , bdr:I3CN18595 , bdr:I3CN18596 , bdr:I3CN18597 , bdr:I3CN18598 , bdr:I3CN18599 , bdr:I3CN18600 , bdr:I3CN18601 ;
+        bdo:numberOfVolumes  40 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
