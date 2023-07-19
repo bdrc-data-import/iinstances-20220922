@@ -1,0 +1,76 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN3428 {
+    bda:LG0W3CN3428_N7MA38GOQJBM
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-07-19T17:21:26.786699Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
+    bda:W3CN3428  a         adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3CN3428 ;
+        adm:graphId         bdg:W3CN3428 ;
+        adm:logEntry        bda:LG0W3CN3428_N7MA38GOQJBM ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CN12099  a        bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12100  a        bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12101  a        bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12102  a        bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12103  a        bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12104  a        bdo:ImageGroup ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12105  a        bdo:ImageGroup ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12106  a        bdo:ImageGroup ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12107  a        bdo:ImageGroup ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12108  a        bdo:ImageGroup ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12109  a        bdo:ImageGroup ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I4CN12110  a        bdo:ImageGroup ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3CN3428  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I4CN12099 , bdr:I4CN12100 , bdr:I4CN12101 , bdr:I4CN12102 , bdr:I4CN12103 , bdr:I4CN12104 , bdr:I4CN12105 , bdr:I4CN12106 , bdr:I4CN12107 , bdr:I4CN12108 , bdr:I4CN12109 , bdr:I4CN12110 ;
+        bdo:qualityGrade    3 .
+}
