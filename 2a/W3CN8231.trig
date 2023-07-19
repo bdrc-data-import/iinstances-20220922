@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN8231 {
@@ -238,6 +233,12 @@ bdg:W3CN8231 {
         adm:logDate         "2016-12-15T17:13:37.479Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN8231_6MHMNJEYEXBU
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:46:31.695644Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG1147AA0B9E785DB1
         a                   adm:InitialDataCreation ;
@@ -498,270 +499,270 @@ bdg:W3CN8231 {
         adm:gitPath         "2a/W3CN8231.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8231 ;
-        adm:logEntry        bda:LG43E2FCC733A7AD34 ;
+        adm:logEntry        bda:LG0W3CN8231_6MHMNJEYEXBU , bda:LG43E2FCC733A7AD34 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN8233  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8233  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8234  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8234  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8235  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8235  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8236  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8236  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8237  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8237  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8238  a         :ImageGroup ;
-        :biblioNote         "Volume 6 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8238  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8239  a         :ImageGroup ;
-        :biblioNote         "Volume 7 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8239  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8240  a         :ImageGroup ;
-        :biblioNote         "Volume 8 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8240  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8241  a         :ImageGroup ;
-        :biblioNote         "Volume 9 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8241  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8242  a         :ImageGroup ;
-        :biblioNote         "Volume 10 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8242  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8243  a         :ImageGroup ;
-        :biblioNote         "Volume 11 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8243  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8244  a         :ImageGroup ;
-        :biblioNote         "Volume 12 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8244  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8245  a         :ImageGroup ;
-        :biblioNote         "Volume 13 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8245  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8246  a         :ImageGroup ;
-        :biblioNote         "Volume 14 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8246  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8247  a         :ImageGroup ;
-        :biblioNote         "Volume 15 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8247  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8248  a         :ImageGroup ;
-        :biblioNote         "Volume 16 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8248  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8249  a         :ImageGroup ;
-        :biblioNote         "Volume 17 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8249  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8250  a         :ImageGroup ;
-        :biblioNote         "Volume 18 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8250  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8251  a         :ImageGroup ;
-        :biblioNote         "Volume 19 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8251  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8252  a         :ImageGroup ;
-        :biblioNote         "Volume 20 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8252  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8253  a         :ImageGroup ;
-        :biblioNote         "Volume 21 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8253  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8254  a         :ImageGroup ;
-        :biblioNote         "Volume 22 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8254  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8255  a         :ImageGroup ;
-        :biblioNote         "Volume 23 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8255  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8256  a         :ImageGroup ;
-        :biblioNote         "Volume 24 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8256  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8257  a         :ImageGroup ;
-        :biblioNote         "Volume 25 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8257  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8258  a         :ImageGroup ;
-        :biblioNote         "Volume 26 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8258  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8259  a         :ImageGroup ;
-        :biblioNote         "Volume 27 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8259  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8260  a         :ImageGroup ;
-        :biblioNote         "Volume 28 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8260  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8261  a         :ImageGroup ;
-        :biblioNote         "Volume 29 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8261  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8262  a         :ImageGroup ;
-        :biblioNote         "Volume 30 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8262  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8263  a         :ImageGroup ;
-        :biblioNote         "Volume 31 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8263  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8264  a         :ImageGroup ;
-        :biblioNote         "Volume 32 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8264  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8265  a         :ImageGroup ;
-        :biblioNote         "Volume 33 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8265  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8266  a         :ImageGroup ;
-        :biblioNote         "Volume 34 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8266  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8267  a         :ImageGroup ;
-        :biblioNote         "Volume 35 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8267  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8268  a         :ImageGroup ;
-        :biblioNote         "Volume 36 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8268  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8269  a         :ImageGroup ;
-        :biblioNote         "Volume 37 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8269  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8270  a         :ImageGroup ;
-        :biblioNote         "Volume 38 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8270  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8271  a         :ImageGroup ;
-        :biblioNote         "Volume 39 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8271  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8272  a         :ImageGroup ;
-        :biblioNote         "Volume 40 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8272  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8273  a         :ImageGroup ;
-        :biblioNote         "Volume 41 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8273  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8274  a         :ImageGroup ;
-        :biblioNote         "Volume 42 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8274  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN8275  a         :ImageGroup ;
-        :biblioNote         "Volume 43 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN8275  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of gnas nges med nas bsdus pa'i dpe rnying phyogs sdebs/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN8231  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN8233 , bdr:I3CN8234 , bdr:I3CN8235 , bdr:I3CN8236 , bdr:I3CN8237 , bdr:I3CN8238 , bdr:I3CN8239 , bdr:I3CN8240 , bdr:I3CN8241 , bdr:I3CN8242 , bdr:I3CN8243 , bdr:I3CN8244 , bdr:I3CN8245 , bdr:I3CN8246 , bdr:I3CN8247 , bdr:I3CN8248 , bdr:I3CN8249 , bdr:I3CN8250 , bdr:I3CN8251 , bdr:I3CN8252 , bdr:I3CN8253 , bdr:I3CN8254 , bdr:I3CN8255 , bdr:I3CN8256 , bdr:I3CN8257 , bdr:I3CN8258 , bdr:I3CN8259 , bdr:I3CN8260 , bdr:I3CN8261 , bdr:I3CN8262 , bdr:I3CN8263 , bdr:I3CN8264 , bdr:I3CN8265 , bdr:I3CN8266 , bdr:I3CN8267 , bdr:I3CN8268 , bdr:I3CN8269 , bdr:I3CN8270 , bdr:I3CN8271 , bdr:I3CN8272 , bdr:I3CN8273 , bdr:I3CN8274 , bdr:I3CN8275 ;
-        :numberOfVolumes    43 .
+    bdr:W3CN8231  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN8233 , bdr:I3CN8234 , bdr:I3CN8235 , bdr:I3CN8236 , bdr:I3CN8237 , bdr:I3CN8238 , bdr:I3CN8239 , bdr:I3CN8240 , bdr:I3CN8241 , bdr:I3CN8242 , bdr:I3CN8243 , bdr:I3CN8244 , bdr:I3CN8245 , bdr:I3CN8246 , bdr:I3CN8247 , bdr:I3CN8248 , bdr:I3CN8249 , bdr:I3CN8250 , bdr:I3CN8251 , bdr:I3CN8252 , bdr:I3CN8253 , bdr:I3CN8254 , bdr:I3CN8255 , bdr:I3CN8256 , bdr:I3CN8257 , bdr:I3CN8258 , bdr:I3CN8259 , bdr:I3CN8260 , bdr:I3CN8261 , bdr:I3CN8262 , bdr:I3CN8263 , bdr:I3CN8264 , bdr:I3CN8265 , bdr:I3CN8266 , bdr:I3CN8267 , bdr:I3CN8268 , bdr:I3CN8269 , bdr:I3CN8270 , bdr:I3CN8271 , bdr:I3CN8272 , bdr:I3CN8273 , bdr:I3CN8274 , bdr:I3CN8275 ;
+        bdo:numberOfVolumes  43 .
 }
