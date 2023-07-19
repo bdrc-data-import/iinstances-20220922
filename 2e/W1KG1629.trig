@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG1629 {
     bda:I1KG1631  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1631 ;
-        adm:logEntry        bda:LG5639F1DE0B941B36 , bda:LGD37109443C115838 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W1KG1629_5Z6PMSFPQ2LH , bda:LG5639F1DE0B941B36 , bda:LGD37109443C115838 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG1629_5Z6PMSFPQ2LH
+        a                   adm:Synced ;
+        adm:logDate         "2023-07-19T19:38:42.935495Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG5639F1DE0B941B36
         a                   adm:InitialDataCreation ;
@@ -66,15 +68,15 @@ bdg:W1KG1629 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG1631  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of dge ldan mkhas grub dag gi rdzogs skor phyogs bsgrigs"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   308 .
+    bdr:I1KG1631  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dge ldan mkhas grub dag gi rdzogs skor phyogs bsgrigs"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  308 .
     
-    bdr:W1KG1629  a         :ImageInstance ;
-        :inCollection       bdr:PR3JW7543 ;
-        :instanceHasVolume  bdr:I1KG1631 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2009"@en .
+    bdr:W1KG1629  a         bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR3JW7543 ;
+        bdo:instanceHasVolume  bdr:I1KG1631 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at Tibetan Buddhist Resource Center, 150 West 17th St, New York City, NY 10011, US. Comments: 2009"@en .
 }
