@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN3120 {
@@ -239,6 +234,12 @@ bdg:W3CN3120 {
         adm:logDate         "2016-11-10T18:13:27.899Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN3120_XVN2XYGOKPYP
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:38:46.902460Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG11177B5E524BF8C9
         a                   adm:InitialDataCreation ;
@@ -487,265 +488,265 @@ bdg:W3CN3120 {
         adm:gitPath         "f6/W3CN3120.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN3120 ;
-        adm:logEntry        bda:LG8EB5D313A6E26055 ;
+        adm:logEntry        bda:LG0W3CN3120_XVN2XYGOKPYP , bda:LG8EB5D313A6E26055 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN3918  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3918  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3919  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3919  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3920  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3920  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3921  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3921  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3922  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3922  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3923  a         :ImageGroup ;
-        :biblioNote         "Volume 6 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3923  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3924  a         :ImageGroup ;
-        :biblioNote         "Volume 7 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3924  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3925  a         :ImageGroup ;
-        :biblioNote         "Volume 8 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3925  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3926  a         :ImageGroup ;
-        :biblioNote         "Volume 9 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3926  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3927  a         :ImageGroup ;
-        :biblioNote         "Volume 10 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3927  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3928  a         :ImageGroup ;
-        :biblioNote         "Volume 11 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3928  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3929  a         :ImageGroup ;
-        :biblioNote         "Volume 12 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3929  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3930  a         :ImageGroup ;
-        :biblioNote         "Volume 13 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3930  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3931  a         :ImageGroup ;
-        :biblioNote         "Volume 14 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3931  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3932  a         :ImageGroup ;
-        :biblioNote         "Volume 15 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3932  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3933  a         :ImageGroup ;
-        :biblioNote         "Volume 16 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3933  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3934  a         :ImageGroup ;
-        :biblioNote         "Volume 17 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3934  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3935  a         :ImageGroup ;
-        :biblioNote         "Volume 18 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3935  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3936  a         :ImageGroup ;
-        :biblioNote         "Volume 19 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3936  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3937  a         :ImageGroup ;
-        :biblioNote         "Volume 20 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3937  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3938  a         :ImageGroup ;
-        :biblioNote         "Volume 21 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3938  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3939  a         :ImageGroup ;
-        :biblioNote         "Volume 22 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3939  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3940  a         :ImageGroup ;
-        :biblioNote         "Volume 23 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3940  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3941  a         :ImageGroup ;
-        :biblioNote         "Volume 24 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3941  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3942  a         :ImageGroup ;
-        :biblioNote         "Volume 25 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3942  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3943  a         :ImageGroup ;
-        :biblioNote         "Volume 26 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3943  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3944  a         :ImageGroup ;
-        :biblioNote         "Volume 27 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3944  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3945  a         :ImageGroup ;
-        :biblioNote         "Volume 28 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3945  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3946  a         :ImageGroup ;
-        :biblioNote         "Volume 29 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3946  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3947  a         :ImageGroup ;
-        :biblioNote         "Volume 30 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3947  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3948  a         :ImageGroup ;
-        :biblioNote         "Volume 31 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3948  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3949  a         :ImageGroup ;
-        :biblioNote         "Volume 32 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3949  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3950  a         :ImageGroup ;
-        :biblioNote         "Volume 33 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3950  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3951  a         :ImageGroup ;
-        :biblioNote         "Volume 34 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3951  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3952  a         :ImageGroup ;
-        :biblioNote         "Volume 35 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3952  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3953  a         :ImageGroup ;
-        :biblioNote         "Volume 36 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3953  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3954  a         :ImageGroup ;
-        :biblioNote         "Volume 37 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3954  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3955  a         :ImageGroup ;
-        :biblioNote         "Volume 38 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3955  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3956  a         :ImageGroup ;
-        :biblioNote         "Volume 39 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3956  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3957  a         :ImageGroup ;
-        :biblioNote         "Volume 40 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3957  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3958  a         :ImageGroup ;
-        :biblioNote         "Volume 41 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3958  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN3959  a         :ImageGroup ;
-        :biblioNote         "Volume 42 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN3959  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of dpal ldan sa lugs mkhas pa gong ma'i gsung rab phyogs bsdus/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN3120  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN3918 , bdr:I3CN3919 , bdr:I3CN3920 , bdr:I3CN3921 , bdr:I3CN3922 , bdr:I3CN3923 , bdr:I3CN3924 , bdr:I3CN3925 , bdr:I3CN3926 , bdr:I3CN3927 , bdr:I3CN3928 , bdr:I3CN3929 , bdr:I3CN3930 , bdr:I3CN3931 , bdr:I3CN3932 , bdr:I3CN3933 , bdr:I3CN3934 , bdr:I3CN3935 , bdr:I3CN3936 , bdr:I3CN3937 , bdr:I3CN3938 , bdr:I3CN3939 , bdr:I3CN3940 , bdr:I3CN3941 , bdr:I3CN3942 , bdr:I3CN3943 , bdr:I3CN3944 , bdr:I3CN3945 , bdr:I3CN3946 , bdr:I3CN3947 , bdr:I3CN3948 , bdr:I3CN3949 , bdr:I3CN3950 , bdr:I3CN3951 , bdr:I3CN3952 , bdr:I3CN3953 , bdr:I3CN3954 , bdr:I3CN3955 , bdr:I3CN3956 , bdr:I3CN3957 , bdr:I3CN3958 , bdr:I3CN3959 ;
-        :numberOfVolumes    42 ;
-        :scanInfo           "11/2016"@en .
+    bdr:W3CN3120  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN3918 , bdr:I3CN3919 , bdr:I3CN3920 , bdr:I3CN3921 , bdr:I3CN3922 , bdr:I3CN3923 , bdr:I3CN3924 , bdr:I3CN3925 , bdr:I3CN3926 , bdr:I3CN3927 , bdr:I3CN3928 , bdr:I3CN3929 , bdr:I3CN3930 , bdr:I3CN3931 , bdr:I3CN3932 , bdr:I3CN3933 , bdr:I3CN3934 , bdr:I3CN3935 , bdr:I3CN3936 , bdr:I3CN3937 , bdr:I3CN3938 , bdr:I3CN3939 , bdr:I3CN3940 , bdr:I3CN3941 , bdr:I3CN3942 , bdr:I3CN3943 , bdr:I3CN3944 , bdr:I3CN3945 , bdr:I3CN3946 , bdr:I3CN3947 , bdr:I3CN3948 , bdr:I3CN3949 , bdr:I3CN3950 , bdr:I3CN3951 , bdr:I3CN3952 , bdr:I3CN3953 , bdr:I3CN3954 , bdr:I3CN3955 , bdr:I3CN3956 , bdr:I3CN3957 , bdr:I3CN3958 , bdr:I3CN3959 ;
+        bdo:numberOfVolumes  42 ;
+        bdo:scanInfo        "11/2016"@en .
 }
