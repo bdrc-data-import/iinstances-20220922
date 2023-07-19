@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W22178 {
+    bda:LG0W22178_40EMHGGTYY55
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T18:43:10.643130Z"^^xsd:dateTime ;
+        adm:logMessage      "ss"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG0W22178_WV12FM4MELYO
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-07-19T18:42:32.368123Z"^^xsd:dateTime ;
@@ -14,13 +20,13 @@ bdg:W22178 {
         adm:logWho          bdu:U0ES1788534075 .
     
     bda:W22178  a           adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W22178 ;
         adm:graphId         bdg:W22178 ;
-        adm:logEntry        bda:LG0W22178_WV12FM4MELYO ;
+        adm:logEntry        bda:LG0W22178_40EMHGGTYY55 , bda:LG0W22178_WV12FM4MELYO ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusHidden .
     
     bdr:I4CN12146  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
