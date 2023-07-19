@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN3357 {
@@ -1208,6 +1203,12 @@ bdg:W3CN3357 {
         adm:logDate         "2019-05-31T12:39:34.43Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN3357_L16KRCCAMZLA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:55:37.487243Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG135207B14F873513
         a                   adm:InitialDataCreation ;
@@ -2500,1363 +2501,1363 @@ bdg:W3CN3357 {
         adm:gitPath         "69/W3CN3357.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN3357 ;
-        adm:logEntry        bda:LGB9BD9C3565819EC1 ;
+        adm:logEntry        bda:LG0W3CN3357_L16KRCCAMZLA , bda:LGB9BD9C3565819EC1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
-    
-    bdr:I3CN20896  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20897  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20898  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20899  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20900  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20901  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20902  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20903  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20904  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20905  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20906  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20907  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20908  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20909  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20910  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20911  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20912  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20913  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20914  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20915  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20916  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20917  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20918  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20919  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20920  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20921  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20922  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20923  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20924  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20925  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20926  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20927  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20928  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20929  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20930  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20931  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20932  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20933  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20934  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20935  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20936  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20937  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20938  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20939  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20940  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20941  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20942  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20943  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20944  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20945  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20946  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20947  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20948  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20949  a        :ImageGroup ;
-        :biblioNote         "Volume 54 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20950  a        :ImageGroup ;
-        :biblioNote         "Volume 55 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20951  a        :ImageGroup ;
-        :biblioNote         "Volume 56 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20952  a        :ImageGroup ;
-        :biblioNote         "Volume 57 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20953  a        :ImageGroup ;
-        :biblioNote         "Volume 58 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20954  a        :ImageGroup ;
-        :biblioNote         "Volume 59 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20955  a        :ImageGroup ;
-        :biblioNote         "Volume 60 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20956  a        :ImageGroup ;
-        :biblioNote         "Volume 61 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20957  a        :ImageGroup ;
-        :biblioNote         "Volume 62 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20958  a        :ImageGroup ;
-        :biblioNote         "Volume 63 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20959  a        :ImageGroup ;
-        :biblioNote         "Volume 64 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20960  a        :ImageGroup ;
-        :biblioNote         "Volume 65 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20961  a        :ImageGroup ;
-        :biblioNote         "Volume 66 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20962  a        :ImageGroup ;
-        :biblioNote         "Volume 67 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20963  a        :ImageGroup ;
-        :biblioNote         "Volume 68 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20964  a        :ImageGroup ;
-        :biblioNote         "Volume 69 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20965  a        :ImageGroup ;
-        :biblioNote         "Volume 70 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20966  a        :ImageGroup ;
-        :biblioNote         "Volume 71 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20967  a        :ImageGroup ;
-        :biblioNote         "Volume 72 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20968  a        :ImageGroup ;
-        :biblioNote         "Volume 73 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20969  a        :ImageGroup ;
-        :biblioNote         "Volume 74 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20970  a        :ImageGroup ;
-        :biblioNote         "Volume 75 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20971  a        :ImageGroup ;
-        :biblioNote         "Volume 76 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20972  a        :ImageGroup ;
-        :biblioNote         "Volume 77 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20973  a        :ImageGroup ;
-        :biblioNote         "Volume 78 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20974  a        :ImageGroup ;
-        :biblioNote         "Volume 79 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20975  a        :ImageGroup ;
-        :biblioNote         "Volume 80 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20976  a        :ImageGroup ;
-        :biblioNote         "Volume 81 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20977  a        :ImageGroup ;
-        :biblioNote         "Volume 82 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20978  a        :ImageGroup ;
-        :biblioNote         "Volume 83 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20979  a        :ImageGroup ;
-        :biblioNote         "Volume 84 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20980  a        :ImageGroup ;
-        :biblioNote         "Volume 85 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20981  a        :ImageGroup ;
-        :biblioNote         "Volume 86 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20982  a        :ImageGroup ;
-        :biblioNote         "Volume 87 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20983  a        :ImageGroup ;
-        :biblioNote         "Volume 88 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20984  a        :ImageGroup ;
-        :biblioNote         "Volume 89 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20985  a        :ImageGroup ;
-        :biblioNote         "Volume 90 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20986  a        :ImageGroup ;
-        :biblioNote         "Volume 91 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20987  a        :ImageGroup ;
-        :biblioNote         "Volume 92 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20988  a        :ImageGroup ;
-        :biblioNote         "Volume 93 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20989  a        :ImageGroup ;
-        :biblioNote         "Volume 94 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20990  a        :ImageGroup ;
-        :biblioNote         "Volume 95 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20991  a        :ImageGroup ;
-        :biblioNote         "Volume 96 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20992  a        :ImageGroup ;
-        :biblioNote         "Volume 97 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20993  a        :ImageGroup ;
-        :biblioNote         "Volume 98 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20994  a        :ImageGroup ;
-        :biblioNote         "Volume 99 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20995  a        :ImageGroup ;
-        :biblioNote         "Volume 100 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20996  a        :ImageGroup ;
-        :biblioNote         "Volume 101 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       101 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20997  a        :ImageGroup ;
-        :biblioNote         "Volume 102 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       102 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20998  a        :ImageGroup ;
-        :biblioNote         "Volume 103 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       103 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN20999  a        :ImageGroup ;
-        :biblioNote         "Volume 104 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       104 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21000  a        :ImageGroup ;
-        :biblioNote         "Volume 105 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       105 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21001  a        :ImageGroup ;
-        :biblioNote         "Volume 106 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       106 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21002  a        :ImageGroup ;
-        :biblioNote         "Volume 107 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       107 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21003  a        :ImageGroup ;
-        :biblioNote         "Volume 108 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       108 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21004  a        :ImageGroup ;
-        :biblioNote         "Volume 109 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       109 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21005  a        :ImageGroup ;
-        :biblioNote         "Volume 110 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       110 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21006  a        :ImageGroup ;
-        :biblioNote         "Volume 111 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       111 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21007  a        :ImageGroup ;
-        :biblioNote         "Volume 112 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       112 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21008  a        :ImageGroup ;
-        :biblioNote         "Volume 113 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       113 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21009  a        :ImageGroup ;
-        :biblioNote         "Volume 114 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       114 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21010  a        :ImageGroup ;
-        :biblioNote         "Volume 115 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       115 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21011  a        :ImageGroup ;
-        :biblioNote         "Volume 116 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       116 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21012  a        :ImageGroup ;
-        :biblioNote         "Volume 117 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       117 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21013  a        :ImageGroup ;
-        :biblioNote         "Volume 118 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       118 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21014  a        :ImageGroup ;
-        :biblioNote         "Volume 119 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       119 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21015  a        :ImageGroup ;
-        :biblioNote         "Volume 120 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       120 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21016  a        :ImageGroup ;
-        :biblioNote         "Volume 121 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       121 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21017  a        :ImageGroup ;
-        :biblioNote         "Volume 122 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       122 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21018  a        :ImageGroup ;
-        :biblioNote         "Volume 123 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       123 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21019  a        :ImageGroup ;
-        :biblioNote         "Volume 124 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       124 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21020  a        :ImageGroup ;
-        :biblioNote         "Volume 125 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       125 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21021  a        :ImageGroup ;
-        :biblioNote         "Volume 126 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       126 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21022  a        :ImageGroup ;
-        :biblioNote         "Volume 127 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       127 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21023  a        :ImageGroup ;
-        :biblioNote         "Volume 128 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       128 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21024  a        :ImageGroup ;
-        :biblioNote         "Volume 129 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       129 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21025  a        :ImageGroup ;
-        :biblioNote         "Volume 130 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       130 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21026  a        :ImageGroup ;
-        :biblioNote         "Volume 131 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       131 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21027  a        :ImageGroup ;
-        :biblioNote         "Volume 132 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       132 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21028  a        :ImageGroup ;
-        :biblioNote         "Volume 133 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       133 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21029  a        :ImageGroup ;
-        :biblioNote         "Volume 134 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       134 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21030  a        :ImageGroup ;
-        :biblioNote         "Volume 135 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       135 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21031  a        :ImageGroup ;
-        :biblioNote         "Volume 136 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       136 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21032  a        :ImageGroup ;
-        :biblioNote         "Volume 137 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       137 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21033  a        :ImageGroup ;
-        :biblioNote         "Volume 138 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       138 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21034  a        :ImageGroup ;
-        :biblioNote         "Volume 139 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       139 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21035  a        :ImageGroup ;
-        :biblioNote         "Volume 140 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       140 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21036  a        :ImageGroup ;
-        :biblioNote         "Volume 141 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       141 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21037  a        :ImageGroup ;
-        :biblioNote         "Volume 142 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       142 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21038  a        :ImageGroup ;
-        :biblioNote         "Volume 143 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       143 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21039  a        :ImageGroup ;
-        :biblioNote         "Volume 144 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       144 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21040  a        :ImageGroup ;
-        :biblioNote         "Volume 145 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       145 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21041  a        :ImageGroup ;
-        :biblioNote         "Volume 146 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       146 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21042  a        :ImageGroup ;
-        :biblioNote         "Volume 147 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       147 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21043  a        :ImageGroup ;
-        :biblioNote         "Volume 148 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       148 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21044  a        :ImageGroup ;
-        :biblioNote         "Volume 149 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       149 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21045  a        :ImageGroup ;
-        :biblioNote         "Volume 150 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       150 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21046  a        :ImageGroup ;
-        :biblioNote         "Volume 151 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       151 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21047  a        :ImageGroup ;
-        :biblioNote         "Volume 152 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       152 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21048  a        :ImageGroup ;
-        :biblioNote         "Volume 153 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       153 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21049  a        :ImageGroup ;
-        :biblioNote         "Volume 154 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       154 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21050  a        :ImageGroup ;
-        :biblioNote         "Volume 155 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       155 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21051  a        :ImageGroup ;
-        :biblioNote         "Volume 156 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       156 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21052  a        :ImageGroup ;
-        :biblioNote         "Volume 157 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       157 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21053  a        :ImageGroup ;
-        :biblioNote         "Volume 158 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       158 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21054  a        :ImageGroup ;
-        :biblioNote         "Volume 159 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       159 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21055  a        :ImageGroup ;
-        :biblioNote         "Volume 160 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       160 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21056  a        :ImageGroup ;
-        :biblioNote         "Volume 161 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       161 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21057  a        :ImageGroup ;
-        :biblioNote         "Volume 162 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       162 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21058  a        :ImageGroup ;
-        :biblioNote         "Volume 163 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       163 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21059  a        :ImageGroup ;
-        :biblioNote         "Volume 164 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       164 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21060  a        :ImageGroup ;
-        :biblioNote         "Volume 165 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       165 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21061  a        :ImageGroup ;
-        :biblioNote         "Volume 166 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       166 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21062  a        :ImageGroup ;
-        :biblioNote         "Volume 167 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       167 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21063  a        :ImageGroup ;
-        :biblioNote         "Volume 168 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       168 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21064  a        :ImageGroup ;
-        :biblioNote         "Volume 169 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       169 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21065  a        :ImageGroup ;
-        :biblioNote         "Volume 170 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       170 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21066  a        :ImageGroup ;
-        :biblioNote         "Volume 171 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       171 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21067  a        :ImageGroup ;
-        :biblioNote         "Volume 172 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       172 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21068  a        :ImageGroup ;
-        :biblioNote         "Volume 173 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       173 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21069  a        :ImageGroup ;
-        :biblioNote         "Volume 174 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       174 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21070  a        :ImageGroup ;
-        :biblioNote         "Volume 175 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       175 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21071  a        :ImageGroup ;
-        :biblioNote         "Volume 176 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       176 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21072  a        :ImageGroup ;
-        :biblioNote         "Volume 177 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       177 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21073  a        :ImageGroup ;
-        :biblioNote         "Volume 178 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       178 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21074  a        :ImageGroup ;
-        :biblioNote         "Volume 179 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       179 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21075  a        :ImageGroup ;
-        :biblioNote         "Volume 180 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       180 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21076  a        :ImageGroup ;
-        :biblioNote         "Volume 181 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       181 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21077  a        :ImageGroup ;
-        :biblioNote         "Volume 182 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       182 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21078  a        :ImageGroup ;
-        :biblioNote         "Volume 183 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       183 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21079  a        :ImageGroup ;
-        :biblioNote         "Volume 184 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       184 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21080  a        :ImageGroup ;
-        :biblioNote         "Volume 185 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       185 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21081  a        :ImageGroup ;
-        :biblioNote         "Volume 186 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       186 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21082  a        :ImageGroup ;
-        :biblioNote         "Volume 187 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       187 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21083  a        :ImageGroup ;
-        :biblioNote         "Volume 188 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       188 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21084  a        :ImageGroup ;
-        :biblioNote         "Volume 189 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       189 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21085  a        :ImageGroup ;
-        :biblioNote         "Volume 190 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       190 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21086  a        :ImageGroup ;
-        :biblioNote         "Volume 191 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       191 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21087  a        :ImageGroup ;
-        :biblioNote         "Volume 192 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       192 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21088  a        :ImageGroup ;
-        :biblioNote         "Volume 193 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       193 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21089  a        :ImageGroup ;
-        :biblioNote         "Volume 194 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       194 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21090  a        :ImageGroup ;
-        :biblioNote         "Volume 195 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       195 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21091  a        :ImageGroup ;
-        :biblioNote         "Volume 196 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       196 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21092  a        :ImageGroup ;
-        :biblioNote         "Volume 197 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       197 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21093  a        :ImageGroup ;
-        :biblioNote         "Volume 198 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       198 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21094  a        :ImageGroup ;
-        :biblioNote         "Volume 199 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       199 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21095  a        :ImageGroup ;
-        :biblioNote         "Volume 200 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       200 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21096  a        :ImageGroup ;
-        :biblioNote         "Volume 201 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       201 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21097  a        :ImageGroup ;
-        :biblioNote         "Volume 202 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       202 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21098  a        :ImageGroup ;
-        :biblioNote         "Volume 203 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       203 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21099  a        :ImageGroup ;
-        :biblioNote         "Volume 204 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       204 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21100  a        :ImageGroup ;
-        :biblioNote         "Volume 205 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       205 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21101  a        :ImageGroup ;
-        :biblioNote         "Volume 206 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       206 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21102  a        :ImageGroup ;
-        :biblioNote         "Volume 207 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       207 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21103  a        :ImageGroup ;
-        :biblioNote         "Volume 208 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       208 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21104  a        :ImageGroup ;
-        :biblioNote         "Volume 209 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       209 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21105  a        :ImageGroup ;
-        :biblioNote         "Volume 210 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       210 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21106  a        :ImageGroup ;
-        :biblioNote         "Volume 211 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       211 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21107  a        :ImageGroup ;
-        :biblioNote         "Volume 212 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       212 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21108  a        :ImageGroup ;
-        :biblioNote         "Volume 213 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       213 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21109  a        :ImageGroup ;
-        :biblioNote         "Volume 214 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       214 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21110  a        :ImageGroup ;
-        :biblioNote         "Volume 215 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       215 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21111  a        :ImageGroup ;
-        :biblioNote         "Volume 216 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       216 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21112  a        :ImageGroup ;
-        :biblioNote         "Volume 217 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       217 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21113  a        :ImageGroup ;
-        :biblioNote         "Volume 218 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       218 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21114  a        :ImageGroup ;
-        :biblioNote         "Volume 219 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       219 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21115  a        :ImageGroup ;
-        :biblioNote         "Volume 220 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       220 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21116  a        :ImageGroup ;
-        :biblioNote         "Volume 221 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       221 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21117  a        :ImageGroup ;
-        :biblioNote         "Volume 222 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       222 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21118  a        :ImageGroup ;
-        :biblioNote         "Volume 223 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       223 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21119  a        :ImageGroup ;
-        :biblioNote         "Volume 224 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       224 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN21120  a        :ImageGroup ;
-        :biblioNote         "Volume 225 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
-        :volumeNumber       225 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W3CN3357  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN20896 , bdr:I3CN20897 , bdr:I3CN20898 , bdr:I3CN20899 , bdr:I3CN20900 , bdr:I3CN20901 , bdr:I3CN20902 , bdr:I3CN20903 , bdr:I3CN20904 , bdr:I3CN20905 , bdr:I3CN20906 , bdr:I3CN20907 , bdr:I3CN20908 , bdr:I3CN20909 , bdr:I3CN20910 , bdr:I3CN20911 , bdr:I3CN20912 , bdr:I3CN20913 , bdr:I3CN20914 , bdr:I3CN20915 , bdr:I3CN20916 , bdr:I3CN20917 , bdr:I3CN20918 , bdr:I3CN20919 , bdr:I3CN20920 , bdr:I3CN20921 , bdr:I3CN20922 , bdr:I3CN20923 , bdr:I3CN20924 , bdr:I3CN20925 , bdr:I3CN20926 , bdr:I3CN20927 , bdr:I3CN20928 , bdr:I3CN20929 , bdr:I3CN20930 , bdr:I3CN20931 , bdr:I3CN20932 , bdr:I3CN20933 , bdr:I3CN20934 , bdr:I3CN20935 , bdr:I3CN20936 , bdr:I3CN20937 , bdr:I3CN20938 , bdr:I3CN20939 , bdr:I3CN20940 , bdr:I3CN20941 , bdr:I3CN20942 , bdr:I3CN20943 , bdr:I3CN20944 , bdr:I3CN20945 , bdr:I3CN20946 , bdr:I3CN20947 , bdr:I3CN20948 , bdr:I3CN20949 , bdr:I3CN20950 , bdr:I3CN20951 , bdr:I3CN20952 , bdr:I3CN20953 , bdr:I3CN20954 , bdr:I3CN20955 , bdr:I3CN20956 , bdr:I3CN20957 , bdr:I3CN20958 , bdr:I3CN20959 , bdr:I3CN20960 , bdr:I3CN20961 , bdr:I3CN20962 , bdr:I3CN20963 , bdr:I3CN20964 , bdr:I3CN20965 , bdr:I3CN20966 , bdr:I3CN20967 , bdr:I3CN20968 , bdr:I3CN20969 , bdr:I3CN20970 , bdr:I3CN20971 , bdr:I3CN20972 , bdr:I3CN20973 , bdr:I3CN20974 , bdr:I3CN20975 , bdr:I3CN20976 , bdr:I3CN20977 , bdr:I3CN20978 , bdr:I3CN20979 , bdr:I3CN20980 , bdr:I3CN20981 , bdr:I3CN20982 , bdr:I3CN20983 , bdr:I3CN20984 , bdr:I3CN20985 , bdr:I3CN20986 , bdr:I3CN20987 , bdr:I3CN20988 , bdr:I3CN20989 , bdr:I3CN20990 , bdr:I3CN20991 , bdr:I3CN20992 , bdr:I3CN20993 , bdr:I3CN20994 , bdr:I3CN20995 , bdr:I3CN20996 , bdr:I3CN20997 , bdr:I3CN20998 , bdr:I3CN20999 , bdr:I3CN21000 , bdr:I3CN21001 , bdr:I3CN21002 , bdr:I3CN21003 , bdr:I3CN21004 , bdr:I3CN21005 , bdr:I3CN21006 , bdr:I3CN21007 , bdr:I3CN21008 , bdr:I3CN21009 , bdr:I3CN21010 , bdr:I3CN21011 , bdr:I3CN21012 , bdr:I3CN21013 , bdr:I3CN21014 , bdr:I3CN21015 , bdr:I3CN21016 , bdr:I3CN21017 , bdr:I3CN21018 , bdr:I3CN21019 , bdr:I3CN21020 , bdr:I3CN21021 , bdr:I3CN21022 , bdr:I3CN21023 , bdr:I3CN21024 , bdr:I3CN21025 , bdr:I3CN21026 , bdr:I3CN21027 , bdr:I3CN21028 , bdr:I3CN21029 , bdr:I3CN21030 , bdr:I3CN21031 , bdr:I3CN21032 , bdr:I3CN21033 , bdr:I3CN21034 , bdr:I3CN21035 , bdr:I3CN21036 , bdr:I3CN21037 , bdr:I3CN21038 , bdr:I3CN21039 , bdr:I3CN21040 , bdr:I3CN21041 , bdr:I3CN21042 , bdr:I3CN21043 , bdr:I3CN21044 , bdr:I3CN21045 , bdr:I3CN21046 , bdr:I3CN21047 , bdr:I3CN21048 , bdr:I3CN21049 , bdr:I3CN21050 , bdr:I3CN21051 , bdr:I3CN21052 , bdr:I3CN21053 , bdr:I3CN21054 , bdr:I3CN21055 , bdr:I3CN21056 , bdr:I3CN21057 , bdr:I3CN21058 , bdr:I3CN21059 , bdr:I3CN21060 , bdr:I3CN21061 , bdr:I3CN21062 , bdr:I3CN21063 , bdr:I3CN21064 , bdr:I3CN21065 , bdr:I3CN21066 , bdr:I3CN21067 , bdr:I3CN21068 , bdr:I3CN21069 , bdr:I3CN21070 , bdr:I3CN21071 , bdr:I3CN21072 , bdr:I3CN21073 , bdr:I3CN21074 , bdr:I3CN21075 , bdr:I3CN21076 , bdr:I3CN21077 , bdr:I3CN21078 , bdr:I3CN21079 , bdr:I3CN21080 , bdr:I3CN21081 , bdr:I3CN21082 , bdr:I3CN21083 , bdr:I3CN21084 , bdr:I3CN21085 , bdr:I3CN21086 , bdr:I3CN21087 , bdr:I3CN21088 , bdr:I3CN21089 , bdr:I3CN21090 , bdr:I3CN21091 , bdr:I3CN21092 , bdr:I3CN21093 , bdr:I3CN21094 , bdr:I3CN21095 , bdr:I3CN21096 , bdr:I3CN21097 , bdr:I3CN21098 , bdr:I3CN21099 , bdr:I3CN21100 , bdr:I3CN21101 , bdr:I3CN21102 , bdr:I3CN21103 , bdr:I3CN21104 , bdr:I3CN21105 , bdr:I3CN21106 , bdr:I3CN21107 , bdr:I3CN21108 , bdr:I3CN21109 , bdr:I3CN21110 , bdr:I3CN21111 , bdr:I3CN21112 , bdr:I3CN21113 , bdr:I3CN21114 , bdr:I3CN21115 , bdr:I3CN21116 , bdr:I3CN21117 , bdr:I3CN21118 , bdr:I3CN21119 , bdr:I3CN21120 ;
-        :numberOfVolumes    225 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
+    
+    bdr:I3CN20896  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20897  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20898  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20899  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20900  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20901  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20902  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20903  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20904  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20905  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20906  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20907  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20908  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20909  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20910  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20911  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20912  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20913  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20914  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20915  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20916  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20917  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20918  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20919  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20920  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20921  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20922  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20923  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20924  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20925  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20926  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20927  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20928  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20929  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20930  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20931  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20932  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20933  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20934  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20935  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20936  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20937  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20938  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20939  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20940  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20941  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20942  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20943  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20944  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20945  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20946  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20947  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20948  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20949  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20950  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20951  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20952  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20953  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20954  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20955  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20956  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20957  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20958  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20959  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20960  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20961  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20962  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20963  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20964  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20965  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20966  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20967  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20968  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20969  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20970  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20971  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20972  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20973  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20974  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20975  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20976  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20977  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20978  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20979  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20980  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20981  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20982  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20983  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20984  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20985  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20986  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20987  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20988  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20989  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20990  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20991  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20992  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20993  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20994  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20995  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20996  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 101 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20997  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 102 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20998  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 103 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN20999  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 104 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21000  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 105 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21001  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 106 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21002  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 107 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21003  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 108 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21004  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 109 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    109 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21005  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 110 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    110 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21006  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 111 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    111 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21007  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 112 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    112 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21008  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 113 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    113 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21009  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 114 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    114 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21010  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 115 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    115 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21011  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 116 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    116 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21012  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 117 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    117 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21013  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 118 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    118 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21014  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 119 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    119 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21015  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 120 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    120 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21016  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 121 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    121 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21017  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 122 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    122 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21018  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 123 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    123 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21019  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 124 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    124 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21020  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 125 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    125 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21021  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 126 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    126 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21022  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 127 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    127 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21023  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 128 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    128 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21024  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 129 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    129 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21025  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 130 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    130 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21026  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 131 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    131 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21027  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 132 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    132 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21028  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 133 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    133 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21029  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 134 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    134 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21030  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 135 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    135 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21031  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 136 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    136 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21032  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 137 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    137 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21033  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 138 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    138 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21034  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 139 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    139 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21035  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 140 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    140 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21036  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 141 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    141 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21037  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 142 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    142 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21038  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 143 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    143 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21039  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 144 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    144 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21040  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 145 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    145 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21041  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 146 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    146 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21042  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 147 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    147 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21043  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 148 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    148 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21044  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 149 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    149 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21045  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 150 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    150 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21046  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 151 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    151 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21047  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 152 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    152 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21048  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 153 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    153 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21049  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 154 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    154 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21050  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 155 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    155 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21051  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 156 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    156 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21052  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 157 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    157 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21053  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 158 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    158 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21054  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 159 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    159 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21055  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 160 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    160 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21056  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 161 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    161 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21057  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 162 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    162 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21058  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 163 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    163 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21059  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 164 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    164 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21060  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 165 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    165 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21061  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 166 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    166 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21062  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 167 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    167 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21063  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 168 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    168 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21064  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 169 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    169 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21065  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 170 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    170 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21066  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 171 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    171 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21067  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 172 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    172 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21068  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 173 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    173 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21069  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 174 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    174 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21070  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 175 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    175 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21071  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 176 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    176 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21072  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 177 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    177 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21073  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 178 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    178 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21074  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 179 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    179 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21075  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 180 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    180 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21076  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 181 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    181 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21077  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 182 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    182 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21078  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 183 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    183 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21079  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 184 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    184 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21080  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 185 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    185 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21081  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 186 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    186 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21082  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 187 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    187 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21083  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 188 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    188 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21084  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 189 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    189 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21085  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 190 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    190 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21086  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 191 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    191 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21087  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 192 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    192 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21088  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 193 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    193 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21089  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 194 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    194 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21090  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 195 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    195 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21091  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 196 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    196 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21092  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 197 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    197 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21093  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 198 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    198 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21094  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 199 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    199 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21095  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 200 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    200 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21096  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 201 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    201 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21097  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 202 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    202 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21098  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 203 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    203 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21099  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 204 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    204 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21100  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 205 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    205 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21101  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 206 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    206 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21102  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 207 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    207 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21103  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 208 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    208 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21104  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 209 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    209 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21105  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 210 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    210 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21106  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 211 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    211 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21107  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 212 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    212 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21108  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 213 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    213 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21109  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 214 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    214 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21110  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 215 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    215 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21111  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 216 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    216 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21112  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 217 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    217 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21113  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 218 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    218 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21114  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 219 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    219 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21115  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 220 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    220 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21116  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 221 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    221 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21117  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 222 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    222 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21118  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 223 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    223 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21119  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 224 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    224 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I3CN21120  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 225 of bstan 'gyur/ (snar thang par rnying spus legs/)"@en ;
+        bdo:volumeNumber    225 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W3CN3357  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN20896 , bdr:I3CN20897 , bdr:I3CN20898 , bdr:I3CN20899 , bdr:I3CN20900 , bdr:I3CN20901 , bdr:I3CN20902 , bdr:I3CN20903 , bdr:I3CN20904 , bdr:I3CN20905 , bdr:I3CN20906 , bdr:I3CN20907 , bdr:I3CN20908 , bdr:I3CN20909 , bdr:I3CN20910 , bdr:I3CN20911 , bdr:I3CN20912 , bdr:I3CN20913 , bdr:I3CN20914 , bdr:I3CN20915 , bdr:I3CN20916 , bdr:I3CN20917 , bdr:I3CN20918 , bdr:I3CN20919 , bdr:I3CN20920 , bdr:I3CN20921 , bdr:I3CN20922 , bdr:I3CN20923 , bdr:I3CN20924 , bdr:I3CN20925 , bdr:I3CN20926 , bdr:I3CN20927 , bdr:I3CN20928 , bdr:I3CN20929 , bdr:I3CN20930 , bdr:I3CN20931 , bdr:I3CN20932 , bdr:I3CN20933 , bdr:I3CN20934 , bdr:I3CN20935 , bdr:I3CN20936 , bdr:I3CN20937 , bdr:I3CN20938 , bdr:I3CN20939 , bdr:I3CN20940 , bdr:I3CN20941 , bdr:I3CN20942 , bdr:I3CN20943 , bdr:I3CN20944 , bdr:I3CN20945 , bdr:I3CN20946 , bdr:I3CN20947 , bdr:I3CN20948 , bdr:I3CN20949 , bdr:I3CN20950 , bdr:I3CN20951 , bdr:I3CN20952 , bdr:I3CN20953 , bdr:I3CN20954 , bdr:I3CN20955 , bdr:I3CN20956 , bdr:I3CN20957 , bdr:I3CN20958 , bdr:I3CN20959 , bdr:I3CN20960 , bdr:I3CN20961 , bdr:I3CN20962 , bdr:I3CN20963 , bdr:I3CN20964 , bdr:I3CN20965 , bdr:I3CN20966 , bdr:I3CN20967 , bdr:I3CN20968 , bdr:I3CN20969 , bdr:I3CN20970 , bdr:I3CN20971 , bdr:I3CN20972 , bdr:I3CN20973 , bdr:I3CN20974 , bdr:I3CN20975 , bdr:I3CN20976 , bdr:I3CN20977 , bdr:I3CN20978 , bdr:I3CN20979 , bdr:I3CN20980 , bdr:I3CN20981 , bdr:I3CN20982 , bdr:I3CN20983 , bdr:I3CN20984 , bdr:I3CN20985 , bdr:I3CN20986 , bdr:I3CN20987 , bdr:I3CN20988 , bdr:I3CN20989 , bdr:I3CN20990 , bdr:I3CN20991 , bdr:I3CN20992 , bdr:I3CN20993 , bdr:I3CN20994 , bdr:I3CN20995 , bdr:I3CN20996 , bdr:I3CN20997 , bdr:I3CN20998 , bdr:I3CN20999 , bdr:I3CN21000 , bdr:I3CN21001 , bdr:I3CN21002 , bdr:I3CN21003 , bdr:I3CN21004 , bdr:I3CN21005 , bdr:I3CN21006 , bdr:I3CN21007 , bdr:I3CN21008 , bdr:I3CN21009 , bdr:I3CN21010 , bdr:I3CN21011 , bdr:I3CN21012 , bdr:I3CN21013 , bdr:I3CN21014 , bdr:I3CN21015 , bdr:I3CN21016 , bdr:I3CN21017 , bdr:I3CN21018 , bdr:I3CN21019 , bdr:I3CN21020 , bdr:I3CN21021 , bdr:I3CN21022 , bdr:I3CN21023 , bdr:I3CN21024 , bdr:I3CN21025 , bdr:I3CN21026 , bdr:I3CN21027 , bdr:I3CN21028 , bdr:I3CN21029 , bdr:I3CN21030 , bdr:I3CN21031 , bdr:I3CN21032 , bdr:I3CN21033 , bdr:I3CN21034 , bdr:I3CN21035 , bdr:I3CN21036 , bdr:I3CN21037 , bdr:I3CN21038 , bdr:I3CN21039 , bdr:I3CN21040 , bdr:I3CN21041 , bdr:I3CN21042 , bdr:I3CN21043 , bdr:I3CN21044 , bdr:I3CN21045 , bdr:I3CN21046 , bdr:I3CN21047 , bdr:I3CN21048 , bdr:I3CN21049 , bdr:I3CN21050 , bdr:I3CN21051 , bdr:I3CN21052 , bdr:I3CN21053 , bdr:I3CN21054 , bdr:I3CN21055 , bdr:I3CN21056 , bdr:I3CN21057 , bdr:I3CN21058 , bdr:I3CN21059 , bdr:I3CN21060 , bdr:I3CN21061 , bdr:I3CN21062 , bdr:I3CN21063 , bdr:I3CN21064 , bdr:I3CN21065 , bdr:I3CN21066 , bdr:I3CN21067 , bdr:I3CN21068 , bdr:I3CN21069 , bdr:I3CN21070 , bdr:I3CN21071 , bdr:I3CN21072 , bdr:I3CN21073 , bdr:I3CN21074 , bdr:I3CN21075 , bdr:I3CN21076 , bdr:I3CN21077 , bdr:I3CN21078 , bdr:I3CN21079 , bdr:I3CN21080 , bdr:I3CN21081 , bdr:I3CN21082 , bdr:I3CN21083 , bdr:I3CN21084 , bdr:I3CN21085 , bdr:I3CN21086 , bdr:I3CN21087 , bdr:I3CN21088 , bdr:I3CN21089 , bdr:I3CN21090 , bdr:I3CN21091 , bdr:I3CN21092 , bdr:I3CN21093 , bdr:I3CN21094 , bdr:I3CN21095 , bdr:I3CN21096 , bdr:I3CN21097 , bdr:I3CN21098 , bdr:I3CN21099 , bdr:I3CN21100 , bdr:I3CN21101 , bdr:I3CN21102 , bdr:I3CN21103 , bdr:I3CN21104 , bdr:I3CN21105 , bdr:I3CN21106 , bdr:I3CN21107 , bdr:I3CN21108 , bdr:I3CN21109 , bdr:I3CN21110 , bdr:I3CN21111 , bdr:I3CN21112 , bdr:I3CN21113 , bdr:I3CN21114 , bdr:I3CN21115 , bdr:I3CN21116 , bdr:I3CN21117 , bdr:I3CN21118 , bdr:I3CN21119 , bdr:I3CN21120 ;
+        bdo:numberOfVolumes  225 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
