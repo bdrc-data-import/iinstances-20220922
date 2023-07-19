@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN21343 {
@@ -39,6 +34,12 @@ bdg:W3CN21343 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG0W3CN21343_D5KYICCUQVLA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T15:08:19.621479Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG1D8DC6BB8C29CD7D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-07-30T16:13:34.304Z"^^xsd:dateTime ;
@@ -58,31 +59,31 @@ bdg:W3CN21343 {
         adm:gitPath         "4f/W3CN21343.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN21343 ;
-        adm:logEntry        bda:LG08E92170BF6C4937 ;
+        adm:logEntry        bda:LG08E92170BF6C4937 , bda:LG0W3CN21343_D5KYICCUQVLA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN21345  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ blo gsal bstan skyong /"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21345  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ blo gsal bstan skyong /"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21346  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ blo gsal bstan skyong /"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21346  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ blo gsal bstan skyong /"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21347  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ blo gsal bstan skyong /"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21347  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ blo gsal bstan skyong /"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN21343  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN21345 , bdr:I3CN21346 , bdr:I3CN21347 ;
-        :numberOfVolumes    3 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN21343  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN21345 , bdr:I3CN21346 , bdr:I3CN21347 ;
+        bdo:numberOfVolumes  3 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
