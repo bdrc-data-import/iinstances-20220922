@@ -17,6 +17,12 @@ bdg:W8CZ258 {
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ258_DULIODYMWH9K
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T16:26:37.807713Z"^^xsd:dateTime ;
+        adm:logMessage      "changed digitization quality to 0"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:LG0W8CZ258_PNCAARGGOYQ9
         a                   adm:Synced ;
         adm:logDate         "2023-07-12T20:33:59.225298Z"^^xsd:dateTime ;
@@ -28,7 +34,7 @@ bdg:W8CZ258 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CZ258 ;
         adm:graphId         bdg:W8CZ258 ;
-        adm:logEntry        bda:LG0W8CZ258_0JM0B49KLQOV ;
+        adm:logEntry        bda:LG0W8CZ258_0JM0B49KLQOV , bda:LG0W8CZ258_DULIODYMWH9K ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -40,5 +46,5 @@ bdg:W8CZ258 {
     
     bdr:W8CZ258  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I8CZ823 ;
-        bdo:qualityGrade    5 .
+        bdo:qualityGrade    0 .
 }
