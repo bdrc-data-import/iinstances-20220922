@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN4062 {
@@ -188,6 +183,12 @@ bdg:W3CN4062 {
         adm:logDate         "2019-03-27T13:09:55.19Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN4062_HQF6UKWYP09F
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T13:51:18.965940Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG169996213253B521
         a                   adm:InitialDataCreation ;
@@ -388,211 +389,211 @@ bdg:W3CN4062 {
         adm:gitPath         "f7/W3CN4062.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN4062 ;
-        adm:logEntry        bda:LGDC0B6381310E8716 ;
+        adm:logEntry        bda:LG0W3CN4062_HQF6UKWYP09F , bda:LGDC0B6381310E8716 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN20579  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20579  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20580  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20580  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20581  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20581  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20582  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20582  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20583  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20583  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20584  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20584  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20585  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20585  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20586  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20586  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20587  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20587  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20588  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20588  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20589  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20589  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20590  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20590  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20591  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20591  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20592  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20592  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20593  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20593  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20594  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20594  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20595  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20595  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20596  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20596  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20597  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20597  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20598  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20598  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20599  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20599  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20600  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20600  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20601  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20601  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20602  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20602  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20603  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20603  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20604  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20604  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20605  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20605  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20606  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20606  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20607  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20607  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20608  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20608  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20609  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20609  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20610  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20610  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN20611  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN20611  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of dbus gyur 'chang gi gter chos phyogs bsdus/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN4062  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN20579 , bdr:I3CN20580 , bdr:I3CN20581 , bdr:I3CN20582 , bdr:I3CN20583 , bdr:I3CN20584 , bdr:I3CN20585 , bdr:I3CN20586 , bdr:I3CN20587 , bdr:I3CN20588 , bdr:I3CN20589 , bdr:I3CN20590 , bdr:I3CN20591 , bdr:I3CN20592 , bdr:I3CN20593 , bdr:I3CN20594 , bdr:I3CN20595 , bdr:I3CN20596 , bdr:I3CN20597 , bdr:I3CN20598 , bdr:I3CN20599 , bdr:I3CN20600 , bdr:I3CN20601 , bdr:I3CN20602 , bdr:I3CN20603 , bdr:I3CN20604 , bdr:I3CN20605 , bdr:I3CN20606 , bdr:I3CN20607 , bdr:I3CN20608 , bdr:I3CN20609 , bdr:I3CN20610 , bdr:I3CN20611 ;
-        :numberOfVolumes    33 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN4062  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN20579 , bdr:I3CN20580 , bdr:I3CN20581 , bdr:I3CN20582 , bdr:I3CN20583 , bdr:I3CN20584 , bdr:I3CN20585 , bdr:I3CN20586 , bdr:I3CN20587 , bdr:I3CN20588 , bdr:I3CN20589 , bdr:I3CN20590 , bdr:I3CN20591 , bdr:I3CN20592 , bdr:I3CN20593 , bdr:I3CN20594 , bdr:I3CN20595 , bdr:I3CN20596 , bdr:I3CN20597 , bdr:I3CN20598 , bdr:I3CN20599 , bdr:I3CN20600 , bdr:I3CN20601 , bdr:I3CN20602 , bdr:I3CN20603 , bdr:I3CN20604 , bdr:I3CN20605 , bdr:I3CN20606 , bdr:I3CN20607 , bdr:I3CN20608 , bdr:I3CN20609 , bdr:I3CN20610 , bdr:I3CN20611 ;
+        bdo:numberOfVolumes  33 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
