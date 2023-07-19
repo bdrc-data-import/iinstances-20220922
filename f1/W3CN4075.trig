@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN4075 {
@@ -36,6 +31,12 @@ bdg:W3CN4075 {
         adm:adminAbout      bdr:I3CN21208 ;
         adm:logEntry        bda:LG63EDFA334C605B28 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W3CN4075_6ESFTHSHEBH6
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T14:39:44.177131Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LG2D0A99D103EC188B
         a                   adm:InitialDataCreation ;
@@ -80,43 +81,43 @@ bdg:W3CN4075 {
         adm:gitPath         "f1/W3CN4075.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN4075 ;
-        adm:logEntry        bda:LGDFCA7DA0B07C2CBC ;
+        adm:logEntry        bda:LG0W3CN4075_6ESFTHSHEBH6 , bda:LGDFCA7DA0B07C2CBC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN21204  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21204  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21205  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21205  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21206  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21206  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21207  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21207  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:I3CN21208  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN21208  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bka' gdams pa'i bstan rim grags chung ba 'ga' zhig gi bris dpe phyogs bsdus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W3CN4075  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN21204 , bdr:I3CN21205 , bdr:I3CN21206 , bdr:I3CN21207 , bdr:I3CN21208 ;
-        :numberOfVolumes    5 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W3CN4075  a         bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN21204 , bdr:I3CN21205 , bdr:I3CN21206 , bdr:I3CN21207 , bdr:I3CN21208 ;
+        bdo:numberOfVolumes  5 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
