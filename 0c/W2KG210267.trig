@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG210267 {
@@ -16,6 +11,12 @@ bdg:W2KG210267 {
         adm:adminAbout      bdr:I3CN22212 ;
         adm:logEntry        bda:LGEE55716C883FC31C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0W2KG210267_AMVX9DWVHTIU
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-19T15:38:37.950031Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U0ES1788534075 .
     
     bda:LGC2B2937ED365F2D0
         a                   adm:ScanRequestCreation ;
@@ -36,19 +37,19 @@ bdg:W2KG210267 {
         adm:gitPath         "0c/W2KG210267.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG210267 ;
-        adm:logEntry        bda:LGC2B2937ED365F2D0 ;
+        adm:logEntry        bda:LG0W2KG210267_AMVX9DWVHTIU , bda:LGC2B2937ED365F2D0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
     
-    bdr:I3CN22212  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung thor bu/ blo gros rgyal po/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+    bdr:I3CN22212  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung thor bu/ blo gros rgyal po/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
     
-    bdr:W2KG210267  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN22212 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W2KG210267  a       bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN22212 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
