@@ -13,14 +13,20 @@ bdg:W3CN22833 {
         adm:logMessage      "batch add volumes"@en ;
         adm:logWho          bdu:U0ES1788534075 .
     
+    bda:LG0W3CN22833_SMOBCDQESVFP
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-20T20:05:14.927739Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:W3CN22833  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W3CN22833 ;
         adm:graphId         bdg:W3CN22833 ;
-        adm:logEntry        bda:LG0W3CN22833_ETQGEJ5LG1QL ;
+        adm:logEntry        bda:LG0W3CN22833_ETQGEJ5LG1QL , bda:LG0W3CN22833_SMOBCDQESVFP ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusHidden .
     
     bdr:I4CN12274  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
