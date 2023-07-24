@@ -1,0 +1,28 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN26276 {
+    bda:LG0W3CN26276_TQG1FHXUZ9AD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-07-24T18:54:09.049461Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
+    bda:W3CN26276  a        adm:AdminData ;
+        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:adminAbout      bdr:W3CN26276 ;
+        adm:graphId         bdg:W3CN26276 ;
+        adm:logEntry        bda:LG0W3CN26276_TQG1FHXUZ9AD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusHidden .
+    
+    bdr:W3CN26276  a        bdo:ImageInstance ;
+        bdo:isComplete      false ;
+        bdo:qualityGrade    3 .
+}
