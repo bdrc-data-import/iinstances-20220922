@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN21667 {
+    bda:LG0W3CN21667_IJLFESP7FEQH
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-24T18:04:50.578533Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:LG0W3CN21667_KYOAOMXO1F7T
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-07-24T18:04:22.004459Z"^^xsd:dateTime ;
@@ -14,13 +20,13 @@ bdg:W3CN21667 {
         adm:logWho          bdu:U0ES1788534075 .
     
     bda:W3CN21667  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessRestrictedByTbrc ;
         adm:adminAbout      bdr:W3CN21667 ;
         adm:graphId         bdg:W3CN21667 ;
-        adm:logEntry        bda:LG0W3CN21667_KYOAOMXO1F7T ;
+        adm:logEntry        bda:LG0W3CN21667_IJLFESP7FEQH , bda:LG0W3CN21667_KYOAOMXO1F7T ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusHidden .
     
     bdr:I4CN12436  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
