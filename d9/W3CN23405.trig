@@ -19,14 +19,20 @@ bdg:W3CN23405 {
         adm:logMessage      "saved"@bo ;
         adm:logWho          bdu:U0ES1788534075 .
     
+    bda:LG0W3CN23405_LQXVH2XNVDCG
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-25T04:47:04.259270Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@bo ;
+        adm:logWho          bdu:U0ES1788534075 .
+    
     bda:W3CN23405  a        adm:AdminData ;
-        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN23405 ;
         adm:graphId         bdg:W3CN23405 ;
-        adm:logEntry        bda:LG0W3CN23405_BB4TB4R4J5E6 , bda:LG0W3CN23405_BFWQTY88EL8Q ;
+        adm:logEntry        bda:LG0W3CN23405_BB4TB4R4J5E6 , bda:LG0W3CN23405_BFWQTY88EL8Q , bda:LG0W3CN23405_LQXVH2XNVDCG ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusHidden .
+        adm:status          bda:StatusReleased .
     
     bdr:I4CN12355  a        bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
@@ -62,5 +68,6 @@ bdg:W3CN23405 {
     
     bdr:W3CN23405  a        bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I4CN12355 , bdr:I4CN12356 , bdr:I4CN12357 , bdr:I4CN12358 , bdr:I4CN12359 , bdr:I4CN12360 , bdr:I4CN12361 , bdr:I4CN12362 ;
+        bdo:isComplete      false ;
         bdo:qualityGrade    3 .
 }
