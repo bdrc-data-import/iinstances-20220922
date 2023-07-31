@@ -1,0 +1,38 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG175 {
+    bda:LG0W3KG175_2YGMPSSUV2GZ
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-07-31T16:41:26.272683Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scan"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG175  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG175 ;
+        adm:graphId         bdg:W3KG175 ;
+        adm:logEntry        bda:LG0W3KG175_2YGMPSSUV2GZ ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG578  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:NTW3KG175YUL40VIJ
+        a                   bdo:Note ;
+        bdo:noteText        "Publisher gave permission to post online without any restrictions."@en .
+    
+    bdr:W3KG175  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG578 ;
+        bdo:note            bdr:NTW3KG175YUL40VIJ ;
+        bdo:qualityGrade    5 ;
+        bdo:scanInfo        "PDF file is kindly shared to BDRC by the publisher"@en .
+}
