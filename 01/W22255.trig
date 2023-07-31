@@ -9,13 +9,20 @@
 bdg:W22255 {
     bda:I4817  a            adm:AdminData ;
         adm:adminAbout      bdr:I4817 ;
-        adm:logEntry        bda:LG0W22255_OLZA6AXKJP2U , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0W22255_OLZA6AXKJP2U , bda:LG0W22255_ZXEY8LDEZVJS , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0W22255_OLZA6AXKJP2U
         a                   adm:Synced ;
         adm:logDate         "2023-07-31T17:10:47.806240Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W22255_ZXEY8LDEZVJS
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-07-31T18:31:09.977361Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
