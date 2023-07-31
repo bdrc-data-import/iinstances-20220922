@@ -7,6 +7,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG177 {
+    bda:LG0W3KG177_GXOKLZZ7WKSI
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-07-31T18:21:38.280698Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:LG0W3KG177_JUO1H6403AOJ
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-07-31T17:52:51.508607Z"^^xsd:dateTime ;
@@ -17,7 +23,7 @@ bdg:W3KG177 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG177 ;
         adm:graphId         bdg:W3KG177 ;
-        adm:logEntry        bda:LG0W3KG177_JUO1H6403AOJ ;
+        adm:logEntry        bda:LG0W3KG177_GXOKLZZ7WKSI , bda:LG0W3KG177_JUO1H6403AOJ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -29,5 +35,5 @@ bdg:W3KG177 {
     bdr:W3KG177  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG580 ;
         bdo:qualityGrade    5 ;
-        bdo:scanInfo        "The scanned images are kindly shared to BDRC by Dolpo Geshe Phuntsop Nyima"@en .
+        bdo:scanInfo        "The scanned images are kindly shared with BDRC by Dolpo Geshe Phuntsok Nyima"@en .
 }
