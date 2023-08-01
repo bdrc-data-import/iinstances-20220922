@@ -1,22 +1,24 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W23834 {
     bda:I3187  a            adm:AdminData ;
         adm:adminAbout      bdr:I3187 ;
-        adm:logEntry        bda:LG90A35A92DF55BA86 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM415EC891 , bda:LGIMCD0AA52A ;
+        adm:logEntry        bda:LG0W23834_WUR5LGFSWDRO , bda:LG90A35A92DF55BA86 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM415EC891 , bda:LGIMCD0AA52A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W23834_WUR5LGFSWDRO
+        a                   adm:Synced ;
+        adm:logDate         "2023-08-01T21:17:27.372723Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG90A35A92DF55BA86
         a                   adm:ContentQC ;
@@ -63,14 +65,14 @@ bdg:W23834 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3187  a            :ImageGroup ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   48 .
+    bdr:I3187  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  48 .
     
-    bdr:W23834  a           :ImageInstance ;
-        :inCollection       bdr:PR01JW11672 ;
-        :instanceHasVolume  bdr:I3187 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
+    bdr:W23834  a           bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR01JW11672 ;
+        bdo:instanceHasVolume  bdr:I3187 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, 63-F Sujan Singh Park, New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
