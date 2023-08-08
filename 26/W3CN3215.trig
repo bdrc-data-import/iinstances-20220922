@@ -1,32 +1,29 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN3215 {
     bda:I3CN3300  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN3300 ;
-        adm:logEntry        bda:LG167D9C69353A2DA2 , bda:LG5172C1B56CDA99E4 ;
+        adm:logEntry        bda:LG0W3CN3215_TQBG3YP7RGRP , bda:LG167D9C69353A2DA2 , bda:LG5172C1B56CDA99E4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN3301  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN3301 ;
-        adm:logEntry        bda:LGAD8E17C06BFCAE50 , bda:LGD9018F5BB5CFBBA6 ;
+        adm:logEntry        bda:LG0W3CN3215_TQBG3YP7RGRP , bda:LGAD8E17C06BFCAE50 , bda:LGD9018F5BB5CFBBA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN3302  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN3302 ;
-        adm:logEntry        bda:LG656FB75A311F61C5 , bda:LGBB882322305D6449 ;
+        adm:logEntry        bda:LG0W3CN3215_TQBG3YP7RGRP , bda:LG656FB75A311F61C5 , bda:LGBB882322305D6449 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,6 +44,13 @@ bdg:W3CN3215 {
         adm:logEntry        bda:LGC6976BA198EA0588 , bda:LGFF1A30289C732DA8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W3CN3215_TQBG3YP7RGRP
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-08-08T19:48:49.363923Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG167D9C69353A2DA2
         a                   adm:InitialDataCreation ;
@@ -138,50 +142,49 @@ bdg:W3CN3215 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN3300  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   527 .
+    bdr:I3CN3300  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  528 .
     
-    bdr:I3CN3301  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   603 .
+    bdr:I3CN3301  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  604 .
     
-    bdr:I3CN3302  a         :ImageGroup ;
-        :biblioNote         "Volume 3 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   509 .
+    bdr:I3CN3302  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  510 .
     
-    bdr:I3CN3303  a         :ImageGroup ;
-        :biblioNote         "Volume 4 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   393 .
+    bdr:I3CN3303  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  393 .
     
-    bdr:I3CN3304  a         :ImageGroup ;
-        :biblioNote         "Volume 5 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   413 .
+    bdr:I3CN3304  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  413 .
     
-    bdr:I3CN3305  a         :ImageGroup ;
-        :biblioNote         "Volume 6 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   605 .
+    bdr:I3CN3305  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of skyang sprul dri med 'od zer gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  605 .
     
     bdr:ID7D9D1D1BF8794FD9
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147728758" .
     
-    bdr:W3CN3215  a         :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID7D9D1D1BF8794FD9 ;
-        :instanceHasVolume  bdr:I3CN3300 , bdr:I3CN3301 , bdr:I3CN3302 , bdr:I3CN3303 , bdr:I3CN3304 , bdr:I3CN3305 ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "11/2016"@en .
+    bdr:W3CN3215  a         bdo:ImageInstance ;
+        bf:identifiedBy     bdr:ID7D9D1D1BF8794FD9 ;
+        bdo:instanceHasVolume  bdr:I3CN3300 , bdr:I3CN3301 , bdr:I3CN3302 , bdr:I3CN3303 , bdr:I3CN3304 , bdr:I3CN3305 ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "11/2016"@en .
 }
