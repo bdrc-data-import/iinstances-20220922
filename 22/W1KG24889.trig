@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG24889 {
@@ -32,33 +27,40 @@ bdg:W1KG24889 {
     
     bda:I1KG24894  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24894 ;
-        adm:logEntry        bda:LG8243AF66DD1A5B2C , bda:LGDE2F97FC3E273059 ;
+        adm:logEntry        bda:LG0W1KG24889_QCAF7YUUMVXE , bda:LG8243AF66DD1A5B2C , bda:LGDE2F97FC3E273059 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24895  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24895 ;
-        adm:logEntry        bda:LG59B1FFFECED553C1 , bda:LG86705856FC4C5D03 ;
+        adm:logEntry        bda:LG0W1KG24889_QCAF7YUUMVXE , bda:LG59B1FFFECED553C1 , bda:LG86705856FC4C5D03 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24896  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24896 ;
-        adm:logEntry        bda:LG2E22057EF3B06CB0 , bda:LG66CA29DED24C8E44 ;
+        adm:logEntry        bda:LG0W1KG24889_QCAF7YUUMVXE , bda:LG2E22057EF3B06CB0 , bda:LG66CA29DED24C8E44 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24897  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24897 ;
-        adm:logEntry        bda:LG346DB32D5D3658E0 , bda:LG3AC36CFF8B11A7C5 ;
+        adm:logEntry        bda:LG0W1KG24889_QCAF7YUUMVXE , bda:LG346DB32D5D3658E0 , bda:LG3AC36CFF8B11A7C5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24898  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24898 ;
-        adm:logEntry        bda:LG24635C6FB5E98DEE , bda:LGA9B6A307C2C05737 ;
+        adm:logEntry        bda:LG0W1KG24889_QCAF7YUUMVXE , bda:LG24635C6FB5E98DEE , bda:LGA9B6A307C2C05737 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG24889_QCAF7YUUMVXE
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-08-08T16:58:09.872339Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG12C81EA9C1EF584C
         a                   adm:Synced ;
@@ -174,55 +176,55 @@ bdg:W1KG24889 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG24891  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   594 .
+    bdr:I1KG24891  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  594 .
     
-    bdr:I1KG24892  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
+    bdr:I1KG24892  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
     
-    bdr:I1KG24893  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   384 .
+    bdr:I1KG24893  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  384 .
     
-    bdr:I1KG24894  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   442 .
+    bdr:I1KG24894  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  442 .
     
-    bdr:I1KG24895  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   478 .
+    bdr:I1KG24895  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  478 .
     
-    bdr:I1KG24896  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   468 .
+    bdr:I1KG24896  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  470 .
     
-    bdr:I1KG24897  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   530 .
+    bdr:I1KG24897  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  530 .
     
-    bdr:I1KG24898  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   556 .
+    bdr:I1KG24898  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of bod kyi tshad ma rig pa'i bstan bcos dkon po bdams bsgrigs/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  556 .
     
-    bdr:W1KG24889  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG24891 , bdr:I1KG24892 , bdr:I1KG24893 , bdr:I1KG24894 , bdr:I1KG24895 , bdr:I1KG24896 , bdr:I1KG24897 , bdr:I1KG24898 ;
-        :numberOfVolumes    8 .
+    bdr:W1KG24889  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG24891 , bdr:I1KG24892 , bdr:I1KG24893 , bdr:I1KG24894 , bdr:I1KG24895 , bdr:I1KG24896 , bdr:I1KG24897 , bdr:I1KG24898 ;
+        bdo:numberOfVolumes  8 .
 }
