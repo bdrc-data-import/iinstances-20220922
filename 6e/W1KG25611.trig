@@ -1,14 +1,11 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG25611 {
@@ -116,13 +113,13 @@ bdg:W1KG25611 {
     
     bda:I1KG25630  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25630 ;
-        adm:logEntry        bda:LG87BFF5AA203F5F41 , bda:LGBBA10523C73C4372 ;
+        adm:logEntry        bda:LG0W1KG25611_FASOF6YJFYPZ , bda:LG87BFF5AA203F5F41 , bda:LGBBA10523C73C4372 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG25631  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25631 ;
-        adm:logEntry        bda:LG42B278F717CFCD7A , bda:LGAEF4F8E99D3AC17C ;
+        adm:logEntry        bda:LG0W1KG25611_FASOF6YJFYPZ , bda:LG42B278F717CFCD7A , bda:LGAEF4F8E99D3AC17C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -140,13 +137,13 @@ bdg:W1KG25611 {
     
     bda:I1KG25634  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25634 ;
-        adm:logEntry        bda:LG64CF5731618E66AB , bda:LGA418DA1508AB8849 ;
+        adm:logEntry        bda:LG0W1KG25611_FASOF6YJFYPZ , bda:LG64CF5731618E66AB , bda:LGA418DA1508AB8849 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG25635  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25635 ;
-        adm:logEntry        bda:LG2D2B2D80D93FDAC1 , bda:LG441F302CF857CD88 ;
+        adm:logEntry        bda:LG0W1KG25611_FASOF6YJFYPZ , bda:LG2D2B2D80D93FDAC1 , bda:LG441F302CF857CD88 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -227,6 +224,13 @@ bdg:W1KG25611 {
         adm:logDate         "2017-11-30T02:00:03.754Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W1KG25611_FASOF6YJFYPZ
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-08-08T17:12:11.485246Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG12FC3663431E50F4
         a                   adm:InitialDataCreation ;
@@ -642,217 +646,216 @@ bdg:W1KG25611 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG25613  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   549 .
+    bdr:I1KG25613  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  549 .
     
-    bdr:I1KG25614  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   399 .
+    bdr:I1KG25614  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  399 .
     
-    bdr:I1KG25615  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   405 .
+    bdr:I1KG25615  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  405 .
     
-    bdr:I1KG25616  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   645 .
+    bdr:I1KG25616  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  645 .
     
-    bdr:I1KG25617  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   599 .
+    bdr:I1KG25617  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  599 .
     
-    bdr:I1KG25618  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   591 .
+    bdr:I1KG25618  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  591 .
     
-    bdr:I1KG25619  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   593 .
+    bdr:I1KG25619  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  593 .
     
-    bdr:I1KG25620  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   565 .
+    bdr:I1KG25620  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  565 .
     
-    bdr:I1KG25621  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   425 .
+    bdr:I1KG25621  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  425 .
     
-    bdr:I1KG25622  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   533 .
+    bdr:I1KG25622  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  533 .
     
-    bdr:I1KG25623  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   485 .
+    bdr:I1KG25623  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  485 .
     
-    bdr:I1KG25624  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   539 .
+    bdr:I1KG25624  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  539 .
     
-    bdr:I1KG25625  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   455 .
+    bdr:I1KG25625  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  455 .
     
-    bdr:I1KG25626  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   421 .
+    bdr:I1KG25626  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  421 .
     
-    bdr:I1KG25627  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   565 .
+    bdr:I1KG25627  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  565 .
     
-    bdr:I1KG25628  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   381 .
+    bdr:I1KG25628  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  381 .
     
-    bdr:I1KG25629  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   329 .
+    bdr:I1KG25629  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  329 .
     
-    bdr:I1KG25630  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   621 .
+    bdr:I1KG25630  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  620 .
     
-    bdr:I1KG25631  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   567 .
+    bdr:I1KG25631  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  566 .
     
-    bdr:I1KG25632  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   309 .
+    bdr:I1KG25632  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  309 .
     
-    bdr:I1KG25633  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   559 .
+    bdr:I1KG25633  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  559 .
     
-    bdr:I1KG25634  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   559 .
+    bdr:I1KG25634  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  558 .
     
-    bdr:I1KG25635  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   599 .
+    bdr:I1KG25635  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  594 .
     
-    bdr:I1KG25636  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   389 .
+    bdr:I1KG25636  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  389 .
     
-    bdr:I1KG25637  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   385 .
+    bdr:I1KG25637  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  385 .
     
-    bdr:I1KG25638  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   369 .
+    bdr:I1KG25638  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  369 .
     
-    bdr:I1KG25639  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   351 .
+    bdr:I1KG25639  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  351 .
     
-    bdr:I1KG25640  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   423 .
+    bdr:I1KG25640  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  423 .
     
-    bdr:I1KG25641  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   381 .
+    bdr:I1KG25641  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  381 .
     
-    bdr:I1KG25642  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   367 .
+    bdr:I1KG25642  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  367 .
     
-    bdr:I1KG25643  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   655 .
+    bdr:I1KG25643  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  655 .
     
-    bdr:I1KG25644  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   545 .
+    bdr:I1KG25644  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  545 .
     
-    bdr:I1KG25645  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   825 .
+    bdr:I1KG25645  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  825 .
     
-    bdr:I1KG25646  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   685 .
+    bdr:I1KG25646  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of ris med brgyud yig nor bu'i bang mdzod/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  685 .
     
     bdr:ID61EB55366169DC97
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147751735" .
     
-    bdr:W1KG25611  a        :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID61EB55366169DC97 ;
-        :instanceHasVolume  bdr:I1KG25613 , bdr:I1KG25614 , bdr:I1KG25615 , bdr:I1KG25616 , bdr:I1KG25617 , bdr:I1KG25618 , bdr:I1KG25619 , bdr:I1KG25620 , bdr:I1KG25621 , bdr:I1KG25622 , bdr:I1KG25623 , bdr:I1KG25624 , bdr:I1KG25625 , bdr:I1KG25626 , bdr:I1KG25627 , bdr:I1KG25628 , bdr:I1KG25629 , bdr:I1KG25630 , bdr:I1KG25631 , bdr:I1KG25632 , bdr:I1KG25633 , bdr:I1KG25634 , bdr:I1KG25635 , bdr:I1KG25636 , bdr:I1KG25637 , bdr:I1KG25638 , bdr:I1KG25639 , bdr:I1KG25640 , bdr:I1KG25641 , bdr:I1KG25642 , bdr:I1KG25643 , bdr:I1KG25644 , bdr:I1KG25645 , bdr:I1KG25646 ;
-        :numberOfVolumes    34 .
+    bdr:W1KG25611  a        bdo:ImageInstance ;
+        bf:identifiedBy     bdr:ID61EB55366169DC97 ;
+        bdo:instanceHasVolume  bdr:I1KG25613 , bdr:I1KG25614 , bdr:I1KG25615 , bdr:I1KG25616 , bdr:I1KG25617 , bdr:I1KG25618 , bdr:I1KG25619 , bdr:I1KG25620 , bdr:I1KG25621 , bdr:I1KG25622 , bdr:I1KG25623 , bdr:I1KG25624 , bdr:I1KG25625 , bdr:I1KG25626 , bdr:I1KG25627 , bdr:I1KG25628 , bdr:I1KG25629 , bdr:I1KG25630 , bdr:I1KG25631 , bdr:I1KG25632 , bdr:I1KG25633 , bdr:I1KG25634 , bdr:I1KG25635 , bdr:I1KG25636 , bdr:I1KG25637 , bdr:I1KG25638 , bdr:I1KG25639 , bdr:I1KG25640 , bdr:I1KG25641 , bdr:I1KG25642 , bdr:I1KG25643 , bdr:I1KG25644 , bdr:I1KG25645 , bdr:I1KG25646 ;
+        bdo:numberOfVolumes  34 .
 }
