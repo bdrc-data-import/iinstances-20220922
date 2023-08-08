@@ -37,6 +37,22 @@ bdg:W3CN7000 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bda:I3KG566  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG566 ;
+        adm:logEntry        bda:LG0W3CN7000_DMNK2Z8OUIYS .
+    
+    bda:I3KG567  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG567 ;
+        adm:logEntry        bda:LG0W3CN7000_DMNK2Z8OUIYS .
+    
+    bda:I3KG568  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG568 ;
+        adm:logEntry        bda:LG0W3CN7000_DMNK2Z8OUIYS .
+    
+    bda:I3KG569  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG569 ;
+        adm:logEntry        bda:LG0W3CN7000_DMNK2Z8OUIYS .
+    
     bda:LG0584108B7E88F8D3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-14T11:35:55.242Z"^^xsd:dateTime ;
@@ -48,6 +64,13 @@ bdg:W3CN7000 {
         adm:logDate         "2023-06-27T22:44:12.504014Z"^^xsd:dateTime ;
         adm:logMessage      "added scan request for v 6-9"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3CN7000_DMNK2Z8OUIYS
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-08-08T19:53:21.080098Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG24EB4A0502148589
         a                   adm:Synced ;
@@ -153,19 +176,23 @@ bdg:W3CN7000 {
     
     bdr:I3KG566  a          bdo:ImageGroup ;
         bdo:volumeNumber    6 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  606 .
     
     bdr:I3KG567  a          bdo:ImageGroup ;
         bdo:volumeNumber    7 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  725 .
     
     bdr:I3KG568  a          bdo:ImageGroup ;
         bdo:volumeNumber    8 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  589 .
     
     bdr:I3KG569  a          bdo:ImageGroup ;
         bdo:volumeNumber    9 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  670 .
     
     bdr:W3CN7000  a         bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3CN7002 , bdr:I3CN7003 , bdr:I3CN7004 , bdr:I3CN7005 , bdr:I3CN7006 , bdr:I3KG566 , bdr:I3KG567 , bdr:I3KG568 , bdr:I3KG569 ;
