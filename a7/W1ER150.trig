@@ -7,6 +7,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1ER150 {
+    bda:I1ER841  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER841 ;
+        adm:logEntry        bda:LG0W1ER150_AIWQJXINQJ3N .
+    
+    bda:I1ER842  a          adm:AdminData ;
+        adm:adminAbout      bdr:I1ER842 ;
+        adm:logEntry        bda:LG0W1ER150_AIWQJXINQJ3N .
+    
+    bda:LG0W1ER150_AIWQJXINQJ3N
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-08-23T19:02:50.324579Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W1ER150_ESFYSGE84IWJ
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-08-09T16:17:22.050545Z"^^xsd:dateTime ;
@@ -30,11 +45,13 @@ bdg:W1ER150 {
     
     bdr:I1ER841  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  1718 .
     
     bdr:I1ER842  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  335 .
     
     bdr:W1ER150  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I1ER841 , bdr:I1ER842 ;
