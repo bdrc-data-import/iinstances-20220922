@@ -9,13 +9,20 @@
 bdg:W2KG210280 {
     bda:I3KG366  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG366 ;
-        adm:logEntry        bdr:LG0W2KG210280_HCHJ6050KJQ5 .
+        adm:logEntry        bda:LG0W2KG210280_XRHEQDLPC8J5 , bdr:LG0W2KG210280_HCHJ6050KJQ5 .
     
     bda:LG0W2KG210280_BZJE96HRJWV8
         a                   adm:UpdateData ;
         adm:logDate         "2023-02-01T14:22:14.521089Z"^^xsd:dateTime ;
         adm:logMessage      "Image instance"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W2KG210280_XRHEQDLPC8J5
+        a                   adm:Synced ;
+        adm:logDate         "2023-08-23T19:07:54.667629Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W2KG210280  a       adm:AdminData ;
         adm:access          bda:AccessFairUse ;
@@ -28,7 +35,8 @@ bdg:W2KG210280 {
     
     bdr:I3KG366  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  250 .
     
     bdr:LG0W2KG210280_HCHJ6050KJQ5
         a                   adm:ScanRequested ;
