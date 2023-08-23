@@ -9,7 +9,14 @@
 bdg:W2KG208170 {
     bda:I3KG334  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG334 ;
-        adm:logEntry        bdr:LG0W2KG208170_IZ9H7C3N6XWT .
+        adm:logEntry        bda:LG0W2KG208170_EXKT7VAOOHMX , bdr:LG0W2KG208170_IZ9H7C3N6XWT .
+    
+    bda:LG0W2KG208170_EXKT7VAOOHMX
+        a                   adm:Synced ;
+        adm:logDate         "2023-08-23T19:05:57.165697Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W2KG208170_TZ13P9DCKDRF
         a                   adm:UpdateData ;
@@ -28,7 +35,8 @@ bdg:W2KG208170 {
     
     bdr:I3KG334  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  204 .
     
     bdr:LG0W2KG208170_IZ9H7C3N6XWT
         a                   adm:ScanRequested ;
