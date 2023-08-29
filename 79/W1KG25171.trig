@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG25171 {
@@ -17,6 +12,12 @@ bdg:W1KG25171 {
         adm:logEntry        bda:LG813348FC6C03B8A8 , bda:LGC6ACCED9E334C333 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W1KG25171_K1ZDSDAUK1YB
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-08-29T13:18:51.409155Z"^^xsd:dateTime ;
+        adm:logMessage      "added missing page note"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG14B9560F5A7F223E
         a                   adm:ScanRequestCreation ;
@@ -43,18 +44,23 @@ bdg:W1KG25171 {
         adm:gitPath         "79/W1KG25171.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25171 ;
-        adm:logEntry        bda:LG14B9560F5A7F223E ;
+        adm:logEntry        bda:LG0W1KG25171_K1ZDSDAUK1YB , bda:LG14B9560F5A7F223E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG25173  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bslab bya nor bu'i gling du bgrod pa'i lam yig sogs bslab bya sna tshogs/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   107 .
+    bdr:I1KG25173  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bslab bya nor bu'i gling du bgrod pa'i lam yig sogs bslab bya sna tshogs/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  107 .
     
-    bdr:W1KG25171  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1KG25173 ;
-        :numberOfVolumes    1 .
+    bdr:NTW1KG25171XRQG8YLK
+        a                   bdo:Note ;
+        bdo:noteText        "pages number 33 and 34 are missing."@en .
+    
+    bdr:W1KG25171  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1KG25173 ;
+        bdo:note            bdr:NTW1KG25171XRQG8YLK ;
+        bdo:numberOfVolumes  1 .
 }
