@@ -1,0 +1,33 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3JT13379 {
+    bda:LG0W3JT13379_BUVB0LYMRKZU
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-09-13T19:32:08.177909Z"^^xsd:dateTime ;
+        adm:logMessage      "generated Scan"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3JT13379  a        adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3JT13379 ;
+        adm:graphId         bdg:W3JT13379 ;
+        adm:logEntry        bda:LG0W3JT13379_BUVB0LYMRKZU ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG619  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3JT13379  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG619 ;
+        bdo:qualityGrade    5 ;
+        bdo:scanInfo        "PDF file of the text is shared by Vajra Vidya Institute Library."@en .
+}
