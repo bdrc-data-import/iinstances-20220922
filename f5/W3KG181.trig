@@ -1,0 +1,33 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG181 {
+    bda:LG0W3KG181_GXMIOKV8BJJD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-09-15T18:07:06.507610Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scan"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG181  a          adm:AdminData ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3KG181 ;
+        adm:graphId         bdg:W3KG181 ;
+        adm:logEntry        bda:LG0W3KG181_GXMIOKV8BJJD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG622  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG181  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG622 ;
+        bdo:qualityGrade    5 ;
+        bdo:scanInfo        "Digitized by the Internet Archive in 2023"@en .
+}
