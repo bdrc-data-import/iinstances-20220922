@@ -7,6 +7,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3JT13383 {
+    bda:I3KG627  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG627 ;
+        adm:logEntry        bdr:LG0W3JT13383_OLVSY21M6PTD .
+    
     bda:LG0W3JT13383_C0FAE5VIODL6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-09-16T18:43:26.272745Z"^^xsd:dateTime ;
@@ -17,7 +21,7 @@ bdg:W3JT13383 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3JT13383 ;
         adm:graphId         bdg:W3JT13383 ;
-        adm:logEntry        bda:LG0W3JT13383_C0FAE5VIODL6 ;
+        adm:logEntry        bda:LG0W3JT13383_C0FAE5VIODL6 , bdr:LG0W3JT13383_OLVSY21M6PTD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -26,8 +30,20 @@ bdg:W3JT13383 {
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  0 .
     
+    bdr:I3KG627  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3JT13383_OLVSY21M6PTD
+        a                   adm:ScanRequested ;
+        adm:logDate         "2023-09-16T18:52:37.218592Z"^^xsd:dateTime ;
+        adm:logMessage      "add 1 volumes (from scan request tool)"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
     bdr:W3JT13383  a        bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I3KG626 ;
+        bdo:instanceHasVolume  bdr:I3KG626 , bdr:I3KG627 ;
+        bdo:numberOfVolumes  2 ;
         bdo:qualityGrade    3 ;
         bdo:scanInfo        "PDF file is shared by Vajra Vidya Institute Library."@en .
 }
