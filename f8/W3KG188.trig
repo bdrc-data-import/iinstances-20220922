@@ -1,0 +1,37 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG188 {
+    bda:I3KG642  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG642 ;
+        adm:logEntry        bdr:LG0W3KG188_9CK84IKGABWH .
+    
+    bda:W3KG188  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG188 ;
+        adm:graphId         bdg:W3KG188 ;
+        adm:logEntry        bdr:LG0W3KG188_9CK84IKGABWH ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG642  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:LG0W3KG188_9CK84IKGABWH
+        a                   adm:InitialDataCreation , adm:ScanRequested ;
+        adm:logDate         "2023-10-17T19:21:08.826610Z"^^xsd:dateTime ;
+        adm:logMessage      "create through scan request tool"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bdr:W3KG188  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG642 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "PDF file of Gyuto Library, Sidhbari, Dharamsala, H.P."@en .
+}
