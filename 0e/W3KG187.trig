@@ -11,11 +11,18 @@ bdg:W3KG187 {
         adm:adminAbout      bdr:I3KG641 ;
         adm:logEntry        bdr:LG0W3KG187_7P27QJG1G7YH .
     
+    bda:LG0W3KG187_GVL10IKGTIJJ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-10-17T19:27:17.868296Z"^^xsd:dateTime ;
+        adm:logMessage      "added in collection"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG187  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3KG187 ;
         adm:graphId         bdg:W3KG187 ;
-        adm:logEntry        bdr:LG0W3KG187_7P27QJG1G7YH ;
+        adm:logEntry        bda:LG0W3KG187_GVL10IKGTIJJ , bdr:LG0W3KG187_7P27QJG1G7YH ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
@@ -31,7 +38,9 @@ bdg:W3KG187 {
         adm:logWho          bdu:U1426146149 .
     
     bdr:W3KG187  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR3KG3 ;
         bdo:instanceHasVolume  bdr:I3KG641 ;
         bdo:numberOfVolumes  1 ;
+        bdo:qualityGrade    5 ;
         bdo:scanInfo        "PDF file of Gyuto Library, Sidhbari, Dharamsala, H.P."@en .
 }
