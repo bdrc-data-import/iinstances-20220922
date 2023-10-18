@@ -9,13 +9,20 @@
 bdg:W1FPL7563 {
     bda:I1FPL7563  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL7563 ;
-        adm:logEntry        bda:LG0W1FPL7563_GMDQE4RVXBVB , bda:LGIMA3A86F9513 ;
+        adm:logEntry        bda:LG0W1FPL7563_GMDQE4RVXBVB , bda:LG0W1FPL7563_OT9OB9RO1VQO , bda:LGIMA3A86F9513 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0W1FPL7563_GMDQE4RVXBVB
         a                   adm:Synced ;
         adm:logDate         "2023-10-18T15:43:00.143802Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W1FPL7563_OT9OB9RO1VQO
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-10-18T15:43:40.167304Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
