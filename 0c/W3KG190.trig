@@ -9,13 +9,20 @@
 bdg:W3KG190 {
     bda:I3KG644  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG644 ;
-        adm:logEntry        bdr:LG0W3KG190_M73XO52EGHDU .
+        adm:logEntry        bda:LG0W3KG190_X8Y3PY76EBO7 , bdr:LG0W3KG190_M73XO52EGHDU .
     
     bda:LG0W3KG190_3BHCSZOLIM2I
         a                   adm:UpdateData ;
         adm:logDate         "2023-10-17T19:31:49.690069Z"^^xsd:dateTime ;
         adm:logMessage      "added in collection"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3KG190_X8Y3PY76EBO7
+        a                   adm:Synced ;
+        adm:logDate         "2023-11-01T22:48:43.685168Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3KG190  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -28,7 +35,8 @@ bdg:W3KG190 {
     
     bdr:I3KG644  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  495 .
     
     bdr:LG0W3KG190_M73XO52EGHDU
         a                   adm:InitialDataCreation , adm:ScanRequested ;
