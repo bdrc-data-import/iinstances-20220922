@@ -9,7 +9,14 @@
 bdg:W3KG196 {
     bda:I3KG650  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG650 ;
-        adm:logEntry        bdr:LG0W3KG196_GU2ZVOCF2BZ1 .
+        adm:logEntry        bda:LG0W3KG196_D4WBC5EF6LFK , bdr:LG0W3KG196_GU2ZVOCF2BZ1 .
+    
+    bda:LG0W3KG196_D4WBC5EF6LFK
+        a                   adm:Synced ;
+        adm:logDate         "2023-11-01T22:53:23.051549Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W3KG196_PDA5OBIR6ZUP
         a                   adm:UpdateData ;
@@ -28,7 +35,8 @@ bdg:W3KG196 {
     
     bdr:I3KG650  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  1000 .
     
     bdr:LG0W3KG196_GU2ZVOCF2BZ1
         a                   adm:InitialDataCreation , adm:ScanRequested ;
