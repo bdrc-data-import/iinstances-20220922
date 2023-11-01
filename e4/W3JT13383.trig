@@ -7,19 +7,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3JT13383 {
+    bda:I3KG626  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG626 ;
+        adm:logEntry        bda:LG0W3JT13383_HSZLE4BA4MBX .
+    
     bda:I3KG627  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG627 ;
-        adm:logEntry        bdr:LG0W3JT13383_OLVSY21M6PTD .
+        adm:logEntry        bda:LG0W3JT13383_HSZLE4BA4MBX , bdr:LG0W3JT13383_OLVSY21M6PTD .
     
     bda:I3KG628  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG628 ;
-        adm:logEntry        bdr:LG0W3JT13383_ONXAO8P7HTOB .
+        adm:logEntry        bda:LG0W3JT13383_HSZLE4BA4MBX , bdr:LG0W3JT13383_ONXAO8P7HTOB .
     
     bda:LG0W3JT13383_C0FAE5VIODL6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-09-16T18:43:26.272745Z"^^xsd:dateTime ;
         adm:logMessage      "generated scan"@en ;
         adm:logWho          bdu:U1426146149 .
+    
+    bda:LG0W3JT13383_HSZLE4BA4MBX
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-11-01T22:40:21.860213Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3JT13383  a        adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -32,15 +43,18 @@ bdg:W3JT13383 {
     
     bdr:I3KG626  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  271 .
     
     bdr:I3KG627  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  399 .
     
     bdr:I3KG628  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  369 .
     
     bdr:LG0W3JT13383_OLVSY21M6PTD
         a                   adm:ScanRequested ;
