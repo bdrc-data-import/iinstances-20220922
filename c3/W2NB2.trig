@@ -1,0 +1,27 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2NB2 {
+    bda:LG0W2NB2_OJXAWNLYDGOR
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-11-02T17:50:16.631377Z"^^xsd:dateTime ;
+        adm:logMessage      "test outline"@en ;
+        adm:logWho          bdu:U678062094 .
+    
+    bda:W2NB2  a            adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2NB2 ;
+        adm:graphId         bdg:W2NB2 ;
+        adm:logEntry        bda:LG0W2NB2_OJXAWNLYDGOR ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bdr:W2NB2  a            bdo:ImageInstance ;
+        bdo:scanInfo        "test outline 2"@en .
+}
