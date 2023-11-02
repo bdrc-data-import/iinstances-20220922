@@ -13,14 +13,20 @@ bdg:W2NB1 {
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U678062094 .
     
+    bda:LG0W2NB1_RPXFIR4VNAZB
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-02T17:33:23.438758Z"^^xsd:dateTime ;
+        adm:logMessage      "withdrawn"@en ;
+        adm:logWho          bdu:U678062094 .
+    
     bda:W2NB1  a            adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2NB1 ;
         adm:graphId         bdg:W2NB1 ;
-        adm:logEntry        bda:LG0W2NB1_PXRFU2T18FDY ;
+        adm:logEntry        bda:LG0W2NB1_PXRFU2T18FDY , bda:LG0W2NB1_RPXFIR4VNAZB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:W2NB1  a            bdo:ImageInstance ;
         bdo:scanInfo        "test outline"@en .
