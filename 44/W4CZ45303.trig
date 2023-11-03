@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ45303 {
@@ -599,6 +594,12 @@ bdg:W4CZ45303 {
         adm:logDate         "2015-01-26T14:47:53.869Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG0W4CZ45303_NMETU1RYP3GA
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-03T14:58:00.934019Z"^^xsd:dateTime ;
+        adm:logMessage      "scan info, tbrcintro pages"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG1290E696692E2F46
         a                   adm:InitialDataCreation ;
@@ -1213,662 +1214,662 @@ bdg:W4CZ45303 {
         adm:gitPath         "44/W4CZ45303.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ45303 ;
-        adm:logEntry        bda:LGF9F2AE14CC807DC1 ;
+        adm:logEntry        bda:LG0W4CZ45303_NMETU1RYP3GA , bda:LGF9F2AE14CC807DC1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ45328  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45329  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45330  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45331  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45332  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45333  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45334  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45335  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45336  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45337  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45338  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45339  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45340  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45341  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45342  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45343  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45344  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45345  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45346  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45347  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45348  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45349  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45350  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45351  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45352  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45353  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45354  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45355  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45356  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45357  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45358  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45359  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45360  a        :ImageGroup ;
-        :biblioNote         "Volume 33 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45361  a        :ImageGroup ;
-        :biblioNote         "Volume 34 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45362  a        :ImageGroup ;
-        :biblioNote         "Volume 35 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45363  a        :ImageGroup ;
-        :biblioNote         "Volume 36 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45364  a        :ImageGroup ;
-        :biblioNote         "Volume 37 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45365  a        :ImageGroup ;
-        :biblioNote         "Volume 38 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45366  a        :ImageGroup ;
-        :biblioNote         "Volume 39 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45367  a        :ImageGroup ;
-        :biblioNote         "Volume 40 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45368  a        :ImageGroup ;
-        :biblioNote         "Volume 41 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45369  a        :ImageGroup ;
-        :biblioNote         "Volume 42 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45370  a        :ImageGroup ;
-        :biblioNote         "Volume 43 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45371  a        :ImageGroup ;
-        :biblioNote         "Volume 44 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45372  a        :ImageGroup ;
-        :biblioNote         "Volume 45 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45373  a        :ImageGroup ;
-        :biblioNote         "Volume 46 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45374  a        :ImageGroup ;
-        :biblioNote         "Volume 47 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45375  a        :ImageGroup ;
-        :biblioNote         "Volume 48 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45376  a        :ImageGroup ;
-        :biblioNote         "Volume 49 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45377  a        :ImageGroup ;
-        :biblioNote         "Volume 50 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45378  a        :ImageGroup ;
-        :biblioNote         "Volume 51 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45379  a        :ImageGroup ;
-        :biblioNote         "Volume 52 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45380  a        :ImageGroup ;
-        :biblioNote         "Volume 53 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45381  a        :ImageGroup ;
-        :biblioNote         "Volume 54 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45382  a        :ImageGroup ;
-        :biblioNote         "Volume 55 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45383  a        :ImageGroup ;
-        :biblioNote         "Volume 56 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45384  a        :ImageGroup ;
-        :biblioNote         "Volume 57 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45385  a        :ImageGroup ;
-        :biblioNote         "Volume 58 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45386  a        :ImageGroup ;
-        :biblioNote         "Volume 59 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45387  a        :ImageGroup ;
-        :biblioNote         "Volume 60 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45388  a        :ImageGroup ;
-        :biblioNote         "Volume 61 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45389  a        :ImageGroup ;
-        :biblioNote         "Volume 62 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45390  a        :ImageGroup ;
-        :biblioNote         "Volume 63 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45391  a        :ImageGroup ;
-        :biblioNote         "Volume 64 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45392  a        :ImageGroup ;
-        :biblioNote         "Volume 65 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45393  a        :ImageGroup ;
-        :biblioNote         "Volume 66 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45394  a        :ImageGroup ;
-        :biblioNote         "Volume 67 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45395  a        :ImageGroup ;
-        :biblioNote         "Volume 68 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45396  a        :ImageGroup ;
-        :biblioNote         "Volume 69 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45397  a        :ImageGroup ;
-        :biblioNote         "Volume 70 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45398  a        :ImageGroup ;
-        :biblioNote         "Volume 71 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45399  a        :ImageGroup ;
-        :biblioNote         "Volume 72 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45400  a        :ImageGroup ;
-        :biblioNote         "Volume 73 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45401  a        :ImageGroup ;
-        :biblioNote         "Volume 74 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45402  a        :ImageGroup ;
-        :biblioNote         "Volume 75 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45403  a        :ImageGroup ;
-        :biblioNote         "Volume 76 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45404  a        :ImageGroup ;
-        :biblioNote         "Volume 77 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45405  a        :ImageGroup ;
-        :biblioNote         "Volume 78 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45406  a        :ImageGroup ;
-        :biblioNote         "Volume 79 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45407  a        :ImageGroup ;
-        :biblioNote         "Volume 80 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45408  a        :ImageGroup ;
-        :biblioNote         "Volume 81 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45409  a        :ImageGroup ;
-        :biblioNote         "Volume 82 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45410  a        :ImageGroup ;
-        :biblioNote         "Volume 83 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45411  a        :ImageGroup ;
-        :biblioNote         "Volume 84 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45412  a        :ImageGroup ;
-        :biblioNote         "Volume 85 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45413  a        :ImageGroup ;
-        :biblioNote         "Volume 86 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45414  a        :ImageGroup ;
-        :biblioNote         "Volume 87 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45415  a        :ImageGroup ;
-        :biblioNote         "Volume 88 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45416  a        :ImageGroup ;
-        :biblioNote         "Volume 89 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45417  a        :ImageGroup ;
-        :biblioNote         "Volume 90 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45418  a        :ImageGroup ;
-        :biblioNote         "Volume 91 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45419  a        :ImageGroup ;
-        :biblioNote         "Volume 92 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45420  a        :ImageGroup ;
-        :biblioNote         "Volume 93 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45421  a        :ImageGroup ;
-        :biblioNote         "Volume 94 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45422  a        :ImageGroup ;
-        :biblioNote         "Volume 95 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45423  a        :ImageGroup ;
-        :biblioNote         "Volume 96 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45424  a        :ImageGroup ;
-        :biblioNote         "Volume 97 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45425  a        :ImageGroup ;
-        :biblioNote         "Volume 98 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45426  a        :ImageGroup ;
-        :biblioNote         "Volume 99 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45427  a        :ImageGroup ;
-        :biblioNote         "Volume 100 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45428  a        :ImageGroup ;
-        :biblioNote         "Volume 101 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       101 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45429  a        :ImageGroup ;
-        :biblioNote         "Volume 102 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       102 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45430  a        :ImageGroup ;
-        :biblioNote         "Volume 103 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       103 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45431  a        :ImageGroup ;
-        :biblioNote         "Volume 104 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       104 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45432  a        :ImageGroup ;
-        :biblioNote         "Volume 105 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       105 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45433  a        :ImageGroup ;
-        :biblioNote         "Volume 106 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       106 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45434  a        :ImageGroup ;
-        :biblioNote         "Volume 107 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       107 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I4CZ45435  a        :ImageGroup ;
-        :biblioNote         "Volume 108 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
-        :volumeNumber       108 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W4CZ45303  a        :ImageInstance ;
-        :inCollection       bdr:PR1VIENNA00 ;
-        :instanceHasVolume  bdr:I4CZ45328 , bdr:I4CZ45329 , bdr:I4CZ45330 , bdr:I4CZ45331 , bdr:I4CZ45332 , bdr:I4CZ45333 , bdr:I4CZ45334 , bdr:I4CZ45335 , bdr:I4CZ45336 , bdr:I4CZ45337 , bdr:I4CZ45338 , bdr:I4CZ45339 , bdr:I4CZ45340 , bdr:I4CZ45341 , bdr:I4CZ45342 , bdr:I4CZ45343 , bdr:I4CZ45344 , bdr:I4CZ45345 , bdr:I4CZ45346 , bdr:I4CZ45347 , bdr:I4CZ45348 , bdr:I4CZ45349 , bdr:I4CZ45350 , bdr:I4CZ45351 , bdr:I4CZ45352 , bdr:I4CZ45353 , bdr:I4CZ45354 , bdr:I4CZ45355 , bdr:I4CZ45356 , bdr:I4CZ45357 , bdr:I4CZ45358 , bdr:I4CZ45359 , bdr:I4CZ45360 , bdr:I4CZ45361 , bdr:I4CZ45362 , bdr:I4CZ45363 , bdr:I4CZ45364 , bdr:I4CZ45365 , bdr:I4CZ45366 , bdr:I4CZ45367 , bdr:I4CZ45368 , bdr:I4CZ45369 , bdr:I4CZ45370 , bdr:I4CZ45371 , bdr:I4CZ45372 , bdr:I4CZ45373 , bdr:I4CZ45374 , bdr:I4CZ45375 , bdr:I4CZ45376 , bdr:I4CZ45377 , bdr:I4CZ45378 , bdr:I4CZ45379 , bdr:I4CZ45380 , bdr:I4CZ45381 , bdr:I4CZ45382 , bdr:I4CZ45383 , bdr:I4CZ45384 , bdr:I4CZ45385 , bdr:I4CZ45386 , bdr:I4CZ45387 , bdr:I4CZ45388 , bdr:I4CZ45389 , bdr:I4CZ45390 , bdr:I4CZ45391 , bdr:I4CZ45392 , bdr:I4CZ45393 , bdr:I4CZ45394 , bdr:I4CZ45395 , bdr:I4CZ45396 , bdr:I4CZ45397 , bdr:I4CZ45398 , bdr:I4CZ45399 , bdr:I4CZ45400 , bdr:I4CZ45401 , bdr:I4CZ45402 , bdr:I4CZ45403 , bdr:I4CZ45404 , bdr:I4CZ45405 , bdr:I4CZ45406 , bdr:I4CZ45407 , bdr:I4CZ45408 , bdr:I4CZ45409 , bdr:I4CZ45410 , bdr:I4CZ45411 , bdr:I4CZ45412 , bdr:I4CZ45413 , bdr:I4CZ45414 , bdr:I4CZ45415 , bdr:I4CZ45416 , bdr:I4CZ45417 , bdr:I4CZ45418 , bdr:I4CZ45419 , bdr:I4CZ45420 , bdr:I4CZ45421 , bdr:I4CZ45422 , bdr:I4CZ45423 , bdr:I4CZ45424 , bdr:I4CZ45425 , bdr:I4CZ45426 , bdr:I4CZ45427 , bdr:I4CZ45428 , bdr:I4CZ45429 , bdr:I4CZ45430 , bdr:I4CZ45431 , bdr:I4CZ45432 , bdr:I4CZ45433 , bdr:I4CZ45434 , bdr:I4CZ45435 ;
-        :numberOfVolumes    108 ;
-        :scanInfo           "copy made available by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en , "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
+    bdr:I4CZ45328  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45329  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45330  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45331  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45332  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45333  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45334  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45335  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45336  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45337  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45338  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45339  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45340  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45341  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45342  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45343  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45344  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45345  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45346  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45347  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45348  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45349  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45350  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45351  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45352  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45353  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45354  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45355  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45356  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45357  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45358  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45359  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45360  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45361  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45362  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45363  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45364  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45365  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45366  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45367  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45368  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45369  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45370  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45371  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45372  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45373  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45374  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45375  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45376  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45377  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45378  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45379  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45380  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45381  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45382  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45383  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45384  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45385  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45386  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45387  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45388  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45389  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45390  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45391  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45392  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45393  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45394  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45395  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45396  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45397  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45398  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45399  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45400  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45401  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45402  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45403  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45404  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45405  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45406  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45407  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45408  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45409  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45410  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45411  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45412  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45413  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45414  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45415  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45416  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45417  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45418  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45419  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45420  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45421  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45422  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45423  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45424  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45425  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45426  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45427  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45428  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 101 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45429  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 102 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45430  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 103 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45431  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 104 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45432  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 105 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45433  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 106 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45434  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 107 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I4CZ45435  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 108 of bka' 'gyur/ (ba mgo bris ma/)"@en ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W4CZ45303  a        bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1VIENNA00 ;
+        bdo:instanceHasVolume  bdr:I4CZ45328 , bdr:I4CZ45329 , bdr:I4CZ45330 , bdr:I4CZ45331 , bdr:I4CZ45332 , bdr:I4CZ45333 , bdr:I4CZ45334 , bdr:I4CZ45335 , bdr:I4CZ45336 , bdr:I4CZ45337 , bdr:I4CZ45338 , bdr:I4CZ45339 , bdr:I4CZ45340 , bdr:I4CZ45341 , bdr:I4CZ45342 , bdr:I4CZ45343 , bdr:I4CZ45344 , bdr:I4CZ45345 , bdr:I4CZ45346 , bdr:I4CZ45347 , bdr:I4CZ45348 , bdr:I4CZ45349 , bdr:I4CZ45350 , bdr:I4CZ45351 , bdr:I4CZ45352 , bdr:I4CZ45353 , bdr:I4CZ45354 , bdr:I4CZ45355 , bdr:I4CZ45356 , bdr:I4CZ45357 , bdr:I4CZ45358 , bdr:I4CZ45359 , bdr:I4CZ45360 , bdr:I4CZ45361 , bdr:I4CZ45362 , bdr:I4CZ45363 , bdr:I4CZ45364 , bdr:I4CZ45365 , bdr:I4CZ45366 , bdr:I4CZ45367 , bdr:I4CZ45368 , bdr:I4CZ45369 , bdr:I4CZ45370 , bdr:I4CZ45371 , bdr:I4CZ45372 , bdr:I4CZ45373 , bdr:I4CZ45374 , bdr:I4CZ45375 , bdr:I4CZ45376 , bdr:I4CZ45377 , bdr:I4CZ45378 , bdr:I4CZ45379 , bdr:I4CZ45380 , bdr:I4CZ45381 , bdr:I4CZ45382 , bdr:I4CZ45383 , bdr:I4CZ45384 , bdr:I4CZ45385 , bdr:I4CZ45386 , bdr:I4CZ45387 , bdr:I4CZ45388 , bdr:I4CZ45389 , bdr:I4CZ45390 , bdr:I4CZ45391 , bdr:I4CZ45392 , bdr:I4CZ45393 , bdr:I4CZ45394 , bdr:I4CZ45395 , bdr:I4CZ45396 , bdr:I4CZ45397 , bdr:I4CZ45398 , bdr:I4CZ45399 , bdr:I4CZ45400 , bdr:I4CZ45401 , bdr:I4CZ45402 , bdr:I4CZ45403 , bdr:I4CZ45404 , bdr:I4CZ45405 , bdr:I4CZ45406 , bdr:I4CZ45407 , bdr:I4CZ45408 , bdr:I4CZ45409 , bdr:I4CZ45410 , bdr:I4CZ45411 , bdr:I4CZ45412 , bdr:I4CZ45413 , bdr:I4CZ45414 , bdr:I4CZ45415 , bdr:I4CZ45416 , bdr:I4CZ45417 , bdr:I4CZ45418 , bdr:I4CZ45419 , bdr:I4CZ45420 , bdr:I4CZ45421 , bdr:I4CZ45422 , bdr:I4CZ45423 , bdr:I4CZ45424 , bdr:I4CZ45425 , bdr:I4CZ45426 , bdr:I4CZ45427 , bdr:I4CZ45428 , bdr:I4CZ45429 , bdr:I4CZ45430 , bdr:I4CZ45431 , bdr:I4CZ45432 , bdr:I4CZ45433 , bdr:I4CZ45434 , bdr:I4CZ45435 ;
+        bdo:numberOfVolumes  108 ;
+        bdo:scanInfo        "Digitization by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna)"@en .
 }
