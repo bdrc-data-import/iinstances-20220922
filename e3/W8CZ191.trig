@@ -9,7 +9,14 @@
 bdg:W8CZ191 {
     bda:I8CZ800  a          adm:AdminData ;
         adm:adminAbout      bdr:I8CZ800 ;
-        adm:logEntry        bdr:LG0W8CZ191_ACMJK24Y7QEX .
+        adm:logEntry        bda:LG0W8CZ191_CBOVKLEFFFI3 , bdr:LG0W8CZ191_ACMJK24Y7QEX .
+    
+    bda:LG0W8CZ191_CBOVKLEFFFI3
+        a                   adm:Synced ;
+        adm:logDate         "2023-11-08T21:11:56.339631Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8CZ191_WWJN8XSERRL6
         a                   adm:UpdateData ;
@@ -28,7 +35,8 @@ bdg:W8CZ191 {
     
     bdr:I8CZ800  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  764 .
     
     bdr:LG0W8CZ191_ACMJK24Y7QEX
         a                   adm:InitialDataCreation , adm:ScanRequested ;
