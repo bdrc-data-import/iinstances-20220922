@@ -9,17 +9,24 @@
 bdg:W8CZ183 {
     bda:I8CZ797  a          adm:AdminData ;
         adm:adminAbout      bdr:I8CZ797 ;
-        adm:logEntry        bdr:LG0W8CZ183_KYOMICJKOQ38 .
+        adm:logEntry        bda:LG0W8CZ183_CID1OH8QME8B , bdr:LG0W8CZ183_KYOMICJKOQ38 .
     
     bda:I8CZ798  a          adm:AdminData ;
         adm:adminAbout      bdr:I8CZ798 ;
-        adm:logEntry        bdr:LG0W8CZ183_KYOMICJKOQ38 .
+        adm:logEntry        bda:LG0W8CZ183_CID1OH8QME8B , bdr:LG0W8CZ183_KYOMICJKOQ38 .
     
     bda:LG0W8CZ183_0PM1XFVCTCVR
         a                   adm:UpdateData ;
         adm:logDate         "2023-06-05T19:24:32.278413Z"^^xsd:dateTime ;
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ183_CID1OH8QME8B
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-11-08T21:05:08.828618Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG0W8CZ183_JGCWS5LRF411
         a                   adm:UpdateData ;
@@ -38,11 +45,13 @@ bdg:W8CZ183 {
     
     bdr:I8CZ797  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  987 .
     
     bdr:I8CZ798  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  696 .
     
     bdr:LG0W8CZ183_KYOMICJKOQ38
         a                   adm:InitialDataCreation , adm:ScanRequested ;
