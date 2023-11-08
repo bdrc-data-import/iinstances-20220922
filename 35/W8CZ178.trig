@@ -7,11 +7,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8CZ178 {
+    bda:I8CZ735  a          adm:AdminData ;
+        adm:adminAbout      bdr:I8CZ735 ;
+        adm:logEntry        bda:LG0W8CZ178_ELKUAOWWYZ6G .
+    
     bda:LG0W8CZ178_1JO5QNYZRX38
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-03-16T21:13:25.875876+00:00"^^xsd:dateTime ;
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
+    
+    bda:LG0W8CZ178_ELKUAOWWYZ6G
+        a                   adm:Synced ;
+        adm:logDate         "2023-11-08T21:02:02.116169Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W8CZ178  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -24,7 +35,8 @@ bdg:W8CZ178 {
     
     bdr:I8CZ735  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  315 .
     
     bdr:LG0W8CZ178_3NVWYIR1PGKQ
         a                   adm:UpdateData ;
