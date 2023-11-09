@@ -24,11 +24,17 @@ bdg:W8CZ195 {
         adm:logMessage      "new"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ195_YRBJZXBVPWWH
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-09T06:30:07.948030Z"^^xsd:dateTime ;
+        adm:logMessage      "scan info"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W8CZ195  a          adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ195 ;
         adm:graphId         bdg:W8CZ195 ;
-        adm:logEntry        bda:LG0W8CZ195_XJEIQYYHEHGV ;
+        adm:logEntry        bda:LG0W8CZ195_XJEIQYYHEHGV , bda:LG0W8CZ195_YRBJZXBVPWWH ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -39,6 +45,5 @@ bdg:W8CZ195 {
         bdo:volumePagesTotal  150 .
     
     bdr:W8CZ195  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I8CZ744 ;
-        bdo:scanInfo        "Photocopies from Hamburg"@en .
+        bdo:instanceHasVolume  bdr:I8CZ744 .
 }
