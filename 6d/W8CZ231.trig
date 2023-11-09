@@ -23,6 +23,12 @@ bdg:W8CZ231 {
         adm:logMessage      "fix scan info"@en ;
         adm:logWho          bdu:U1653882847 .
     
+    bda:LG0W8CZ231_HV0OXKW4BJR9
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-09T06:09:00.172910Z"^^xsd:dateTime ;
+        adm:logMessage      "collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ231_MSFSKBJMS7JQ
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-05-01T15:02:48.581836Z"^^xsd:dateTime ;
@@ -40,7 +46,7 @@ bdg:W8CZ231 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ231 ;
         adm:graphId         bdg:W8CZ231 ;
-        adm:logEntry        bda:LG0W8CZ231_CKT9KUNAJNSI , bda:LG0W8CZ231_E0EY1GHPPYHR , bda:LG0W8CZ231_MSFSKBJMS7JQ ;
+        adm:logEntry        bda:LG0W8CZ231_CKT9KUNAJNSI , bda:LG0W8CZ231_E0EY1GHPPYHR , bda:LG0W8CZ231_HV0OXKW4BJR9 , bda:LG0W8CZ231_MSFSKBJMS7JQ ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -51,5 +57,6 @@ bdg:W8CZ231 {
         bdo:volumePagesTotal  889 .
     
     bdr:W8CZ231  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NCLK ;
         bdo:instanceHasVolume  bdr:I8CZ779 .
 }
