@@ -24,6 +24,12 @@ bdg:W8CZ242 {
         adm:logMessage      "saved"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ242_KIAMMZK6FFX1
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-09T06:03:16.441299Z"^^xsd:dateTime ;
+        adm:logMessage      "collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ242_X7CAZLBLHE7W
         a                   adm:UpdateData ;
         adm:logDate         "2023-06-05T16:04:38.578763Z"^^xsd:dateTime ;
@@ -34,7 +40,7 @@ bdg:W8CZ242 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ242 ;
         adm:graphId         bdg:W8CZ242 ;
-        adm:logEntry        bda:LG0W8CZ242_HMLUJETL6HFT , bda:LG0W8CZ242_X7CAZLBLHE7W ;
+        adm:logEntry        bda:LG0W8CZ242_HMLUJETL6HFT , bda:LG0W8CZ242_KIAMMZK6FFX1 , bda:LG0W8CZ242_X7CAZLBLHE7W ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -45,5 +51,6 @@ bdg:W8CZ242 {
         bdo:volumePagesTotal  764 .
     
     bdr:W8CZ242  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NCLK ;
         bdo:instanceHasVolume  bdr:I8CZ790 .
 }
