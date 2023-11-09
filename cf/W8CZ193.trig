@@ -11,6 +11,12 @@ bdg:W8CZ193 {
         adm:adminAbout      bdr:I8CZ743 ;
         adm:logEntry        bda:LG0W8CZ193_PHPE58ZVWGXJ .
     
+    bda:LG0W8CZ193_1PX1RXJWKFGY
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-09T06:30:40.076735Z"^^xsd:dateTime ;
+        adm:logMessage      "collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ193_DRGHY2HXRI69
         a                   adm:UpdateData ;
         adm:logDate         "2023-06-05T15:47:33.194327Z"^^xsd:dateTime ;
@@ -40,7 +46,7 @@ bdg:W8CZ193 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ193 ;
         adm:graphId         bdg:W8CZ193 ;
-        adm:logEntry        bda:LG0W8CZ193_DRGHY2HXRI69 , bda:LG0W8CZ193_MI42FUDSPLDS , bda:LG0W8CZ193_ZJNSV4JYBYUA , bdr:LG0W8CZ193_2MN76NVIPBBB ;
+        adm:logEntry        bda:LG0W8CZ193_1PX1RXJWKFGY , bda:LG0W8CZ193_DRGHY2HXRI69 , bda:LG0W8CZ193_MI42FUDSPLDS , bda:LG0W8CZ193_ZJNSV4JYBYUA , bdr:LG0W8CZ193_2MN76NVIPBBB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -58,5 +64,6 @@ bdg:W8CZ193 {
         adm:logWho          bdu:U2089842660 .
     
     bdr:W8CZ193  a          bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1NCLK ;
         bdo:instanceHasVolume  bdr:I8CZ743 .
 }
