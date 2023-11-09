@@ -17,6 +17,12 @@ bdg:W8CZ197 {
         adm:logMessage      "new"@en ;
         adm:logWho          bdu:U2089842660 .
     
+    bda:LG0W8CZ197_4JXS6C9B7KZF
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-09T06:28:59.073004Z"^^xsd:dateTime ;
+        adm:logMessage      "collection"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W8CZ197_AA1GE1SKL6ID
         a                   adm:Synced ;
         adm:logDate         "2023-11-08T21:17:52.080830Z"^^xsd:dateTime ;
@@ -28,7 +34,7 @@ bdg:W8CZ197 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8CZ197 ;
         adm:graphId         bdg:W8CZ197 ;
-        adm:logEntry        bda:LG0W8CZ197_1JIGDEEOHBU2 ;
+        adm:logEntry        bda:LG0W8CZ197_1JIGDEEOHBU2 , bda:LG0W8CZ197_4JXS6C9B7KZF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -39,6 +45,6 @@ bdg:W8CZ197 {
         bdo:volumePagesTotal  490 .
     
     bdr:W8CZ197  a          bdo:ImageInstance ;
-        bdo:instanceHasVolume  bdr:I8CZ746 ;
-        bdo:scanInfo        "Photocopies from Hamburg"@en .
+        bdo:inCollection    bdr:PR1NCLK ;
+        bdo:instanceHasVolume  bdr:I8CZ746 .
 }
