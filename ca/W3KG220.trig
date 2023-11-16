@@ -13,11 +13,17 @@ bdg:W3KG220 {
         adm:logMessage      "generated scan"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG220_K9QWGAJYJWE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-16T19:09:19.163540Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
     bda:W3KG220  a          adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG220 ;
         adm:graphId         bdg:W3KG220 ;
-        adm:logEntry        bda:LG0W3KG220_HEC6RKQFZRAV ;
+        adm:logEntry        bda:LG0W3KG220_HEC6RKQFZRAV , bda:LG0W3KG220_K9QWGAJYJWE0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
