@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN27506 {
@@ -23,6 +18,12 @@ bdg:W3CN27506 {
         adm:logEntry        bda:LGF557F08B2F4DE6D5 , bda:LGIM4EA0D5B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W3CN27506_XCRLTZHGF8XR
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-17T03:36:22.872334Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to coyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LGC7A4FE04F88D8A6D
         a                   adm:ScanRequestCreation ;
@@ -55,31 +56,31 @@ bdg:W3CN27506 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W3CN27506  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN27506 ;
         adm:facetIndex      5 ;
         adm:gitPath         "ae/W3CN27506.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN27506 ;
-        adm:logEntry        bda:LGC7A4FE04F88D8A6D ;
+        adm:logEntry        bda:LG0W3CN27506_XCRLTZHGF8XR , bda:LGC7A4FE04F88D8A6D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN27520  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of mkhan chen pad+ma badz+ra'i gsung 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   498 .
+    bdr:I3CN27520  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mkhan chen pad+ma badz+ra'i gsung 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  498 .
     
-    bdr:I3CN27521  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of mkhan chen pad+ma badz+ra'i gsung 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   390 .
+    bdr:I3CN27521  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mkhan chen pad+ma badz+ra'i gsung 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  390 .
     
-    bdr:W3CN27506  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN27520 , bdr:I3CN27521 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN27506  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN27520 , bdr:I3CN27521 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "2021"@en .
 }
