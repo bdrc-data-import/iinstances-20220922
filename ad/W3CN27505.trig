@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN27505 {
@@ -89,6 +84,12 @@ bdg:W3CN27505 {
         adm:logDate         "2021-12-23T19:04:24.217Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN27505_P1CFZHSYVRQG
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-17T03:35:15.780388Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG2192D3602827A36B
         a                   adm:InitialDataCreation ;
@@ -199,79 +200,79 @@ bdg:W3CN27505 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W3CN27505  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN27505 ;
         adm:facetIndex      21 ;
         adm:gitPath         "ad/W3CN27505.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN27505 ;
-        adm:logEntry        bda:LG25DCADE6C4827990 ;
+        adm:logEntry        bda:LG0W3CN27505_P1CFZHSYVRQG , bda:LG25DCADE6C4827990 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN27509  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   340 .
+    bdr:I3CN27509  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  340 .
     
-    bdr:I3CN27510  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   422 .
+    bdr:I3CN27510  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  422 .
     
-    bdr:I3CN27511  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   240 .
+    bdr:I3CN27511  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  240 .
     
-    bdr:I3CN27512  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   236 .
+    bdr:I3CN27512  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  236 .
     
-    bdr:I3CN27513  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   236 .
+    bdr:I3CN27513  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  236 .
     
-    bdr:I3CN27514  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   296 .
+    bdr:I3CN27514  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  296 .
     
-    bdr:I3CN27515  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   278 .
+    bdr:I3CN27515  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  278 .
     
-    bdr:I3CN27516  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   366 .
+    bdr:I3CN27516  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  366 .
     
-    bdr:I3CN27517  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   354 .
+    bdr:I3CN27517  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  354 .
     
-    bdr:I3CN27518  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of mthu stobs gling pa'i gsung 'bum/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   440 .
+    bdr:I3CN27518  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of mthu stobs gling pa'i gsung 'bum/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  440 .
     
-    bdr:W3CN27505  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN27509 , bdr:I3CN27510 , bdr:I3CN27511 , bdr:I3CN27512 , bdr:I3CN27513 , bdr:I3CN27514 , bdr:I3CN27515 , bdr:I3CN27516 , bdr:I3CN27517 , bdr:I3CN27518 ;
-        :numberOfVolumes    10 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN27505  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN27509 , bdr:I3CN27510 , bdr:I3CN27511 , bdr:I3CN27512 , bdr:I3CN27513 , bdr:I3CN27514 , bdr:I3CN27515 , bdr:I3CN27516 , bdr:I3CN27517 , bdr:I3CN27518 ;
+        bdo:numberOfVolumes  10 ;
+        bdo:scanInfo        "2021"@en .
 }
