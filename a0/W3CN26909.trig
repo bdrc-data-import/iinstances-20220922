@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN26909 {
@@ -17,6 +12,12 @@ bdg:W3CN26909 {
         adm:logEntry        bda:LG1450C7AF15522314 , bda:LGIM03457DDE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W3CN26909_QFF54UG3MMQZ
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-17T03:32:31.518627Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG1450C7AF15522314
         a                   adm:InitialDataCreation ;
@@ -37,25 +38,25 @@ bdg:W3CN26909 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W3CN26909  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN26909 ;
         adm:facetIndex      3 ;
         adm:gitPath         "a0/W3CN26909.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26909 ;
-        adm:logEntry        bda:LG6480DAA1EC8DC5B3 ;
+        adm:logEntry        bda:LG0W3CN26909_QFF54UG3MMQZ , bda:LG6480DAA1EC8DC5B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN26912  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of yo ga'i lta grub dang lus po'i sbyong brdar/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   140 .
+    bdr:I3CN26912  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of yo ga'i lta grub dang lus po'i sbyong brdar/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  140 .
     
-    bdr:W3CN26909  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN26912 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN26909  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN26912 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "2021"@en .
 }
