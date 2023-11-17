@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN27507 {
@@ -47,6 +42,12 @@ bdg:W3CN27507 {
         adm:logEntry        bda:LG75F63697726295B3 , bda:LGIM1674960A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W3CN27507_Y41XZD3QEACX
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-17T03:35:53.014057Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG43D71FBE3A0B1974
         a                   adm:InitialDataCreation ;
@@ -127,55 +128,55 @@ bdg:W3CN27507 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W3CN27507  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN27507 ;
         adm:facetIndex      13 ;
         adm:gitPath         "27/W3CN27507.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN27507 ;
-        adm:logEntry        bda:LG68C03E789A7EA08A ;
+        adm:logEntry        bda:LG0W3CN27507_Y41XZD3QEACX , bda:LG68C03E789A7EA08A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN27523  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   256 .
+    bdr:I3CN27523  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  256 .
     
-    bdr:I3CN27524  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   290 .
+    bdr:I3CN27524  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  290 .
     
-    bdr:I3CN27525  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   140 .
+    bdr:I3CN27525  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  140 .
     
-    bdr:I3CN27526  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   372 .
+    bdr:I3CN27526  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  372 .
     
-    bdr:I3CN27527  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   402 .
+    bdr:I3CN27527  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  402 .
     
-    bdr:I3CN27528  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   466 .
+    bdr:I3CN27528  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of grub dbang rdzogs chen pa rim byon gyi gsung 'bum/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  466 .
     
-    bdr:W3CN27507  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN27523 , bdr:I3CN27524 , bdr:I3CN27525 , bdr:I3CN27526 , bdr:I3CN27527 , bdr:I3CN27528 ;
-        :numberOfVolumes    6 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN27507  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN27523 , bdr:I3CN27524 , bdr:I3CN27525 , bdr:I3CN27526 , bdr:I3CN27527 , bdr:I3CN27528 ;
+        bdo:numberOfVolumes  6 ;
+        bdo:scanInfo        "2021"@en .
 }
