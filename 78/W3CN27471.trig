@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN27471 {
@@ -215,6 +210,12 @@ bdg:W3CN27471 {
         adm:logDate         "2021-12-14T15:27:07.786Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG0W3CN27471_AWFUOU7IYJRP
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-17T03:37:01.055061Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG18BC53E561E0C30E
         a                   adm:InitialDataCreation ;
@@ -595,211 +596,211 @@ bdg:W3CN27471 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W3CN27471  a        adm:AdminData ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN27471 ;
         adm:facetIndex      65 ;
         adm:gitPath         "78/W3CN27471.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN27471 ;
-        adm:logEntry        bda:LG0C58BC16E5181AA1 ;
+        adm:logEntry        bda:LG0C58BC16E5181AA1 , bda:LG0W3CN27471_AWFUOU7IYJRP ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN27473  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   498 .
+    bdr:I3CN27473  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  498 .
     
-    bdr:I3CN27474  a        :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   524 .
+    bdr:I3CN27474  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  524 .
     
-    bdr:I3CN27475  a        :ImageGroup ;
-        :biblioNote         "Volume 3 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   676 .
+    bdr:I3CN27475  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  676 .
     
-    bdr:I3CN27476  a        :ImageGroup ;
-        :biblioNote         "Volume 4 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   578 .
+    bdr:I3CN27476  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  578 .
     
-    bdr:I3CN27477  a        :ImageGroup ;
-        :biblioNote         "Volume 5 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   324 .
+    bdr:I3CN27477  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  324 .
     
-    bdr:I3CN27478  a        :ImageGroup ;
-        :biblioNote         "Volume 6 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   808 .
+    bdr:I3CN27478  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  808 .
     
-    bdr:I3CN27479  a        :ImageGroup ;
-        :biblioNote         "Volume 7 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   208 .
+    bdr:I3CN27479  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  208 .
     
-    bdr:I3CN27480  a        :ImageGroup ;
-        :biblioNote         "Volume 8 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   788 .
+    bdr:I3CN27480  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  788 .
     
-    bdr:I3CN27481  a        :ImageGroup ;
-        :biblioNote         "Volume 9 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   496 .
+    bdr:I3CN27481  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  496 .
     
-    bdr:I3CN27482  a        :ImageGroup ;
-        :biblioNote         "Volume 10 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   234 .
+    bdr:I3CN27482  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  234 .
     
-    bdr:I3CN27483  a        :ImageGroup ;
-        :biblioNote         "Volume 11 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   554 .
+    bdr:I3CN27483  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  554 .
     
-    bdr:I3CN27484  a        :ImageGroup ;
-        :biblioNote         "Volume 12 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   352 .
+    bdr:I3CN27484  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  352 .
     
-    bdr:I3CN27485  a        :ImageGroup ;
-        :biblioNote         "Volume 13 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   604 .
+    bdr:I3CN27485  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  604 .
     
-    bdr:I3CN27486  a        :ImageGroup ;
-        :biblioNote         "Volume 14 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   508 .
+    bdr:I3CN27486  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  508 .
     
-    bdr:I3CN27487  a        :ImageGroup ;
-        :biblioNote         "Volume 15 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   323 .
+    bdr:I3CN27487  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  323 .
     
-    bdr:I3CN27488  a        :ImageGroup ;
-        :biblioNote         "Volume 16 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   628 .
+    bdr:I3CN27488  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  628 .
     
-    bdr:I3CN27489  a        :ImageGroup ;
-        :biblioNote         "Volume 17 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   716 .
+    bdr:I3CN27489  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  716 .
     
-    bdr:I3CN27490  a        :ImageGroup ;
-        :biblioNote         "Volume 18 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   464 .
+    bdr:I3CN27490  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  464 .
     
-    bdr:I3CN27491  a        :ImageGroup ;
-        :biblioNote         "Volume 19 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   262 .
+    bdr:I3CN27491  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  262 .
     
-    bdr:I3CN27492  a        :ImageGroup ;
-        :biblioNote         "Volume 20 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   642 .
+    bdr:I3CN27492  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  642 .
     
-    bdr:I3CN27493  a        :ImageGroup ;
-        :biblioNote         "Volume 21 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
+    bdr:I3CN27493  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
     
-    bdr:I3CN27494  a        :ImageGroup ;
-        :biblioNote         "Volume 22 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   700 .
+    bdr:I3CN27494  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  700 .
     
-    bdr:I3CN27495  a        :ImageGroup ;
-        :biblioNote         "Volume 23 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   568 .
+    bdr:I3CN27495  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  568 .
     
-    bdr:I3CN27496  a        :ImageGroup ;
-        :biblioNote         "Volume 24 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   372 .
+    bdr:I3CN27496  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  372 .
     
-    bdr:I3CN27497  a        :ImageGroup ;
-        :biblioNote         "Volume 25 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   462 .
+    bdr:I3CN27497  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  462 .
     
-    bdr:I3CN27498  a        :ImageGroup ;
-        :biblioNote         "Volume 26 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   522 .
+    bdr:I3CN27498  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  522 .
     
-    bdr:I3CN27499  a        :ImageGroup ;
-        :biblioNote         "Volume 27 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   552 .
+    bdr:I3CN27499  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  552 .
     
-    bdr:I3CN27500  a        :ImageGroup ;
-        :biblioNote         "Volume 28 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   646 .
+    bdr:I3CN27500  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  646 .
     
-    bdr:I3CN27501  a        :ImageGroup ;
-        :biblioNote         "Volume 29 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   560 .
+    bdr:I3CN27501  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  560 .
     
-    bdr:I3CN27502  a        :ImageGroup ;
-        :biblioNote         "Volume 30 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   742 .
+    bdr:I3CN27502  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  742 .
     
-    bdr:I3CN27503  a        :ImageGroup ;
-        :biblioNote         "Volume 31 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   328 .
+    bdr:I3CN27503  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  328 .
     
-    bdr:I3CN27504  a        :ImageGroup ;
-        :biblioNote         "Volume 32 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   660 .
+    bdr:I3CN27504  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  660 .
     
-    bdr:W3CN27471  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN27473 , bdr:I3CN27474 , bdr:I3CN27475 , bdr:I3CN27476 , bdr:I3CN27477 , bdr:I3CN27478 , bdr:I3CN27479 , bdr:I3CN27480 , bdr:I3CN27481 , bdr:I3CN27482 , bdr:I3CN27483 , bdr:I3CN27484 , bdr:I3CN27485 , bdr:I3CN27486 , bdr:I3CN27487 , bdr:I3CN27488 , bdr:I3CN27489 , bdr:I3CN27490 , bdr:I3CN27491 , bdr:I3CN27492 , bdr:I3CN27493 , bdr:I3CN27494 , bdr:I3CN27495 , bdr:I3CN27496 , bdr:I3CN27497 , bdr:I3CN27498 , bdr:I3CN27499 , bdr:I3CN27500 , bdr:I3CN27501 , bdr:I3CN27502 , bdr:I3CN27503 , bdr:I3CN27504 ;
-        :numberOfVolumes    32 ;
-        :scanInfo           "2021"@en .
+    bdr:W3CN27471  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3CN27473 , bdr:I3CN27474 , bdr:I3CN27475 , bdr:I3CN27476 , bdr:I3CN27477 , bdr:I3CN27478 , bdr:I3CN27479 , bdr:I3CN27480 , bdr:I3CN27481 , bdr:I3CN27482 , bdr:I3CN27483 , bdr:I3CN27484 , bdr:I3CN27485 , bdr:I3CN27486 , bdr:I3CN27487 , bdr:I3CN27488 , bdr:I3CN27489 , bdr:I3CN27490 , bdr:I3CN27491 , bdr:I3CN27492 , bdr:I3CN27493 , bdr:I3CN27494 , bdr:I3CN27495 , bdr:I3CN27496 , bdr:I3CN27497 , bdr:I3CN27498 , bdr:I3CN27499 , bdr:I3CN27500 , bdr:I3CN27501 , bdr:I3CN27502 , bdr:I3CN27503 , bdr:I3CN27504 ;
+        bdo:numberOfVolumes  32 ;
+        bdo:scanInfo        "2021"@en .
 }
