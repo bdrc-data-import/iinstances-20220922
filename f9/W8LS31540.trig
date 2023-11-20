@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS31540 {
@@ -43,18 +38,26 @@ bdg:W8LS31540 {
         adm:gitPath         "f9/W8LS31540.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS31540 ;
-        adm:logEntry        bda:LGD4D8E9D775A00F09 ;
+        adm:logEntry        bda:LGD4D8E9D775A00F09 , bdr:LG0W8LS31540_JNA67U5HH3BC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:W2PD17382 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
-    bdr:I8LS31584  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of zla gsang thig le zhes bya ba rgyud kyi rgyal po chen po/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   787 .
+    bdr:I8LS31584  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of zla gsang thig le zhes bya ba rgyud kyi rgyal po chen po/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  787 .
     
-    bdr:W8LS31540  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS31584 ;
-        :numberOfVolumes    1 .
+    bdr:LG0W8LS31540_JNA67U5HH3BC
+        a                   adm:WithdrawData ;
+        adm:logDate         "2023-11-20T12:29:56.791079Z"^^xsd:dateTime ;
+        adm:logMessage      "withdraw W8LS31540 in favor of W2PD17382"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bdr:W8LS31540  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS31584 ;
+        bdo:numberOfVolumes  1 .
 }
