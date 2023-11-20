@@ -1,0 +1,27 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER152 {
+    bda:LG0W1ER152_QMLTLQ5ZRQQQ
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-11-20T12:34:59.714336Z"^^xsd:dateTime ;
+        adm:logMessage      "create"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER152  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1ER152 ;
+        adm:graphId         bdg:W1ER152 ;
+        adm:logEntry        bda:LG0W1ER152_QMLTLQ5ZRQQQ ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:W1ER152  a          bdo:ImageInstance ;
+        bdo:scanInfo        "Original digitized images (W2PD17382 has been reorganized)"@en .
+}
