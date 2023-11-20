@@ -1,14 +1,11 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG18766 {
@@ -24,6 +21,12 @@ bdg:W1KG18766 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG0W1KG18766_DNWP329Y7KMT
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-20T16:42:10.371171Z"^^xsd:dateTime ;
+        adm:logMessage      "saved"@en ;
+        adm:logWho          bdu:U2089842660 .
+    
     bda:LG236AB85925B55867
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-18T14:21:47.001Z"^^xsd:dateTime ;
@@ -37,32 +40,32 @@ bdg:W1KG18766 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W1KG18766  a        adm:AdminData ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1KG18766 ;
         adm:facetIndex      4 ;
         adm:gitPath         "5f/W1KG18766.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18766 ;
-        adm:logEntry        bda:LG05B46860DD386574 ;
+        adm:logEntry        bda:LG05B46860DD386574 , bda:LG0W1KG18766_DNWP329Y7KMT ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1KG20679  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of zur zhig"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   300 .
+    bdr:I1KG20679  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of zur zhig"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  300 .
     
     bdr:ID61B4A44CA4D90791
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147749168" .
     
-    bdr:W1KG18766  a        :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:ID61B4A44CA4D90791 ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I1KG20679 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 11/2014"@en .
+    bdr:W1KG18766  a        bdo:ImageInstance ;
+        bf:identifiedBy     bdr:ID61B4A44CA4D90791 ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I1KG20679 ;
+        bdo:isComplete      false ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 11/2014"@en .
 }
