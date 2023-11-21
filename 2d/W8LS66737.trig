@@ -1,14 +1,11 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS66737 {
@@ -17,6 +14,12 @@ bdg:W8LS66737 {
         adm:logEntry        bda:LGFE3E19FB605A1545 , bda:LGIM8FBA30FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS66737_R0GFGDGA3VYG
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-21T16:14:06.687304Z"^^xsd:dateTime ;
+        adm:logMessage      "Withdrawn in favor of W3CN7000"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LGF628D27999F6D8F7
         a                   adm:ScanRequestCreation ;
@@ -43,25 +46,24 @@ bdg:W8LS66737 {
         adm:gitPath         "2d/W8LS66737.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66737 ;
-        adm:logEntry        bda:LGF628D27999F6D8F7 ;
+        adm:logEntry        bda:LG0W8LS66737_R0GFGDGA3VYG , bda:LGF628D27999F6D8F7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
-    bdr:I8LS67774  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of h+pha ran sir nyar ba'i tun hong shog hril yig rnying gi bshus yig phyogs bsgrigs/ dgu pa/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   672 .
+    bdr:I8LS67774  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of h+pha ran sir nyar ba'i tun hong shog hril yig rnying gi bshus yig phyogs bsgrigs/ dgu pa/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  672 .
     
     bdr:IDAD758A23F4D8B13D
         a                   bdr:OclcControlNumber ;
         rdf:value           "1147751441" .
     
-    bdr:W8LS66737  a        :ImageInstance ;
-        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
-            bdr:IDAD758A23F4D8B13D ;
-        :instanceHasVolume  bdr:I8LS67774 ;
-        :numberOfVolumes    1 ;
-        :scanInfo           "Scanned or acquired in Tibetan areas of China by BDRC."@en .
+    bdr:W8LS66737  a        bdo:ImageInstance ;
+        bf:identifiedBy     bdr:IDAD758A23F4D8B13D ;
+        bdo:instanceHasVolume  bdr:I8LS67774 ;
+        bdo:numberOfVolumes  1 ;
+        bdo:scanInfo        "Scanned or acquired in Tibetan areas of China by BDRC."@en .
 }
