@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG201051 {
@@ -752,6 +747,12 @@ bdg:W2KG201051 {
         adm:logDate         "2019-06-17T16:21:29.868Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG0W2KG201051_6EE8UFGCFBP9
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-11-28T12:25:50.985032Z"^^xsd:dateTime ;
+        adm:logMessage      "open access"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG11470D75BCED421E
         a                   adm:InitialDataCreation ;
@@ -2086,716 +2087,717 @@ bdg:W2KG201051 {
         adm:logMethod       bda:BatchMethod .
     
     bda:W2KG201051  a       adm:AdminData ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG201051 ;
         adm:facetIndex      230 ;
         adm:gitPath         "a7/W2KG201051.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG201051 ;
-        adm:logEntry        bda:LGE6BEB0E86541FF99 ;
+        adm:logEntry        bda:LG0W2KG201051_6EE8UFGCFBP9 , bda:LGE6BEB0E86541FF99 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG207435  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   870 .
-    
-    bdr:I2KG207436  a       :ImageGroup ;
-        :biblioNote         "Volume 2 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   772 .
-    
-    bdr:I2KG207437  a       :ImageGroup ;
-        :biblioNote         "Volume 3 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       3 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   934 .
-    
-    bdr:I2KG207438  a       :ImageGroup ;
-        :biblioNote         "Volume 4 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       4 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   874 .
-    
-    bdr:I2KG207439  a       :ImageGroup ;
-        :biblioNote         "Volume 5 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       5 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   554 .
-    
-    bdr:I2KG207440  a       :ImageGroup ;
-        :biblioNote         "Volume 6 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       6 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   492 .
-    
-    bdr:I2KG207441  a       :ImageGroup ;
-        :biblioNote         "Volume 7 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       7 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   840 .
-    
-    bdr:I2KG207442  a       :ImageGroup ;
-        :biblioNote         "Volume 8 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       8 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   788 .
-    
-    bdr:I2KG207443  a       :ImageGroup ;
-        :biblioNote         "Volume 9 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       9 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   840 .
-    
-    bdr:I2KG207444  a       :ImageGroup ;
-        :biblioNote         "Volume 10 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       10 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   638 .
-    
-    bdr:I2KG207445  a       :ImageGroup ;
-        :biblioNote         "Volume 11 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       11 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
-    
-    bdr:I2KG207446  a       :ImageGroup ;
-        :biblioNote         "Volume 12 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       12 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   684 .
-    
-    bdr:I2KG207447  a       :ImageGroup ;
-        :biblioNote         "Volume 13 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       13 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   632 .
-    
-    bdr:I2KG207448  a       :ImageGroup ;
-        :biblioNote         "Volume 14 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       14 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   602 .
-    
-    bdr:I2KG207449  a       :ImageGroup ;
-        :biblioNote         "Volume 15 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       15 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   588 .
-    
-    bdr:I2KG207450  a       :ImageGroup ;
-        :biblioNote         "Volume 16 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       16 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   548 .
-    
-    bdr:I2KG207451  a       :ImageGroup ;
-        :biblioNote         "Volume 17 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       17 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   850 .
-    
-    bdr:I2KG207452  a       :ImageGroup ;
-        :biblioNote         "Volume 18 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       18 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
-    
-    bdr:I2KG207453  a       :ImageGroup ;
-        :biblioNote         "Volume 19 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       19 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   856 .
-    
-    bdr:I2KG207454  a       :ImageGroup ;
-        :biblioNote         "Volume 20 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       20 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   680 .
-    
-    bdr:I2KG207455  a       :ImageGroup ;
-        :biblioNote         "Volume 21 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       21 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   748 .
-    
-    bdr:I2KG207456  a       :ImageGroup ;
-        :biblioNote         "Volume 22 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       22 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   686 .
-    
-    bdr:I2KG207457  a       :ImageGroup ;
-        :biblioNote         "Volume 23 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       23 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   936 .
-    
-    bdr:I2KG207458  a       :ImageGroup ;
-        :biblioNote         "Volume 24 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       24 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   808 .
-    
-    bdr:I2KG207459  a       :ImageGroup ;
-        :biblioNote         "Volume 25 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       25 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   582 .
-    
-    bdr:I2KG207460  a       :ImageGroup ;
-        :biblioNote         "Volume 26 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       26 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   764 .
-    
-    bdr:I2KG207461  a       :ImageGroup ;
-        :biblioNote         "Volume 27 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       27 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   722 .
-    
-    bdr:I2KG207462  a       :ImageGroup ;
-        :biblioNote         "Volume 28 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       28 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   778 .
-    
-    bdr:I2KG207463  a       :ImageGroup ;
-        :biblioNote         "Volume 29 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       29 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   790 .
-    
-    bdr:I2KG207464  a       :ImageGroup ;
-        :biblioNote         "Volume 30 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       30 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   728 .
-    
-    bdr:I2KG207465  a       :ImageGroup ;
-        :biblioNote         "Volume 31 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       31 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   832 .
-    
-    bdr:I2KG207466  a       :ImageGroup ;
-        :biblioNote         "Volume 32 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       32 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   850 .
-    
-    bdr:I2KG207467  a       :ImageGroup ;
-        :biblioNote         "Volume 33 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       33 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1100 .
-    
-    bdr:I2KG207468  a       :ImageGroup ;
-        :biblioNote         "Volume 34 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       34 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   894 .
-    
-    bdr:I2KG207469  a       :ImageGroup ;
-        :biblioNote         "Volume 35 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       35 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   634 .
-    
-    bdr:I2KG207470  a       :ImageGroup ;
-        :biblioNote         "Volume 36 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       36 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   772 .
-    
-    bdr:I2KG207471  a       :ImageGroup ;
-        :biblioNote         "Volume 37 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       37 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   838 .
-    
-    bdr:I2KG207472  a       :ImageGroup ;
-        :biblioNote         "Volume 38 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       38 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   844 .
-    
-    bdr:I2KG207473  a       :ImageGroup ;
-        :biblioNote         "Volume 39 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       39 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   864 .
-    
-    bdr:I2KG207474  a       :ImageGroup ;
-        :biblioNote         "Volume 40 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       40 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   718 .
-    
-    bdr:I2KG207475  a       :ImageGroup ;
-        :biblioNote         "Volume 41 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       41 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   712 .
-    
-    bdr:I2KG207476  a       :ImageGroup ;
-        :biblioNote         "Volume 42 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       42 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   610 .
-    
-    bdr:I2KG207477  a       :ImageGroup ;
-        :biblioNote         "Volume 43 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       43 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   808 .
-    
-    bdr:I2KG207478  a       :ImageGroup ;
-        :biblioNote         "Volume 44 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       44 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   712 .
-    
-    bdr:I2KG207479  a       :ImageGroup ;
-        :biblioNote         "Volume 45 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       45 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   934 .
-    
-    bdr:I2KG207480  a       :ImageGroup ;
-        :biblioNote         "Volume 46 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       46 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   958 .
-    
-    bdr:I2KG207481  a       :ImageGroup ;
-        :biblioNote         "Volume 47 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       47 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   580 .
-    
-    bdr:I2KG207482  a       :ImageGroup ;
-        :biblioNote         "Volume 48 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       48 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   724 .
-    
-    bdr:I2KG207483  a       :ImageGroup ;
-        :biblioNote         "Volume 49 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       49 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   824 .
-    
-    bdr:I2KG207484  a       :ImageGroup ;
-        :biblioNote         "Volume 50 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       50 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   672 .
-    
-    bdr:I2KG207485  a       :ImageGroup ;
-        :biblioNote         "Volume 51 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       51 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   632 .
-    
-    bdr:I2KG207486  a       :ImageGroup ;
-        :biblioNote         "Volume 52 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       52 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   660 .
-    
-    bdr:I2KG207487  a       :ImageGroup ;
-        :biblioNote         "Volume 53 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       53 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   826 .
-    
-    bdr:I2KG207488  a       :ImageGroup ;
-        :biblioNote         "Volume 54 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       54 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   900 .
-    
-    bdr:I2KG207489  a       :ImageGroup ;
-        :biblioNote         "Volume 55 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       55 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   862 .
-    
-    bdr:I2KG207490  a       :ImageGroup ;
-        :biblioNote         "Volume 56 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       56 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   858 .
-    
-    bdr:I2KG207491  a       :ImageGroup ;
-        :biblioNote         "Volume 57 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       57 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1132 .
-    
-    bdr:I2KG207492  a       :ImageGroup ;
-        :biblioNote         "Volume 58 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       58 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   944 .
-    
-    bdr:I2KG207493  a       :ImageGroup ;
-        :biblioNote         "Volume 59 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       59 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   656 .
-    
-    bdr:I2KG207494  a       :ImageGroup ;
-        :biblioNote         "Volume 60 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       60 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   726 .
-    
-    bdr:I2KG207495  a       :ImageGroup ;
-        :biblioNote         "Volume 61 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       61 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   618 .
-    
-    bdr:I2KG207496  a       :ImageGroup ;
-        :biblioNote         "Volume 62 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       62 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   626 .
-    
-    bdr:I2KG207497  a       :ImageGroup ;
-        :biblioNote         "Volume 63 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       63 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   670 .
-    
-    bdr:I2KG207498  a       :ImageGroup ;
-        :biblioNote         "Volume 64 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       64 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   642 .
-    
-    bdr:I2KG207499  a       :ImageGroup ;
-        :biblioNote         "Volume 65 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       65 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   782 .
-    
-    bdr:I2KG207500  a       :ImageGroup ;
-        :biblioNote         "Volume 66 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       66 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   916 .
-    
-    bdr:I2KG207501  a       :ImageGroup ;
-        :biblioNote         "Volume 67 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       67 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   728 .
-    
-    bdr:I2KG207502  a       :ImageGroup ;
-        :biblioNote         "Volume 68 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       68 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   744 .
-    
-    bdr:I2KG207503  a       :ImageGroup ;
-        :biblioNote         "Volume 69 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       69 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   576 .
-    
-    bdr:I2KG207504  a       :ImageGroup ;
-        :biblioNote         "Volume 70 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       70 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   676 .
-    
-    bdr:I2KG207505  a       :ImageGroup ;
-        :biblioNote         "Volume 71 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       71 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   642 .
-    
-    bdr:I2KG207506  a       :ImageGroup ;
-        :biblioNote         "Volume 72 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       72 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   640 .
-    
-    bdr:I2KG207507  a       :ImageGroup ;
-        :biblioNote         "Volume 73 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       73 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
-    
-    bdr:I2KG207508  a       :ImageGroup ;
-        :biblioNote         "Volume 74 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       74 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   642 .
-    
-    bdr:I2KG207509  a       :ImageGroup ;
-        :biblioNote         "Volume 75 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       75 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   592 .
-    
-    bdr:I2KG207510  a       :ImageGroup ;
-        :biblioNote         "Volume 76 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       76 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   754 .
-    
-    bdr:I2KG207511  a       :ImageGroup ;
-        :biblioNote         "Volume 77 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       77 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   732 .
-    
-    bdr:I2KG207512  a       :ImageGroup ;
-        :biblioNote         "Volume 78 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       78 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   688 .
-    
-    bdr:I2KG207513  a       :ImageGroup ;
-        :biblioNote         "Volume 79 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       79 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   854 .
-    
-    bdr:I2KG207514  a       :ImageGroup ;
-        :biblioNote         "Volume 80 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       80 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   536 .
-    
-    bdr:I2KG207515  a       :ImageGroup ;
-        :biblioNote         "Volume 81 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       81 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   774 .
-    
-    bdr:I2KG207516  a       :ImageGroup ;
-        :biblioNote         "Volume 82 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       82 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   592 .
-    
-    bdr:I2KG207517  a       :ImageGroup ;
-        :biblioNote         "Volume 83 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       83 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   490 .
-    
-    bdr:I2KG207518  a       :ImageGroup ;
-        :biblioNote         "Volume 84 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       84 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   1020 .
-    
-    bdr:I2KG207519  a       :ImageGroup ;
-        :biblioNote         "Volume 85 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       85 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   586 .
-    
-    bdr:I2KG207520  a       :ImageGroup ;
-        :biblioNote         "Volume 86 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       86 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   726 .
-    
-    bdr:I2KG207521  a       :ImageGroup ;
-        :biblioNote         "Volume 87 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       87 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   734 .
-    
-    bdr:I2KG207522  a       :ImageGroup ;
-        :biblioNote         "Volume 88 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       88 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   640 .
-    
-    bdr:I2KG207523  a       :ImageGroup ;
-        :biblioNote         "Volume 89 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       89 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   720 .
-    
-    bdr:I2KG207524  a       :ImageGroup ;
-        :biblioNote         "Volume 90 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       90 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   604 .
-    
-    bdr:I2KG207525  a       :ImageGroup ;
-        :biblioNote         "Volume 91 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       91 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   630 .
-    
-    bdr:I2KG207526  a       :ImageGroup ;
-        :biblioNote         "Volume 92 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       92 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   820 .
-    
-    bdr:I2KG207527  a       :ImageGroup ;
-        :biblioNote         "Volume 93 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       93 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   594 .
-    
-    bdr:I2KG207528  a       :ImageGroup ;
-        :biblioNote         "Volume 94 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       94 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   704 .
-    
-    bdr:I2KG207529  a       :ImageGroup ;
-        :biblioNote         "Volume 95 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       95 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   460 .
-    
-    bdr:I2KG207530  a       :ImageGroup ;
-        :biblioNote         "Volume 96 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       96 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   622 .
-    
-    bdr:I2KG207531  a       :ImageGroup ;
-        :biblioNote         "Volume 97 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       97 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   608 .
-    
-    bdr:I2KG207532  a       :ImageGroup ;
-        :biblioNote         "Volume 98 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       98 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   840 .
-    
-    bdr:I2KG207533  a       :ImageGroup ;
-        :biblioNote         "Volume 99 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       99 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   590 .
-    
-    bdr:I2KG207534  a       :ImageGroup ;
-        :biblioNote         "Volume 100 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       100 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   872 .
-    
-    bdr:I2KG207535  a       :ImageGroup ;
-        :biblioNote         "Volume 101 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       101 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   590 .
-    
-    bdr:I2KG207536  a       :ImageGroup ;
-        :biblioNote         "Volume 102 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       102 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   586 .
-    
-    bdr:I2KG207537  a       :ImageGroup ;
-        :biblioNote         "Volume 103 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       103 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   720 .
-    
-    bdr:I2KG207538  a       :ImageGroup ;
-        :biblioNote         "Volume 104 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       104 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   650 .
-    
-    bdr:I2KG207539  a       :ImageGroup ;
-        :biblioNote         "Volume 105 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       105 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   576 .
-    
-    bdr:I2KG207540  a       :ImageGroup ;
-        :biblioNote         "Volume 106 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       106 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   736 .
-    
-    bdr:I2KG207541  a       :ImageGroup ;
-        :biblioNote         "Volume 107 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       107 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   810 .
-    
-    bdr:I2KG207542  a       :ImageGroup ;
-        :biblioNote         "Volume 108 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       108 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   740 .
-    
-    bdr:I2KG207543  a       :ImageGroup ;
-        :biblioNote         "Volume 109 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       109 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   912 .
-    
-    bdr:I2KG207544  a       :ImageGroup ;
-        :biblioNote         "Volume 110 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       110 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   990 .
-    
-    bdr:I2KG207545  a       :ImageGroup ;
-        :biblioNote         "Volume 111 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       111 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   644 .
-    
-    bdr:I2KG207546  a       :ImageGroup ;
-        :biblioNote         "Volume 112 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       112 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   918 .
-    
-    bdr:I2KG207547  a       :ImageGroup ;
-        :biblioNote         "Volume 113 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       113 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   830 .
-    
-    bdr:I2KG207548  a       :ImageGroup ;
-        :biblioNote         "Volume 114 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       114 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I2KG207549  a       :ImageGroup ;
-        :biblioNote         "Volume 115 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       115 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I2KG207550  a       :ImageGroup ;
-        :biblioNote         "Volume 116 of rgyud bshad kun btus/"@en ;
-        :volumeNumber       116 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:W2KG201051  a       :ImageInstance ;
-        :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I2KG207435 , bdr:I2KG207436 , bdr:I2KG207437 , bdr:I2KG207438 , bdr:I2KG207439 , bdr:I2KG207440 , bdr:I2KG207441 , bdr:I2KG207442 , bdr:I2KG207443 , bdr:I2KG207444 , bdr:I2KG207445 , bdr:I2KG207446 , bdr:I2KG207447 , bdr:I2KG207448 , bdr:I2KG207449 , bdr:I2KG207450 , bdr:I2KG207451 , bdr:I2KG207452 , bdr:I2KG207453 , bdr:I2KG207454 , bdr:I2KG207455 , bdr:I2KG207456 , bdr:I2KG207457 , bdr:I2KG207458 , bdr:I2KG207459 , bdr:I2KG207460 , bdr:I2KG207461 , bdr:I2KG207462 , bdr:I2KG207463 , bdr:I2KG207464 , bdr:I2KG207465 , bdr:I2KG207466 , bdr:I2KG207467 , bdr:I2KG207468 , bdr:I2KG207469 , bdr:I2KG207470 , bdr:I2KG207471 , bdr:I2KG207472 , bdr:I2KG207473 , bdr:I2KG207474 , bdr:I2KG207475 , bdr:I2KG207476 , bdr:I2KG207477 , bdr:I2KG207478 , bdr:I2KG207479 , bdr:I2KG207480 , bdr:I2KG207481 , bdr:I2KG207482 , bdr:I2KG207483 , bdr:I2KG207484 , bdr:I2KG207485 , bdr:I2KG207486 , bdr:I2KG207487 , bdr:I2KG207488 , bdr:I2KG207489 , bdr:I2KG207490 , bdr:I2KG207491 , bdr:I2KG207492 , bdr:I2KG207493 , bdr:I2KG207494 , bdr:I2KG207495 , bdr:I2KG207496 , bdr:I2KG207497 , bdr:I2KG207498 , bdr:I2KG207499 , bdr:I2KG207500 , bdr:I2KG207501 , bdr:I2KG207502 , bdr:I2KG207503 , bdr:I2KG207504 , bdr:I2KG207505 , bdr:I2KG207506 , bdr:I2KG207507 , bdr:I2KG207508 , bdr:I2KG207509 , bdr:I2KG207510 , bdr:I2KG207511 , bdr:I2KG207512 , bdr:I2KG207513 , bdr:I2KG207514 , bdr:I2KG207515 , bdr:I2KG207516 , bdr:I2KG207517 , bdr:I2KG207518 , bdr:I2KG207519 , bdr:I2KG207520 , bdr:I2KG207521 , bdr:I2KG207522 , bdr:I2KG207523 , bdr:I2KG207524 , bdr:I2KG207525 , bdr:I2KG207526 , bdr:I2KG207527 , bdr:I2KG207528 , bdr:I2KG207529 , bdr:I2KG207530 , bdr:I2KG207531 , bdr:I2KG207532 , bdr:I2KG207533 , bdr:I2KG207534 , bdr:I2KG207535 , bdr:I2KG207536 , bdr:I2KG207537 , bdr:I2KG207538 , bdr:I2KG207539 , bdr:I2KG207540 , bdr:I2KG207541 , bdr:I2KG207542 , bdr:I2KG207543 , bdr:I2KG207544 , bdr:I2KG207545 , bdr:I2KG207546 , bdr:I2KG207547 , bdr:I2KG207548 , bdr:I2KG207549 , bdr:I2KG207550 ;
-        :numberOfVolumes    116 ;
-        :scanInfo           "6/2019"@en , "scan made available from the library of tibetan works and archives; ltwa acc. no."@en .
+    bdr:I2KG207435  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  870 .
+    
+    bdr:I2KG207436  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  772 .
+    
+    bdr:I2KG207437  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 3 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  934 .
+    
+    bdr:I2KG207438  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 4 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  874 .
+    
+    bdr:I2KG207439  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 5 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  554 .
+    
+    bdr:I2KG207440  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 6 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    6 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  492 .
+    
+    bdr:I2KG207441  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 7 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    7 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  840 .
+    
+    bdr:I2KG207442  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 8 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    8 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  788 .
+    
+    bdr:I2KG207443  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 9 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    9 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  840 .
+    
+    bdr:I2KG207444  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 10 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    10 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  638 .
+    
+    bdr:I2KG207445  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 11 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    11 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
+    
+    bdr:I2KG207446  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 12 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    12 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  684 .
+    
+    bdr:I2KG207447  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 13 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    13 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  632 .
+    
+    bdr:I2KG207448  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 14 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    14 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  602 .
+    
+    bdr:I2KG207449  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 15 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    15 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  588 .
+    
+    bdr:I2KG207450  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 16 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    16 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  548 .
+    
+    bdr:I2KG207451  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 17 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    17 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  850 .
+    
+    bdr:I2KG207452  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 18 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    18 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
+    
+    bdr:I2KG207453  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 19 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    19 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  856 .
+    
+    bdr:I2KG207454  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 20 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    20 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  680 .
+    
+    bdr:I2KG207455  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 21 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    21 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  748 .
+    
+    bdr:I2KG207456  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 22 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    22 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  686 .
+    
+    bdr:I2KG207457  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 23 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    23 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  936 .
+    
+    bdr:I2KG207458  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 24 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    24 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  808 .
+    
+    bdr:I2KG207459  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 25 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    25 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  582 .
+    
+    bdr:I2KG207460  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 26 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    26 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  764 .
+    
+    bdr:I2KG207461  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 27 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    27 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  722 .
+    
+    bdr:I2KG207462  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 28 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    28 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  778 .
+    
+    bdr:I2KG207463  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 29 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    29 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  790 .
+    
+    bdr:I2KG207464  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 30 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    30 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  728 .
+    
+    bdr:I2KG207465  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 31 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    31 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  832 .
+    
+    bdr:I2KG207466  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 32 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    32 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  850 .
+    
+    bdr:I2KG207467  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 33 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    33 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1100 .
+    
+    bdr:I2KG207468  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 34 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    34 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  894 .
+    
+    bdr:I2KG207469  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 35 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    35 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  634 .
+    
+    bdr:I2KG207470  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 36 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    36 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  772 .
+    
+    bdr:I2KG207471  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 37 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    37 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  838 .
+    
+    bdr:I2KG207472  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 38 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    38 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  844 .
+    
+    bdr:I2KG207473  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 39 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    39 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  864 .
+    
+    bdr:I2KG207474  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 40 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    40 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  718 .
+    
+    bdr:I2KG207475  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 41 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    41 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  712 .
+    
+    bdr:I2KG207476  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 42 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    42 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  610 .
+    
+    bdr:I2KG207477  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 43 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    43 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  808 .
+    
+    bdr:I2KG207478  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 44 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    44 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  712 .
+    
+    bdr:I2KG207479  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 45 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    45 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  934 .
+    
+    bdr:I2KG207480  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 46 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    46 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  958 .
+    
+    bdr:I2KG207481  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 47 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    47 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  580 .
+    
+    bdr:I2KG207482  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 48 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    48 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  724 .
+    
+    bdr:I2KG207483  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 49 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    49 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  824 .
+    
+    bdr:I2KG207484  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 50 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    50 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  672 .
+    
+    bdr:I2KG207485  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 51 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    51 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  632 .
+    
+    bdr:I2KG207486  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 52 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    52 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  660 .
+    
+    bdr:I2KG207487  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 53 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    53 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  826 .
+    
+    bdr:I2KG207488  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 54 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    54 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  900 .
+    
+    bdr:I2KG207489  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 55 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    55 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  862 .
+    
+    bdr:I2KG207490  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 56 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    56 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  858 .
+    
+    bdr:I2KG207491  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 57 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    57 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1132 .
+    
+    bdr:I2KG207492  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 58 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    58 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  944 .
+    
+    bdr:I2KG207493  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 59 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    59 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  656 .
+    
+    bdr:I2KG207494  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 60 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    60 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  726 .
+    
+    bdr:I2KG207495  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 61 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    61 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  618 .
+    
+    bdr:I2KG207496  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 62 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    62 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  626 .
+    
+    bdr:I2KG207497  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 63 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    63 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  670 .
+    
+    bdr:I2KG207498  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 64 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    64 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  642 .
+    
+    bdr:I2KG207499  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 65 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    65 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  782 .
+    
+    bdr:I2KG207500  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 66 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    66 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  916 .
+    
+    bdr:I2KG207501  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 67 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    67 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  728 .
+    
+    bdr:I2KG207502  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 68 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    68 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  744 .
+    
+    bdr:I2KG207503  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 69 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    69 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  576 .
+    
+    bdr:I2KG207504  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 70 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    70 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  676 .
+    
+    bdr:I2KG207505  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 71 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    71 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  642 .
+    
+    bdr:I2KG207506  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 72 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    72 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  640 .
+    
+    bdr:I2KG207507  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 73 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    73 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
+    
+    bdr:I2KG207508  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 74 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    74 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  642 .
+    
+    bdr:I2KG207509  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 75 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    75 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  592 .
+    
+    bdr:I2KG207510  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 76 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    76 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  754 .
+    
+    bdr:I2KG207511  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 77 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    77 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  732 .
+    
+    bdr:I2KG207512  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 78 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    78 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  688 .
+    
+    bdr:I2KG207513  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 79 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    79 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  854 .
+    
+    bdr:I2KG207514  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 80 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    80 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  536 .
+    
+    bdr:I2KG207515  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 81 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    81 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  774 .
+    
+    bdr:I2KG207516  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 82 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    82 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  592 .
+    
+    bdr:I2KG207517  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 83 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    83 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  490 .
+    
+    bdr:I2KG207518  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 84 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    84 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  1020 .
+    
+    bdr:I2KG207519  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 85 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    85 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  586 .
+    
+    bdr:I2KG207520  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 86 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    86 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  726 .
+    
+    bdr:I2KG207521  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 87 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    87 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  734 .
+    
+    bdr:I2KG207522  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 88 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    88 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  640 .
+    
+    bdr:I2KG207523  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 89 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    89 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  720 .
+    
+    bdr:I2KG207524  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 90 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    90 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  604 .
+    
+    bdr:I2KG207525  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 91 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    91 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  630 .
+    
+    bdr:I2KG207526  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 92 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    92 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  820 .
+    
+    bdr:I2KG207527  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 93 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    93 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  594 .
+    
+    bdr:I2KG207528  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 94 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    94 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  704 .
+    
+    bdr:I2KG207529  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 95 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    95 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  460 .
+    
+    bdr:I2KG207530  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 96 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    96 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  622 .
+    
+    bdr:I2KG207531  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 97 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    97 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  608 .
+    
+    bdr:I2KG207532  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 98 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    98 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  840 .
+    
+    bdr:I2KG207533  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 99 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    99 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  590 .
+    
+    bdr:I2KG207534  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 100 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    100 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  872 .
+    
+    bdr:I2KG207535  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 101 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    101 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  590 .
+    
+    bdr:I2KG207536  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 102 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    102 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  586 .
+    
+    bdr:I2KG207537  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 103 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    103 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  720 .
+    
+    bdr:I2KG207538  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 104 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    104 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  650 .
+    
+    bdr:I2KG207539  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 105 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    105 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  576 .
+    
+    bdr:I2KG207540  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 106 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    106 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  736 .
+    
+    bdr:I2KG207541  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 107 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    107 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  810 .
+    
+    bdr:I2KG207542  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 108 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    108 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  740 .
+    
+    bdr:I2KG207543  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 109 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    109 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  912 .
+    
+    bdr:I2KG207544  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 110 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    110 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  990 .
+    
+    bdr:I2KG207545  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 111 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    111 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  644 .
+    
+    bdr:I2KG207546  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 112 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    112 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  918 .
+    
+    bdr:I2KG207547  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 113 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    113 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  830 .
+    
+    bdr:I2KG207548  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 114 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    114 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I2KG207549  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 115 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    115 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:I2KG207550  a       bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 116 of rgyud bshad kun btus/"@en ;
+        bdo:volumeNumber    116 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  0 .
+    
+    bdr:W2KG201051  a       bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
+        bdo:instanceHasVolume  bdr:I2KG207435 , bdr:I2KG207436 , bdr:I2KG207437 , bdr:I2KG207438 , bdr:I2KG207439 , bdr:I2KG207440 , bdr:I2KG207441 , bdr:I2KG207442 , bdr:I2KG207443 , bdr:I2KG207444 , bdr:I2KG207445 , bdr:I2KG207446 , bdr:I2KG207447 , bdr:I2KG207448 , bdr:I2KG207449 , bdr:I2KG207450 , bdr:I2KG207451 , bdr:I2KG207452 , bdr:I2KG207453 , bdr:I2KG207454 , bdr:I2KG207455 , bdr:I2KG207456 , bdr:I2KG207457 , bdr:I2KG207458 , bdr:I2KG207459 , bdr:I2KG207460 , bdr:I2KG207461 , bdr:I2KG207462 , bdr:I2KG207463 , bdr:I2KG207464 , bdr:I2KG207465 , bdr:I2KG207466 , bdr:I2KG207467 , bdr:I2KG207468 , bdr:I2KG207469 , bdr:I2KG207470 , bdr:I2KG207471 , bdr:I2KG207472 , bdr:I2KG207473 , bdr:I2KG207474 , bdr:I2KG207475 , bdr:I2KG207476 , bdr:I2KG207477 , bdr:I2KG207478 , bdr:I2KG207479 , bdr:I2KG207480 , bdr:I2KG207481 , bdr:I2KG207482 , bdr:I2KG207483 , bdr:I2KG207484 , bdr:I2KG207485 , bdr:I2KG207486 , bdr:I2KG207487 , bdr:I2KG207488 , bdr:I2KG207489 , bdr:I2KG207490 , bdr:I2KG207491 , bdr:I2KG207492 , bdr:I2KG207493 , bdr:I2KG207494 , bdr:I2KG207495 , bdr:I2KG207496 , bdr:I2KG207497 , bdr:I2KG207498 , bdr:I2KG207499 , bdr:I2KG207500 , bdr:I2KG207501 , bdr:I2KG207502 , bdr:I2KG207503 , bdr:I2KG207504 , bdr:I2KG207505 , bdr:I2KG207506 , bdr:I2KG207507 , bdr:I2KG207508 , bdr:I2KG207509 , bdr:I2KG207510 , bdr:I2KG207511 , bdr:I2KG207512 , bdr:I2KG207513 , bdr:I2KG207514 , bdr:I2KG207515 , bdr:I2KG207516 , bdr:I2KG207517 , bdr:I2KG207518 , bdr:I2KG207519 , bdr:I2KG207520 , bdr:I2KG207521 , bdr:I2KG207522 , bdr:I2KG207523 , bdr:I2KG207524 , bdr:I2KG207525 , bdr:I2KG207526 , bdr:I2KG207527 , bdr:I2KG207528 , bdr:I2KG207529 , bdr:I2KG207530 , bdr:I2KG207531 , bdr:I2KG207532 , bdr:I2KG207533 , bdr:I2KG207534 , bdr:I2KG207535 , bdr:I2KG207536 , bdr:I2KG207537 , bdr:I2KG207538 , bdr:I2KG207539 , bdr:I2KG207540 , bdr:I2KG207541 , bdr:I2KG207542 , bdr:I2KG207543 , bdr:I2KG207544 , bdr:I2KG207545 , bdr:I2KG207546 , bdr:I2KG207547 , bdr:I2KG207548 , bdr:I2KG207549 , bdr:I2KG207550 ;
+        bdo:isComplete      false ;
+        bdo:numberOfVolumes  116 ;
+        bdo:scanInfo        "scan made available from the library of tibetan works and archives"@en .
 }
