@@ -114,12 +114,19 @@ bdg:W1BL6 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG0W1BL6_WN1VLC4K3CCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-12-03T23:22:46.545310Z"^^xsd:dateTime ;
+        adm:logMessage      "update"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:W1BL6  a            adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1BL6 ;
         adm:graphId         bdg:W1BL6 ;
-        adm:logEntry        bdr:LG0W1BL6_OE8XJZDTCQIJ ;
-        adm:restrictedInChina  true ;
+        adm:logEntry        bda:LG0W1BL6_WN1VLC4K3CCD , bdr:LG0W1BL6_OE8XJZDTCQIJ ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I1BL886  a          bdo:ImageGroup ;
@@ -255,7 +262,8 @@ bdg:W1BL6 {
         adm:logWho          bdu:U1132599279 .
     
     bdr:W1BL6  a            bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1VIENNA00 ;
         bdo:instanceHasVolume  bdr:I1BL886 , bdr:I1BL887 , bdr:I1BL888 , bdr:I1BL889 , bdr:I1BL890 , bdr:I1BL891 , bdr:I1BL892 , bdr:I1BL893 , bdr:I1BL894 , bdr:I1BL895 , bdr:I1BL896 , bdr:I1BL897 , bdr:I1BL898 , bdr:I1BL899 , bdr:I1BL900 , bdr:I1BL901 , bdr:I1BL902 , bdr:I1BL903 , bdr:I1BL904 , bdr:I1BL905 , bdr:I1BL906 , bdr:I1BL907 , bdr:I1BL908 , bdr:I1BL909 , bdr:I1BL910 ;
         bdo:numberOfVolumes  25 ;
-        bdo:scanInfo        "Images from TMPV"@en .
+        bdo:scanInfo        "Copy made available by the Cultural History of the Western Himalaya-Project \"Tibetan Manuscripts\" (University of Vienna). Digitization by the TMPV team in May 2023."@en .
 }
