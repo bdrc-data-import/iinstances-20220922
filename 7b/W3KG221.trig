@@ -9,7 +9,7 @@
 bdg:W3KG221 {
     bda:I3KG833  a          adm:AdminData ;
         adm:adminAbout      bdr:I3KG833 ;
-        adm:logEntry        bda:LG0W3KG221_SHGGLLQ8TPFX .
+        adm:logEntry        bda:LG0W3KG221_SHGGLLQ8TPFX , bda:LG0W3KG221_VVXEZUWHNDQD .
     
     bda:LG0W3KG221_EPZCZGCVEGQK
         a                   adm:InitialDataCreation ;
@@ -20,6 +20,13 @@ bdg:W3KG221 {
     bda:LG0W3KG221_SHGGLLQ8TPFX
         a                   adm:Synced ;
         adm:logDate         "2023-12-04T03:58:29.034881Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W3KG221_VVXEZUWHNDQD
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-12-04T04:56:37.534468Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
