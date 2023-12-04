@@ -7,6 +7,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3KG219 {
+    bda:I3KG828  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG828 ;
+        adm:logEntry        bda:LG0W3KG219_JLAHQGXVLCUI .
+    
+    bda:I3KG829  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG829 ;
+        adm:logEntry        bda:LG0W3KG219_JLAHQGXVLCUI .
+    
+    bda:I3KG830  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG830 ;
+        adm:logEntry        bda:LG0W3KG219_JLAHQGXVLCUI .
+    
+    bda:I3KG831  a          adm:AdminData ;
+        adm:adminAbout      bdr:I3KG831 ;
+        adm:logEntry        bda:LG0W3KG219_JLAHQGXVLCUI .
+    
+    bda:LG0W3KG219_JLAHQGXVLCUI
+        a                   adm:ImagesUpdated , adm:Synced ;
+        adm:logDate         "2023-12-04T03:55:53.303273Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG0W3KG219_OBIYM3G559IH
         a                   adm:InitialDataCreation ;
         adm:logDate         "2023-11-16T16:29:45.100277Z"^^xsd:dateTime ;
@@ -24,19 +47,23 @@ bdg:W3KG219 {
     
     bdr:I3KG828  a          bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  752 .
     
     bdr:I3KG829  a          bdo:ImageGroup ;
         bdo:volumeNumber    2 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  800 .
     
     bdr:I3KG830  a          bdo:ImageGroup ;
         bdo:volumeNumber    3 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  688 .
     
     bdr:I3KG831  a          bdo:ImageGroup ;
         bdo:volumeNumber    4 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  592 .
     
     bdr:W3KG219  a          bdo:ImageInstance ;
         bdo:instanceHasVolume  bdr:I3KG828 , bdr:I3KG829 , bdr:I3KG830 , bdr:I3KG831 ;
