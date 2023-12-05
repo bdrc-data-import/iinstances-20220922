@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W8LS19497 {
@@ -17,6 +12,12 @@ bdg:W8LS19497 {
         adm:logEntry        bda:LG2609DC6AFD4721F3 , bda:LG6BF0FAF971D6FCD0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W8LS19497_ELZDPXSTV7LH
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-12-05T03:16:07.436394Z"^^xsd:dateTime ;
+        adm:logMessage      "withdraw"@en ;
+        adm:logWho          bdu:U1653882847 .
     
     bda:LG1C1CD9673C558ABB
         a                   adm:ScanRequestCreation ;
@@ -43,18 +44,19 @@ bdg:W8LS19497 {
         adm:gitPath         "80/W8LS19497.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS19497 ;
-        adm:logEntry        bda:LG1C1CD9673C558ABB ;
+        adm:logEntry        bda:LG0W8LS19497_ELZDPXSTV7LH , bda:LG1C1CD9673C558ABB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:replaceWith     bdr:W1ER152 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
-    bdr:I8LS19499  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of bcom ldan phyag rgya zil gnon gyi dbang gi cho ga nges pa'i don bde blag tu 'jug pa/"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   820 .
+    bdr:I8LS19499  a        bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of bcom ldan phyag rgya zil gnon gyi dbang gi cho ga nges pa'i don bde blag tu 'jug pa/"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  820 .
     
-    bdr:W8LS19497  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS19499 ;
-        :numberOfVolumes    1 .
+    bdr:W8LS19497  a        bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I8LS19499 ;
+        bdo:numberOfVolumes  1 .
 }
