@@ -11,6 +11,12 @@ bdg:W3KG222 {
         adm:adminAbout      bdr:I3KG834 ;
         adm:logEntry        bda:LG0W3KG222_5TFARZHKNZ9O , bda:LG0W3KG222_FSNKSJPYUBWD .
     
+    bda:LG0W3KG222_1QACQFFHKA2N
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-12-05T03:51:08.447170Z"^^xsd:dateTime ;
+        adm:logMessage      "digital lending"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W3KG222_5TFARZHKNZ9O
         a                   adm:Synced ;
         adm:logDate         "2023-12-04T03:59:50.567601Z"^^xsd:dateTime ;
@@ -35,7 +41,7 @@ bdg:W3KG222 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG222 ;
         adm:graphId         bdg:W3KG222 ;
-        adm:logEntry        bda:LG0W3KG222_UGZ3IUJQ2KGS ;
+        adm:logEntry        bda:LG0W3KG222_1QACQFFHKA2N , bda:LG0W3KG222_UGZ3IUJQ2KGS ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -46,6 +52,7 @@ bdg:W3KG222 {
         bdo:volumePagesTotal  109 .
     
     bdr:W3KG222  a          bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
         bdo:instanceHasVolume  bdr:I3KG834 ;
         bdo:qualityGrade    5 .
 }
