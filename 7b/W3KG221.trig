@@ -17,6 +17,12 @@ bdg:W3KG221 {
         adm:logMessage      "generated scan"@en ;
         adm:logWho          bdu:U1426146149 .
     
+    bda:LG0W3KG221_PHZ5HE7KGG6S
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-12-05T03:38:57.607403Z"^^xsd:dateTime ;
+        adm:logMessage      "digital lending possible = false"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
     bda:LG0W3KG221_SHGGLLQ8TPFX
         a                   adm:Synced ;
         adm:logDate         "2023-12-04T03:58:29.034881Z"^^xsd:dateTime ;
@@ -35,7 +41,7 @@ bdg:W3KG221 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3KG221 ;
         adm:graphId         bdg:W3KG221 ;
-        adm:logEntry        bda:LG0W3KG221_EPZCZGCVEGQK ;
+        adm:logEntry        bda:LG0W3KG221_EPZCZGCVEGQK , bda:LG0W3KG221_PHZ5HE7KGG6S ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -46,6 +52,7 @@ bdg:W3KG221 {
         bdo:volumePagesTotal  391 .
     
     bdr:W3KG221  a          bdo:ImageInstance ;
+        bdo:digitalLendingPossible  false ;
         bdo:instanceHasVolume  bdr:I3KG833 ;
         bdo:qualityGrade    5 .
 }
