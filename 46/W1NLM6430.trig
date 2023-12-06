@@ -6,6 +6,13 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NLM6430 {
+    bda:LG0BDSXLP2IROZD2J9
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-12-06T00:31:21.714116"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1ER2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0NLML9M8FY2ORKLG
         a                   adm:InitialDataImport ;
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
@@ -18,7 +25,7 @@ bdg:W1NLM6430 {
         adm:gitPath         "46/W1NLM6430.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM6430 ;
-        adm:logEntry        bda:LG0NLML9M8FY2ORKLG ;
+        adm:logEntry        bda:LG0BDSXLP2IROZD2J9 , bda:LG0NLML9M8FY2ORKLG ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -29,7 +36,7 @@ bdg:W1NLM6430 {
         bdo:volumePagesTbrcIntro  0 .
     
     bdr:W1NLM6430  a        bdo:ImageInstance ;
-        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:inCollection    bdr:PR1ER2 , bdr:PR1NLM00 ;
         bdo:instanceHasVolume  bdr:I1NLM6430_001 ;
         bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Scanned at the National Library of Mongolia in collaboration with Asian Legacy Library."@en .

@@ -12,6 +12,13 @@ bdg:W1NLM6548 {
         adm:adminAbout      bdr:I1NLM6548_001 ;
         adm:logEntry        bda:LG0W1NLM6548_W7DA9CRGI4JY .
     
+    bda:LG0BDSXLP2IROZD2J9
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-12-06T00:31:21.714116"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1ER2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0NLML9M8FY2ORKLG
         a                   adm:InitialDataImport ;
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
@@ -20,7 +27,7 @@ bdg:W1NLM6548 {
     
     bda:LG0W1NLM6548_W7DA9CRGI4JY
         a                   adm:Synced ;
-        adm:logDate         "2023-10-13T16:19:24.167183Z"^^xsd:dateTime ;
+        adm:logDate         "2023-10-13T16:19:24.167183+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -31,7 +38,7 @@ bdg:W1NLM6548 {
         adm:gitPath         "a1/W1NLM6548.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM6548 ;
-        adm:logEntry        bda:LG0NLML9M8FY2ORKLG ;
+        adm:logEntry        bda:LG0BDSXLP2IROZD2J9 , bda:LG0NLML9M8FY2ORKLG ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -43,7 +50,7 @@ bdg:W1NLM6548 {
         bdo:volumePagesTotal  322 .
     
     bdr:W1NLM6548  a        bdo:ImageInstance ;
-        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:inCollection    bdr:PR1ER2 , bdr:PR1NLM00 ;
         bdo:instanceHasVolume  bdr:I1NLM6548_001 ;
         bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Scanned at the National Library of Mongolia in collaboration with Asian Legacy Library."@en .
