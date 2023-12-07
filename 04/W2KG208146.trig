@@ -9,12 +9,19 @@
 bdg:W2KG208146 {
     bda:I2KG208379  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG208379 ;
-        adm:logEntry        bda:LG0W2KG208146_H98YZA1XL6JA , bda:LG6051968A66D8D872 ;
+        adm:logEntry        bda:LG0W2KG208146_H98YZA1XL6JA , bda:LG0W2KG208146_IGIC6SGHO6SN , bda:LG6051968A66D8D872 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0W2KG208146_H98YZA1XL6JA
         a                   adm:Synced ;
         adm:logDate         "2023-05-17T21:26:13.443275Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG0W2KG208146_IGIC6SGHO6SN
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2023-12-07T21:30:48.814690Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -47,7 +54,7 @@ bdg:W2KG208146 {
         bdo:biblioNote      "Volume 1 of mngon par rtogs pa'i rgyan zhes bya ba'i 'grel pa'i rgya cher bshad pa lung gi snye ma/"@en ;
         bdo:volumeNumber    1 ;
         bdo:volumePagesTbrcIntro  2 ;
-        bdo:volumePagesTotal  82 .
+        bdo:volumePagesTotal  1001 .
     
     bdr:W2KG208146  a       bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1NLM00 ;
