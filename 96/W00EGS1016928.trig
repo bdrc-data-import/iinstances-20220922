@@ -1,14 +1,9 @@
-@prefix :      <http://purl.bdrc.io/ontology/core/> .
 @prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
 @prefix bda:   <http://purl.bdrc.io/admindata/> .
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
 @prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W00EGS1016928 {
@@ -23,6 +18,12 @@ bdg:W00EGS1016928 {
         adm:logEntry        bda:LG535607BDDD4C6B22 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG0W00EGS1016928_MBOVOYKTIFAX
+        a                   adm:UpdateData ;
+        adm:logDate         "2023-12-13T19:51:06.691813Z"^^xsd:dateTime ;
+        adm:logMessage      "switched vol order"@en ;
+        adm:logWho          bdu:U1426146149 .
     
     bda:LG2E2D0900E21C1EA9
         a                   adm:InitialDataCreation ;
@@ -68,27 +69,27 @@ bdg:W00EGS1016928 {
         adm:gitPath         "96/W00EGS1016928.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00EGS1016928 ;
-        adm:logEntry        bda:LG6624A50D9DFB19A2 ;
+        adm:logEntry        bda:LG0W00EGS1016928_MBOVOYKTIFAX , bda:LG6624A50D9DFB19A2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I01JW231  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_dge 'dun blo bzang"@en ;
-        :volumeNumber       1 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   352 .
+    bdr:I01JW231  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 1 of gsung 'bum/_dge 'dun blo bzang"@en ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  352 .
     
-    bdr:I01JW232  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of gsung 'bum/_dge 'dun blo bzang"@en ;
-        :volumeNumber       2 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   348 .
+    bdr:I01JW232  a         bdo:ImageGroup ;
+        bdo:biblioNote      "Volume 2 of gsung 'bum/_dge 'dun blo bzang"@en ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  2 ;
+        bdo:volumePagesTotal  348 .
     
     bdr:W00EGS1016928
-        a                   :ImageInstance ;
-        :inCollection       bdr:PR1CTC15 ;
-        :instanceHasVolume  bdr:I01JW231 , bdr:I01JW232 ;
-        :numberOfVolumes    2 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        a                   bdo:ImageInstance ;
+        bdo:inCollection    bdr:PR1CTC15 ;
+        bdo:instanceHasVolume  bdr:I01JW231 , bdr:I01JW232 ;
+        bdo:numberOfVolumes  2 ;
+        bdo:scanInfo        "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
 }
