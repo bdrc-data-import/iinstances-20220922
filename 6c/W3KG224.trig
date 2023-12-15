@@ -1,0 +1,49 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3KG224 {
+    bda:LG0W3KG224_MEFINPZWSHO4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2023-12-15T18:21:30.273048Z"^^xsd:dateTime ;
+        adm:logMessage      "generated scans"@en ;
+        adm:logWho          bdu:U1426146149 .
+    
+    bda:W3KG224  a          adm:AdminData ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W3KG224 ;
+        adm:graphId         bdg:W3KG224 ;
+        adm:logEntry        bda:LG0W3KG224_MEFINPZWSHO4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I3KG835  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG836  a          bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG837  a          bdo:ImageGroup ;
+        bdo:volumeNumber    3 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG838  a          bdo:ImageGroup ;
+        bdo:volumeNumber    4 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I3KG839  a          bdo:ImageGroup ;
+        bdo:volumeNumber    5 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W3KG224  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I3KG835 , bdr:I3KG836 , bdr:I3KG837 , bdr:I3KG838 , bdr:I3KG839 ;
+        bdo:qualityGrade    5 ;
+        bdo:scanInfo        "The PDF files of the text are made available through the generous support of the author Geshe Palden Drakpa."@en .
+}
