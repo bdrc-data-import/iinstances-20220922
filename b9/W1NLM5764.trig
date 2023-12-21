@@ -17,6 +17,13 @@ bdg:W1NLM5764 {
         adm:adminAbout      bdr:I1nLM5764_001 ;
         adm:logEntry        bda:LG0W1NLM5764_MJ85DENRESQY .
     
+    bda:LG0BDSXLP2IROZD2J9
+        a                   adm:UpdateData ;
+        adm:logAgent        "buda-scripts/batch/batch-change.py" ;
+        adm:logDate         "2023-12-06T00:31:21.714116"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1ER2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG0NLMWTL3HW1XDJ4H
         a                   adm:InitialDataImport ;
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
@@ -25,21 +32,21 @@ bdg:W1NLM5764 {
     
     bda:LG0W1NLM5764_GVDPZT0LAY7Y
         a                   adm:Synced ;
-        adm:logDate         "2023-03-06T23:37:39.489819Z"^^xsd:dateTime ;
+        adm:logDate         "2023-03-06T23:37:39.489819+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG0W1NLM5764_MJ85DENRESQY
         a                   adm:Synced ;
-        adm:logDate         "2023-03-03T18:20:03.125632Z"^^xsd:dateTime ;
+        adm:logDate         "2023-03-03T18:20:03.125632+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
     
     bda:LG0W1NLM5764_XC08RO8WY8VX
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2023-06-15T15:59:36.105305Z"^^xsd:dateTime ;
+        adm:logDate         "2023-06-15T15:59:36.105305+00:00"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00016 .
@@ -50,7 +57,7 @@ bdg:W1NLM5764 {
         adm:gitPath         "b9/W1NLM5764.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM5764 ;
-        adm:logEntry        bda:LG0NLMWTL3HW1XDJ4H ;
+        adm:logEntry        bda:LG0BDSXLP2IROZD2J9 , bda:LG0NLMWTL3HW1XDJ4H ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
@@ -65,7 +72,7 @@ bdg:W1NLM5764 {
         bdo:volumePagesTotal  296 .
     
     bdr:W1NLM5764  a        bdo:ImageInstance ;
-        bdo:inCollection    bdr:PR1NLM00 ;
+        bdo:inCollection    bdr:PR1ER2 , bdr:PR1NLM00 ;
         bdo:instanceHasVolume  bdr:I1NLM5764_001 ;
         bdo:numberOfVolumes  1 ;
         bdo:scanInfo        "Scanned at the National Library of Mongolia in collaboration with Asian Classics Input Project and with generous support from Khyentse Foundation."@en .
