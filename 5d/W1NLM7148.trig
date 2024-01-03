@@ -3,14 +3,27 @@
 @prefix bdg:   <http://purl.bdrc.io/graph/> .
 @prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
 @prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1NLM7148 {
+    bda:I1NLM7148_001
+        a                   adm:AdminData ;
+        adm:adminAbout      bdr:I1NLM7148_001 ;
+        adm:logEntry        bda:LG0W1NLM7148_RAEJORZ4BMME .
+    
     bda:LG0NLMCSOOBSH3VPU4
         a                   adm:InitialDataImport ;
         adm:logAgent        "buda-scripts/imports/NLM/import-simple.py" ;
         adm:logDate         "2023-12-21T07:56:22.771738"^^xsd:dateTime ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG0W1NLM7148_RAEJORZ4BMME
+        a                   adm:Synced ;
+        adm:logDate         "2024-01-03T20:16:20.663231Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1NLM7148  a        adm:AdminData ;
         adm:access          bda:AccessOpen ;
@@ -26,7 +39,8 @@ bdg:W1NLM7148 {
     bdr:I1NLM7148_001
         a                   bdo:ImageGroup ;
         bdo:volumeNumber    1 ;
-        bdo:volumePagesTbrcIntro  0 .
+        bdo:volumePagesTbrcIntro  0 ;
+        bdo:volumePagesTotal  356 .
     
     bdr:W1NLM7148  a        bdo:ImageInstance ;
         bdo:inCollection    bdr:PR1NLM00 ;
