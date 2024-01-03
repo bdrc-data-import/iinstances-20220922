@@ -19,14 +19,30 @@ bdg:W2NB8 {
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U678062094 .
     
+    bda:LG0W2NB8_T0XQSNCXKOZM
+        a                   adm:UpdateData ;
+        adm:logDate         "2024-01-03T14:11:01.073223Z"^^xsd:dateTime ;
+        adm:logMessage      "batch add volumes"@en ;
+        adm:logWho          bdu:U678062094 .
+    
     bda:W2NB8  a            adm:AdminData ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2NB8 ;
         adm:graphId         bdg:W2NB8 ;
-        adm:logEntry        bda:LG0W2NB8_ABOOPKLEMTTA , bda:LG0W2NB8_DIQFEAGEFLPV ;
+        adm:logEntry        bda:LG0W2NB8_ABOOPKLEMTTA , bda:LG0W2NB8_DIQFEAGEFLPV , bda:LG0W2NB8_T0XQSNCXKOZM ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:W2NB8  a            bdo:ImageInstance .
+    bdr:I2NB1  a            bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:I2NB2  a            bdo:ImageGroup ;
+        bdo:volumeNumber    2 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W2NB8  a            bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I2NB1 , bdr:I2NB2 ;
+        bdo:isComplete      false .
 }
