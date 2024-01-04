@@ -1,0 +1,33 @@
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1ER157 {
+    bda:LG0W1ER157_FZD3DHW9JYMU
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2024-01-04T13:41:13.787191Z"^^xsd:dateTime ;
+        adm:logMessage      "scans"@en ;
+        adm:logWho          bdu:U1653882847 .
+    
+    bda:W1ER157  a          adm:AdminData ;
+        adm:access          bda:AccessRestrictedTemporarily ;
+        adm:adminAbout      bdr:W1ER157 ;
+        adm:graphId         bdg:W1ER157 ;
+        adm:logEntry        bda:LG0W1ER157_FZD3DHW9JYMU ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1ER910  a          bdo:ImageGroup ;
+        bdo:volumeNumber    1 ;
+        bdo:volumePagesTbrcIntro  0 .
+    
+    bdr:W1ER157  a          bdo:ImageInstance ;
+        bdo:instanceHasVolume  bdr:I1ER910 ;
+        bdo:isComplete      true ;
+        bdo:qualityGrade    4 .
+}
